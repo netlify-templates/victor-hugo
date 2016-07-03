@@ -1,0 +1,33 @@
+{
+  "name": "hugo-gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for using hugo with gulp",
+  "main": "index.js",
+  "scripts": {
+    "hugo": "gulp hugo",
+    "webpack": "gulp webpack",
+    "build": "gulp build",
+    "start": "gulp server"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-loader": "^0.9.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
