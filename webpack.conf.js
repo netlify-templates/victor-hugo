@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import ExtractTextPlugin from "extract-text-webpack-plugin";
 
 export default {
   module: {
@@ -11,17 +12,13 @@ export default {
       { test: /\.json$/, loader: 'json-loader' },
       {
         test: /\.css$/,
-        loader: 'style!css?modules!postcss'
+        loader: ExtractTextPlugin.extract("style", "css?importLoaders=1!postcss")
       },
       {
         loader: 'babel',
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {
-          cacheDirectory: true,
-          presets: ['react', 'es2015'],
-          plugins: ['transform-class-properties', 'transform-object-assign', 'transform-object-rest-spread']
-        }
+        query: {cacheDirectory: true}
       }
     ]
   },
@@ -33,7 +30,8 @@ export default {
   plugins: [
     new webpack.ProvidePlugin({
       'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
-    })
+    }),
+    new ExtractTextPlugin("main.css")
   ],
 
   context: path.join(__dirname, 'src'),

@@ -42,11 +42,18 @@ gulp.task('server', ['build'], (cb) => {
   // Start a webpack-dev-server
 	new WebpackDevServer(webpack(myConfig), {
     contentBase: './dist',
-    publicPath: 'http://localhost:3009/',
+    publicPath: '/',
 		stats: {
 			colors: true
 		},
-		hot: false
+		hot: false,
+    proxy: {
+      "/confirm/*": {
+        bypass: function(req, res, proxyOptions) {
+          return "/pages/confirm/index.html";
+        }
+      }
+    }
 	}).listen(3009, 'localhost', function(err) {
 		if(err) throw new gutil.PluginError('webpack-dev-server', err);
 		gutil.log('[webpack-dev-server]', 'http://localhost:3009/');
