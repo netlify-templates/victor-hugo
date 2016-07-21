@@ -1,61 +1,54 @@
-import gulp from 'gulp';
-import babel from 'gulp-babel';
-import cp from 'child_process';
-import gutil from 'gulp-util';
-import webpack from 'webpack';
-import webpackConfig from './webpack.conf';
-import WebpackDevServer from 'webpack-dev-server';
+import gulp from "gulp";
+import cp from "child_process";
+import gutil from "gulp-util";
+import postcss from "gulp-postcss";
+import cssImport from "postcss-import";
+import cssnext from "postcss-cssnext";
+import BrowserSync from "browser-sync";
+import webpack from "webpack";
+import webpackConfig from "./webpack.conf";
 
+const browserSync = BrowserSync.create();
+const hugoBin = "hugo";
 
-gulp.task('hugo', (cb) => {
-  const args = ['-d', '../dist', '-s', 'site'];
-  return cp.spawn('hugo', args, {stdio: 'inherit'}).on('close', cb);
-});
-
-gulp.task('webpack', (cb) => {
-  const myConfig = Object.assign({}, webpackConfig);
-
-  // run webpack
-  webpack(myConfig, (err, stats) => {
-    if (err) throw new gutil.PluginError('webpack', err);
-    gutil.log('[webpack]', stats.toString({
-      colors: true,
-      progress: true
-    }));
+gulp.task("hugo", (cb) => {
+  const args = ["-d", "../dist", "-s", "site", "-v"];
+  return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", () => {
+    browserSync.reload();
     cb();
   });
 });
 
-gulp.task('build', ['webpack', 'hugo']);
+gulp.task("build", ["css", "js", "hugo"]);
 
-gulp.task('server', ['build'], (cb) => {
-  gulp.watch('site/**', ['hugo']);
+gulp.task("css", () => (
+  gulp.src("./src/css/*.css")
+    .pipe(postcss([cssnext(), cssImport({from: "./src/css/main.css"})]))
+    .pipe(gulp.dest("./dist"))
+    .pipe(browserSync.stream())
+));
 
+gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
-	myConfig.devtool = 'cheap-module-eval-source-map';
-	myConfig.debug = true;
 
-  for (const key in myConfig.entry) {
-    myConfig.entry[key].unshift("webpack-dev-server/client?http://localhost:3009/");
-  }
+  webpack(myConfig, (err, stats) => {
+    if (err) throw new gutil.PluginError("webpack", err);
+    gutil.log("[webpack]", stats.toString({
+      colors: true,
+      progress: true
+    }));
+    browserSync.reload();
+    cb();
+  });
+});
 
-  // Start a webpack-dev-server
-	new WebpackDevServer(webpack(myConfig), {
-    contentBase: './dist',
-    publicPath: '/',
-		stats: {
-			colors: true
-		},
-		hot: false,
-    proxy: {
-      "/confirm/*": {
-        bypass: function(req, res, proxyOptions) {
-          return "/pages/confirm/index.html";
-        }
-      }
+gulp.task("server", ["hugo", "css", "js"], () => {
+  browserSync.init({
+    server: {
+      baseDir: "./dist"
     }
-	}).listen(3009, 'localhost', function(err) {
-		if(err) throw new gutil.PluginError('webpack-dev-server', err);
-		gutil.log('[webpack-dev-server]', 'http://localhost:3009/');
-	});
+  });
+  gulp.watch("./src/js/**/*.js", ["js"]);
+  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./site/**/*", ["hugo"]);
 });

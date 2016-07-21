@@ -1,3 +1,1 @@
-import "../css/main.css";
-
-// JS here
+// JS Goes here - ES6 supported
