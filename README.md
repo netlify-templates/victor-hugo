@@ -1,6 +1,6 @@
-# Hugo + Webpack Boilerplate
+# Hugo with PostCSS and Babel
 
-This is a boilerplate for using Hugo as a static site generator and Weback as the
+This is a boilerplate for using Hugo as a static site generator and Gulp + Weback as the
 asset pipeline.
 
 It's setup to use post-css and babel for CSS and JavaScript.
@@ -14,7 +14,7 @@ npm install
 npm start
 ```
 
-Then visit http://localhost:3009/
+Then visit http://localhost:3000/
 
 To build your static output, use:
 
