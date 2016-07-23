@@ -13,8 +13,12 @@ const hugoBin = "hugo";
 
 gulp.task("hugo", (cb) => {
   const args = ["-d", "../dist", "-s", "site", "-v"];
-  return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", () => {
-    browserSync.reload();
+  return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
+    if (code === 0) {
+      browserSync.reload();
+    } else {
+      browserSync.notify("Hugo build failed :(");
+    }
     cb();
   });
 });
