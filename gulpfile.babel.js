@@ -28,7 +28,7 @@ gulp.task("build", ["css", "js", "hugo"]);
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
     .pipe(postcss([cssnext(), cssImport({from: "./src/css/main.css"})]))
-    .pipe(gulp.dest("./dist"))
+    .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
 
