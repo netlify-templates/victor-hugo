@@ -65,11 +65,8 @@ to `/dist/css/{filename}.css`. Import statements will be resolved as part of the
 
 ## Deploying to netlify
 
-Push your clone to your own GitHub repo, then start a new Netlify project, pick
-your repository and configure it like this:
-
-* **Build Command:** npm run build
-* **Directory:** dist
+- Push your clone to your own GitHub repository.
+- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
 
 Now netlify will build and deploy your site whenever you push to git.
 
