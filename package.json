@@ -1,7 +1,7 @@
 {
-  "name": "hugo-gulp-boilerplate",
+  "name": "victor-hugo",
   "version": "1.0.0",
-  "description": "Boilerplate for using hugo with gulp",
+  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -16,6 +16,7 @@
     "autoprefixer": "^6.3.7",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.10.2",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
@@ -29,6 +30,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-postcss": "^6.1.1",
+    "gulp-util": "^3.0.7",
     "imports-loader": "^0.6.5",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
