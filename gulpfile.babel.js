@@ -10,20 +10,13 @@ import webpackConfig from "./webpack.conf";
 
 const browserSync = BrowserSync.create();
 const hugoBin = "hugo";
+const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
 
-gulp.task("hugo", (cb) => {
-  const args = ["-d", "../dist", "-s", "site", "-v"];
-  return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
-    if (code === 0) {
-      browserSync.reload();
-    } else {
-      browserSync.notify("Hugo build failed :(");
-    }
-    cb();
-  });
-});
+gulp.task("hugo", (cb) => buildSite(cb));
+gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
 
 gulp.task("build", ["css", "js", "hugo"]);
+gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -56,3 +49,12 @@ gulp.task("server", ["hugo", "css", "js"], () => {
   gulp.watch("./src/css/**/*.css", ["css"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
+
+function buildSite(cb, options) {
+  const args = options ? defaultArgs.concat(options) : defaultArgs;
+
+  return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", () => {
+    browserSync.reload();
+    cb();
+  });
+}
