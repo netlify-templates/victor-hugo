@@ -1,6 +1,6 @@
 # Victor Hugo
 
-**A [Hugo](http://gohugo.io/) boilerplate for creating truly epic websites**
+**A [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
 
 This is a boilerplate for using Hugo as a static site generator and Gulp + Weback as your
 asset pipeline.
@@ -9,7 +9,13 @@ It's setup to use post-css and babel for CSS and JavaScript.
 
 ## Usage
 
-Clone this repository and run:
+Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo, run:
+
+```bash
+brew install hugo
+```
+
+Next, clone this repository and run:
 
 ```bash
 npm install
