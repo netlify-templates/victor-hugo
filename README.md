@@ -7,6 +7,8 @@ asset pipeline.
 
 It's setup to use post-css and babel for CSS and JavaScript.
 
+This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+
 ## Usage
 
 Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo, run:
@@ -76,8 +78,4 @@ to `/dist/css/{filename}.css`. Import statements will be resolved as part of the
 
 Now netlify will build and deploy your site whenever you push to git.
 
-##  Enjoy!!
-
-#### License
-
-[MIT](LICENSE)
+## Enjoy!!
