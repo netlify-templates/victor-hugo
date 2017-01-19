@@ -11,11 +11,15 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ## Usage
 
-Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo, run:
+Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo on OSX, run:
 
 ```bash
 brew install hugo
 ```
+
+If you don't use OSX or don't use homebrew, follow the instructions for installation here instead:
+
+http://gohugo.io/overview/installing/
 
 Next, clone this repository and run:
 
@@ -27,7 +31,7 @@ npm start
 Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
 refresh the page when stylesheets or content changes.
 
-To build your static output to the `/dist` folder, use:
+To build your static output to the `/public` folder, use:
 
 ```bash
 npm run build
