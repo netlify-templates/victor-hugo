@@ -31,7 +31,7 @@ npm start
 Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
 refresh the page when stylesheets or content changes.
 
-To build your static output to the `/public` folder, use:
+To build your static output to the `/dist` folder, use:
 
 ```bash
 npm run build
