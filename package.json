@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
-    "webpack": "gulp webpack",
     "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
