@@ -20,7 +20,7 @@ gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
-    .pipe(postcss([cssnext(), cssImport({from: "./src/css/main.css"})]))
+    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
