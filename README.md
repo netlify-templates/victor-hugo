@@ -28,14 +28,30 @@ npm install
 npm start
 ```
 
-Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
-refresh the page when stylesheets or content changes.
-
 To build your static output to the `/dist` folder, use:
 
 ```bash
 npm run build
 ```
+
+Or you can build and run using [docker](https://www.docker.com):
+
+```bash
+# Default docker setup: 
+./scripts/create-docker-machine-and-run-it
+
+# -- OR --
+
+# Run with custom machine name, specific hugo version, specific node version and run docker in detached mode:
+./scripts/create-docker-machine-and-run-it -m app-devel -g 0.9 -n 6.10.0 -d
+```
+
+Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
+refresh the page when stylesheets or content changes.
+
+**Note:** You only run the `./scripts/create-docker-machine-and-run-it` if you want to create 
+a new docker machine. Once the docker machine is created, you have to use docker commands 
+to manage it. Please be familiar with docker in this regard.
 
 ## Structure
 
