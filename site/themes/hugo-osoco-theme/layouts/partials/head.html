@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+{{ with .Site.LanguageCode }}
+<html lang="{{ . }}}">
+{{ end }}
+
+		<head>
+				<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Title }} &middot; {{ .Title }}{{ end }}</title>
+
+				{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+				{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+				{{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+
+				<meta name="robots" content="noindex, nofollow" />
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+				<link rel="icon" href="{{ .Site.BaseURL }}images/icono-osoco-80x80.png" type="image/png" />
+				<link rel="stylesheet" href="{{ .Site.BaseURL }}css/osoco.css" />
+
+				{{ with .RSSLink }}
+				<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+				<link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+				{{ end }}
+
+				{{ range .Site.Params.custom_css }}
+				<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+				{{ end }}
+		</head>

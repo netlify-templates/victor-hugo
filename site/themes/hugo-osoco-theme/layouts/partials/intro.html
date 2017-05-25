@@ -1,0 +1,23 @@
+<section>
+		<article class="containerContent backgroundWhite">
+        {{ with .Site.Params.intro.title }}
+        <header id="scrollThere-1" class="waypoint" data-id-trigger="itemMenuSecondary-1">
+						<h3 class="txtContentTitle">{{ . | markdownify }}</h3>
+				</header>
+        {{ end }}
+        {{ with .Site.Params.intro.highlighted }}
+				<div class="divColCenter">
+						<p class="txtQuoteBig">{{ . | markdownify }}</p>
+				</div>
+        {{ end }}
+				<div class="divColCenter">
+            {{ range .Site.Params.intro.contents }}
+						<p class="txtContentBody">{{ . | markdownify }}</p>
+            {{ end }}
+
+            {{ with .Site.Params.intro.quote }}
+						<h4 class="txtQuoteSmall">{{ . }}</h4>
+            {{ end }}
+				</div>
+		</article>
+</section>

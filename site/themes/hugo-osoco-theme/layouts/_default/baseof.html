@@ -1,0 +1,18 @@
+{{ partial "head" . }}
+<body class="{{ if .IsHome }}home{{ end }}">
+		{{ partial "header" . }}
+
+		{{ "<!-- Main -->" | safeHTML }}
+		<div class="body-panel">
+				<main>
+						{{ block "main" . }}{{ end }}
+
+						<a href="#0" class="btnUp-top">Top</a>
+				</main>
+
+				{{ partial "footer" . }}
+		</div>
+
+		{{ partial "end" . }}
+	</body>
+</html>

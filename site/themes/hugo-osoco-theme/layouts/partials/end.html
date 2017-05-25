@@ -1,0 +1,16 @@
+{{ "<!-- Scripts -->" | safeHTML }}
+
+<script src="{{ .Site.BaseURL }}js/1.9.1/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/scroll-to-anchor.js"></script>
+<script src="{{ .Site.BaseURL }}js/waypoints.js"></script>
+<script src="{{ .Site.BaseURL }}js/lateral-indicators.js"></script>
+<script src="{{ .Site.BaseURL }}js/menu-anchor.js"></script>
+<script src="{{ .Site.BaseURL }}js/scroll-up.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.video.js"></script>
+<script src="{{ .Site.BaseURL }}js/collapsible.js"></script>
+
+{{ template "_internal/google_analytics_async.html" . }}
+
+{{ range .Site.Params.custom_js }}
+<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}
