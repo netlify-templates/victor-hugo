@@ -1,0 +1,23 @@
+{{ "<!-- Manifest -->" | safeHTML }}
+<section>
+		<article class="containerContent backgroundWhite">
+				<div class="divManifiesto">
+				    {{ with .Site.Params.manifest.title }}
+						<header id="scrollThere-1">
+							  <h2 class="txtManifiestoIntro">{{ . | markdownify }}</h2>
+						</header>
+            {{ end }}
+						<div class="txtManifiestoTitle">
+							  <ol>
+						        {{ range .Site.Params.manifest.statements }}
+								    <li>{{ . | markdownify }}</li>
+                    {{ end }}
+							  </ol>
+						</div>
+
+						<div class="containerButton">
+							  <a href="" class="btnPrimary"><span>Conócenos</span></a>
+						</div>
+				</div>
+		</article>
+</section>

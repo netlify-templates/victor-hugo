@@ -1,7 +1,16 @@
 {{ define "main" }}
-  {{ partial "banner" . }}
+	{{ partial "banner" . }}
 
 	{{ if not .Site.Params.intro.hide }}
 		{{ partial "intro" . }}
 	{{ end }}
+
+	{{ if not .Site.Params.services.hide }}
+		{{ partial "services" . }}
+	{{ end }}
+
+	{{ if not .Site.Params.manifest.hide }}
+		{{ partial "manifest" . }}
+	{{ end }}
+
 {{ end }}

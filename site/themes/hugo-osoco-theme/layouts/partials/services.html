@@ -1,0 +1,22 @@
+{{ "<!-- Services -->" | safeHTML }}
+<section>
+		<article class="containerContent backgroundGrey1 services">
+				{{ with .Site.Params.services.title }}
+				<header>
+						<h3 class="txtContentTitle">{{ . | markdownify }}</h3>
+				</header>
+				{{ end }}
+				<div class="servicesColumns">
+						{{ range .Site.Params.services.service }}
+						<div>
+								<div class="icon">
+										<img src="{{ .Site.BaseURL }}images/{{ .icon }}" alt="">
+								</div>
+								<h4>{{ .title | markdownify }}</h4>
+								{{ .description | markdownify }}
+						</div>
+						{{ end  }}
+
+				</div>
+		</article>
+</section>

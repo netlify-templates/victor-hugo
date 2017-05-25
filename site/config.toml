@@ -53,8 +53,69 @@ paginate = 10
 * Cuidado del detalle"""
     ]
 
+  [params.services]
+    hide  = false
+    title = "Servicios"
 
+  [[params.services.service]]
+    icon = "iconAgile.svg"
+    title = "Agile Development"
+    description = """
+* Agile Software Craftmanship
+* Object-Oriented Design
+* JVM-based Development
+* Web Development
+* Native & Hybrid Mobile Apps
+* Training and Mentoring
+"""
 
+  [[params.services.service]]
+    icon = "iconDevops.svg"
+    title = "DevOps"
+    description = """
+* System Architecture Design
+* Process Automation
+* Continuous Delivery
+* Configuration Management
+* Cloud Computing
+* Amazon Web Services
+"""
+
+  [[params.services.service]]
+    icon = "iconUXDesign.svg"
+    title = "UX &amp; Design"
+    description = """
+* User Centered Design
+* Data driven
+* Care for detail
+* Multidevice
+"""
+
+  [[params.services.service]]
+    icon = "iconStartup.svg"
+    title = "Lean Startup Coaching"
+    description = """
+* Inception Workshops
+* Value Proposition Design
+* Business Model Design
+* Lean Development
+"""
+
+  [params.manifest]
+    hide  = false
+    title = "\"Nuestro manifesto<br> es nuestra constitución\""
+    statements = [
+      "Deliver value for customers, not technologies",
+      "Working software is not enough",
+  		"Nurture the code like a gardener",
+	  	"We are professionals not heroes",
+  		"Fail fast, learn faster",
+	  	"Evidence trumps opinion",
+  		"Make it measurable",
+	  	"Embrace critical thinking, avoid the hype",
+		  "Learn &amp; evolve constantly",
+  		"Let’s hack OSOCO relentlessly",
+    ]
 
 
 	[params.sidebar]
