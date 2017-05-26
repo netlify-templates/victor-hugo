@@ -19,7 +19,7 @@
 		 		    <nav class="menu">
 		 			      <ul class="collapsible">
 								{{ range . }}
-								    <li><a id="itemMenuPrimary-1" href="{{ .URL | absURL }}" class="{{ if $currentPage.HasMenuCurrent "main" . }}selected{{ end }}">{{ .Name | upper }}</a></li>
+								    <li><a id="itemMenuPrimary-1" href="{{ .URL | absURL }}" class="{{ if eq $currentPage.Section .Identifier}}selected{{ end }}">{{ .Name | upper }}</a></li>
 								{{ end }}
 								</ul>
 						</nav>

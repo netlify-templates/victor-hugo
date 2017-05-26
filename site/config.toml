@@ -161,20 +161,20 @@ paginate = 10
 
 # Menu links that appear on the left sidebar
 [[menu.main]]
-    name = "Nosotros"
-    weight = -100
-    identifier = "about"
-    url = "/about"
+  name = "Nosotros"
+  weight = -100
+  identifier = "about"
+  url = "/about"
 
 [[menu.main]]
-name = "Proyectos"
-weight = -90
-identifier = "project"
-url = "/projects"
+  name = "Proyectos"
+  weight = -90
+  identifier = "projects"
+  url = "/projects"
 
 [[menu.main]]
-name = "Contacto"
-weight = -80
-identifier = "contact"
-url = "/contact"
+  name = "Contacto"
+  weight = -80
+  identifier = "contact"
+  url = "/contact"
 
