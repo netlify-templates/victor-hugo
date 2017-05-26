@@ -51,7 +51,7 @@ paginate = 10
     quote = "Nuestro objetivo siempre es <br> superar las expectativas de nuestros clientes,<br> presentándoles un resultado <br> mejor de lo esperado."
     contents = [
       "Somos una compañía de diseño y desarrollo de software fundada en 2003, con base en Madrid, España.",
-      "Tenemos experiencia creando software, tanto para pequeñas y medianas empresas, como aplicaciones de misión crítica para grandes empresas,</strong> especialmente usando la plataforma Java EE y otras tecnologías como Groovy, Grails o Pharo Smalltalk.",
+      "Tenemos experiencia creando software, tanto para pequeñas y medianas empresas, como aplicaciones de misión crítica para grandes empresas,</strong> especialmente usando la plataforma **Java** y otras tecnologías como **Groovy**, **Grails** o **Pharo Smalltalk**.",
       "El equipo de **OSOCO** está formado por ingenieros altamente cualificados (informáticos y de telecomunicación), que se sienten orgullosos de serlo, pero que también entienden el desarrollo de software como una artesanía. Si tenemos en cuenta la definición de la RAE, lo que diferencia a un artesano es que imprime su sello personal en su trabajo. En **OSOCO** cuidamos con esmero cada detalle de nuestros proyectos, desde sus fases iniciales hasta el despliegue en producción.",
       """Nuestra visión consistió en crear una empresa pequeña, pero cumplidora, seria y responsable; es decir, **una empresa de verdaderos profesionales de la programación**, con una propuesta basada en la consistencia y calidad de nuestros trabajos, fundamentada en los siguientes valores:
 
