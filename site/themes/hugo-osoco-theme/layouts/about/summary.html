@@ -3,6 +3,8 @@
 		</div>
 		<div class="divPersonaText">
 				<h5 class="txtPersonaName">{{ .Params.Name }}</h5>
-				<p class="txtPersonaTitle">{{ .Params.Bio | markdownify }}</p>
+				{{ with .Params.Bio }}
+				<p class="txtPersonaTitle">{{ . | markdownify }}</p>
+				{{ end }}
 		</div>
 </div>
