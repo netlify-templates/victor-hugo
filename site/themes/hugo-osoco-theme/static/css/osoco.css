@@ -1668,6 +1668,9 @@ html {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+.contact #logo {
+    filter: brightness(100%);
+}
 /* line 16, ../sass/_menu.scss */
 .js-menu-fixed #logo {
   height: 30px;
