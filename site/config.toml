@@ -5,7 +5,7 @@ theme = "hugo-osoco-theme"
 
 disqusShortname = "osoco"
 # Enable Google Analytics by inserting your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-26781652-1"
 # Define how many posts should appear on a site
 paginate = 10
 
