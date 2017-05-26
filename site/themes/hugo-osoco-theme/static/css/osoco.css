@@ -1661,7 +1661,7 @@ html {
   left: 2em;
   top: 2.5em;
   line-height: 40px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  filter: brightness(500%);
   opacity: 1;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1672,7 +1672,7 @@ html {
 .js-menu-fixed #logo {
   height: 30px;
   top: .5em;
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  filter: brightness(100%);
   opacity: 1;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
