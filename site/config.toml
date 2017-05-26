@@ -31,7 +31,7 @@ paginate = 10
 		vimeo = "osoco"
 
 	[params.copyright]
-		notice = "OSOCO &copy; 2017"
+		notice = "&copy; OSOCO 2003"
 
   [params.banner]
     [params.banner.home]
