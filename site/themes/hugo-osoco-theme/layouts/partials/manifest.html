@@ -3,20 +3,22 @@
 		<article class="containerContent backgroundWhite">
 				<div class="divManifiesto">
 				    {{ with .Site.Params.manifest.title }}
-						<header id="scrollThere-1">
-							  <h2 class="txtManifiestoIntro">{{ . | markdownify }}</h2>
+						<header>
+							  <h3 class="txtContentTitle">{{ . | markdownify }}</h3>
 						</header>
             {{ end }}
 						<div class="txtManifiestoTitle">
 							  <ol>
+                    {{ $manifestCount := 1 }}
 						        {{ range .Site.Params.manifest.statements }}
-								    <li>{{ . | markdownify }}</li>
+                    {{ $.Scratch.Add "$manifestCount" 1 }}
+								    <li><span>{{ $.Scratch.Get "$manifestCount" }}.-</span>{{ . | markdownify }}</li>
                     {{ end }}
 							  </ol>
 						</div>
 
 						<div class="containerButton">
-							  <a href="" class="btnPrimary"><span>Conócenos</span></a>
+							  <a href="{{ .Site.BaseURL }}about" class="btnPrimary"><span>Conócenos</span></a>
 						</div>
 				</div>
 		</article>

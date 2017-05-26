@@ -1,0 +1,8 @@
+<div class="divPersonaContainer">
+		<div class="divPersonaPicture" style="background-image:url({{ .Site.BaseURL }}images/personas/{{ .Params.Photo }});">
+		</div>
+		<div class="divPersonaText">
+				<h5 class="txtPersonaName">{{ .Params.Name }}</h5>
+				<p class="txtPersonaTitle">{{ .Params.Bio | markdownify }}</p>
+		</div>
+</div>

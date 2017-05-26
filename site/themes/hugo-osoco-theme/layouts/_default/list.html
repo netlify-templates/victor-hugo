@@ -1,4 +1,5 @@
 {{ define "main" }}
+
     {{ $paginator := .Paginate .Data.Pages }}
     {{ range $paginator.Pages }}
         {{ .Render "summary" }}

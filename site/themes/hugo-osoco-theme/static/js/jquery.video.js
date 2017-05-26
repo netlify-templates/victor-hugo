@@ -220,8 +220,8 @@
    */
   Vide.prototype.init = function() {
     var vide = this;
-    var path = 'videos/' + vide.path;
-    var poster = 'images/header/' + vide.path;
+    var path = '/videos/' + vide.path;
+    var poster = '/images/header/' + vide.path;
     var sources = '';
     var $element = vide.$element;
     var settings = vide.settings;

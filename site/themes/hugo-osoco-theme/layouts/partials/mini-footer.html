@@ -1,0 +1,11 @@
+
+
+{{ "<!-- Footer -->" | safeHTML }}
+		<footer>
+      {{ with .Site.Params.copyright.notice }}
+			<div class="footerLegal">
+				<span class="txtFooterLegal">{{ . | markdownify }}</span>
+			</div>
+      {{ end }}
+		</footer>
+

@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "es-ES"
 title = "OSOCO"
 theme = "hugo-osoco-theme"
+
 disqusShortname = "osoco"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
@@ -25,7 +26,7 @@ paginate = 10
 		# The icons will be shown if you enter your username
   	twitter = "osoco"
 		github = "osoco"
-		linkedin = "osoco"
+		linkedin = "1084597"
 		slideshare = "osoco"
 		vimeo = "osoco"
 
@@ -35,6 +36,13 @@ paginate = 10
   [params.banner]
     [params.banner.home]
       claim = "Tenemos la convicción de que otra forma de trabajar es posible"
+      background = "pelicula-demo-osoco"
+    [params.banner.about]
+      claim = "Creamos software <br/>web y móvil <br/>más innovador, <br/>usable y robusto."
+      background = "pelicula-compania"
+    [params.banner.projects]
+      claim = "El trabajo bien hecho, <br/>para el éxito <br/>de nuestros clientes."
+      background = "pelicula-casos-de-exito"
 
   [params.intro]
     hide  = false
@@ -117,77 +125,6 @@ paginate = 10
   		"Let’s hack OSOCO relentlessly",
     ]
 
-
-	[params.sidebar]
-		# Replace the avatar with a picture of your own under static/images
-		avatar = "avatar.jpg"
-		# Use Markdown to format the string. This works nearly all over the theme
-		bio = "**I'm Strata**, a super simple<br> responsive site template freebie<br> crafted by [HTML5 UP](//html5up.net)."
-		# The icons will be shown if you enter your username
-		twitter = "osoco"
-		github = "osoco"
-		gitlab = ""
-		dribbble = ""
-		facebook = ""
-		googleplus = ""
-		flickr = ""
-		linkedin = "osoco"
-
-		copyright = [
-			"&copy; John Doe",
-			"Design: [HTML5 UP](//html5up.net)",
-			"Demo Images: [Unsplash](//unsplash.com/)"
-		]
-
-
-
-
-	[params.portfolio]
-		hide  = false
-		title = "Recent Work"
-
-		# The images and thumbnails are stored under static/images
-		# Create and change subfolders as you like
-		[[params.portfolio.gallery]]
-			image = "fulls/01.jpg"
-			thumb = "thumbs/01.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/02.jpg"
-			thumb = "thumbs/02.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/03.jpg"
-			thumb = "thumbs/03.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/04.jpg"
-			thumb = "thumbs/04.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/05.jpg"
-			thumb = "thumbs/05.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-		[[params.portfolio.gallery]]
-			image = "fulls/06.jpg"
-			thumb = "thumbs/06.jpg"
-			title = "Lorem ipsum dolor."
-			description = "Lorem ipsum dolor sit amet."
-
-	[params.recentposts]
-		hide  = false
-		title = "Recent blog posts"
-
 	[params.contact]
 		hide  = false
 		title = "Get In Touch"
@@ -224,16 +161,20 @@ paginate = 10
 
 # Menu links that appear on the left sidebar
 [[menu.main]]
-	name = "NOSOTROS"
-	url  = "/nosotros"
-	weight = 0
+    name = "Nosotros"
+    weight = -100
+    identifier = "about"
+    url = "/about"
 
 [[menu.main]]
-	name = "PROYECTOS"
-	url  = "/proyectos"
-	weight = 5
+name = "Proyectos"
+weight = -90
+identifier = "project"
+url = "/projects"
 
 [[menu.main]]
-	name = "CONTACTO"
-	url  = "/contacto"
-	weight = 10
+name = "Contacto"
+weight = -80
+identifier = "contact"
+url = "/contact"
+

@@ -1,7 +1,7 @@
 {{ define "main" }}
 	{{ partial "banner" . }}
 
-	{{ if not .Site.Params.intro.hide }}
+  {{ if not .Site.Params.intro.hide }}
 		{{ partial "intro" . }}
 	{{ end }}
 

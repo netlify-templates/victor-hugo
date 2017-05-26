@@ -8,22 +8,22 @@
 				<p class="txtFooterLocation1">Avda. Quitapesares, 17</p>
 				<p class="txtFooterLocation2">Edificio Ferbocar 1º izq</p>
 				<p class="txtFooterLocation3">28670 Villaviciosa de Odón, Madrid, España</p>
-				<a href="" class="btnSecondaryWhite"><span>VER MAPA</span></a>
+				<a href="{{ .Site.BaseURL }}contact" class="btnSecondaryWhite"><span>VER MAPA</span></a>
 				<div class="footerSocialIcons">
-          {{ with .Site.Params.social.linkedin }}
-			    <a href="http://twitter.com/{{ . }}" class="txtFooterIcons"><span class="icon-linkedin"></span></a>
+          {{ with .Site.Params.social.github }}
+    			  <a href="https://github.com/{{ . }}" class="txtFooterIcons"><span class="icon-github"></span></a>
           {{ end }}
           {{ with .Site.Params.social.twitter }}
-					<a href="http://twitter.com/{{ . }}" class="txtFooterIcons"><span class="icon-twitter"></span></a>
+					  <a href="http://twitter.com/{{ . }}" class="txtFooterIcons"><span class="icon-twitter"></span></a>
           {{ end }}
           {{ with .Site.Params.social.vimeo }}
-					<a href="http://twitter.com/{{ . }}" class="txtFooterIcons"><span class="icon-vimeo"></span></a>
+					  <a href="https://vimeo.com/{{ . }}" class="txtFooterIcons"><span class="icon-vimeo"></span></a>
           {{ end }}
           {{ with .Site.Params.social.slideshare }}
-					<a href="http://twitter.com/{{ . }}" class="txtFooterIcons"><span class="icon-slideshare"></span></a>
+					  <a href="https://www.slideshare.net/{{ . }}" class="txtFooterIcons"><span class="icon-slideshare"></span></a>
           {{ end }}
-          {{ with .Site.Params.social.github }}
-					<a href="http://twitter.com/{{ . }}" class="txtFooterIcons"><span class="icon-github"></span></a>
+          {{ with .Site.Params.social.linkedin }}
+			      <a href="https://www.linkedin.com/company-beta/{{ . }}" class="txtFooterIcons"><span class="icon-linkedin"></span></a>
           {{ end }}
 				</div>
 			</div>

@@ -13,12 +13,13 @@
 		 		    <a href="#">Do you speak english?</a>
 				</div>
 
+        {{ $currentPage := .Page }}
 				{{ with .Site.Menus.main }}
 		 	  <div class="menuPrimary">
 		 		    <nav class="menu">
 		 			      <ul class="collapsible">
 								{{ range . }}
-								<li><a id="itemMenuPrimary-1" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+								    <li><a id="itemMenuPrimary-1" href="{{ .URL | absURL }}" class="{{ if $currentPage.HasMenuCurrent "main" . }}selected{{ end }}">{{ .Name | upper }}</a></li>
 								{{ end }}
 								</ul>
 						</nav>

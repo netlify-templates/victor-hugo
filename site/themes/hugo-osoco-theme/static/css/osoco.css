@@ -364,7 +364,7 @@ a.link:hover {
 }
 /* line 311, ../sass/_main.scss */
 .containerContent.noTopPadding {
-  padding-top: 0;
+  padding-top: 3em;
 }
 /* line 314, ../sass/_main.scss */
 .containerContent.noBottomPadding {
@@ -561,53 +561,46 @@ a.link:hover {
 /* line 472, ../sass/_main.scss */
 .txtManifiestoIntro {
   font-size: 2.25em;
+  font-family: 'gentium_book_basicitalic';
   color: #333030;
-  padding: 3em 0 2em;
+  padding: 0em 0 1em;
 }
 
 /* line 478, ../sass/_main.scss */
 .txtManifiestoTitle {
   font-weight: 200;
-  font-size: 1.8em;
   color: #837870;
-  padding: 2em 0 .5em 0;
+  padding: 0 0 .5em 0;
 }
-/* line 483, ../sass/_main.scss */
+/* line 482, ../sass/_main.scss */
 .txtManifiestoTitle ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  counter-reset: my-badass-counter;
+}
+/* line 486, ../sass/_main.scss */
+.txtManifiestoTitle ol li {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
 }
 /* line 488, ../sass/_main.scss */
-.txtManifiestoTitle ol li {
-  margin-bottom: 1em;
-}
-/* line 490, ../sass/_main.scss */
-.txtManifiestoTitle ol li:before {
-  font-size: .8em;
-  font-family: 'gentium_book_basicregular';
+.txtManifiestoTitle ol li span {
+  font-size: 3em;
+  font-family: 'gentium_book_basicitalic';
   display: block;
-  content: counter(my-badass-counter);
-  counter-increment: my-badass-counter;
-  background-color: #aeafaf;
-  width: 2em;
-  height: 2em;
-  line-height: 2em;
+  color: #333030;
   text-align: center;
-  margin: .5em auto;
-  border-radius: 50%;
-  color: #fff;
+  margin: .5em auto 0;
 }
 
-/* line 509, ../sass/_main.scss */
+/* line 499, ../sass/_main.scss */
 .txtManifiestoContent {
   color: #837870;
   text-align: left;
   line-height: 1.7em;
 }
 
-/* line 515, ../sass/_main.scss */
+/* line 505, ../sass/_main.scss */
 .divColCenter {
   width: calc(100% - 0.7em*2);
   max-width: 470px;
@@ -617,7 +610,7 @@ a.link:hover {
   vertical-align: top;
 }
 
-/* line 524, ../sass/_main.scss */
+/* line 514, ../sass/_main.scss */
 .divColCenterDouble {
   width: calc(100% - 0.7em*2);
   max-width: calc(940px + 2em);
@@ -627,14 +620,14 @@ a.link:hover {
   vertical-align: top;
 }
 
-/* line 533, ../sass/_main.scss */
+/* line 523, ../sass/_main.scss */
 .divColUnique {
   width: auto;
   max-width: 600px;
   margin: auto;
 }
 
-/* line 540, ../sass/_main.scss */
+/* line 530, ../sass/_main.scss */
 .divColCenter.half {
   width: 50%;
   max-width: 50%;
@@ -642,7 +635,7 @@ a.link:hover {
   /* overflow: hidden; */
   float: left;
 }
-/* line 547, ../sass/_main.scss */
+/* line 537, ../sass/_main.scss */
 .divColCenter.full {
   width: 100%;
   max-width: 100%;
@@ -651,14 +644,14 @@ a.link:hover {
   float: left;
 }
 
-/* line 556, ../sass/_main.scss */
+/* line 546, ../sass/_main.scss */
 .divColUnique.full {
   width: 100%;
   max-width: 100%;
   padding: 0;
 }
 
-/* line 562, ../sass/_main.scss */
+/* line 552, ../sass/_main.scss */
 .divColCenter.ful img, .divColUnique img {
   width: 100%;
 }
@@ -672,9 +665,10 @@ a.link:hover {
 	padding: 2em 0 2em 0;
 }
 */
-/* line 576, ../sass/_main.scss */
+/* line 566, ../sass/_main.scss */
 .txtQuoteBig {
   font-size: 1.8em;
+  line-height: 1.3em;
   color: #333030;
   padding: 0 0 2em 0;
   letter-spacing: 0.03em;
@@ -682,7 +676,7 @@ a.link:hover {
 }
 
 @media screen and (min-width: 989px) {
-  /* line 584, ../sass/_main.scss */
+  /* line 575, ../sass/_main.scss */
   .divColCenter .txtQuoteBig {
     text-align: right;
   }
@@ -697,7 +691,7 @@ a.link:hover {
 	padding: 2em 0 .5em 0;
 }
 */
-/* line 600, ../sass/_main.scss */
+/* line 591, ../sass/_main.scss */
 .txtQuoteSmall {
   font-size: 1.4em;
   font-style: italic;
@@ -706,7 +700,7 @@ a.link:hover {
   letter-spacing: 0.03em;
 }
 
-/* line 608, ../sass/_main.scss */
+/* line 599, ../sass/_main.scss */
 .txtContentTitle {
   font-size: 2.25em;
   font-weight: bold;
@@ -716,14 +710,14 @@ a.link:hover {
   text-align: center;
 }
 @media screen and (min-width: 989px) {
-  /* line 615, ../sass/_main.scss */
+  /* line 606, ../sass/_main.scss */
   #scrollThere-1 .txtContentTitle {
     margin-left: 50%;
     text-align: left;
   }
 }
 
-/* line 623, ../sass/_main.scss */
+/* line 614, ../sass/_main.scss */
 .txtContentBody {
   color: #837870;
   padding-bottom: 1em;
@@ -731,7 +725,7 @@ a.link:hover {
   line-height: 1.7em;
 }
 
-/* line 630, ../sass/_main.scss */
+/* line 621, ../sass/_main.scss */
 .txtContentBodyList, .divColCenter ul {
   list-style: none;
   color: #837870;
@@ -740,7 +734,7 @@ a.link:hover {
   line-height: 1.7em;
 }
 
-/* line 638, ../sass/_main.scss */
+/* line 629, ../sass/_main.scss */
 .divPersonaContainer {
   width: 50%;
   height: 50%;
@@ -754,7 +748,7 @@ a.link:hover {
   float: left;
 }
 
-/* line 651, ../sass/_main.scss */
+/* line 642, ../sass/_main.scss */
 .divPersonaPicture {
   float: left;
   position: relative;
@@ -764,10 +758,11 @@ a.link:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ff9900;
   /* you change this to "contain" if you don't want the images to be cropped */
 }
 
-/* line 663, ../sass/_main.scss */
+/* line 655, ../sass/_main.scss */
 .divPersonaText {
   width: 50%;
   height: 50%;
@@ -775,19 +770,23 @@ a.link:hover {
   display: inline-block;
 }
 
-/* line 670, ../sass/_main.scss */
-.One, .Two {
+/* line 662, ../sass/_main.scss */
+.divPersonaContainer > div {
   float: left;
   text-align: left;
 }
-
-/* line 675, ../sass/_main.scss */
-.Three, .Four {
+/* line 667, ../sass/_main.scss */
+.divPersonaContainer:nth-child(4n+4) > div {
+  float: right;
+  text-align: right;
+}
+/* line 673, ../sass/_main.scss */
+.divPersonaContainer:nth-child(4n+5) > div {
   float: right;
   text-align: right;
 }
 
-/* line 680, ../sass/_main.scss */
+/* line 689, ../sass/_main.scss */
 .txtPersonaName {
   font-size: 1.4em;
   line-height: 1.2em;
@@ -797,7 +796,7 @@ a.link:hover {
   padding: 45%  1.5rem 0  1.5rem;
 }
 
-/* line 689, ../sass/_main.scss */
+/* line 698, ../sass/_main.scss */
 .txtPersonaTitle {
   font-size: 1em;
   line-height: 1.5em;
@@ -807,7 +806,7 @@ a.link:hover {
   padding: 0 1.5rem 2rem;
 }
 
-/* line 698, ../sass/_main.scss */
+/* line 707, ../sass/_main.scss */
 .divPersonaText .btnSecondaryOrange {
   margin: 0 1em;
   vertical-align: bottom;
@@ -815,7 +814,7 @@ a.link:hover {
   text-align: center; */
 }
 
-/* line 705, ../sass/_main.scss */
+/* line 714, ../sass/_main.scss */
 .txtContactTitle {
   color: #333537;
   font-weight: 500;
@@ -823,7 +822,7 @@ a.link:hover {
   font-style: italic;
 }
 
-/* line 712, ../sass/_main.scss */
+/* line 721, ../sass/_main.scss */
 .txtContactEmail {
   font-size: 1.85em;
   color: #837870;
@@ -831,20 +830,20 @@ a.link:hover {
   line-height: 2.5em;
 }
 
-/* line 719, ../sass/_main.scss */
+/* line 728, ../sass/_main.scss */
 .txtContactLocation1 {
   font-size: 1.25em;
   color: #837870;
 }
 
-/* line 724, ../sass/_main.scss */
+/* line 733, ../sass/_main.scss */
 .txtContactLocation2 {
   font-size: 1.15em;
   color: #837870;
   line-height: 1.5em;
 }
 
-/* line 730, ../sass/_main.scss */
+/* line 739, ../sass/_main.scss */
 .txtContactLocation3 {
   font-size: 0.85em;
   color: #837870;
@@ -852,40 +851,40 @@ a.link:hover {
   margin-bottom: 2.5em;
 }
 
-/* line 737, ../sass/_main.scss */
+/* line 746, ../sass/_main.scss */
 .txtContactIcons {
   color: #837870;
   font-size: 2.2em;
   text-decoration: none;
   margin: 0em .05em;
 }
-/* line 742, ../sass/_main.scss */
+/* line 751, ../sass/_main.scss */
 .txtContactIcons:hover {
   color: #e1dfd9;
   text-decoration: none;
 }
 
-/* line 748, ../sass/_main.scss */
+/* line 757, ../sass/_main.scss */
 .divContactSocialIcons {
   padding: 1em 0;
   clear: both;
 }
 
-/* line 753, ../sass/_main.scss */
+/* line 762, ../sass/_main.scss */
 .divContactMap {
   clear: both;
   width: 100%;
   height: 100%;
   text-align: left;
 }
-/* line 758, ../sass/_main.scss */
+/* line 767, ../sass/_main.scss */
 .divContactMap iframe {
   clear: both;
   width: 470px;
   height: 350px;
 }
 
-/* line 765, ../sass/_main.scss */
+/* line 774, ../sass/_main.scss */
 .divColQuarter {
   width: calc(100% - 0.7em);
   max-width: 220px;
@@ -895,13 +894,13 @@ a.link:hover {
   vertical-align: top;
   float: left;
 }
-/* line 773, ../sass/_main.scss */
+/* line 782, ../sass/_main.scss */
 .divColQuarter.center {
   float: none;
   text-align: center;
 }
 
-/* line 779, ../sass/_main.scss */
+/* line 788, ../sass/_main.scss */
 .divTeamsContainer {
   width: 100%;
   height: 100%;
@@ -910,7 +909,7 @@ a.link:hover {
   position: relative;
 }
 
-/* line 787, ../sass/_main.scss */
+/* line 796, ../sass/_main.scss */
 .divTeamsSlide {
   width: 100%;
   min-height: 500px;
@@ -920,7 +919,7 @@ a.link:hover {
   float: left;
   background: white;
 }
-/* line 795, ../sass/_main.scss */
+/* line 804, ../sass/_main.scss */
 .divTeamsSlide.showup {
   display: inline-block;
   /*
@@ -937,7 +936,7 @@ a.link:hover {
   animation: fadein 2.3s;
 }
 
-/* line 812, ../sass/_main.scss */
+/* line 821, ../sass/_main.scss */
 .divTeamsCover {
   float: left;
   width: 16.66%;
@@ -946,13 +945,13 @@ a.link:hover {
   display: block;
 }
 
-/* line 820, ../sass/_main.scss */
+/* line 829, ../sass/_main.scss */
 .txtTeamsCoverLogo {
   font-size: 5em;
   color: #333030;
 }
 
-/* line 825, ../sass/_main.scss */
+/* line 834, ../sass/_main.scss */
 .txtTeamsCoverTitle {
   font-size: 1.4em;
   color: #333030;
@@ -960,33 +959,33 @@ a.link:hover {
   padding: .5em 0 2em 0;
 }
 
-/* line 832, ../sass/_main.scss */
+/* line 841, ../sass/_main.scss */
 .divTeamsIconBar {
   width: 80%;
   padding: 1em;
   border-top: 1px solid #E1DFD9;
   margin: 3em auto 0 auto;
 }
-/* line 837, ../sass/_main.scss */
+/* line 846, ../sass/_main.scss */
 .divTeamsIconBar .txtTeamsCoverLogo {
   font-size: 3em;
   color: #333030;
   text-decoration: none;
   margin: .5em;
 }
-/* line 842, ../sass/_main.scss */
+/* line 851, ../sass/_main.scss */
 .divTeamsIconBar .txtTeamsCoverLogo.active {
   color: #837870;
 }
 
-/* line 848, ../sass/_main.scss */
+/* line 857, ../sass/_main.scss */
 .txtTeamsMainLogo {
   font-size: 5em;
   text-align: center;
   color: #333030;
 }
 
-/* line 854, ../sass/_main.scss */
+/* line 863, ../sass/_main.scss */
 .divBlogWrapper {
   /* padding-bottom: 3em;
   display: inline-block; */
@@ -994,7 +993,7 @@ a.link:hover {
   /* max-height: 300px; */
 }
 
-/* line 861, ../sass/_main.scss */
+/* line 870, ../sass/_main.scss */
 .txtBlogIntro {
   font-size: 2em;
   color: #333030;
@@ -1002,7 +1001,7 @@ a.link:hover {
   padding: .7em;
 }
 
-/* line 868, ../sass/_main.scss */
+/* line 877, ../sass/_main.scss */
 .divBlogContainer {
   width: 33.33%;
   height: 33.33%;
@@ -1017,7 +1016,7 @@ a.link:hover {
   position: relative;
 }
 
-/* line 882, ../sass/_main.scss */
+/* line 891, ../sass/_main.scss */
 .divBlogPictureFiltro:before {
   background: rgba(223, 144, 46, 0.5);
   bottom: 0;
@@ -1030,7 +1029,7 @@ a.link:hover {
   border-right: 1px solid rgba(223, 144, 46, 0.5);
 }
 
-/* line 894, ../sass/_main.scss */
+/* line 903, ../sass/_main.scss */
 .divBlogPicture {
   position: relative;
   width: 100%;
@@ -1041,7 +1040,7 @@ a.link:hover {
   background-size: cover;
   /* you change this to "contain" if you don't want the images to be cropped */
 }
-/* line 895, ../sass/_main.scss */
+/* line 904, ../sass/_main.scss */
 .divBlogPicture:after {
   background: rgba(50, 50, 50, 0.7);
   /* (223,144,46,0.2);*/
@@ -1055,7 +1054,7 @@ a.link:hover {
   z-index: 0;
 }
 
-/* line 917, ../sass/_main.scss */
+/* line 926, ../sass/_main.scss */
 .divBlogText {
   width: 100%;
   /* height: 100%; */
@@ -1066,7 +1065,7 @@ a.link:hover {
   padding-top: 10%;
 }
 
-/* line 927, ../sass/_main.scss */
+/* line 936, ../sass/_main.scss */
 .txtBlogTitle {
   font-size: 1.4em;
   line-height: 1.2em;
@@ -1080,7 +1079,7 @@ a.link:hover {
   text-align: left;
 }
 
-/* line 940, ../sass/_main.scss */
+/* line 949, ../sass/_main.scss */
 .txtBlogAuthor, .txtBlogDate {
   font-size: 1em;
   line-height: 2em;
@@ -1088,14 +1087,14 @@ a.link:hover {
   text-decoration: none;
 }
 
-/* line 947, ../sass/_main.scss */
+/* line 956, ../sass/_main.scss */
 .txtBlogTags {
   font-size: 1em;
   line-height: 2em;
   color: #fff;
   text-decoration: none;
 }
-/* line 952, ../sass/_main.scss */
+/* line 961, ../sass/_main.scss */
 .txtBlogTags a {
   font-size: 1em;
   line-height: 2em;
@@ -1103,25 +1102,25 @@ a.link:hover {
   text-decoration: none;
 }
 
-/* line 960, ../sass/_main.scss */
+/* line 969, ../sass/_main.scss */
 .txtBlogAuthor, .txtBlogDate, .txtBlogTags {
   padding: .7em 1em .7em 1em;
   display: inline-block;
 }
 
-/* line 965, ../sass/_main.scss */
+/* line 974, ../sass/_main.scss */
 .txtBlogDate {
   width: 80%;
 }
 
-/* line 969, ../sass/_main.scss */
+/* line 978, ../sass/_main.scss */
 .txtBlogAuthor {
   font-size: .8em;
   width: 30%;
   float: left;
 }
 
-/* line 975, ../sass/_main.scss */
+/* line 984, ../sass/_main.scss */
 .txtBlogTags {
   font-size: .8em;
   width: 50%;
@@ -1129,7 +1128,7 @@ a.link:hover {
   text-align: right;
 }
 
-/* line 982, ../sass/_main.scss */
+/* line 991, ../sass/_main.scss */
 .divBlogAuthorContainer {
   width: 33.33%;
   height: 33.33%;
@@ -1144,7 +1143,7 @@ a.link:hover {
   text-align: left;
 }
 
-/* line 996, ../sass/_main.scss */
+/* line 1005, ../sass/_main.scss */
 .divBlogAuthorPicture {
   position: relative;
   width: 100%;
@@ -1154,7 +1153,7 @@ a.link:hover {
   background-size: cover;
 }
 
-/* line 1005, ../sass/_main.scss */
+/* line 1014, ../sass/_main.scss */
 .divBlogAuthorText {
   width: 100%;
   /* height: 100%; */
@@ -1165,7 +1164,7 @@ a.link:hover {
   padding-top: 50%;
 }
 
-/* line 1015, ../sass/_main.scss */
+/* line 1024, ../sass/_main.scss */
 .txtBlogAuthorName {
   font-size: 1.2em;
   line-height: 1.2em;
@@ -1175,42 +1174,42 @@ a.link:hover {
   padding: 0 .7em 0 .7em;
 }
 
-/* line 1024, ../sass/_main.scss */
+/* line 1033, ../sass/_main.scss */
 .txtBlogFilterList {
   list-style: none;
 }
-/* line 1026, ../sass/_main.scss */
+/* line 1035, ../sass/_main.scss */
 .txtBlogFilterList li {
   padding: .5em 0;
   color: #a69d95;
 }
-/* line 1029, ../sass/_main.scss */
+/* line 1038, ../sass/_main.scss */
 .txtBlogFilterList li a {
   padding: .5em 0;
   text-align: center;
   text-decoration: none;
   color: #333030;
 }
-/* line 1034, ../sass/_main.scss */
+/* line 1043, ../sass/_main.scss */
 .txtBlogFilterList li a:hover {
   color: #837870;
   text-decoration: underline;
 }
 
-/* line 1042, ../sass/_main.scss */
+/* line 1051, ../sass/_main.scss */
 .txtBlogFilterTitle, .txtBlogFilterTitle2 {
   font-size: 1.4em;
   padding: 1em 0;
   text-align: left;
 }
 
-/* line 1048, ../sass/_main.scss */
+/* line 1057, ../sass/_main.scss */
 .divBlogFilteredLabel {
   padding: 1em;
   background: #e1dfd9;
 }
 
-/* line 1053, ../sass/_main.scss */
+/* line 1062, ../sass/_main.scss */
 .txtPostSummaryHeader, .txtPostSummaryText, .txtPostSummaryAuthor, .txtPostSummaryDate, .txtPostSummaryTagMain, .txtPostSummaryTag {
   text-align: center;
   padding: 1em 1em 0 1em;
@@ -1218,71 +1217,71 @@ a.link:hover {
   font-size: 1em;
 }
 
-/* line 1060, ../sass/_main.scss */
+/* line 1069, ../sass/_main.scss */
 .txtPostSummaryAuthor a, .txtPostSummaryDate a, .txtPostSummaryTagMain a, .txtPostSummaryTag a {
   color: #333030;
 }
 
-/* line 1064, ../sass/_main.scss */
+/* line 1073, ../sass/_main.scss */
 .txtPostSummaryAuthor a:hover, .txtPostSummaryDate a:hover, .txtPostSummaryTagMain a:hover, .txtPostSummaryTag a:hover {
   color: #837870;
   text-decoration: underline;
 }
 
-/* line 1069, ../sass/_main.scss */
+/* line 1078, ../sass/_main.scss */
 .txtPostSummaryHeader {
   font-size: 1.4em;
   font-weight: 700;
 }
 
-/* line 1074, ../sass/_main.scss */
+/* line 1083, ../sass/_main.scss */
 .txtPostSummaryText {
   text-align: left;
   padding-bottom: 1em;
 }
-/* line 1077, ../sass/_main.scss */
+/* line 1086, ../sass/_main.scss */
 .txtPostSummaryText.center {
   text-align: center;
 }
 
-/* line 1082, ../sass/_main.scss */
+/* line 1091, ../sass/_main.scss */
 .txtPostSummaryAuthor {
   font-size: 1.4em;
   font-weight: 600;
 }
 
-/* line 1087, ../sass/_main.scss */
+/* line 1096, ../sass/_main.scss */
 .txtPostSummaryDate {
   font-size: 1.4em;
   font-weight: 700;
   font-style: italic;
 }
 
-/* line 1093, ../sass/_main.scss */
+/* line 1102, ../sass/_main.scss */
 .txtPostSummaryTagMain {
   font-weight: 600;
 }
 
-/* line 1097, ../sass/_main.scss */
+/* line 1106, ../sass/_main.scss */
 .txtPostSummaryTag {
   font-size: 1.4em;
 }
 
-/* line 1101, ../sass/_main.scss */
+/* line 1110, ../sass/_main.scss */
 .imgPostSummaryAuthor {
   width: 200px;
   height: auto;
   margin: 4em auto 0em auto;
 }
 
-/* line 1107, ../sass/_main.scss */
+/* line 1116, ../sass/_main.scss */
 .divPostNavigationButtons {
   width: 90%;
   padding: 3em 5%;
   text-align: center;
 }
 
-/* line 1113, ../sass/_main.scss */
+/* line 1122, ../sass/_main.scss */
 .divPortfolioWrapper {
   /* padding-bottom: 3em;
   display: inline-block; */
@@ -1290,7 +1289,7 @@ a.link:hover {
   /* max-height: 300px; */
 }
 
-/* line 1120, ../sass/_main.scss */
+/* line 1129, ../sass/_main.scss */
 .divPortfolioContainer {
   width: 100%;
   height: 100%;
@@ -1305,7 +1304,7 @@ a.link:hover {
   position: relative;
 }
 
-/* line 1134, ../sass/_main.scss */
+/* line 1143, ../sass/_main.scss */
 .divPortfolioContainerHalf {
   width: 100%;
   height: 50%;
@@ -1318,10 +1317,10 @@ a.link:hover {
   position: relative;
 }
 
-/* line 1146, ../sass/_main.scss */
+/* line 1155, ../sass/_main.scss */
 .divPortfolioContainerQuarter {
-  width: 50%;
-  height: 50%;
+  width: calc(50% - 1px);
+  height: calc(50% - 1px);
   padding-top: 50%;
   /* = width for a 1:1 aspect ratio */
   margin: 0 auto;
@@ -1331,8 +1330,17 @@ a.link:hover {
   float: left;
   position: relative;
 }
+/* line 1166, ../sass/_main.scss */
+.divPortfolioContainerQuarter:nth-child(2n+1) {
+  border-right: 1px solid #aeafaf;
+}
+/* line 1169, ../sass/_main.scss */
+.divPortfolioContainerQuarter:nth-child(3), .divPortfolioContainerQuarter:nth-child(4) {
+  border-top: 1px solid #aeafaf;
+  border-bottom: 1px solid transparent;
+}
 
-/* line 1159, ../sass/_main.scss */
+/* line 1175, ../sass/_main.scss */
 .divPortfolioPictureFiltro:before {
   background: rgba(223, 144, 46, 0.5);
   bottom: 0;
@@ -1355,7 +1363,7 @@ a.link:hover {
     top: 0;
     z-index: 0;
 } */
-/* line 1182, ../sass/_main.scss */
+/* line 1198, ../sass/_main.scss */
 .divPortfolioPicture {
   position: relative;
   width: 100%;
@@ -1367,7 +1375,7 @@ a.link:hover {
   /* you change this to "contain" if you don't want the images to be cropped */
 }
 
-/* line 1193, ../sass/_main.scss */
+/* line 1209, ../sass/_main.scss */
 .divPortfolioNoPictureHalf {
   position: relative;
   width: 100%;
@@ -1379,7 +1387,7 @@ a.link:hover {
   /* you change this to "contain" if you don't want the images to be cropped */
 }
 
-/* line 1204, ../sass/_main.scss */
+/* line 1220, ../sass/_main.scss */
 .divPortfolioNoPictureQuarter {
   position: relative;
   width: 100%;
@@ -1391,7 +1399,7 @@ a.link:hover {
   /* you change this to "contain" if you don't want the images to be cropped */
 }
 
-/* line 1215, ../sass/_main.scss */
+/* line 1231, ../sass/_main.scss */
 .divPortfolioText {
   width: 100%;
   /* height: 100%; */
@@ -1402,7 +1410,7 @@ a.link:hover {
   padding-top: 40%;
 }
 
-/* line 1225, ../sass/_main.scss */
+/* line 1241, ../sass/_main.scss */
 .divPortfolioTextHalf, .divPortfolioTextQuarter {
   width: 100%;
   /* height: 100%; */
@@ -1414,13 +1422,23 @@ a.link:hover {
   clear: both;
 }
 
-/* line 1236, ../sass/_main.scss */
+/* line 1251, ../sass/_main.scss */
+.logotipo {
+  height: 60px;
+}
+/* line 1253, ../sass/_main.scss */
+.logotipo img {
+  vertical-align: middle;
+}
+
+/* line 1257, ../sass/_main.scss */
 .divPortfolioTextHalf img, .divPortfolioTextQuarter img, img.imgLandingContentInvertedLogo {
   -webkit-filter: invert(50%);
   filter: invert(50%);
+  max-width: 80%;
 }
 
-/* line 1241, ../sass/_main.scss */
+/* line 1263, ../sass/_main.scss */
 .txtPortfolioTitle {
   font-size: 1.4em;
   line-height: 1.2em;
@@ -1434,25 +1452,34 @@ a.link:hover {
   text-align: center;
 }
 
-/* line 1254, ../sass/_main.scss */
+/* line 1276, ../sass/_main.scss */
 .txtPortfolioDescription {
   font-size: 1em;
   line-height: 1.4em;
   color: #fff;
   text-decoration: none;
-  padding: 4em;
+  padding: 2em;
   display: block;
-  font-size: .9em;
   text-align: center;
   min-height: 5em;
 }
-
-/* line 1266, ../sass/_main.scss */
-.divPortfolioTextHalf .txtPortfolioDescription, .divPortfolioTextQuarter .txtPortfolioDescription {
+/* line 1285, ../sass/_main.scss */
+.txtPortfolioDescription h2 {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: .5em;
+}
+/* line 1289, ../sass/_main.scss */
+.divPortfolioContainerQuarter .txtPortfolioDescription h2 {
   color: #333030;
 }
 
-/* line 1270, ../sass/_main.scss */
+/* line 1295, ../sass/_main.scss */
+.divPortfolioTextHalf .txtPortfolioDescription, .divPortfolioTextQuarter .txtPortfolioDescription {
+  color: #837870;
+}
+
+/* line 1299, ../sass/_main.scss */
 .divLandingContainer {
   width: auto;
   height: 100%;
@@ -1460,7 +1487,7 @@ a.link:hover {
   clear: both;
 }
 
-/* line 1277, ../sass/_main.scss */
+/* line 1306, ../sass/_main.scss */
 .divLandingOverlaid {
   display: block;
   float: left;
@@ -1469,7 +1496,7 @@ a.link:hover {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 1284, ../sass/_main.scss */
+/* line 1313, ../sass/_main.scss */
 .divLandingOverlaid img {
   width: auto;
   position: relative;
@@ -1481,7 +1508,7 @@ a.link:hover {
   transform: translateX(-50%);
 }
 
-/* line 1296, ../sass/_main.scss */
+/* line 1325, ../sass/_main.scss */
 .divLandingOverlaidText {
   width: 50%;
   /* height: 100%; */
@@ -1489,24 +1516,24 @@ a.link:hover {
   position: absolute;
   text-align: center;
   top: 0;
-  padding-top: 3em;
+  padding-top: 8em;
   left: 25%;
 }
-/* line 1305, ../sass/_main.scss */
+/* line 1334, ../sass/_main.scss */
 .divLandingOverlaidText.MainHeader {
   width: 50%;
   top: 40%;
   padding-top: 0;
 }
 
-/* line 1312, ../sass/_main.scss */
+/* line 1341, ../sass/_main.scss */
 .txtLandingBigQuote {
   font-size: 1.8em;
   color: #333030;
   letter-spacing: 0.03em;
 }
 
-/* line 1318, ../sass/_main.scss */
+/* line 1347, ../sass/_main.scss */
 .txtLandingHugeQuote {
   font-size: 3.8em;
   color: white;
@@ -1514,7 +1541,7 @@ a.link:hover {
   margin: auto;
 }
 
-/* line 1325, ../sass/_main.scss */
+/* line 1354, ../sass/_main.scss */
 .txtLandingBigQuoteSignature {
   font-size: 1em;
   color: #837870;
@@ -1522,7 +1549,7 @@ a.link:hover {
   line-height: 1.7em;
 }
 
-/* line 1332, ../sass/_main.scss */
+/* line 1361, ../sass/_main.scss */
 .txtLandingOverlaidTextTitle {
   font-size: 3.8em;
   color: white;
@@ -1531,7 +1558,7 @@ a.link:hover {
   line-height: 1em;
 }
 
-/* line 1340, ../sass/_main.scss */
+/* line 1369, ../sass/_main.scss */
 .txtLandingOverlaidTextHighlight {
   font-size: 2.3em;
   color: white;
@@ -1540,7 +1567,7 @@ a.link:hover {
   line-height: 1em;
 }
 
-/* line 1348, ../sass/_main.scss */
+/* line 1377, ../sass/_main.scss */
 .txtLandingOverlaidTextBody {
   color: white;
   margin: 1em 0;
@@ -1548,7 +1575,7 @@ a.link:hover {
   letter-spacing: 0.07em;
 }
 
-/* line 1355, ../sass/_main.scss */
+/* line 1384, ../sass/_main.scss */
 .txtLandingOverlaidTextTags {
   color: #E1DFD9;
   margin: 1em 0 2em 0;
@@ -1556,7 +1583,7 @@ a.link:hover {
   font-size: .8em;
 }
 
-/* line 1362, ../sass/_main.scss */
+/* line 1391, ../sass/_main.scss */
 .divLandingListBlock {
   margin: auto;
   text-align: center;
@@ -1565,17 +1592,17 @@ a.link:hover {
   padding-bottom: 3em;
   border-bottom: 1px dotted #aeafaf;
 }
-/* line 1369, ../sass/_main.scss */
+/* line 1398, ../sass/_main.scss */
 .divLandingListBlock.last {
   border-bottom: none;
 }
 
-/* line 1374, ../sass/_main.scss */
+/* line 1403, ../sass/_main.scss */
 .divColCenter .divLandingListBlock {
   border-bottom: none;
 }
 
-/* line 1378, ../sass/_main.scss */
+/* line 1407, ../sass/_main.scss */
 .txtLandingListBlockTitle {
   font-size: 2.5em;
   letter-spacing: 0.03em;
@@ -1584,14 +1611,14 @@ a.link:hover {
   min-height: 2em;
 }
 
-/* line 1386, ../sass/_main.scss */
+/* line 1415, ../sass/_main.scss */
 .txtLandingListBlockBody {
   margin: 1em 0;
   text-align: left;
   min-height: 5em;
 }
 
-/* line 1392, ../sass/_main.scss */
+/* line 1421, ../sass/_main.scss */
 .txtLandingListBlockTags {
   color: #aeafaf;
   margin: 1em 0 2em 0;
@@ -1599,13 +1626,13 @@ a.link:hover {
   font-size: .8em;
 }
 
-/* line 1399, ../sass/_main.scss */
+/* line 1428, ../sass/_main.scss */
 .imgLandingOverlaidTextLogo, .imgLandingContentInvertedLogo {
   width: auto !IMPORTANT;
   padding-bottom: 1em;
 }
 
-/* line 1404, ../sass/_main.scss */
+/* line 1433, ../sass/_main.scss */
 .txtLandingMainHeaderQuote {
   text-align: center;
   font-weight: 500;
@@ -1866,6 +1893,20 @@ html {
   height: 100%;
   top: 0;
   left: 0;
+}
+/* line 199, ../sass/_menu.scss */
+.home .headerVideo:before {
+  background: rgba(0, 0, 0, 0.5);
+  /* (223,144,46,0.2);*/
+  /* 136,148,160 */
+  bottom: 0;
+  bottom: 100px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
 }
 /* line 213, ../sass/_menu.scss */
 .headerVideo.noFilter:before {
@@ -2588,52 +2629,57 @@ html {
 /* Maximo HASTA Tablet */
 @media screen and (max-width: 767px) {
   /* line 344, ../sass/_mobile.scss */
+  .divColCenter.bigBox {
+    font-size: 12px;
+  }
+
+  /* line 347, ../sass/_mobile.scss */
   .hideOnMobile {
     display: none;
   }
 
-  /* line 347, ../sass/_mobile.scss */
+  /* line 350, ../sass/_mobile.scss */
   .showOnMobile {
     display: inline-block;
   }
 
-  /* line 350, ../sass/_mobile.scss */
+  /* line 353, ../sass/_mobile.scss */
   .logo {
     height: 42px;
   }
-  /* line 352, ../sass/_mobile.scss */
+  /* line 355, ../sass/_mobile.scss */
   .logo img {
     height: 42px;
   }
 
-  /* line 356, ../sass/_mobile.scss */
+  /* line 359, ../sass/_mobile.scss */
   .linkIdiomaInterior, .linkClose {
     top: 0.7em;
   }
 
-  /* line 359, ../sass/_mobile.scss */
+  /* line 362, ../sass/_mobile.scss */
   .txtCntCabecera {
     font-size: 2.4em;
     top: 3em;
   }
 
-  /* line 363, ../sass/_mobile.scss */
+  /* line 366, ../sass/_mobile.scss */
   .cntCabeceraPost {
     bottom: 1em !IMPORTANT;
   }
 
-  /* line 366, ../sass/_mobile.scss */
+  /* line 369, ../sass/_mobile.scss */
   .btnPrimary {
     font-size: 1em;
   }
 
-  /* line 369, ../sass/_mobile.scss */
+  /* line 372, ../sass/_mobile.scss */
   .btnBlog {
     font-size: .7em;
     width: 35%;
   }
 
-  /* line 373, ../sass/_mobile.scss */
+  /* line 376, ../sass/_mobile.scss */
   .cntCabeceraHome {
     width: 100%;
     z-index: 5;
@@ -2642,13 +2688,13 @@ html {
     left: 0;
     top: 5em;
   }
-  /* line 380, ../sass/_mobile.scss */
+  /* line 383, ../sass/_mobile.scss */
   .cntCabeceraHome img {
     width: 10em;
     padding-bottom: 2.4em;
   }
 
-  /* line 385, ../sass/_mobile.scss */
+  /* line 388, ../sass/_mobile.scss */
   .txtCabeceraHomeCita {
     font-size: 1.5em;
     letter-spacing: 0.05em;
@@ -2656,28 +2702,28 @@ html {
     padding-bottom: 1.5em;
   }
 
-  /* line 391, ../sass/_mobile.scss */
+  /* line 394, ../sass/_mobile.scss */
   .txtContentTitle {
     padding: 0 0 .5em 0;
   }
 
-  /* line 394, ../sass/_mobile.scss */
+  /* line 397, ../sass/_mobile.scss */
   .divTeamsIconBar {
     width: 100%;
     padding: 1em 0;
   }
-  /* line 397, ../sass/_mobile.scss */
+  /* line 400, ../sass/_mobile.scss */
   .divTeamsIconBar .txtTeamsCoverLogo {
     font-size: 2em;
     margin: .2em;
   }
 
-  /* line 402, ../sass/_mobile.scss */
+  /* line 405, ../sass/_mobile.scss */
   .divTeamsCover .btnSecondaryOrange {
     display: none;
   }
 
-  /* line 405, ../sass/_mobile.scss */
+  /* line 408, ../sass/_mobile.scss */
   .divBlogContainer {
     width: 100%;
     height: 100%;
@@ -2692,44 +2738,46 @@ html {
     position: relative;
   }
 
-  /* line 418, ../sass/_mobile.scss */
+  /* line 421, ../sass/_mobile.scss */
   .divBlogPicture:after {
     border-bottom: 2px solid #E1DFD9;
     border-right: none;
   }
 
-  /* line 422, ../sass/_mobile.scss */
+  /* line 425, ../sass/_mobile.scss */
   .txtBlogTitle {
     font-size: 2.2em;
   }
 
-  /* line 425, ../sass/_mobile.scss */
+  /* line 428, ../sass/_mobile.scss */
   .divBlogAuthorContainer {
     width: 50%;
     height: 50%;
   }
 
-  /* line 429, ../sass/_mobile.scss */
+  /* line 432, ../sass/_mobile.scss */
   .divPortfolioText {
     padding-top: 30%;
   }
-  /* line 431, ../sass/_mobile.scss */
+  /* line 434, ../sass/_mobile.scss */
   .divPortfolioText .btnSecondaryWhite {
     display: none;
   }
 
-  /* line 435, ../sass/_mobile.scss */
+  /* line 438, ../sass/_mobile.scss */
   .divPortfolioContainerQuarter {
     width: 100%;
+    border-bottom: 1px solid #aeafaf !important;
+    border-right-color: transparent;
   }
 
-  /* line 438, ../sass/_mobile.scss */
+  /* line 443, ../sass/_mobile.scss */
   .divPortfolioNoPictureQuarter {
     padding-bottom: 50%;
     /* = width for a 1:1 aspect ratio */
   }
 
-  /* line 442, ../sass/_mobile.scss */
+  /* line 447, ../sass/_mobile.scss */
   .divLandingOverlaidText {
     width: 90%;
     padding: 5%;
@@ -2737,7 +2785,7 @@ html {
     left: 0%;
   }
 
-  /* line 448, ../sass/_mobile.scss */
+  /* line 453, ../sass/_mobile.scss */
   .txtLandingOverlaidTextTitle {
     font-size: 2.5em;
     color: white;
@@ -2746,7 +2794,7 @@ html {
     line-height: 1em;
   }
 
-  /* line 455, ../sass/_mobile.scss */
+  /* line 460, ../sass/_mobile.scss */
   .divPortfolioPicture:after {
     /* CAPA TRANSPARENTE QUE FUNCIONA DE ENLACE */
     background: rgba(255, 255, 255, 0);
@@ -2760,26 +2808,86 @@ html {
     cursor: pointer;
   }
 
-  /* line 467, ../sass/_mobile.scss */
+  /* line 472, ../sass/_mobile.scss */
   .divLandingOverlaidText.MainHeader {
     width: 80%;
     top: 20%;
   }
 
-  /* line 471, ../sass/_mobile.scss */
+  /* line 476, ../sass/_mobile.scss */
   .txtLandingMainHeaderQuote {
     line-height: 1.3em;
     font-size: 1.3em;
   }
+
+  /* line 480, ../sass/_mobile.scss */
+  .divPersonaContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 484, ../sass/_mobile.scss */
+  .divPersonaPicture {
+    width: 100%;
+    padding-bottom: 100%;
+    /* = width for a 1:1 aspect ratio */
+  }
+
+  /* line 489, ../sass/_mobile.scss */
+  .One, .Two, .Three, .Four {
+    text-align: center;
+  }
+
+  /* line 492, ../sass/_mobile.scss */
+  .txtPersonaName {
+    padding: 1em .7em 0 .7em;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  /* line 498, ../sass/_mobile.scss */
+  .txtPersonaTitle {
+    padding: 3em .7em 0 .7em;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  /* line 504, ../sass/_mobile.scss */
+  .divPersonaText {
+    height: 120px !important;
+  }
+
+  /* line 507, ../sass/_mobile.scss */
+  .divPersonaText .btnSecondaryOrange {
+    margin: 7em 1em 0 1em;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  /* line 513, ../sass/_mobile.scss */
+  .divTeamsCover {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 5em;
+    cursor: pointer;
+  }
+
+  /* line 519, ../sass/_mobile.scss */
+  .divPortfolioText {
+    padding-top: 20%;
+  }
 }
 /* Todo debajo de smartphone landscape o portrait */
 @media screen and (max-width: 480px) {
-  /* line 479, ../sass/_mobile.scss */
+  /* line 526, ../sass/_mobile.scss */
   .divPortfolioTextHalf p, .divPortfolioTextQuarter p {
     display: none;
   }
 
-  /* line 483, ../sass/_mobile.scss */
+  /* line 530, ../sass/_mobile.scss */
   .divPersonaContainer > div {
     height: 100%;
     width: 100%;
@@ -2789,12 +2897,12 @@ html {
 }
 /* Maximo HASTA smartphone en horizontal */
 @media screen and (max-height: 320px) {
-  /* line 497, ../sass/_mobile.scss */
+  /* line 544, ../sass/_mobile.scss */
   .cntCabeceraHome {
     top: 10%;
   }
 
-  /* line 500, ../sass/_mobile.scss */
+  /* line 547, ../sass/_mobile.scss */
   .txtCabeceraHomeCita {
     font-size: 1.5em;
     letter-spacing: 0.05em;
@@ -2806,7 +2914,7 @@ html {
     padding-bottom: 1em;
   }
 
-  /* line 510, ../sass/_mobile.scss */
+  /* line 557, ../sass/_mobile.scss */
   .cntCabeceraHome img {
     width: 7em;
     padding-bottom: 1.4em;
@@ -2814,12 +2922,12 @@ html {
 }
 /* Maximo HASTA smartphone en vertical */
 @media screen and (max-width: 320px) {
-  /* line 518, ../sass/_mobile.scss */
+  /* line 565, ../sass/_mobile.scss */
   .cntCabeceraHome {
     top: 10%;
   }
 
-  /* line 521, ../sass/_mobile.scss */
+  /* line 568, ../sass/_mobile.scss */
   .txtQuoteBig {
     font-size: 1em;
     font-weight: bold;
@@ -2828,67 +2936,12 @@ html {
     padding: 1em 0 5em 0;
   }
 
-  /* line 528, ../sass/_mobile.scss */
+  /* line 575, ../sass/_mobile.scss */
   .txtCabeceraHomeCita {
     font-size: 1em;
     letter-spacing: 0.05em;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-  }
-
-  /* line 534, ../sass/_mobile.scss */
-  .divPersonaContainer {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* line 538, ../sass/_mobile.scss */
-  .divPersonaPicture, .divPersonaText {
-    width: 100%;
-    padding-bottom: 100%;
-    /* = width for a 1:1 aspect ratio */
-  }
-
-  /* line 543, ../sass/_mobile.scss */
-  .One, .Two, .Three, .Four {
-    text-align: center;
-  }
-
-  /* line 546, ../sass/_mobile.scss */
-  .txtPersonaName {
-    padding: 1em .7em 0 .7em;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-
-  /* line 552, ../sass/_mobile.scss */
-  .txtPersonaTitle {
-    padding: 3em .7em 0 .7em;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-
-  /* line 558, ../sass/_mobile.scss */
-  .divPersonaText .btnSecondaryOrange {
-    margin: 7em 1em 0 1em;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-
-  /* line 564, ../sass/_mobile.scss */
-  .divTeamsCover {
-    width: 50%;
-    height: 100%;
-    margin-bottom: 5em;
-    cursor: pointer;
-  }
-
-  /* line 570, ../sass/_mobile.scss */
-  .divPortfolioText {
-    padding-top: 20%;
   }
 }
 /* line 1, ../sass/_scroll-up.scss */
@@ -2955,7 +3008,7 @@ html {
 @media only screen and (max-width: 768px) {
   /* line 59, ../sass/_scroll-up.scss */
   .btnUp-top {
-    /* 
+    /*
     right: 20px;
     bottom: 20px;
     */
@@ -3389,4 +3442,8 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+/* line 51, ../sass/_page-portada.scss */
+.services .servicesColumns > div ul li {
+  margin-bottom: .5em;
 }

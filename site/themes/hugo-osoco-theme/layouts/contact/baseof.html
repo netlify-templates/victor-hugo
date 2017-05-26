@@ -1,0 +1,20 @@
+{{ partial "head" . }}
+<body>
+		{{ partial "header" . }}
+
+		{{ "<!-- Main -->" | safeHTML }}
+		<div class="body-panel">
+				<main>
+						{{ block "main" . }}{{ end }}
+
+						<a href="#0" class="btnUp-top">Top</a>
+				</main>
+
+				{{ partial "mini-footer" . }}
+		</div>
+
+		{{ partial "end" . }}
+		{{ partial "contact-scripts" . }}
+
+</body>
+</html>

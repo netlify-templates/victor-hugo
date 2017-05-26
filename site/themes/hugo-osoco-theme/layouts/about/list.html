@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+	{{ partial "banner" . }}
+
+	<section>
+		<article class="containerContent backgroundGrey1 TopPadding">
+			<header id="scrollThere-2" class="waypoint" data-id-trigger="itemMenuSecondary-2">
+				<h2 class="txtManifiestoIntro">"El talento es valioso,<br>pero las personas aún más"</h2>
+			</header>
+
+			{{ range where .Site.Pages "Section" "about" }}
+ 			{{ range .Data.Pages.ByParam "enrollDate" }}
+			{{ .Render "summary" }}
+			{{ end }}
+			{{ end }}
+
+			<div class="divLandingContainer">
+
+					<div class="divColUnique full">
+							<div class="divLandingOverlaid">
+									<img src="{{ .Site.BaseURL }}images/banner-jobs-warm-grey-2.jpg">
+							</div>
+							<div class="divLandingOverlaidText">
+									<h4 class="txtLandingOverlaidTextTitle">¿Quieres trabajar en OSOCO?</h4>
+									<p class="txtLandingOverlaidTextBody">Estamos buscando gente apasionada por su trabajo para unirse a nuestro equipo. ¿Te apuntas?</p>
+									<p class="txtLandingOverlaidTextTags"></p>
+									<p class="txtLandingOverlaidTextBody" style="text-align:center;">Envíanos tu CV por email a</p>
+									<div class="txtLandingOverlaidTextHighlight"><a href="mailto:jobs@osoco.es">jobs@osoco.es</a></div>
+							</div>
+					</div>
+			</div>
+
+		</article>
+	</section>
+
+{{ end }}

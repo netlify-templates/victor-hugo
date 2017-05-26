@@ -1,9 +1,18 @@
 <section>
+
 		{{ if .IsHome }}
-		<div class="headerVideo" id="headerVideo" data-vide-bg="{{ .Site.BaseURL }}pelicula-demo-osoco"></div>
+  		{{ with index .Site.Params.banner "home" }}
+	  	<div class="headerVideo" id="headerVideo" data-vide-bg="{{ .background }}"></div>
+			{{ end }}
+		{{ else }}
+			{{ with index .Site.Params.banner .Section }}
+  		<div class="headerVideo" id="headerVideo" data-vide-bg="{{ .background }}"></div>
+	  	{{ end }}
 		{{ end }}
 
 		<div class="cntCabeceraHome">
+
+				{{ if .IsHome }}
 				<a href="/">
 						<img srcset="{{ .Site.BaseURL }}images/responsive/logo-big-osoco-300x136.png 1x,
 												 {{ .Site.BaseURL }}images/responsive/logo-big-osoco-450x209.png 1.5x,
@@ -12,9 +21,16 @@
 								 src="{{ .Site.BaseURL }}images/logo-big-osoco.png"
 								 alt="Logo OSOCO" />
 				</a>
+				{{ end }}
 
-				{{ with .Site.Params.banner.home }}
-				<h1 class="txtCabeceraHomeCita">{{ .claim }}</h1>
+				{{ if .IsHome }}
+  				{{ with index .Site.Params.banner "home" }}
+	  			<h1 class="txtCabeceraHomeCita">{{ .claim | markdownify }}</h1>
+		  		{{ end }}
+				{{ else }}
+			  	{{ with index .Site.Params.banner .Section }}
+					<h1 class="txtCntCabecera">{{ .claim | markdownify }}</h1>
+  				{{ end }}
 				{{ end }}
 
 				{{ if .IsHome }}

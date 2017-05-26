@@ -1,0 +1,22 @@
+<script>
+ function initMap() {
+		 var uluru = {lat: 40.350280, lng: -3.900135};
+		 var map = new google.maps.Map(document.getElementById('map'), {
+				 zoom: 16,
+				 center: uluru,
+				 disableDefaultUI: false,
+				 mapTypeControl: false,
+				 scrollwheel: false
+		 });
+		 var image = "{{ .Site.BaseURL }}images/OSOCO_globo.png";
+		 var beachMarker = new google.maps.Marker({
+				 position: {lat: 40.350280, lng: -3.900135},
+				 map: map,
+				 icon: image
+		 });
+ }
+</script>
+
+<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApy8nCNPB5RUjvfWnetKC2r6Xg3N3bn0o&callback=initMap">
+</script>
