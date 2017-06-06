@@ -21,7 +21,6 @@ gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
     .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
-    .on("error", swallowError)
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
@@ -63,9 +62,4 @@ function buildSite(cb, options) {
       cb("Hugo build failed");
     }
   });
-}
-
-function swallowError(error) {
-  console.error(error.toString());
-  this.emit("end");
 }
