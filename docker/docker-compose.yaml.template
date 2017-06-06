@@ -1,0 +1,15 @@
+---
+version: '3'
+services:
+  app:
+    labels: 
+      app: "app"
+    build:
+      context: .
+    command: npm start
+    volumes:
+      - .:/home/web/app
+      - /home/web/app/node_modules
+    ports:
+      - "3000:3000"
+      - "3001:3001"
