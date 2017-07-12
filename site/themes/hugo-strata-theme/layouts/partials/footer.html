@@ -1,0 +1,55 @@
+{{ "<!-- Footer -->" | safeHTML }}
+<footer id="footer">
+	<ul class="icons">
+		{{ with .Site.Params.sidebar.googleplus }}
+		<li><a href="//plus.google.com/+{{ . }}" target="_blank" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.facebook }}
+        <li><a href="//facebook.com/{{ . }}" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        {{ end }}
+		{{ with .Site.Params.sidebar.twitter }}
+		<li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.github }}
+		<li><a href="//github.com/{{ . }}" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.gitlab }}
+		<li><a href="//gitlab.com/{{ . }}" target="_blank" class="icon fa-gitlab"><span class="label">GitLab</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.linkedin }}
+		<li><a href="{{ . }}" target="_blank" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.dribbble }}
+		<li><a href="//dribbble.com/{{ . }}" target="_blank" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.flickr }}
+		<li><a href="//flickr.com/photos/{{ . }}" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.contact.email }}
+		<li><a href="{{ $.Site.BaseURL }}#contact-form" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+		{{ end }}
+		{{ if not .Site.Params.rss.hide }}
+		<li><a href="{{ if $.RSSLink }}{{ $.RSSLink }}{{ else }}{{ $.Site.RSSLink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
+		{{ end }}
+	</ul>
+
+	<ul class="copyright">
+		{{ range .Site.Params.sidebar.copyright }}
+		<li>{{ . | markdownify }}</li>
+		{{ end }}
+	</ul>
+</footer>
+
+{{ "<!-- Scripts -->" | safeHTML }}
+<script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.poptrox.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/skel.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/util.js"></script>
+<!--[if lte IE 8]><script src="{{ .Site.BaseURL }}js/ie/respond.min.js"></script><![endif]-->
+<script src="{{ .Site.BaseURL }}js/main.js"></script>
+
+{{ template "_internal/google_analytics_async.html" . }}
+
+{{ range .Site.Params.custom_js }}
+<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}

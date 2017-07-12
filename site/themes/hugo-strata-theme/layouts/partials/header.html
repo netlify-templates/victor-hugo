@@ -1,0 +1,17 @@
+{{ "<!-- Header -->" | safeHTML }}
+<header id="header">
+	<a href="{{ .Site.BaseURL }}" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="" /></a>
+	{{ with .Site.Params.sidebar.bio }}
+		<h1>{{ . | markdownify }}</h1>
+	{{ end }}
+
+	{{ with .Site.Menus.main }}
+		<nav id="sidebar">
+			<ul>
+			{{ range . }}
+				<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+			{{ end }}
+			</ul>
+		</nav>
+	{{ end }}
+</header>

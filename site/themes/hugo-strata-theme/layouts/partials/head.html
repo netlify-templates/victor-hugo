@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+{{ "<!-- " | safeHTML }}
+{{ "Strata by HTML5 UP" | safeHTML }}
+{{ "html5up.net | @n33co" | safeHTML }}
+{{ "Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)" | safeHTML }}
+{{ "-->" | safeHTML }}
+<html>
+	<head>
+		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+		{{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+
+		{{ if not .Site.Params.OpenGraph.hide }}
+		<meta name="og:site_name" content="{{ .Site.Title }}">
+		<meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+		<meta name="og:url" content="{{ .Permalink }}">
+		<meta name="og:image" content="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}">
+		{{ end }}
+
+		{{ .Hugo.Generator }}
+
+		{{ "<!--[if lte IE 8]>" | safeHTML }}<script src='{{ .Site.BaseURL }}js/ie/html5shiv.js'></script>{{ "<![endif]-->" | safeHTML}}
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+		{{ "<!--[if lte IE 8]>" | safeHTML }}<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/ie8.css">{{ "<![endif]-->" | safeHTML}}
+
+		{{ with .RSSLink }}
+		<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+		<link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+		{{ end }}
+		{{ range .Site.Params.custom_css }}
+		<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+		{{ end }}
+	</head>

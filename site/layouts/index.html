@@ -1,5 +1,17 @@
-{{ partial "header" . }}
+{{ define "main" }}
+    {{ if not .Site.Params.about.hide }}
+        {{ partial "about" . }}
+    {{ end }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+    {{ if not .Site.Params.portfolio.hide }}
+        {{ partial "portfolio" . }}
+    {{ end }}
 
-{{ partial "footer" . }}
+    {{ if not .Site.Params.recentposts.hide }}
+        {{ partial "recent-posts" . }}
+    {{ end }}
+
+    {{ if not .Site.Params.contact.hide }}
+        {{ partial "contact" . }}
+    {{ end }}
+{{ end }}
