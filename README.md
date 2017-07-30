@@ -78,11 +78,6 @@ You can also click this button:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eliwilliamson/victor-hugo)
 
-### Picking the right version of Hugo
 
-Victor-Hugo doesn't make any assumption on which version of Hugo you use, this boilerplate works with any version above v0.13. However, the version
-installed on your computer might not be the same version that Netlify uses to build your site. To ensure that those two versions match, open the `netlify.toml`
-file and change the `HUGO_VERSION` variable to match the version you use in your computer. If you don't know which version you're using in your computer, you 
-can open a terminal and run `hugo version`, that will display the version in your computer.
 
 ## Enjoy!!
