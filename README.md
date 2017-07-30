@@ -11,15 +11,7 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ## Usage
 
-Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo on OSX, run:
-
-```bash
-brew install hugo
-```
-
-If you don't use OSX or don't use homebrew, follow the instructions for installation here instead:
-
-http://gohugo.io/overview/installing/
+Be sure that you have the latest node and npm installed.
 
 Next, clone this repository and run:
 
