@@ -1,5 +1,6 @@
 import gulp from "gulp";
-import cp from "child_process";
+import { spawn } from "child_process";
+import hugoBin from "hugo-bin"
 import gutil from "gulp-util";
 import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
@@ -9,7 +10,6 @@ import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
 const browserSync = BrowserSync.create();
-const hugoBin = "hugo";
 const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
@@ -53,7 +53,7 @@ gulp.task("server", ["hugo", "css", "js"], () => {
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
 
-  return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
+  return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
       browserSync.reload();
       cb();
