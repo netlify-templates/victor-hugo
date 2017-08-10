@@ -1,6 +1,6 @@
 import gulp from "gulp";
-import { spawn } from "child_process";
-import hugoBin from "hugo-bin"
+import {spawn} from "child_process";
+import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
 import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
