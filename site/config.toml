@@ -2,4 +2,10 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "My new Victor-Hugo site"
+
+# Remove the following line if you want to generate a RSS feed
 disableRSS = true
+
+# Categories and tags disabled for an easy start
+# Learn about taxonomies: https://gohugo.io/content-management/taxonomies/
+disableKinds = ["taxonomy","taxonomyTerm"]
