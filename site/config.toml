@@ -1,3 +1,4 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+languageLang = "en"
+title = "My new Victor-Hugo site"
