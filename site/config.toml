@@ -2,3 +2,4 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "My new Victor-Hugo site"
+disableRSS = true
