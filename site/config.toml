@@ -1,3 +1,9 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+languageLang = "en"
+title = "My new Victor-Hugo site"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
