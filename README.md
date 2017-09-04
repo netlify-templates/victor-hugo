@@ -70,15 +70,15 @@ to `/dist/css/{filename}.css`. Import statements will be resolved as part of the
 ## Environment variables
 
 Two seperate the development and production *- aka build -* stages, all gulp
-tasks run with a node environment variable named either `development` or 
+tasks run with a node environment variable named either `development` or
 `production`.
 
-You can access the environment variable inside the theme files with 
+You can access the environment variable inside the theme files with
 `getenv "NODE_ENV"`. See the following example for a conditional statement:
 
     {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
 
-All tasks starting with *build* set the environment variable to `production` - 
+All tasks starting with *build* set the environment variable to `production` -
 the other will set it to `development`.
 
 ## Deploying to netlify
@@ -90,7 +90,7 @@ Now netlify will build and deploy your site whenever you push to git.
 
 You can also click this button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eliwilliamson/victor-hugo)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
 
 
 
