@@ -69,8 +69,8 @@ to `/dist/css/{filename}.css`. Import statements will be resolved as part of the
 
 ## Environment variables
 
-Two seperate the development and production *- aka build -* stages, all gulp
-tasks run with a node environment variable named either `development` or
+
+To seperate the development and production *- aka build -* stages, all gulp tasks run with a node environment variable named either `development` or
 `production`.
 
 You can access the environment variable inside the theme files with
