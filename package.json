@@ -2,6 +2,7 @@
   "name": "victor-hugo",
   "version": "1.0.0",
   "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+  "repository": "netlify/victor-hugo",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -31,7 +32,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-postcss": "^6.1.1",
     "gulp-util": "^3.0.7",
-    "hugo-bin": "^0.12.0",
+    "hugo-bin": "^0.13.0",
     "imports-loader": "^0.7.1",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^10.0.0",
