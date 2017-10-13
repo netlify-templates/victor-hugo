@@ -6,6 +6,7 @@ import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
+import watch from "gulp-watch";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
@@ -53,9 +54,9 @@ gulp.task("server", ["hugo", "css", "js"], () => {
       baseDir: "./dist"
     }
   });
-  gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./site/**/*", ["hugo"]);
+  watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
+  watch("./src/css/**/*.css", () => { gulp.start(["css"]) });
+  watch("./site/**/*", () => { gulp.start(["hugo"]) });
 });
 
 /**
