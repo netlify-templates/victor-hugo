@@ -2,6 +2,7 @@ import gulp from "gulp";
 import {spawn} from "child_process";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
+import flatten from "gulp-flatten";
 import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
@@ -21,8 +22,8 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["css", "js"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
@@ -47,8 +48,16 @@ gulp.task("js", (cb) => {
   });
 });
 
+// Move all fonts in a flattened directory
+gulp.task('fonts', () => (
+  gulp.src("./src/fonts/**/*")
+    .pipe(flatten())
+    .pipe(gulp.dest("./dist/fonts"))
+    .pipe(browserSync.stream())
+));
+
 // Development server with browsersync
-gulp.task("server", ["hugo", "css", "js"], () => {
+gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -56,6 +65,7 @@ gulp.task("server", ["hugo", "css", "js"], () => {
   });
   watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
   watch("./src/css/**/*.css", () => { gulp.start(["css"]) });
+  watch("./src/fonts/**/*", () => { gulp.start(["fonts"]) });
   watch("./site/**/*", () => { gulp.start(["hugo"]) });
 });
 
