@@ -1,5 +1,5 @@
 <div class="divPersonaContainer">
-		<div class="divPersonaPicture" style="background-image:url({{ .Site.BaseURL }}images/personas/{{ .Params.Photo }});">
+		<div class="divPersonaPicture" style="background-image:url({{ .Site.BaseURL }}images/personas/{{ .Params.Name | urlize }}.jpg);">
 		</div>
 		<div class="divPersonaText">
 				<h5 class="txtPersonaName">{{ .Params.Name }}</h5>

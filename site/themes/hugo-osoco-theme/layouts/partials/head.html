@@ -14,7 +14,12 @@
 				<meta name="robots" content="noindex, nofollow" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 				<link rel="icon" href="{{ .Site.BaseURL }}images/icono-osoco-80x80.png" type="image/png" />
+
+				{{ if and (.IsPage) (eq .Section "thoughts") }}
+				<link rel="stylesheet" href="{{ .Site.BaseURL }}css/osoco-thoughts.css" />
+				{{ else }}
 				<link rel="stylesheet" href="{{ .Site.BaseURL }}css/osoco.css" />
+				{{ end }}
 
 				{{ with .RSSLink }}
 				<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />

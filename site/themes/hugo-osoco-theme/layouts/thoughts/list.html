@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+	{{ partial "banner" . }}
+
+<section>
+		<article class="containerContent backgroundWhite noPadding">
+
+				<div class="divBlogWrapper">
+						{{ range where .Site.Pages "Section" "thoughts" }}
+	 			      {{ range .Data.Pages.ByParam "date" }}
+		  		      {{ .Render "summary" }}
+							{{ end }}
+						{{ end }}
+				</div>
+
+		</article>
+</section>
+
+<section>
+		<a href="thoughts-filtered.html" class="btnTertiary"><p>CARGAR MÁS PENSAMIENTOS</p></a>
+</section>
+
+<section>
+		<article class="containerContent backgroundGrey1 noPadding">
+				<div class="divColCenter half">
+						<div class="divColQuarter center">
+								<h5 class="txtBlogFilterTitle">Lo que hemos pensado antes:</h5>
+								<ul class="txtBlogFilterList">
+						    {{ range first 10 .Site.Taxonomies.months.ByCount }}
+									  <li><a href="{{ $.Site.BaseURL }}months/{{ .Term | urlize }}">#{{ .Term }} <em>( {{ .Count }})</em></a></li>
+				        {{ end }}
+								</ul>
+						</div>
+						<div class="divColQuarter center">
+								<h5 class="txtBlogFilterTitle">Nuestros temas favoritos:</h5>
+								<ul class="txtBlogFilterList">
+								{{ range first 10 .Site.Taxonomies.tags.ByCount }}
+										<li><a href="{{ $.Site.BaseURL }}tags/{{ .Term | urlize }}">#{{ .Term }} <em>( {{ .Count }})</em></a></li>
+								{{ end }}
+								</ul>
+						</div>
+				</div>
+				<div class="divColCenter backgroundGrey4 half">
+            {{ range first 10 .Site.Taxonomies.authors.ByCount }}
+						<div class="divBlogAuthorContainer">
+								<div class="divBlogAuthorPicture" style="background-image:url({{ $.Site.BaseURL }}images/personas/{{ .Term }}.jpg);">
+								</div>
+								<div class="divBlogAuthorText">
+										<a href="{{ $.Site.BaseURL }}authors/{{ .Term | urlize }}"><h5 class="txtBlogAuthorName">{{ .Term | humanize }} <em>({{ .Count }})</em></h5></a>
+								</div>
+						</div>
+            {{ end }}
+				</div>
+		</article>
+</section>
+
+<section>
+		<a href="thoughts-filtered.html" class="btnTertiary"><p>CARGAR TODAS LAS OPCIONES</p></a>
+</section>
+
+
+{{ end }}

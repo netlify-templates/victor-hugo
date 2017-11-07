@@ -1,0 +1,26 @@
+<div class="postList">
+
+		{{ range $key, $taxonomy := .Site.Taxonomies.tags }}
+			{{ with (index $.Site.Params.sectionTag $.Section) }}
+  		  {{ if eq .tag $key }}
+					{{ range first 3 $taxonomy.Pages }}
+
+				<div class="post-item" style="background-image:url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.BackgroundSummary }});">
+						<div class="item-content">
+								<div class="date">{{ dateFormat "2 Jan 2006" .Params.Date }}</div>
+								<h3>{{ .Params.Title }}</h3>
+								<p>{{ delimit .Params.Authors ", " }}</p>
+								<p>
+										{{ with .Params.Tags }}
+										{{ delimit (apply (sort .) "partial" "post-tag-link" ".") ", " " y " }}
+										{{ end }}
+							 </p>
+						</div>
+				</div>
+
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+
+</div>

@@ -10,7 +10,11 @@
 	  	{{ end }}
 		{{ end }}
 
+	{{ if .IsHome }}
 		<div class="cntCabeceraHome">
+	{{ else }}
+		<div class="cntCabecera">
+	{{ end }}
 
 				{{ if .IsHome }}
 				<a href="/">

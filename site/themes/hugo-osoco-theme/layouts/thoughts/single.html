@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<div class="titlePost" style="background-image: url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }})">
+				<div class="autor">
+						<img src="{{ .Site.BaseURL }}images/personas/{{ .Params.AuthorPhoto | urlize }}" alt="{{ index .Params.Authors 0 }}"/>
+						<a href="#">{{ index .Params.Authors 0 }}</a>
+				</div>
+				<div class="date">
+						<div class="day">{{ index (split (.Date.Format "2 Jan") " ") 0 }}</div>
+						<div class="month">{{ dateFormat "Jan" .Params.Date }}</div>
+						<div class="year">{{ dateFormat "2006" .Params.Date }}</div>
+				</div>
+				<h1>{{ .Title | markdownify }}</h1>
+		</div>
+		<div class="panel panel-gray-lighter info-text">
+				<p><strong>Tiempo:</strong> {{ .ReadingTime }} minuto{{ if gt .ReadingTime 1 }}s{{ end }}</p>
+				<p>
+						<strong class="sr-only">Tags:</strong>
+						{{ with .Params.Tags }}
+						{{ delimit (apply (sort .) "partial" "post-tag-link" ".") ", " " y " }}
+						{{ end }}
+				</p>
+				{{ if and (isset .Params "summary") (ne (trim .Params.Summary " ") "") }}
+				<p><strong>Resumen:</strong> {{ .Params.Summary | markdownify }}</p>
+				{{ end }}
+		</div>
+		<div class="content">{{ .Content | markdownify }}</div>
+
+		<div class="panel panel-gray-lighter">
+				<div class="content">
+						{{ template "_internal/disqus.html" . }}
+				</div>
+		</div>
+
+		<div class="panel panel-gray-dark">
+				<h2 class="align-center">Más pensamientos de {{ index .Params.Authors 0 }}</h2>
+		</div>
+
+{{ end }}

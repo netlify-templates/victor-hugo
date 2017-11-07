@@ -1,13 +1,16 @@
 {{ partial "head" . }}
-<body class="{{ if .IsHome }}home{{ end }}">
-		{{ partial "header" . }}
+<body class="{{ if .IsPage }}page-post page-popup{{ end }}">
+
+		{{ if .IsNode }}
+			{{ partial "header" . }}
+		{{ else }}
+			{{ partial "header-thought" . }}
+		{{ end }}
 
 		{{ "<!-- Main -->" | safeHTML }}
 		<div class="body-panel">
 				<main>
 						{{ block "main" . }}{{ end }}
-
-						{{ partial "blog-highlights" . }}
 
 						<a href="#0" class="btnUp-top">Top</a>
 				</main>

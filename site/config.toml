@@ -6,8 +6,20 @@ theme = "hugo-osoco-theme"
 disqusShortname = "osoco"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = "UA-26781652-1"
+
+# Enable .GitInfo feature
+enableGitInfo = "true"
+
 # Define how many posts should appear on a site
 paginate = 10
+
+[permalinks]
+  thoughts = "/thoughts/:year/:month/:title/"
+
+[taxonomies]
+  tag = "tags"
+  month = "months"
+  author = "authors"
 
 [params]
 	# To provide some metadata for search engines feel free to add a few
@@ -43,6 +55,15 @@ paginate = 10
     [params.banner.projects]
       claim = "El trabajo bien hecho, <br/>para el éxito <br/>de nuestros clientes."
       background = "pelicula-casos-de-exito"
+    [params.banner.thoughts]
+      claim = "Los pensamientos son ideas, <br/>y las ideas deben ser compartidas."
+      background = "pelicula-pensamientos"
+
+  [params.sectionTags]
+    [params.sectionTag.about]
+    tag = "agilismo"
+    [params.sectionTag.projects]
+    tag = "compañía"
 
   [params.intro]
     hide  = false
@@ -178,4 +199,10 @@ paginate = 10
   weight = -80
   identifier = "contact"
   url = "/contact"
+
+[[menu.main]]
+name = "Pensamientos"
+weight = -70
+identifier = "thoughts"
+url = "/thoughts"
 

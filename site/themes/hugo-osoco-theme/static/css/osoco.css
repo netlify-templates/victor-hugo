@@ -1137,10 +1137,23 @@ a.link:hover {
   padding: 0;
   /* display: inline-block; */
   vertical-align: top;
-  background: #e1dfd9;
+  background: transparent;
   float: left;
   position: relative;
   text-align: left;
+  -webkit-filter: grayscale(90%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(90%);
+}
+
+/* line 1013, ../sass/_main.scss */
+.divBlogAuthorContainer:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+/* line 1016, ../sass/_main.scss */
+.divBlogAuthorContainer:hover .divBlogAuthorPicture {
+  opacity: 1;
 }
 
 /* line 1005, ../sass/_main.scss */
@@ -3449,4 +3462,50 @@ html {
 /* line 51, ../sass/_page-portada.scss */
 .services .servicesColumns > div ul li {
   margin-bottom: .5em;
+}
+/* line 90, ../sass/4-pages/_page-post.scss */
+.postList {
+  font-family: "ralewaylight", helvetica, arial;
+  display: flex;
+  display: -webkit-flex;
+  /* Support for older browsers */
+}
+/* line 95, ../sass/4-pages/_page-post.scss */
+.postList .post-item {
+  color: #fff;
+  width: 33.33%;
+  height: 360px;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 101, ../sass/4-pages/_page-post.scss */
+.postList .post-item .item-content {
+  padding: 2rem;
+  height: calc( 360px - 4rem);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 106, ../sass/4-pages/_page-post.scss */
+.postList .post-item h3 {
+  font-family: "ralewaylight", helvetica, arial;
+  font-size: 2.125rem;
+  color: #fff;
+}
+/* line 37, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost .date {
+  font-family: "ralewaylight", helvetica, arial;
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  left: 15rem;
+  bottom: 2rem;
+  line-height: 1em;
+  z-index: 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 48, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost .date .day {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-family: "ralewaybold", helvetica, arial;
 }
