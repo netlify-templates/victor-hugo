@@ -1,0 +1,14 @@
+{{ "<!-- Header -->" | safeHTML }}
+<header class="headerTop Landing">
+		<div class="logo showMenuShadow">
+			  <a href="{{ .Site.BaseURL }}">
+				    <img srcset="{{ .Site.BaseURL }}images/responsive/logo-osoco-207x96.png 1x, 
+				                 {{ .Site.BaseURL }}images/responsive/logo-osoco-276x128.png 1.5x, 
+				                 {{ .Site.BaseURL }}images/responsive/logo-osoco-414x192.png 2x, 
+				                 {{ .Site.BaseURL }}images/responsive/logo-osoco-414x192.png 3x"
+				         src="{{ .Site.BaseURL }}images/logo-osoco-bigger.png"
+				         alt="Logo OSOCO" />
+		    </a>
+			  <a href="{{ .Site.BaseURL }}thoughts" class="linkClose"><span class="icon-cross"></span></a>
+		</div>
+</header>

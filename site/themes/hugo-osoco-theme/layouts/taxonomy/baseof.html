@@ -1,0 +1,20 @@
+{{ partial "head" . }}
+<body>
+		{{ partial "header-taxonomies" . }}
+
+		{{ "<!-- Main -->" | safeHTML }}
+		<div class="body-panel">
+				<main>
+						{{ block "main" . }}{{ end }}
+
+						{{ partial "blog-highlights" . }}
+
+						<a href="#0" class="btnUp-top">Top</a>
+				</main>
+
+				{{ partial "footer" . }}
+		</div>
+
+		{{ partial "end" . }}
+</body>
+</html>
