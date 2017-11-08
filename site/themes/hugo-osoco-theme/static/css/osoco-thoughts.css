@@ -426,7 +426,7 @@ strong {
   vertical-align: top;
 }
 /* line 14, ../sass/4-pages/_page-popup.scss */
-.page-popup header .osocoLogo > img {
+.page-popup header .osocoLogo img {
   padding: 8px 1em;
   height: 30px;
 }

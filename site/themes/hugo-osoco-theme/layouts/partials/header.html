@@ -19,7 +19,13 @@
 		 		    <nav class="menu">
 		 			      <ul class="collapsible">
 								{{ range . }}
-								    <li><a id="itemMenuPrimary-1" href="{{ .URL | absURL }}" class="{{ if eq $currentPage.Section .Identifier}}selected{{ end }}">{{ .Name | upper }}</a></li>
+                    {{ if eq .Identifier "thoughts" }}
+                      {{ if (len (where $.Site.Pages "Section" "thoughts")) gt 0 }}
+                    <li><a id="itemMenuPrimary-1" href="{{ .URL | absURL }}" class="{{ if eq $currentPage.Section .Identifier}}selected{{ end }}">{{ .Name | upper }}</a></li>
+                      {{ end }}
+                    {{ else }}
+                    <li><a id="itemMenuPrimary-1" href="{{ .URL | absURL }}" class="{{ if eq $currentPage.Section .Identifier}}selected{{ end }}">{{ .Name | upper }}</a></li>
+                    {{ end }}
 								{{ end }}
 								</ul>
 						</nav>

@@ -1,11 +1,12 @@
 {{ define "main" }}
 
 {{ $author := index .Params.Authors 0 }}
+{{ $authorFirstname := title (index (split $author "-") 0) }}
 
 <div class="titlePost" style="background-image: url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }})">
 				<div class="autor">
-						<img src="{{ .Site.BaseURL }}images/personas/{{ .Params.AuthorPhoto | urlize }}" alt="{{ index .Params.Authors 0 }}"/>
-						<a href="#">{{ (index .Params.Authors 0) | humanize }}</a>
+						<a href="{{ .Site.BaseURL }}authors/{{ $author }}"  title="Todos los posts de {{ $authorFirstname }}"><img src="{{ .Site.BaseURL }}images/personas/{{ .Params.AuthorPhoto | urlize }}" alt="{{ $author | humanize }}"/></a>
+						<a href="{{ .Site.BaseURL }}authors/{{ $author }}" title="Todos los posts de {{ $authorFirstname }}">{{ (index .Params.Authors 0) | humanize }}</a>
 				</div>
 				<div class="date">
 						<div class="day">{{ index (split (.Date.Format "2 Jan") " ") 0 }}</div>
