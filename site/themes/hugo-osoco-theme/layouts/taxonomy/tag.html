@@ -2,7 +2,7 @@
 
 <section>
 		<div class="divBlogFilteredLabel">
-				<h5 class="txtBlogFilterTitle2">Estás viendo los pensamientos escritos sobre <strong>#{{ .Data.Term | humanize }}</strong></h5>
+				<h5 class="txtBlogFilterTitle2">Estás viendo los pensamientos escritos sobre el tema <strong>#{{ .Data.Term | humanize }}</strong></h5>
 				<a href="{{ .Site.BaseURL }}thoughts" class="link"><p>Cerrar y ver todos los pensamientos</p></a>
 		</div>
 </section>
@@ -21,29 +21,43 @@
 		<article class="containerContent backgroundGrey1 noPadding">
 				<div class="divColCenter half">
 						<div class="divColQuarter center">
-								<h5 class="txtBlogFilterTitle">Lo que hemos pensado antes:</h5>
+								<h5 class="txtBlogFilterTitle">Otras pubicaciones de #{{ .Data.Term }}:</h5>
+								{{ range $key, $value := .Site.Taxonomies.months }}
+									{{ range $value }}
+  									{{ if in .Page.Params.Tags $.Data.Term }}
+		  								{{ $.Scratch.Add "tagMonths" (slice $key) }}
+				  					{{ end }}
+					  			{{end}}
+								{{ end }}
+
 								<ul class="txtBlogFilterList">
-										{{ range first 10 .Site.Taxonomies.months.ByCount }}
-										<li><a href="{{ $.Site.BaseURL }}months/{{ .Term | urlize }}">#{{ .Term }} <em>( {{ .Count }})</em></a></li>
+										{{ range first 10 (uniq ($.Scratch.Get "tagMonths")) }}
+										<li><a href="{{ $.Site.BaseURL }}months/{{ . | urlize }}">{{ . }}</a></li>
 										{{ end }}
 								</ul>
 						</div>
 						<div class="divColQuarter center">
-								<h5 class="txtBlogFilterTitle">Nuestros temas favoritos:</h5>
+								<h5 class="txtBlogFilterTitle">Tema seleccionado:</h5>
 								<ul class="txtBlogFilterList">
-										{{ range first 10 .Site.Taxonomies.tags.ByCount }}
-										<li><a href="{{ $.Site.BaseURL }}tags/{{ .Term | urlize }}">#{{ .Term }} <em>( {{ .Count }})</em></a></li>
-										{{ end }}
-								</ul>
+										<li>#{{ .Data.Term }}</li>
+								 </ul>
 						</div>
 				</div>
 				<div class="divColCenter backgroundGrey4 half">
-						{{ range first 10 .Site.Taxonomies.authors.ByCount }}
+						{{ range $key, $value := .Site.Taxonomies.authors }}
+  					{{ range $value }}
+	  				{{ if in .Page.Params.Tags $.Data.Term }}
+				  	{{ $.Scratch.Add "tagAuthors" (slice $key) }}
+  					{{ end }}
+						{{end}}
+						{{ end }}
+
+						{{ range first 10 (uniq ($.Scratch.Get "tagAuthors")) }}
 						<div class="divBlogAuthorContainer">
-								<div class="divBlogAuthorPicture" style="background-image:url({{ $.Site.BaseURL }}images/personas/{{ .Term }}.jpg);">
+								<div class="divBlogAuthorPicture" style="background-image:url({{ $.Site.BaseURL }}images/personas/{{ . }}.jpg);">
 								</div>
 								<div class="divBlogAuthorText">
-										<a href="{{ $.Site.BaseURL }}authors/{{ .Term | urlize }}"><h5 class="txtBlogAuthorName">{{ .Term | humanize }} <em>({{ .Count }})</em></h5></a>
+										<a href="{{ $.Site.BaseURL }}authors/{{ . | urlize }}"><h5 class="txtBlogAuthorName">{{ . | humanize }}</h5></a>
 								</div>
 						</div>
 						{{ end }}

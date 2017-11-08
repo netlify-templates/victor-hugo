@@ -1,5 +1,5 @@
 +++
-authors = [ "José San Leandro" ]
+authors = [ "josé-san-leandro" ]
 authorPhoto = "josé-san-leandro.jpg"
 background = "post03.jpg"
 backgroundSummary = "post03.jpg"

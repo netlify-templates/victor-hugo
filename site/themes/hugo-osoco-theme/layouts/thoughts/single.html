@@ -3,7 +3,7 @@
 <div class="titlePost" style="background-image: url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }})">
 				<div class="autor">
 						<img src="{{ .Site.BaseURL }}images/personas/{{ .Params.AuthorPhoto | urlize }}" alt="{{ index .Params.Authors 0 }}"/>
-						<a href="#">{{ index .Params.Authors 0 }}</a>
+						<a href="#">{{ (index .Params.Authors 0) | humanize }}</a>
 				</div>
 				<div class="date">
 						<div class="day">{{ index (split (.Date.Format "2 Jan") " ") 0 }}</div>

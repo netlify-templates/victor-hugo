@@ -4,7 +4,7 @@
 <footer>
     {{ with .Site.Params.copyright.notice }}
 		<div class="footerLegal">
-				<span class="txtFooterLegal">{{ . | markdownify }}-{{ $.Page.Now.Year }}</span>
+				<span class="txtFooterLegal">{{ . | markdownify }}-{{ now.Format "2006" }}</span>
 		</div>
     {{ end }}
 </footer>

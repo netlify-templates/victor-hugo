@@ -3,7 +3,7 @@
 		<div class="divBlogText">
 	  		<a href="thoughts-filtered.html"><p class="txtBlogDate">{{ dateFormat "2 Jan 2006" .Params.Date }}</p></a>
 				<a href="{{ .Permalink }}"><h5 class="txtBlogTitle">{{ .Params.Title }}</h5></a>
-				<a href="thoughts-filtered.html"><p class="txtBlogAuthor">{{ delimit .Params.Authors ", " }}</p></a>
+				<a href="thoughts-filtered.html"><p class="txtBlogAuthor">{{ (index .Params.Authors 0) | humanize }}</p></a>
 				<p class="txtBlogTags">
         {{ with .Params.Tags }}
             {{ delimit (apply (sort .) "partial" "post-tag-link" ".") ", " " y " }}

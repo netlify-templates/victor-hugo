@@ -28,7 +28,7 @@
 								<h5 class="txtBlogFilterTitle">Lo que hemos pensado antes:</h5>
 								<ul class="txtBlogFilterList">
 						    {{ range first 10 .Site.Taxonomies.months.ByCount }}
-									  <li><a href="{{ $.Site.BaseURL }}months/{{ .Term | urlize }}">#{{ .Term }} <em>( {{ .Count }})</em></a></li>
+									  <li><a href="{{ $.Site.BaseURL }}months/{{ .Term | urlize }}">{{ .Term }} <em>( {{ .Count }})</em></a></li>
 				        {{ end }}
 								</ul>
 						</div>
