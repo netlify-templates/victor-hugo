@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ $author := index .Params.Authors 0 }}
+
 <div class="titlePost" style="background-image: url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }})">
 				<div class="autor">
 						<img src="{{ .Site.BaseURL }}images/personas/{{ .Params.AuthorPhoto | urlize }}" alt="{{ index .Params.Authors 0 }}"/>
@@ -33,7 +35,7 @@
 		</div>
 
 		<div class="panel panel-gray-dark">
-				<h2 class="align-center">Más pensamientos de {{ index .Params.Authors 0 }}</h2>
+				<a href="{{ $.Site.BaseURL }}authors/{{ $author }}"><h2 class="align-center">Más pensamientos de {{ (index .Params.Authors 0) | humanize }}</h2></a>
 		</div>
 
 {{ end }}
