@@ -1,9 +1,10 @@
 <div class="postList">
-
-		{{ $section := "home" }}
-		{{ if .IsPage }}
-			{{ $section := .Section }}
+		{{ if .IsHome }}
+	  	{{ .Scratch.Set "section" "home" }}
+		{{ else }}
+  		{{ .Scratch.Set "section" .Section }}
 		{{ end }}
+		{{ $section := .Scratch.Get "section" }}
 
 		{{ range $key, $taxonomy := .Site.Taxonomies.tags }}
 		{{ with (index $.Site.Params.sectionTags $section) }}
