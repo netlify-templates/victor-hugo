@@ -3489,7 +3489,20 @@ html {
   font-family: "ralewaylight", helvetica, arial;
   font-size: 2.125rem;
   color: #fff;
+  margin: 34px 0;
 }
+.postList .post-item a {
+  font-family: "ralewaylight", helvetica, arial;
+  color: #fff;
+  text-decoration: none;
+}
+.postList .post-item a:hover {
+  text-decoration: underline;
+}
+.postList .post-item p {
+  margin: 16px 0;
+}
+
 /* line 37, ../sass/4-pages/_page-post.scss */
 .page-post .titlePost .date {
   font-family: "ralewaylight", helvetica, arial;

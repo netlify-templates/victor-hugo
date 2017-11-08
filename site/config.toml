@@ -60,10 +60,12 @@ paginate = 10
       background = "pelicula-pensamientos"
 
   [params.sectionTags]
-    [params.sectionTag.about]
-    tag = "agilismo"
-    [params.sectionTag.projects]
-    tag = "compañía"
+    [params.sectionTags.home]
+    tags = [ "about" ]
+    [params.sectionTags.about]
+    tags = [ "agilismo" ]
+    [params.sectionTags.projects]
+    tags = [ "compañía" ]
 
   [params.intro]
     hide  = false

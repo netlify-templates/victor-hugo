@@ -1,15 +1,21 @@
 <div class="postList">
 
+		{{ $section := "home" }}
+		{{ if .IsPage }}
+			{{ $section := .Section }}
+		{{ end }}
+
 		{{ range $key, $taxonomy := .Site.Taxonomies.tags }}
-			{{ with (index $.Site.Params.sectionTag $.Section) }}
-  		  {{ if eq .tag $key }}
+		{{ with (index $.Site.Params.sectionTags $section) }}
+  		  {{ if in .tags $key }}
 					{{ range first 3 $taxonomy.Pages }}
 
+					{{ $author := index .Params.Authors 0 }}
 				<div class="post-item" style="background-image:url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.BackgroundSummary }});">
 						<div class="item-content">
 								<div class="date">{{ dateFormat "2 Jan 2006" .Params.Date }}</div>
-								<h3>{{ .Params.Title }}</h3>
-								<p>{{ delimit .Params.Authors ", " }}</p>
+								<h3><a href="{{ .Permalink }}">{{ .Params.Title }}</a></h3>
+								<p><a href="{{ .Site.BaseURL }}authors/{{ $author }}">{{ $author | humanize }}</a></p>
 								<p>
 										{{ with .Params.Tags }}
 										{{ delimit (apply (sort .) "partial" "post-tag-link" ".") ", " " y " }}
