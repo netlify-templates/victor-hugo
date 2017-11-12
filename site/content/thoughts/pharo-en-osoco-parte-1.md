@@ -23,7 +23,7 @@ Personalmente llevaba años cautivado por el potencial que intuía en Smalltalk.
 
 Había desarrollado pequeñas cosas, primero en [Squeak](http://squeak.org/) y luego en [Pharo](http://pharo.org), pero nunca nada más serio que una [kata](https://vimeo.com/19521704) o una sencilla aplicación web con [Seaside](http://www.seaside.st/), así que tenía algunas intuiciones sobre cómo podría mejorar nuestra forma de trabajar en OSOCO, pero ninguna certeza y bastantes dudas.
 
-El proyecto **OpenBadges** nos permitió validar por primera vez nuestras hipótesis en el contexto de un proyecto de desarrollo de software profesional.
+El proyecto **OpenBadges** nos permitió validar por primera vez nuestras hipótesis sobre Smalltalk en el contexto de un proyecto de desarrollo de software profesional.
 
 Algunas de nuestras primeras conclusiones aparecen en la siguiente presentación para una reunión del grupo [Madrid Smalltalk User Group](https://www.meetup.com/MadridSUG/).
 
@@ -41,18 +41,18 @@ Los factores diferenciales que mencionábamos entonces eran:
 
 Aunque ya teníamos claro que podríamos beneficiarnos de todas estas ventajas, en realidad, eramos conscientes
 de que todavía estábamos lejos de extraer todo el potencial posible y que en muchas ocasiones seguíamos
-desarrollando en Java (o Groovy), pero con la sintaxis de Smalltalk. No habíamos hecho más que iniciar
-nuestro camino de aprendizaje y descubrimiento.
+desarrollando con la mentalidad de Java o Groovy, pero con la sintaxis de Smalltalk. No habíamos hecho
+más que iniciar un largo camino de aprendizaje y descubrimiento.
 
 Acabábamos de aceptar el reto de vencer el [FUD](https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt) y de ir contracorriente. Habíamos optado por la *pastilla roja*, por quedarnos en el *País de las Maravillas*, pero todavía no eramos conscientes de hasta dónde nos llevaría la madriguera del conejo.
 
-Tras este primer proyecto, hemos vuelto a emplear Pharo en otros proyectos, lo que nos ha dado la oportunidad
-de profundizar en sus implicaciones, reflexionar sobre cómo nos está afectando y trabajar también en vencer
-alguno de los inconvenientes que nos planteó.
+Tras este primer proyecto, hemos vuelto a emplear Pharo en otros dos proyectos: un ATS (*Applicant Tracking System*) para un gran cliente y [*Contestia*](*Contestia*), una línea de productos de software internos.
+Estas experiencias nos ha dado la oportunidad de profundizar en sus implicaciones, reflexionar sobre cómo
+nos está afectando y trabajar también en vencer alguno de los inconvenientes que nos planteó inicialmente.
 
-Actualmente estamos tan convencidos de su idoneidad que lo hemos incluido en el [radar de tecnologías](https://bit.ly/OSOCOTechRadar) del equipo de ingeniería como un **lenguaje estratégico**, al mismo nivel que nuestros lenguajes de cabecera: Java y Groovy.
+Estamos tan convencidos de su idoneidad que lo hemos incluido en el [radar de tecnologías](https://bit.ly/OSOCOTechRadar) del equipo de ingeniería como un **lenguaje estratégico**, al mismo nivel que nuestros lenguajes de cabecera: Java y Groovy.
 
-Creo que actualmente nos encontramos en una segunda fase de madurez, en la que una vez superada la epifanía inicial,
+Creo que ahora nos encontramos en una segunda fase de madurez, en la que una vez superada la epifanía inicial,
 somos más conscientes de cómo exactamente podemos aprovechar el potencial de Smalltalk en OSOCO.
 
 Próximamente publicaremos una **segunda parte de este post** describiendo esta otra fase de nuestra experiencia de adopción de Smalltalk en OSOCO.
