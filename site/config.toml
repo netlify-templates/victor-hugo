@@ -61,11 +61,11 @@ paginate = 10
 
   [params.sectionTags]
     [params.sectionTags.home]
-    tags = [ "about" ]
+    tags = [ "osoco" ]
     [params.sectionTags.about]
-    tags = [ "agilismo" ]
+    tags = [ "about" ]
     [params.sectionTags.projects]
-    tags = [ "compañía" ]
+    tags = [ "projects" ]
 
   [params.intro]
     hide  = false
