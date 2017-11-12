@@ -52,7 +52,9 @@ nos está afectando y trabajar también en vencer alguno de los inconvenientes q
 
 Estamos tan convencidos de su idoneidad que lo hemos incluido en el [radar de tecnologías](https://bit.ly/OSOCOTechRadar) del equipo de ingeniería como un **lenguaje estratégico**, al mismo nivel que nuestros lenguajes de cabecera: Java y Groovy.
 
-Creo que ahora nos encontramos en una segunda fase de madurez, en la que una vez superada la epifanía inicial,
+Creo que estamos alcanzando una segunda fase de madurez, en la que una vez superada la epifanía inicial,
 somos más conscientes de cómo exactamente podemos aprovechar el potencial de Smalltalk en OSOCO.
+
+<hr class="section-divider"/>
 
 Próximamente publicaremos una **segunda parte de este post** describiendo esta otra fase de nuestra experiencia de adopción de Smalltalk en OSOCO.

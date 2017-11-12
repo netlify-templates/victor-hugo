@@ -1,9 +1,10 @@
+{{ $author := index .Params.Authors 0 }}
 <div class="divBlogContainer">
 		<div class="divBlogPicture" style="background-image:url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.BackgroundSummary }});"></div>
 		<div class="divBlogText">
-	  		<a href="thoughts-filtered.html"><p class="txtBlogDate">{{ dateFormat "2 Jan 2006" .Params.Date }}</p></a>
+	  		<p class="txtBlogDate">{{ dateFormat "2 Jan 2006" .Params.Date }}</p>
 				<a href="{{ .Permalink }}"><h5 class="txtBlogTitle">{{ .Params.Title }}</h5></a>
-				<a href="thoughts-filtered.html"><p class="txtBlogAuthor">{{ (index .Params.Authors 0) | humanize }}</p></a>
+				<a href="{{ .Site.BaseURL }}authors/{{ $author }}"><p class="txtBlogAuthor">{{ $author | humanize }}</p></a>
 				<p class="txtBlogTags">
         {{ with .Params.Tags }}
             {{ delimit (apply (sort .) "partial" "post-tag-link" ".") ", " " y " }}

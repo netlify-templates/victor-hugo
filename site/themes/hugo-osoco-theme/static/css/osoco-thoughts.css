@@ -673,3 +673,18 @@ strong {
     display: none;
   }
 }
+hr.section-divider {
+    display: block;
+    text-align: center;
+    border: 0;
+    margin: 50px 0;
+}
+hr.section-divider:before {
+    content: '...';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: .6em;
+    display: inline-block;
+    position: relative;
+}
