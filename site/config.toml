@@ -93,10 +93,11 @@ paginate = 10
     icon = "iconAgile.svg"
     title = "Agile Development"
     description = """
-* Agile Software Craftmanship
+* Agile Software Craftsmanship
 * Object-Oriented Design
-* JVM-based Development
 * Web Development
+* JVM-based Development
+* Smalltalk Development
 * Native & Hybrid Mobile Apps
 * Training and Mentoring
 """

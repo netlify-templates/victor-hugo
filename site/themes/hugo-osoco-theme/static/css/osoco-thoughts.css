@@ -469,16 +469,27 @@ strong {
   background-repeat: no-repeat;
 }
 /* line 10, ../sass/4-pages/_page-post.scss */
-.page-post .titlePost > h1 {
-  color: #fff;
-  text-shadow: 1px 1px 2px #969696;
-  font-size: 3.75rem;
+.page-post .titlePost > .title {
   display: table-cell;
   vertical-align: bottom;
-  height: 360px;
+  height: 460px;
   padding: 0 2rem 2rem 23rem;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.page-post .titlePost .title h1 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #969696;
+  font-size: 3.75rem;
+  margin: 0 0 .2em 0;
+}
+.page-post .titlePost .title h2 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #969696;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0;
+}
+
 /* line 20, ../sass/4-pages/_page-post.scss */
 .page-post .titlePost .autor {
   font-family: "ralewaylight", helvetica, arial;
@@ -522,13 +533,21 @@ strong {
 }
 /* line 61, ../sass/4-pages/_page-post.scss */
 .page-post .content {
-  font-size: 1.25rem;
+  font-size: 2rem;
+  color: #333;
 }
+.page-post .content p {
+  font-size: 1.8rem;
+  line-height: 1.6em;
+  color: #333;
+}
+
 /* line 63, ../sass/4-pages/_page-post.scss */
 .page-post .content blockquote {
   font-family: "gentium_basicitalic";
-  font-size: 2em;
-  line-height: 1em;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  font-style: italic;
 }
 /* line 67, ../sass/4-pages/_page-post.scss */
 .page-post .content blockquote.float-left, .page-post .content blockquote.float-right {

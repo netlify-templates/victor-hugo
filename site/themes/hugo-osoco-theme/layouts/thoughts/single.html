@@ -3,7 +3,7 @@
 {{ $author := index .Params.Authors 0 }}
 {{ $authorFirstname := title (index (split $author "-") 0) }}
 
-<div class="titlePost" style="background-image: url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }})">
+    <div class="titlePost" style="background-image: url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }})">
 				<div class="autor">
 						<a href="{{ .Site.BaseURL }}authors/{{ $author }}"  title="Todos los posts de {{ $authorFirstname }}"><img src="{{ .Site.BaseURL }}images/personas/{{ .Params.AuthorPhoto | urlize }}" alt="{{ $author | humanize }}"/></a>
 						<a href="{{ .Site.BaseURL }}authors/{{ $author }}" title="Todos los posts de {{ $authorFirstname }}">{{ (index .Params.Authors 0) | humanize }}</a>
@@ -13,7 +13,12 @@
 						<div class="month">{{ dateFormat "Jan" .Params.Date }}</div>
 						<div class="year">{{ dateFormat "2006" .Params.Date }}</div>
 				</div>
-				<h1>{{ .Title | markdownify }}</h1>
+        <div class="title">
+            <h1>{{ .Title | markdownify }}</h1>
+            {{ if and (isset .Params "subtitle") (ne (trim .Params.Subtitle " ") "") }}
+            <h2>{{ .Params.Subtitle | markdownify }}</h2>
+            {{ end }}
+        </div>
 		</div>
 		<div class="panel panel-gray-lighter info-text">
 				<p><strong>Tiempo:</strong> {{ .ReadingTime }} minuto{{ if gt .ReadingTime 1 }}s{{ end }}</p>
