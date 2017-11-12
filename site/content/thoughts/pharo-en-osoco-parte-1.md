@@ -39,7 +39,7 @@ Los factores diferenciales que mencionábamos entonces eran:
 - Facilitador de *Domain-Driven Design*.
 - Agilidad hasta sus últimas consecuencias.
 
-Aunque ya teníamos claro que podríamos beneficiarnos de todas estas ventajas, en realidad, eramos conscientes
+Aunque ya teníamos claro que podríamos beneficiarnos de todas estas ventajas, en realidad, éramos conscientes
 de que todavía estábamos lejos de extraer todo el potencial posible y que en muchas ocasiones seguíamos
 desarrollando con la mentalidad de Java o Groovy, pero con la sintaxis de Smalltalk. No habíamos hecho
 más que iniciar un largo camino de aprendizaje y descubrimiento.
@@ -47,7 +47,7 @@ más que iniciar un largo camino de aprendizaje y descubrimiento.
 Acabábamos de aceptar el reto de vencer el [FUD](https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt) y de ir contracorriente. Habíamos optado por la *pastilla roja*, por quedarnos en el *País de las Maravillas*, pero todavía no eramos conscientes de hasta dónde nos llevaría la madriguera del conejo.
 
 Tras este primer proyecto, hemos vuelto a emplear Pharo en otros dos proyectos: un ATS (*Applicant Tracking System*) para un gran cliente y [*Contestia*](https://contestia.es), una línea de productos de software internos.
-Estas experiencias nos ha dado la oportunidad de profundizar en sus implicaciones, reflexionar sobre cómo
+Estas experiencias nos han dado la oportunidad de profundizar en sus implicaciones, reflexionar sobre cómo
 nos está afectando y trabajar también en vencer alguno de los inconvenientes que nos planteó inicialmente.
 
 Estamos tan convencidos de su idoneidad que lo hemos incluido en el [radar de tecnologías](https://bit.ly/OSOCOTechRadar) del equipo de ingeniería como un **lenguaje estratégico**, al mismo nivel que nuestros lenguajes de cabecera: Java y Groovy.
