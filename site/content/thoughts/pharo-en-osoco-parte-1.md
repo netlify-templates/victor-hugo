@@ -21,7 +21,7 @@ y en estos casos siempre aplicamos la recomendación de Paul Graham en *[Beating
 
 Personalmente llevaba años cautivado por el potencial que intuía en Smalltalk. Había leído prácticamente toda la bibliografía existente, que en gran parte está [disponible](http://stephane.ducasse.free.fr/FreeBooks.html) [gratuitamente](http://files.pharo.org/books/). También conocía la comunidad a través de sus listas de distribución de correo. Incluso me animé a acudir como un completo *noob* a la conferencia [ESUG 2012](http://www.esug.org/wiki/pier/Conferences/2012?_s=s1rYugvjeUTjkSPd&_k=rOoCWi79HtdnAgdZ&_n&23) que se celebró durante una semana en Gante.
 
-Había desarrollado pequeñas cosas, primero en [Squeak](http://squeak.org/) y luego en [Pharo](http://pharo.org), pero nunca nada más serio que una kata o una sencilla aplicación web con [Seaside](http://www.seaside.st/), así que tenía algunas intuiciones sobre cómo podría mejorar nuestra forma de trabajar en OSOCO, pero ninguna certeza y bastantes dudas.
+Había desarrollado pequeñas cosas, primero en [Squeak](http://squeak.org/) y luego en [Pharo](http://pharo.org), pero nunca nada más serio que una [kata](https://vimeo.com/19521704) o una sencilla aplicación web con [Seaside](http://www.seaside.st/), así que tenía algunas intuiciones sobre cómo podría mejorar nuestra forma de trabajar en OSOCO, pero ninguna certeza y bastantes dudas.
 
 El proyecto **OpenBadges** nos permitió validar por primera vez nuestras hipótesis en el contexto de un proyecto de desarrollo de software profesional.
 
