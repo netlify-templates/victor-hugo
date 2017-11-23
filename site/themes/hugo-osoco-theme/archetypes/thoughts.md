@@ -1,5 +1,6 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
+subtitle = "An optional subtitle"
 date = "{{ .Date }}"
 months = [ "1017-11" ]
 authors = [ "rafael-luque" ]
