@@ -1,5 +1,6 @@
 +++
 title = "Presentación Introducción a Pharo"
+url = "introduccion-pharo-madswcr"
 subtitle = "Un Entorno de Progración Subversiva"
 date = "2017-11-22T21:56:38Z"
 months = [ "2017-11" ]
