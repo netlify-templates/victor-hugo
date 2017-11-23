@@ -31,7 +31,7 @@ paginate = 10
 	date_format = "02-01-2006"
 
 	# Add custom assets with their paths relative to the static folder
-	custom_js   = []
+	custom_js   = [ "js/thoughts/blog.js" ]
 	custom_css  = []
 
 	[params.social]

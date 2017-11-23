@@ -3,7 +3,7 @@
 		<div class="divBlogPicture" style="background-image:url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.BackgroundSummary }});"></div>
 		<div class="divBlogText">
 	  		<p class="txtBlogDate">{{ dateFormat "2 Jan 2006" .Params.Date }}</p>
-				<a href="{{ .Permalink }}"><h5 class="txtBlogTitle">{{ .Params.Title }}</h5></a>
+				<a href="{{ .Permalink }}"><h5 class="txtBlogTitle">{{ .Params.Title | markdownify }}</h5></a>
 				<a href="{{ .Site.BaseURL }}authors/{{ $author }}"><p class="txtBlogAuthor">{{ $author | humanize }}</p></a>
 				<p class="txtBlogTags">
         {{ with .Params.Tags }}

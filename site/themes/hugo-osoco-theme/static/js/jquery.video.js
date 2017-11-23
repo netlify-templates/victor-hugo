@@ -375,6 +375,10 @@
       return;
     }
 
+    if (!document.getElementById("headerVideo")) {
+      return;
+    }
+      
     document.getElementById('headerVideo').setAttribute("style","height: calc(" + $(window).height() + "px - 146px)");
     
     var $wrapper = this.$wrapper;
@@ -454,6 +458,10 @@
   $(document).ready(function() {
     var $window = $(window);
 
+    if (!document.getElementById("headerVideo")) {
+      return;
+    }
+      
     document.getElementById('headerVideo').setAttribute("style","height: calc(" + $(window).height() + "px - 146px)");
     
     // Window resize event listener
