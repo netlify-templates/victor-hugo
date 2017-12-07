@@ -27,7 +27,7 @@ $ npm run test
 $ npm run test:watch
 ```
 
-## Runing the server
+## Running the server
 
 ```sh
 $ npm run start
