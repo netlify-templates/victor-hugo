@@ -8,7 +8,7 @@ authors = [ "rafael-luque" ]
 authorPhoto = "rafael-luque.jpg"
 draft = "false"
 tags = [ "osoco", "pharo", "smalltalk", "talks" ]
-summary = ""
+summary = "Presentación *Introducción a Pharo* impartida en el grupo Madrid Software Crafters."
 background = "woodcut-camille-flammarion.jpg"
 backgroundSummary = "woodcut-camille-flammarion.jpg"
 +++
