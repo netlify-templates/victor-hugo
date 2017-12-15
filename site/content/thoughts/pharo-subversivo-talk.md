@@ -21,7 +21,11 @@ Material de la presentación *Pharo Smalltalk: Un Entorno de Programación Subve
 
 ## Anotaciones
 
-Próximamente iré publicando una versión anotada y con referencias de la presentación.
+<del>Próximamente iré publicando una versión anotada y con referencias de la presentación.</del>
+
+En lugar de unas simples anotaciones, gracias al esfuerzo de Javier Gamarra de Liferay España, la sesión se pudo grabar, con lo que aquí tenéis el vídeo completo:
+
+{{< youtube SV_KU4u5mTA >}}
 
 ## Créditos
 
