@@ -57,4 +57,4 @@ somos más conscientes de cómo exactamente podemos aprovechar el potencial de S
 
 <hr class="section-divider"/>
 
-Próximamente publicaremos una **segunda parte de este post** describiendo esta otra fase de nuestra experiencia de adopción de Smalltalk en OSOCO.
+~~Próximamente publicaremos~~ Hemos publicado una [segunda parte de este post]({{< relref "thoughts/pharo-en-osoco-parte-2.md" >}}) describiendo esta otra fase de nuestra experiencia de adopción de Smalltalk en OSOCO.
