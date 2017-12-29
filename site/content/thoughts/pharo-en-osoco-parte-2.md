@@ -8,8 +8,8 @@ authorPhoto = "jos%C3%A9-san-leandro.jpg"
 draft = "false"
 tags = [ "osoco", "pharo", "smalltalk" ]
 summary = ""
-background = "balloons-lighthouse.jpg"
-backgroundSummary = "road-to-pharo.jpg"
+background = "pharo-histeresis.jpg"
+backgroundSummary = "pharo-histeresis.jpg"
 +++
 
 En este segundo post continuamos recapitulando nuestra andadura con [Pharo](http://www.pharo.org) en OSOCO.
@@ -49,6 +49,8 @@ El desarrollo de esa herramienta permitió ahondar en características del lengu
 Sin embargo, como contrapartida, el *Core* se consagraba como algo inescrutable para los *no iniciados*. No sólo porque programar en Smalltalk supone un cambio significativo en la forma de programar, sino porque tanto *PharoEDA* como los generadores de código escondían mucha complejidad. Aunque esconder esa complejidad es algo beneficioso, también imponía cierto respeto por la aparente falta de control sobre el comportamiento del sistema en su conjunto.
 
 Para paliar esta situación, decidimos probar con sesiones de [**mob programming**](https://vimeo.com/207087295). Una vez resueltos algunos problemas iniciales inevitables, todos coincidimos en que fue una experiencia enriquecedora y útil, y por ello la acabamos repetiendo a lo largo del proyecto.
+
+{{< vimeo 207087295 >}}
 
 En el desarrollo del segundo microservicio usamos [Teapot](https://medium.com/@richardeng/precious-zinc-teapot-on-the-web-9e36a21c5576). Nos permitió constatar la calidad de los *frameworks* más consagrados en el ecosistema de Pharo, y también la velocidad de desarrollo a la que podríamos aspirar conforme ganásemos en experiencia.
 
