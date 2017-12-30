@@ -39,7 +39,7 @@ Por un lado, decidimos que una solución basada en una aplicación [React](https
 
 Mientras sopesábamos cómo debía ser la arquitectura idónea, realizamos algunas sesiones de [Event Storming](https://en.wikipedia.org/wiki/Event_storming), para empezar a entender el dominio de la aplicación. Como resultado de esas sesiones, trasladamos los eventos y los *agregados* a los dominios de cada microservicio.
 
-{{< figure src="/images/thoughts/eventstorming.jpg" width="70%">}}
+{{< figure src="/images/thoughts/event-storming.jpg" width="70%">}}
 
 Los eventos también son el mecanismo principal por el que los microservicios se comunican entre sí, por lo que es necesario que estén de acuerdo en cuanto a su forma y su fondo. Para ello, en cada repositorio *git* de cada microservicio importamos como *submódulo* un repositorio común, que define los contratos de los eventos y las órdenes.
 
