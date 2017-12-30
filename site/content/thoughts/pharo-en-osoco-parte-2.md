@@ -8,15 +8,15 @@ authorPhoto = "josé-san-leandro.jpg"
 draft = "false"
 tags = [ "osoco", "pharo", "smalltalk" ]
 summary = ""
-background = "pharo-histeresis.jpg"
-backgroundSummary = "pharo-histeresis.jpg"
+background = "pharo-rodahe.jpg"
+backgroundSummary = "pharo-rodahe.jpg"
 +++
 
 En este segundo post continuamos recapitulando nuestra andadura con [Pharo](http://www.pharo.org) en OSOCO.
 
 Este año 2017 ha sido un año decisivo en cuanto a nuestra capacidad para utilizar Pharo en proyectos reales. Pasó de ser un nicho de conocimiento de una o dos personas, a que el equipo entero esté familiarizado con Pharo.
 
-El reto consistió en construir una aplicación basada en microservicios, de los cuales dos están implementados en Pharo.
+El reto consistió en construir una aplicación basada en microservicios, de los cuáles dos están implementados en Pharo.
 
 Para explicar el papel de Pharo en esta aplicación, es necesario explicar a grandes rasgos esos dos microservicios.
 
@@ -33,22 +33,29 @@ Como se explicó en el [primer post]({{< relref "thoughts/pharo-en-osoco-parte-1
 
 Así pues sabíamos que podríamos aprovechar *PharoEDA* para, sobre él, empezar a construir nuestro nuevo dominio. Gracias a *PharoEDA* teníamos además soporte para tests unitarios y de integración basados en eventos, autodetección de manejadores de órdenes basados en *pragmas* (anotaciones), conexiones a *RabbitMQ* y a [MongoDB](https://www.mongodb.com), etc.
 
-Sin embargo, había otros microservicios que implementar, y varias decisiones que tomar. Por un lado, decidimos que una solución basada en una aplicación [React](https://reactjs.org) comunicándose con un reducido número de [AWS Lambdas](https://aws.amazon.com/lambda/) detrás de [AWS API Gateway](https://aws.amazon.com/api-gateway/), era adecuada para el contexto del proyecto. También que para los otros microservicios con interfaz de usuario sería ventajosa nuestra experiencia con [Groovy](http://groovy-lang.org) y [Grails](https://grails.org). Pero que en cualquier caso, el pilar fundamental sería el microservicio basado en Pharo, y por eso lo llamamos **Core**.
+Sin embargo, había otros microservicios que implementar, y varias decisiones que tomar.
+
+Por un lado, decidimos que una solución basada en una aplicación [React](https://reactjs.org) comunicándose con un reducido número de [AWS Lambdas](https://aws.amazon.com/lambda/) detrás de [AWS API Gateway](https://aws.amazon.com/api-gateway/), era adecuada para el contexto del proyecto. También que para los otros microservicios con interfaz de usuario sería ventajosa nuestra experiencia con [Groovy](http://groovy-lang.org) y [Grails](https://grails.org). Pero que en cualquier caso, el pilar fundamental sería el microservicio basado en Pharo, y por eso lo llamamos **Core**.
 
 Mientras sopesábamos cómo debía ser la arquitectura idónea, realizamos algunas sesiones de [Event Storming](https://en.wikipedia.org/wiki/Event_storming), para empezar a entender el dominio de la aplicación. Como resultado de esas sesiones, trasladamos los eventos y los *agregados* a los dominios de cada microservicio.
+
+{{< figure src="/images/thoughts/eventstorming.jpg" width="70%">}}
+
 Los eventos también son el mecanismo principal por el que los microservicios se comunican entre sí, por lo que es necesario que estén de acuerdo en cuanto a su forma y su fondo. Para ello, en cada repositorio *git* de cada microservicio importamos como *submódulo* un repositorio común, que define los contratos de los eventos y las órdenes.
 
-<hr class="section-divider"/>
+En este projecto empezamos a realizar sesiones de *Visual Architecture* para clarificar las interacciones entre los diferentes microservicios: 
 
-El equipo dedicado a este proyecto incluye, entre otros, a 6 desarrolladores. En las primeras etapas de desarrollo, vimos conveniente que cada miembro se centrara en aquellos microservicios cuyas tecnologías dominara. Esa decisión nos permitió una mayor velocidad al principio, pero no favorecía el aprendizaje de Smalltalk.
+{{< figure src="/images/thoughts/visual-architecture.jpg" width="70%">}}
 
-Conforme la aplicación avanzaba en funcionalidades, constatamos que el desarrollo en el *Core* tenía partes automatizables. Adecuar el mecanismo de *puertos y adaptadores* conforme se añadían nuevas órdenes y eventos era una tarea rutinaria, pero imprescindible. Debido a eso, creamos un generador de código en Pharo: a partir de la definición de los contratos entre los microservicios, se generaba el código en Smalltalk personalizado para cada contrato. No era código redundante ni derivado de un mal diseño, sino todo aquéllo que detectamos que podría simplificar y agilizar el desarrollo. Gran parte del código generado lo constituían simples plantillas destinadas a ser modificadas, como por ejemplo las plantillas de los tests.
+En las primeras etapas de desarrollo, vimos conveniente que cada desarrollador del equipo se centrara en aquellos microservicios cuyas tecnologías dominara. Esa decisión nos permitió una mayor velocidad al principio, pero no favorecía el aprendizaje de Smalltalk.
+
+Conforme la aplicación avanzaba en funcionalidades, constatamos que el desarrollo en el *Core* tenía partes automatizables. Adecuar el mecanismo de *puertos y adaptadores* conforme se añadían nuevas órdenes y eventos era una tarea rutinaria, pero imprescindible. Debido a eso, creamos un generador de código en Pharo: a partir de la definición de los contratos entre los microservicios, se generaba el código en Smalltalk personalizado para cada contrato. No era código redundante ni derivado de un mal diseño, sino todo aquéllo que detectamos que podría simplificar y agilizar el desarrollo. Gran parte del código generado lo constituían simples plantillas destinadas a ser modificadas, como por ejemplo las versiones iniciales de los tests.
 
 El desarrollo de esa herramienta permitió ahondar en características del lenguaje que estaban inexploradas.
 
-Sin embargo, como contrapartida, el *Core* se consagraba como algo inescrutable para los *no iniciados*. No sólo porque programar en Smalltalk supone un cambio significativo en la forma de programar, sino porque tanto *PharoEDA* como los generadores de código escondían mucha complejidad. Aunque esconder esa complejidad es algo beneficioso, también imponía cierto respeto por la aparente falta de control sobre el comportamiento del sistema en su conjunto.
+Sin embargo, como contrapartida, el *Core* se consagraba como algo inescrutable para los *no iniciados*. No sólo porque programar en Smalltalk supone un cambio significativo en la forma de pensar en la programación, sino porque tanto *PharoEDA* como los generadores de código escondían mucha complejidad. Aunque esconder esa complejidad es algo beneficioso, también imponía cierto respeto por la aparente falta de control sobre el comportamiento del sistema en su conjunto.
 
-Para paliar esta situación, decidimos probar con sesiones de [**mob programming**](https://vimeo.com/207087295). Una vez resueltos algunos problemas iniciales inevitables, todos coincidimos en que fue una experiencia enriquecedora y útil, y por ello la acabamos repetiendo a lo largo del proyecto.
+Para paliar esta situación, decidimos probar con sesiones de [**mob programming**](https://vimeo.com/207087295). Una vez resueltos algunos problemas iniciales inevitables, todos coincidimos en que fue una experiencia enriquecedora y útil, y por ello la acabamos repitiendo a lo largo del proyecto.
 
 {{< vimeo 207087295 >}}
 
@@ -56,7 +63,7 @@ En el desarrollo del segundo microservicio usamos [Teapot](https://medium.com/@r
 
 Esas aspiraciones se han visto respaldadas tanto por el [MOOC](http://mooc.pharo.org) de Pharo como por el [curso](https://www.meetup.com/MadridSUG/events/244115960/) que organizó OSOCO. Ambos han contribuido a que todo el equipo dedicado a este proyecto pudiera trabajar sobre ambos microservicios con confianza y seguridad.
 
-<hr class="section-divider"/>
+{{< figure src="/images/thoughts/curso-pharo.jpg" width="70%">}}
 
 Como conclusión, nuestro viaje exploratorio de Pharo ha estado influenciado siempre por la búsqueda del equilibrio entre:
 
@@ -66,5 +73,9 @@ Como conclusión, nuestro viaje exploratorio de Pharo ha estado influenciado sie
 - contagiar el entusiasmo y vencer el escepticismo.
 
 En OSOCO podemos concluir que hemos llegado a saborear la [histéresis](https://es.wikipedia.org/wiki/Hist%C3%A9resis) Pharo.
+
+## Créditos
+
+- **Imagen de cabecera**: <a href="https://pixabay.com/en/old-lighthouse-la-palma-salinas-1538921/" target="_blank">Free-Photos</a> con licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
 
 
