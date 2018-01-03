@@ -18,7 +18,7 @@ Este año 2017 ha sido un año decisivo en cuanto a nuestra capacidad para utili
 
 El reto consistió en construir una aplicación basada en microservicios, de los cuáles dos están implementados en Pharo.
 
-Para explicar el papel de Pharo en esta aplicación, es necesario explicar a grandes rasgos esos dos microservicios.
+Para entender el papel de Pharo en esta aplicación, es conveniente explicar a grandes rasgos esos dos microservicios.
 
 El primero de ellos es un microservicio que recibe órdenes y desencadena (y almacena) los eventos resultantes. No tiene interfaz web ni de ningún otro tipo. Una vez en ejecución, su única entrada son los mensajes recibidos a través de una cola de [RabbitMQ](https://www.rabbitmq.com). Cuando recibe una nueva orden, se pone en marcha una implementación de [puertos y adaptadores](http://alistair.cockburn.us/Hexagonal+architecture), y se averigua la clase del [agregado](https://en.wikipedia.org/wiki/Domain-driven_design) que debe encargarse de la petición. Se instancia ese *agregado*, y se reconstruye utilizando todos sus eventos registrados en el pasado. Una vez reconstruido, se le solicita que gestione la orden recibida.
 
@@ -43,7 +43,7 @@ Mientras sopesábamos cómo debía ser la arquitectura idónea, realizamos algun
 
 Los eventos también son el mecanismo principal por el que los microservicios se comunican entre sí, por lo que es necesario que estén de acuerdo en cuanto a su forma y su fondo. Para ello, en cada repositorio *git* de cada microservicio importamos como *submódulo* un repositorio común, que define los contratos de los eventos y las órdenes.
 
-En este projecto empezamos a realizar sesiones de *Visual Architecture* para clarificar las interacciones entre los diferentes microservicios: 
+En este proyecto empezamos a realizar sesiones de *Visual Architecture* para clarificar las interacciones entre los diferentes microservicios: 
 
 {{< figure src="/images/thoughts/visual-architecture.jpg" width="70%">}}
 
