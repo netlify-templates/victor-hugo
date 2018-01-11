@@ -1,0 +1,703 @@
+$color_1: 	#747578;
+$color_2: 	#f7911c;
+$colorK: 	#000;
+$colorW:	#fff;
+$color_5: 	#333537;
+$color_6: 	#e1dfd9;
+$color_7: 	#837870;
+$color_8: 	#0096a1;
+$color_9: 	#333;
+
+$font_family_1: 'icomoon';
+$font_family_2: "gentium_basicregular", Georgia, "Times New Roman", Times, serif;
+$font_family_3: "ralewaylight", helvetica, arial;
+$font_family_4: "gentium_basicbold";
+$font_family_5: "ralewaybold", helvetica, arial;
+$font_family_6: "gentium_basicitalic";
+
+$background_color_1: #e1e1de;
+$background_color_2: $color_1;
+$background_color_3: $color_5;
+$background_color_4: $colorW;
+$background_color_5: $color_6;
+$background_color_6: rgba(0, 0, 0, 0.4);
+$background_color_7: $color_2;
+$background_color_8: rgba(0, 0, 0, 0.5);
+$border_color_1: $color_1;
+$border_color_2: $colorW;
+
+@font-face {
+	font-family: 'ralewaybold';
+	src: url("../fonts/Raleway/raleway-bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ralewaybold_italic';
+	src: url("../fonts/Raleway/raleway-bolditalic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ralewayitalic';
+	src: url("../fonts/Raleway/raleway-italic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ralewaylight';
+	src: url("../fonts/Raleway/raleway-light-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ralewaylight_italic';
+	src: url("../fonts/Raleway/raleway-lightitalic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ralewaymedium';
+	src: url("../fonts/Raleway/raleway-medium-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gentium_basicbold';
+	src: url("../fonts/Gentium/genbasb-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasb-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gentium_basicbold_italic';
+	src: url("../fonts/Gentium/genbasbi-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasbi-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gentium_basicitalic';
+	src: url("../fonts/Gentium/genbasi-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasi-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gentium_basicregular';
+	src: url("../fonts/Gentium/genbasr-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasr-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icomoon';
+	src: url("../fonts/icomoon.eot?-48jx4y");
+	src: url("../fonts/icomoon.eot?#iefix-48jx4y") format("embedded-opentype"), url("../fonts/icomoon.ttf?-48jx4y") format("truetype"), url("../fonts/icomoon.woff?-48jx4y") format("woff"), url("../fonts/icomoon.svg?-48jx4y#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+	font-size: 62.5%;
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+img{
+	max-width: 100%;
+}
+iframe{
+	border:none;
+}
+[class^="icon-"] {
+	font-family: $font_family_1;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*=" icon-"] {
+	font-family: $font_family_1;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-google-plus {
+	&:before {
+		content: "\e600";
+	}
+}
+.icon-facebook {
+	&:before {
+		content: "\e601";
+	}
+}
+.icon-twitter {
+	&:before {
+		content: "\e602";
+	}
+}
+.icon-github {
+	&:before {
+		content: "\e603";
+	}
+}
+.icon-linkedin {
+	&:before {
+		content: "\e605";
+	}
+}
+.icon-slideshare {
+	&:before {
+		content: "\e60f";
+	}
+}
+.icon-youtube {
+	&:before {
+		content: "\e610";
+	}
+}
+.icon-vimeo {
+	&:before {
+		content: "\e611";
+	}
+}
+.icon-startup {
+	&:before {
+		content: "\e606";
+	}
+}
+.icon-coders {
+	&:before {
+		content: "\e607";
+	}
+}
+.icon-design {
+	&:before {
+		content: "\e608";
+	}
+}
+.icon-security {
+	&:before {
+		content: "\e609";
+	}
+}
+.icon-innovation {
+	&:before {
+		content: "\e60a";
+	}
+}
+.icon-incubator {
+	&:before {
+		content: "\e60b";
+	}
+}
+.icon-menu {
+	&:before {
+		content: "\e60c";
+	}
+}
+.icon-menu-text {
+	&:before {
+		content: "\e60d";
+	}
+}
+.icon-cross {
+	&:before {
+		content: "\e60e";
+	}
+}
+.icon-osoco {
+	&:before {
+		content: "\e604";
+	}
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font_family_2;
+	font-size: 16px;
+	color: $color_1;
+}
+h1 {
+	font-family: $font_family_3;
+}
+h2 {
+	font-family: $font_family_3;
+}
+h3 {
+	font-family: $font_family_3;
+}
+h4 {
+	font-family: $font_family_3;
+}
+h5 {
+	font-family: $font_family_3;
+}
+h6 {
+	font-family: $font_family_3;
+}
+a {
+	color: $color_2;
+}
+strong {
+	font-family: $font_family_4;
+	color: $colorK;
+}
+.content {
+	max-width: 1000px;
+	padding: 2em 1em;
+	margin: auto;
+	figure{
+		text-align: center;
+		margin: 1em 0;
+	}
+}
+.info-text {
+	font-family: $font_family_3;
+	strong {
+		font-size: 1.15em;
+	}
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.btn {
+	padding: .5em 1em;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid transparent;
+	text-decoration: none;
+	min-width: 10em;
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	a {
+		text-decoration: none;
+	}
+}
+.btn-defatul {
+	color: $color_1;
+	border-color: $border_color_1;
+}
+.btn-white {
+	color: $colorW;
+	border-color: $border_color_2;
+}
+.panel {
+	padding: 1rem 2rem;
+}
+.panel-gray-lighter {
+	background-color: $background_color_1;
+}
+.panel-gray {
+	background-color: $background_color_2;
+}
+.panel-gray-dark {
+	background-color: $background_color_3;
+	color: $colorW;
+	h1 {
+		color: $colorW;
+	}
+	h2 {
+		color: $colorW;
+	}
+	h3 {
+		color: $colorW;
+	}
+	h4 {
+		color: $colorW;
+	}
+	h5 {
+		color: $colorW;
+	}
+	h6 {
+		color: $colorW;
+	}
+}
+.footerHablamos {
+	text-align: center;
+	background: $color_1;
+	width: 100%;
+	padding-top: 6em;
+	padding-bottom: 6em;
+	font-family: $font_family_3;
+	p {
+		margin: 0;
+		margin-bottom: .25em;
+	}
+}
+.footerLegal {
+	text-align: center;
+	background: $color_6;
+	width: 100%;
+	padding-top: 1.1em;
+	padding-bottom: .9em;
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	&:before {
+		clear: both;
+	}
+}
+.txtFooterTitle {
+	color: $color_5;
+	font-weight: 300;
+	font-size: 3em;
+	font-style: italic;
+	margin: 0;
+}
+.txtFooterEmail {
+	font-size: 1.85em;
+	color: $colorW;
+	text-decoration: none;
+	line-height: 2.5em;
+}
+.txtFooterLocation1 {
+	font-size: 1.25em;
+	color: $colorW;
+}
+.txtFooterLocation2 {
+	font-size: 1.15em;
+	color: $colorW;
+	line-height: 1.5em;
+}
+.txtFooterLocation3 {
+	font-size: 0.85em;
+	color: $colorW;
+	line-height: 1.5em;
+	margin-bottom: 2.5em;
+}
+.txtFooterIcons {
+	color: $colorW;
+	font-size: 2.2em;
+	text-decoration: none;
+	margin: 0em .05em;
+	&:hover {
+		color: $color_6;
+		text-decoration: none;
+	}
+}
+.footerSocialIcons {
+	padding: 1.7em 0em 1em 0em;
+}
+.txtFooterLegal {
+	font-size: .8em;
+	color: $color_7;
+	text-decoration: none;
+}
+.page-popup {
+	color: $color_5;
+	header {
+		background-color: $background_color_4;
+		height: 50px;
+		display: table;
+		width: 100%;
+		vertical-align: middle;
+		>div {
+			display: table-cell;
+			vertical-align: top;
+		}
+		.osocoLogo {
+			img {
+				padding: 8px 1em;
+				height: 30px;
+			}
+		}
+		.btnClose {
+			text-align: right;
+			a {
+				line-height: 50px;
+				width: 4em;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+			}
+		}
+	}
+	.filterPanel {
+		background-color: $background_color_5;
+		padding: 1em 2em;
+		font-size: 1.375rem;
+		p {
+			&:not(:last-child) {
+				padding-bottom: .5em;
+			}
+		}
+		a {
+			color: $color_8;
+			font-size: 1rem;
+		}
+	}
+}
+.page-post {
+	.titlePost {
+		position: relative;
+		background-color: $background_color_3;
+		background-position: 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-wrap: wrap;
+		@media (min-width: 768px) { // a partir de iPad vertical
+			display: table;
+			width: 100%;
+		}
+		>.title {
+			padding: 1em;
+			background-color: $background_color_6;
+			flex-grow: 1;
+			flex-basis:100%;
+			order:0;
+			@media (min-width: 768px) { // a partir de iPad vertical
+				display: table-cell;
+				vertical-align: bottom;
+				height: 460px;
+				padding: 0 2rem 2rem 33rem;
+			}
+		}
+		.title {
+			h1 {
+				color: $colorW;
+				text-shadow: 1px 1px 2px #969696;
+				margin: 0 0 .2em 0;
+				font-size: 2em;
+				line-height: 1em;
+				@media (min-width: 768px) { // a partir de iPad vertical
+					font-size: 3.75rem;
+				}
+			}
+			h2 {
+				color: $colorW;
+				text-shadow: 1px 1px 2px #969696;
+				font-size: 2rem;
+				font-style: italic;
+				margin: 0;
+			}
+		}
+		.autor {
+			background-color: $background_color_6;
+			font-family: $font_family_3;
+			text-align: center;
+			order:1;
+			flex-basis:46%;
+			padding: 4% 2%;
+			img {
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				width: 170px;
+				max-width: 100%;
+			}
+			a {
+				display: block;
+				color: $colorW;
+				text-decoration: none;
+			}
+			@media (min-width: 768px) { // a partir de iPad vertical
+				position: absolute;
+				left: 2rem;
+				bottom: 2rem;
+				z-index: 2;
+				background-color: transparent;
+				padding: 0;
+			}
+		}
+		.date {
+			flex-basis:50%;
+			background-color: $background_color_6;
+			font-family: $font_family_3;
+			color: $colorW;
+			font-size: 2em;
+			line-height: 1em;
+			text-align: center;
+			text-transform: uppercase;
+			order:1;
+			flex-basis:46%;
+			padding: 4% 2%;
+			@media (min-width: 768px) { // a partir de iPad vertical
+				background-color: transparent;
+				position: absolute;
+				left: 22.5rem;
+				bottom: 2rem;
+				z-index: 2;
+				padding: 0;
+			}
+			.day {
+				font-size: 2em;
+				line-height: 1.2em;
+				font-family: $font_family_5;
+			}
+		}
+	}
+	.content {
+		color: $color_9;
+		p {
+			font-size: 1.8rem;
+			line-height: 1.6em;
+			color: $color_9;
+		}
+		blockquote {
+			font-family: $font_family_6;
+			font-size: 1.3em;
+			line-height: 1.2em;
+			font-style: italic;
+		}
+		blockquote.float-left {
+			max-width: 360px;
+		}
+		blockquote.float-right {
+			max-width: 360px;
+		}
+	}
+	.navPosts {
+		font-size: 1.5em;
+		background-color: $background_color_7;
+		>div {
+			max-width: 1280px;
+			margin: auto;
+			padding: 1em 2em;
+			a {
+				font-family: $font_family_6;
+				text-decoration: none;
+				color: $colorW;
+				&:last-child {
+					float: right;
+				}
+			}
+			strong {
+				font-family: $font_family_6;
+				text-decoration: none;
+				color: $colorW;
+			}
+		}
+	}
+}
+.postList {
+	font-family: $font_family_3;
+	display: flex;
+	display: -webkit-flex;
+	.post-item {
+		color: $colorW;
+		width: 33.33%;
+		height: 360px;
+		background-size: cover;
+		background-position: 50%;
+		.item-content {
+			padding: 2rem;
+			height: calc( 360px - 4rem);
+			background-color: $background_color_8;
+		}
+		h3 {
+			font-family: $font_family_3;
+			font-size: 2.125rem;
+			color: $colorW;
+		}
+	}
+}
+.btnUp-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 100px;
+	right: 10px;
+	z-index: 10000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: rgba(223, 144, 46, 0.8) url(../images/btnUpArrow.svg) no-repeat center 50%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+	&:hover {
+		background-color: $background_color_7;
+		opacity: 1;
+	}
+}
+.btnUp-top.btnUp-is-visible {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+	visibility: visible;
+	opacity: 1;
+}
+.btnUp-top.btnUp-fade-out {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+	opacity: .5;
+}
+.no-touch {
+	.btnUp-top {
+		&:hover {
+			-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+			-moz-transition: opacity .3s 0s, visibility 0s 0s;
+			transition: opacity .3s 0s, visibility 0s 0s;
+		}
+	}
+}
+hr.section-divider {
+	display: block;
+	text-align: center;
+	border: 0;
+	margin: 50px 0;
+	&:before {
+		content: '...';
+		font-weight: 400;
+		font-style: italic;
+		font-size: 30px;
+		letter-spacing: .6em;
+		display: inline-block;
+		position: relative;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.btnUp-top {
+		height: 60px;
+		width: 60px;
+		right: 30px;
+		bottom: 30px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.btnUp-top {
+		display: none;
+	}
+}

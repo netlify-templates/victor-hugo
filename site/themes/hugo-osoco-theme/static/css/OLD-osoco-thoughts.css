@@ -1,0 +1,690 @@
+/* line 5, ../sass/0-quarks/_variables_funciones.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url("../fonts/Raleway/raleway-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewaybold_italic';
+  src: url("../fonts/Raleway/raleway-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewayitalic';
+  src: url("../fonts/Raleway/raleway-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewaylight';
+  src: url("../fonts/Raleway/raleway-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewaylight_italic';
+  src: url("../fonts/Raleway/raleway-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewaymedium';
+  src: url("../fonts/Raleway/raleway-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium_basicbold';
+  src: url("../fonts/Gentium/genbasb-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasb-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium_basicbold_italic';
+  src: url("../fonts/Gentium/genbasbi-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasbi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium_basicitalic';
+  src: url("../fonts/Gentium/genbasi-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium_basicregular';
+  src: url("../fonts/Gentium/genbasr-webfont.woff2") format("woff2"), url("../fonts/Gentium/genbasr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-48jx4y");
+  src: url("../fonts/icomoon.eot?#iefix-48jx4y") format("embedded-opentype"), url("../fonts/icomoon.ttf?-48jx4y") format("truetype"), url("../fonts/icomoon.woff?-48jx4y") format("woff"), url("../fonts/icomoon.svg?-48jx4y#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 105, ../sass/0-quarks/_font-icomoon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 118, ../sass/0-quarks/_font-icomoon.scss */
+.icon-google-plus:before {
+  content: "\e600";
+}
+
+/* line 122, ../sass/0-quarks/_font-icomoon.scss */
+.icon-facebook:before {
+  content: "\e601";
+}
+
+/* line 126, ../sass/0-quarks/_font-icomoon.scss */
+.icon-twitter:before {
+  content: "\e602";
+}
+
+/* line 130, ../sass/0-quarks/_font-icomoon.scss */
+.icon-github:before {
+  content: "\e603";
+}
+
+/* line 134, ../sass/0-quarks/_font-icomoon.scss */
+.icon-linkedin:before {
+  content: "\e605";
+}
+
+/* line 138, ../sass/0-quarks/_font-icomoon.scss */
+.icon-slideshare:before {
+  content: "\e60f";
+}
+
+/* line 142, ../sass/0-quarks/_font-icomoon.scss */
+.icon-youtube:before {
+  content: "\e610";
+}
+
+/* line 146, ../sass/0-quarks/_font-icomoon.scss */
+.icon-vimeo:before {
+  content: "\e611";
+}
+
+/* line 150, ../sass/0-quarks/_font-icomoon.scss */
+.icon-startup:before {
+  content: "\e606";
+}
+
+/* line 154, ../sass/0-quarks/_font-icomoon.scss */
+.icon-coders:before {
+  content: "\e607";
+}
+
+/* line 158, ../sass/0-quarks/_font-icomoon.scss */
+.icon-design:before {
+  content: "\e608";
+}
+
+/* line 162, ../sass/0-quarks/_font-icomoon.scss */
+.icon-security:before {
+  content: "\e609";
+}
+
+/* line 166, ../sass/0-quarks/_font-icomoon.scss */
+.icon-innovation:before {
+  content: "\e60a";
+}
+
+/* line 170, ../sass/0-quarks/_font-icomoon.scss */
+.icon-incubator:before {
+  content: "\e60b";
+}
+
+/* line 174, ../sass/0-quarks/_font-icomoon.scss */
+.icon-menu:before {
+  content: "\e60c";
+}
+
+/* line 178, ../sass/0-quarks/_font-icomoon.scss */
+.icon-menu-text:before {
+  content: "\e60d";
+}
+
+/* line 182, ../sass/0-quarks/_font-icomoon.scss */
+.icon-cross:before {
+  content: "\e60e";
+}
+
+/* line 186, ../sass/0-quarks/_font-icomoon.scss */
+.icon-osoco:before {
+  content: "\e604";
+}
+
+/* line 1, ../sass/1-atom/_general.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "gentium_basicregular", Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #747578;
+}
+
+/* line 8, ../sass/1-atom/_general.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "ralewaylight", helvetica, arial;
+}
+
+/* line 11, ../sass/1-atom/_general.scss */
+a {
+  color: #f7911c;
+}
+
+/* line 14, ../sass/1-atom/_general.scss */
+strong {
+  font-family: "gentium_basicbold";
+  color: #000;
+}
+
+/* line 18, ../sass/1-atom/_general.scss */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/* line 28, ../sass/1-atom/_general.scss */
+.content {
+  max-width: 1000px;
+  padding: 2em;
+  margin: auto;
+}
+
+/* line 33, ../sass/1-atom/_general.scss */
+.info-text {
+  font-family: "ralewaylight", helvetica, arial;
+}
+/* line 35, ../sass/1-atom/_general.scss */
+.info-text strong {
+  font-size: 1.15em;
+}
+
+/* line 39, ../sass/1-atom/_general.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 42, ../sass/1-atom/_general.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 45, ../sass/1-atom/_general.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 48, ../sass/1-atom/_general.scss */
+.float-left {
+  float: left;
+}
+
+/* line 51, ../sass/1-atom/_general.scss */
+.float-right {
+  float: right;
+}
+
+/* line 1, ../sass/1-atom/_buttons.scss */
+.btn {
+  padding: .5em 1em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  min-width: 10em;
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* line 10, ../sass/1-atom/_buttons.scss */
+.btn a {
+  text-decoration: none;
+}
+
+/* line 14, ../sass/1-atom/_buttons.scss */
+.btn-defatul {
+  color: #747578;
+  border-color: #747578;
+}
+
+/* line 18, ../sass/1-atom/_buttons.scss */
+.btn-white {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* line 1, ../sass/2-molecules/_panels.scss */
+.panel {
+  padding: 1rem 2rem;
+}
+
+/* line 4, ../sass/2-molecules/_panels.scss */
+.panel-gray-lighter {
+  background-color: #e1e1de;
+}
+
+/* line 7, ../sass/2-molecules/_panels.scss */
+.panel-gray {
+  background-color: #747578;
+}
+
+/* line 10, ../sass/2-molecules/_panels.scss */
+.panel-gray-dark {
+  background-color: #333537;
+  color: #fff;
+}
+/* line 13, ../sass/2-molecules/_panels.scss */
+.panel-gray-dark h1, .panel-gray-dark h2, .panel-gray-dark h3, .panel-gray-dark h4, .panel-gray-dark h5, .panel-gray-dark h6 {
+  color: #fff;
+}
+
+/* line 1, ../sass/3-organisms/_footer.scss */
+.footerHablamos {
+  text-align: center;
+  background: #747578;
+  width: 100%;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  font-family: "ralewaylight", helvetica, arial;
+}
+/* line 8, ../sass/3-organisms/_footer.scss */
+.footerHablamos p {
+  margin: 0;
+  margin-bottom: .25em;
+}
+
+/* line 14, ../sass/3-organisms/_footer.scss */
+.footerLegal {
+  text-align: center;
+  background: #e1dfd9;
+  width: 100%;
+  padding-top: 1.1em;
+  padding-bottom: .9em;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+}
+/* line 23, ../sass/3-organisms/_footer.scss */
+.footerLegal:before {
+  clear: both;
+}
+
+/* line 28, ../sass/3-organisms/_footer.scss */
+.txtFooterTitle {
+  color: #333537;
+  font-weight: 300;
+  font-size: 3em;
+  font-style: italic;
+  margin: 0;
+}
+
+/* line 36, ../sass/3-organisms/_footer.scss */
+.txtFooterEmail {
+  font-size: 1.85em;
+  color: #fff;
+  text-decoration: none;
+  line-height: 2.5em;
+}
+
+/* line 43, ../sass/3-organisms/_footer.scss */
+.txtFooterLocation1 {
+  font-size: 1.25em;
+  color: #fff;
+}
+
+/* line 48, ../sass/3-organisms/_footer.scss */
+.txtFooterLocation2 {
+  font-size: 1.15em;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+/* line 54, ../sass/3-organisms/_footer.scss */
+.txtFooterLocation3 {
+  font-size: 0.85em;
+  color: #fff;
+  line-height: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+/* line 61, ../sass/3-organisms/_footer.scss */
+.txtFooterIcons {
+  color: #fff;
+  font-size: 2.2em;
+  text-decoration: none;
+  margin: 0em .05em;
+}
+/* line 66, ../sass/3-organisms/_footer.scss */
+.txtFooterIcons:hover {
+  color: #e1dfd9;
+  text-decoration: none;
+}
+
+/* line 72, ../sass/3-organisms/_footer.scss */
+.footerSocialIcons {
+  padding: 1.7em 0em 1em 0em;
+}
+
+/* line 76, ../sass/3-organisms/_footer.scss */
+.txtFooterLegal {
+  font-size: .8em;
+  color: #837870;
+  text-decoration: none;
+}
+
+/* line 1, ../sass/4-pages/_page-popup.scss */
+.page-popup {
+  color: #333537;
+}
+/* line 3, ../sass/4-pages/_page-popup.scss */
+.page-popup header {
+  background-color: #fff;
+  height: 50px;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 9, ../sass/4-pages/_page-popup.scss */
+.page-popup header > div {
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 14, ../sass/4-pages/_page-popup.scss */
+.page-popup header .osocoLogo img {
+  padding: 8px 1em;
+  height: 30px;
+}
+/* line 19, ../sass/4-pages/_page-popup.scss */
+.page-popup header .btnClose {
+  text-align: right;
+}
+/* line 21, ../sass/4-pages/_page-popup.scss */
+.page-popup header .btnClose a {
+  line-height: 50px;
+  width: 4em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 31, ../sass/4-pages/_page-popup.scss */
+.page-popup .filterPanel {
+  background-color: #e1dfd9;
+  padding: 1em 2em;
+  font-size: 1.375rem;
+}
+/* line 35, ../sass/4-pages/_page-popup.scss */
+.page-popup .filterPanel p:not(:last-child) {
+  padding-bottom: .5em;
+}
+/* line 38, ../sass/4-pages/_page-popup.scss */
+.page-popup .filterPanel a {
+  color: #0096a1;
+  font-size: 1rem;
+}
+
+/* line 2, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost {
+  position: relative;
+  display: table;
+  width: 100%;
+  background-color: #333537;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 10, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost > .title {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 460px;
+  padding: 0 2rem 2rem 23rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.page-post .titlePost .title h1 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #969696;
+  font-size: 3.75rem;
+  margin: 0 0 .2em 0;
+}
+.page-post .titlePost .title h2 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #969696;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* line 20, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost .autor {
+  font-family: "ralewaylight", helvetica, arial;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 2;
+  text-align: center;
+}
+/* line 27, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost .autor img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 170px;
+}
+/* line 31, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost .autor a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 37, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost .date {
+  font-family: "ralewaylight", helvetica, arial;
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  left: 15rem;
+  bottom: 2rem;
+  line-height: 1em;
+  z-index: 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 48, ../sass/4-pages/_page-post.scss */
+.page-post .titlePost .date .day {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-family: "ralewaybold", helvetica, arial;
+}
+/* line 61, ../sass/4-pages/_page-post.scss */
+.page-post .content {
+  font-size: 2rem;
+  color: #333;
+}
+.page-post .content p {
+  font-size: 1.8rem;
+  line-height: 1.6em;
+  color: #333;
+}
+
+/* line 63, ../sass/4-pages/_page-post.scss */
+.page-post .content blockquote {
+  font-family: "gentium_basicitalic";
+  font-size: 1.3em;
+  line-height: 1.2em;
+  font-style: italic;
+}
+/* line 67, ../sass/4-pages/_page-post.scss */
+.page-post .content blockquote.float-left, .page-post .content blockquote.float-right {
+  max-width: 360px;
+}
+/* line 72, ../sass/4-pages/_page-post.scss */
+.page-post .navPosts {
+  font-size: 1.5em;
+  background-color: #f7911c;
+}
+/* line 75, ../sass/4-pages/_page-post.scss */
+.page-post .navPosts > div {
+  max-width: 1280px;
+  margin: auto;
+  padding: 1em 2em;
+}
+/* line 79, ../sass/4-pages/_page-post.scss */
+.page-post .navPosts > div a, .page-post .navPosts > div strong {
+  font-family: "gentium_basicitalic";
+  text-decoration: none;
+  color: #fff;
+}
+/* line 84, ../sass/4-pages/_page-post.scss */
+.page-post .navPosts > div a:last-child {
+  float: right;
+}
+
+/* line 90, ../sass/4-pages/_page-post.scss */
+.postList {
+  font-family: "ralewaylight", helvetica, arial;
+  display: flex;
+  display: -webkit-flex;
+  /* Support for older browsers */
+}
+/* line 95, ../sass/4-pages/_page-post.scss */
+.postList .post-item {
+  color: #fff;
+  width: 33.33%;
+  height: 360px;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 101, ../sass/4-pages/_page-post.scss */
+.postList .post-item .item-content {
+  padding: 2rem;
+  height: calc( 360px - 4rem);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 106, ../sass/4-pages/_page-post.scss */
+.postList .post-item h3 {
+  font-family: "ralewaylight", helvetica, arial;
+  font-size: 2.125rem;
+  color: #fff;
+}
+/* line 1, ../sass/_scroll-up.scss */
+.btnUp-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 10000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(223, 144, 46, 0.8) url(../images/btnUpArrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+/* line 20, ../sass/_scroll-up.scss */
+.btnUp-top.btnUp-is-visible, .btnUp-top.btnUp-fade-out {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+/* line 27, ../sass/_scroll-up.scss */
+.no-touch .btnUp-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+/* line 34, ../sass/_scroll-up.scss */
+.btnUp-top.btnUp-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+/* line 39, ../sass/_scroll-up.scss */
+.btnUp-top.btnUp-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+/* line 43, ../sass/_scroll-up.scss */
+.btnUp-top:hover {
+  background-color: #f7911c;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 50, ../sass/_scroll-up.scss */
+  .btnUp-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 59, ../sass/_scroll-up.scss */
+  .btnUp-top {
+    /*
+    right: 20px;
+    bottom: 20px;
+    */
+    display: none;
+  }
+}
+hr.section-divider {
+    display: block;
+    text-align: center;
+    border: 0;
+    margin: 50px 0;
+}
+hr.section-divider:before {
+    content: '...';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: .6em;
+    display: inline-block;
+    position: relative;
+}

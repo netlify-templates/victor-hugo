@@ -378,8 +378,7 @@
     if (!document.getElementById("headerVideo")) {
       return;
     }
-      
-    document.getElementById('headerVideo').setAttribute("style","height: calc(" + $(window).height() + "px - 146px)");
+    // document.getElementById('headerVideo').setAttribute("style","height: calc(" + $(window).height() + "px - 146px)");
     
     var $wrapper = this.$wrapper;
     var $video = this.$video;
