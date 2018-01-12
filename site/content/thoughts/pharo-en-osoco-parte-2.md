@@ -39,13 +39,13 @@ Por un lado, decidimos que una solución basada en una aplicación [React](https
 
 Mientras sopesábamos cómo debía ser la arquitectura idónea, realizamos algunas sesiones de [Event Storming](https://en.wikipedia.org/wiki/Event_storming), para empezar a entender el dominio de la aplicación. Como resultado de esas sesiones, trasladamos los eventos y los *agregados* a los dominios de cada microservicio.
 
-{{< figure src="/images/thoughts/event-storming.jpg" width="70%">}}
+{{< figure src="/images/thoughts/event-storming.jpg" >}}
 
 Los eventos también son el mecanismo principal por el que los microservicios se comunican entre sí, por lo que es necesario que estén de acuerdo en cuanto a su forma y su fondo. Para ello, en cada repositorio *git* de cada microservicio importamos como *submódulo* un repositorio común, que define los contratos de los eventos y las órdenes.
 
-En este proyecto empezamos a realizar sesiones de *Visual Architecture* para clarificar las interacciones entre los diferentes microservicios: 
+En este proyecto empezamos a realizar sesiones de *Visual Architecture* para clarificar las interacciones entre los diferentes microservicios:
 
-{{< figure src="/images/thoughts/visual-architecture.jpg" width="70%">}}
+{{< figure src="/images/thoughts/visual-architecture.jpg" >}}
 
 En las primeras etapas de desarrollo, vimos conveniente que cada desarrollador del equipo se centrara en aquellos microservicios cuyas tecnologías dominara. Esa decisión nos permitió una mayor velocidad al principio, pero no favorecía el aprendizaje de Smalltalk.
 
@@ -63,7 +63,7 @@ En el desarrollo del segundo microservicio usamos [Teapot](https://medium.com/@r
 
 Esas aspiraciones se han visto respaldadas tanto por el [MOOC](http://mooc.pharo.org) de Pharo como por el [curso](https://www.meetup.com/MadridSUG/events/244115960/) que organizó OSOCO. Ambos han contribuido a que todo el equipo dedicado a este proyecto pudiera trabajar sobre ambos microservicios con confianza y seguridad.
 
-{{< figure src="/images/thoughts/curso-pharo.jpg" width="70%">}}
+{{< figure src="/images/thoughts/curso-pharo.jpg" >}}
 
 Como conclusión, nuestro viaje exploratorio de Pharo ha estado influenciado siempre por la búsqueda del equilibrio entre:
 
@@ -77,5 +77,3 @@ En OSOCO podemos concluir que hemos llegado a saborear la [histéresis](https://
 ## Créditos
 
 - **Imagen de cabecera**: <a href="https://pixabay.com/en/old-lighthouse-la-palma-salinas-1538921/" target="_blank">Free-Photos</a> con licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
-
-
