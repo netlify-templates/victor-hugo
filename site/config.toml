@@ -25,7 +25,7 @@ paginate = 10
 	# To provide some metadata for search engines feel free to add a few
 	# information about you and your website.
 	name = "OSOCO website"
-	description = "Describe your website"
+	description = "Otra forma de trabajar es posible"
 
 	# Format dates with Go's time formatting
 	date_format = "02-01-2006"
