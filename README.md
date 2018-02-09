@@ -52,7 +52,7 @@ To get a preview of posts or articles not yet published, run:
 npm run build-preview
 ```
 
-See [package.json](https://github.com/atomtigerzoo/victor-hugo/blob/readme-updates/package.json#L7) or the included gulp file for all tasks.
+See [package.json](package.json#L7) or the included gulp file for all tasks.
 
 ## Structure
 
