@@ -63,10 +63,10 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
       baseDir: "./dist"
     }
   });
-  watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
-  watch("./src/css/**/*.css", () => { gulp.start(["css"]) });
-  watch("./src/fonts/**/*", () => { gulp.start(["fonts"]) });
-  watch("./site/**/*", () => { gulp.start(["hugo"]) });
+  watch("./src/js/**/*.js", ["js"]);
+  watch("./src/css/**/*.css", ["css"]);
+  watch("./src/fonts/**/*", ["fonts"]);
+  watch("./site/**/*", ["hugo"]);
 });
 
 /**
