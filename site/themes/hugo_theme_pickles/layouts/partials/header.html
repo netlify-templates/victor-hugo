@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+<body>
+  <a href="#main" class="skip-link p-screen-reader-text">Skip to content</a>
+  {{ partial "svgpack-sprite.html" . }}
+  <header class="l-header">
+    {{ if .IsPage }}
+    <p class="c-title p-title"><a href="{{ .Site.BaseURL }}" class="p-title__link">{{ .Site.Title }}</a></p>
+    {{ else }}
+    <h1 class="c-title p-title"><a href="{{ .Site.BaseURL }}" class="p-title__link">{{ .Site.Title }}</a></h1>
+    {{ end }}
+    {{ with .Site.Params.subtitle }}
+    <p class="p-subtitle">
+      {{ . }}
+    </p>
+    {{ end }}
+    {{ partial "link.html" . }}
+  </header>
+  <main id="main" class="l-main">

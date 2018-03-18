@@ -1,0 +1,24 @@
+{{ if .Site.Menus.main }}
+<nav class="l-nav p-menu">
+  <ul class="p-menu__lists">
+    {{ range .Site.Menus.main.ByWeight }}
+      {{ if .HasChildren }}
+        <li class="p-menu__listitem p-menu__parent">
+          <span>{{ .Name }}</span>
+          <ul>
+            {{ range .Children }}
+              <li class="p-menu__listitem p-menu__child"><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+      {{ else }}
+      <li class="p-menu__listitem">
+        <a href="{{ .URL }}">
+          {{- .Name -}}
+        </a>
+      </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
