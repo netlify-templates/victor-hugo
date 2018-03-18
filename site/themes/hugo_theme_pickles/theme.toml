@@ -1,0 +1,10 @@
+name = "Pickles"
+license = "MIT"
+licenselink = "https://github.com/mismith0227/hugo_theme_pickles/blob/master/LICENSE.md"
+description = "Pickles is a modern, simple and beautiful Hugo theme"
+author = "Takuma Misumi"
+homepage = "https://pickles.work/"
+source_repo = "git@github.com:mismith0227/hugo_theme_pickles.git"
+tags = ["Responsive", "Blog", "Google analytics", "Disqus", "Clean", "Tags", "Minimal", "Minimalist", "Simple", "White", "Starter"]
+features = ["blog"]
+min_version = 0.27

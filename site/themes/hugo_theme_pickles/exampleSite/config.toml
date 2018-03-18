@@ -1,0 +1,97 @@
+baseurl = "Your site URL"
+languageCode = "en-us"
+Title = "Your site title"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; Copyright notice"
+
+[params]
+  paginate = 10
+  # Social accounts. Link to these accounts are displayed in the header and
+  # footer
+  twitter = "Your Twitter username"
+  facebook = "Your Facebook username"
+  instagram = "Your Instagram username"
+  googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
+  github = "Your GitHub username"
+  gitlab = "Your GitLab username"
+  npm = "Your npm username"
+  codepen = "Your CodePen username"
+  dribbble = "Your Dribbble username"
+  fivehundredpx = "Your 500px username" # 500px
+  flickr = "Your Flickr username"
+  pinterest = "Your Pinterest username"
+  tumblr = "Your Tumblr username"
+  vimeo = "Your Vimeo username"
+  youtube = "Your YouTube username"
+  linkedin = "Your LinkedIn username"
+  # Disqus shortname
+  disqus = ""
+  # Google Analytics API key.
+  ga_api_key = "Your Google Analytics tracking id"
+  author = "Your Name"
+  authorwebsite = "example.com"
+  avatar = "/path/to/avatar"
+  contact = "Your contact link (ex. mailto:foo@example.com)"
+  bio = "Your short bio"
+  # Short subtitle/tagline. This is displayed in the header.
+  subtitle = "Short subtitle"
+  # Logo image. This is displayed ogp image.
+  logo = "/path/to/logo"
+  favicon = "/path/to/favicon"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+[[menu.main]]
+    identifier = "theme"
+    name = "/theme"
+    weight = 3
+
+[[menu.main]]
+    parent = "theme"
+    name = "creating-a-new-theme"
+    url = "/posts/creating-a-new-theme"
+    weight = 1
+
+[[menu.main]]
+    parent = "theme"
+    name = "migrate-from-jekyll"
+    url = "/posts/migrate-from-jekyll"
+    weight = 2
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 4
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"

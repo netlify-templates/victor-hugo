@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL | sanitizeurl }}
+<section>
+  <h2>{{ .Title }}</h2>
+  <ul>
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms }}
+    <li><a href="{{ $baseurl }}/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})</li>
+    {{ end }}
+  </ul>
+</section>
+{{ partial "footer.html" . }}
