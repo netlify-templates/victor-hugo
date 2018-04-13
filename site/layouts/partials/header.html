@@ -1,10 +1,16 @@
 <!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-    <title>{{ $.Site.Title }}</title>
-    <link rel="stylesheet" href="css/main.css"/>
-  </head>
-  <body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ $.Site.Language.Lang }}"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="{{ $.Site.Language.Lang }}"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="{{ $.Site.Language.Lang }}"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ $.Site.Language.Lang }}"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ $.Site.Title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+        <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
