@@ -5,6 +5,7 @@ import gutil from "gulp-util";
 import flatten from "gulp-flatten";
 import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
+import rev from  "gulp-rev";
 import cssnext from "postcss-cssnext";
 import autoprefixer from "autoprefixer";
 import sass from "gulp-sass";
