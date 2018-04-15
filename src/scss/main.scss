@@ -136,8 +136,7 @@ h2 {
 h3 {
     font-size: 1rem;
 }
-h4 {
-}
+
 
 p {
     margin: 0 0 1rem 0;
@@ -529,19 +528,15 @@ ul.era-map {
     .era {
         margin-bottom: 2em;
         border: 0 none;
-        .txt {
-        }
 
         @media (min-width : 500px) {
             border: 1px solid transparent;
             border-width: 0 0 0 1px;
             padding: 0 1em 0 1.25rem;
-            .txt {
-            }
         }
 
         @media print {
-            border: 0 none;
+            border: none;
             padding: 0;
         }
     }
