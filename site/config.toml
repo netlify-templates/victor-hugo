@@ -1,9 +1,19 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "Derek Odegard"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[[menu.main]]
+    name = "About" 
+    url  = "/about"
+    weight = 1
+
+[[menu.main]]
+    name = "Food"
+    url  = "/food"
+    weight = 2

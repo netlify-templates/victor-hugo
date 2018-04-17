@@ -5,7 +5,11 @@ import gutil from "gulp-util";
 import flatten from "gulp-flatten";
 import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
+import rev from  "gulp-rev";
 import cssnext from "postcss-cssnext";
+import autoprefixer from "autoprefixer";
+import sass from "gulp-sass";
+import cssNano from "gulp-cssnano";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
@@ -26,10 +30,16 @@ gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArg
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
-    .pipe(gulp.dest("./dist/css"))
-    .pipe(browserSync.stream())
+    gulp.src("./src/scss/**/*.scss")
+      .pipe(sass({
+        outputStyle:  "nested",
+        precision: 10,
+        includePaths: ["node_modules"],
+      }))
+      .pipe(postcss([ autoprefixer() ]))
+      .pipe(cssNano())
+      .pipe(gulp.dest("./dist/css"))
+      .pipe(browserSync.stream())
 ));
 
 // Compile Javascript
@@ -64,6 +74,7 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/scss/**/*.scss", ["css"])
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
