@@ -1,0 +1,259 @@
+@import "palette";
+@import "typography";
+
+$month-height: 12px;
+$month-height-500: 10px;
+$month-height-650: 11px;
+$month-height-768: 11px;
+$month-height-825: 12px;
+$month-height-992: 13px;
+$year-width: 30px;
+$era-width: 5px;
+
+@media (min-width: 650px) {
+    $year-width: 35px;
+    $era-width: 10px;
+}
+
+div.history-map {
+    margin: -1px 0 0 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    border-top: 1px solid black;
+    width: $year-width + $era-width;
+    display: none;
+    min-height: 1000px;
+    background-color: #eee;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    @media (min-width : 500px) {
+        display: block;
+    }
+
+    @media print {
+        display: none;
+    }
+}
+
+ul.year-map {
+    display: none;
+
+    @media (min-width : 500px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $year-width;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            height: $month-height * 12;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: block;
+            i {
+                border-top: 1px solid black;
+                display: block;
+                font-style: normal;
+                font-size: 11px;
+                font-family: 'museo-sans', sans-serif;
+                font-weight: 500;
+                line-height: 13px;
+            }
+        }
+        li.year-1994 {
+            height: $month-height * 4;
+            i {
+                border: 0;
+            }
+        }
+        li.year-2013 {
+            height: $month-height * 8;
+        }
+    }
+
+    @media (min-width: 650px) {
+        li {
+            height: $month-height-650 * 12;
+        }
+        li.year-1994 {
+            height: $month-height-650 * 4;
+        }
+        li.year-2013 {
+            height: $month-height-650 * 8;
+        }
+    }
+    @media (min-width: 768px) {
+        li {
+            height: $month-height-768 * 12;
+        }
+        li.year-1994 {
+            height: $month-height-768 * 4;
+        }
+        li.year-2013 {
+            height: $month-height-768 * 8;
+        }
+    }
+
+    @media (min-width: 825px) {
+        li {
+            height: $month-height-825 * 12;
+        }
+        li.year-1994 {
+            height: $month-height-825 * 4;
+        }
+        li.year-2013 {
+            height: $month-height-825 * 8;
+        }
+    }
+
+    @media (min-width: 992px) {
+        li {
+            height: $month-height-992 * 12;
+        }
+        li.year-1994 {
+            height: $month-height-992 * 4;
+        }
+        li.year-2013 {
+            height: $month-height-992 * 8;
+        }
+    }
+
+}
+ul.era-map {
+    position: absolute;
+    top: 0;
+    left: $year-width;
+    width: $era-width;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li.time-span {
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        background-color: #ddd;
+        //background: #ddd url(/img/history-map-grid.gif) top left;
+    }
+
+
+    li.opensky-era {
+        background-color: $color-osky;
+        height: $month-height * 42;
+    }
+    li.flavors-interlude {
+        background-color: $color-flavors;
+        height: $month-height * 8;
+    }
+    li.meetup-era {
+        background-color: $color-meetup;
+        height: $month-height * 71;
+    }
+    li.dark-ages {
+        background-color: $color-dark-ages;
+        height: $month-height * 23;
+    }
+    li.schwa-era {
+        background-color: $color-schwa;
+        height: $month-height * 61;
+    }
+    li.pre-history {
+        background-color: $color-pre-history;
+        height: $month-height * 22;
+    }
+    @media (min-width : 321px) {
+        display: block;
+
+    }
+    @media (min-width: 650px) {
+        li.opensky-era {
+            height: $month-height-650 * 42;
+        }
+        li.flavors-interlude {
+            height: $month-height-650 * 8;
+        }
+        li.meetup-era {
+            height: $month-height-650 * 71;
+        }
+        li.dark-ages {
+            height: $month-height-650 * 23;
+        }
+        li.schwa-era {
+            height: $month-height-650 * 61;
+        }
+        li.pre-history {
+            height: $month-height-650 * 22;
+        }
+    }
+    @media (min-width: 768px) {
+        li.opensky-era {
+            height: $month-height-768 * 42;
+        }
+        li.flavors-interlude {
+            height: $month-height-768 * 8;
+        }
+        li.meetup-era {
+            height: $month-height-768 * 71;
+        }
+        li.dark-ages {
+            height: $month-height-768 * 23;
+        }
+        li.schwa-era {
+            height: $month-height-768 * 61;
+        }
+        li.pre-history {
+            height: $month-height-768 * 22;
+        }
+    }
+
+    @media (min-width: 825px) {
+        li.opensky-era {
+            height: $month-height-825 * 42;
+        }
+        li.flavors-interlude {
+            height: $month-height-825 * 8;
+        }
+        li.meetup-era {
+            height: $month-height-825 * 71;
+        }
+        li.dark-ages {
+            height: $month-height-825 * 23;
+        }
+        li.schwa-era {
+            height: $month-height-825 * 61;
+        }
+        li.pre-history {
+            height: $month-height-825 * 22;
+        }
+    }
+
+    @media (min-width: 992px) {
+        li.opensky-era {
+            height: $month-height-992 * 42;
+        }
+        li.flavors-interlude {
+            height: $month-height-992 * 8;
+        }
+        li.meetup-era {
+            height: $month-height-992 * 71;
+        }
+        li.dark-ages {
+            height: $month-height-992 * 23;
+        }
+        li.schwa-era {
+            height: $month-height-992 * 61;
+        }
+        li.pre-history {
+            height: $month-height-992 * 22;
+        }
+    }
+}
