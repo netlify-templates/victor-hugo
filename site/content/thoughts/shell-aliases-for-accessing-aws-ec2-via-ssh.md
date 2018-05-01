@@ -79,7 +79,7 @@ Since it's composed of independent hacks and snippets, it's not something we cou
 package as a tool for you to download. Right now, to use it you'll need to understand and
 customize it to your context.
 
-In summary, we synchronize your AWS profiles, CloudFormation stacks, and SSH client
+In summary, we synchronize our AWS profiles, CloudFormation stacks, and SSH client
 configuration using a cron job.
 
 {{<figure src="/images/thoughts/ssh-aws-5.png">}}
@@ -155,6 +155,33 @@ function list-aws-profiles() {
 
   if [ ${rescode} -eq 0 ]; then
       export RESULT="${result}";
+  fi
+
+  return ${rescode};
+}
+```
+
+Our solution is not constrained to any specific AWS profile. To work for each one
+you might have configured already, we'll make use of a helper function to list them all.
+
+```bash
+## Retrieves the list of AWS Profiles already configured,
+## based on the contents of ~/.aws/config.
+## Returns:
+## - 0 If the profiles were found; 1 otherwise.
+## Example:
+##   if list-aws-profiles; do
+##     for profile in ${RESULT}; do
+##       echo "AWS Profile found: ${profile}";
+##     done
+##   fi
+function list-aws-profiles() {
+  local -i rescode;
+  local result="$(cat ~/.aws/config | grep '\[profile ' | sed 's|\[profile ||g' | tr -d ']')";
+  rescode=$?;
+
+  if [ ${rescode} -eq 0 ]; then
+    export RESULT="${result}";
   fi
 
   return ${rescode};
@@ -565,9 +592,9 @@ regenerate-aws-aliases
 
 Please share your feedback below, or reaching out to @osoco in Twitter.
 
-## Créditos
+## Credits
 
-- **Imagen de cabecera**: <a href="https://pixabay.com/en/old-lighthouse-la-palma-salinas-1538921/" target="_blank">Free-Photos</a> con licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
+- **Images courtesy of Pixabay, licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
 
 
 
