@@ -1,6 +1,6 @@
 import gulp from "gulp";
 import {spawn} from "child_process";
-import hugoBin from "hugo-bin";
+import hugo from "hugo-bin";
 import gutil from "gulp-util";
 import flatten from "gulp-flatten";
 import postcss from "gulp-postcss";
@@ -76,7 +76,7 @@ function buildSite(cb, options, environment = "development") {
 
   process.env.NODE_ENV = environment;
 
-  return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
+  return spawn(hugo, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
       browserSync.reload();
       cb();
