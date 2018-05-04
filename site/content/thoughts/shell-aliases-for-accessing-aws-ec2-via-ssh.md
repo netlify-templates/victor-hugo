@@ -20,7 +20,7 @@ A typical scenario could be as follows.
 {{<figure src="/images/thoughts/ssh-aws-1.png">}}
 
 In order to connect to the instance, we need to find out its IP address first. Once we
-know it, we change our `~/.ssh/config` to add something like:
+know it, we change our `${HOME}/.ssh/config` to add something like:
 
 ```bash
 Host [instance-name]
@@ -47,7 +47,7 @@ One way or another, we can connect to the instance again.
 
 {{<figure src="/images/thoughts/ssh-aws-4.png">}}
 
-So far so good. However, what this scenario happens regularly? We end up doing tedious
+So far so good. However, what if this scenario happens regularly? We end up doing tedious
 tasks and wasting time when we usually have important reasons to connect to the instance
 in the first place.
 
@@ -56,7 +56,7 @@ how our CloudFormation templates have evolved after applying those patterns to e
 concrete scenario.
 
 One of those "best practices" means declaring a DNS record for each EC2 instance in its
-CloudFormation stack, and include it as /output/. That would save us time modifying
+CloudFormation stack, and include it as output. That would save us time modifying
 the SSH client configuration.
 
 But it doesn't fit in all cases. For example, what if you're working remotely, and
@@ -73,14 +73,15 @@ one of your instances.
 At OSOCO we've built some tools in-house to help us in our AWS duties, including this.
 
 Instead of checking the IP of the instance using the AWS Console, we leverage the AWS-CLI
-to automatically create shell aliases based on the profile and stack combination.
+to automatically create shell aliases based on the profile and EC2 instance combination.
 
 Since it's composed of independent hacks and snippets, it's not something we could easily
-package as a tool for you to download. Right now, to use it you'll need to understand and
-customize it to your context.
+package as a tool for you to download. Right now, to use it you'll need to understand it first,
+and then probably customize it to your needs.
 
-In summary, we synchronize our AWS profiles, CloudFormation stacks, and SSH client
-configuration using a cron job.
+In summary, this solution consists of synchronizing our AWS profiles, CloudFormation stacks, and SSH client
+configuration using a cron job, and providing convenient shell aliases like `ssh-[ec2-instance]` to connect
+to the EC2 instance without caring about the instance's IP address.
 
 {{<figure src="/images/thoughts/ssh-aws-5.png">}}
 
@@ -90,14 +91,14 @@ Should you are interested in trying out this approach, we'll show you each part 
 puzzle. But the big picture consists of a single file (`~/.aws-aliases`) you'll need to run each time you
 log in, and a cron job that makes sure those aliases are in sync with your EC2 instances.
 
-The aliases will allow you to run commands such as `ssh-[instance-name]` to connect to your
-instance, or `[instance-name]-ip` to print its IP.
+In addition to the `ssh-[instance-name]` aliases, you'll be able to run `[instance-name]-ip` to print
+(and copy to the clipboard) the instance's IP address.
 
-If your stacks include SecurityGroups preventing you from connecting from arbitrary IPs,
-you'll need to export a variable `AWS_VPN_INTERFACE` containing the name of your VPN
-interface.
+If your stacks include SecurityGroups preventing you from connecting from the office's IP, and
+you are out of the office, you'll need to setup a VPN and export a variable `AWS_VPN_INTERFACE`
+containing the name of the network interface the VPN creates.
 
-To make it work, we'll focus on the script to run using a cron job: `~/.aws-helper-functions.sh`.
+To make all this work, we'll focus on the script to run using a cron job: `${HOME}/.aws-helper-functions.sh`.
 
 The first step is to define a shell function to avoid us to repeat the information about
 the AWS profile again and again. We included a minor hack to include `--no-include-email`
@@ -139,7 +140,7 @@ you might have configured AWS-CLI already, we'll make use of a helper function t
 
 ```bash
 ## Retrieves the list of AWS Profiles already configured,
-## based on the contents of ~/.aws/config.
+## based on the contents of ${HOME}/.aws/config.
 ## Returns:
 ## - 0 If the profiles were found; 1 otherwise.
 ## Example:
@@ -150,7 +151,7 @@ you might have configured AWS-CLI already, we'll make use of a helper function t
 ##   fi
 function list-aws-profiles() {
   local -i rescode;
-  local result="$(cat ~/.aws/config | grep '\[profile ' | sed 's|\[profile ||g' | tr -d ']')";
+  local result="$(cat ${HOME}/.aws/config | grep '\[profile ' | sed 's|\[profile ||g' | tr -d ']')";
   rescode=$?;
 
   if [ ${rescode} -eq 0 ]; then
@@ -166,7 +167,7 @@ you might have configured AWS-CLI already, we'll make use of a helper function t
 
 ```bash
 ## Retrieves the list of AWS Profiles already configured,
-## based on the contents of ~/.aws/config.
+## based on the contents of ${HOME}/.aws/config.
 ## Returns:
 ## - 0 If the profiles were found; 1 otherwise.
 ## Example:
@@ -177,7 +178,7 @@ you might have configured AWS-CLI already, we'll make use of a helper function t
 ##   fi
 function list-aws-profiles() {
   local -i rescode;
-  local result="$(cat ~/.aws/config | grep '\[profile ' | sed 's|\[profile ||g' | tr -d ']')";
+  local result="$(cat ${HOME}/.aws/config | grep '\[profile ' | sed 's|\[profile ||g' | tr -d ']')";
   rescode=$?;
 
   if [ ${rescode} -eq 0 ]; then
@@ -188,7 +189,7 @@ function list-aws-profiles() {
 }
 ```
 
-Now, we need a function to create /aliases/ for each one of your AWS profiles:
+Now, we need a function to create aliases for each one of your AWS profiles:
 ```bash
 ## Declares shell aliases to run aws-shortcut for each AWS profile found.
 ## Parameters:
@@ -196,8 +197,8 @@ Now, we need a function to create /aliases/ for each one of your AWS profiles:
 ## Returns:
 ## - 0 If any shell alias was created; 1 otherwise.
 ## Example:
-##   if generate-aws-profile-aliases ~/my-aliases; then
-##     echo "AWS profile aliases generated successfully in ~/my-aliases.";
+##   if generate-aws-profile-aliases ${HOME}/my-aliases; then
+##     echo "AWS profile aliases generated successfully in ${HOME}/my-aliases.";
 ##   fi
 function generate-aws-profile-aliases() {
   local -i rescode=1;
@@ -232,7 +233,7 @@ function generate-aws-profile-aliases() {
 At this point, by running `generate-aws-profile-aliases`, we'll be generating some aliases to run AWS CLI a bit more comfortably.
 
 Those aliases are not particularly helpful, but they allow us to run `$(aws-[profile] ecr get-login)` whenever we want to pull
-or push Docker images to our ECR repositories.
+or push Docker images from or to our ECR repositories.
 
 The next step is a function to retrieve all running EC2 instances dynamically. It'll come in handy later.
 Here's a function to accomplish it:
@@ -336,13 +337,18 @@ function add-route-to-host() {
 ```
 
 Now we're ready to deal with configuring the SSH client options.
-Instead of managing them all in your `~/.ssh/config`, we suggest another approach.
+Instead of managing them all in your `${HOME}/.ssh/config`, we suggest another approach.
 We'll regenerate the `${HOME}/.ssh/config` file regularly, by concatenating all files
 in `${HOME}/.ssh` ending in `.config`.
 At this point, rename your `${HOME}/.ssh/config` to `${HOME}/.ssh/misc.config`
 and edit it to remove any hosts related to your AWS instances.
 
-Some of the `.config` files will be actually created by this AWS helper function:
+Notice we'll assume your private key is stored in `~/.ssh/[aws-private-key].pem`.
+You'll need to create symlinks or change yours accordingly. Also, be aware of your
+`ssh-agent`, which might be full of cached identities and ignoring your private key anyway.
+In that case, run `ssh-agent -D` and try connecting again.
+
+Some of these `.config` files will be actually created by this AWS helper function:
 
 ```bash
 ## Updates the SSH client configuration to connect to given EC2 instance.
@@ -426,7 +432,7 @@ EOF
 This function expects 2 arguments: the name of the EC2 instance and the name of the AWS profile (as defined in your
 `${HOME}/.aws/credentials`).
 
-After some validations, it uses AWS CLI to get information about the instance. AWS CLI provides this information in JSON format. We use `jq` to extract the IP address from it.
+After some validations, it uses AWS CLI to get information about the instance. AWS CLI provides this information in JSON format. We use <a href="https://stedolan.github.io/jq/">jq</a> to extract the IP address from it.
 
 Then, if everything went fine, we check if the ssh configuration file for the requested instance exists.
 If it's missing, we create it with some default settings.
@@ -445,8 +451,8 @@ each EC2 instance.
 ## Returns:
 ## - 0 If the SSH alias get generated; 1 Otherwise.
 ## Example:
-##   if generate-ec2-ssh-aliases-for-profile "prof1" ~/my-aliases; then
-##     echo "SSH aliases generated for your EC2 instances in prof1, in ~/my-aliases.";
+##   if generate-ec2-ssh-aliases-for-profile "prof1" ${HOME}/my-aliases; then
+##     echo "SSH aliases generated for your EC2 instances in prof1, in ${HOME}/my-aliases.";
 ##   fi
 function generate-ec2-ssh-aliases-for-profile() {
   local -i rescode=1;
@@ -499,8 +505,8 @@ function above for all your AWS profiles:
 ## Returns:
 ## - 0 If the aliases get generated correctly; 1 Otherwise.
 ## Example:
-##   if generate-all-ec2-ssh-aliases ~/my-aliases; then
-##     echo "Shell aliases generated for all AWS profiles in ~/my-aliases."
+##   if generate-all-ec2-ssh-aliases ${HOME}/my-aliases; then
+##     echo "Shell aliases generated for all AWS profiles in ${HOME}/my-aliases."
 ##   fi
 function generate-all-ec2-ssh-aliases() {
   local -i rescode=1;
@@ -552,7 +558,7 @@ AWS_ALIASES="${HOME}/.aws-aliases";
 
 [ -e "${AWS_ALIASES}" ] && source ${AWS_ALIASES}
 
-source ~/.aws-helper-functions.sh
+source ${HOME}/.aws-helper-functions.sh
 
 ## Regenerates all AWS-related aliases.
 function regenerate-aws-aliases() {
@@ -575,7 +581,8 @@ We just need to add `${HOME}/.aws-stuff.sh` file in our login script, and run `g
 Thanks to autocompletion, when you need to connect to one of your EC2 instances,
 you can just type `ssh-`, press `TAB`, and get the complete list for you.
 
-We can now schedule the rate at which we regenerate the aliases file to roughly match the frequency your IPs change. Once a day could suffice:
+We can now schedule the rate at which we regenerate the aliases file to roughly match the frequency your IPs change.
+Should once a day might suffice for you:
 
 ```bash
 0 11 * * * [user] /home/${user}/.aws-ssh-refresh.sh
@@ -594,4 +601,4 @@ Please share your feedback below, or reaching out to @osoco in Twitter.
 
 ## Credits
 
-- **Images courtesy of Pixabay, licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
+- Images courtesy of Pixabay, licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
