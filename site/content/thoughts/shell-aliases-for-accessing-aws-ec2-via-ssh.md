@@ -5,9 +5,9 @@ date = "2018-04-25T15:23:52+01:00"
 months = [ "2018-04" ]
 authors = [ "josé-san-leandro" ]
 authorPhoto = "josé-san-leandro.jpg"
-draft = "true"
-tags = [ "osoco", "ssh", "aws", "bash", "zsh", "ec2" ]
-summary = ""
+draft = "false"
+tags = [ "osoco", "ssh", "aws", "bash", "zsh", "ec2", "devops" ]
+summary = "A hands-on approach to access your EC2 instances without knowing their IP addresses"
 background = "cyberspace.jpg"
 backgroundSummary = "network-cable.jpg"
 +++
@@ -56,7 +56,7 @@ how our CloudFormation templates have evolved after applying those patterns to e
 concrete scenario.
 
 One of those "best practices" means declaring a DNS record for each EC2 instance in its
-CloudFormation stack, and include it as output. We discourage the use of elastic IPs unless
+CloudFormation stack, and include it as part of its *outputs*. We discourage the use of *Elastic IPs* unless
 a client requires it. Using custom DNS entries saves us the need to modify the SSH client
 configuration ourselves.
 
@@ -95,7 +95,7 @@ log in, and a cron job that makes sure those *aliases* are in sync with your EC2
 In addition to the `ssh-[instance-name]` *aliases*, you'll be able to run `[instance-name]-ip` to print
 (and copy to the clipboard) the instance's IP address.
 
-If your stacks include *SecurityGroups* preventing you from connecting from the office's IP, and
+If your stacks include *SecurityGroups* preventing you from connecting from anywhere but the office's IP, and
 you are out of the office, you'll need to setup a VPN and export a variable `AWS_VPN_INTERFACE`
 containing the name of the network interface the VPN creates.
 
@@ -189,7 +189,7 @@ function generate-aws-profile-aliases() {
   if list-aws-profiles; then
     local oldIFS="${IFS}";
     IFS=$' \t\n';
-    if [ $ZSH_VERSION ]; then
+    if [ ${ZSH_VERSION} ]; then
         setopt sh_word_split
     fi
     for p in ${RESULT}; do
@@ -283,8 +283,8 @@ function retrieve-ec2-ip() {
 }
 ```
 
-Those working remotely will need to add new entries to their route table for every EC2 instance.
-That's what this function is for:
+Those of your working remotely will need to add new entries to their route table for every EC2 instance.
+That's what the next function is about:
 
 ```bash
 ## Adds a new route to given IP, using given VPN interface.
@@ -323,8 +323,10 @@ Now we're ready to deal with configuring the SSH client options.
 Instead of managing them all in your `${HOME}/.ssh/config`, we suggest another approach.
 We'll regenerate the `${HOME}/.ssh/config` file regularly, by concatenating all files
 in `${HOME}/.ssh` ending in `.config`.
-At this point, rename your `${HOME}/.ssh/config` to `${HOME}/.ssh/misc.config`
-and edit it to remove any hosts related to your AWS instances.
+
+At this point, rename your `${HOME}/.ssh/config` to `${HOME}/.ssh/misc.config` (the name is
+unimportant as long as doesn't collide with the ones we'll autogenerate later) and edit it
+to remove any hosts related to your AWS instances.
 
 Notice we'll assume your private key is stored in `~/.ssh/[profile].pem`.
 You'll need to create symlinks or change yours accordingly. Also, be aware of your
@@ -419,7 +421,8 @@ After some validations, it uses AWS CLI to get information about the instance. A
 
 Then, if everything went fine, we check if the SSH configuration file for the requested instance exists.
 If it's missing, we create it with some default settings.
-Otherwise, we modify the last line with the new `Hostname [new-ip]` entry.
+Otherwise, we modify the **last line** with the new `Hostname [new-ip]` entry.
+
 The script prints the new IP, copies it to the clipboard, and adds the new route to the route table if we
 access the EC2 instances via a VPN.
 
@@ -460,7 +463,7 @@ function generate-ec2-ssh-aliases-for-profile() {
       echo "done";
       local oldIFS="${IFS}";
       IFS=$' \t\n';
-      if [ $ZSH_VERSION ]; then
+      if [ ${ZSH_VERSION} ]; then
           setopt sh_word_split
       fi
       for i in ${RESULT}; do
@@ -512,7 +515,7 @@ function generate-all-ec2-ssh-aliases() {
       echo "done";
       local oldIFS="${IFS}";
       IFS=$' \t\n';
-      if [ $ZSH_VERSION ]; then
+      if [ ${ZSH_VERSION} ]; then
           setopt sh_word_split
       fi
       for awsProfile in ${RESULT}; do
@@ -581,7 +584,7 @@ source ${HOME}/.aws-stuff.sh
 regenerate-aws-aliases
 ```
 
-Please share your feedback below, or reaching out to @osoco in Twitter.
+Please share your feedback below, or reaching out to <a href="https://twitter.com/osoco">@osoco</a> in Twitter.
 
 ## Credits
 
