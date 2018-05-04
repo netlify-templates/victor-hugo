@@ -161,8 +161,8 @@ function list-aws-profiles() {
 }
 ```
 
-Our solution is not constrained to any specific AWS profile. To work for each one
-you might have configured already, we'll make use of a helper function to list them all.
+Our solution is not constrained to any specific AWS profile. To work for each profile
+you might have configured AWS-CLI already, we'll make use of a helper function to list them all.
 
 ```bash
 ## Retrieves the list of AWS Profiles already configured,
@@ -181,7 +181,7 @@ function list-aws-profiles() {
   rescode=$?;
 
   if [ ${rescode} -eq 0 ]; then
-    export RESULT="${result}";
+      export RESULT="${result}";
   fi
 
   return ${rescode};
@@ -595,9 +595,3 @@ Please share your feedback below, or reaching out to @osoco in Twitter.
 ## Credits
 
 - **Images courtesy of Pixabay, licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
-
-
-
-
-
-
