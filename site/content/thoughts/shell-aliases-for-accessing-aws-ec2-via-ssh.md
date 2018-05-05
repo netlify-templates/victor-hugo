@@ -12,6 +12,8 @@ background = "cyberspace.jpg"
 backgroundSummary = "network-cable.jpg"
 +++
 
+## The problem
+
 At OSOCO we use AWS extensively. In particular, we use CloudFormation to describe the
 infrastructure for each platform.
 
@@ -43,7 +45,8 @@ Better off, we can automate the way we retrieve the new IP with the help of AWS 
 
 {{<figure src="/images/thoughts/ssh-aws-3.png">}}
 
-One way or another, we can connect to the instance again.
+One way or another, once our SSH client configuration points to the new IP,
+we can connect to the instance again.
 
 {{<figure src="/images/thoughts/ssh-aws-4.png">}}
 
@@ -51,25 +54,27 @@ So far so good. However, what if this scenario happens regularly? We end up doin
 tasks and wasting time when we usually have important reasons to connect to the instance
 in the first place.
 
-Over time, we've come to agree on certain "best practices" or "patterns". We can now see
-how our CloudFormation templates have evolved after applying those patterns to each
-concrete scenario.
+Over time, we at OSOCO have come to agree on certain "best practices" or "patterns". We've seen
+how our CloudFormation templates have evolved after applying those patterns over time.
 
 One of those "best practices" means declaring a DNS record for each EC2 instance in its
 CloudFormation stack, and include it as part of its *outputs*. We discourage the use of *Elastic IPs* unless
 a client requires it. Using custom DNS entries saves us the need to modify the SSH client
 configuration ourselves.
 
-But it doesn't fit in all cases. For example, what if you're working remotely, and
+Not all our stacks follow this approach, though.
+
+And it doesn't solve the problem in all situations. For example, what if you're working remotely, and
 the CloudFormation stacks allow SSH access only from the office's IP? You'll need
-to add a new entry in your routing table:
+to add a new entry in your routing table so that traffic to the EC2 goes through the VPN to the office:
 
 ```bash
 route add -host [instance-dns-entry] [vpn-interface]
 ```
 
-You'll need to do it every time you reboot your box. And you'll need to add it for every
-one of your instances.
+And don't forget you'll need to do it every time you reboot your box, for every one of your instances.
+
+## Our in-house solution
 
 At OSOCO we've built some tools in-house to help us in our AWS duties, including this.
 
@@ -248,7 +253,7 @@ function list-ec2-instances() {
 }
 ```
 
-Another function that we'll need later uses AWS-CLI to find out the IP of a EC2 instance:
+Another function that we'll need later uses AWS-CLI to find out the IP of an EC2 instance:
 
 ```bash
 ## Retrieves the IP of given EC2 instance.
@@ -283,7 +288,7 @@ function retrieve-ec2-ip() {
 }
 ```
 
-Those of your working remotely will need to add new entries to their route table for every EC2 instance.
+Those of you working remotely will need to add new entries to their route table for every EC2 instance.
 That's what the next function is about:
 
 ```bash
@@ -331,7 +336,7 @@ to remove any hosts related to your AWS instances.
 Notice we'll assume your private key is stored in `~/.ssh/[profile].pem`.
 You'll need to create symlinks or change yours accordingly. Also, be aware of your
 `ssh-agent`, which might be full of cached identities and ignoring your private key anyway.
-In that case, run `ssh-agent -D` and try connecting again.
+In that case, run `ssh-add -D` and try connecting again.
 
 Some of these `.config` files will be actually created by this AWS helper function:
 
