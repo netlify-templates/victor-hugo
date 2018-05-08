@@ -1260,6 +1260,7 @@ a.link:hover {
   line-height: 2em;
   color: #fff;
   text-decoration: none;
+  display: inline;
 }
 
 /* line 1036, ../../../../../sass/web/_general.scss */

@@ -7,7 +7,7 @@
 
 				<div class="divBlogWrapper">
 						{{ range where .Site.Pages "Section" "thoughts" }}
-	 			      {{ range .Data.Pages.ByParam "date" }}
+	 			      {{ range .Data.Pages.ByDate.Reverse }}
 		  		      {{ .Render "summary" }}
 							{{ end }}
 						{{ end }}
@@ -27,7 +27,7 @@
 						<div class="divColQuarter center">
 								<h5 class="txtBlogFilterTitle">Lo que hemos pensado antes:</h5>
 								<ul class="txtBlogFilterList">
-						    {{ range first 10 .Site.Taxonomies.months.ByCount }}
+						    {{ range first 10 .Site.Taxonomies.months.ByCount.Reverse }}
 									  <li><a href="{{ $.Site.BaseURL }}months/{{ .Term | urlize }}">{{ .Term }} <em>( {{ .Count }})</em></a></li>
 				        {{ end }}
 								</ul>
