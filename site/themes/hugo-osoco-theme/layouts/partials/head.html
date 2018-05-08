@@ -17,6 +17,12 @@
 
 				{{ if and (.IsPage) (eq .Section "thoughts") }}
 				<link rel="stylesheet" href="{{ .Site.BaseURL }}css/osoco-thoughts.css" />
+
+				<meta property="og:title" content="{{ .Title | markdownify }}">
+                                <meta property="og:description" content="{{ .Params.Subtitle | markdownify }}">
+                                <meta property="og:image" content="https://osoco.es{{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }}">
+                                <meta property="og:url" content="https://osoco.es{{ .Permalink }}">
+				<meta name="twitter:card" content="summary_large_image">
 				{{ else }}
 				<link rel="stylesheet" href="{{ .Site.BaseURL }}css/osoco.css" />
 				{{ end }}
