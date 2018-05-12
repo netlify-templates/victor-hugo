@@ -20,6 +20,10 @@ const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
+// Run server tasks
+gulp.task("server", ["hugo", "css", "js", "fonts"], (cb) => runServer(cb));
+gulp.task("server-preview", ["hugo-preview", "css", "js", "fonts"], (cb) => runServer(cb));
+
 // Build/production tasks
 gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
 gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
@@ -56,7 +60,7 @@ gulp.task('fonts', () => (
 ));
 
 // Development server with browsersync
-gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
+function runServer() {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -66,7 +70,7 @@ gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
   gulp.watch("./src/css/**/*.css", ["css"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);
-});
+};
 
 /**
  * Run hugo and build the site
