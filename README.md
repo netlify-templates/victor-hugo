@@ -36,6 +36,18 @@ or
 gulp server
 ```
 
+or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
+
+```bash
+npm run start-preview
+```
+
+or
+
+```bash
+gulp server-preview
+```
+
 Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
 ### Static build
