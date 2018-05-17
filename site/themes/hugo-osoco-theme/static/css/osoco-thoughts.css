@@ -237,7 +237,8 @@ h2 {
 
 /* line 248, ../../../../../sass/thoughts/_general.scss */
 h3 {
-  font-family: "ralewaylight", helvetica, arial;
+    font-family: "ralewaylight", helvetica, arial;
+    font-size: 1.8em;
 }
 
 /* line 251, ../../../../../sass/thoughts/_general.scss */
@@ -658,9 +659,13 @@ strong {
 }
 /* line 568, ../../../../../sass/thoughts/_general.scss */
 .page-post .content p {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 1.6em;
   color: #333;
+}
+.page-post .content li {
+    font-size: 2.4rem;
+    margin: .5em 0;
 }
 /* line 573, ../../../../../sass/thoughts/_general.scss */
 .page-post .content blockquote {
@@ -728,7 +733,7 @@ strong {
 /* line 624, ../../../../../sass/thoughts/_general.scss */
 .postList .post-item h3 {
   font-family: "ralewaylight", helvetica, arial;
-  font-size: 2.125rem;
+  font-size: 2.5rem;
   color: #fff;
 }
 
