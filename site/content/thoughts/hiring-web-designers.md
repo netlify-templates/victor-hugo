@@ -1,5 +1,5 @@
 +++
-title = "¿Eres un diseñador web en busca de nuevos desafíos?"
+title = "¿Eres un diseñador web en busca de nuevos retos?"
 subtitle = "Únete a nuestro equipo en OSOCO"
 url = "/thoughts/2018/05/hiring-web-designers"
 date = "2018-05-17T10:10:00+01:00"
