@@ -136,3 +136,7 @@ Adicionalmente, valoraremos la formación y/o experiencia con:
 <hr class="section-divider"/>
 
 También [estamos buscando desarrolladores de software](/thoughts/2018/05/hiring-sw-developers/), así que si conoces a alguno de esta especie que piensas que encajaría bien con nosotros, por favor, compártelo. ¡Gracias!
+
+## Créditos
+
+- **Imagen de cabecera**: <a href="https://pixabay.com/en/cat-domestic-cat-nose-cat-s-eyes-323035/" target="_blank">gwendoline63</a> con licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.

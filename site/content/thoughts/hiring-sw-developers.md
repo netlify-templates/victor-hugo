@@ -137,3 +137,7 @@ defendieras en los siguientes campos:
 <hr class="section-divider"/>
 
 También [estamos buscando diseñadores web](/thoughts/2018/05/hiring-web-designers/), así que si eres diseñador y buscas colaborar codo con codo con desarrolladores como los que describimos en esta oferta, esta puede ser una buena oportunidad.
+
+## Créditos
+
+- **Imagen de cabecera**: <a href="https://pixabay.com/en/dog-animal-continental-bulldog-pet-2437110/" target="_blank">Pitsch</a> con licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 Creative Commons</a>.
