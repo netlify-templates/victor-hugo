@@ -13,7 +13,7 @@ background = "bored-dog.jpg"
 backgroundSummary = "bored-dog.jpg"
 +++
 
-En OSOCO estamos buscando ingenieros de software con una experiencia de entre 3 y 7 años para unirse a nuestro equipo
+En OSOCO estamos buscando ingenieros de software con una experiencia de entre 5 y 10 años para unirse a nuestro equipo
 y colaborar en nuestros próximos proyectos, que seguro que serán tan intersantes como los que hemos vivido hasta el momento.
 
 Los seleccionados participarán en proyectos basados en tecnologías open source y en servicios de cloud computing como 
