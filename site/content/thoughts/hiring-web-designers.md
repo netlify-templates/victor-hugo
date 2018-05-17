@@ -13,9 +13,9 @@ background = "bored-cat.jpg"
 backgroundSummary = "bored-cat.jpg"
 +++
 
-En OSOCO estamos buscando diseñadores web con entre 3 y 7 años de experiencia para unirse a nuestro equipo y colaborar en nuestros próximos proyectos.
+En OSOCO estamos buscando diseñadores web para unirse a nuestro equipo y colaborar en nuestros próximos proyectos. Orientativamente, estamos buscando personas con experiencia entre 3 y 7 años, si bien estamos abiertos a otro tipo de perfiles.
 
-Buscamos un diseñador que sea capaz de entregar plantillas HTML maquetadas y que incluso tenga algún conocimiento de programación en la capa frontend. Trabajará codo con codo con nuestros equipos de desarrolladores, con lo que es necesario que se sienta cómodo con este tipo de interacción y con los procesos y herramientas involucrados en el desarrollo ágil de software.
+Buscamos un diseñador que sea capaz de llegar hasta la entrega de plantillas HTML maquetadas, con lo que debería cubrir desde las propuestas de diseño gráfico, hasta la maquetación propiamente dicha con estándares del W3C. Tener algún conocimiento de programación en la capa frontend sería un plus deseable. Trabajará codo con codo con nuestros equipos de desarrolladores, con lo que es necesario que se sienta cómodo con este tipo de interacción y con los procesos y herramientas involucrados en el desarrollo ágil de software.
 
 Si quieres saber un poco más sobre cómo se integramos las capacidades de UX y Diseño en nuestros ciclos de desarrollo, échale un vistazo a la siguiente charla de nuestra compañera Eva Pérez:
 
@@ -28,13 +28,13 @@ Asímismo, se integrarán en alguno de nuestros equipos, que emplean metodologí
 ### ¿Qué ofrecemos?
 
 - Contrato indefinido con un salario en un rango entre 30.000 y 40.000 € anuales, en función de las capacidades del candidato.
-- Retribución variable (5%) en función de objetivos.
+- Retribución variable en función de resultados de la compañía.
 - Entorno de trabajo agradable, respetuoso, colaborativo y con un horario flexible. La opción de teletrabajo es real: actualmente tenemos compañeros que trabajan desde Cantabria, Mérida, Valladolid o Fuente el Saz.
 - Trabajamos en equipos que se han constituido a sí mismos y se auto-organizan. Idealmente, estos equipos se mantienen estables y participan en diferentes proyectos a lo largo del tiempo.
 - Nuestra organización es extremadamente plana. Creemos que la clave para operar con más eficacia está en las relaciones de confianza entre pares, sin demasidas jerarquías, sólo compartiendo una visión común.
 - Cultura de conocimiento y aprendizaje continuo a través de charlas internas, organización de cursos, meetups y nuestras comunidades de práctica.
 - Posibilitamos que se dedique el 10% del tiempo ---el equivalente a 4 horas semanales--- a formación en áreas que puedan ser de su interés particular. Se diseña conjuntamente un pequeño plan de formación personalizado, para alinear los interés individuales con los intereses generales del grupo y decidir cómo se realizará el seguimiento de esa formación.
-- Clases de inglés en la oficina (2 horas semanales).
+- Clases de inglés en la oficina (1,5 horas semanales).
 - Saldo anual de 1.000 € anuales disponible para formación: conferencias, cursos, libros, etc.
 - 3 días disponibles anualmente para asistencia a conferencias, cursos, etc.
 - Capacidad para participar en las decisiones de diseño, arquitectura y tecnologías empleadas en los proyectos.
@@ -45,7 +45,7 @@ Asímismo, se integrarán en alguno de nuestros equipos, que emplean metodologí
 
 No consideraremos la experiencia directamente relacionada con los años trabajados, sino que valoraremos la experiencia verdaderamente valiosa. Desde nuestro punto de vista, 5 años trabajando en la misma aplicación y con las mismas tecnologías no equivalen a 5 años de experiencia real.
 
-Con el fin de poder evaluar tus capacidades (técnicas y no técnicas) como desarrollador de software, te propondremos pasar algún tiempo integrado en alguno de nuestros equipos de desarrollo. Compartiendo con ellos sus dinámicas de grupo y reuniones o haciendo pair programming. Para nuestros equipos es importante tener la oportunidad de conocer a las personas con las que trabajarán en un futuro y, por tu lado, será la mejor manera de comprobar por tí mismo si te gusta lo que ves y crees que encajarías con nuestra forma de trabajar. Si esta opción no fuera viable, podríamos reemplazarla por algún sencillo ejercicio práctico de programación, aunque para nosotros es preferible la primera alternativa.
+Con el fin de poder evaluar tus capacidades (técnicas y no técnicas) como diseñador web, te propondremos pasar algún tiempo integrado en nuestro equipo de diseño. Compartiendo con ellos sus dinámicas de grupo y reuniones o trabajando junto a ellos. Para nuestros equipos es importante tener la oportunidad de conocer a las personas con las que trabajarán en un futuro y, por tu lado, será la mejor manera de comprobar por tí mismo si te gusta lo que ves y crees que encajarías con nuestra forma de trabajar. Si esta opción no fuera viable, podríamos reemplazarla por algún sencillo ejercicio práctico de diseño, aunque para nosotros es preferible la primera alternativa.
 
 ### ¿Hablamos?
 

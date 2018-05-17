@@ -13,8 +13,7 @@ background = "bored-dog.jpg"
 backgroundSummary = "bored-dog.jpg"
 +++
 
-En OSOCO estamos buscando ingenieros de software con una experiencia de entre 5 y 10 años para unirse a nuestro equipo
-y colaborar en nuestros próximos proyectos, que seguro que serán tan intersantes como los que hemos vivido hasta el momento.
+En OSOCO estamos buscando ingenieros de software para unirse a nuestro equipo y colaborar en nuestros próximos proyectos, que seguro que serán tan intersantes como los que hemos vivido hasta el momento. Orientativamente, estamos buscando personas con experiencia entre 5 y 10 años, si bien estamos abiertos a otro tipo de perfiles.
 
 Los seleccionados participarán en proyectos basados en tecnologías open source y en servicios de cloud computing como 
 Amazon Web Services (AWS).
@@ -24,14 +23,14 @@ y poder realizar entregas frecuentes de software que funciona y responde a las n
 
 ### ¿Qué ofrecemos?
 
-- Contrato indefinido con un salario en un rango entre 35.000 y 45.000 € anuales, en función de las capacidades del candidato.
-- Retribución variable (5%) en función de objetivos.
+- Contrato indefinido con un salario en un rango entre 30.000 y 45.000 € anuales, en función de las capacidades del candidato.
+- Retribución variable en función de resultados de la compañía.
 - Entorno de trabajo agradable, respetuoso, colaborativo y con un horario flexible. La opción de teletrabajo es real: actualmente tenemos compañeros que trabajan desde Cantabria, Mérida, Valladolid o Fuente el Saz.
 - Trabajamos en equipos que se han constituido a sí mismos y se auto-organizan. Idealmente, estos equipos se mantienen estables y participan en diferentes proyectos a lo largo del tiempo.
 - Nuestra organización es extremadamente plana. Creemos que la clave para operar con más eficacia está en las relaciones de confianza entre pares, sin demasidas jerarquías, sólo compartiendo una visión común.
 - Cultura de conocimiento y aprendizaje continuo a través de charlas internas, organización de cursos, meetups y nuestras comunidades de práctica.
 - Posibilitamos que se dedique el 10% del tiempo ---el equivalente a 4 horas semanales--- a formación en áreas que puedan ser de su interés particular. Se diseña conjuntamente un pequeño plan de formación personalizado, para alinear los interés individuales con los intereses generales del grupo y decidir cómo se realizará el seguimiento de esa formación.
-- Clases de inglés en la oficina (2 horas semanales).
+- Clases de inglés en la oficina (1,5 horas semanales).
 - Saldo anual de 1.000 € anuales disponible para formación: conferencias, cursos, libros, etc.
 - 3 días disponibles anualmente para asistencia a conferencias, cursos, etc.
 - Capacidad para participar en las decisiones de diseño, arquitectura y tecnologías empleadas en los proyectos.
