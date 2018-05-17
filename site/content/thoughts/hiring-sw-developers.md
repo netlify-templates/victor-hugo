@@ -1,7 +1,7 @@
 +++
 title = "¿Buscas nuevos desafíos como desarrollador de software?"
 subtitle = "No lo dudes y ven a conocernos"
-url = "/thouhts/2018/05/hiring-sw-developers"
+url = "/thoughts/2018/05/hiring-sw-developers"
 date = "2018-05-17T10:10:00+01:00"
 months = [ "2018-05" ]
 authors = [ "ruth-zamorano" ]
