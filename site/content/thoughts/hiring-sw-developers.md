@@ -21,6 +21,10 @@ Amazon Web Services (AWS).
 Asímismo, se integrarán en alguno de nuestros equipos, que emplean metodologías ágiles (eXtreme Programming y Scrum) para autoorganizarse 
 y poder realizar entregas frecuentes de software que funciona y responde a las necesidades de nuestros clientes.
 
+En otras palabras, buscamos diseñadores con el coraje para trabajar diariamente con equipos de desarrolladores que a veces pueden ser peculiares. Para muestra, aquí os dejo un vídeo con la *cosmovisión* de nuestros desarrolladores. No tiene desperdicio:
+
+{{<youtube LD-Y40Qm83M>}}
+
 ### ¿Qué ofrecemos?
 
 - Contrato indefinido con un salario en un rango entre 30.000 y 45.000 € anuales, en función de las capacidades del candidato.
