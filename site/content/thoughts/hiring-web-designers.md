@@ -13,17 +13,17 @@ background = "bored-cat.jpg"
 backgroundSummary = "bored-cat.jpg"
 +++
 
-En OSOCO estamos buscando diseñadores web para unirse a nuestro equipo y colaborar en nuestros próximos proyectos. Orientativamente, estamos buscando personas con experiencia entre 3 y 7 años, si bien estamos abiertos a otro tipo de perfiles.
+En OSOCO estamos buscando diseñadores web para unirse a nuestro equipo y colaborar en nuestros próximos proyectos. Orientativamente, estamos buscando diseñadores con experiencia entre 3 y 7 años, si bien estamos abiertos a otro tipo de perfiles.
 
-Buscamos un diseñador que sea capaz de llegar hasta la entrega de plantillas HTML maquetadas, con lo que debería cubrir desde las propuestas de diseño gráfico, hasta la maquetación propiamente dicha con estándares del W3C. Tener algún conocimiento de programación en la capa frontend sería un plus deseable. Trabajará codo con codo con nuestros equipos de desarrolladores, con lo que es necesario que se sienta cómodo con este tipo de interacción y con los procesos y herramientas involucrados en el desarrollo ágil de software.
+Buscamos un diseñador que sea capaz de llegar hasta la entrega de plantillas HTML maquetadas, con lo que debería cubrir desde las propuestas de diseño gráfico, hasta la maquetación propiamente dicha empleando estándares del W3C. Tener algún conocimiento de programación en la capa frontend sería una capacidad deseable.
 
-Si quieres saber un poco más sobre cómo se integramos las capacidades de UX y Diseño en nuestros ciclos de desarrollo, échale un vistazo a la siguiente charla de nuestra compañera Eva Pérez:
+Trabajará codo con codo con nuestros equipos de desarrolladores, con lo que es necesario que se sienta cómodo con este tipo de interacción y con los procesos y herramientas involucrados en el desarrollo ágil de software.
+
+Si quieres saber un poco más sobre cómo integramos las capacidades de UX y Diseño en nuestros ciclos de desarrollo, échale un vistazo a la siguiente charla de nuestra compañera Eva Pérez:
 
 {{<youtube WEFVm1bo6ec>}}
 
-Los seleccionados participarán en proyectos basados en tecnologías open source y en servicios de cloud computing como Amazon Web Services (AWS).
-
-Asímismo, se integrarán en alguno de nuestros equipos, que emplean metodologías ágiles (eXtreme Programming y Scrum) para autoorganizarse y poder realizar entregas frecuentes de software que funciona y responde a las necesidades de nuestros clientes.
+Los seleccionados se integrarán en nuestro equipo de diseño ---que aúna tanto diseño de interacción como diseño visual--- que emplea metodologías ágiles para autoorganizarse y poder realizar entregas frecuentes de productos que funcionan y responden a las necesidades de nuestros clientes.
 
 ### ¿Qué ofrecemos?
 
@@ -60,13 +60,13 @@ Si estás interesado, estamos deseando conocerte. Puedes empezar por escribirnos
 
 ### Nuestra visión
 
-Somos un pequeño equipo de ingenieros y continuaremos siéndolo, porque esa es nuestra elección.
+Somos un pequeño equipo de ingenieros y diseñadores. Además, continuaremos siéndolo, porque esa es nuestra elección.
 
 <blockquote>Queremos lograr que todos los que trabajen con nosotros se sientan parte de la empresa, que la sintieran suya y que no sea tan sólo una frase hecha.</blockquote>
 
-A diferencia de muchas otras empresas en las que los ingenieros necesariamente deben tomar el camino de la gestión 
-para crecer dentro de la empresa, en OSOCO creemos que los ingenieros deben hacer lo que mejor saben y seguir mejorando 
-sus capacidades y visión técnica día a día. Valoramos a los ingenieros por encima de los puestos de gestión, marketing o 
+A diferencia de muchas otras empresas en las que los técnicos necesariamente deben tomar el camino de la gestión 
+para crecer dentro de la empresa, en OSOCO creemos que los ingenieros y diseñadores deben hacer lo que mejor saben y seguir mejorando 
+sus capacidades y visión técnica día a día. Valoramos a los ingenieros y diseñadores por encima de los puestos de gestión, marketing o 
 finanzas.
 
 Lamentablemente, en nuestro sector impera una preocupante falta de profesionalidad, a la que incluso han llegado a 
@@ -94,7 +94,6 @@ La intención es desarrollar un conjunto coherente de prácticas de gestión que
 
 Queremos lograr que todos los que trabajen con nosotros se sientan parte de la empresa, que la sintieran suya y que no sea tan sólo una frase hecha. Para esto la participación del grupo debe ser concreta y real. Deberá implicarse en la toma de decisiones a todos los niveles.
 
-
 ### Actitudes y conocimientos deseados
 
 Las principales cualidades generales que buscamos en cualquier candidato son:
@@ -111,7 +110,7 @@ Las principales cualidades generales que buscamos en cualquier candidato son:
 
 En cuanto a conocimientos concretos:
 
-- Capacidades de diseño gráfico.
+- Capacidades creativas y de diseño gráfico.
 - Estándares del W3C.
 - Maquetación HTML con estándares web.        
 - Manejo del paquete Adobe.
@@ -122,15 +121,15 @@ En cuanto a conocimientos concretos:
 
 Adicionalmente, valoraremos la formación y/o experiencia con:
 
-- Comprensión general del funcionamiento de las aplicaciones web: servidores de aplicaciones, protocolo HTTP, RESTful APIs, WebServices, AJAX, etc
+- Comprensión general del funcionamiento de las aplicaciones web: servidores de aplicaciones, protocolo HTTP, RESTful APIs, WebServices, AJAX, etc.
 - Experiencia con accesibilidad a la web (WCAG del W3C).
 - Conocimiento de programación Javascript.
-- Conocimientos de algunas bibliotecas y frameworks Javascript concretos. Por ejemplo: Jquery, React, Angular, etc.
-- Conocimiento de algún framework móvil: React Native, jQuery Mobile, Sencha Touch, etc.
+- Conocimientos de algunas bibliotecas y frameworks Javascript concretos. Por ejemplo: jQuery, React, Angular, etc.
+- Conocimiento de algún framework móvil. Por ejemplo: React Native, jQuery Mobile, Sencha Touch, etc.
 - Cross-browsing, graceful degradation y progressive enhancement.
 - Conocimientos en diseño de interacción y elaboración de wireframes.
 - Web components y PWAs.    
-- Motores de plantillas (Smarty, Mustache, Twig).
+- Motores de plantillas. Por ejemplo: Smarty, Mustache, Twig, etc.
 
 
 <hr class="section-divider"/>

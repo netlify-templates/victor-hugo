@@ -56,14 +56,13 @@ Si estás interesado, estamos deseando conocerte. Puedes empezar por escribirnos
 
 ### Nuestra visión
 
-Somos un pequeño equipo de ingenieros y continuaremos siéndolo, porque esa es nuestra elección.
-
+Somos un pequeño equipo de ingenieros y diseñadores. Además, continuaremos siéndolo, porque esa es nuestra elección.
 
 <blockquote>Queremos lograr que todos los que trabajen con nosotros se sientan parte de la empresa, que la sintieran suya y que no sea tan sólo una frase hecha.</blockquote>
 
-A diferencia de muchas otras empresas en las que los ingenieros necesariamente deben tomar el camino de la gestión 
-para crecer dentro de la empresa, en OSOCO creemos que los ingenieros deben hacer lo que mejor saben y seguir mejorando 
-sus capacidades y visión técnica día a día. Valoramos a los ingenieros por encima de los puestos de gestión, marketing o 
+A diferencia de muchas otras empresas en las que los técnicos necesariamente deben tomar el camino de la gestión 
+para crecer dentro de la empresa, en OSOCO creemos que los ingenieros y diseñadores deben hacer lo que mejor saben y seguir mejorando 
+sus capacidades y visión técnica día a día. Valoramos a los ingenieros y diseñadores por encima de los puestos de gestión, marketing o 
 finanzas.
 
 Lamentablemente, en nuestro sector impera una preocupante falta de profesionalidad, a la que incluso han llegado a 
