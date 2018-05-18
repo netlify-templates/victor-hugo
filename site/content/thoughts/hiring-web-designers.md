@@ -20,7 +20,7 @@ Buscamos un diseñador que sea capaz de llegar hasta la entrega de plantillas HT
 Trabajará codo con codo con nuestros equipos de desarrolladores, con lo que es necesario que se sienta cómodo con este tipo de interacción y con los procesos y herramientas involucrados en el desarrollo ágil de software.
 
 En otras palabras, buscamos diseñadores con el coraje para trabajar diariamente con equipos de desarrolladores que a veces pueden ser peculiares. Para
-muestra, aquí os dejo un vídeo con la *cosmovisión* de nuestros desarrolladores. No tiene desperdicio:
+muestra, aquí os dejo un vídeo con la *cosmovisión satírica* de uno de nuestros desarrolladores. No tiene desperdicio ;-)
 
 {{<youtube LD-Y40Qm83M>}}
 
