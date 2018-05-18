@@ -19,10 +19,6 @@ Buscamos un diseñador que sea capaz de llegar hasta la entrega de plantillas HT
 
 Trabajará codo con codo con nuestros equipos de desarrolladores, con lo que es necesario que se sienta cómodo con este tipo de interacción y con los procesos y herramientas involucrados en el desarrollo ágil de software.
 
-Si quieres saber un poco más sobre cómo integramos las capacidades de UX y Diseño en nuestros ciclos de desarrollo, échale un vistazo a la siguiente charla de nuestra compañera Eva Pérez:
-
-{{<youtube WEFVm1bo6ec>}}
-
 Los seleccionados se integrarán en nuestro equipo de diseño ---que aúna tanto diseño de interacción como diseño visual--- que emplea metodologías ágiles para autoorganizarse y poder realizar entregas frecuentes de productos que funcionan y responden a las necesidades de nuestros clientes.
 
 ### ¿Qué ofrecemos?
