@@ -88,21 +88,27 @@ interface EventChannels {
 
 After configuring the required settings in `application.properties`, the only missing step is to export
 the converter as a bean so Spring sees it and injects it into the list of converters used
-by Spring-Cloud-Stream. Somewhere in a class declared to provide configuration:
+by Spring-Cloud-Stream. Somewhere, in a class declared to provide configuration, we must provide a builder
+method like:
 
 ```Java
     @Bean
     @StreamMessageConverter
-    MessageConverter buildPropertiesConverter() {
+    MessageConverter buildMessageConverter() {
         new MyMessageConverter()
     }
 ```
 
-For publishing messages the API is also simple. We're not using a processor since we encapsulate
-logic in ports and adapters, so the consumer adapter cannot know the publisher adapter is also
-Spring-Cloud-Stream's.
+For publishing messages the API is also simple. If you're familiar with Spring-Cloud-Stream, you might be
+wondering if we are using a *processor*. We are not.
 
-Anyway, to send a message to a RabbitMQ exchange, we just need to define a class with an output channel:
+We borrow the *ports and adapters* approach from
+[*hexagonal architectures*](http://wiki.c2.com/?HexagonalArchitecture). The consumer adapter cannot
+know the publisher adapter is also Spring-Cloud-Stream's. Actually, the fact that the adapters used
+are both reading from and writing to RabbitMQ, is not essential to the application logic, and could
+change.
+
+Anyway, to send a message to a RabbitMQ exchange, we just needed to define a class with an output channel:
 
 ```Java
 @EnableBinding(source)
@@ -118,7 +124,7 @@ class CommandPublisher {
 }
 ```
 
-Also, the `application.properties` needs some configuration as well. At the very least, the name
+Obviously, the `application.properties` needed some configuration as well. At the very least, the name
 of the exchange.
 
 ```
@@ -127,7 +133,7 @@ spring.cloud.stream.bindings.output.destination=myexchange
 
 # The bad
 
-Once we have everything set up, we encountered a problem when sending messages. A problem that
+Once we had everything set up, we encountered a problem when sending messages. A problem that
 couldn't be solved easily. No converter or configuration setting could help us.
 
 When you publish messages in a RabbitMQ exchange, you can define the message headers.
