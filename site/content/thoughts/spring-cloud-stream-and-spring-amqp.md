@@ -40,7 +40,7 @@ class EventListener {
      * Receives a new event from the queue.
      * @param event the event received.
      */
-    @StreamListener(RabbitMQChannels.QUEUE_NAME)
+    @StreamListener(EventChannels.QUEUE_NAME)
     void eventReceived(ApplicationPassed event) {
         // event handling
     }
