@@ -79,6 +79,7 @@ See [package.json](package.json#L7) or the included gulp file for all tasks.
 |--src                 // Files that will pass through the asset pipeline
 |  |--css              // CSS files in the root of this folder will end up in /css/...
 |  |--js               // app.js will be compiled to /app.js with babel
+|   |--scss              // SCSS files in the root of this folder will end up in /css/...
 ```
 
 ## Basic Concepts
