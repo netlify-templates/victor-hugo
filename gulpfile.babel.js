@@ -9,11 +9,14 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+import sass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
 import sourcemaps from "gulp-sourcemaps";
-import sass from "gulp-sass";
-
 const browserSync = BrowserSync.create();
+import runSequence from "run-sequence";
+import imagemin from "gulp-imagemin";
+import cache from "gulp-cache";
+import discardUnused from "postcss-discard-unused";
 
 // Hugo arguments
 const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
@@ -24,30 +27,40 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Run server tasks
-gulp.task("server", ["hugo", "scss", "css", "js", "fonts"], (cb) => runServer(cb));
-gulp.task("server-preview", ["hugo-preview", "scss", "css", "js", "fonts"], (cb) => runServer(cb));
+gulp.task("server", ["hugo", "build-css", "js", "fonts"], (cb) => runServer(cb));
+gulp.task("server-preview", ["hugo-preview", "build-css", "js", "fonts"], (cb) => runServer(cb));
 
 // Build/production tasks
-gulp.task("build", ["css", "scss", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "scss", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["build-css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["build-css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
-// Compile SCSS with gulp
-gulp.task("scss", function() {
-  return gulp.src("./src/scss/*.scss")
-    .pipe(sourcemaps.init())
-    .pipe(sass().on("error", sass.logError))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write("./"))
-    .pipe(gulp.dest("./dist/css"));
+/// build SCSS to CSS
+gulp.task("build-css", function(callback) {
+  runSequence("compile-scss",
+    "css",
+    callback);
 });
+
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+    .pipe(postcss([discardUnused(), cssImport({from: "./src/css/main.css"}), cssnext()]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
+
+gulp.task("compile-scss", function() {
+  return gulp.src("./src/scss/**/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass().on("error", sass.logError))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("./src/css"))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
 
 // Compile Javascript
 gulp.task("js", (cb) => {
@@ -64,6 +77,29 @@ gulp.task("js", (cb) => {
   });
 });
 
+gulp.task("cache:clear", function(callback) {
+  return cache.clearAll(callback);
+});
+
+gulp.task("images", function() {
+  return gulp.src("./src/img/**/*.+(png|jpg|jpeg|gif|svg)")
+    // Caching images that ran through imagemin
+    .pipe(cache(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({plugins: [{removeViewBox: true}]})
+    ], {
+      verbose: true
+    })))
+    .pipe(gulp.dest("./site/static/img/"));
+});
+
+gulp.task("build-images", function(callback) {
+  runSequence("cache:clear",
+    "images",
+    callback);
+});
 // Move all fonts in a flattened directory
 gulp.task("fonts", () => (
   gulp.src("./src/fonts/**/*")
