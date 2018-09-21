@@ -2,13 +2,22 @@
   You can use import statements to include partials:
  */
 @import "imports/reset.css";
+@import "imports/header.css";
 
 
 /*
   Or add your statements here:
  */
-body{
+body {
   font-family: sans-serif;
   font-size: 1em;
   text-align: center;
+}
+
+.mb-blue {
+  color: #00a6ff;
+}
+
+#banner {
+  background-image: url('/girl-playing-mathbrix-game-in-stem-lab-on-ipad-cropped-darkened.jpg');
 }
