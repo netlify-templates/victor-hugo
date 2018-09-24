@@ -17,6 +17,14 @@ body {
   color: #00a6ff;
 }
 
+.bg-mb-blue {
+  background-color: #00a6ff;
+}
+
 #banner {
   background-image: url('/girl-playing-mathbrix-game-in-stem-lab-on-ipad-cropped-darkened.jpg');
+}
+
+#partner-logos > img {
+  height: 150px;
 }
