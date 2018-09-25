@@ -1,13 +1,7 @@
-/*
-  You can use import statements to include partials:
- */
+@import 'tachyons';
+@import 'tether-drop/dist/css/drop-theme-arrows-bounce';
 @import "imports/reset.css";
-@import "imports/header.css";
 
-
-/*
-  Or add your statements here:
- */
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
@@ -19,6 +13,11 @@ body {
 
 .bg-mb-blue {
   background-color: #00a6ff;
+}
+
+#logo {
+  width: 125px;
+  height: 43px;
 }
 
 #banner {

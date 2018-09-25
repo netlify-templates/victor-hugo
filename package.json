@@ -41,6 +41,8 @@
     "plugin-error": "^1.0.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.0",
+    "tachyons": "^4.11.1",
+    "tether-drop": "^1.4.2",
     "url-loader": "^1.0.1",
     "webpack": "4.17.1",
     "whatwg-fetch": "^2.0.4"
