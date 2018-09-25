@@ -2,6 +2,8 @@
 @import 'tether-drop/dist/css/drop-theme-arrows-bounce';
 @import "imports/reset.css";
 
+/* Global */
+
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
@@ -15,10 +17,14 @@ body {
   background-color: #00a6ff;
 }
 
+/* Header */
+
 #logo {
   width: 125px;
   height: 43px;
 }
+
+/* Home */
 
 #banner {
   background-image: url('/girl-playing-mathbrix-game-in-stem-lab-on-ipad-cropped-darkened.jpg');
@@ -26,4 +32,11 @@ body {
 
 #partner-logos > img {
   height: 150px;
+}
+
+/* Team */
+
+.team-pic {
+  width: 153px;
+  height: 175px;
 }
