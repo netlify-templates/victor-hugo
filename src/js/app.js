@@ -6,7 +6,7 @@ const options = {
   openOn: 'hover'
 };
 
-['about', 'features', 'login'].forEach(function(section) {
+['about', 'login'].forEach(function(section) {
   new Drop(
     Object.assign({
       target: document.querySelector(`#${section}`),
