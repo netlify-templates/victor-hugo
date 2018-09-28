@@ -3,8 +3,8 @@
 <div id="banner" class="pa6 cover bg-center tc">
   <h1 class="f1 normal white tracked">See and Touch</h1>
   <h2 class="f2 normal white ttu tracked">The Big Ideas in Math</h2>
-  <a class="dib pv3 ph4 f4 br2 bg-red bg-animate hover-bg-light-red white no-underline tracked" href="/">
-    Learn More
+  <a id="hero-button" class="dib pv3 ph4 f4 br2 bg-red bg-animate hover-bg-light-red white no-underline tracked" href="#">
+    See it in action
   </a>
 </div>
 
@@ -47,7 +47,7 @@
         MathBRIX doesn't just help children learn math, it teaches them to
         think mathematically!
       </p>
-      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="#">
+      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="https://standards.mathbrix.com/games">
         Sample Games
       </a>
     </div>
@@ -72,7 +72,7 @@
         extra time or support, the system provides them with appropriate
         scaffolding to help them succeed at the next level.
       </p>
-      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="/personalized-learning">
+      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="/features">
         Learn More
       </a>
     </div>
@@ -120,7 +120,7 @@
         curricula such as Singapore Math, Engage NY, Math in Focus, and Eureka
         Math, all of which follow the same steps to understanding.
       </p>
-      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="/conceptual-math">
+      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="/features">
         Learn More
       </a>
     </div>
@@ -149,7 +149,7 @@
         identifying groups of students who are having trouble with the same
         concept, and allowing you to better target your small group instruction.
       </p>
-      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="/learning-analytics">
+      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="/features">
         Learn More
       </a>
     </div>
@@ -209,5 +209,17 @@
   </div>
 
 </div>
+
+<!-- template for the modal component -->
+<script type="text/x-template" id="modal-template">
+  <div id="open-modal" class="modal-backdrop">
+    <div id="modal-window" class="pa3 pt2 br2">
+      <div class="flex justify-end mb2">
+        <a id="close-modal" class="dark-gray no-underline dim" href="#">Close</a>
+      </div>
+      <iframe width="840" height="472.5" src="https://www.youtube.com/embed/dGCpBh3Xz_g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</script>
 
 {{ end }}

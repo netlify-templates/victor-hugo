@@ -25,6 +25,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.11.6",
     "browser-sync": "^2.23.7",
+    "cash-dom": "^2.3.5",
     "css-loader": "^1.0.0",
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.11.0",
