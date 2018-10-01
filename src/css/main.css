@@ -47,10 +47,6 @@ body {
   background-image: url('/girl-playing-mathbrix-game-in-stem-lab-on-ipad-cropped-darkened.jpg');
 }
 
-#partner-logos > img {
-  height: 150px;
-}
-
 .modal-backdrop {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
