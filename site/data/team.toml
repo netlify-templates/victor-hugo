@@ -1,0 +1,84 @@
+[[employees]]
+name = "Dr. Elizabeth Schwartz"
+bio = "Founder, CEO, Content Director, Former Assistant Superintendent. Led previous EdTech startup to successful exit."
+linkedin = "https://www.linkedin.com/in/bettie-schwartz-752a9b4/"
+image_file = "/bettie-schwartz.jpg"
+
+[[employees]]
+name = "Tyler Schwartz"
+bio = "COO, Marketing, Award-winning Digital Media Producer"
+linkedin = "https://www.linkedin.com/in/tyler-schwartz-87848298/"
+image_file = "/tyler-schwartz.jpg"
+
+[[employees]]
+name = "Jaydev Mahadevan"
+bio = "CTO, Led development teams in Fortune 1000 company and startups"
+linkedin = "https://www.linkedin.com/in/jaydevmahadevan/"
+image_file = "/jaydev-mahadevan.jpg"
+
+[[employees]]
+name = "Dr. Chris L. Nicastro"
+bio = "Strategic Partnerships, Former MO Commissioner Education, Former Superintendent"
+linkedin = "https://www.linkedin.com/in/chris-lee-nicastro-6baa1272/"
+image_file = "/chris-nicastro.jpg"
+
+[[employees]]
+name = "Dr. Valri Bieniek"
+bio = "Lead Math Coach, Suburban/Urban Experience, Online Education"
+linkedin = "https://www.linkedin.com/in/valribieniek/"
+image_file = "/valri-bieniek.jpg"
+
+[[advisors]]
+name = "Dr. Tom Giambrone"
+bio = "Math Professor, Buffalo State; Member, CSMP Development Team, Math Activity and Game Design"
+linkedin = "https://www.linkedin.com/in/tom-giambrone-10611432/"
+
+[[advisors]]
+name = "Marcia Mellitz"
+bio = "Former President & CEO, Center for Emerging Technologies, Funding Strategy"
+linkedin = "https://www.linkedin.com/in/marcia-mellitz-9935283/"
+
+[[advisors]]
+name = "Claire Heidema"
+bio = "K-8 Mathematics Specialist, Director of CSMP for 25 years, Professional Development"
+linkedin = "https://www.linkedin.com/in/clare-heidema-a30aa531/"
+
+[[advisors]]
+name = "Karen Meyer"
+bio = "STEM Educator, Cook County, University of Illinois Extension, Professional Development"
+linkedin = "https://www.linkedin.com/in/karen-meyer-49666121/"
+
+[[advisors]]
+name = "Constance Gully, MBA, CPA"
+bio = "President/CEO, Parents As Teachers, Parent Education"
+linkedin = "https://www.linkedin.com/in/constance-gully-cpa-58b08a7/"
+
+[[advisors]]
+name = "Dr. Kathy Thornburg"
+bio = "Director of the U of MO Institute, Professional Development, Early Childhood Programs"
+linkedin = "https://www.linkedin.com/in/kathy-thornburg-809259a/"
+
+[[advisors]]
+name = "Julia Burke"
+bio = "Associate Superintendent, Hazelwood School District, Programs for Special Needs"
+linkedin = "https://www.linkedin.com/in/julia-robinson-burke-62844b16/"
+
+[[advisors]]
+name = "Tony Chambers"
+bio = "Applied Behavior Therapist, Special School District, Modifications and Adaptations for Children with Disabilities"
+linkedin = "https://www.linkedin.com/in/tony-chambers-1106a7b3/"
+
+[[advisors]]
+name = "Andrea Terhune"
+bio = "Former VP Enterprise Holdings, Girls Inc. Board President, IT Strategy"
+linkedin = "https://www.linkedin.com/in/andreaterhune/"
+
+[[advisors]]
+name = "Joan Kelly"
+bio = "Former Group Exec MasterCard, Operations, Technology, Infrastructure Design, Scaling"
+linkedin = "https://www.linkedin.com/in/joankelly314/"
+
+[[advisors]]
+name = "Carl Turza"
+bio = "Operational, Technological, Financial, Corporate Positions, Infrastructure Design, Scaling"
+linkedin = "https://www.linkedin.com/in/carl-turza-b06367/"
