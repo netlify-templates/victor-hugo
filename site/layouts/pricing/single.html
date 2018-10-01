@@ -1,0 +1,64 @@
+{{ define "main" }}
+
+<div class="ph6 pv4 mid-gray tc">
+
+  <h2 class="mt0 mb4 f2 normal black">MathBRIX Plans</h2>
+
+  <div class="flex">
+
+    <div class="relative w-100 w-50-ns mr3 pb3 ba b--mb-mountain-meadow bw2">
+      <img id="early-adopter-discount" src="/early-adopter-discount.png">
+      <h3 class="mt0 mb3 pv1 white bg-mb-mountain-meadow f3 tracked ttu">Pro</h3>
+      <small class="dib mb1 tracked ttu">as low as</small>
+      <div class="f3">
+        <span id="old-price">$6.00</span>
+        <span class="red fw7">$2</span>
+        / student / year
+      </div>
+      <div id="pricing-slider" class="w-80 center mt3 mb3"></div>
+      <div class="f4 fw3"><span id="num-students">20</span> student(s)</div>
+      <div class="mv4 flex justify-center items-center">
+        <div class="mr1 fw7 ttu tracked silver">
+          Your price<br>
+          for 2018-19
+        </div>
+        <div class="f1">$<span id="total-price">40</span></div>
+      </div>
+      <ul class="plan-features w-100 w-70-ns center tl f4 fw3 lh-copy list">
+        <li>70+ standards aligned K-2 games</li>
+        <li>Class rostering & management</li>
+        <li>Easy student login</li>
+        <li>Standards database</li>
+        <li>Class progress reports</li>
+        <li>Detailed drill-down analytics</li>
+        <li>Assignments (coming soon!)</li>
+        <li>Email and live chat support</li>
+      </ul>
+      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="https://teach.mathbrix.com/register">
+        30-Day Free Trial
+      </a>
+      <small class="db mt2 fw3">
+        Still have questions? See our
+        <a class="mb-blue no-underline bb dim" href="https://help.mathbrix.com/article/4-pricing-faq">pricing FAQ</a>
+      </small>
+    </div>
+
+    <div class="w-100 w-50-ns pb3 ba b--mb-light-blue bw2">
+      <h3 class="mt0 mb3 pv1 white bg-mb-light-blue f3 tracked ttu">School</h3>
+      <b class="f4">Everything in Pro, plus:</b>
+      <ul class="plan-features w-100 w-70-ns center mt2 tl f4 fw3 lh-copy list">
+        <li>Administrative-level reporting</li>
+        <li>SIS integration</li>
+        <li>Progress against assessments</li>
+        <li>Phone support</li>
+      </ul>
+      <a class="dib mt2 pv3 ph4 bg-mb-blue white br2 fw3 tracked no-underline dim" href="/contact">
+        Contact us
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+{{ end }}

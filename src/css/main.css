@@ -1,5 +1,6 @@
 @import 'tachyons';
 @import 'tether-drop/dist/css/drop-theme-arrows-bounce';
+@import 'nouislider';
 @import "imports/reset.css";
 
 /* Global */
@@ -9,12 +10,28 @@ body {
   font-size: 1em;
 }
 
+.bg-mb-light-blue {
+  background-color: #46c2f5;
+}
+
+.b--mb-light-blue {
+  border-color: #46c2f5;
+}
+
 .mb-blue {
   color: #00a6ff;
 }
 
 .bg-mb-blue {
   background-color: #00a6ff;
+}
+
+.bg-mb-mountain-meadow {
+  background-color: #33bfb2;
+}
+
+.b--mb-mountain-meadow {
+  border-color: #33bfb2;
 }
 
 /* Header */
@@ -60,4 +77,23 @@ body {
 .team-pic {
   width: 153px;
   height: 175px;
+}
+
+/* Pricing */
+
+#early-adopter-discount {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  width: 128px;
+}
+
+#old-price {
+  text-decoration: line-through red;
+}
+
+.plan-features li:before {
+  margin-right: 8px;
+  content: '✓';
+  color: #19A974;
 }
