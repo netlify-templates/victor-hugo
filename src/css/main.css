@@ -74,6 +74,7 @@ body {
   position: absolute;
   top: -40px;
   right: -10px;
+  width: 115px;
 }
 
 #old-price {
@@ -83,5 +84,4 @@ body {
 .plan-features li:before {
   margin-right: 8px;
   content: '✓';
-  color: #19A974;
 }
