@@ -1,19 +1,25 @@
-<div class="w-100 pv3 ph6 flex justify-between-l items-center">
+<!-- Top navigation -->
+
+<div class="w-100 pv3 ph3 ph5-ns ph6-l flex justify-between items-center">
 
   <a href="/">
-    <img id="logo" src="/mathbrix-logo-tm.png">
+    <img id="logo" class="w4" src="/mathbrix-logo-tm.png">
   </a>
 
-  <div>
-    <a id="about" class="mh3 link mb-blue dim tracked" href="#">About</a>
+  <div class="dn db-l">
+    <a id="about" class="mh3 link mb-blue dim tracked">About</a>
     <a id="features" class="mh3 link mb-blue dim tracked" href="/features">Features</a>
     <a class="mh3 link mb-blue dim tracked" href="https://standards.mathbrix.com/games">Games</a>
     <a class="mh3 link mb-blue dim tracked" href="/pricing">Pricing</a>
-    <a id="login" class="mh3 link mb-blue dim tracked" href="#">Login</a>
+    <a id="login" class="mh3 link mb-blue dim tracked">Login</a>
     <a class="mh3 pv2 ph3 ba bw1 b--red br2 red hover-bg-red bg-animate hover-white no-underline tracked" href="https://teach.mathbrix.com/register">
       Free Trial
     </a>
   </div>
+
+  <a id="show-mobile-nav" class="db dn-l" href="#">
+    <img class="w3" src="/hamburger-menu.png">
+  </a>
 
   <ul id="about-dropdown" class="pa0 ma0 list f5">
     <li><a class="link mb-blue dim tracked" href="/team">Team</a></li>
@@ -28,3 +34,40 @@
   </ul>
 
 </div>
+
+<!-- Mobile slide out navigation -->
+
+<nav id="mobile-nav" class="w5 pa3">
+  <div class="flex justify-end">
+    <a id="hide-mobile-nav" href="#">
+      <img class="w1" src="/close.png">
+    </a>
+  </div>
+  <div class="mb4">
+    <h4 class="mt0 mb3 ttu tracked f4 fw4">About</h4>
+    <ul class="pl1 list">
+      <li class="mb2"><a class="link mb-blue dim tracked" href="/team">Team</a></li>
+      <li class="mb2"><a class="link mb-blue dim tracked" href="/research">Research</a></li>
+      <li class="mb2"><a class="link mb-blue dim tracked" href="/faq">FAQ</a></li>
+      <li class="mb2"><a class="link mb-blue dim tracked" href="/news">News</a></li>
+    </ul>
+  </div>
+  <div class="mv4">
+    <a class="link mb-blue dim ttu tracked f4" href="/features">Features</a>
+  </div>
+  <div class="mv4">
+    <a class="link mb-blue dim ttu tracked f4" href="/pricing">Pricing</a>
+  </div>
+  <div class="mv4">
+    <h4 class="mt0 mb3 ttu tracked f4 fw4">Login</h4>
+    <ul class="pl1 list">
+      <li class="mb2"><a class="link mb-blue dim tracked" href="https://teach.mathbrix.com">Teacher Login</a></li>
+      <li class="mb2"><a class="link mb-blue dim tracked" href="https://play.mathbrix.com">Student Login</a></li>
+    </ul>
+  </div>
+  <div class="mv4">
+    <a class="dib pv2 ph3 ba bw1 b--red br2 white bg-red no-underline f4 tracked" href="https://teach.mathbrix.com/register">
+      Free Trial
+    </a>
+  </div>
+</nav>

@@ -19,6 +19,24 @@ const options = {
   );
 });
 
+// Toggle mobile navigation
+
+function mobileNav() {
+  if(!$('#show-mobile-nav').length) {
+    return;
+  }
+
+  $('#show-mobile-nav').on('click', function() {
+    $('#mobile-nav').css('left', 0);
+    return false;
+  });
+
+  $('#hide-mobile-nav').on('click', function() {
+    $('#mobile-nav').css('left', '-100%');
+    return false;
+  });
+}
+
 // Toggle YouTube video embed modal
 
 function videoModal() {
@@ -63,6 +81,7 @@ function pricingSlider() {
 }
 
 $(document).ready(function() {
+  mobileNav();
   videoModal();
   pricingSlider();
 });
