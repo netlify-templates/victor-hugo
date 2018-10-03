@@ -1,3 +1,4 @@
 +++
 type = "pricing"
+title = "Pricing"
 +++

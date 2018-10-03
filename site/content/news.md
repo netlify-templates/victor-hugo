@@ -1,3 +1,4 @@
 +++
 type = "news"
+title = "News"
 +++

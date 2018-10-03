@@ -1,3 +1,4 @@
 +++
 type = "team"
+title = "Team"
 +++

@@ -1,3 +1,4 @@
 +++
 type = "research"
+title = "Research"
 +++
