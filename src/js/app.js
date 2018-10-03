@@ -44,15 +44,27 @@ function videoModal() {
     return;
   }
 
-  $('#hero-button')[0].onclick = showModal;
+  $('#hero-button').on('click', showModal);
 
   function showModal() {
     $('body').append($('#modal-template').html());
-    $('#close-modal')[0].onclick = hideModal;
+
+    const videoWidth = 0.8 * $(window).width();
+    const videoHeight = videoWidth / 16 * 9;
+
+    $('#open-modal iframe').prop({
+      width: videoWidth,
+      height: videoHeight
+    });
+
+    $('#close-modal').on('click', hideModal);
+
+    return false;
   };
 
   function hideModal() {
     $('#open-modal').remove();
+    return false;
   };
 }
 
