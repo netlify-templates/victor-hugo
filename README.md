@@ -10,7 +10,7 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ## Usage
 
-### Prerequisites
+### :exclamation: Prerequisites
 
 You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
 
@@ -22,7 +22,7 @@ npm install
 
 This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
 
-### Development
+### :construction_worker: Development
 
 While developing your website, use:
 
@@ -50,7 +50,7 @@ gulp server-preview
 
 Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
-### Static build
+### :package: Static build
 
 To build a static version of the website inside the `/dist` folder, run:
 
