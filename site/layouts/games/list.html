@@ -1,10 +1,20 @@
+{{ define "extra-header" }}
+
+<div class="dn db-l mh6 pa2 bt bb b--moon-gray">
+  <a class="mr3 mb-blue no-underline dim" href="/math-games/#kindergarten">Kindergarten Games</a>
+  <a class="mh3 mb-blue no-underline dim" href="/math-games/#1st-grade">1st Grade Games</a>
+  <a class="mh3 mb-blue no-underline dim" href="/math-games/#2nd-grade">2nd Grade Games</a>
+</div>
+
+{{ end }}
+
 {{ define "main" }}
 
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
   {{ range $.Site.Data.games }}
 
-    <h2 class="f3 f2-ns normal ttu tracked black">{{ .grade }} Games</h2>
+    <h2 id="{{ urlize .grade }}" class="f3 f2-ns normal ttu tracked black">{{ .grade }} Games</h2>
 
     {{ range .categories }}
 

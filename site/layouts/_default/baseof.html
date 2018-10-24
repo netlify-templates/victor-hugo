@@ -13,6 +13,7 @@
 
     <div class="mw9 center">
       {{ block "header" . }}{{ partial "header" . }}{{ end }}
+      {{ block "extra-header" . }}{{ end }}
       {{ block "main" . }}{{ end }}
       {{ block "footer" . }}{{ partial "footer" . }}{{ end }}
       {{ block "extra-footer" . }}{{ end }}
