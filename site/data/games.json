@@ -7,11 +7,13 @@
                 "games": [
                     {
                         "name": "Counting by 1s",
-                        "image": "k-count-tap.png"
+                        "slug": "k-count-tap",
+                        "verboseSlug": "counting-by-1s"
                     },
                     {
                         "name": "Count and then Type the Number",
-                        "image": "k-typing.png"
+                        "slug": "k-typing",
+                        "verboseSlug": "count-and-then-type-the-number"
                     }
                 ]
             },
@@ -20,7 +22,8 @@
                 "games": [
                     {
                         "name": "Identify the Correct Numeral",
-                        "image": "k-numeral-iden.png"
+                        "slug": "k-numeral-iden",
+                        "verboseSlug": "identify-the-correct-numeral"
                     }
                 ]
             },
@@ -29,15 +32,18 @@
                 "games": [
                     {
                         "name": "Compare Two Bundles of Objects within 6",
-                        "image": "k-compare-2-bundles.png"
+                        "slug": "k-compare-2-bundles",
+                        "verboseSlug": "compare-two-bundles-of-objects-within-6"
                     },
                     {
                         "name": "Compare Two Numbers or Objects within 10",
-                        "image": "k-compare-2-numbers.png"
+                        "slug": "k-compare-2-numbers",
+                        "verboseSlug": "compare-two-numbers-or-objects-within-10"
                     },
                     {
                         "name": "Match the Numeral to the Correct Group of Brix",
-                        "image": "k-match-brix-to-num.png"
+                        "slug": "k-match-brix-to-num",
+                        "verboseSlug": "match-the-numeral-to-the-correct-group-of-brix"
                     }
                 ]
             },
@@ -46,11 +52,13 @@
                 "games": [
                     {
                         "name": "Categorize Based on Brix Value and Brix Colors",
-                        "image": "colors-vs-brix.png"
+                        "slug": "colors-vs-brix",
+                        "verboseSlug": "categorize-based-on-brix-value-and-brix-colors"
                     },
                     {
                         "name": "Recognizing Numeral Value and Brix Value",
-                        "image": "num-vs-brix.png"
+                        "slug": "num-vs-brix",
+                        "verboseSlug": "recognizing-numeral-value-and-brix-value"
                     }
                 ]
             },
@@ -59,23 +67,28 @@
                 "games": [
                     {
                         "name": "Add within 5 Precursor",
-                        "image": "add-within-5-pre.png"
+                        "slug": "add-within-5-pre",
+                        "verboseSlug": "add-within-5-precursor"
                     },
                     {
                         "name": "Add within 5",
-                        "image": "add-within-5.png"
+                        "slug": "add-within-5",
+                        "verboseSlug": "add-within-5"
                     },
                     {
                         "name": "Subtract within 5",
-                        "image": "sub-within-5.png"
+                        "slug": "sub-within-5",
+                        "verboseSlug": "subtract-within-5"
                     },
                     {
                         "name": "Fill in the blank (with given) within 5",
-                        "image": "fill-blank-with-given-within-5.png"
+                        "slug": "fill-blank-with-given-within-5",
+                        "verboseSlug": "fill-in-the-blank-(with-given)-within-5"
                     },
                     {
                         "name": "Add and Subtract Fluently within 5",
-                        "image": "fluency-in-5.png"
+                        "slug": "fluency-in-5",
+                        "verboseSlug": "add-and-subtract-fluently-within-5"
                     }
                 ]
             },
@@ -84,27 +97,33 @@
                 "games": [
                     {
                         "name": "Create Combinations Within 10",
-                        "image": "create-combo-within-10.png"
+                        "slug": "create-combo-within-10",
+                        "verboseSlug": "create-combinations-within-10"
                     },
                     {
                         "name": "Add within 10",
-                        "image": "add-within-10.png"
+                        "slug": "add-within-10",
+                        "verboseSlug": "add-within-10"
                     },
                     {
                         "name": "Subtract within 10",
-                        "image": "sub-within-10.png"
+                        "slug": "sub-within-10",
+                        "verboseSlug": "subtract-within-10"
                     },
                     {
                         "name": "Fill in the blank (with given) within 10",
-                        "image": "fill-blank-with-given-within-10.png"
+                        "slug": "fill-blank-with-given-within-10",
+                        "verboseSlug": "fill-in-the-blank-(with-given)-within-10"
                     },
                     {
                         "name": "MiniComputer Typing 1s",
-                        "image": "mc-ty-1.png"
+                        "slug": "mc-ty-1",
+                        "verboseSlug": "minicomputer-typing-1s"
                     },
                     {
                         "name": "MiniComputer Dragging 1s",
-                        "image": "mc-dr-1.png"
+                        "slug": "mc-dr-1",
+                        "verboseSlug": "minicomputer-dragging-1s"
                     }
                 ]
             },
@@ -113,25 +132,28 @@
                 "games": [
                     {
                         "name": "Recognize 10 and Leftovers",
-                        "image": "recognize-10-and-leftovers.png"
+                        "slug": "recognize-10-and-leftovers",
+                        "verboseSlug": "recognize-10-and-leftovers"
                     }
                 ]
             }
         ]
     },
     {
-        "grade": "Grade 1",
+        "grade": "1st Grade",
         "categories": [
             {
                 "name": "Counting",
                 "games": [
                     {
                         "name": "Add and Subtract by 2s up to 10",
-                        "image": "add-sub-by-2-to-10.png"
+                        "slug": "add-sub-by-2-to-10",
+                        "verboseSlug": "add-and-subtract-by-2s-up-to-10"
                     },
                     {
                         "name": "Add and Subtract by 2s up to 20",
-                        "image": "add-sub-by-2-to-20.png"
+                        "slug": "add-sub-by-2-to-20",
+                        "verboseSlug": "add-and-subtract-by-2s-up-to-20"
                     }
                 ]
             },
@@ -140,7 +162,8 @@
                 "games": [
                     {
                         "name": "Compare Two Numbers Up to Hundred",
-                        "image": "compare-two-digit-numbers.png"
+                        "slug": "compare-two-digit-numbers",
+                        "verboseSlug": "compare-two-numbers-up-to-hundred"
                     }
                 ]
             },
@@ -149,43 +172,53 @@
                 "games": [
                     {
                         "name": "True or False One Side Addition Only",
-                        "image": "true-false-1-side-add.png"
+                        "slug": "true-false-1side-add",
+                        "verboseSlug": "true-or-false-one-side-addition-only"
                     },
                     {
                         "name": "True or False One Side Subtraction Only",
-                        "image": "true-false-1-side-sub.png"
+                        "slug": "true-false-1side-sub",
+                        "verboseSlug": "true-or-false-one-side-subtraction-only"
                     },
                     {
                         "name": "True or False Two Side Addition and Subtraction",
-                        "image": "true-false-2-side-add-sub.png"
+                        "slug": "true-false-2side-add-sub",
+                        "verboseSlug": "true-or-false-two-side-addition-and-subtraction"
                     },
                     {
                         "name": "Commutative Property of Addition Alternative",
-                        "image": "commutative-in-20-2-numbers-alt.png"
+                        "slug": "commutative-in-20-2-numbers-alt",
+                        "verboseSlug": "commutative-property-of-addition-alternative"
                     },
                     {
                         "name": "Subtraction as an Unknown Addend Problem to 10",
-                        "image": "unknown-addend-10.png"
+                        "slug": "unknown-addend-10",
+                        "verboseSlug": "subtraction-as-an-unknown-addend-problem-to-10"
                     },
                     {
                         "name": "Add and Subtract Fluently within 10",
-                        "image": "fluency-in-10.png"
+                        "slug": "fluency-in-10",
+                        "verboseSlug": "add-and-subtract-fluently-within-10"
                     },
                     {
                         "name": "Add and Subtract within 10 with Unknowns Anywhere",
-                        "image": "add-sub-within-10-unknowns-anywhere.png"
+                        "slug": "add-sub-within-10-unknowns-anywhere",
+                        "verboseSlug": "add-and-subtract-within-10-with-unknowns-anywhere"
                     },
                     {
                         "name": "MiniComputer Addition With Overlaps 1s",
-                        "image": "mc-add-1-ov.png"
+                        "slug": "mc-add-1-ov",
+                        "verboseSlug": "minicomputer-addition-with-overlaps-1s"
                     },
                     {
                         "name": "MiniComputer Subtraction No Splitting 1s",
-                        "image": "mc-sub-1-nsp.png"
+                        "slug": "mc-sub-1-nsp",
+                        "verboseSlug": "minicomputer-subtraction-no-splitting-1s"
                     },
                     {
                         "name": "MiniComputer Subtraction With Splitting 1s",
-                        "image": "mc-sub-1-sp.png"
+                        "slug": "mc-sub-1-sp",
+                        "verboseSlug": "minicomputer-subtraction-with-splitting-1s"
                     }
                 ]
             },
@@ -194,11 +227,13 @@
                 "games": [
                     {
                         "name": "Ten is a Bundle of Ones",
-                        "image": "ten-bundle-ones.png"
+                        "slug": "ten-bundle-ones",
+                        "verboseSlug": "ten-is-a-bundle-of-ones"
                     },
                     {
                         "name": "How many tens go into a number",
-                        "image": "tens-recognition.png"
+                        "slug": "tens-recognition",
+                        "verboseSlug": "how-many-tens-go-into-a-number"
                     }
                 ]
             },
@@ -207,43 +242,53 @@
                 "games": [
                     {
                         "name": "True or False Two Side Addition Only",
-                        "image": "true-false-2-side-add.png"
+                        "slug": "true-false-2side-add",
+                        "verboseSlug": "true-or-false-two-side-addition-only"
                     },
                     {
                         "name": "Commutative Property of Addition",
-                        "image": "commutative-in-20-2-numbers.png"
+                        "slug": "commutative-in-20-2-numbers",
+                        "verboseSlug": "commutative-property-of-addition"
                     },
                     {
                         "name": "Associative Property of Addition",
-                        "image": "associative-in-20-3-numbers.png"
+                        "slug": "associative-in-20-3-numbers",
+                        "verboseSlug": "associative-property-of-addition"
                     },
                     {
                         "name": "Subtraction as an Unknown Addend Problem to 20",
-                        "image": "unknown-addend-20.png"
+                        "slug": "unknown-addend-20",
+                        "verboseSlug": "subtraction-as-an-unknown-addend-problem-to-20"
                     },
                     {
                         "name": "Add within 20 with 3 Numbers",
-                        "image": "add-within-20-3-numbers-decomposing.png"
+                        "slug": "add-within-20-3-numbers-decomposing",
+                        "verboseSlug": "add-within-20-with-3-numbers"
                     },
                     {
                         "name": "Subtract within 20 with 3 Numbers",
-                        "image": "sub-within-20-3-numbers-decomposing.png"
+                        "slug": "sub-within-20-3-numbers-decomposing",
+                        "verboseSlug": "subtract-within-20-with-3-numbers"
                     },
                     {
                         "name": "Add and Subtract within 20 with 3 Numbers",
-                        "image": "add-sub-within-20-3-numbers-decomposing.png"
+                        "slug": "add-sub-within-20-3-numbers-decomposing",
+                        "verboseSlug": "add-and-subtract-within-20-with-3-numbers"
                     },
                     {
                         "name": "Fill in the Blank",
-                        "image": "fill-blank.png"
+                        "slug": "fill-blank",
+                        "verboseSlug": "fill-in-the-blank"
                     },
                     {
                         "name": "Add and Subtract within 20 with Unknowns Anywhere",
-                        "image": "add-sub-within-20-unknowns-anywhere.png"
+                        "slug": "add-sub-within-20-unknowns-anywhere",
+                        "verboseSlug": "add-and-subtract-within-20-with-unknowns-anywhere"
                     },
                     {
                         "name": "Fill in the Blank Tens Dragging",
-                        "image": "fill-blank-tens-drag.png"
+                        "slug": "fill-blank-tens-drag",
+                        "verboseSlug": "fill-in-the-blank-tens-dragging"
                     }
                 ]
             },
@@ -252,57 +297,68 @@
                 "games": [
                     {
                         "name": "Fill in the Blank Up to Hundred",
-                        "image": "fill-blank-hundred.png"
+                        "slug": "fill-blank-hundred",
+                        "verboseSlug": "fill-in-the-blank-up-to-hundred"
                     },
                     {
                         "name": "Subtract Multiples of Ten Within 90",
-                        "image": "subtract-mult-of-10.png"
+                        "slug": "subtract-mult-of-10",
+                        "verboseSlug": "subtract-multiples-of-ten-within-90"
                     },
                     {
                         "name": "MiniComputer Typing 10s",
-                        "image": "mc-ty-10.png"
+                        "slug": "mc-ty-10",
+                        "verboseSlug": "minicomputer-typing-10s"
                     },
                     {
                         "name": "MiniComputer Dragging 10s",
-                        "image": "mc-dr-10.png"
+                        "slug": "mc-dr-10",
+                        "verboseSlug": "minicomputer-dragging-10s"
                     },
                     {
                         "name": "MiniComputer Addition No Overlaps 10s",
-                        "image": "mc-add-10-nov.png"
+                        "slug": "mc-add-10-nov",
+                        "verboseSlug": "minicomputer-addition-no-overlaps-10s"
                     },
                     {
                         "name": "MiniComputer Addition With Overlaps 10s",
-                        "image": "mc-add-10-ov.png"
+                        "slug": "mc-add-10-ov",
+                        "verboseSlug": "minicomputer-addition-with-overlaps-10s"
                     },
                     {
                         "name": "MiniComputer Addition With Overlaps 10s and Carrying",
-                        "image": "mc-add-10-ovc.png"
+                        "slug": "mc-add-10-ovc",
+                        "verboseSlug": "minicomputer-addition-with-overlaps-10s-and-carrying"
                     },
                     {
                         "name": "MiniComputer Subtraction With Splitting 10s",
-                        "image": "mc-sub-10-sp.png"
+                        "slug": "mc-sub-10-sp",
+                        "verboseSlug": "minicomputer-subtraction-with-splitting-10s"
                     }
                 ]
             }
         ]
     },
     {
-        "grade": "Grade 2",
+        "grade": "2nd Grade",
         "categories": [
             {
                 "name": "Counting",
                 "games": [
                     {
                         "name": "Count Within 1000 By 5s",
-                        "image": "count-1000-by-5.png"
+                        "slug": "count-1000-by-5",
+                        "verboseSlug": "count-within-1000-by-5s"
                     },
                     {
                         "name": "Count Within 1000 By 10s",
-                        "image": "count-1000-by-10.png"
+                        "slug": "count-1000-by-10",
+                        "verboseSlug": "count-within-1000-by-10s"
                     },
                     {
                         "name": "Count Within 1000 By 100s",
-                        "image": "count-1000-by-100.png"
+                        "slug": "count-1000-by-100",
+                        "verboseSlug": "count-within-1000-by-100s"
                     }
                 ]
             },
@@ -311,7 +367,8 @@
                 "games": [
                     {
                         "name": "Compare Two Numbers Up to One Thousand",
-                        "image": "compare-three-digit-numbers.png"
+                        "slug": "compare-three-digit-numbers",
+                        "verboseSlug": "compare-two-numbers-up-to-one-thousand"
                     }
                 ]
             },
@@ -320,11 +377,13 @@
                 "games": [
                     {
                         "name": "One Hundred is a Bundle of Ten Tens",
-                        "image": "hundred-bundle-tens.png"
+                        "slug": "hundred-bundle-tens",
+                        "verboseSlug": "one-hundred-is-a-bundle-of-ten-tens"
                     },
                     {
                         "name": "How Many Hundreds Go Into a Number",
-                        "image": "hundreds-recognition.png"
+                        "slug": "hundreds-recognition",
+                        "verboseSlug": "how-many-hundreds-go-into-a-number"
                     }
                 ]
             },
@@ -333,7 +392,8 @@
                 "games": [
                     {
                         "name": "Add and Subtract Fluently within 20",
-                        "image": "fluency-in-20.png"
+                        "slug": "fluency-in-20",
+                        "verboseSlug": "add-and-subtract-fluently-within-20"
                     }
                 ]
             },
@@ -342,11 +402,13 @@
                 "games": [
                     {
                         "name": "Determine Odd or Even Within 20",
-                        "image": "odd-or-even-20.png"
+                        "slug": "odd-or-even-20",
+                        "verboseSlug": "determine-odd-or-even-within-20"
                     },
                     {
                         "name": "Express Even Number as Two Equal Addends",
-                        "image": "even-num-split.png"
+                        "slug": "even-num-split",
+                        "verboseSlug": "express-even-number-as-two-equal-addends"
                     }
                 ]
             },
@@ -355,7 +417,8 @@
                 "games": [
                     {
                         "name": "Addition Arrays up to 5x5",
-                        "image": "add-arrays-up-to-5-x-5.png"
+                        "slug": "add-arrays-up-to-5x5",
+                        "verboseSlug": "addition-arrays-up-to-5x5"
                     }
                 ]
             },
@@ -364,15 +427,18 @@
                 "games": [
                     {
                         "name": "Add and Subtract within 100 with Unknowns Anywhere",
-                        "image": "add-sub-within-100-unknowns-anywhere.png"
+                        "slug": "add-sub-within-100-unknowns-anywhere",
+                        "verboseSlug": "add-and-subtract-within-100-with-unknowns-anywhere"
                     },
                     {
                         "name": "Add Four 2 Digit Numbers No Regrouping",
-                        "image": "add-four-2-digit-num-no-regroup.png"
+                        "slug": "add-four-2-digit-num-no-regroup",
+                        "verboseSlug": "add-four-2-digit-numbers-no-regrouping"
                     },
                     {
                         "name": "Add and Subtract Fluently within 100",
-                        "image": "fluency-in-100.png"
+                        "slug": "fluency-in-100",
+                        "verboseSlug": "add-and-subtract-fluently-within-100"
                     }
                 ]
             },
@@ -381,27 +447,33 @@
                 "games": [
                     {
                         "name": "Add Two 3 Digit Numbers Within 1000 No Regrouping",
-                        "image": "add-two-3-digit-num-no-regroup.png"
+                        "slug": "add-two-3-digit-num-no-regroup",
+                        "verboseSlug": "add-two-3-digit-numbers-within-1000-no-regrouping"
                     },
                     {
                         "name": "Add Two 3 Digit Numbers Within 1000 With Regrouping",
-                        "image": "add-two-3-digit-num-regroup.png"
+                        "slug": "add-two-3-digit-num-regroup",
+                        "verboseSlug": "add-two-3-digit-numbers-within-1000-with-regrouping"
                     },
                     {
                         "name": "Subtract Two 3 Digit Numbers Within 1000 No Regrouping",
-                        "image": "sub-two-3-digit-num-no-regroup.png"
+                        "slug": "sub-two-3-digit-num-no-regroup",
+                        "verboseSlug": "subtract-two-3-digit-numbers-within-1000-no-regrouping"
                     },
                     {
                         "name": "Subtract Two 3 Digit Numbers Within 1000 With Regrouping",
-                        "image": "sub-two-3-digit-num-regroup.png"
+                        "slug": "sub-two-3-digit-num-regroup",
+                        "verboseSlug": "subtract-two-3-digit-numbers-within-1000-with-regrouping"
                     },
                     {
                         "name": "Add Four 2 Digit Numbers With Regrouping",
-                        "image": "add-four-2-digit-num-regroup.png"
+                        "slug": "add-four-2-digit-num-regroup",
+                        "verboseSlug": "add-four-2-digit-numbers-with-regrouping"
                     },
                     {
                         "name": "Read and Write Numbers Within 1000",
-                        "image": "read-and-write-1000.png"
+                        "slug": "read-and-write-1000",
+                        "verboseSlug": "read-and-write-numbers-within-1000"
                     }
                 ]
             }
