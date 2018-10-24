@@ -1,0 +1,410 @@
+[
+    {
+        "grade": "Kindergarten",
+        "categories": [
+            {
+                "name": "Counting",
+                "games": [
+                    {
+                        "name": "Counting by 1s",
+                        "image": "k-count-tap.png"
+                    },
+                    {
+                        "name": "Count and then Type the Number",
+                        "image": "k-typing.png"
+                    }
+                ]
+            },
+            {
+                "name": "Reading and Writing Numerals",
+                "games": [
+                    {
+                        "name": "Identify the Correct Numeral",
+                        "image": "k-numeral-iden.png"
+                    }
+                ]
+            },
+            {
+                "name": "Comparison",
+                "games": [
+                    {
+                        "name": "Compare Two Bundles of Objects within 6",
+                        "image": "k-compare-2-bundles.png"
+                    },
+                    {
+                        "name": "Compare Two Numbers or Objects within 10",
+                        "image": "k-compare-2-numbers.png"
+                    },
+                    {
+                        "name": "Match the Numeral to the Correct Group of Brix",
+                        "image": "k-match-brix-to-num.png"
+                    }
+                ]
+            },
+            {
+                "name": "Classification",
+                "games": [
+                    {
+                        "name": "Categorize Based on Brix Value and Brix Colors",
+                        "image": "colors-vs-brix.png"
+                    },
+                    {
+                        "name": "Recognizing Numeral Value and Brix Value",
+                        "image": "num-vs-brix.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 5",
+                "games": [
+                    {
+                        "name": "Add within 5 Precursor",
+                        "image": "add-within-5-pre.png"
+                    },
+                    {
+                        "name": "Add within 5",
+                        "image": "add-within-5.png"
+                    },
+                    {
+                        "name": "Subtract within 5",
+                        "image": "sub-within-5.png"
+                    },
+                    {
+                        "name": "Fill in the blank (with given) within 5",
+                        "image": "fill-blank-with-given-within-5.png"
+                    },
+                    {
+                        "name": "Add and Subtract Fluently within 5",
+                        "image": "fluency-in-5.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 10",
+                "games": [
+                    {
+                        "name": "Create Combinations Within 10",
+                        "image": "create-combo-within-10.png"
+                    },
+                    {
+                        "name": "Add within 10",
+                        "image": "add-within-10.png"
+                    },
+                    {
+                        "name": "Subtract within 10",
+                        "image": "sub-within-10.png"
+                    },
+                    {
+                        "name": "Fill in the blank (with given) within 10",
+                        "image": "fill-blank-with-given-within-10.png"
+                    },
+                    {
+                        "name": "MiniComputer Typing 1s",
+                        "image": "mc-ty-1.png"
+                    },
+                    {
+                        "name": "MiniComputer Dragging 1s",
+                        "image": "mc-dr-1.png"
+                    }
+                ]
+            },
+            {
+                "name": "Base Ten Recognition",
+                "games": [
+                    {
+                        "name": "Recognize 10 and Leftovers",
+                        "image": "recognize-10-and-leftovers.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "grade": "Grade 1",
+        "categories": [
+            {
+                "name": "Counting",
+                "games": [
+                    {
+                        "name": "Add and Subtract by 2s up to 10",
+                        "image": "add-sub-by-2-to-10.png"
+                    },
+                    {
+                        "name": "Add and Subtract by 2s up to 20",
+                        "image": "add-sub-by-2-to-20.png"
+                    }
+                ]
+            },
+            {
+                "name": "Comparison",
+                "games": [
+                    {
+                        "name": "Compare Two Numbers Up to Hundred",
+                        "image": "compare-two-digit-numbers.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 10",
+                "games": [
+                    {
+                        "name": "True or False One Side Addition Only",
+                        "image": "true-false-1-side-add.png"
+                    },
+                    {
+                        "name": "True or False One Side Subtraction Only",
+                        "image": "true-false-1-side-sub.png"
+                    },
+                    {
+                        "name": "True or False Two Side Addition and Subtraction",
+                        "image": "true-false-2-side-add-sub.png"
+                    },
+                    {
+                        "name": "Commutative Property of Addition Alternative",
+                        "image": "commutative-in-20-2-numbers-alt.png"
+                    },
+                    {
+                        "name": "Subtraction as an Unknown Addend Problem to 10",
+                        "image": "unknown-addend-10.png"
+                    },
+                    {
+                        "name": "Add and Subtract Fluently within 10",
+                        "image": "fluency-in-10.png"
+                    },
+                    {
+                        "name": "Add and Subtract within 10 with Unknowns Anywhere",
+                        "image": "add-sub-within-10-unknowns-anywhere.png"
+                    },
+                    {
+                        "name": "MiniComputer Addition With Overlaps 1s",
+                        "image": "mc-add-1-ov.png"
+                    },
+                    {
+                        "name": "MiniComputer Subtraction No Splitting 1s",
+                        "image": "mc-sub-1-nsp.png"
+                    },
+                    {
+                        "name": "MiniComputer Subtraction With Splitting 1s",
+                        "image": "mc-sub-1-sp.png"
+                    }
+                ]
+            },
+            {
+                "name": "Base Ten Recognition",
+                "games": [
+                    {
+                        "name": "Ten is a Bundle of Ones",
+                        "image": "ten-bundle-ones.png"
+                    },
+                    {
+                        "name": "How many tens go into a number",
+                        "image": "tens-recognition.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 20",
+                "games": [
+                    {
+                        "name": "True or False Two Side Addition Only",
+                        "image": "true-false-2-side-add.png"
+                    },
+                    {
+                        "name": "Commutative Property of Addition",
+                        "image": "commutative-in-20-2-numbers.png"
+                    },
+                    {
+                        "name": "Associative Property of Addition",
+                        "image": "associative-in-20-3-numbers.png"
+                    },
+                    {
+                        "name": "Subtraction as an Unknown Addend Problem to 20",
+                        "image": "unknown-addend-20.png"
+                    },
+                    {
+                        "name": "Add within 20 with 3 Numbers",
+                        "image": "add-within-20-3-numbers-decomposing.png"
+                    },
+                    {
+                        "name": "Subtract within 20 with 3 Numbers",
+                        "image": "sub-within-20-3-numbers-decomposing.png"
+                    },
+                    {
+                        "name": "Add and Subtract within 20 with 3 Numbers",
+                        "image": "add-sub-within-20-3-numbers-decomposing.png"
+                    },
+                    {
+                        "name": "Fill in the Blank",
+                        "image": "fill-blank.png"
+                    },
+                    {
+                        "name": "Add and Subtract within 20 with Unknowns Anywhere",
+                        "image": "add-sub-within-20-unknowns-anywhere.png"
+                    },
+                    {
+                        "name": "Fill in the Blank Tens Dragging",
+                        "image": "fill-blank-tens-drag.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 100",
+                "games": [
+                    {
+                        "name": "Fill in the Blank Up to Hundred",
+                        "image": "fill-blank-hundred.png"
+                    },
+                    {
+                        "name": "Subtract Multiples of Ten Within 90",
+                        "image": "subtract-mult-of-10.png"
+                    },
+                    {
+                        "name": "MiniComputer Typing 10s",
+                        "image": "mc-ty-10.png"
+                    },
+                    {
+                        "name": "MiniComputer Dragging 10s",
+                        "image": "mc-dr-10.png"
+                    },
+                    {
+                        "name": "MiniComputer Addition No Overlaps 10s",
+                        "image": "mc-add-10-nov.png"
+                    },
+                    {
+                        "name": "MiniComputer Addition With Overlaps 10s",
+                        "image": "mc-add-10-ov.png"
+                    },
+                    {
+                        "name": "MiniComputer Addition With Overlaps 10s and Carrying",
+                        "image": "mc-add-10-ovc.png"
+                    },
+                    {
+                        "name": "MiniComputer Subtraction With Splitting 10s",
+                        "image": "mc-sub-10-sp.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "grade": "Grade 2",
+        "categories": [
+            {
+                "name": "Counting",
+                "games": [
+                    {
+                        "name": "Count Within 1000 By 5s",
+                        "image": "count-1000-by-5.png"
+                    },
+                    {
+                        "name": "Count Within 1000 By 10s",
+                        "image": "count-1000-by-10.png"
+                    },
+                    {
+                        "name": "Count Within 1000 By 100s",
+                        "image": "count-1000-by-100.png"
+                    }
+                ]
+            },
+            {
+                "name": "Comparison",
+                "games": [
+                    {
+                        "name": "Compare Two Numbers Up to One Thousand",
+                        "image": "compare-three-digit-numbers.png"
+                    }
+                ]
+            },
+            {
+                "name": "Base Ten Recognition",
+                "games": [
+                    {
+                        "name": "One Hundred is a Bundle of Ten Tens",
+                        "image": "hundred-bundle-tens.png"
+                    },
+                    {
+                        "name": "How Many Hundreds Go Into a Number",
+                        "image": "hundreds-recognition.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 20",
+                "games": [
+                    {
+                        "name": "Add and Subtract Fluently within 20",
+                        "image": "fluency-in-20.png"
+                    }
+                ]
+            },
+            {
+                "name": "Even and Odd Numbers",
+                "games": [
+                    {
+                        "name": "Determine Odd or Even Within 20",
+                        "image": "odd-or-even-20.png"
+                    },
+                    {
+                        "name": "Express Even Number as Two Equal Addends",
+                        "image": "even-num-split.png"
+                    }
+                ]
+            },
+            {
+                "name": "Multiplication Precursor",
+                "games": [
+                    {
+                        "name": "Addition Arrays up to 5x5",
+                        "image": "add-arrays-up-to-5-x-5.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 100",
+                "games": [
+                    {
+                        "name": "Add and Subtract within 100 with Unknowns Anywhere",
+                        "image": "add-sub-within-100-unknowns-anywhere.png"
+                    },
+                    {
+                        "name": "Add Four 2 Digit Numbers No Regrouping",
+                        "image": "add-four-2-digit-num-no-regroup.png"
+                    },
+                    {
+                        "name": "Add and Subtract Fluently within 100",
+                        "image": "fluency-in-100.png"
+                    }
+                ]
+            },
+            {
+                "name": "Add and Subtract within 1000",
+                "games": [
+                    {
+                        "name": "Add Two 3 Digit Numbers Within 1000 No Regrouping",
+                        "image": "add-two-3-digit-num-no-regroup.png"
+                    },
+                    {
+                        "name": "Add Two 3 Digit Numbers Within 1000 With Regrouping",
+                        "image": "add-two-3-digit-num-regroup.png"
+                    },
+                    {
+                        "name": "Subtract Two 3 Digit Numbers Within 1000 No Regrouping",
+                        "image": "sub-two-3-digit-num-no-regroup.png"
+                    },
+                    {
+                        "name": "Subtract Two 3 Digit Numbers Within 1000 With Regrouping",
+                        "image": "sub-two-3-digit-num-regroup.png"
+                    },
+                    {
+                        "name": "Add Four 2 Digit Numbers With Regrouping",
+                        "image": "add-four-2-digit-num-regroup.png"
+                    },
+                    {
+                        "name": "Read and Write Numbers Within 1000",
+                        "image": "read-and-write-1000.png"
+                    }
+                ]
+            }
+        ]
+    }
+]
