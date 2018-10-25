@@ -1,6 +1,7 @@
 import Drop from 'tether-drop';
 import $ from 'cash-dom';
 import noUiSlider from 'nouislider';
+import device from 'current-device';
 
 // Create flyout menus in top navigation
 
@@ -92,10 +93,18 @@ function pricingSlider() {
   });
 }
 
-function sizeGameDemo() {
+// Show/hide and resize the game demo to proper dimensions
+
+function gameDemo() {
   const el = $('#game-demo');
 
   if (!el.length) {
+    return;
+  }
+
+  if (!device.desktop()) {
+    el.css('display', 'none');
+    $('#unplayable-msg').css('display', 'block');
     return;
   }
 
@@ -106,5 +115,5 @@ $(document).ready(function() {
   mobileNav();
   videoModal();
   pricingSlider();
-  sizeGameDemo();
+  gameDemo();
 });

@@ -27,6 +27,7 @@
     "browser-sync": "^2.23.7",
     "cash-dom": "^2.3.5",
     "css-loader": "^1.0.0",
+    "current-device": "^0.7.8",
     "dotenv": "^6.1.0",
     "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.11.0",

@@ -8,6 +8,18 @@
     <iframe id="game-demo" class="flex-auto bn" src="https://play.mathbrix.com?game={{ .Params.gametype }}&subgame={{ .Params.subgametype }}&demo=true"></iframe>
   </div>
 
+  <!-- Message that we will conditionally show to mobile users -->
+  <div id="unplayable-msg" class="dn">
+    <p>
+      Please note, to play these sample games you must use a web browser on a
+      full-sized computer (i.e. desktop or laptop) or a Chromebook.
+    </p>
+    <p>
+      To view these games on an iPad or other iOS device, you must download
+      our app from the <a href="https://itunes.apple.com/us/app/mathbrix/id1220515455">App Store</a>.
+    </p>
+  </div>
+
 </div>
 
 {{ end }}
