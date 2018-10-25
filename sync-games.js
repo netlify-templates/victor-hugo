@@ -119,6 +119,7 @@ const createGamePages = async function(games) {
       '+++',
       `title = "${game.full_name}"`,
       `url = "${_getGameURL(game)}"`,
+      `grade = "${_getGrade(game)}"`,
       `gametype = "${game.type}"`,
       `subgametype = "${game.short_name}"`,
       '+++'
@@ -130,10 +131,14 @@ const createGamePages = async function(games) {
 
 
 const _getGameURL = function(game) {
-  const grade = grades.find(g => game.level.startsWith(g));
-  const gradeSlug = _slugify(gradeLabels[grade]);
+  const gradeSlug = _slugify(_getGrade(game));
   const gameSlug = _slugify(game.full_name);
   return `/${URL_ROOT}/${gradeSlug}/${gameSlug}`;
+}
+
+const _getGrade = function(game) {
+  const grade = grades.find(g => game.level.startsWith(g));
+  return gradeLabels[grade];
 }
 
 const _slugify = function(val) {
