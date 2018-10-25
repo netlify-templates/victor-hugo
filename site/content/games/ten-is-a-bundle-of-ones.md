@@ -1,6 +1,6 @@
 +++
 title = "Ten is a Bundle of Ones"
-url = "/math-games/ten-is-a-bundle-of-ones"
+url = "/math-games/1st-grade/ten-is-a-bundle-of-ones"
 gametype = "BRIX_MASTER"
 subgametype = "TEN_BUNDLE_ONES"
 +++

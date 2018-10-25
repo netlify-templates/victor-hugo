@@ -15,7 +15,16 @@ dotenv.config();
 
 
 const CONTENT_ROOT = 'games';
+
 const URL_ROOT = 'math-games';
+
+const grades = ['Kindergarten', 'Grade 1', 'Grade 2'];
+
+const gradeLabels = {
+  'Kindergarten': 'Kindergarten',
+  'Grade 1': '1st Grade',
+  'Grade 2': '2nd Grade'
+};
 
 
 const client = s3.createClient({
@@ -39,8 +48,6 @@ client.downloadBuffer({
 
 // Create the games data file for the list page
 const writeGamesData = async function(games) {
-  const grades = ['Kindergarten', 'Grade 1', 'Grade 2'];
-
   const categories = [
     'Counting',
     'Reading and Writing Numerals',
@@ -56,12 +63,6 @@ const writeGamesData = async function(games) {
     'Add and Subtract within 1000'
   ];
 
-  const gradeLabels = {
-    'Kindergarten': 'Kindergarten',
-    'Grade 1': '1st Grade',
-    'Grade 2': '2nd Grade'
-  };
-
   const result = grades.map(function(grade) {
     const gradeGames = games.filter(game => game.level.startsWith(grade));
 
@@ -75,7 +76,7 @@ const writeGamesData = async function(games) {
               return {
                 name: game.full_name,
                 slug: _slugify(game.short_name),
-                verboseSlug: _slugify(game.full_name)
+                url: _getGameURL(game)
               };
             })
         };
@@ -103,6 +104,7 @@ const createGamePages = async function(games) {
     files.map(f => unlink(path.join(gamesDir, f)))
   );
 
+  // Make the games list page
   const indexData = [
     '+++',
     'title = "Math Games"',
@@ -111,11 +113,12 @@ const createGamePages = async function(games) {
   ].join('\n');
   await writeFile(`${gamesDir}/_index.md`, indexData);
 
+  // Make the single game pages
   for (const game of games) {
     const data = [
       '+++',
       `title = "${game.full_name}"`,
-      `url = "/${URL_ROOT}/${_slugify(game.full_name)}"`,
+      `url = "${_getGameURL(game)}"`,
       `gametype = "${game.type}"`,
       `subgametype = "${game.short_name}"`,
       '+++'
@@ -125,6 +128,13 @@ const createGamePages = async function(games) {
   }
 }
 
+
+const _getGameURL = function(game) {
+  const grade = grades.find(g => game.level.startsWith(g));
+  const gradeSlug = _slugify(gradeLabels[grade]);
+  const gameSlug = _slugify(game.full_name);
+  return `/${URL_ROOT}/${gradeSlug}/${gameSlug}`;
+}
 
 const _slugify = function(val) {
   return val.replace(/[\s_]/g, '-').toLowerCase();
