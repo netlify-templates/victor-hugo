@@ -116,6 +116,8 @@ const createGamePages = async function(games) {
       '+++',
       `title = "${game.full_name}"`,
       `url = "/${URL_ROOT}/${_slugify(game.full_name)}"`,
+      `gametype = "${game.type}"`,
+      `subgametype = "${game.short_name}"`,
       '+++'
     ].join('\n');
     const path = `${gamesDir}/${_slugify(game.full_name)}.md`;

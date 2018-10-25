@@ -1,4 +1,6 @@
 +++
 title = "Subtraction as an Unknown Addend Problem to 10"
 url = "/math-games/subtraction-as-an-unknown-addend-problem-to-10"
+gametype = "BRIX_MASTER"
+subgametype = "UNKNOWN_ADDEND_10"
 +++

@@ -92,8 +92,19 @@ function pricingSlider() {
   });
 }
 
+function sizeGameDemo() {
+  const el = $('#game-demo');
+
+  if (!el.length) {
+    return;
+  }
+
+  el.prop('height', el.width() / 16 * 9);
+}
+
 $(document).ready(function() {
   mobileNav();
   videoModal();
   pricingSlider();
+  sizeGameDemo();
 });
