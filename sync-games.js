@@ -38,7 +38,7 @@ const client = s3.createClient({
 
 client.downloadBuffer({
   Bucket: 'mathbrix-assets',
-  Key: 'games.json'
+  Key: 'brochure-site-games.json'
 }).on('end', function(buffer) {
   const data = JSON.parse(buffer.toString());
   writeGamesData(data);
