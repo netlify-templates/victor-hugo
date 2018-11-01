@@ -1,7 +1,9 @@
 {
-  "presets": ["env"],
+  "presets": [
+    "@babel/preset-env"
+  ],
   "plugins": [
-    "syntax-object-rest-spread",
-    "transform-object-rest-spread"
+    "@babel/plugin-syntax-object-rest-spread",
+    "@babel/plugin-proposal-object-rest-spread"
   ]
 }
