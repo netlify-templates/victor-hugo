@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<div class="pv4 ph3 ph5-ns ph6-l mid-gray">
+
+  <h2 class="mt0 f3 f2-ns normal ttu tracked black">The MathBRIX Blog</h2>
+
+  <div class="fl w-100 w-70-l pa2 pr3">
+    {{ range where .Site.RegularPages "Type" "blog" }}
+      {{ partial "blog/post-summary.html" . }}
+    {{ end }}
+  </div>
+  <div class="fl w-100 w-30-l pa2">
+    <h3>Sign up for our newsletter</h3>
+    <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "3418603",
+        formId: "40a4b265-e218-4056-8035-abce396e8ab6"
+      });
+    </script>
+  </div>
+
+  <div class="cb"></div>
+
+</div>
+
+{{ end }}

@@ -1,0 +1,28 @@
+<div class="mb4 mb5-l">
+
+  <h3 class="mt0 f4 f3-ns">
+    <a class="red no-underline dim" href="{{ .Permalink }}" title="{{ .Title }}">
+      {{ .Title }}
+    </a>
+  </h3>
+
+  <p class="f5 f4-ns lh-copy fw3">{{ .Summary }}</p>
+
+  {{ if .Truncated }}
+    <div class="mb3">
+      <a class="mb-blue no-underline dim" href="{{ .RelPermalink }}">Read More →</a>
+    </div>
+  {{ end }}
+
+  <div>{{ .Date.Format "January 2, 2006" }}</div>
+
+  {{ if .Params.tags }}
+    <div>
+      Tags:
+      {{ range .Params.tags }}
+        <a class="mr1 mb-blue no-underline dim" href="/tags/{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+</div>
