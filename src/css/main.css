@@ -53,7 +53,25 @@ body {
 /* Home */
 
 #banner {
-  background-image: url('/girl-playing-mathbrix-game-in-stem-lab-on-ipad-cropped-darkened.jpg');
+  background-image: url('/girl-playing-mathbrix-game-in-stem-lab-on-ipad-large-cropped-darkened.jpg');
+}
+
+@media screen and (max-width: 48em) {
+  #banner {
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  #banner {
+    height: 657px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #banner {
+    height: 861px;
+  }
 }
 
 .modal-backdrop {
