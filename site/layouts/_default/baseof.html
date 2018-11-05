@@ -14,10 +14,21 @@
     <div class="mw9 center">
       {{ block "header" . }}{{ partial "header" . }}{{ end }}
       {{ block "extra-header" . }}{{ end }}
+    </div>
+
+    {{ if eq .URL "/" }}
       {{ block "main" . }}{{ end }}
+    {{ else }}
+      <div class="mw9 center">
+        {{ block "main" . }}{{ end }}
+      </div>
+    {{ end }}
+
+    <div class="mw9 center">
       {{ block "footer" . }}{{ partial "footer" . }}{{ end }}
       {{ block "extra-footer" . }}{{ end }}
     </div>
+
 
     <script src="app.js"></script>
 
