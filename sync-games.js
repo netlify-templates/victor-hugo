@@ -50,17 +50,13 @@ client.downloadBuffer({
 const writeGamesData = async function(games) {
   const categories = [
     'Counting',
-    'Reading and Writing Numerals',
-    'Comparison',
+    'Number Recognition',
+    'Number Sense',
     'Classification',
-    'Add and Subtract within 5',
-    'Add and Subtract within 10',
-    'Base Ten Recognition',
-    'Add and Subtract within 20',
-    'Even and Odd Numbers',
-    'Multiplication Precursor',
-    'Add and Subtract within 100',
-    'Add and Subtract within 1000'
+    'Operations',
+    'Equivalence',
+    'Place Value',
+    'Enrichment'
   ];
 
   const result = grades.map(function(grade) {
@@ -74,9 +70,10 @@ const writeGamesData = async function(games) {
             .filter(game => game.category === category)
             .map(function(game) {
               return {
-                name: game.full_name,
-                slug: _slugify(game.short_name),
-                url: _getGameURL(game)
+                name: game.title,
+                slug: _slugify(game.title),
+                url: _getGameURL(game),
+                image: _slugify(game.subgame)
               };
             })
         };
@@ -117,14 +114,14 @@ const createGamePages = async function(games) {
   for (const game of games) {
     const data = [
       '+++',
-      `title = "${game.full_name}"`,
+      `title = "${game.title}"`,
       `url = "${_getGameURL(game)}"`,
       `grade = "${_getGrade(game)}"`,
-      `gametype = "${game.type}"`,
-      `subgametype = "${game.short_name}"`,
+      `gametype = "${game.game}"`,
+      `subgametype = "${game.subgame}"`,
       '+++'
     ].join('\n');
-    const path = `${gamesDir}/${_slugify(game.full_name)}.md`;
+    const path = `${gamesDir}/${_slugify(game.title)}.md`;
     await writeFile(path, data);
   }
 }
@@ -132,7 +129,7 @@ const createGamePages = async function(games) {
 
 const _getGameURL = function(game) {
   const gradeSlug = _slugify(_getGrade(game));
-  const gameSlug = _slugify(game.full_name);
+  const gameSlug = _slugify(game.title);
   return `/${URL_ROOT}/${gradeSlug}/${gameSlug}`;
 }
 
@@ -142,5 +139,10 @@ const _getGrade = function(game) {
 }
 
 const _slugify = function(val) {
-  return val.replace(/[\s_]/g, '-').toLowerCase();
+  return val
+    .replace(/[\s_,:\(\)]/g, '-')
+    .replace(/[']/g, '')
+    .replace(/--/g, '-')
+    .replace(/-$/g, '')
+    .toLowerCase();
 }
