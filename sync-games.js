@@ -16,7 +16,7 @@ dotenv.config();
 
 const CONTENT_ROOT = 'games';
 
-const URL_ROOT = 'math-games';
+const URL_ROOT = 'games';
 
 const grades = ['Kindergarten', 'Grade 1', 'Grade 2'];
 
