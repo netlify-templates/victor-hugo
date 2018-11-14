@@ -12,9 +12,9 @@
                         "image": "k-count-tap"
                     },
                     {
-                        "name": "Count to 5 with objects (random arrangement, typed answer)",
-                        "slug": "count-to-5-with-objects-random-arrangement-typed-answer",
-                        "url": "/games/kindergarten/count-to-5-with-objects-random-arrangement-typed-answer",
+                        "name": "Count to 5 with objects (random arrangement, typing)",
+                        "slug": "count-to-5-with-objects-random-arrangement-typing",
+                        "url": "/games/kindergarten/count-to-5-with-objects-random-arrangement-typing",
                         "image": "k-typing"
                     }
                 ]
@@ -46,9 +46,9 @@
                         "image": "k-match-brix-to-num"
                     },
                     {
-                        "name": "Combinations up to 10 using brix",
-                        "slug": "combinations-up-to-10-using-brix",
-                        "url": "/games/kindergarten/combinations-up-to-10-using-brix",
+                        "name": "Addition combinations up to 10 using brix",
+                        "slug": "addition-combinations-up-to-10-using-brix",
+                        "url": "/games/kindergarten/addition-combinations-up-to-10-using-brix",
                         "image": "create-combo-within-10"
                     },
                     {
@@ -98,25 +98,25 @@
                         "image": "add-within-10"
                     },
                     {
-                        "name": "Basic subtraction within 5 using brix",
-                        "slug": "basic-subtraction-within-5-using-brix",
-                        "url": "/games/kindergarten/basic-subtraction-within-5-using-brix",
+                        "name": "Basic subtraction within 5 using brix (scales)",
+                        "slug": "basic-subtraction-within-5-using-brix-scales",
+                        "url": "/games/kindergarten/basic-subtraction-within-5-using-brix-scales",
                         "image": "sub-within-5"
                     },
                     {
-                        "name": "Basic subtraction within 10 using brix",
-                        "slug": "basic-subtraction-within-10-using-brix",
-                        "url": "/games/kindergarten/basic-subtraction-within-10-using-brix",
+                        "name": "Basic subtraction within 10 using brix (scales)",
+                        "slug": "basic-subtraction-within-10-using-brix-scales",
+                        "url": "/games/kindergarten/basic-subtraction-within-10-using-brix-scales",
                         "image": "sub-within-10"
                     },
                     {
-                        "name": "Make 5 by adding brix",
-                        "slug": "make-5-by-adding-brix",
-                        "url": "/games/kindergarten/make-5-by-adding-brix",
+                        "name": "Make 5 by adding brix (friends of five)",
+                        "slug": "make-5-by-adding-brix-friends-of-five",
+                        "url": "/games/kindergarten/make-5-by-adding-brix-friends-of-five",
                         "image": "fill-blank-with-given-within-5"
                     },
                     {
-                        "name": "Make 10 by adding brix (Friends of Ten)",
+                        "name": "Make 10 by adding brix (friends of ten)",
                         "slug": "make-10-by-adding-brix-friends-of-ten",
                         "url": "/games/kindergarten/make-10-by-adding-brix-friends-of-ten",
                         "image": "fill-blank-with-given-within-10"
@@ -133,9 +133,9 @@
                 "name": "Place Value",
                 "games": [
                     {
-                        "name": "Circle 10 ones and find the remainder",
-                        "slug": "circle-10-ones-and-find-the-remainder",
-                        "url": "/games/kindergarten/circle-10-ones-and-find-the-remainder",
+                        "name": "Grouping: Circle 10 ones and find the remainder",
+                        "slug": "grouping-circle-10-ones-and-find-the-remainder",
+                        "url": "/games/kindergarten/grouping-circle-10-ones-and-find-the-remainder",
                         "image": "recognize-10-and-leftovers"
                     }
                 ]
@@ -144,13 +144,13 @@
                 "name": "Enrichment",
                 "games": [
                     {
-                        "name": "Represent numbers up to 10 (Typing)",
+                        "name": "Represent numbers up to 10 (typing)",
                         "slug": "represent-numbers-up-to-10-typing",
                         "url": "/games/kindergarten/represent-numbers-up-to-10-typing",
                         "image": "mc-ty-1"
                     },
                     {
-                        "name": "Represent numbers up to 10 (Dragging)",
+                        "name": "Represent numbers up to 10 (dragging)",
                         "slug": "represent-numbers-up-to-10-dragging",
                         "url": "/games/kindergarten/represent-numbers-up-to-10-dragging",
                         "image": "mc-dr-1"
@@ -189,15 +189,15 @@
                         "image": "commutative-in-20-2-numbers-alt"
                     },
                     {
-                        "name": "Forward, Backward: Subtraction as an unknown addended problem within 10",
-                        "slug": "forward-backward-subtraction-as-an-unknown-addended-problem-within-10",
-                        "url": "/games/1st-grade/forward-backward-subtraction-as-an-unknown-addended-problem-within-10",
+                        "name": "Forward, Backward: Subtraction as an unknown addend problem within 10",
+                        "slug": "forward-backward-subtraction-as-an-unknown-addend-problem-within-10",
+                        "url": "/games/1st-grade/forward-backward-subtraction-as-an-unknown-addend-problem-within-10",
                         "image": "unknown-addend-10"
                     },
                     {
-                        "name": "Add and subtract within 20 using brix",
-                        "slug": "add-and-subtract-within-20-using-brix",
-                        "url": "/games/1st-grade/add-and-subtract-within-20-using-brix",
+                        "name": "Add and subtract within 20 using brix (typing)",
+                        "slug": "add-and-subtract-within-20-using-brix-typing",
+                        "url": "/games/1st-grade/add-and-subtract-within-20-using-brix-typing",
                         "image": "fill-blank"
                     },
                     {
@@ -207,15 +207,15 @@
                         "image": "add-sub-within-10-unknowns-anywhere"
                     },
                     {
-                        "name": "Apply the associatiative property to add and subtract three numbers within 20",
-                        "slug": "apply-the-associatiative-property-to-add-and-subtract-three-numbers-within-20",
-                        "url": "/games/1st-grade/apply-the-associatiative-property-to-add-and-subtract-three-numbers-within-20",
+                        "name": "Apply the associative property to add and subtract three numbers within 20",
+                        "slug": "apply-the-associative-property-to-add-and-subtract-three-numbers-within-20",
+                        "url": "/games/1st-grade/apply-the-associative-property-to-add-and-subtract-three-numbers-within-20",
                         "image": "associative-in-20-3-numbers"
                     },
                     {
-                        "name": "Forward, Backward: Subtraction as an unknown addended problem within 20",
-                        "slug": "forward-backward-subtraction-as-an-unknown-addended-problem-within-20",
-                        "url": "/games/1st-grade/forward-backward-subtraction-as-an-unknown-addended-problem-within-20",
+                        "name": "Forward, Backward: Subtraction as an unknown addend problem within 20",
+                        "slug": "forward-backward-subtraction-as-an-unknown-addend-problem-within-20",
+                        "url": "/games/1st-grade/forward-backward-subtraction-as-an-unknown-addend-problem-within-20",
                         "image": "unknown-addend-20"
                     },
                     {
@@ -225,9 +225,9 @@
                         "image": "add-within-20-3-numbers-decomposing"
                     },
                     {
-                        "name": "Add and subtract within 20 with brix (unknowns anywhere)",
-                        "slug": "add-and-subtract-within-20-with-brix-unknowns-anywhere",
-                        "url": "/games/1st-grade/add-and-subtract-within-20-with-brix-unknowns-anywhere",
+                        "name": "Add and subtract within 20 with brix (unknowns anywhere, typing)",
+                        "slug": "add-and-subtract-within-20-with-brix-unknowns-anywhere-typing",
+                        "url": "/games/1st-grade/add-and-subtract-within-20-with-brix-unknowns-anywhere-typing",
                         "image": "add-sub-within-20-unknowns-anywhere"
                     },
                     {
@@ -289,27 +289,27 @@
                 "name": "Place Value",
                 "games": [
                     {
-                        "name": "A ten is a bundle of 1's",
-                        "slug": "a-ten-is-a-bundle-of-1s",
-                        "url": "/games/1st-grade/a-ten-is-a-bundle-of-1s",
+                        "name": "Grouping: Make a 10 by circling",
+                        "slug": "grouping-make-a-10-by-circling",
+                        "url": "/games/1st-grade/grouping-make-a-10-by-circling",
                         "image": "ten-bundle-ones"
                     },
                     {
-                        "name": "The numbers from 11 to 19 are composed a number of 1's",
-                        "slug": "the-numbers-from-11-to-19-are-composed-a-number-of-1s",
-                        "url": "/games/1st-grade/the-numbers-from-11-to-19-are-composed-a-number-of-1s",
+                        "name": "Brix and Base 10: Numbers 11 to 19 are composed a ten and a number of 1's",
+                        "slug": "brix-and-base-10-numbers-11-to-19-are-composed-a-ten-and-a-number-of-1s",
+                        "url": "/games/1st-grade/brix-and-base-10-numbers-11-to-19-are-composed-a-ten-and-a-number-of-1s",
                         "image": "fill-blank-tens-drag"
                     },
                     {
-                        "name": "Numbers 10-90 are made up of a number of 10's",
-                        "slug": "numbers-10-90-are-made-up-of-a-number-of-10s",
-                        "url": "/games/1st-grade/numbers-10-90-are-made-up-of-a-number-of-10s",
+                        "name": "Brix and Base 10: Numbers 10 to 90 are made up of a number of 10's",
+                        "slug": "brix-and-base-10-numbers-10-to-90-are-made-up-of-a-number-of-10s",
+                        "url": "/games/1st-grade/brix-and-base-10-numbers-10-to-90-are-made-up-of-a-number-of-10s",
                         "image": "tens-recognition"
                     },
                     {
-                        "name": "Compare two 2-digit numbers",
-                        "slug": "compare-two-2-digit-numbers",
-                        "url": "/games/1st-grade/compare-two-2-digit-numbers",
+                        "name": "Greater Than, Less Than: Compare two 2-digit numbers",
+                        "slug": "greater-than-less-than-compare-two-2-digit-numbers",
+                        "url": "/games/1st-grade/greater-than-less-than-compare-two-2-digit-numbers",
                         "image": "compare-two-digit-numbers"
                     },
                     {
@@ -406,18 +406,6 @@
                         "image": "fluency-in-20"
                     },
                     {
-                        "name": "Determine if a number within 20 is odd or even",
-                        "slug": "determine-if-a-number-within-20-is-odd-or-even",
-                        "url": "/games/2nd-grade/determine-if-a-number-within-20-is-odd-or-even",
-                        "image": "odd-or-even-20"
-                    },
-                    {
-                        "name": "Express an even number as two equal addends",
-                        "slug": "express-an-even-number-as-two-equal-addends",
-                        "url": "/games/2nd-grade/express-an-even-number-as-two-equal-addends",
-                        "image": "even-num-split"
-                    },
-                    {
                         "name": "Add and subtract within 100 with brix (unknowns anywhere)",
                         "slug": "add-and-subtract-within-100-with-brix-unknowns-anywhere",
                         "url": "/games/2nd-grade/add-and-subtract-within-100-with-brix-unknowns-anywhere",
@@ -441,15 +429,15 @@
                         "image": "add-four-2-digit-num-no-regroup"
                     },
                     {
-                        "name": "One hundred is a bundle of 10's",
-                        "slug": "one-hundred-is-a-bundle-of-10s",
-                        "url": "/games/2nd-grade/one-hundred-is-a-bundle-of-10s",
+                        "name": "Grouping: Make a 100 by circling",
+                        "slug": "grouping-make-a-100-by-circling",
+                        "url": "/games/2nd-grade/grouping-make-a-100-by-circling",
                         "image": "hundred-bundle-tens"
                     },
                     {
-                        "name": "Numbers 100-900 are made up of a number of 100's",
-                        "slug": "numbers-100-900-are-made-up-of-a-number-of-100s",
-                        "url": "/games/2nd-grade/numbers-100-900-are-made-up-of-a-number-of-100s",
+                        "name": "Brix and Base 10: Numbers 100 to 900 are made up of a number of 100's",
+                        "slug": "brix-and-base-10-numbers-100-to-900-are-made-up-of-a-number-of-100s",
+                        "url": "/games/2nd-grade/brix-and-base-10-numbers-100-to-900-are-made-up-of-a-number-of-100s",
                         "image": "hundreds-recognition"
                     },
                     {
@@ -505,6 +493,23 @@
                         "slug": "compare-two-numbers-up-to-1000",
                         "url": "/games/2nd-grade/compare-two-numbers-up-to-1000",
                         "image": "compare-three-digit-numbers"
+                    }
+                ]
+            },
+            {
+                "name": "Odd or Even",
+                "games": [
+                    {
+                        "name": "Determine if a number within 20 is odd or even",
+                        "slug": "determine-if-a-number-within-20-is-odd-or-even",
+                        "url": "/games/2nd-grade/determine-if-a-number-within-20-is-odd-or-even",
+                        "image": "odd-or-even-20"
+                    },
+                    {
+                        "name": "Express an even number as two equal addends",
+                        "slug": "express-an-even-number-as-two-equal-addends",
+                        "url": "/games/2nd-grade/express-an-even-number-as-two-equal-addends",
+                        "image": "even-num-split"
                     }
                 ]
             }

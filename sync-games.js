@@ -47,17 +47,8 @@ client.downloadBuffer({
 
 
 // Create the games data file for the list page
-const writeGamesData = async function(games) {
-  const categories = [
-    'Counting',
-    'Number Recognition',
-    'Number Sense',
-    'Classification',
-    'Operations',
-    'Equivalence',
-    'Place Value',
-    'Enrichment'
-  ];
+const writeGamesData = async function(data) {
+  const { categories, games } = data;
 
   const result = grades.map(function(grade) {
     const gradeGames = games.filter(game => game.level.startsWith(grade));
@@ -92,7 +83,8 @@ const writeGamesData = async function(games) {
 
 
 // Create the individual game pages
-const createGamePages = async function(games) {
+const createGamePages = async function(data) {
+  const { games } = data;
   const gamesDir = `./site/content/${CONTENT_ROOT}`;
 
   // Remove all the game pages
