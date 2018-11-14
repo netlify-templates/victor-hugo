@@ -1,7 +1,7 @@
 /*
   You can use import statements to include partials:
  */
-@import 'imports/reset';
+@import 'imports/reset.css';
 
 /*
   Or add your statements here:
