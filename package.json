@@ -10,7 +10,7 @@
     "start:webpack": "webpack-dev-server --config webpack.dev.js",
     "build": "npm run build:hugo && npm run build:webpack",
     "build:hugo": "hugo -d ../dist -s site -v",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js --hot --inline",
     "build-preview": "gulp build-preview",
     "start-preview": "gulp server-preview",
     "lint": "eslint src"
