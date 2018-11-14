@@ -1,5 +1,6 @@
 +++
 title = "Make 5 by adding brix (friends of five)"
+description = "Make 5 by adding brix (friends of five)"
 url = "/games/kindergarten/make-5-by-adding-brix-friends-of-five"
 grade = "Kindergarten"
 gametype = "BRIX_MASTER"

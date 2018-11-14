@@ -1,5 +1,6 @@
 +++
 title = "Stairsteps: Complete the pattern by adding or subtracting by 1's and 2's, within 20"
+description = "Stairsteps: Complete the pattern by adding or subtracting by 1's and 2's, within 20"
 url = "/games/1st-grade/stairsteps-complete-the-pattern-by-adding-or-subtracting-by-1s-and-2s-within-20"
 grade = "1st Grade"
 gametype = "BRIX_MASTER"

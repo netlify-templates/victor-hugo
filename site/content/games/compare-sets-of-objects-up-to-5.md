@@ -1,5 +1,6 @@
 +++
 title = "Compare sets of objects up to 5"
+description = "Compare sets of objects up to 5"
 url = "/games/kindergarten/compare-sets-of-objects-up-to-5"
 grade = "Kindergarten"
 gametype = "BRIX_MASTER"

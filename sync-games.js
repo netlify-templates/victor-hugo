@@ -97,6 +97,7 @@ const createGamePages = async function(data) {
   const indexData = [
     '+++',
     'title = "Math Games"',
+    'description = "A complete list of every MathBRIX game"',
     `url = "/${URL_ROOT}"`,
     '+++'
   ].join('\n');
@@ -107,6 +108,7 @@ const createGamePages = async function(data) {
     const data = [
       '+++',
       `title = "${game.title}"`,
+      `description = "${game.title}"`,
       `url = "${_getGameURL(game)}"`,
       `grade = "${_getGrade(game)}"`,
       `gametype = "${game.game}"`,
