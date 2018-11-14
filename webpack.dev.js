@@ -1,6 +1,8 @@
 const merge = require("webpack-merge");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 const common = require("./webpack.common");
 
@@ -21,6 +23,13 @@ module.exports = merge(common, {
   },
 
   plugins: [
+    new CleanWebpackPlugin(["dist/**/*.js", "dist/**/*.css"]),
+
+    new HtmlWebpackPlugin({
+      template: path.resolve(process.cwd(), "dist/index.html"),
+      inject: true
+    }),
+
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"

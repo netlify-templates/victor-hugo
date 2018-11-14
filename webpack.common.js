@@ -1,8 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -40,13 +38,6 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(["dist/**/*.js", "dist/**/*.css"]),
-
-    new HtmlWebpackPlugin({
-      template: path.resolve(process.cwd(), "dist/index.html"),
-      inject: true
-    }),
-
     new webpack.ProvidePlugin({
       fetch: "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
     }),

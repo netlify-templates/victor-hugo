@@ -1,3 +1,4 @@
+const path = require("path");
 const merge = require("webpack-merge");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -25,18 +26,10 @@ module.exports = merge(common, {
     ]
   },
 
-  module: {
-    rules: [
-      {
-        test: /\.(sa|sc|c)ss$/,
-        exclude: /node_modules/,
-        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
-      }
-    ]
-  },
-
   plugins: [
     new HtmlWebpackPlugin({
+      template: path.resolve(process.cwd(), "dist/index.html"),
+      inject: true,
       minify: true
     }),
 
