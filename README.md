@@ -85,7 +85,7 @@ use the `site/static` folder. Images, font-files, etc, all go there.
 Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
-The `src/js/app.js` file is the entrypoint for webpack and will be built to `/dist/app.js`.
+The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
 
 You can use **ES6** and use both relative imports or import libraries from npm.
 

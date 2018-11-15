@@ -10,7 +10,9 @@ module.exports = {
 
   output: {
     path: path.join(process.cwd(), "dist"),
-    publicPath: "/"
+    publicPath: "/",
+    filename: "bundle.js",
+    chunkFilename: "[id].css"
   },
 
   module: {
@@ -40,6 +42,11 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       fetch: "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
+    }),
+
+    new MiniCssExtractPlugin({
+      filename: "bundle.css",
+      chunkFilename: "[id].css"
     }),
 
     new CopyWebpackPlugin([
