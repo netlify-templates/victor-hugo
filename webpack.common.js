@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -10,9 +11,7 @@ module.exports = {
 
   output: {
     path: path.join(process.cwd(), "dist"),
-    publicPath: "/",
-    filename: "bundle.js",
-    chunkFilename: "[id].css"
+    publicPath: "/"
   },
 
   module: {
@@ -44,9 +43,10 @@ module.exports = {
       fetch: "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
     }),
 
-    new MiniCssExtractPlugin({
-      filename: "bundle.css",
-      chunkFilename: "[id].css"
+    new AssetsPlugin({
+      filename: "webpack.json",
+      path: path.join(process.cwd(), "site/data"),
+      prettyPrint: true
     }),
 
     new CopyWebpackPlugin([

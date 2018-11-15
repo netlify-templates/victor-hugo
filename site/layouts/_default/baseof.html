@@ -7,7 +7,10 @@
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <title>{{ $.Site.Title }}</title>
 
-  <link href="bundle.css" rel="stylesheet">
+  {{ $stylesheet := .Site.Data.webpack.main }}
+  {{ with $stylesheet.css }}
+    <link href="{{ relURL . }}" rel="stylesheet">
+  {{ end }}
 </head>
 </head>
 
@@ -19,7 +22,10 @@
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
-  <script type="text/javascript" src="bundle.js"></script>
+  {{ $script := .Site.Data.webpack.main }}
+  {{ with $script.js }}
+    <script src="{{ relURL . }}"></script>
+  {{ end }}
 </body>
 
 </html>
