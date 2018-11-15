@@ -10,8 +10,7 @@ module.exports = {
   },
 
   output: {
-    path: path.join(process.cwd(), "dist"),
-    publicPath: "/"
+    path: path.join(process.cwd(), "dist")
   },
 
   module: {
