@@ -4,5 +4,5 @@ description = "MiniComputer: Represent numbers up to 100 (Typing)"
 url = "/games/1st-grade/minicomputer-represent-numbers-up-to-100-typing"
 grade = "1st Grade"
 gametype = "MINI_COMPUTER"
-subgametype = "MC_TY_10"
+subgametype = "CLASSIC_TY_10"
 +++

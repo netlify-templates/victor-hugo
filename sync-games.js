@@ -105,6 +105,18 @@ const createGamePages = async function(data) {
 
   // Make the single game pages
   for (const game of games) {
+    // TODO: remove this conversion when
+    // the classic game names are removed from prod
+    const oldSubgames = {
+      'CREATE_COMBO_WITHIN_10': 'CLASSIC',
+      'COLORS_VS_BRIX': 'CLASSIC',
+      'MC_TY_1': 'CLASSIC_TY_1',
+      'MC_DR_1': 'CLASSIC_DR_1',
+      'MC_TY_10': 'CLASSIC_TY_10',
+      'MC_DR_10': 'CLASSIC_DR_10'
+    };
+    const subgame = Object.keys(oldSubgames).includes(game.subgame) ?
+      oldSubgames[game.subgame] : game.subgame;
     const data = [
       '+++',
       `title = "${game.title}"`,
@@ -112,7 +124,7 @@ const createGamePages = async function(data) {
       `url = "${_getGameURL(game)}"`,
       `grade = "${_getGrade(game)}"`,
       `gametype = "${game.game}"`,
-      `subgametype = "${game.subgame}"`,
+      `subgametype = "${subgame}"`,
       '+++'
     ].join('\n');
     const path = `${gamesDir}/${_slugify(game.title)}.md`;
