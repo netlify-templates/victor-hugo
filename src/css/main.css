@@ -17,6 +17,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: #282c34;
   color: white;
+}
+
+a {
+  color: pink;
+  text-decoration: none;
+}
+
+.content {
+  padding: 0 32px;
 }

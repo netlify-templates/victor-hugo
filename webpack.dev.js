@@ -16,13 +16,17 @@ module.exports = merge(common, {
   devServer: {
     port: process.env.PORT || 3000,
     contentBase: path.join(process.cwd(), "./dist"),
+    watchContentBase: true,
     stats: "none",
     quiet: false,
-    open: true
+    open: true,
+    historyApiFallback: {
+      rewrites: [{from: /./, to: "404.html"}]
+    }
   },
 
   plugins: [
-    new CleanWebpackPlugin(["dist/**/*.js", "dist/**/*.css"]),
+    new CleanWebpackPlugin(["dist/**/*.js", "dist/**/*.css", "site/content/webpack.json"]),
 
     new MiniCssExtractPlugin({
       filename: "[name].css",
