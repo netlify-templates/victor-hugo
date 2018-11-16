@@ -4,3 +4,31 @@
 
 [context.deploy-preview]
   command = "npm run build-preview"
+
+[[redirects]]
+  from = "/personalized-learning"
+  to = "/"
+
+[[redirects]]
+  from = "/conceptual-math"
+  to = "/"
+
+[[redirects]]
+  from = "/learning-analytics"
+  to = "/"
+
+[[redirects]]
+  from = "/game-based-learning"
+  to = "/"
+
+[[redirects]]
+  from = "/executive-functioning-skills"
+  to = "/"
+
+[[redirects]]
+  from = "/minicomputer"
+  to = "/"
+
+[[redirects]]
+  from = "/login-options"
+  to = "https://help.mathbrix.com/article/6-login-options"
