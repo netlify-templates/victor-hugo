@@ -180,6 +180,17 @@
                 ]
             },
             {
+                "name": "Greater Than, Less Than",
+                "games": [
+                    {
+                        "name": "Compare two 2-digit numbers within 100",
+                        "slug": "compare-two-2-digit-numbers-within-100",
+                        "url": "/games/1st-grade/compare-two-2-digit-numbers-within-100",
+                        "image": "compare-two-digit-numbers"
+                    }
+                ]
+            },
+            {
                 "name": "Operations",
                 "games": [
                     {
@@ -307,12 +318,6 @@
                         "image": "tens-recognition"
                     },
                     {
-                        "name": "Greater Than, Less Than: Compare two 2-digit numbers",
-                        "slug": "greater-than-less-than-compare-two-2-digit-numbers",
-                        "url": "/games/1st-grade/greater-than-less-than-compare-two-2-digit-numbers",
-                        "image": "compare-two-digit-numbers"
-                    },
-                    {
                         "name": "Add 1's and 10's within 100",
                         "slug": "add-1s-and-10s-within-100",
                         "url": "/games/1st-grade/add-1s-and-10s-within-100",
@@ -390,6 +395,17 @@
     {
         "grade": "2nd Grade",
         "categories": [
+            {
+                "name": "Greater Than, Less Than",
+                "games": [
+                    {
+                        "name": "Compare two 3-digit numbers up to 1000",
+                        "slug": "compare-two-3-digit-numbers-up-to-1000",
+                        "url": "/games/2nd-grade/compare-two-3-digit-numbers-up-to-1000",
+                        "image": "compare-three-digit-numbers"
+                    }
+                ]
+            },
             {
                 "name": "Operations",
                 "games": [
@@ -487,12 +503,6 @@
                         "slug": "add-four-2-digit-numbers-regrouping",
                         "url": "/games/2nd-grade/add-four-2-digit-numbers-regrouping",
                         "image": "add-four-2-digit-num-regroup"
-                    },
-                    {
-                        "name": "Compare two numbers up to 1000",
-                        "slug": "compare-two-numbers-up-to-1000",
-                        "url": "/games/2nd-grade/compare-two-numbers-up-to-1000",
-                        "image": "compare-three-digit-numbers"
                     }
                 ]
             },
