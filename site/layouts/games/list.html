@@ -12,9 +12,11 @@
 
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
+  <h1 class="mt0 f3 f2-ns normal ttu tracked black">Math Games</h1>
+
   {{ range $.Site.Data.games }}
 
-    <h2 id="{{ urlize .grade }}" class="f3 f2-ns normal ttu tracked black">{{ .grade }} Games</h2>
+    <h2 id="{{ urlize .grade }}" class="f3 f2-ns normal black">{{ .grade }} Games</h2>
 
     {{ range .categories }}
 
