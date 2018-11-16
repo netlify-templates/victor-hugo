@@ -1,7 +1,7 @@
 +++
 title = "Add four 2-digit numbers (no regrouping)"
 description = "Add four 2-digit numbers (no regrouping)"
-url = "/games/2nd-grade/add-four-2-digit-numbers-no-regrouping"
+url = "/games/2nd-grade/place-value/add-four-2-digit-numbers-no-regrouping"
 grade = "2nd Grade"
 gametype = "BRIX_MASTER"
 subgametype = "ADD_FOUR_2_DIGIT_NUM_NO_REGROUP"

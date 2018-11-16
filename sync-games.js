@@ -136,7 +136,8 @@ const createGamePages = async function(data) {
 const _getGameURL = function(game) {
   const gradeSlug = _slugify(_getGrade(game));
   const gameSlug = _slugify(game.title);
-  return `/${URL_ROOT}/${gradeSlug}/${gameSlug}`;
+  const categorySlug = _slugify(game.category);
+  return `/${URL_ROOT}/${gradeSlug}/${categorySlug}/${gameSlug}`;
 }
 
 const _getGrade = function(game) {
