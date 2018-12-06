@@ -1,0 +1,26 @@
+{{ define "extra-meta" }}
+{{ partial "smart-app-banner" }}
+{{ end }}
+
+{{ define "main" }}
+
+<div class="pv4 ph3 ph5-ns ph6-l mid-gray">
+
+  {{ $categoryData := index (where $.Site.Data.skills "category" .Params.title) 0 }}
+
+  <h1 class="mt0 f3 f2-ns normal ttu tracked black">{{ $categoryData.category }} Games</h1>
+
+  <div class="flex flex-wrap">
+    {{ range $categoryData.games }}
+      <div class="pa3 tc">
+        <a class="color-inherit no-underline" href="{{ .url }}">
+          <img class="w5 ba bw1 b--orange" src="/games/{{ .image }}.jpg" alt="{{ .name }} Math Game">
+          <p class="w5 mt1">{{ .name }}</p>
+        </a>
+      </div>
+    {{ end }}
+  </div>
+
+</div>
+
+{{ end }}

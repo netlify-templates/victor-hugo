@@ -1,0 +1,42 @@
+{{ define "extra-meta" }}
+{{ partial "smart-app-banner" }}
+{{ end }}
+
+{{ define "extra-header" }}
+
+<div class="dn db-l mh6 pt2 ph2 bt bb b--moon-gray">
+  {{ range $.Site.Data.skills }}
+    <a class="dib mr3 mb2 mb-blue no-underline dim" href="{{ $.URL }}#{{ urlize .category }}">{{ .category }}</a>
+  {{ end }}
+</div>
+
+{{ end }}
+
+{{ define "main" }}
+
+<div class="pv4 ph3 ph5-ns ph6-l mid-gray">
+
+  <h1 class="mt0 f3 f2-ns normal ttu tracked black">Math Skills</h1>
+
+  {{ range $.Site.Data.skills }}
+
+    <h2 id="{{ urlize .category }}" class="f3 f2-ns normal black">
+      <a class="red no-underline dim" href="{{ $.URL }}/{{ urlize .category }}">{{ .category }} Games</a>
+    </h2>
+
+    <div class="flex flex-wrap">
+      {{ range .games }}
+        <div class="pa3 tc">
+          <a class="color-inherit no-underline" href="{{ .url }}">
+            <img class="w5 ba bw1 b--orange" src="/games/{{ .image }}.jpg" alt="{{ .name }} Math Game">
+            <p class="w5 mt1">{{ .name }}</p>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+
+  {{ end }}
+
+</div>
+
+{{ end }}

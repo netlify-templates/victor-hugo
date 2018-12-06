@@ -22,12 +22,12 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Run server tasks
-gulp.task("server", ["hugo", "css", "js", "fonts"], (cb) => runServer(cb));
-gulp.task("server-preview", ["hugo-preview", "css", "js", "fonts"], (cb) => runServer(cb));
+gulp.task("server", ["hugo", "css", "js", "fonts", "redirects"], (cb) => runServer(cb));
+gulp.task("server-preview", ["hugo-preview", "css", "js", "fonts", "redirects"], (cb) => runServer(cb));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["css", "js", "fonts", "redirects"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["css", "js", "fonts", "redirects"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
@@ -59,6 +59,12 @@ gulp.task('fonts', () => (
     .pipe(gulp.dest("./dist/fonts"))
     .pipe(browserSync.stream())
 ));
+
+// Copy over Netlify redirects file
+gulp.task('redirects', () => {
+  gulp.src("./_redirects")
+    .pipe(gulp.dest("./dist"));
+});
 
 // Development server with browsersync
 function runServer() {
