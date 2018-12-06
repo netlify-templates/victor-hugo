@@ -127,6 +127,7 @@ const createGamePages = async function(data) {
       `description = "${game.title}"`,
       `url = "${getGameURL(game)}"`,
       `grade = "${getGrade(game)}"`,
+      `category = "${game.category}"`,
       `gametype = "${game.game}"`,
       `subgametype = "${subgame}"`,
       '+++'
