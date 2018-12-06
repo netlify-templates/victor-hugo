@@ -43,6 +43,7 @@
     "imports-loader": "^0.8.0",
     "nouislider": "^12.0.0",
     "plugin-error": "^1.0.1",
+    "plyr": "^3.4.7",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.0",
     "s3": "^4.4.0",

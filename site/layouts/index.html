@@ -246,7 +246,8 @@
 
 </div>
 
-<!-- template for the modal component -->
+<!-- templates for the modal component -->
+
 <script type="text/x-template" id="modal-template">
   <div id="open-modal" class="modal-backdrop">
     <div id="modal-window" class="pa3 pt2 br2">
@@ -255,8 +256,16 @@
           <img class="w1" src="/close.png">
         </a>
       </div>
-      <iframe src="https://www.youtube.com/embed/dGCpBh3Xz_g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div id="splashreel-container">
+        <div id="splashreel" data-plyr-provider="youtube" data-plyr-embed-id="dGCpBh3Xz_g"></div>
+      </div>
     </div>
+  </div>
+</script>
+
+<script type="text/x-template" id="mobile-modal-template">
+  <div id="splashreel-container">
+    <div id="splashreel" data-plyr-provider="youtube" data-plyr-embed-id="dGCpBh3Xz_g"></div>
   </div>
 </script>
 

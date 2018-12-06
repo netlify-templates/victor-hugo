@@ -1,6 +1,7 @@
 @import 'tachyons';
 @import 'tether-drop/dist/css/drop-theme-arrows-bounce';
 @import 'nouislider';
+@import 'plyr';
 @import "imports/reset.css";
 
 /* Global */

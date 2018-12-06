@@ -2,6 +2,7 @@ import Drop from 'tether-drop';
 import $ from 'cash-dom';
 import noUiSlider from 'nouislider';
 import device from 'current-device';
+import Plyr from 'plyr';
 
 // Create flyout menus in top navigation
 
@@ -48,23 +49,34 @@ function videoModal() {
   $('#hero-button').on('click', showModal);
 
   function showModal() {
-    $('body').append($('#modal-template').html());
+    const tmpl = device.desktop() ? '#modal-template' : '#mobile-modal-template';
+    $('body').append($(tmpl).html());
 
     const videoWidth = 0.8 * $(window).width();
     const videoHeight = videoWidth / 16 * 9;
 
-    $('#open-modal iframe').prop({
+    $('#splashreel-container').css({
       width: videoWidth,
       height: videoHeight
     });
 
-    $('#close-modal').on('click', hideModal);
+    const player = new Plyr('#splashreel');
 
-    return false;
-  };
+    if (!device.desktop()) {
+      player.fullscreen.enter();
+    }
 
-  function hideModal() {
-    $('#open-modal').remove();
+    if (device.desktop()) {
+      $('#close-modal').on('click', function() {
+        $('#open-modal').remove();
+        return false;
+      });
+    } else {
+      player.on('exitfullscreen', function() {
+        $('#splashreel-container').remove();
+      });
+    }
+
     return false;
   };
 }
