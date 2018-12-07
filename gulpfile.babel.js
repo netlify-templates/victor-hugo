@@ -83,7 +83,20 @@ function runServer() {
  * Run hugo and build the site
  */
 function buildSite(cb, options, environment = "development") {
-  const args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault;
+  let args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault;
+  const isPreview = args.includes('--buildDrafts');
+
+  if (isPreview) {
+    if (process.env.DEPLOY_PRIME_URL) {
+      args = args.concat(['-b', process.env.DEPLOY_PRIME_URL]);
+    }
+  } else {
+    const baseUrl = environment === 'production' ?
+      process.env.URL : process.env.DEPLOY_PRIME_URL;
+    if (baseUrl) {
+      args = args.concat(['-b', baseUrl]);
+    }
+  }
 
   process.env.NODE_ENV = environment;
 
