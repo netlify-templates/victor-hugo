@@ -98,17 +98,6 @@ body {
 
 /* Pricing */
 
-#early-adopter-discount {
-  position: absolute;
-  top: -40px;
-  right: -10px;
-  width: 115px;
-}
-
-#old-price {
-  text-decoration: line-through red;
-}
-
 .plan-features li:before {
   margin-right: 8px;
   content: '✓';

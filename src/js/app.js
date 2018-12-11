@@ -100,8 +100,11 @@ function pricingSlider() {
     const val = parseInt(values[0]);
     $('#num-students').html(val);
 
-    const numStudents = Math.max(20, val);
-    $('#total-price').html(2 * numStudents);
+    const baseStudents = 30;
+    const extraStudents = Math.max(val - baseStudents, 0);
+    const basePrice = 6;
+    const totalPrice = basePrice + Math.ceil(extraStudents / 5);
+    $('#total-price').html(totalPrice);
   });
 }
 
