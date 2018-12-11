@@ -1,4 +1,4 @@
 +++
 type = "features"
-title = "Features"
+title = "Features | MathBRIX"
 +++

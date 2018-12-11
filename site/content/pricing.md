@@ -1,4 +1,4 @@
 +++
 type = "pricing"
-title = "Pricing"
+title = "Pricing | MathBRIX"
 +++

@@ -1,4 +1,4 @@
 +++
 type = "research"
-title = "Research"
+title = "Research | MathBRIX"
 +++

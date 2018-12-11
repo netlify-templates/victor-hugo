@@ -1,4 +1,4 @@
 +++
 type = "privacy"
-title = "Privacy Policy"
+title = "Privacy Policy | MathBRIX"
 +++

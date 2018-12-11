@@ -1,4 +1,4 @@
 +++
 type = "eula"
-title = "Terms of Use"
+title = "Terms of Use | MathBRIX"
 +++

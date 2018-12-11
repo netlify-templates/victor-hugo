@@ -1,4 +1,4 @@
 +++
 type = "contact"
-title = "Contact Us"
+title = "Contact Us | MathBRIX"
 +++

@@ -1,4 +1,4 @@
 +++
 type = "team"
-title = "Team"
+title = "Team | MathBRIX"
 +++

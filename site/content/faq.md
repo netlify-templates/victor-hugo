@@ -1,4 +1,4 @@
 +++
 type = "faq"
-title = "FAQ"
+title = "FAQ | MathBRIX"
 +++

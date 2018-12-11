@@ -1,5 +1,5 @@
 ---
-title: "Does Higher-Level Number Talk Hold Key to Better Math Scores for Young Children?"
+title: "Does Higher-Level Number Talk Hold Key to Better Math Scores for Young Children? | MathBRIX Blog"
 date: 2017-10-16
 ---
 

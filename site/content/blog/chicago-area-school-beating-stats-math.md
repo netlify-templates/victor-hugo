@@ -1,5 +1,5 @@
 ---
-title: "How one Chicago-area school district is beating the statistics in math"
+title: "How one Chicago-area school district is beating the statistics in math | MathBRIX Blog"
 date: 2018-07-16
 ---
 
