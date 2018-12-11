@@ -1,5 +1,6 @@
 ---
 title: "Which Preschool Mathematics Competencies Are Most Predictive of Fifth Grade Achievement? | MathBRIX Blog"
+headline: "Which Preschool Mathematics Competencies Are Most Predictive of Fifth Grade Achievement?"
 date: 2017-04-10
 ---
 

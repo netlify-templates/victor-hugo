@@ -1,5 +1,6 @@
 ---
 title: "Researchers find link between PreK spatial skills and mathematic ability | MathBRIX Blog"
+headline: "Researchers find link between PreK spatial skills and mathematic ability"
 date: 2017-03-01
 ---
 

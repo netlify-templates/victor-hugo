@@ -1,5 +1,6 @@
 ---
 title: "Effective Technology Use in Math Class | MathBRIX Blog"
+headline: "Effective Technology Use in Math Class"
 date: 2018-10-22
 ---
 

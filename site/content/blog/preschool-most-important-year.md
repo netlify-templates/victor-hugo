@@ -1,5 +1,6 @@
 ---
 title: "Why Preschool is the “Most Important Year” in a Child’s Development | MathBRIX Blog"
+headline: "Why Preschool is the “Most Important Year” in a Child’s Development"
 date: 2017-09-25
 ---
 
