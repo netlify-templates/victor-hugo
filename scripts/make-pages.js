@@ -100,7 +100,7 @@ const createGamePages = async function(data) {
   // Make the games list page
   const indexData = [
     '+++',
-    'title = "Math Games"',
+    'title = "Math Games | MathBRIX"',
     'description = "A complete list of every MathBRIX game"',
     `url = "/${GAMES_ROOT}"`,
     '+++'
@@ -150,7 +150,7 @@ const createSkillPages = async function(categoryData) {
   // Make the skills list page
   const indexData = [
     '+++',
-    'title = "Math Skills"',
+    'title = "Math Skills | MathBRIX"',
     'description = "A complete list of every math skill that MathBRIX teaches"',
     `url = "/${SKILLS_ROOT}"`,
     '+++'
