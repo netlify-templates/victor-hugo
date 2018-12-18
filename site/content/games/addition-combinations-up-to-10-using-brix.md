@@ -5,5 +5,5 @@ url = "/kindergarten/addition-combinations-up-to-10-using-brix"
 grade = "Kindergarten"
 category = "Number Sense"
 gametype = "BRIX_MASTER"
-subgametype = "CLASSIC"
+subgametype = "CREATE_COMBO_WITHIN_10"
 +++

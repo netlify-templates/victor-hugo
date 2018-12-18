@@ -34,28 +34,28 @@
                 "name": "Number Sense",
                 "games": [
                     {
-                        "name": "Compare sets of objects up to 5",
-                        "slug": "compare-sets-of-objects-up-to-5",
-                        "url": "/kindergarten/compare-sets-of-objects-up-to-5",
-                        "image": "k-compare-2-bundles"
-                    },
-                    {
                         "name": "Match numbers up to 10 to different length brix",
                         "slug": "match-numbers-up-to-10-to-different-length-brix",
                         "url": "/kindergarten/match-numbers-up-to-10-to-different-length-brix",
                         "image": "k-match-brix-to-num"
                     },
                     {
-                        "name": "Compare numerals and sets of objects, up to 10",
-                        "slug": "compare-numerals-and-sets-of-objects-up-to-10",
-                        "url": "/kindergarten/compare-numerals-and-sets-of-objects-up-to-10",
-                        "image": "k-compare-2-numbers"
+                        "name": "Compare sets of objects up to 5",
+                        "slug": "compare-sets-of-objects-up-to-5",
+                        "url": "/kindergarten/compare-sets-of-objects-up-to-5",
+                        "image": "k-compare-2-bundles"
                     },
                     {
                         "name": "Addition combinations up to 10 using brix",
                         "slug": "addition-combinations-up-to-10-using-brix",
                         "url": "/kindergarten/addition-combinations-up-to-10-using-brix",
                         "image": "create-combo-within-10"
+                    },
+                    {
+                        "name": "Compare numerals and sets of objects, up to 10",
+                        "slug": "compare-numerals-and-sets-of-objects-up-to-10",
+                        "url": "/kindergarten/compare-numerals-and-sets-of-objects-up-to-10",
+                        "image": "k-compare-2-numbers"
                     }
                 ]
             },

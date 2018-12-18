@@ -5,5 +5,5 @@ url = "/1st-grade/minicomputer-represent-numbers-up-to-100-dragging"
 grade = "1st Grade"
 category = "Enrichment"
 gametype = "MINI_COMPUTER"
-subgametype = "CLASSIC_DR_10"
+subgametype = "MC_DR_10"
 +++

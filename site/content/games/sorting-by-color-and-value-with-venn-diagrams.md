@@ -5,5 +5,5 @@ url = "/kindergarten/sorting-by-color-and-value-with-venn-diagrams"
 grade = "Kindergarten"
 category = "Classification"
 gametype = "VENN_DIAGRAM"
-subgametype = "CLASSIC"
+subgametype = "COLORS_VS_BRIX"
 +++

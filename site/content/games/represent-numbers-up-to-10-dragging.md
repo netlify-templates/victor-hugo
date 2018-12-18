@@ -5,5 +5,5 @@ url = "/kindergarten/represent-numbers-up-to-10-dragging"
 grade = "Kindergarten"
 category = "Enrichment"
 gametype = "MINI_COMPUTER"
-subgametype = "CLASSIC_DR_1"
+subgametype = "MC_DR_1"
 +++

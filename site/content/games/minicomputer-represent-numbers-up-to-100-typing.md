@@ -5,5 +5,5 @@ url = "/1st-grade/minicomputer-represent-numbers-up-to-100-typing"
 grade = "1st Grade"
 category = "Enrichment"
 gametype = "MINI_COMPUTER"
-subgametype = "CLASSIC_TY_10"
+subgametype = "MC_TY_10"
 +++
