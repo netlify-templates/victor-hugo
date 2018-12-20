@@ -3126,10 +3126,10 @@ file-entry-cache@^2.0.0:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
 
-file-loader@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-2.0.0.tgz#39749c82f020b9e85901dcff98e8004e6401cfde"
-  integrity sha512-YCsBfd1ZGCyonOKLxPiKPdu+8ld9HAaMEvJewzz+b2eTF7uL5Zm/HdBF6FjCrpCMRq25Mi0U1gl4pwn2TlH7hQ==
+file-loader@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-3.0.0.tgz#56c5ce34bd94ac7a2a5afd49161483777983786a"
+  integrity sha512-H3/PSIIvTGgqHv6PDCkIIZWKOf9kz0NOCPF4KlQz7CSZj8mLPYakl3EV92CAcVCo41xhWhqoqhC3fdY7zTw9LQ==
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^1.0.0"
