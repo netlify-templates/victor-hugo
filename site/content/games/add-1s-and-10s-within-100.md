@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "FILL_BLANK_HUNDRED"
+image = "fill-blank-hundred"
 +++

@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "ADD_SUB_WITHIN_100_UNKNOWNS_ANYWHERE"
+image = "add-sub-within-100-unknowns-anywhere"
 +++

@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "HUNDREDS_RECOGNITION"
+image = "hundreds-recognition"
 +++

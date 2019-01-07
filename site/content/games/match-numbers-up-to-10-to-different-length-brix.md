@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Number Sense"
 gametype = "BRIX_MASTER"
 subgametype = "K_MATCH_BRIX_TO_NUM"
+image = "k-match-brix-to-num"
 +++

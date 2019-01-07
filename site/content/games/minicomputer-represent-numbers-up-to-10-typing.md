@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Enrichment"
 gametype = "MINI_COMPUTER"
 subgametype = "MC_TY_1"
+image = "mc-ty-1"
 +++

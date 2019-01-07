@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "FLUENCY_IN_10"
+image = "fluency-in-10"
 +++

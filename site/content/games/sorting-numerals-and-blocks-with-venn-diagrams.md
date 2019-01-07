@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Classification"
 gametype = "VENN_DIAGRAM"
 subgametype = "NUM_VS_BRIX"
+image = "num-vs-brix"
 +++

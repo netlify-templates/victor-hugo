@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Comparison"
 gametype = "COMPARISON"
 subgametype = "COMP_SET_VS_NUM_UPTO_10"
+image = "comp-set-vs-num-upto-10"
 +++

@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "ADD_SUB_WITHIN_10_UNKNOWNS_ANYWHERE"
+image = "add-sub-within-10-unknowns-anywhere"
 +++

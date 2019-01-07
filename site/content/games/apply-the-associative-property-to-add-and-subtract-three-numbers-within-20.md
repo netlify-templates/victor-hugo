@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "ASSOCIATIVE_IN_20_3_NUMBERS"
+image = "associative-in-20-3-numbers"
 +++

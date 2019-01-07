@@ -96,7 +96,7 @@ function gameDemo() {
 
   if (!device.desktop()) {
     el.css('display', 'none');
-    $('#unplayable-msg').css('display', 'block');
+    $('#app-link-thumbnail').css('display', 'block');
     return;
   }
 

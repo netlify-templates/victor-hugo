@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "EVEN_NUM_SPLIT"
+image = "even-num-split"
 +++

@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "COMMUTATIVE_IN_20_2_NUMBERS"
+image = "commutative-in-20-2-numbers"
 +++

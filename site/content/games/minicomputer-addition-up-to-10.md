@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Enrichment"
 gametype = "MINI_COMPUTER"
 subgametype = "MC_ADD_1_OV"
+image = "mc-add-1-ov"
 +++

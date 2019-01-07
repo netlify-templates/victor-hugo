@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Comparison"
 gametype = "COMPARISON"
 subgametype = "COMP_2_SETS_UPTO_5"
+image = "comp-2-sets-upto-5"
 +++

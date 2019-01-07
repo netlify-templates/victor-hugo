@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "COUNT_1000_BY_100"
+image = "count-1000-by-100"
 +++

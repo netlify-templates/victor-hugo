@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "ODD_OR_EVEN_20"
+image = "odd-or-even-20"
 +++

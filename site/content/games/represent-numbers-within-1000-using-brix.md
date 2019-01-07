@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "READ_AND_WRITE_1000"
+image = "read-and-write-1000"
 +++

@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "ADD_ARRAYS_UP_TO_5x5"
+image = "add-arrays-up-to-5x5"
 +++

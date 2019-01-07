@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Comparison"
 gametype = "BRIX_MASTER"
 subgametype = "COMPARE_THREE_DIGIT_NUMBERS"
+image = "compare-three-digit-numbers"
 +++

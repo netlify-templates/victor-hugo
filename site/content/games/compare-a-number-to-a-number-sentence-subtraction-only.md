@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Comparison"
 gametype = "BRIX_MASTER"
 subgametype = "TRUE_FALSE_1SIDE_SUB"
+image = "true-false-1side-sub"
 +++

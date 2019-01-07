@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "TEN_BUNDLE_ONES"
+image = "ten-bundle-ones"
 +++

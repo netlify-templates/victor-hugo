@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Number Recognition"
 gametype = "READ_WRITE_NUM"
 subgametype = "REC_WHOLE_NUM_UPTO_10"
+image = "rec-whole-num-upto-10"
 +++

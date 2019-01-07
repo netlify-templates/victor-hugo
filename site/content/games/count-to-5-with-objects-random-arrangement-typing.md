@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Counting"
 gametype = "COUNTING"
 subgametype = "COUNT_OBJ_RNG_UPTO_5_TYPING"
+image = "count-obj-rng-upto-5-typing"
 +++

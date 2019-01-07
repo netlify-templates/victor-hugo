@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Enrichment"
 gametype = "MINI_COMPUTER"
 subgametype = "MC_SUB_10_SP"
+image = "mc-sub-10-sp"
 +++

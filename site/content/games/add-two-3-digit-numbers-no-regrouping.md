@@ -10,4 +10,5 @@ grade = "2nd Grade"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "ADD_TWO_3_DIGIT_NUM_NO_REGROUP"
+image = "add-two-3-digit-num-no-regroup"
 +++

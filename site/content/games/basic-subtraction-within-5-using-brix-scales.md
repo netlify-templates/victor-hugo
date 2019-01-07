@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Operations and Algebraic Thinking"
 gametype = "BRIX_MASTER"
 subgametype = "SUB_WITHIN_5"
+image = "sub-within-5"
 +++

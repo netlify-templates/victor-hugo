@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "RECOGNIZE_10_AND_LEFTOVERS"
+image = "recognize-10-and-leftovers"
 +++

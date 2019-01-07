@@ -10,4 +10,5 @@ grade = "Kindergarten"
 category = "Number Sense"
 gametype = "BRIX_MASTER"
 subgametype = "CREATE_COMBO_WITHIN_10"
+image = "create-combo-within-10"
 +++

@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Number Sense"
 gametype = "BRIX_MASTER"
 subgametype = "ADD_SUB_BY_2_TO_10"
+image = "add-sub-by-2-to-10"
 +++

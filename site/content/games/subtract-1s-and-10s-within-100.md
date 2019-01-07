@@ -10,4 +10,5 @@ grade = "1st Grade"
 category = "Place Value"
 gametype = "BRIX_MASTER"
 subgametype = "SUBTRACT_MULT_OF_10"
+image = "subtract-mult-of-10"
 +++
