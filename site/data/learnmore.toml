@@ -1,0 +1,31 @@
+colors = ["red", "orange", "california", "yellow", "atlantis", "green", "mountain-meadow", "light-blue", "pelorous", "violet", "pink"]
+
+[[features]]
+title = "Early Education"
+description = "MathBRIX is built specifically for early elementary, shown by research to be a critical time for developing math skills."
+icon = "/early-learning-icon.png"
+
+[[features]]
+title = "Game-Based"
+description = "Our activates are presented in a fun, game-based format that keeps kids engaged and focused on what they’re learning."
+icon = "/game-based-icon.png"
+
+[[features]]
+title = "Conceptual Approach"
+description = "On-screen manipulatives are used extensively in activities, tying concrete representations of math to notation."
+icon = "/conceptual-icon.png"
+
+[[features]]
+title = "Adaptive"
+description = "MathBRIX is an adaptive learning platform that learns as students learn, providing just the right challenge every time."
+icon = "/adaptive-learning-icon.png"
+
+[[features]]
+title = "Play Anywhere"
+description = "Our cloud-based system runs on almost any platform (iPads, Chromebooks, etc.) and student work is portable from device to device."
+icon = "/cloud-icon.png"
+
+[[features]]
+title = "Tracking"
+description = "Teachers can track student progress by state and national standards across multiple devices simultaneously, all in real time."
+icon = "/analytics-icon.png"

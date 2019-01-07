@@ -14,17 +14,25 @@
 
 {{ define "main" }}
 
+{{ partial "what-is-mathbrix" }}
+
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
   <h1 class="mt0 f3 f2-ns normal ttu tracked black">Math Games</h1>
 
-  {{ range $.Site.Data.games }}
+  {{ range $.Site.Data.games._index }}
+
+    {{ $gradeData := index (where $.Site.Data.grades "alternate_name_2" .grade) 0 }}
 
     <h2 id="{{ urlize .grade }}" class="f3 f2-ns normal red">{{ .grade }} Games</h2>
 
+    <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ $gradeData.full_description }}</p>
+
     {{ range .categories }}
 
-      <h3 class="f4 f3-ns">{{ .name }}</h3>
+      <h3 class="f4 f3-ns">
+        <a class="mid-gray no-underline dim" href="/skills/{{ urlize .name }}">{{ .name }}</a>
+      </h3>
 
       <div class="flex flex-wrap">
         {{ range .games }}

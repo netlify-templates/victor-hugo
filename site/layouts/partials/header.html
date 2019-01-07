@@ -76,7 +76,7 @@
     <h4 class="mt0 mb3 ttu tracked f4 fw4">Skills</h4>
     <ul class="pl1 list">
       {{ range $.Site.Data.skills }}
-        <li class="mb2"><a class="link mb-blue dim tracked" href="/skills#{{ urlize .category }}">{{ .category }}</a></li>
+        <li class="mb2"><a class="link mb-blue dim tracked" href="/skills#{{ urlize .category.name }}">{{ .category.name }}</a></li>
       {{ end }}
     </ul>
   </div>

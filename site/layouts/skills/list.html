@@ -6,7 +6,7 @@
 
 <div class="dn db-l mh6 pt2 ph2 bt bb b--moon-gray">
   {{ range $.Site.Data.skills }}
-    <a class="dib mr3 mb2 mb-blue no-underline dim" href="{{ $.URL }}#{{ urlize .category }}">{{ .category }}</a>
+    <a class="dib mr3 mb2 mb-blue no-underline dim" href="{{ $.URL }}#{{ urlize .category.name }}">{{ .category.name }}</a>
   {{ end }}
 </div>
 
@@ -14,15 +14,19 @@
 
 {{ define "main" }}
 
+{{ partial "what-is-mathbrix" }}
+
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
   <h1 class="mt0 f3 f2-ns normal ttu tracked black">Math Skills</h1>
 
   {{ range $.Site.Data.skills }}
 
-    <h2 id="{{ urlize .category }}" class="f3 f2-ns normal black">
-      <a class="red no-underline dim" href="{{ $.URL }}{{ urlize .category }}">{{ .category }} Games</a>
+    <h2 id="{{ urlize .category.name }}" class="mb2 f3 f2-ns normal black">
+      <a class="red no-underline dim" href="{{ $.URL }}{{ urlize .category.name }}">{{ .category.title }}</a>
     </h2>
+
+    <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ .category.full_description }}</p>
 
     <div class="flex flex-wrap">
       {{ range .games }}

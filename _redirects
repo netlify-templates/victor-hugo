@@ -19,12 +19,12 @@
 /games/kindergarten/number-sense/compare-numerals-and-sets-of-objects-up-to-10                                 /kindergarten/compare-numerals-and-sets-of-objects-up-to-10
 /games/kindergarten/classification/sorting-by-color-and-value-with-venn-diagrams                               /kindergarten/sorting-by-color-and-value-with-venn-diagrams
 /games/kindergarten/counting/count-to-5-with-objects-random-arrangement-typing                                 /kindergarten/count-to-5-with-objects-random-arrangement-typing
-/games/kindergarten/enrichment/represent-numbers-up-to-10-typing                                               /kindergarten/represent-numbers-up-to-10-typing
+/games/kindergarten/enrichment/represent-numbers-up-to-10-typing                                               /kindergarten/minicomputer-represent-numbers-up-to-10-typing
 /games/kindergarten/place-value/grouping-circle-10-ones-and-find-the-remainder                                 /kindergarten/grouping-circle-10-ones-and-find-the-remainder
 /games/kindergarten/operations/make-10-by-adding-brix-friends-of-ten                                           /kindergarten/make-10-by-adding-brix-friends-of-ten
 /games/kindergarten/operations/make-5-by-adding-brix-friends-of-five                                           /kindergarten/make-5-by-adding-brix-friends-of-five
 /games/kindergarten/operations/add-and-subtract-fluently-within-5-using-brix                                   /kindergarten/add-and-subtract-fluently-within-5-using-brix
-/games/kindergarten/enrichment/represent-numbers-up-to-10-dragging                                             /kindergarten/represent-numbers-up-to-10-dragging
+/games/kindergarten/enrichment/represent-numbers-up-to-10-dragging                                             /kindergarten/minicomputer-represent-numbers-up-to-10-dragging
 /games/1st-grade/number-sense/stairsteps-complete-the-pattern-by-adding-or-subtracting-by-1s-and-2s-within-10  /1st-grade/stairsteps-complete-the-pattern-by-adding-or-subtracting-by-1s-and-2s-within-10
 /games/1st-grade/enrichment/minicomputer-subtraction-within-10-splitting                                       /1st-grade/minicomputer-subtraction-within-10-splitting
 /games/1st-grade/enrichment/minicomputer-addition-up-to-10                                                     /1st-grade/minicomputer-addition-up-to-10
@@ -77,3 +77,10 @@
 /games/2nd-grade/place-value/add-two-3-digit-numbers-regrouping                                                /2nd-grade/add-two-3-digit-numbers-regrouping
 /games/2nd-grade/place-value/add-two-3-digit-numbers-no-regrouping                                             /2nd-grade/add-two-3-digit-numbers-no-regrouping
 /games/2nd-grade/place-value/add-four-2-digit-numbers-no-regrouping                                            /2nd-grade/add-four-2-digit-numbers-no-regrouping
+
+/kindergarten/represent-numbers-up-to-10-dragging                                                              /kindergarten/minicomputer-represent-numbers-up-to-10-dragging
+/kindergarten/represent-numbers-up-to-10-typing                                                                /kindergarten/minicomputer-represent-numbers-up-to-10-typing
+
+/skills/greater-than-less-than                                                                                 /skills/comparison
+/skills/equivalence                                                                                            /skills/comparison
+/skills/operations                                                                                             /skills/operations-and-algebraic-thinking

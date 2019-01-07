@@ -1,0 +1,22 @@
+{
+    "standards": [
+        {
+            "body": "CCSS-M",
+            "codes": [
+                "2.OA.C.4"
+            ]
+        },
+        {
+            "body": "NCTM",
+            "codes": [
+                "PK2.NO.B.9"
+            ]
+        },
+        {
+            "body": "TEKS",
+            "codes": [
+                "2.6A"
+            ]
+        }
+    ]
+}

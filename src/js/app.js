@@ -42,43 +42,20 @@ function mobileNav() {
 // Toggle YouTube video embed modal
 
 function videoModal() {
-  if (!$('#hero-button').length) {
+  const containerEl = $('#splashreel-container');
+
+  if (!containerEl.length) {
     return;
   }
 
-  $('#hero-button').on('click', showModal);
+  const videoWidth = containerEl.width();
+  const videoHeight = videoWidth / 16 * 9;
 
-  function showModal() {
-    const tmpl = device.desktop() ? '#modal-template' : '#mobile-modal-template';
-    $('body').append($(tmpl).html());
+  containerEl.css({
+    height: videoHeight
+  });
 
-    const videoWidth = 0.8 * $(window).width();
-    const videoHeight = videoWidth / 16 * 9;
-
-    $('#splashreel-container').css({
-      width: videoWidth,
-      height: videoHeight
-    });
-
-    const player = new Plyr('#splashreel');
-
-    if (!device.desktop()) {
-      player.fullscreen.enter();
-    }
-
-    if (device.desktop()) {
-      $('#close-modal').on('click', function() {
-        $('#open-modal').remove();
-        return false;
-      });
-    } else {
-      player.on('exitfullscreen', function() {
-        $('#splashreel-container').remove();
-      });
-    }
-
-    return false;
-  };
+  new Plyr('#splashreel');
 }
 
 // Create pricing slider

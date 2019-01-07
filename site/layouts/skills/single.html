@@ -4,11 +4,15 @@
 
 {{ define "main" }}
 
+{{ partial "what-is-mathbrix" }}
+
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
-  {{ $categoryData := index (where $.Site.Data.skills "category" .Params.title) 0 }}
+  {{ $categoryData := index (where $.Site.Data.skills "category.title" .Params.pagetitle) 0 }}
 
-  <h1 class="mt0 f3 f2-ns normal ttu tracked black">{{ $categoryData.category }} Games</h1>
+  <h1 class="mt0 f3 f2-ns normal ttu tracked black">{{ .Params.pagetitle }}</h1>
+
+  <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ .Params.description }}</p>
 
   <div class="flex flex-wrap">
     {{ range $categoryData.games }}

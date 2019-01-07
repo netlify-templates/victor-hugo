@@ -4,18 +4,25 @@
 
 {{ define "main" }}
 
+{{ partial "what-is-mathbrix" }}
+
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
-  <a class="mr1 mb-blue dim no-underline" href="/games">Math Games</a>
-  <span class="gray">&rtrif;</span>
-  <a class="mh1 mb-blue dim no-underline" href="/games/#{{ urlize .Params.grade }}">{{ .Params.grade }}</a>
-  <span class="gray">&rtrif;</span>
-  <a class="mh1 mb-blue dim no-underline" href="/skills/#{{ urlize .Params.category }}">{{ .Params.category }}</a>
+  <div class="cf">
+    <div class="fl w-100 w-50-l">
+      <a class="mr1 mb-blue dim no-underline" href="/games">Math Games</a>
+      <span class="gray">&rtrif;</span>
+      <a class="mh1 mb-blue dim no-underline" href="/games/#{{ urlize .Params.grade }}">{{ .Params.grade }}</a>
+    </div>
+    <div class="fl w-100 w-50-l mb3 mb0-l tr-l">
+      Category: <a class="mh1 mb-blue dim no-underline" href="/skills/{{ urlize .Params.category }}">{{ .Params.category }}</a>
+    </div>
+  </div>
 
-  <h1 class="f3 f2-ns normal ttu tracked black">{{ .Title }}</h1>
+  <h1 class="f3 f2-ns normal ttu tracked black">{{ .Params.pagetitle }}</h1>
 
   <div class="flex">
-    <iframe id="game-demo" class="flex-auto bn" src="https://play.mathbrix.com?game={{ .Params.gametype }}&subgame={{ .Params.subgametype }}&demo=true" allow="autoplay"></iframe>
+    <iframe id="game-demo" class="flex-auto bn" src="https://play.mathbrix.com?aid={{ .Params.airtableid }}&demo=true" allow="autoplay"></iframe>
   </div>
 
   <!-- Message that we will conditionally show to mobile users -->
@@ -28,6 +35,28 @@
       To view these games on an iPad or other iOS device, you must download
       our app from the <a href="https://itunes.apple.com/us/app/mathbrix/id1220515455">App Store</a>.
     </p>
+  </div>
+
+  <h2>Purpose</h2>
+  <p class="f5 f4-ns">{{ .Params.pagedescription }}</p>
+
+  <div class="mt4">
+    <h2>Standards Addressed</h2>
+    {{ $pageData := index .Site.Data.games .Params.slug }}
+    <table class="collapse ba br2 b--black-10 pv2 ph3">
+      <tbody>
+        <tr class="striped--light-gray">
+          <th class="pv2 ph3 tl f5 f4-ns">Standards Body</th>
+          <th class="pv2 ph3 tl f5 f4-ns">Codes</th>
+        </tr>
+        {{ range $pageData.standards }}
+          <tr class="striped--light-gray">
+            <td class="pv2 ph3 f5 f4-ns">{{ .body }}</td>
+            <td class="pv2 ph3 f5 f4-ns">{{ delimit .codes ", " }}</td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
   </div>
 
 </div>

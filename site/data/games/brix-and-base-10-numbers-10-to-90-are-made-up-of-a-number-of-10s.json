@@ -1,0 +1,23 @@
+{
+    "standards": [
+        {
+            "body": "CCSS-M",
+            "codes": [
+                "1.NBT.B.2c"
+            ]
+        },
+        {
+            "body": "NCTM",
+            "codes": [
+                "PK2.NO.A.2"
+            ]
+        },
+        {
+            "body": "TEKS",
+            "codes": [
+                "1.2B",
+                "1.2C"
+            ]
+        }
+    ]
+}

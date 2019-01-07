@@ -2,18 +2,17 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 const path = require('path');
 const s3 = require('s3');
-const util = require('util');
+const { promisify } = require('util');
 
-const readdir = util.promisify(fs.readdir);
-const unlink = util.promisify(fs.unlink);
-const writeFile = util.promisify(fs.writeFile);
+const readdir = promisify(fs.readdir);
+const unlink = promisify(fs.unlink);
+const writeFile = promisify(fs.writeFile);
 
 
 const REPO_ROOT = '..';
-
 const GAMES_ROOT = 'games';
-
 const SKILLS_ROOT = 'skills';
+const GRADES_ROOT = 'grades';
 
 const grades = ['Kindergarten', 'Grade 1', 'Grade 2'];
 
@@ -54,7 +53,7 @@ const downloadGameData = function() {
 
 const getGameURL = function(game) {
   const gradeSlug = slugify(getGrade(game));
-  const gameSlug = slugify(game.title);
+  const gameSlug = slugify(game.page_title);
   return `/${gradeSlug}/${gameSlug}`;
 }
 
@@ -72,13 +71,22 @@ const slugify = function(val) {
     .toLowerCase();
 }
 
+const clearDirectory = async function(dir) {
+  const files = await readdir(dir);
+  return await Promise.all(
+    files.map(f => unlink(path.join(dir, f)))
+  );
+}
+
 
 Object.assign(exports, {
   GAMES_ROOT,
+  GRADES_ROOT,
   REPO_ROOT,
   SKILLS_ROOT,
   grades,
   gradeLabels,
+  clearDirectory,
   downloadGameData,
   getGameURL,
   getGrade,

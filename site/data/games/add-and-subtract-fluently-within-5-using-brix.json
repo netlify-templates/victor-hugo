@@ -1,0 +1,26 @@
+{
+    "standards": [
+        {
+            "body": "CCSS-M",
+            "codes": [
+                "K.OA.A.5"
+            ]
+        },
+        {
+            "body": "NCTM",
+            "codes": [
+                "PK2.NO.A.4",
+                "PK2.NO.C.10",
+                "PK2.NO.C.11",
+                "PK2.NO.C.12"
+            ]
+        },
+        {
+            "body": "TEKS",
+            "codes": [
+                "K.2I",
+                "K.3A"
+            ]
+        }
+    ]
+}

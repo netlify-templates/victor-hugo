@@ -1,0 +1,84 @@
+{{ define "main" }}
+
+<div class="pv4 ph3 ph5-ns ph6-l">
+
+  <div id="splashreel-container" class="w-100 w-80-l center">
+    <div id="splashreel" data-plyr-provider="youtube" data-plyr-embed-id="dGCpBh3Xz_g"></div>
+  </div>
+
+  <div class="mt2 mt4-l mb1 mb4-l">
+
+    <h2 class="mb2 mb3-l f3 f2-ns normal">Why Do Educators Love MathBRIX?</h2>
+
+    {{ range $.Site.Data.learnmore.features }}
+      <div class="fl w-100 w-50-l ph0 ph2-l mid-gray">
+        <div class="flex items-center">
+          <img src="{{ .icon }}" class="w3 h3">
+          <div class="ml2">
+            <h3 class="mb0">{{ .title }}</h3>
+            <p class="mt2">{{ .description }}</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="cb"></div>
+
+  </div>
+
+  <div class="tc">
+    <a class="dib mv3 pv3 pv4-ns ph4 ph5-ns bg-mb-blue white br2 f5 f4-ns fw3 tracked no-underline dim" href="https://teach.mathbrix.com/register">
+      Start Your Free 30-Day Trial
+    </a>
+  </div>
+
+  <div class="mv4">
+
+    {{ $colors := $.Site.Data.learnmore.colors }}
+
+    <h2 class="f4 f3-ns normal">Games by grade level</h2>
+
+    <div class="flex flex-wrap">
+      {{ range $index, $value := $.Site.Data.grades }}
+        {{ $color := index $colors (mod $index (len $colors)) }}
+        <div class="w-100 w-33-l">
+          <div class="mr3 mb3 pa3 ba br3 b--mb-{{ $color }} mid-gray">
+            <h3 class="mt0 mb-{{ $color }}">{{ $value.alternate_name }}</h3>
+            <p>{{ $value.short_description }}</p>
+            <a class="mb-blue no-underline dim" href="/games/#{{ $value.slug }}">See all games &rarr;</a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="mt4">
+
+    <h2 class="f4 f3-ns normal">Games by category</h2>
+
+    <div class="flex flex-wrap">
+      {{ range $index, $value := $.Site.Data.skills }}
+        {{ $category := $value.category }}
+        {{ $color := index $colors (mod $index (len $colors)) }}
+        <div class="w-100 w-33-l">
+          <div class="mr3 mb3 pa3 ba br3 b--mb-{{ $color }} mid-gray">
+            <h3 class="mt0 mb-{{ $color }}">{{ $category.name }}</h3>
+            <p>{{ $category.short_description }}</p>
+            <a class="mb-blue no-underline dim" href="/skills/{{ urlize $category.name }}">See all games &rarr;</a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="tc">
+    <a class="dib mt3 mt4-ns pv3 pv4-ns ph4 ph5-ns bg-mb-blue white br2 f5 f4-ns fw3 tracked no-underline dim" href="https://teach.mathbrix.com/register">
+      Start Your Free 30-Day Trial
+    </a>
+  </div>
+
+</div>
+
+{{ end }}
