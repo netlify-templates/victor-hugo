@@ -33,7 +33,7 @@
 
     <script src="app.js"></script>
     {{ template "_internal/google_analytics_async.html" . }}
-    {{ partial "netlify-identity-widget" }}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <!--
     Redirect user to the admin page when they log in with Netlify
     https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget
