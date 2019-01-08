@@ -31,9 +31,24 @@
       {{ block "extra-footer" . }}{{ end }}
     </div>
 
-
     <script src="app.js"></script>
     {{ template "_internal/google_analytics_async.html" . }}
+    {{ partial "netlify-identity-widget" }}
+    <!--
+    Redirect user to the admin page when they log in with Netlify
+    https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget
+    -->
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
   </body>
 </html>
