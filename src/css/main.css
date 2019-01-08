@@ -188,3 +188,26 @@ body {
   margin-right: 8px;
   content: '✓';
 }
+
+/* Blog */
+
+.blog-post p {
+  @extend .f5;
+  @extend .f4-ns;
+  @extend .fw3;
+  @extend .lh-copy;
+}
+
+.blog-post a {
+  @extend .mb-blue;
+  @extend .dim;
+}
+
+.blog-post ol, ul {
+  @extend .mt0;
+  @extend .ml4;
+  @extend .pa0;
+  @extend .f5;
+  @extend .f4-ns;
+  @extend .fw3;
+}
