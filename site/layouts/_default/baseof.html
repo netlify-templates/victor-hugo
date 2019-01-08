@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ $.Site.Title }}{{ end }}</title>
+    <title>
+      {{ block "title" . }}
+        {{ if .Title }}{{ .Title }}{{ else }}{{ $.Site.Title }}{{ end }}
+      {{ end }}
+    </title>
     {{ if .Description }}<meta name="description" content="{{ .Description }}">{{ end }}
     {{ block "extra-meta" . }}{{ end }}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">

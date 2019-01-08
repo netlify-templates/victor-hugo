@@ -1,6 +1,5 @@
 ---
-title: "Early Predictors of Math Success | MathBRIX Blog"
-headline: "Early Predictors of Math Success"
+title: "Early Predictors of Math Success"
 date: 2017-08-01
 ---
 

@@ -1,6 +1,5 @@
 ---
-title: "Why very young children can - and should – learn math | MathBRIX Blog"
-headline: "Why very young children can - and should – learn math"
+title: "Why very young children can - and should – learn math"
 date: 2018-09-30
 ---
 

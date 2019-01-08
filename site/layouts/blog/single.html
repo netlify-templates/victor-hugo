@@ -1,8 +1,12 @@
+{{ define "title" }}
+{{ .Title }} | MathBRIX Blog
+{{ end }}
+
 {{ define "main" }}
 
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
-  <h1 class="mt0 f3 f2-ns red">{{ .Params.headline }}</h1>
+  <h1 class="mt0 f3 f2-ns red">{{ .Title }}</h1>
 
   <div>{{ .Date.Format "January 2, 2006" }}</div>
 

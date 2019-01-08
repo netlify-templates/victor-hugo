@@ -1,6 +1,5 @@
 ---
-title: "Spatial intelligence, spatial toys, and STEM | MathBRIX Blog"
-headline: "Spatial intelligence, spatial toys, and STEM"
+title: "Spatial intelligence, spatial toys, and STEM"
 date: 2017-08-28
 ---
 
