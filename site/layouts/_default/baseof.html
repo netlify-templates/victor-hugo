@@ -22,7 +22,7 @@
       {{ block "extra-header" . }}{{ end }}
     </div>
 
-    {{ if eq .URL "/" }}
+    {{ if .Params.fullwidth }}
       {{ block "main" . }}{{ end }}
     {{ else }}
       <div class="mw9 center">

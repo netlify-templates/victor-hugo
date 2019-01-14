@@ -63,6 +63,10 @@ body {
 
 /* Background colors */
 
+.bg-mb-yellow {
+  background-color: #fecc2f;
+}
+
 .bg-mb-light-blue {
   background-color: #46c2f5;
 }

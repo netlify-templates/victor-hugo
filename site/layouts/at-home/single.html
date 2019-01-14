@@ -1,0 +1,98 @@
+{{ define "main" }}
+
+<div class="pv4 ph3 ph5-ns ph6-l">
+
+  <div class="flex flex-wrap-reverse flex-wrap-l items-center justify-center pa0 pa3-l bg-mb-yellow">
+    <div class="w-100 w-50-l pa2 pa0-l tc tl-l">
+      <h1 class="mt2 mt0-l mb2 mb4-l f3 f2-l normal b-ns dark-gray">
+        Fun, engaging math games for kids ages 5-8
+      </h1>
+      <h1 class="mt0 f4 f3-l normal washed-yellow">
+        Help your child develop the skills to succeed with our precisely calibrated, interactive lessons
+      </h1>
+    </div>
+    <div class="w-100 w-50-l">
+      <img src="/adult-child-ipad.jpg">
+    </div>
+  </div>
+
+  <div class="mt2 mt4-l mb2 mb4-l">
+
+    <h2 class="mb2 mb3-l f3 f2-ns normal">Why Do Parents Love MathBRIX?</h2>
+
+    {{ range $.Site.Data.athome.features }}
+      <div class="fl w-100 w-50-l ph0 ph2-l mid-gray">
+        <div class="flex items-center">
+          <img src="{{ .icon }}" class="w3 h3">
+          <div class="ml2">
+            <h3 class="mb0">{{ .title }}</h3>
+            <p class="mt2">{{ .description }}</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="cb"></div>
+
+  </div>
+
+  <div class="pa3 pv4-ns tc bg-lightest-blue f3">
+    <h2 class="mt0 mb2 mb3-l tc f3 f2-l normal">Sign up for early access to new content!</h2>
+    <form class="db dib-ns" name="parent-signup" data-netlify="true">
+      <input class="w-100 w-auto-ns mr2 pa2 tc tl-ns" placeholder="Your email" type="email" name="email" required>
+      <button class="w-100 w-auto-ns mt2 mt0-ns pv2 ph3 bg-mb-blue white bn br2 fw3 no-underline dim" type="submit">Save my place</button>
+    </form>
+  </div>
+
+  <div class="mv4">
+
+    {{ $colors := $.Site.Data.athome.colors }}
+
+    <h2 class="f4 f3-ns normal">Games by grade level</h2>
+
+    <div class="flex flex-wrap">
+      {{ range $index, $value := $.Site.Data.grades }}
+        {{ $color := index $colors (mod $index (len $colors)) }}
+        <div class="w-100 w-33-l">
+          <div class="mr3 mb3 pa3 ba br3 b--mb-{{ $color }} mid-gray">
+            <h3 class="mt0 mb-{{ $color }}">{{ $value.alternate_name }}</h3>
+            <p>{{ $value.short_description }}</p>
+            <a class="mb-blue no-underline dim" href="/games/#{{ $value.slug }}">See all games &rarr;</a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="mt4 mb2 mb4-l">
+
+    <h2 class="f4 f3-ns normal">Games by category</h2>
+
+    <div class="flex flex-wrap">
+      {{ range $index, $value := $.Site.Data.skills }}
+        {{ $category := $value.category }}
+        {{ $color := index $colors (mod $index (len $colors)) }}
+        <div class="w-100 w-33-l">
+          <div class="mr3 mb3 pa3 ba br3 b--mb-{{ $color }} mid-gray">
+            <h3 class="mt0 mb-{{ $color }}">{{ $category.name }}</h3>
+            <p>{{ $category.short_description }}</p>
+            <a class="mb-blue no-underline dim" href="/skills/{{ urlize $category.name }}">See all games &rarr;</a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="pa3 pv4-ns tc bg-lightest-blue f3">
+    <h2 class="mt0 mb2 mb3-l tc f3 f2-l normal">Sign up for early access to new content!</h2>
+    <form class="db dib-ns" name="parent-signup" data-netlify="true">
+      <input class="w-100 w-auto-ns mr2 pa2 tc tl-ns" placeholder="Your email" type="email" name="email" required>
+      <button class="w-100 w-auto-ns mt2 mt0-ns pv2 ph3 bg-mb-blue white bn br2 fw3 no-underline dim" type="submit">Save my place</button>
+    </form>
+  </div>
+
+</div>
+
+{{ end }}
