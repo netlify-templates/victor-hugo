@@ -24,14 +24,18 @@
 
     {{ $gradeData := index (where $.Site.Data.grades "alternate_name_2" .grade) 0 }}
 
-    <h2 id="{{ urlize .grade }}" class="f3 f2-ns normal red">{{ .grade }} Games</h2>
+    <h2 id="{{ urlize .grade }}" class="flex items-center f3 f2-ns normal">
+      <a class="red no-underline dim" href="{{ urlize $gradeData.name }}">{{ .grade }} Games</a>
+      <img class="ml2 w1" src="/link.svg">
+    </h2>
 
     <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ $gradeData.full_description }}</p>
 
     {{ range .categories }}
 
-      <h3 class="f4 f3-ns">
+      <h3 class="flex items-center f4 f3-ns">
         <a class="mid-gray no-underline dim" href="/skills/{{ urlize .name }}">{{ .name }}</a>
+        <img class="ml2 w1" src="/link.svg">
       </h3>
 
       <div class="flex flex-wrap">

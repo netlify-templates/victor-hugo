@@ -8,6 +8,10 @@
 
 <div class="pv4 ph3 ph5-ns ph6-l mid-gray">
 
+  <div class="mb4 f5 f4-ns">
+     <a class="mb-blue dim no-underline" href="/skills">&larr; All math games by skill area</a>
+  </div>
+
   {{ $categoryData := index (where $.Site.Data.skills "category.title" .Params.pagetitle) 0 }}
 
   <h1 class="mt0 f3 f2-ns normal ttu tracked black">{{ .Params.pagetitle }}</h1>

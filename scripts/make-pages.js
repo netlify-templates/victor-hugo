@@ -26,11 +26,14 @@ const writeFile = util.promisify(fs.writeFile);
 
 // Main function for the whole script
 async function main() {
+  await cleanDirs();
+
   const data = await downloadGameData();
-  await clearGameData();
+
   writeGamesListData(data);
   writeGamesSingleData(data);
   createGamePages(data);
+  createGradePages(data);
 
   const skillData = await writeSkillsData(data);
   createSkillPages(skillData);
@@ -39,10 +42,15 @@ async function main() {
 }
 
 
-// Remove all the game data files
-const clearGameData = async function() {
-  const gamesDir = `${REPO_ROOT}/site/data/${GAMES_ROOT}`;
-  return await clearDirectory(gamesDir);
+// Remove all the data and content files
+const cleanDirs = async function() {
+  const paths = [
+    `${REPO_ROOT}/site/data/${GAMES_ROOT}`,
+    `${REPO_ROOT}/site/content/${GAMES_ROOT}`,
+    `${REPO_ROOT}/site/data/${SKILLS_ROOT}`,
+    `${REPO_ROOT}/site/content/${SKILLS_ROOT}`
+  ];
+  return await Promise.all(paths.map(path => clearDirectory(path)));
 }
 
 
@@ -126,9 +134,6 @@ const createGamePages = async function(data) {
   const { games } = data;
   const gamesDir = `${REPO_ROOT}/site/content/${GAMES_ROOT}`;
 
-  // Remove all the game pages
-  await clearDirectory(gamesDir);
-
   // Make the games list page
   const indexData = [
     '+++',
@@ -162,12 +167,33 @@ const createGamePages = async function(data) {
   }
 }
 
+
+// Create individual grade level pages
+const createGradePages = async function (data) {
+  const { grades } = data;
+  const gradesDir = `${REPO_ROOT}/site/content/${GRADES_ROOT}`;
+
+  for (const grade of grades) {
+    const data = [
+      '+++',
+      `name = "${grade.name}"`,
+      `alternatename = "${grade.alternate_name}"`,
+      `alternatename2 = "${grade.alternate_name_2}"`,
+      `title = "${grade.serp_title}"`,
+      `pagetitle = "${grade.page_title}"`,
+      `description = "${grade.full_description}"`,
+      `url = "${slugify(grade.name)}"`,
+      '+++'
+    ].join('\n');
+    const path = `${gradesDir}/${slugify(grade.name)}.md`;
+    await writeFile(path, data);
+  }
+}
+
+
 // Create the individual skill pages
 const createSkillPages = async function(categoryData) {
   const skillsDir = `${REPO_ROOT}/site/content/${SKILLS_ROOT}`;
-
-  // Remove all the skill pages
-  await clearDirectory(skillsDir);
 
   // Make the skills list page
   const indexData = [

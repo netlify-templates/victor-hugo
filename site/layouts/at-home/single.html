@@ -51,13 +51,13 @@
     <h2 class="f4 f3-ns normal">Games by grade level</h2>
 
     <div class="flex flex-wrap">
-      {{ range $index, $value := $.Site.Data.grades }}
+      {{ range $index, $grade := $.Site.Data.grades }}
         {{ $color := index $colors (mod $index (len $colors)) }}
         <div class="w-100 w-33-l">
           <div class="mr3 mb3 pa3 ba br3 b--mb-{{ $color }} mid-gray">
-            <h3 class="mt0 mb-{{ $color }}">{{ $value.alternate_name }}</h3>
-            <p>{{ $value.short_description }}</p>
-            <a class="mb-blue no-underline dim" href="/games/#{{ $value.slug }}">See all games &rarr;</a>
+            <h3 class="mt0 mb-{{ $color }}">{{ $grade.alternate_name }}</h3>
+            <p>{{ $grade.short_description }}</p>
+            <a class="mb-blue no-underline dim" href="{{ urlize $grade.name }}">See all games &rarr;</a>
           </div>
         </div>
       {{ end }}

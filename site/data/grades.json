@@ -3,7 +3,8 @@
         "name": "Kindergarten",
         "alternate_name": "Kindergarten",
         "alternate_name_2": "Kindergarten",
-        "slug": "kindergarten",
+        "page_title": "Kindergarten Games",
+        "serp_title": "Kindergarten Games | MathBRIX",
         "full_description": "Kindergarten activities focus on counting and number recognition, gradually introducing students to simple addition and subtraction operations. Throughout, on-screen manipulatives are used to help students visualize numbers and develop a conceptual understanding of the problems they are solving.",
         "short_description": "Counting, number recognition, simple addition and subtraction operations."
     },
@@ -11,7 +12,8 @@
         "name": "Grade 1",
         "alternate_name": "First Grade",
         "alternate_name_2": "1st Grade",
-        "slug": "1st-grade",
+        "page_title": "1st Grade Games",
+        "serp_title": "1st Grade Games | MathBRIX",
         "full_description": "In first grade, student strengthen their understanding of operations and learn a variety of strategies (making 10, decomposing numbers leading to 10, etc.) to help them solve these operations. First grade also introduces place value, and addition and subtraction within 100. On-screen manipulatives help students visualize math problems and gain conceptual insights into how and why the various strategies work.",
         "short_description": "More advanced operations (making 10, decomposing numbers leading to 10), place value, addition and subtraction within 100."
     },
@@ -19,7 +21,8 @@
         "name": "Grade 2",
         "alternate_name": "Second Grade",
         "alternate_name_2": "2nd Grade",
-        "slug": "2nd-grade",
+        "page_title": "2nd Grade Games",
+        "serp_title": "2nd Grade Games | MathBRIX",
         "full_description": "In second grade, students continue their explorations of place value, and also begin to practice pre-multiplication skills (adding arrays). Activities in this grade place specific emphasis on mathematical strategies for solving problems involving 3-digit numbers and more than two 2-digit numbers. Second grade introduces 3D manipulatives that are helpful in understanding numbers over 100.",
         "short_description": "Place value, pre-multiplication skills, strategies for solving problems with multiple 2-digit and 3-digit numbers."
     }

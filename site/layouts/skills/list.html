@@ -22,8 +22,9 @@
 
   {{ range $.Site.Data.skills }}
 
-    <h2 id="{{ urlize .category.name }}" class="mb2 f3 f2-ns normal black">
+    <h2 id="{{ urlize .category.name }}" class="flex items-center mb2 f3 f2-ns normal black">
       <a class="red no-underline dim" href="{{ $.URL }}{{ urlize .category.name }}">{{ .category.title }}</a>
+      <img class="ml2 w1" src="/link.svg">
     </h2>
 
     <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ .category.full_description }}</p>

@@ -1,0 +1,43 @@
+{{ define "extra-meta" }}
+{{ partial "smart-app-banner" }}
+{{ end }}
+
+{{ define "main" }}
+
+{{ partial "what-is-mathbrix" }}
+
+<div class="pv4 ph3 ph5-ns ph6-l mid-gray">
+
+  <div class="mb4 f5 f4-ns">
+     <a class="mb-blue dim no-underline" href="/games">&larr; All math games by grade level</a>
+  </div>
+
+  <h1 class="mt0 f3 f2-ns normal ttu tracked black">{{ .Params.pagetitle }}</h1>
+
+  <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ .Description }}</p>
+
+  {{ $gradeData := index (where $.Site.Data.games._index "grade" .Params.alternatename2) 0 }}
+
+  {{ range $gradeData.categories }}
+
+    <h2 class="flex items-center f3 f2-ns normal">
+      <a class="red no-underline dim" href="/skills/{{ urlize .name }}">{{ .name }}</a>
+      <img class="ml2 w1" src="/link.svg">
+    </h2>
+
+    <div class="flex flex-wrap">
+      {{ range .games }}
+        <div class="pa3 tc">
+          <a class="color-inherit no-underline" href="{{ .url }}">
+            <img class="w5 ba bw1 b--orange" src="/games/{{ .image }}.jpg" alt="{{ .name }} Math Game">
+            <p class="w5 mt1">{{ .name }}</p>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+
+  {{ end }}
+
+</div>
+
+{{ end }}
