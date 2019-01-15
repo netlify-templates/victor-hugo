@@ -62,26 +62,26 @@
     </ul>
   </div>
   <div class="mv4">
-    <a class="link mb-blue dim ttu tracked f4" href="/features">Features</a>
+    <a class="link black bt-0 br-0 bl-0 bb b--dashed dim ttu tracked f4" href="/features">Features</a>
   </div>
   <div class="mb4">
-    <h4 class="mt0 mb3 ttu tracked f4 fw4">Games</h4>
+    <h4 class="mt0 mb3 f4 fw4"><a class="link black bt-0 br-0 bl-0 bb b--dashed dim ttu tracked" href="/games">Games</a></h4>
     <ul class="pl1 list">
-      <li class="mb2"><a class="link mb-blue dim tracked" href="/games#kindergarten">Kindergarten Games</a></li>
-      <li class="mb2"><a class="link mb-blue dim tracked" href="/games#1st-grade">1st Grade Games</a></li>
-      <li class="mb2"><a class="link mb-blue dim tracked" href="/games#2nd-grade">2nd Grade Games</a></li>
-    </ul>
-  </div>
-  <div class="mv4">
-    <h4 class="mt0 mb3 ttu tracked f4 fw4">Skills</h4>
-    <ul class="pl1 list">
-      {{ range $.Site.Data.skills }}
-        <li class="mb2"><a class="link mb-blue dim tracked" href="/skills#{{ urlize .category.name }}">{{ .category.name }}</a></li>
+      {{ range $.Site.Data.grades }}
+        <li class="mb2"><a class="link mb-blue dim tracked" href="/{{ urlize .name }}">{{ .alternate_name_2 }} Games</a></li>
       {{ end }}
     </ul>
   </div>
   <div class="mv4">
-    <a class="link mb-blue dim ttu tracked f4" href="/pricing">Pricing</a>
+    <h4 class="mt0 mb3 f4 fw4"><a class="link black bt-0 br-0 bl-0 bb b--dashed dim ttu tracked" href="/skills">Skills</a></h4>
+    <ul class="pl1 list">
+      {{ range $.Site.Data.skills }}
+        <li class="mb2"><a class="link mb-blue dim tracked" href="/skills/{{ urlize .category.name }}">{{ .category.name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="mv4">
+    <a class="link black bt-0 br-0 bl-0 bb b--dashed dim ttu tracked f4" href="/pricing">Pricing</a>
   </div>
   <div class="mv4">
     <h4 class="mt0 mb3 ttu tracked f4 fw4">Login</h4>
