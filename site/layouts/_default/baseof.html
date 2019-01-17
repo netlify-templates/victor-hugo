@@ -35,9 +35,24 @@
       {{ block "extra-footer" . }}{{ end }}
     </div>
 
+    <!--
+      ****
+      All JS should be placed below here
+      ****
+    -->
+
+    <!-- Our app code -->
     <script src="app.js"></script>
+
+    <!-- Google Analytics -->
     {{ template "_internal/google_analytics_async.html" . }}
+
+    <!-- HubSpot Analytics -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3418603.js"></script>
+
+    <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <!--
     Redirect user to the admin page when they log in with Netlify
     https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget
