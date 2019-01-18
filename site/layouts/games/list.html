@@ -40,12 +40,7 @@
 
       <div class="flex flex-wrap">
         {{ range .games }}
-          <div class="pa3 tc">
-            <a class="color-inherit no-underline" href="{{ .url }}">
-              <img class="w5 ba bw1 b--orange" src="/games/thumbnails/{{ .image }}.jpg" alt="{{ .name }} Math Game">
-              <p class="w5 mt1">{{ .name }}</p>
-            </a>
-          </div>
+          {{ partial "game-thumbnail" . }}
         {{ end }}
       </div>
 

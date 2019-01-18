@@ -186,6 +186,12 @@ body {
   background: #ffffff;
 }
 
+/* Games */
+
+.game-thumbnail:hover img {
+  opacity: 1;
+}
+
 /* Pricing */
 
 .plan-features li:before {
