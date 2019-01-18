@@ -14,23 +14,34 @@
 
 {{ define "main" }}
 
-{{ partial "what-is-mathbrix" }}
+<div class="pt4 ph3 ph5-ns ph6-l mid-gray">
+  <h1 class="ma0 f3 f2-ns normal ttu tracked black">Math Skills</h1>
+</div>
 
-<div class="pv4 ph3 ph5-ns ph6-l mid-gray">
+{{ $skills := $.Site.Data.skills }}
 
-  <h1 class="mt0 f3 f2-ns normal ttu tracked black">Math Skills</h1>
+<!--
+Figure out where the halway point is in the list of skills so we can place
+the first "What is MathBRIX" section. If the skills list is an odd-numbered
+length, put the section right before the halfway entry.
+-->
+{{ $halfway := sub (math.Floor (div (len $skills) 2)) 1 }}
 
-  {{ range $.Site.Data.skills }}
+{{ range $index, $skill := $skills }}
 
-    <h2 id="{{ urlize .category.name }}" class="flex items-center mb2 f3 f2-ns normal black">
-      <a class="red no-underline dim" href="{{ $.URL }}{{ urlize .category.name }}">{{ .category.title }}</a>
+  {{ $cat := $skill.category }}
+
+  <div class="mt4 mb3 ph3 ph5-ns ph6-l mid-gray">
+
+    <h2 id="{{ urlize $cat.name }}" class="flex items-center mb2 f3 f2-ns normal black">
+      <a class="red no-underline dim" href="{{ $.URL }}{{ urlize $cat.name }}">{{ $cat.title }}</a>
       <img class="ml2 w1" src="/link.svg">
     </h2>
 
-    <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ .category.full_description }}</p>
+    <p class="w-100 w-80-l mt0 f5 f4-ns lh-copy">{{ $cat.full_description }}</p>
 
     <div class="flex flex-wrap">
-      {{ range .games }}
+      {{ range $skill.games }}
         <div class="pa3 tc">
           <a class="color-inherit no-underline" href="{{ .url }}">
             <img class="w5 ba bw1 b--orange" src="/games/thumbnails/{{ .image }}.jpg" alt="{{ .name }} Math Game">
@@ -40,8 +51,14 @@
       {{ end }}
     </div>
 
+  </div>
+
+  {{ if eq (int $index) (int $halfway) }}
+    {{ partial "what-is-mathbrix" }}
   {{ end }}
 
-</div>
+{{ end }}
+
+{{ partial "what-is-mathbrix" }}
 
 {{ end }}
