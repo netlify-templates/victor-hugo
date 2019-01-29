@@ -77,11 +77,16 @@ function pricingSlider() {
     const val = parseInt(values[0]);
     $('#num-students').html(val);
 
-    const baseStudents = 30;
-    const extraStudents = Math.max(val - baseStudents, 0);
-    const basePrice = 6;
-    const totalPrice = basePrice + Math.ceil(extraStudents / 5);
-    $('#total-price').html(totalPrice);
+    const baseQuantity = 25;
+    const basePrice = 99;
+    const addonQuantity = 1;
+    const addonPrice = 3.95;
+    const extraStudents = Math.max(val - baseQuantity, 0);
+    const totalPrice = basePrice + addonPrice * Math.ceil(extraStudents / addonQuantity);
+    const formattedPrice = Math.round(totalPrice) === totalPrice ?
+      totalPrice.toFixed(0) : totalPrice.toFixed(2);
+
+    $('#total-price').html(formattedPrice);
   });
 }
 
