@@ -6,9 +6,9 @@
     <div id="splashreel" data-plyr-provider="youtube" data-plyr-embed-id="dGCpBh3Xz_g"></div>
   </div>
 
-  <div class="mt2 mt4-l mb1 mb4-l">
+  <div class="mv3 mv5-l">
 
-    <h2 class="mb2 mb3-l f3 f2-ns normal">Why Do Educators Love MathBRIX?</h2>
+    <h2 class="mb2 mb3-l f3 f2-ns normal tc">Why Do Educators Love MathBRIX?</h2>
 
     {{ range $.Site.Data.learnmore.features }}
       <div class="fl w-100 w-50-l ph0 ph2-l mid-gray">
@@ -26,13 +26,21 @@
 
   </div>
 
-  <div class="tc">
-    <a class="dib mv3 pv3 pv4-ns ph4 ph5-ns bg-mb-blue white br2 f5 f4-ns fw3 tracked no-underline dim" href="https://teach.mathbrix.com/register">
-      Start Your Free 30-Day Trial
-    </a>
+  <div class="mv3 mt5-l mb4-l tc">
+
+    <h2 class="f3 f2-ns normal">Designed for Teachers</h2>
+
+    <div class="flex flex-wrap">
+
+      {{ range $.Site.Data.features.entries }}
+        {{ partial "features/entry.html" . }}
+      {{ end }}
+
+    </div>
+
   </div>
 
-  <div class="mv4">
+  <div class="mt0 mb1 mb4-l">
 
     {{ $colors := $.Site.Data.learnmore.colors }}
 
@@ -80,5 +88,14 @@
   </div>
 
 </div>
+
+{{ end }}
+
+{{ define "extra-footer" }}
+
+<p class="w-80 center na1 pb3 tc f6 fw3">
+  Some icons provided by
+  <a class="link mb-blue dim" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>
+</p>
 
 {{ end }}
