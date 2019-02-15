@@ -221,3 +221,9 @@ body {
   @extend .f4-ns;
   @extend .fw3;
 }
+
+/* Academy */
+
+.onboarding-video-container {
+  width: 400px;
+}

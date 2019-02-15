@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="pv4 ph3 ph5-ns ph6-l tc">
+
+  <h1 class="mt0 mb2 f2 f1-ns normal">MathBRIX Academy</h1>
+
+  <p class="f5 f4-ns dark-gray">
+    Discover how to use MathBRIX in your classroom with this series of quick
+    video tutorials.
+  </p>
+
+  <div class="flex flex-wrap justify-center">
+    {{ range $.Site.Data.academy.videos }}
+      <div class="pa3 tc onboarding-video-container">
+        <div class="onboarding-video" data-plyr-provider="youtube" data-plyr-embed-id="{{ .youtube_id }}"></div>
+        <p>{{ .title }}</p>
+      </div>
+    {{ end }}
+  </div>
+
+</div>
+
+{{ end }}
