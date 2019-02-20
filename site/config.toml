@@ -8,7 +8,5 @@ title = "See and Touch Math"
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS"]
 
-googleAnalytics = "UA-85535328-1"
-
 [taxonomies]
   tag = "tags"
