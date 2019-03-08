@@ -2,7 +2,8 @@
 {{ partial "header.html" .Params.header }}
 
 <div id="main">
-  <section class="home-hero" style="background-image: url(https://via.placeholder.com/1024x768)">
+  <section class="home-hero"
+    style="background: url({{ .Params.header.image }}); background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)">
     <div class="container">
       <svg class="svg-mhp-logo-dims home-hero__logo">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/svgsprite.svg#mhp-logo"></use>
@@ -59,11 +60,32 @@
         {{ $bodyMarkdown := .Params.getInvolved.body | markdownify }}
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
         {{ else }}{{ $bodyMarkdown }}{{ end }}
+
+        <ul class="icon-links">
+          <li class="icon-links__link icon-links__link--action">
+            <a href="/action-groups">Join an Action Group</a>
+          </li>
+          <li class="icon-links__link icon-links__link--briefcase">
+            <a href="/business-group">Join the Business Group</a>
+          </li>
+          <li class="icon-links__link icon-links__link--calendar">
+            <a href="/events">Find out what's on</a>
+          </li>
+          <li class="icon-links__link icon-links__link--pencil">
+            <a href="/join-mailing-list">Join our mailing list</a>
+          </li>
+          <li class="icon-links__link icon-links__link--envelope">
+            <a href="/contact-su">Contact us</a>
+          </li>
+          <li class="icon-links__link icon-links__link--hand">
+            <a href="/donate">Donate or volunteer</a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="block block--plain">
+  <section class="block block--plain block--image-first">
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.howDoesItWork.heading }}</h1>
@@ -72,6 +94,43 @@
         {{ $bodyMarkdown := .Params.howDoesItWork.body | markdownify }}
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
         {{ else }}{{ $bodyMarkdown }}{{ end }}
+      </div>
+      <img class="block__image block__image--inset" alt="MHP diagram" src="{{ .Params.howDoesItWork.image }}">
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block__image" style="background-image: url(https://via.placeholder.com/1024x768)"></div>
+    <div class="container">
+      <header class="block__header">
+        <h1 class="block__header-title">{{ .Params.charter.heading }}</h1>
+        {{ if not (isset .Params.charter "subHeading") }}
+        <p class="block__header-sub-title">{{ .Params.charter.subHeading }}</p>
+        {{ end }}
+      </header>
+      <div class="block__body">
+        {{ $bodyMarkdown := .Params.charter.body | markdownify }}
+        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+        {{ else }}{{ $bodyMarkdown }}{{ end }}
+
+        <a class="btn btn--mhp-green" href="/read-the-charter">Read Charter</a>
+        <a class="btn btn--mhp-yellow" href="/make-a-pledge">Pledge</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block--plain">
+    <div class="container">
+      <header class="block__header">
+        <h1 class="block__header-title">{{ .Params.whatElse.heading }}</h1>
+      </header>
+      <div class="block__body">
+        {{ $bodyMarkdown := .Params.whatElse.body | markdownify }}
+        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+        {{ else }}{{ $bodyMarkdown }}{{ end }}
+
+        <a class="btn btn--mhp-yellow" href="https://streetsupport.net/find-help">Find Help</a>
+        <a class="btn btn--mhp-yellow" href="https://streetsupport.net/give-help">Give Help</a>
       </div>
     </div>
   </section>

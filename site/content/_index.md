@@ -3,6 +3,7 @@ title: Welcome to
 header:
   classes: home-header
   hero: '<span>Real Change Rochdale:</span> Change for Real'
+  image: https://via.placeholder.com/1024x768
 whatIs:
   heading: What is the Manchester Homelessness Partnership?
   subHeading:
@@ -26,11 +27,24 @@ getInvolved:
   body: >-
     There are a number of ways in which you can get involved with the partnership:
 howDoesItWork:
-  heading: How to Does it Work?
+  heading: How Does it Work?
   body: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero turpis, viverra eu feugiat in, volutpat a turpis.
     
     
     Etiam quis maximus est. Mauris vulputate, nulla ac ullamcorper lobortis, quam elit dapibus purus, a blandit metus velit quis mi. Quisque aliquet sit amet ex quis imperdiet.
+  image: assets/images/how-it-works.png
+charter:
+  heading: Manchester Homelessness Charter
+  subHeading:
+  body: >-
+    The Manchester Homelessness Charter is a symbol of our mission to end homelessness in our city by uniting people, organisations and businesses with one shared vision.
+
+
+    The Charter has been co-created by people experiencing homelessness, and organisations which provide support to overcome their challenges.
+whatElse:
+  heading: What else is happening in Manchester around homelessness?
+  body: >-
+    Understand more at Street Support Network.
 ---
 

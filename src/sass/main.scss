@@ -1,10 +1,14 @@
 @import '../../node_modules/normalize-scss/sass/normalize/import-now';
 
+@import './modules/mixins';
 @import './modules/variables';
 @import './modules/svgsprite';
 @import './components/typography';
 
 @import './components/container';
 @import './components/block';
+@import './components/footer';
 
+@import './components/btn';
 @import './components/home-hero';
+@import './components/icon-links';

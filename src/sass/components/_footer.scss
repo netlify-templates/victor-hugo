@@ -1,0 +1,17 @@
+.footer {
+  background: black;
+  color: white;
+  padding: $padding;
+}
+
+.street-support {
+  display: flex;
+  align-items: center;
+}
+
+.street-support__logo {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: $padding;
+}
