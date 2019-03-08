@@ -1,4 +1,23 @@
 .container {
   max-width: $page-width;
   margin: 0 auto;
+
+  .block--popout > & {
+    @include mq($from: desktop) {
+      position: absolute;
+      z-index: 1000;
+      top: -50px;
+      margin-left: -$page-width / 2;
+      left: 50%;
+
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      background: white;
+    }
+  }
+
+  .block__image & {
+    width: $page-width;
+  }
 }

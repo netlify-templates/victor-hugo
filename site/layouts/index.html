@@ -16,7 +16,7 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block block--popout">
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.whatIs.heading }}</h1>
@@ -34,14 +34,16 @@
 
   <section class="block">
     <div class="block__image" style="background-image: url(https://via.placeholder.com/1024x768)">
+      <div class="container">
+        <header class="block__header">
+          <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
+          {{ if not (isset .Params.whosInvolved "subHeading") }}
+          <p class="block__header-sub-title">{{ .Params.whosInvolved.subHeading }}</p>
+          {{ end }}
+        </header>
+      </div>
     </div>
     <div class="container">
-      <header class="block__header">
-        <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
-        {{ if not (isset .Params.whosInvolved "subHeading") }}
-        <p class="block__header-sub-title">{{ .Params.whosInvolved.subHeading }}</p>
-        {{ end }}
-      </header>
       <div class="block__body">
         {{ $bodyMarkdown := .Params.whosInvolved.body | markdownify }}
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>

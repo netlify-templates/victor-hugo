@@ -6,22 +6,17 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
-    
     "start": "run-p start:**",
     "start:hugo": "hugo -d ../dist -s site -vw",
     "start:webpack": "webpack-dev-server --config webpack.dev.js",
     "start:sass": "npm run sass:watch",
-    
     "sass": "npm run svg && node-sass src/sass/main.scss -o src/css",
     "sass:watch": "node-sass --watch src/sass -o src/css",
-
     "svg": "svg-sprite --config svgSpriteConfig.json src/icons/**/*.svg",
-
     "preview": "run-p preview:**",
     "preview:hugo": "npm run start:hugo -- -D -F",
     "preview:webpack": "npm run start:webpack",
     "preview:sass": "npm run start:sass",
-    
     "prebuild": "rimraf dist",
     "build": "npm run build:sass && npm run build:webpack && npm run build:hugo",
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
@@ -63,6 +58,7 @@
     "postcss-preset-env": "^6.3.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
+    "sass-mq": "^5.0.0",
     "style-loader": "^0.23.1",
     "svg-sprite": "^1.5.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
