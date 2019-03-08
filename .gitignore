@@ -1,3 +1,6 @@
 node_modules/
 dist/
 site/data/webpack.json
+src/css/main.css
+src/sass/modules/_svgsprite.scss
+site/static/assets/images/svgsprite.svg
