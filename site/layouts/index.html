@@ -2,7 +2,7 @@
 {{ partial "header.html" .Params.header }}
 
 <div id="main">
-  <section class="home-hero">
+  <section class="home-hero" style="background-image: url(https://via.placeholder.com/1024x768)">
     <div class="container">
       <svg class="svg-mhp-logo-dims home-hero__logo">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/svgsprite.svg#mhp-logo"></use>
@@ -32,6 +32,8 @@
   </section>
 
   <section class="block">
+    <div class="block__image" style="background-image: url(https://via.placeholder.com/1024x768)">
+    </div>
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
@@ -41,6 +43,33 @@
       </header>
       <div class="block__body">
         {{ $bodyMarkdown := .Params.whosInvolved.body | markdownify }}
+        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+        {{ else }}{{ $bodyMarkdown }}{{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="block block--plain">
+    <div class="block__image" style="background-image: url(https://via.placeholder.com/1024x768)"></div>
+    <div class="container">
+      <header class="block__header">
+        <h1 class="block__header-title">{{ .Params.getInvolved.heading }}</h1>
+      </header>
+      <div class="block__body">
+        {{ $bodyMarkdown := .Params.getInvolved.body | markdownify }}
+        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+        {{ else }}{{ $bodyMarkdown }}{{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="block block--plain">
+    <div class="container">
+      <header class="block__header">
+        <h1 class="block__header-title">{{ .Params.howDoesItWork.heading }}</h1>
+      </header>
+      <div class="block__body">
+        {{ $bodyMarkdown := .Params.howDoesItWork.body | markdownify }}
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
         {{ else }}{{ $bodyMarkdown }}{{ end }}
       </div>

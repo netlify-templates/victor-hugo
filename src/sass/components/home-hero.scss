@@ -1,6 +1,7 @@
 .home-hero { 
   color: white;
-  padding: $padding;
+  padding: 155px $padding $padding;
+  background-size: 100%;
 }
 
 .home-hero__logo {
@@ -9,6 +10,8 @@
 }
 
 .home-hero__title {}
-.home-hero__title-first {}
+.home-hero__title-first {
+  display: block
+}
 .home-hero__title-second {}
 .home-hero__strap {}

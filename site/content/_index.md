@@ -21,5 +21,16 @@ whosInvolved:
 
 
     Plus many more local organisations and individuals
+getInvolved:
+  heading: How to Get Involved
+  body: >-
+    There are a number of ways in which you can get involved with the partnership:
+howDoesItWork:
+  heading: How to Does it Work?
+  body: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero turpis, viverra eu feugiat in, volutpat a turpis.
+    
+    
+    Etiam quis maximus est. Mauris vulputate, nulla ac ullamcorper lobortis, quam elit dapibus purus, a blandit metus velit quis mi. Quisque aliquet sit amet ex quis imperdiet.
 ---
 
