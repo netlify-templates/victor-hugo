@@ -1,0 +1,29 @@
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{.Site.Title}}" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{.Title}} {{.Site.Title}}" />
+<meta property="og:description" content="The Manchester Homelessness Partnership unites people with personal experience of homelessness with cross-sector organisations, co-producing solutions to tackle homelessness in Manchester." />
+<meta property="og:image" content="{{.Site.BaseURL}}assets/uploads/opengraph-20181123.jpg" />
+<title>{{.Title}} {{.Site.Title}}</title>
+
+{{ $styleMain := resources.Get "mhp.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $styleMain.Permalink }}">
+
+{{if .IsHome }}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{end}}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '');
+
+</script>
+</head>

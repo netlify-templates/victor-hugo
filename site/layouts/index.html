@@ -1,9 +1,62 @@
 {{ define "main" }}
+{{ partial "header.html" .Params.header }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+<div id="main">
+  <section class="home-hero">
+    <div class="container">
+      <svg class="svg-mhp-logo-dims home-hero__logo">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/svgsprite.svg#mhp-logo"></use>
+      </svg>
+      <h1 class="home-hero__title">
+        <span class="home-hero__title-first">Manchester</span>
+        <span class="home-hero__title-second">Homelessness Partnership</span>
+      </h1>
+      <p class="home-hero__strap">Co-producing solutions to end homelessness</p>
+    </div>
+  </section>
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
+  <section class="block">
+    <div class="container">
+      <header class="block__header">
+        <h1 class="block__header-title">{{ .Params.whatIs.heading }}</h1>
+        {{ if not (isset .Params.whatIs "subHeading") }}
+        <p class="block__header-sub-title">{{ .Params.whatIs.subHeading }}</p>
+        {{ end }}
+      </header>
+      <div class="block__body">
+        {{ $bodyMarkdown := .Params.whatIs.body | markdownify }}
+        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+        {{ else }}{{ $bodyMarkdown }}{{ end }}
+      </div>
+    </div>
+  </section>
 
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
+  <section class="block">
+    <div class="container">
+      <header class="block__header">
+        <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
+        {{ if not (isset .Params.whosInvolved "subHeading") }}
+        <p class="block__header-sub-title">{{ .Params.whosInvolved.subHeading }}</p>
+        {{ end }}
+      </header>
+      <div class="block__body">
+        {{ $bodyMarkdown := .Params.whosInvolved.body | markdownify }}
+        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+        {{ else }}{{ $bodyMarkdown }}{{ end }}
+      </div>
+    </div>
+  </section>
+</div>
 
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 {{ end }}
