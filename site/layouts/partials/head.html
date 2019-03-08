@@ -8,12 +8,13 @@
 <meta property="og:title" content="{{.Title}} {{.Site.Title}}" />
 <meta property="og:description" content="The Manchester Homelessness Partnership unites people with personal experience of homelessness with cross-sector organisations, co-producing solutions to tackle homelessness in Manchester." />
 <meta property="og:image" content="{{.Site.BaseURL}}assets/uploads/opengraph-20181123.jpg" />
-<title>{{.Title}} {{.Site.Title}}</title>
+<title>{{ $.Site.Title }}</title>
 
-{{ $styleMain := resources.Get "mhp.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $styleMain.Permalink }}">
-
-{{if .IsHome }}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{end}}
+  {{ $stylesheet := .Site.Data.webpack.main }}
+  {{ with $stylesheet.css }}
+    <link href="{{ relURL . }}" rel="stylesheet">
+  {{ end }}
+<!-- {{if .IsHome }}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{end}} -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
 

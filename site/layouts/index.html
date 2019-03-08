@@ -48,6 +48,9 @@
   </section>
 </div>
 
+{{ $footer := .Site.GetPage "_footer.md" }}
+{{ partial "footer.html" (dict "footer" $footer) }}
+
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {

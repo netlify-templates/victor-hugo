@@ -1,0 +1,19 @@
+.block {
+}
+
+.block__header {
+  background: $mhp-green;
+  padding: $padding;
+}
+
+.block__header-title {
+  color: white;
+}
+
+.block__header-sub-title {
+}
+
+.block__body {
+  padding: $padding;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
