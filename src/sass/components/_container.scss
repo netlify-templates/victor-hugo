@@ -20,4 +20,11 @@
   .block__image & {
     width: $page-width;
   }
+
+  .block--left-image & {
+    @include mq($from: desktop) {
+      margin-left: 50%;
+      width: $page-width / 2;
+    }
+  }
 }

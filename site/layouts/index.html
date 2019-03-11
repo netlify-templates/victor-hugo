@@ -32,7 +32,7 @@
   </section>
 
   <section class="block">
-    <div class="block__image" style="background-image: url(assets/images/streetwise-opera.jpg)">
+    <div class="block__image block__image--bg" style="background-image: url(assets/images/streetwise-opera.jpg)">
       <div class="container">
         <header class="block__header">
           <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
@@ -51,8 +51,10 @@
     </div>
   </section>
 
-  <section class="block block--plain block--left-bg">
-    <div class="block__image" style="background-image: url(assets/images/action-group.jpg)"></div>
+  <section class="block block--plain block--left-image">
+    <div class="block__image">
+      <img class="block__image-image" src="/assets/images/action-group.jpg" />
+    </div>
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.getInvolved.heading }}</h1>
