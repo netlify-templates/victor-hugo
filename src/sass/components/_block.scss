@@ -36,7 +36,7 @@
     @include mq($from: desktop) {
       background-position: 100% center;
       background-size: 50%;
-      padding: 0 0 50px 0;
+      padding: 50px 0;
     }
   }
 
@@ -136,6 +136,10 @@
 
   @include mq($from: desktop) {
     margin: 0;
+  }
+
+  .block--left-image & {
+    width: auto;
   }
 }
 
