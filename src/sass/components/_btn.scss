@@ -1,4 +1,10 @@
+.btns {
+  display: flex;
+}
+
 .btn {
+  flex-grow: 1;
+  flex-basis: 0;
   display: block;
   border-radius: 30px;
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
@@ -6,7 +12,12 @@
   text-decoration: none;
   padding: $padding * 1.5;
   margin-bottom: $padding;
+  margin-right: $padding;
   font-weight: bold;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &--mhp-green {
     background: $mhp-green;

@@ -124,26 +124,36 @@
   </section>
 
   <section class="block">
-    <div class="block__image" style="background-image: url(https://via.placeholder.com/1024x768)"></div>
+    <div class="block__image block__image--bg" style="background-image: url(assets/images/charter-launch-1.jpg)">
+      <div class="container">
+        <header class="block__header">
+          <h1 class="block__header-title">{{ .Params.charter.heading }}</h1>
+          {{ if not (isset .Params.charter "subHeading") }}
+          <p class="block__header-sub-title">{{ .Params.charter.subHeading }}</p>
+          {{ end }}
+        </header>
+      </div>
+    </div>
     <div class="container">
-      <header class="block__header">
-        <h1 class="block__header-title">{{ .Params.charter.heading }}</h1>
-        {{ if not (isset .Params.charter "subHeading") }}
-        <p class="block__header-sub-title">{{ .Params.charter.subHeading }}</p>
-        {{ end }}
-      </header>
       <div class="block__body">
-        {{ $bodyMarkdown := .Params.charter.body | markdownify }}
-        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
-        {{ else }}{{ $bodyMarkdown }}{{ end }}
+        <aside class="block__aside">
+          <img src="/assets/images/charter-small.png" />
+        </aside>
+        <div>
+          {{ $bodyMarkdown := .Params.charter.body | markdownify }}
+          {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+          {{ else }}{{ $bodyMarkdown }}{{ end }}
 
-        <a class="btn btn--mhp-green" href="/read-the-charter">Read Charter</a>
-        <a class="btn btn--mhp-yellow" href="/make-a-pledge">Pledge</a>
+          <div class="btns">
+            <a class="btn btn--mhp-green" href="https://charter.streetsupport.net/read-the-charter/">Read Charter</a>
+            <a class="btn btn--mhp-yellow" href="https://charter.streetsupport.net/pledge-your-support/">Pledge</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="block block--plain">
+  <section class="block block--plain block--white">
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.whatElse.heading }}</h1>
@@ -153,8 +163,10 @@
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
         {{ else }}{{ $bodyMarkdown }}{{ end }}
 
-        <a class="btn btn--mhp-yellow" href="https://streetsupport.net/find-help">Find Help</a>
-        <a class="btn btn--mhp-yellow" href="https://streetsupport.net/give-help">Give Help</a>
+        <div class="btns">
+          <a class="btn btn--mhp-yellow" href="https://streetsupport.net/find-help">Find Help</a>
+          <a class="btn btn--mhp-yellow" href="https://streetsupport.net/give-help">Give Help</a>
+        </div>
       </div>
     </div>
   </section>

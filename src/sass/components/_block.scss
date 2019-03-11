@@ -1,5 +1,6 @@
 .block {
   position: relative;
+  @include cf();
 
   &--popout {
     @include mq($from: desktop) {
@@ -26,10 +27,15 @@
 
   &--white {
     background: white;
-    padding-bottom: $padding * 5;
 
     @include mq($from: desktop) {
       padding: $padding * 5 0;
+    }
+
+    .block--plain + & {
+      @include mq($from: desktop) {
+        padding: $padding * 5 0;
+      }
     }
   }
 
@@ -85,7 +91,7 @@
     align-items: flex-end;
     height: 400px;
     box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    background-size: cover;
+    background-size: 1024px 400px;
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,5 +177,16 @@
         margin-top: 0;
       }
     }
+  }
+}
+
+.block__aside {
+  margin-top: $padding * 3;
+  text-align: center;
+
+  @include mq($from: desktop) {
+    float: left;
+    padding: $padding;
+    margin: 0 $padding * 2 0 0;
   }
 }
