@@ -4,7 +4,8 @@
 <div id="main">
   <section class="home-hero" style="background-image: url({{ .Params.header.image }});">
     <div class="container">
-      <img class="home-hero__logo" src="/assets/images/mhp-logo.png" width="142" height="157" alt="Manchester Homelessness Partnership logo" />
+      <img class="home-hero__logo" src="/assets/images/mhp-logo.png" width="142" height="157"
+        alt="Manchester Homelessness Partnership logo" />
       <div class="home-hero__text">
         <h1 class="home-hero__title">
           <span class="home-hero__title-first">Manchester</span>
@@ -65,23 +66,41 @@
         {{ else }}{{ $bodyMarkdown }}{{ end }}
 
         <ul class="icon-links">
-          <li class="icon-links__link icon-links__link--action">
-            <a href="/action-groups">Join an Action Group</a>
+          <li class="icon-links__link icon-links__link">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "clapper-board" ) }}
+            </div>
+            <a href="https://charter.streetsupport.net/join-action-group/">Join an Action Group</a>
           </li>
-          <li class="icon-links__link icon-links__link--briefcase">
-            <a href="/business-group">Join the Business Group</a>
+          <li class="icon-links__link icon-links__link">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "briefcase" ) }}
+            </div>
+            <a href="https://www.linkedin.com/groups/8668257/">Join the Business Group</a>
           </li>
-          <li class="icon-links__link icon-links__link--calendar">
-            <a href="/events">Find out what's on</a>
+          <li class="icon-links__link icon-links__link">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "calendar" ) }}
+            </div>
+            <a href="https://teamup.com/ksc7ge5aga5pnjddjp">Find out what's on</a>
           </li>
-          <li class="icon-links__link icon-links__link--pencil">
-            <a href="/join-mailing-list">Join our mailing list</a>
+          <li class="icon-links__link icon-links__link">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "letter" ) }}
+            </div>
+            <a href="http://eepurl.com/dmbeQX">Join our mailing list</a>
           </li>
-          <li class="icon-links__link icon-links__link--envelope">
+          <li class="icon-links__link icon-links__link">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "pencil" ) }}
+            </div>
             <a href="/contact-us">Contact us</a>
           </li>
-          <li class="icon-links__link icon-links__link--hand">
-            <a href="/donate">Donate or volunteer</a>
+          <li class="icon-links__link icon-links__link">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "hand" ) }}
+            </div>
+            <a href="https://streetsupport.net/give-help/help/?postcode=M1&type=All">Donate or volunteer</a>
           </li>
         </ul>
       </div>

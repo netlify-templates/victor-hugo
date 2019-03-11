@@ -6,10 +6,20 @@
 }
 
 .icon-links__link {
-  background: url(https://via.placeholder.com/75) no-repeat top;
   display: block;
   float: left;
-  padding: 85px 0 $padding;
   text-align: center;
   width: 50%;
+}
+
+.icon-links__icon-container {
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-links__icon {
+  height: 80px;
+  display: block;
+  margin: 0 auto;
 }
