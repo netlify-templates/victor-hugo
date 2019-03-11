@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="block__body">
+      <div class="block__body block__body--drop-shadow">
         {{ $bodyMarkdown := .Params.whosInvolved.body | markdownify }}
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
         {{ else }}{{ $bodyMarkdown }}{{ end }}
@@ -135,7 +135,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="block__body">
+      <div class="block__body block__body--drop-shadow">
         <aside class="block__aside">
           <img src="/assets/images/charter-small.png" />
         </aside>
