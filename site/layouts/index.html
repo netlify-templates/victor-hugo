@@ -78,7 +78,7 @@
             <a href="/join-mailing-list">Join our mailing list</a>
           </li>
           <li class="icon-links__link icon-links__link--envelope">
-            <a href="/contact-su">Contact us</a>
+            <a href="/contact-us">Contact us</a>
           </li>
           <li class="icon-links__link icon-links__link--hand">
             <a href="/donate">Donate or volunteer</a>
@@ -88,7 +88,10 @@
     </div>
   </section>
 
-  <section class="block block--plain block--image-first">
+  <section class="block block--plain block--left-image block--white block--image-last">
+    <div class="block__image">
+      <img class="block__image-image" src="/assets/images/how-it-works.png" />
+    </div>
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.howDoesItWork.heading }}</h1>
@@ -98,7 +101,6 @@
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
         {{ else }}{{ $bodyMarkdown }}{{ end }}
       </div>
-      <img class="block__image block__image--inset" alt="MHP diagram" src="{{ .Params.howDoesItWork.image }}">
     </div>
   </section>
 
