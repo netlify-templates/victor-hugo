@@ -27,4 +27,11 @@
       width: $page-width / 2;
     }
   }
+
+  .block--right-image & {
+    @include mq($from: desktop) {
+      margin-right: 50%;
+      width: $page-width / 2;
+    }
+  }
 }
