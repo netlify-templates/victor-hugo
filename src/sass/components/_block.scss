@@ -99,6 +99,8 @@
     &::before {
       box-shadow: none;
     }
+
+    padding: $padding;
     padding-bottom: $padding * 5;
 
     @include mq($from: desktop) {
@@ -107,14 +109,19 @@
   }
 
   &--bg {
+    height: 280px;
     display: flex;
     align-items: flex-end;
-    height: 400px;
     box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    background-size: 1024px 400px;
     background-color: black;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include mq($from: desktop) {
+      height: 400px;
+      background-size: 1024px 400px;
+    }
   }
 
   &--inset {
