@@ -21,7 +21,7 @@ whosInvolved:
     * [Big Issue North](https://www.bigissuenorth.com/)
 
 
-    Plus many more local organisations and individuals
+    Plus many more local organisations and individuals!
 getInvolved:
   heading: How to Get Involved
   body: >-
