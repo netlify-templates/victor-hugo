@@ -3,7 +3,7 @@ title: Welcome to
 header:
   classes: home-header
   hero: '<span>Real Change Rochdale:</span> Change for Real'
-  image: https://via.placeholder.com/1024x768
+  image: assets/images/charter-launch-2.jpg
 whatIs:
   heading: What is the Manchester Homelessness Partnership?
   subHeading:

@@ -2,17 +2,16 @@
 {{ partial "header.html" .Params.header }}
 
 <div id="main">
-  <section class="home-hero"
-    style="background: url({{ .Params.header.image }}); background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)">
+  <section class="home-hero" style="background-image: url({{ .Params.header.image }});">
     <div class="container">
-      <svg class="svg-mhp-logo-dims home-hero__logo">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/svgsprite.svg#mhp-logo"></use>
-      </svg>
-      <h1 class="home-hero__title">
-        <span class="home-hero__title-first">Manchester</span>
-        <span class="home-hero__title-second">Homelessness Partnership</span>
-      </h1>
-      <p class="home-hero__strap">Co-producing solutions to end homelessness</p>
+      <img class="home-hero__logo" src="/assets/images/mhp-logo.png" width="142" height="157" alt="Manchester Homelessness Partnership logo" />
+      <div class="home-hero__text">
+        <h1 class="home-hero__title">
+          <span class="home-hero__title-first">Manchester</span>
+          <span class="home-hero__title-second">Homelessness Partnership</span>
+        </h1>
+        <p class="home-hero__strap">Co-producing solutions to end homelessness</p>
+      </div>
     </div>
   </section>
 

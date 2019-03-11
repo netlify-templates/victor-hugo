@@ -1,5 +1,8 @@
 body {
   color: black;
+  font-family: $body-font;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 }
 
 .sr-only {
