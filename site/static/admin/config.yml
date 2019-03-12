@@ -15,8 +15,11 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"},
+          - {label: "Hero", name: "hero", widget: "object", fields: [
+              {label: "Image", name: "image", widget: "image"}
+            ]},
           - {label: "What Is", name: "whatis", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: "string"},
-              {label: "Body", name: "body", widget: "markdown"},
+              {label: "Body", name: "body", widget: "markdown"}
             ]}

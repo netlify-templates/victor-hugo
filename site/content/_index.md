@@ -1,5 +1,7 @@
 ---
 title: Welcome to
+hero:
+  image: assets/images/charter-launch-2.jpg
 whatIs:
   heading: What is the Manchester Homelessness Partnership?
   body: >-
