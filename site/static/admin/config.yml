@@ -19,7 +19,7 @@ collections:
           - {label: "Hero", name: "hero", widget: "object", fields: [
               {label: "Image", name: "image", widget: "image"}
             ]}
-          - {label: "What Is", name: "whatis", widget: "object", fields: [
+          - {label: "What Is", name: "whatIs", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: "string"},
               {label: "Body", name: "body", widget: "markdown"}
             ]}
