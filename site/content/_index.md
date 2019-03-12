@@ -1,7 +1,7 @@
 ---
 title: Welcome to
 hero:
-  image: /assets/uploads/qqec9ty.jpg
+  image: /assets/uploads/charter-launch-2.jpg
 whatIs:
   body: >-
     The Manchester Homelessness Partnership formed to work together towards the
