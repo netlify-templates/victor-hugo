@@ -1,12 +1,7 @@
 ---
 title: Welcome to
-header:
-  classes: home-header
-  hero: '<span>Real Change Rochdale:</span> Change for Real'
-  image: assets/images/charter-launch-2.jpg
 whatIs:
   heading: What is the Manchester Homelessness Partnership?
-  subHeading:
   body: >-
     The Manchester Homelessness Partnership formed to work together towards the aims and values of the Manchester Homelessness Charter.
 
