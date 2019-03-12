@@ -59,8 +59,8 @@ charter:
   heading: Manchester Homelessness Charter
 whatElse:
   body: >-
-    Find out more about support services and how you can help at Street Support
-    Network.
+    Find out more about support services and how you can help through Street
+    Support Network.
   heading: What else is happening in Manchester around homelessness?
 ---
 
