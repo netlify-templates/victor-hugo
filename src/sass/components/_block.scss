@@ -141,6 +141,12 @@
   .block--left-image & {
     width: auto;
   }
+
+  &--bordered {
+    @include mq($from: desktop) {
+      margin-right: $padding * 3;
+    }
+  }
 }
 
 .block__header {
