@@ -14,9 +14,11 @@ whatIs:
     been involved so far, many of whom were involved in co-writing the charter.
   heading: What is the Manchester Homelessness Partnership?
 whosInvolved:
-  body: |-
-    * [Barnabus](http://www.barnabus-manchester.org.uk/)
-    * [Big Issue North](https://www.bigissuenorth.com/)
+  body: >-
+    Barnabus; Booth Centre, Coffee4Craig; Cornerstone, Centrepoint North,
+    DePaul; Inspiring Change Manchester; Lifeshare; MASH; Mustard Tree; On The
+    Out; Reach Out To Community; Shelter.
+
 
     Plus many more local organisations and individuals!
   heading: Who's Involved?
