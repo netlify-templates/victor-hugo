@@ -199,9 +199,9 @@
 
   &--drop-shadow {
     @include mq($from: desktop) {
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    padding-bottom: $padding * 2;
-    margin-bottom: $padding * 5;
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+      padding-bottom: $padding * 2;
+      margin-bottom: $padding * 5;
     }
   }
 
@@ -223,6 +223,12 @@
 .block__aside {
   margin-top: $padding * 3;
   text-align: center;
+
+  img {
+    @include mq($until: tablet) {
+      width: 100%;
+    }
+  }
 
   @include mq($from: desktop) {
     float: left;
