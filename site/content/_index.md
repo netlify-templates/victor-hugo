@@ -1,5 +1,5 @@
 ---
-title: Welcome to
+title: Welcome
 hero:
   image: /assets/uploads/charter-launch-2.jpg
 whatIs:
