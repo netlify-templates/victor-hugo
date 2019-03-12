@@ -14,7 +14,7 @@
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
-<!-- {{if .IsHome }}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{end}} -->
+{{if .IsHome }}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{end}}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=71468202-5"></script>
 
