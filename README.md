@@ -1,12 +1,6 @@
-# Victor Hugo
+# Manchester Homelessness Partnership website
 
-**A Hugo boilerplate for creating truly epic websites**
-
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
-
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
-
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+This repo is a fork of [Victor-Hugo](https://github.com/netlify-templates/victor-hugo) a [Hugo](https://gohugo.io/) boilerplate.
 
 ## Usage
 
@@ -64,6 +58,10 @@ See [package.json](package.json#L8) for all tasks.
 |  |  |--partials      // This is where includes live
 |  |  |--index.html    // The index page
 |  |--static           // Files in here ends up in the public folder
+|  |  |--admin         // Configuration files to describe CMS-able content via Netlify admin
+|  |  |--assets        // assets!
+|  |  |  |--images     // images used in build (move these to uploadable ones!)
+|  |  |  |--uploads    // uploaded assets via the CMS
 |--src                 // Files that will pass through the asset pipeline
 |  |--css              // Webpack will bundle imported css seperately
 |  |--index.js         // index.js is the webpack entry for your css & js assets
@@ -102,15 +100,6 @@ You can access the environment variable inside the theme files with `getenv "NOD
 
 All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
 
-## Deploying to Netlify
+## Contributing
 
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
-
-## Enjoy!! 😸
+Please review the [Issues](issues) for priority features/issues. Please feel free to raise new issues, then submit small PRs for refactoring/other improvements.
