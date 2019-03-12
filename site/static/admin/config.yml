@@ -19,7 +19,25 @@ collections:
           - {label: "Hero", name: "hero", widget: "object", fields: [
               {label: "Image", name: "image", widget: "image"}
             ]}
-          - {label: "What Is", name: "whatIs", widget: "object", fields: [
+          - {label: "What Is the MHP?", name: "whatIs", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"}
+            ]}
+          - {label: "Who's Involved?", name: "whosInvolved", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: "string"},
+              {label: "Sub-Heading", name: "subHeading", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"}
+            ]}
+          - {label: "How Does it Work?", name: "howDoesItWork", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"},
+              {label: "Image", name: "image", widget: "image"}
+            ]}
+          - {label: "Charter", name: "charter", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"}
+            ]}
+          - {label: "What Else is Happening?", name: "whatElse", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: "string"},
               {label: "Body", name: "body", widget: "markdown"}
             ]}
