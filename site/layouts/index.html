@@ -67,40 +67,52 @@
 
         <ul class="icon-links">
           <li class="icon-links__link icon-links__link">
-            <div class="icon-links__icon-container">
-              {{ partial "icon" (dict "context" . "iconName" "clapper-board" ) }}
-            </div>
-            <a href="https://charter.streetsupport.net/join-action-group/">Join an Action Group</a>
+            <a href="https://charter.streetsupport.net/join-action-group/">
+              <div class="icon-links__icon-container">
+                {{ partial "icon" (dict "context" . "iconName" "clapper-board" ) }}
+              </div>
+              Join an Action Group
+            </a>
           </li>
           <li class="icon-links__link icon-links__link">
-            <div class="icon-links__icon-container">
-              {{ partial "icon" (dict "context" . "iconName" "briefcase" ) }}
-            </div>
-            <a href="https://www.linkedin.com/groups/8668257/">Join the Business Group</a>
+            <a href="https://www.linkedin.com/groups/8668257/">
+              <div class="icon-links__icon-container">
+                {{ partial "icon" (dict "context" . "iconName" "briefcase" ) }}
+              </div>
+              Join the Business Group
+            </a>
           </li>
           <li class="icon-links__link icon-links__link">
-            <div class="icon-links__icon-container">
-              {{ partial "icon" (dict "context" . "iconName" "calendar" ) }}
-            </div>
-            <a href="https://teamup.com/ksc7ge5aga5pnjddjp">Find out what's on</a>
+            <a href="https://teamup.com/ksc7ge5aga5pnjddjp">
+              <div class="icon-links__icon-container">
+                {{ partial "icon" (dict "context" . "iconName" "calendar" ) }}
+              </div>
+              Find out what's on
+            </a>
           </li>
           <li class="icon-links__link icon-links__link">
-            <div class="icon-links__icon-container">
-              {{ partial "icon" (dict "context" . "iconName" "letter" ) }}
-            </div>
-            <a href="http://eepurl.com/dmbeQX">Join our mailing list</a>
+            <a href="http://eepurl.com/dmbeQX">
+              <div class="icon-links__icon-container">
+                {{ partial "icon" (dict "context" . "iconName" "letter" ) }}
+              </div>
+              Join our mailing list
+            </a>
           </li>
           <li class="icon-links__link icon-links__link">
-            <div class="icon-links__icon-container">
-              {{ partial "icon" (dict "context" . "iconName" "pencil" ) }}
-            </div>
-            <a href="mailto:info@manchesterhomelessnesspartnership.info">Contact us</a>
+            <a href="mailto:info@manchesterhomelessnesspartnership.info">
+              <div class="icon-links__icon-container">
+                {{ partial "icon" (dict "context" . "iconName" "pencil" ) }}
+              </div>
+              Contact us
+            </a>
           </li>
           <li class="icon-links__link icon-links__link">
-            <div class="icon-links__icon-container">
-              {{ partial "icon" (dict "context" . "iconName" "hand" ) }}
-            </div>
-            <a href="https://streetsupport.net/give-help/help/?postcode=M1&type=All">Donate or volunteer</a>
+            <a href="https://streetsupport.net/give-help/help/?postcode=M1&type=All">
+              <div class="icon-links__icon-container">
+                {{ partial "icon" (dict "context" . "iconName" "hand" ) }}
+              </div>
+              Donate or volunteer
+            </a>
           </li>
         </ul>
       </div>
@@ -109,7 +121,7 @@
 
   <section class="block block--plain block--left-image block--white block--image-last">
     <div class="block__image">
-      <img class="block__image-image" src="/assets/images/how-it-works.png" />
+      <img class="block__image-image block__image-image--bordered" src="/assets/images/how-it-works.png" />
     </div>
     <div class="container">
       <header class="block__header">
@@ -153,7 +165,8 @@
     </div>
   </section>
 
-  <section class="block block--plain block--right-image block--image-last" style="background-image: url(/assets/images/ssn-on-laptop.png)">
+  <section class="block block--plain block--right-image block--image-last"
+    style="background-image: url(/assets/images/ssn-on-laptop.png)">
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.whatElse.heading }}</h1>
