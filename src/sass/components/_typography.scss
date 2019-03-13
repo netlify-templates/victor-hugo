@@ -19,6 +19,16 @@ body {
   border: 0;
 }
 
+h1, h2, h3 {
+  font-family: 'abolition', sans-serif;
+  font-weight: 200;
+  margin: $padding 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
 a {
   color: $mhp-green;
 }

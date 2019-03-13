@@ -10,7 +10,7 @@
   }
 
   & .container {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
     padding: 260px 10px 20px;
 
     @include mq($from: desktop) {
@@ -36,11 +36,26 @@
 }
 
 .home-hero__title {
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
 }
 .home-hero__title-first {
   display: block;
+  font-size: 36px;
 }
 .home-hero__title-second {
+  font-size: 60px;
+  line-height: 54px;
+
+  @include mq($from: 380) {
+    font-size: 72px;
+    line-height: 62px;
+  }
+
+  @include mq($from: desktop) {
+    display: ruby; // fix on one line
+  }
 }
 .home-hero__strap {
+  font-size: 16px;
 }

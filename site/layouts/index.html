@@ -21,7 +21,6 @@
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.whatIs.heading }}</h1>
         {{ if not (isset .Params.whatIs "subHeading") }}
-        <p class="block__header-sub-title">{{ .Params.whatIs.subHeading }}</p>
         {{ end }}
       </header>
       <div class="block__body">
@@ -57,9 +56,11 @@
       <img class="block__image-image" src="/assets/images/action-group.jpg" />
     </div>
     <div class="container">
+      {{ if ( isset .Params.getInvolved "heading" ) }}
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.getInvolved.heading }}</h1>
       </header>
+      {{ end }}
       <div class="block__body">
         {{ $bodyMarkdown := .Params.getInvolved.body | markdownify }}
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>

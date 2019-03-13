@@ -10,9 +10,10 @@
 <meta property="og:image" content="{{.Site.BaseURL}}assets/uploads/opengraph.jpg" />
 <title>{{ $.Site.Title }}</title>
 
+  <link rel="stylesheet" href="https://use.typekit.net/zue4kmg.css" />
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
+    <link href="{{ relURL . }}" rel="stylesheet" >
   {{ end }}
 {{if .IsHome }}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{{end}}
 <!-- Global site tag (gtag.js) - Google Analytics -->
