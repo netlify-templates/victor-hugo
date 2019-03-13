@@ -34,9 +34,13 @@
     background-size: 95%;
 
     @include mq($from: desktop) {
-      background-position: 100% center;
-      background-size: 50%;
+      background-position: 500px;
+      background-size: 800px;
       padding: 50px 0;
+    }
+
+    @include mq($from: wide) {
+      background-position: 700px;
     }
   }
 
