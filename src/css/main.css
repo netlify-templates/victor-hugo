@@ -220,6 +220,11 @@ body {
   @extend .f5;
   @extend .f4-ns;
   @extend .fw3;
+  @extend .lh-copy;
+}
+
+.blog-post li {
+  @extend .mv1;
 }
 
 /* Academy */

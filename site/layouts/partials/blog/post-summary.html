@@ -6,6 +6,10 @@
     </a>
   </h3>
 
+  {{ if .Params.summaryImage }}
+    <img src="{{ .Params.summaryImage }}">
+  {{ end }}
+
   <p class="f5 f4-ns lh-copy fw3">{{ .Summary }}</p>
 
   {{ if .Truncated }}
@@ -14,7 +18,7 @@
     </div>
   {{ end }}
 
-  <div>{{ .Date.Format "January 2, 2006" }}</div>
+  {{ partial "blog/post-byline.html" . }}
 
   {{ if .Params.tags }}
     <div>
