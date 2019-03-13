@@ -28,6 +28,10 @@ collections:
               {label: "Sub-Heading", name: "subHeading", widget: "string"},
               {label: "Body", name: "body", widget: "markdown"}
             ]}
+          - {label: "Get Involved", name: "getInvolved", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"},
+            ]}
           - {label: "How Does it Work?", name: "howDoesItWork", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: "string"},
               {label: "Body", name: "body", widget: "markdown"},

@@ -25,6 +25,11 @@ whosInvolved:
   subHeading: >-
     The Manchester Homelessness Partnership currently works in partnership with
     the following organisations:
+getInvolved:
+  heading: How to Get Involved
+  body: >-
+    There are a number of ways in which you can get involved:
+
 howDoesItWork:
   body: >-
     At the heart of the Partnership are the [actions
