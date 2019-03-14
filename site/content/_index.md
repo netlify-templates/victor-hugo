@@ -49,7 +49,7 @@ howDoesItWork:
     role is to facilitate the network, to help connect people, and to
     communicate between the partnership and out to others in the city through
     their website, apps and other channels. You can [join the mhp mailing list
-    to receive mhp updates](http://eepurl.com/dmbeQX).
+    to receive updates](http://eepurl.com/dmbeQX).
   heading: How Does it Work?
   image: assets/images/how-it-works.png
 charter:
