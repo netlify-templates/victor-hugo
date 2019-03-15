@@ -4,30 +4,47 @@ hero:
   image: /assets/uploads/charter-launch-2.jpg
 whatIs:
   body: >-
-    The Manchester Homelessness Partnership formed to work together towards the
-    aims and values of the Manchester Homelessness Charter.
+    The Manchester Homelessness Partnership (MHP) is a network of organisations
+    which formed to work together towards the aims and values of the Manchester
+    Homelessness Charter. Our goal is to end homelessness in all its forms in
+    Manchester.
 
 
-    Launched in May 2016, the charter unites many people with personal
+    The charter was launched in May 2016. It united many people with personal
     experience of homelessness with organisations from different sectors, to
     co-produce solutions together. Over 100 people with lived experience have
-    been involved so far, many of whom were involved in co-writing the charter.
+    been involved in the Partnership, many of whom co-wrote the charter.
+
+
+    Nearly all of our work is done voluntarily but in April 2018 we welcomed two
+    full time roles to support the MHP and promote the values of the charter.
   heading: What is the Manchester Homelessness Partnership?
 whosInvolved:
   body: >-
-    Barnabus; Booth Centre, Coffee4Craig; Cornerstone, Centrepoint North,
-    DePaul; Inspiring Change Manchester; Lifeshare; MASH; Mustard Tree; On The
-    Out; Reach Out To Community; Shelter; The Men's Room.
+    Albert Kennedy Trust; Barnabus; Big Change MCR; Boaz Trust; Booth Centre,
+    Coffee4Craig; Cornerstone, Centrepoint North, DePaul; Greater Together
+    Manchester; Inspiring Change Manchester; Justlife; Lifeshare; MASH; Mustard
+    Tree; On The Out; Reach Out To The Community; Shelter; The Men's Room; Urban
+    Village Medical Practice...
+
+
+    Department for Work and Pensions; Greater Manchester Combined Authority,
+    Greater Manchester Police; Manchester City Council; NHS; Univeristies...
+
+
+    Allied London; CityCo.; The Cooperative; Enterprise Holdings; Laing
+    O'Rourke; Lendlease; Lloyds Bank; McLaren Construction; Network Rail; Space
+    Zero; Uber; Vallance Dental Centre...
 
 
     And many more local organisations and individuals!
-  heading: Who's Involved?
+  heading: Who's involved?
   subHeading: >-
-    The Manchester Homelessness Partnership currently works in partnership with
-    the following organisations:
+    The Manchester Homelessness Partnership currently works with the following
+    organisations:
 getInvolved:
-  body: 'There are a number of ways in which you can get involved:'
-  heading: How to Get Involved
+  body: 'There are many ways in which you can become part of the Partnership:'
+  heading: 'How to get involved:'
 howDoesItWork:
   body: >-
     At the heart of the Partnership are the [actions
@@ -50,7 +67,7 @@ howDoesItWork:
     communicate between the partnership and out to others in the city through
     their website, apps and other channels. You can [join the mhp mailing list
     to receive updates](http://eepurl.com/dmbeQX).
-  heading: How Does it Work?
+  heading: How does it work?
   image: assets/images/how-it-works.png
 charter:
   body: >-
