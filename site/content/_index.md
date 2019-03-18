@@ -113,7 +113,7 @@ whatElse:
     * ['Sharing Spaces' Guideline for City-Centre
     Businesses](https://drive.google.com/file/d/0B6iUM9jFzvw5ckZkZkNCcGtrajBDZmhOeXlwQ01QMFdpcXRj/view)
 
-    * [Learning from the Manchester Homelessness
+    * [Learnings from the Manchester Homelessness
     Partnership](https://drive.google.com/file/d/1ULsfTOathk8onEKa84lfKZn-2yQm_MCF/view?usp=sharing)
 
     * [Best Practice Guideline for Voluntary
