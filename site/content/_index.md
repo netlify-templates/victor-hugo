@@ -23,30 +23,22 @@ whatIs:
   heading: What is the Manchester Homelessness Partnership?
 whosInvolved:
   body: >-
-    **Charity & voluntary**
+    **Charity & voluntary:** Albert Kennedy Trust, Barnabus, Big Change Mcr,
+    Boaz Trust, Booth Centre, Coffee4Craig, Cornerstones, Centrepoint North,
+    DePaul, Greater Together Manchester, Inspiring Change Manchester, Justlife,
+    Lifeshare, MASH, Mustard Tree, On The Out, Reach Out To The Community,
+    Shelter, The Men's Room...
 
 
-    Albert Kennedy Trust, Barnabus, Big Change Mcr, Boaz Trust, Booth Centre,
-    Coffee4Craig, Cornerstones, Centrepoint North, DePaul, Greater Together
-    Manchester, Inspiring Change Manchester, Justlife, Lifeshare, MASH, Mustard
-    Tree, On The Out, Reach Out To The Community, Shelter, The Men's Room...
+    **Statutory:** Department for Work and Pensions, Greater Manchester Combined
+    Authority, Greater Manchester Police, Manchester City Council (MCC), MCC
+    Rough Sleeper Team, MCC Work and Skills team, NHS, Urban Village Medical
+    Practice, Univeristies...
 
 
-    **Statutory**
-
-
-    Department for Work and Pensions, Greater Manchester Combined Authority,
-    Greater Manchester Police, Manchester City Council (MCC), MCC Rough Sleeper
-    Team, MCC Work and Skills team, NHS, Urban Village Medical Practice,
-    Univeristies...
-
-
-    **Business**
-
-
-    Allied London, CityCo., The Cooperative, Enterprise Holdings, Laing
-    O'Rourke, Lendlease, Lloyds Banking Group, McLaren Construction, Network
-    Rail, Space Zero, Uber, Vallance Dental Centre...
+    **Business:** Allied London, CityCo., The Cooperative, Enterprise Holdings,
+    Laing O'Rourke, Lendlease, Lloyds Banking Group, McLaren Construction,
+    Network Rail, Space Zero, Uber, Vallance Dental Centre...
 
 
     And many more local organisations and fantastic individuals!
