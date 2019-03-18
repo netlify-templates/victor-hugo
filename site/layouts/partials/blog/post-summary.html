@@ -10,7 +10,13 @@
     <img src="{{ .Params.summaryImage }}">
   {{ end }}
 
-  <p class="f5 f4-ns lh-copy fw3">{{ .Summary }}</p>
+  <p class="f5 f4-ns lh-copy fw3">
+    {{ if .Description }}
+      {{ .Description }}
+    {{ else }}
+      {{ .Summary }}
+    {{ end }}
+  </p>
 
   {{ if .Truncated }}
     <div class="mb3">

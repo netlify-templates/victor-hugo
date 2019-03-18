@@ -227,6 +227,11 @@ body {
   @extend .mv1;
 }
 
+.blog-post img + em {
+  @extend .db;
+  @extend .f6;
+}
+
 /* Academy */
 
 .onboarding-video-container {

@@ -1,5 +1,6 @@
 ---
 title: "Game-Based Learning in the Classroom"
+description: "Parents are barraged with advice and warnings from pediatricians, child development experts, and well-meaning family members regarding screen time. There is constant worry about exposing children to too much media in favor of other more worthwhile endeavors. Nonetheless, it is not uncommon to walk into a classroom and see ..."
 date: 2019-03-13
 summaryImage: /blog/children-playing-on-ipad.jpg
 images: ["/blog/children-playing-on-ipad.jpg"]
@@ -7,7 +8,6 @@ author: Kristen Cudd
 ---
 
 ![Children Playing on iPads in the Classroom](/blog/children-playing-on-ipad.jpg "Children Playing on iPads in the Classroom")
-
 *Image by [April Bryant](https://pixabay.com/users/schoolprpro-1336922/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1126136) from [Pixabay](https://pixabay.com).*
 
 Parents are barraged with advice and [warnings from pediatricians](https://www.aap.org/en-us/about-the-aap/aap-press-room/Pages/American-Academy-of-Pediatrics-Announces-New-Recommendations-for-Childrens-Media-Use.aspx), child development experts, and well-meaning family members regarding screen time. There is constant worry about exposing children to too much media in favor of other more worthwhile endeavors.
