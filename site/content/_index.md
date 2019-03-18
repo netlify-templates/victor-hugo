@@ -38,7 +38,7 @@ whosInvolved:
 
     **Business:** Allied London, CityCo., The Cooperative, Enterprise Holdings,
     Laing O'Rourke, Lendlease, Lloyds Banking Group, McLaren Construction,
-    Network Rail, Space Zero, Uber, Vallance Dental Centre...
+    Network Rail, Pro Manchester, Space Zero, Uber, Vallance Dental Centre...
 
 
     And many more local organisations and fantastic individuals!
