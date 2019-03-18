@@ -2,6 +2,7 @@
 title: "Game-Based Learning in the Classroom"
 date: 2019-03-13
 summaryImage: /blog/children-playing-on-ipad.jpg
+images: ["/blog/children-playing-on-ipad.jpg"]
 author: Kristen Cudd
 ---
 
