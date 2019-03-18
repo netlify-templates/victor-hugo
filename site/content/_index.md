@@ -107,17 +107,17 @@ whatElse:
     * [Language and Terminology
     Guideline](https://docs.google.com/document/d/1XTGVIcuO5w1EfwHsDMnLVkNn12_NZudzK5IVuD8LjjU/edit?usp=sharing)
 
-    * ['Sharing Spaces' guideline for city-centre
-    businesses](https://drive.google.com/file/d/0B6iUM9jFzvw5ckZkZkNCcGtrajBDZmhOeXlwQ01QMFdpcXRj/view)
+    * ['Sharing Spaces' Guideline for City-Centre
+    Businesses](https://drive.google.com/file/d/0B6iUM9jFzvw5ckZkZkNCcGtrajBDZmhOeXlwQ01QMFdpcXRj/view)
 
     * [Learnings from the Manchester Homelessness
     Partnership](https://www.homeless.org.uk/manchester-homelessness-partnership)
 
-    * [Best Practice Guideline for voluntary
-    groups](https://drive.google.com/file/d/1eFjixAg4bSPa-Fq5BJ0u8cFg2I7Uoidl/view?usp=sharing) 
+    * [Best Practice Guideline for Voluntary
+    Groups](https://drive.google.com/file/d/1eFjixAg4bSPa-Fq5BJ0u8cFg2I7Uoidl/view?usp=sharing) 
 
-    * [Flyer with ideas for how businesses can get
-    involved](https://drive.google.com/file/d/1Vo1PANC191X08k0WARgbfnuFiYPQkeCa/view)
+    * [Flyer for How Businesses can get
+    Involved](https://drive.google.com/file/d/1Vo1PANC191X08k0WARgbfnuFiYPQkeCa/view)
 
 
     There is so much fantastic work happening in our city to try and end
