@@ -57,25 +57,22 @@ howDoesItWork:
     groups](https://charter.streetsupport.net/join-action-group/), which each
     tackle a key challenge that people who are homeless may regularly face. Each
     group includes people who have experienced the topic in question, as well as
-    those who have relevant skills and roles. The action groups cover a variety
-    of subjects, including; Prevention, Migration & Destitution, Employment,
-    Mental Health, Evening Services, Unsupported Temporary Accomodation, and the
-    experiences of Women and Young People.
+    those who have relevant skills and roles. The action groups include;
+    Prevention, Migration & Destitution, Employment, Mental Health, and the
+    experiences of Women & Young People.
 
 
     We also have a [partnership
     board,](https://charter.streetsupport.net/partnership-board/) which brings
-    together representatives from different perspectives of our city. This
-    includes, of course, people who have personal insight into homelessness. The
-    board meets quarterly to use its collective influence to remove any systemic
-    blockages that our network are facing. Finally, we have a driving group that
-    maintains momentum, supports the action groups, and protects the aims and
-    values of the charter.
+    together representatives from different perspectives of our city. The board
+    meets quarterly to use its collective influence to remove any systemic
+    blockages that our network are facing. The driving group maintains momentum,
+    supports the action groups, and protects the aims and values of the charter.
 
 
-    The 'glue' of the Manchester Homelessness Partnership is [Street Support
+    The 'glue' of the Partnership is [Street Support
     Network](https://streetsupport.net), which has supported the charter mission
-    from the start. Their team host the two paid Partnership roles, and they are
+    from the start. Their team host the two paid Partnership roles and they are
     part of the driving group. They facilitate the network, help connect people,
     and communicate between the partnership and out to others in the city
     through their website, app and other channels.
@@ -90,20 +87,23 @@ charter:
 
 
     _How_ we do what we do is very important to us. If you would like to be part
-    of the Manchester Homelessness Partnership, please read the charter and make
-    a commitment to working in line with our networks values. 
+    of the Manchester Homelessness Partnership, please read the charter and
+    commit to working in line with our values. 
 
 
-    You can then detail how you would like to contribute to our aim of ending
-    homelessness by making a pledge. Pledges can be individual or
-    organisational, big or small - we like the ones that then happen!
+    Make a pledge to detail how you can contribute to ending homelessness.
+    Pledges can be individual or organisational, big or small - we like the ones
+    that happen!
   heading: Manchester Homelessness Charter
 whatElse:
   body: >-
     There is so much fanastic work happening in our city to try and end
     homelessness, and to support the people who are currently in a situation of
-    homelessness. You can find out more about support services and how you can
-    help through: [Street Support Network](http://streetsupport.net).
+    homelessness. 
+
+
+    You can find out more about support services and how you can help through:
+    [Street Support Network](http://streetsupport.net).
   heading: What else is happening in Manchester around homelessness?
 ---
 
