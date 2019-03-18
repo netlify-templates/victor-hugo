@@ -101,8 +101,8 @@ whatElse:
     of use to you:
 
 
-    * [Co-produced city
-    strategy](https://drive.google.com/file/d/1N2gW8c1ED3LYAKEkwkKlXzOXIWeAi9D1/view?usp=sharing)
+    * [Co-produced City Strategy
+    (2018-2023)](https://drive.google.com/file/d/1N2gW8c1ED3LYAKEkwkKlXzOXIWeAi9D1/view?usp=sharing)
 
     * [Language and Terminology
     Guideline](https://docs.google.com/document/d/1XTGVIcuO5w1EfwHsDMnLVkNn12_NZudzK5IVuD8LjjU/edit?usp=sharing)
@@ -113,7 +113,7 @@ whatElse:
     * [Learnings from the Manchester Homelessness
     Partnership](https://www.homeless.org.uk/manchester-homelessness-partnership)
 
-    * [Best Practice Guideline for charities and voluntary
+    * [Best Practice Guideline for voluntary
     groups](https://drive.google.com/file/d/1eFjixAg4bSPa-Fq5BJ0u8cFg2I7Uoidl/view?usp=sharing) 
 
     * [Flyer with ideas for how businesses can get
