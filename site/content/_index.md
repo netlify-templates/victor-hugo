@@ -76,6 +76,9 @@ howDoesItWork:
     part of the driving group. They facilitate the network, help connect people,
     and communicate between the partnership and out to others in the city
     through their website, app and other channels.
+
+
+    We are also linked into the Greater Manchester Homelessness Action Network.
   heading: How does it work?
   image: assets/images/how-it-works.png
 charter:
