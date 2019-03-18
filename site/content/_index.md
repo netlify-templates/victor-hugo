@@ -57,9 +57,9 @@ howDoesItWork:
     groups](https://charter.streetsupport.net/join-action-group/), which each
     tackle a key challenge that people who are homeless may regularly face. Each
     group includes people who have experienced the topic in question, as well as
-    those who have relevant skills and roles. The action groups include;
-    Prevention, Migration & Destitution, Employment, Mental Health, and the
-    experiences of Women & Young People.
+    those who have relevant skills and roles. The groups include; Prevention,
+    Migration & Destitution, Employment, Mental Health, and the experiences of
+    Women & Young People.
 
 
     We also have a [partnership
@@ -98,12 +98,38 @@ charter:
 whatElse:
   body: >-
     There is so much fanastic work happening in our city to try and end
-    homelessness, and to support the people who are currently in a situation of
-    homelessness. 
+    homelessness, and to support the people who are currently experiencing
+    homelessness. As a Partnership, we have also developed the following
+    documentation which may be of use to you
 
 
-    You can find out more about support services and how you can help through:
-    [Street Support Network](http://streetsupport.net).
+    * [First Manchester co-produced city strategy on ending
+    homelessness](https://drive.google.com/file/d/1N2gW8c1ED3LYAKEkwkKlXzOXIWeAi9D1/view?usp=sharing)
+
+    * [Language and Terminology
+    Guideline](https://docs.google.com/document/d/1XTGVIcuO5w1EfwHsDMnLVkNn12_NZudzK5IVuD8LjjU/edit?usp=sharing)
+
+    * ['Sharing Spaces'; a guideline for city-centre
+    businesses](https://drive.google.com/file/d/0B6iUM9jFzvw5ckZkZkNCcGtrajBDZmhOeXlwQ01QMFdpcXRj/view)
+
+    * [Learnings from the Manchester Homelessness
+    Partnership](https://www.homeless.org.uk/manchester-homelessness-partnership)
+
+    * [Best Practice Guideline for charities and voluntary groups
+    (2016)](https://drive.google.com/file/d/1eFjixAg4bSPa-Fq5BJ0u8cFg2I7Uoidl/view?usp=sharing)
+    with [Toolkit
+    Templates](https://streetsupport.net/manchester/standards-toolkit/) 
+
+    * [Flyer with ideas for how businesses can get
+    involved](https://drive.google.com/file/d/1Vo1PANC191X08k0WARgbfnuFiYPQkeCa/view)
+
+
+    _(Please note - we try to ensure that the information provided is accurate
+    but we are a small team and some may become out-of-date.)_
+
+
+    You can also find out more about support services and how you can help
+    through [Street Support Network](http://streetsupport.net).
   heading: What else is happening in Manchester around homelessness?
 ---
 
