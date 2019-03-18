@@ -108,13 +108,13 @@ whatElse:
     (2018-2023)](https://drive.google.com/file/d/1N2gW8c1ED3LYAKEkwkKlXzOXIWeAi9D1/view?usp=sharing)
 
     * [Language and Terminology
-    Guideline](https://docs.google.com/document/d/1XTGVIcuO5w1EfwHsDMnLVkNn12_NZudzK5IVuD8LjjU/edit?usp=sharing)
+    Guideline](https://drive.google.com/file/d/1TQstUhsjFTopKJ4-2RZLYT8YY4py9EUj/view?usp=sharing)
 
     * ['Sharing Spaces' Guideline for City-Centre
     Businesses](https://drive.google.com/file/d/0B6iUM9jFzvw5ckZkZkNCcGtrajBDZmhOeXlwQ01QMFdpcXRj/view)
 
-    * [Learnings from the Manchester Homelessness
-    Partnership](https://www.homeless.org.uk/manchester-homelessness-partnership)
+    * [Learning from the Manchester Homelessness
+    Partnership](https://drive.google.com/file/d/1ULsfTOathk8onEKa84lfKZn-2yQm_MCF/view?usp=sharing)
 
     * [Best Practice Guideline for Voluntary
     Groups](https://drive.google.com/file/d/1eFjixAg4bSPa-Fq5BJ0u8cFg2I7Uoidl/view?usp=sharing) 
