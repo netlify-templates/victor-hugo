@@ -1,5 +1,5 @@
 ---
-title: "Game Based Learning in the Classroom"
+title: "Game-Based Learning in the Classroom"
 date: 2019-03-13
 summaryImage: /blog/children-playing-on-ipad.jpg
 author: Kristen Cudd
@@ -7,15 +7,17 @@ author: Kristen Cudd
 
 ![Children Playing on iPads in the Classroom](/blog/children-playing-on-ipad.jpg "Children Playing on iPads in the Classroom")
 
+*Image by [April Bryant](https://pixabay.com/users/schoolprpro-1336922/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1126136) from [Pixabay](https://pixabay.com).*
+
 Parents are barraged with advice and [warnings from pediatricians](https://www.aap.org/en-us/about-the-aap/aap-press-room/Pages/American-Academy-of-Pediatrics-Announces-New-Recommendations-for-Childrens-Media-Use.aspx), child development experts, and well-meaning family members regarding screen time. There is constant worry about exposing children to too much media in favor of other more worthwhile endeavors.
 
 Nonetheless, it is not uncommon to walk into a classroom and see a group of kids gathered around a single monitor, pointing and discussing strategy. You’re just as likely to see a child under headphones quietly swiping away at a tablet screen. When children are in the classroom interacting with a screen, some parents are left wondering if their child is playing or if quality learning is taking place.
 
 The answer is, they are doing both.
 
-Just like their board game physical counterparts, digital games can be effectively used to enhance understanding and practice skills, giving game based learning a justified place in the modern classroom.
+Just like their board game physical counterparts, digital games can be effectively used to enhance understanding and practice skills, giving game-based learning a justified place in the modern classroom.
 
-## What is Game Based Learning?
+## What is Game-Based Learning?
 
 Game-based learning is the use of games, on a screen or in physical form, to engage a student in an activity designed with specific learning outcomes. Students are motivated to participate due to the fun and interactive nature of the activity and this heightened engagement leads to increased understanding of the planned learning objectives. The games a student plays in school are often called [serious games](https://www.igi-global.com/dictionary/playing-better-worse/26549). Although they are fun, they are designed with a specific learning objective in mind, rather than strictly for entertainment.
 
@@ -34,7 +36,7 @@ White says that [games are engaging for four key reasons](https://www.edsurge.co
 
 White also notes that you rarely hear children say, “I’m bad at this game” in the way they would about a subject area like math or science. They say, “that game is hard” and yet, they want to try it again and again. Why not harness that interest and focus in the classroom?
 
-## Effective Game Based Learning in the Classroom
+## Effective Game-Based Learning in the Classroom
 
 Research on the subject of their use in the classroom generally concludes that serious games [lead to increased motivation](https://www.researchgate.net/publication/263564163_Game_Based_Learning_-_a_Way_to_Stimulate_Intrinsic_Motivation) and engagement. This finding is well documented across years of research. Motivation and engagement are obviously great, but those values don’t necessarily translate into learning. [But mistakes do](https://www.crondose.com/2016/08/power-making-mistakes-learning-failing/).
 
@@ -49,12 +51,10 @@ A [survey conducted by the Joan Ganz Cooney Center at Sesame Workshop](https://c
 - 60% say that games help personalize/level instruction, assess knowledge more accurately, and obtain useful data
 - <10% report negative results of any kind using games in the classroom
 
-By carefully choosing products that target desired learning outcomes, teachers can very successfully integrate game based learning into an overall classroom teaching practice.
+By carefully choosing products that target desired learning outcomes, teachers can very successfully integrate game-based learning into an overall classroom teaching practice.
 
-## Communicating with Parents Regarding Game Based Learning
+## Communicating with Parents Regarding Game-Based Learning
 
 As with all educational endeavors, communication and support between teachers and parents is paramount to success. Teachers can give parents the opportunity to further understand how their child is utilizing games to further understanding and comprehension by providing them information about the games being used and the skills being targeted. Parents then have the opportunity to support the teacher’s efforts and their child’s learning by supplying those games at home. As a bonus, next time your child begs for screen time, you can feel great saying yes.
 
-We all know that modern classrooms must adopt and integrate technology to prepare students for the future. Digital game based learning is an important component of that integration. As developers continue to design games that target, assess, and track student learning effectively, students stand to be the benefactors of heightened understanding and fun in the classroom.
-
-*Image by [April Bryant](https://pixabay.com/users/schoolprpro-1336922/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1126136) from [Pixabay](https://pixabay.com).*
+We all know that modern classrooms must adopt and integrate technology to prepare students for the future. Digital game-based learning is an important component of that integration. As developers continue to design games that target, assess, and track student learning effectively, students stand to be the benefactors of heightened understanding and fun in the classroom.
