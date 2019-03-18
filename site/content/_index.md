@@ -10,14 +10,15 @@ whatIs:
     Manchester.
 
 
-    The charter was launched in May 2016. It united many people with personal
+    The charter was launched in May 2016. It unites many people with personal
     experience of homelessness with organisations from different sectors, to
     co-produce solutions together. Over 100 people with lived experience have
     been involved in the Partnership, many of whom co-wrote the charter.
 
 
     Nearly all of our work is done voluntarily but in April 2018 we welcomed two
-    full time roles to support the MHP and promote the values of the charter.
+    full time roles to support the Partnership and promote the values of the
+    charter.
   heading: What is the Manchester Homelessness Partnership?
 whosInvolved:
   body: >-
@@ -29,7 +30,8 @@ whosInvolved:
 
 
     Department for Work and Pensions; Greater Manchester Combined Authority,
-    Greater Manchester Police; Manchester City Council; NHS; Univeristies...
+    Greater Manchester Police; Manchester City Council (MCC); MCC Rough Sleeper
+    Team; MCC Work and Skills team; NHS; Univeristies...
 
 
     Allied London; CityCo.; The Cooperative; Enterprise Holdings; Laing
@@ -37,42 +39,50 @@ whosInvolved:
     Zero; Uber; Vallance Dental Centre...
 
 
-    And many more local organisations and individuals!
+    And many more local organisations and fantastic individuals!
   heading: Who's involved?
   subHeading: >-
     The Manchester Homelessness Partnership currently works with the following
     organisations:
 getInvolved:
-  body: 'There are many ways in which you can become part of the Partnership:'
+  body: >-
+    There are many ways in which you can contribute to the aims of the
+    Partnership:
   heading: 'How to get involved:'
 howDoesItWork:
   body: >-
     At the heart of the Partnership are the [actions
-    groups](https://charter.streetsupport.net/join-action-group/), who each
-    tackle a key challenge that people experiencing homelessness regularly face.
-    Each group includes people who have experienced this issue personally, as
-    well as those who have relevant skills or professional expertise.
+    groups](https://charter.streetsupport.net/join-action-group/), which each
+    tackle a key challenge that people who are homeless may regularly face. Each
+    group includes people who have personally experienced the topic in question,
+    as well as those who have relevant skills and roles. The action groups cover
+    a variety of subjects, including; Prevention, Migration & Destitution,
+    Employment, Mental Health, Evening Services, Unsupported Temporary
+    Accomodation, and the experiences of Women and Young People.
 
 
-    There is also a [partnership board
-    ](https://charter.streetsupport.net/partnership-board/)that has been set up
-    to use its collective influence to remove systemic blockages. The driving
-    group provides support for the action groups, and protects the aims and
-    values of the charter.
+    We also have a [partnership
+    board,](https://charter.streetsupport.net/partnership-board/) chaired by
+    Bishop David, where different perspectives from our city are represented.
+    This includes, of course, people who have personal insight into
+    homelessness. The board meets quarterly to use its collective influence to
+    remove any systemic blockages that our network are facing. Finally, we have
+    a driving group that maintains momentum, provides support for the action
+    groups, and protects the aims and values of the charter.
 
 
-    [Street Support Network](https://streetsupport.net) has supported the
-    charter mission from the start, and are part of the driving group. Their
-    role is to facilitate the network, to help connect people, and to
+    The 'glue' of the Manchester Homelessness Partnership is [Street Support
+    Network](https://streetsupport.net) which has supported the charter mission
+    from the start. Their team host the two roles and they are part of the
+    driving group. They facilitate the network, help connect people, and
     communicate between the partnership and out to others in the city through
-    their website, apps and other channels. You can [join the mhp mailing list
-    to receive updates](http://eepurl.com/dmbeQX).
+    their website, app and other channels.
   heading: How does it work?
   image: assets/images/how-it-works.png
 charter:
   body: >-
-    The Manchester Homelessness Charter unites people, organisations and
-    businesses with one shared vision and set of values.
+    The Manchester Homelessness Charter was launchde in May 2016unites people,
+    organisations and businesses with one shared vision and set of values.
 
 
     The Charter has been co-created by people experiencing homelessness, and
