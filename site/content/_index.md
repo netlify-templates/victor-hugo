@@ -26,14 +26,14 @@ whosInvolved:
     **Charity & voluntary:** Albert Kennedy Trust, Barnabus, Big Change Mcr,
     Boaz Trust, Booth Centre, Coffee4Craig, Cornerstones, Centrepoint North,
     DePaul, Greater Together Manchester, Inspiring Change Manchester, Justlife,
-    Lifeshare, MASH, Mustard Tree, On The Out, Reach Out To The Community,
+    Lifeshare, MASH, Mustard Tree, On the Out, Reach Out to the Community,
     Shelter, The Men's Room...
 
 
     **Statutory:** Department for Work and Pensions, Greater Manchester Combined
     Authority, Greater Manchester Police, Manchester City Council (MCC), MCC
     Rough Sleeper Team, MCC Work and Skills team, NHS, Urban Village Medical
-    Practice, Univeristies...
+    Practice, Universities... 
 
 
     **Business:** Allied London, CityCo., The Cooperative, Enterprise Holdings,
@@ -66,7 +66,7 @@ howDoesItWork:
     board,](https://charter.streetsupport.net/partnership-board/) which brings
     together representatives from different perspectives of our city. The board
     meets quarterly to use its collective influence to remove any systemic
-    blockages that our network are facing. The driving group maintains momentum,
+    blockages that our network is facing. The driving group maintains momentum,
     supports the action groups, and protects the aims and values of the charter.
 
 
