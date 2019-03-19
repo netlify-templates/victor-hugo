@@ -97,7 +97,7 @@ charter:
     Make a pledge to detail how you can contribute to ending homelessness.
     Pledges can be individual or organisational, big or small - we like the ones
     that happen!
-  heading: Manchester Homelessness Charter
+  heading: 'Manchester Homelessness Charter:'
 whatElse:
   body: >-
     As a Partnership, we have developed the following documentation which may be
@@ -127,6 +127,6 @@ whatElse:
     homelessness, and to support the people who are currently experiencing
     homelessness. You can find out more about support services and how you can
     help through [Street Support Network](http://streetsupport.net).
-  heading: What else is happening in Manchester around homelessness?
+  heading: What else is happening?
 ---
 
