@@ -72,9 +72,9 @@ howDoesItWork:
 
     The 'glue' of the Partnership is [Street Support
     Network](https://streetsupport.net), which has supported the charter mission
-    from the start. Their team host the two paid Partnership roles and they are
+    from the start. Street Suuport host the two paid Partnership roles and are
     part of the driving group. They facilitate the network, help connect people,
-    and communicate between the partnership and out to others in the city
+    and communicate between the Partnership and out to others in the city
     through their website, app and other channels.
 
 
