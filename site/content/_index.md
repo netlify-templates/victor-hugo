@@ -101,8 +101,8 @@ charter:
   heading: 'Manchester Homelessness Charter:'
 whatElse:
   body: >-
-    As a Partnership, we have developed the following documentation which may be
-    of use to you:
+    As a Partnership, we have developed the following mat which may be of use to
+    you:
 
 
     * [Co-produced City Strategy
