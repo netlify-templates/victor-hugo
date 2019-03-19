@@ -90,7 +90,7 @@ charter:
 
 
     _How_ we do what we do is very important to us. If you would like to be part
-    of the Manchester Homelessness Partnership, please read the charter and
+    of the Manchester Homelessness Partnership, please read the Charter and
     commit to working in line with our values. 
 
 
