@@ -73,10 +73,10 @@ howDoesItWork:
 
     The 'glue' of the Partnership is [Street Support
     Network](https://streetsupport.net), which has supported the charter mission
-    from the start. Street Support N host the two paid Partnership roles and are
-    part of the driving group. They facilitate the network, help connect people,
-    and communicate between the Partnership and out to others in the city
-    through their website, app and other channels.
+    from the start. Street Support Network host the two paid Partnership roles
+    and are part of the driving group. They facilitate the network, help connect
+    people, and communicate between the Partnership and out to others in the
+    city through their website, app and other channels.
 
 
     We are also linked into the Greater Manchester Homelessness Action Network.
