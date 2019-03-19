@@ -10,16 +10,16 @@ whatIs:
     Manchester.
 
 
-    The charter was launched in May 2016. It unites many people with personal
+    The Charter was launched in May 2016. It unites many people with personal
     experience of homelessness with organisations from different sectors, to
     co-produce solutions together. Over 100 people who have personal insight
     into homelessness have been involved in the Partnership, many of whom
-    co-wrote the charter.
+    co-wrote the Charter.
 
 
-    Nearly all of our work is done voluntarily but in April 2018 we welcomed two
-    full time roles to support the Partnership and promote the values of the
-    charter.
+    The Charter and Partnership were created with no resource. In April 2018 we
+    welcomed two full time roles, but nearly all of our work is still done
+    voluntarily by the fantastic people in our network.
   heading: What is the Manchester Homelessness Partnership?
 whosInvolved:
   body: >-
