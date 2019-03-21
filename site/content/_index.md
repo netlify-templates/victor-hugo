@@ -32,8 +32,8 @@ whosInvolved:
 
     **Statutory:** Department for Work and Pensions, Greater Manchester Combined
     Authority, Greater Manchester Police, Manchester City Council (MCC), MCC
-    Rough Sleeper Team, MCC Work and Skills team, NHS, Urban Village Medical
-    Practice, Universities... 
+    Rough Sleeper Team, MCC Work and Skills team, NHS, Riverside Housing, Urban
+    Village Medical Practice, Universities... 
 
 
     **Business:** Allied London, CityCo., The Cooperative, Enterprise Holdings,
