@@ -17,9 +17,9 @@ whatIs:
     co-wrote the Charter.
 
 
-    The Charter and Partnership were created with no resource. In April 2018 we
-    welcomed two full time roles, but nearly all of our work is still done
-    voluntarily by the fantastic people in our network.
+    The Charter and Partnership were created with no financial resource. In
+    April 2018 we welcomed two full time roles, but nearly all of our work is
+    still done voluntarily by the fantastic people in our network.
   heading: What is the Manchester Homelessness Partnership?
 whosInvolved:
   body: >-
