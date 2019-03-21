@@ -31,6 +31,7 @@ collections:
           - {label: "Get Involved", name: "getInvolved", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: "string"},
               {label: "Body", name: "body", widget: "markdown"},
+              {label: "Image", name: "image", widget: "image"}
             ]}
           - {label: "How Does it Work?", name: "howDoesItWork", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: "string"},

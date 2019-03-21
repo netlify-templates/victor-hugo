@@ -51,10 +51,7 @@
     </div>
   </section>
 
-  <section class="block block--plain block--left-image">
-    <div class="block__image">
-      <img class="block__image-image" src="/assets/images/action-group.jpg" />
-    </div>
+  <section class="block block--plain block--left-image block--left-image-is-bg"  style="background-image: url({{ .Params.getInvolved.image }})">
     <div class="container">
       {{ if ( isset .Params.getInvolved "heading" ) }}
       <header class="block__header">

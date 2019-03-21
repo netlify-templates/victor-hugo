@@ -52,6 +52,7 @@ getInvolved:
     There are many ways in which you can contribute to the aims of the
     Partnership:
   heading: 'How to get involved:'
+  image: /assets/uploads/womens-action-group.jpg
 howDoesItWork:
   body: >-
     At the heart of the Partnership are the [actions
