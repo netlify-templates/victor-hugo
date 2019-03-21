@@ -101,8 +101,8 @@ charter:
   heading: 'Manchester Homelessness Charter:'
 whatElse:
   body: >-
-    As a Partnership, we have developed the following mat which may be of use to
-    you:
+    As a Partnership, we have developed the following materials which may be of
+    use to you:
 
 
     * [Co-produced City Strategy
@@ -126,8 +126,8 @@ whatElse:
 
     There is so much fantastic work happening in our city to try and end
     homelessness, and to support the people who are currently experiencing
-    homelessness. You can find out more about support services and how you can
-    help through [Street Support Network](http://streetsupport.net).
+    homelessness. You can find out more about Manchester support services and
+    how you can help through [Street Support Network](http://streetsupport.net).
   heading: What else is happening?
 ---
 
