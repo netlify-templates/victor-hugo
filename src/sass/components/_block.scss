@@ -31,8 +31,8 @@
     background-size: 200% auto;
 
     @include mq($from: tablet) {
-    background-size: 100% auto;
-  }
+      background-size: 100% auto;
+    }
 
     @include mq($from: desktop) {
       padding-top: 0px;
@@ -44,11 +44,11 @@
 
   &--right-image {
     background-repeat: no-repeat;
-    padding-bottom: 280px;
+    padding-bottom: 220px;
     margin-bottom: $padding * 5;
 
     background-position: center bottom;
-    background-size: 95%;
+    background-size: auto 200px;
 
     @include mq($from: desktop) {
       background-position: 500px;
@@ -130,16 +130,21 @@
   }
 
   &--bg {
-    height: 260px;
+    padding-top: 160px;
     display: flex;
     align-items: flex-end;
     box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
     background-color: black;
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 150%;
+
+    @include mq($from: tablet) {
+      background-size: 100%;
+    }
 
     @include mq($from: desktop) {
+      padding-top: 0px;
       height: 400px;
       background-size: 1024px 400px;
     }
