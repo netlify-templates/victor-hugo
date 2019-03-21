@@ -28,6 +28,12 @@
     }
   }
 
+  .block--left-image-is-bg & {
+    @include mq($from: desktop) {
+      margin-left: 0px;
+    }
+  }
+
   .block--right-image & {
     @include mq($from: desktop) {
       margin-right: 50%;

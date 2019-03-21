@@ -26,19 +26,9 @@
   }
 
   &--left-image-is-bg {
-    padding-top: 200px;
-    background-position: top;
-    background-size: 200% auto;
-
-    @include mq($from: tablet) {
-      background-size: 100% auto;
-    }
-
     @include mq($from: desktop) {
-      padding-top: 0px;
-      background-repeat: no-repeat;
-      background-position-x: 0;
-      background-size: auto 100%;
+      display: flex;
+      align-items: stretch;
     }
   }
 
@@ -126,6 +116,20 @@
 
     @include mq($from: desktop) {
       padding-bottom: 0;
+    }
+  }
+
+  .block--left-image-is-bg & {
+    height: 200px;
+    background-size: 100%;
+    background-position-y: 35%;
+
+    @include mq($from: desktop) {
+      height: auto;
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: 0px;
+      background-size: auto 100%;
     }
   }
 

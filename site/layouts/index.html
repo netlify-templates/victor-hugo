@@ -51,7 +51,10 @@
     </div>
   </section>
 
-  <section class="block block--plain block--left-image block--left-image-is-bg"  style="background-image: url({{ .Params.getInvolved.image }})">
+  <section class="block block--plain block--left-image block--left-image-is-bg">
+    <div class="block__image" style="background-image: url({{ .Params.getInvolved.image }})">
+
+    </div>
     <div class="container">
       {{ if ( isset .Params.getInvolved "heading" ) }}
       <header class="block__header">
