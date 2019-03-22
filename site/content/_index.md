@@ -36,10 +36,10 @@ whosInvolved:
     Village Medical Practice, Universities... 
 
 
-    **Business:** Allied London, CityCo., The Cooperative, Enterprise Holdings,
-    Laing O'Rourke, Lendlease, Lloyds Banking Group, McLaren Construction,
-    Minute Works, Network Rail, Octopus Ink, Pro Manchester, Space Zero, Uber,
-    Vallance Dental Centre...
+    **Business:** Allied London, Bruntwood, CityCo., The Cooperative, Enterprise
+    Holdings, Laing O'Rourke, Lendlease, Lloyds Banking Group, McLaren
+    Construction, Minute Works, Network Rail, Octopus Ink, Pro Manchester, Space
+    Zero, Uber, Vallance Dental Centre...
 
 
     And many more local organisations and fantastic individuals!
