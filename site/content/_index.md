@@ -38,8 +38,8 @@ whosInvolved:
 
     **Business:** Allied London, Bruntwood, CityCo., The Cooperative, Enterprise
     Holdings, Federation House, Laing O'Rourke, Lendlease, Lloyds Banking Group,
-    McLaren Construction, Minute Works, Network Rail, Octopus Ink, Pro
-    Manchester, Space Zero, Uber, Vallance Dental Centre...
+    McLaren Construction, Minute Works, Network Rail, Octopus Ink,
+    pro-manchester, Space Zero, Uber, Vallance Dental Centre...
 
 
     And many more local organisations and fantastic individuals!
