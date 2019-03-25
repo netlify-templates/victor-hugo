@@ -23,7 +23,7 @@ whatIs:
   heading: What is the Manchester Homelessness Partnership?
 whosInvolved:
   body: >-
-    **Charity & voluntary:** Albert Kennedy Trust, Barnabus, Big Change Mcr,
+    **Charity & voluntary:** Albert Kennedy Trust, Barnabus, Big Change MCR,
     Boaz Trust, Booth Centre, Coffee4Craig, Cornerstones, Centrepoint North,
     DePaul, Greater Together Manchester, Inspiring Change Manchester, Justlife,
     Lifeshare, MASH, Mustard Tree, On the Out, Reach Out to the Community,
@@ -42,7 +42,7 @@ whosInvolved:
     pro-manchester, Space Zero, Uber, Vallance Dental Centre...
 
 
-    And many more local organisations and fantastic individuals!
+    And many more local organisations and dedicated individuals!
   heading: Who's involved?
   subHeading: >-
     The Manchester Homelessness Partnership currently works with the following
