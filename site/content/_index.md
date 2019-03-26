@@ -73,11 +73,11 @@ howDoesItWork:
 
 
     The 'glue' of the Partnership is [Street Support
-    Network](https://streetsupport.net), which has supported the charter mission
+    Network](https://streetsupport.net); which has supported the charter mission
     from the start. Street Support Network host the two paid Partnership roles
     and are part of the driving group. They facilitate the network, help connect
     people, and communicate between the Partnership and out to others in the
-    city through their website, app and other channels.
+    city through their website, App and other channels.
 
 
     We are also linked into the Greater Manchester Homelessness Action Network.
@@ -112,11 +112,11 @@ whatElse:
     * [Language and Terminology
     Guideline](https://drive.google.com/file/d/1TQstUhsjFTopKJ4-2RZLYT8YY4py9EUj/view?usp=sharing)
 
-    * ['Sharing Spaces' Guideline for
+    * ['Storefront engagement' Guide for
     Businesses](https://drive.google.com/file/d/0B6iUM9jFzvw5ckZkZkNCcGtrajBDZmhOeXlwQ01QMFdpcXRj/view)
 
-    * [Learnings from the
-    MHP](https://drive.google.com/file/d/1ULsfTOathk8onEKa84lfKZn-2yQm_MCF/view?usp=sharing)
+    * [Learnings from the MHP
+    report](https://drive.google.com/file/d/1ULsfTOathk8onEKa84lfKZn-2yQm_MCF/view?usp=sharing)
 
     * [Best Practice Guideline for Voluntary
     Groups](https://drive.google.com/file/d/1eFjixAg4bSPa-Fq5BJ0u8cFg2I7Uoidl/view?usp=sharing) 
@@ -127,7 +127,7 @@ whatElse:
 
     There is so much fantastic work happening in our city to try and end
     homelessness, and to support the people who are currently experiencing
-    homelessness. You can find out more about Manchester support services and
+    homelessness. You can find out more about support services in Manchester and
     how you can help through [Street Support Network](http://streetsupport.net).
   heading: What else is happening?
 ---
