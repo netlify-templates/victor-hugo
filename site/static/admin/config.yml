@@ -46,3 +46,14 @@ collections:
               {label: "Heading", name: "heading", widget: "string"},
               {label: "Body", name: "body", widget: "markdown"}
             ]}
+      - file: "site/content/contact-us/_index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "object", fields: [
+              {label: "Image", name: "image", widget: "image"},
+              {label: "Heading", name: "heading", widget: "string"},
+              {label: "Sub-Heading", name: "subHeading", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"}
+            ]}
