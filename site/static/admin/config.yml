@@ -52,8 +52,8 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Content", name: "content", widget: "object", fields: [
-              {label: "Image", name: "image", widget: "image"},
+              {label: "Image", name: "image", widget: "image", required: false},
               {label: "Heading", name: "heading", widget: "string"},
-              {label: "Sub-Heading", name: "subHeading", widget: "string"},
+              {label: "Sub-Heading", name: "subHeading", widget: "string", required: false},
               {label: "Body", name: "body", widget: "markdown"}
             ]}
