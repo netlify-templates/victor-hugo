@@ -1,6 +1,11 @@
 {{ define "main" }}
 
-<h1>Sorry, not found!</h1>
-<h3><a href="{{ "/" | relURL }}">Return to Home</a></h3>
+<section class="block">
+  <div class="container">
+    <h1>Sorry, not found!</h1>
+    <p>The page you were looking for does not exist!</p>
+    <a href="{{ "/" | relURL }}">Return to Home</a>
+  </div>
+</section>
 
 {{ end }}
