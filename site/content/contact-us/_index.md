@@ -1,5 +1,6 @@
 ---
 title: Get in Touch
+layout: single
 content:
   body: >-
     To learn more about the Partnership, and how to get involved, please email

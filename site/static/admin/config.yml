@@ -51,6 +51,7 @@ collections:
         name: "contact"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Template", name: "layout", widget: "hidden"}
           - {label: "Content", name: "content", widget: "object", fields: [
               {label: "Image", name: "image", widget: "image", required: false},
               {label: "Heading", name: "heading", widget: "string"},
