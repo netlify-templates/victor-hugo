@@ -1,193 +1,187 @@
 {{ define "main" }}
-{{ partial "header.html" .Params.header }}
 
-<div id="main">
-  <section class="home-hero" style="background-image: url({{ .Params.hero.image }});">
-    <div class="container">
-      <img class="home-hero__logo" src="/assets/images/mhp-logo.png" width="142" height="157"
-        alt="Manchester Homelessness Partnership logo" />
-      <div class="home-hero__text">
-        <h1 class="home-hero__title">
-          <span class="home-hero__title-first">Manchester</span>
-          <span class="home-hero__title-second">Homelessness Partnership</span>
-        </h1>
-        <p class="home-hero__strap">Co-producing solutions to end homelessness</p>
-      </div>
+<section class="home-hero" style="background-image: url({{ .Params.hero.image }});">
+  <div class="container">
+    <img class="home-hero__logo" src="/assets/images/mhp-logo.png" width="142" height="157"
+      alt="Manchester Homelessness Partnership logo" />
+    <div class="home-hero__text">
+      <h1 class="home-hero__title">
+        <span class="home-hero__title-first">Manchester</span>
+        <span class="home-hero__title-second">Homelessness Partnership</span>
+      </h1>
+      <p class="home-hero__strap">Co-producing solutions to end homelessness</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="block block--popout">
+<section class="block block--popout">
+  <div class="container">
+    <header class="block__header">
+      <h1 class="block__header-title">{{ .Params.whatIs.heading }}</h1>
+      {{ if not (isset .Params.whatIs "subHeading") }}
+      {{ end }}
+    </header>
+    <div class="block__body">
+      {{ $bodyMarkdown := .Params.whatIs.body | markdownify }}
+      {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+      {{ else }}{{ $bodyMarkdown }}{{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block__image block__image--bg" style="background-image: url(/assets/images/streetwise-opera.jpg)">
     <div class="container">
       <header class="block__header">
-        <h1 class="block__header-title">{{ .Params.whatIs.heading }}</h1>
-        {{ if not (isset .Params.whatIs "subHeading") }}
+        <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
+        {{ if not (isset .Params.whosInvolved "subHeading") }}
+        <p class="block__header-sub-title">{{ .Params.whosInvolved.subHeading }}</p>
         {{ end }}
       </header>
-      <div class="block__body">
-        {{ $bodyMarkdown := .Params.whatIs.body | markdownify }}
-        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
-        {{ else }}{{ $bodyMarkdown }}{{ end }}
-      </div>
     </div>
-  </section>
+  </div>
+  <div class="container">
+    <div class="block__body block__body--drop-shadow">
+      {{ $bodyMarkdown := .Params.whosInvolved.body | markdownify }}
+      {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+      {{ else }}{{ $bodyMarkdown }}{{ end }}
+    </div>
+  </div>
+</section>
 
-  <section class="block">
-    <div class="block__image block__image--bg" style="background-image: url(/assets/images/streetwise-opera.jpg)">
-      <div class="container">
-        <header class="block__header">
-          <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
-          {{ if not (isset .Params.whosInvolved "subHeading") }}
-          <p class="block__header-sub-title">{{ .Params.whosInvolved.subHeading }}</p>
-          {{ end }}
-        </header>
-      </div>
-    </div>
-    <div class="container">
-      <div class="block__body block__body--drop-shadow">
-        {{ $bodyMarkdown := .Params.whosInvolved.body | markdownify }}
-        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
-        {{ else }}{{ $bodyMarkdown }}{{ end }}
-      </div>
-    </div>
-  </section>
+<section class="block block--plain block--left-image block--left-image-is-bg">
+  <div class="block__image" style="background-image: url({{ .Params.getInvolved.image }})">
 
-  <section class="block block--plain block--left-image block--left-image-is-bg">
-    <div class="block__image" style="background-image: url({{ .Params.getInvolved.image }})">
+  </div>
+  <div class="container">
+    {{ if ( isset .Params.getInvolved "heading" ) }}
+    <header class="block__header">
+      <h1 class="block__header-title">{{ .Params.getInvolved.heading }}</h1>
+    </header>
+    {{ end }}
+    <div class="block__body">
+      {{ $bodyMarkdown := .Params.getInvolved.body | markdownify }}
+      {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+      {{ else }}{{ $bodyMarkdown }}{{ end }}
 
+      <ul class="icon-links">
+        <li class="icon-links__link icon-links__link">
+          <a href="https://charter.streetsupport.net/join-action-group/">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "clapper-board" ) }}
+            </div>
+            Join an Action Group
+          </a>
+        </li>
+        <li class="icon-links__link icon-links__link">
+          <a href="https://www.linkedin.com/groups/8668257/">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "briefcase" ) }}
+            </div>
+            Join the Business Group
+          </a>
+        </li>
+        <li class="icon-links__link icon-links__link">
+          <a href="https://teamup.com/ksc7ge5aga5pnjddjp">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "calendar" ) }}
+            </div>
+            Find out what's on
+          </a>
+        </li>
+        <li class="icon-links__link icon-links__link">
+          <a href="http://eepurl.com/dmbeQX">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "letter" ) }}
+            </div>
+            Join our mailing list
+          </a>
+        </li>
+        <li class="icon-links__link icon-links__link">
+          <a href="mailto:info@mhp.org.uk">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "pencil" ) }}
+            </div>
+            Contact us
+          </a>
+        </li>
+        <li class="icon-links__link icon-links__link">
+          <a href="https://streetsupport.net/give-help/help/?postcode=M1&type=All">
+            <div class="icon-links__icon-container">
+              {{ partial "icon" (dict "context" . "iconName" "hand" ) }}
+            </div>
+            Donate or volunteer
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="container">
-      {{ if ( isset .Params.getInvolved "heading" ) }}
-      <header class="block__header">
-        <h1 class="block__header-title">{{ .Params.getInvolved.heading }}</h1>
-      </header>
-      {{ end }}
-      <div class="block__body">
-        {{ $bodyMarkdown := .Params.getInvolved.body | markdownify }}
-        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
-        {{ else }}{{ $bodyMarkdown }}{{ end }}
+  </div>
+</section>
 
-        <ul class="icon-links">
-          <li class="icon-links__link icon-links__link">
-            <a href="https://charter.streetsupport.net/join-action-group/">
-              <div class="icon-links__icon-container">
-                {{ partial "icon" (dict "context" . "iconName" "clapper-board" ) }}
-              </div>
-              Join an Action Group
-            </a>
-          </li>
-          <li class="icon-links__link icon-links__link">
-            <a href="https://www.linkedin.com/groups/8668257/">
-              <div class="icon-links__icon-container">
-                {{ partial "icon" (dict "context" . "iconName" "briefcase" ) }}
-              </div>
-              Join the Business Group
-            </a>
-          </li>
-          <li class="icon-links__link icon-links__link">
-            <a href="https://teamup.com/ksc7ge5aga5pnjddjp">
-              <div class="icon-links__icon-container">
-                {{ partial "icon" (dict "context" . "iconName" "calendar" ) }}
-              </div>
-              Find out what's on
-            </a>
-          </li>
-          <li class="icon-links__link icon-links__link">
-            <a href="http://eepurl.com/dmbeQX">
-              <div class="icon-links__icon-container">
-                {{ partial "icon" (dict "context" . "iconName" "letter" ) }}
-              </div>
-              Join our mailing list
-            </a>
-          </li>
-          <li class="icon-links__link icon-links__link">
-            <a href="mailto:info@mhp.org.uk">
-              <div class="icon-links__icon-container">
-                {{ partial "icon" (dict "context" . "iconName" "pencil" ) }}
-              </div>
-              Contact us
-            </a>
-          </li>
-          <li class="icon-links__link icon-links__link">
-            <a href="https://streetsupport.net/give-help/help/?postcode=M1&type=All">
-              <div class="icon-links__icon-container">
-                {{ partial "icon" (dict "context" . "iconName" "hand" ) }}
-              </div>
-              Donate or volunteer
-            </a>
-          </li>
-        </ul>
-      </div>
+<section class="block block--plain block--left-image block--white block--image-last">
+  <div class="block__image">
+    <img class="block__image-image block__image-image--bordered" src="/assets/images/how-it-works.png" />
+  </div>
+  <div class="container">
+    <header class="block__header">
+      <h1 class="block__header-title">{{ .Params.howDoesItWork.heading }}</h1>
+    </header>
+    <div class="block__body">
+      {{ $bodyMarkdown := .Params.howDoesItWork.body | markdownify }}
+      {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+      {{ else }}{{ $bodyMarkdown }}{{ end }}
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="block block--plain block--left-image block--white block--image-last">
-    <div class="block__image">
-      <img class="block__image-image block__image-image--bordered" src="/assets/images/how-it-works.png" />
-    </div>
+<section class="block">
+  <div class="block__image block__image--bg" style="background-image: url(/assets/images/charter-launch-1.jpg)">
     <div class="container">
       <header class="block__header">
-        <h1 class="block__header-title">{{ .Params.howDoesItWork.heading }}</h1>
+        <h1 class="block__header-title">{{ .Params.charter.heading }}</h1>
+        {{ if not (isset .Params.charter "subHeading") }}
+        <p class="block__header-sub-title">{{ .Params.charter.subHeading }}</p>
+        {{ end }}
       </header>
-      <div class="block__body">
-        {{ $bodyMarkdown := .Params.howDoesItWork.body | markdownify }}
-        {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
-        {{ else }}{{ $bodyMarkdown }}{{ end }}
-      </div>
     </div>
-  </section>
-
-  <section class="block">
-    <div class="block__image block__image--bg" style="background-image: url(/assets/images/charter-launch-1.jpg)">
-      <div class="container">
-        <header class="block__header">
-          <h1 class="block__header-title">{{ .Params.charter.heading }}</h1>
-          {{ if not (isset .Params.charter "subHeading") }}
-          <p class="block__header-sub-title">{{ .Params.charter.subHeading }}</p>
-          {{ end }}
-        </header>
-      </div>
-    </div>
-    <div class="container">
-      <div class="block__body block__body--drop-shadow">
-        <aside class="block__aside">
-          <img src="/assets/images/charter-small.png" />
-        </aside>
-        <div>
-          {{ $bodyMarkdown := .Params.charter.body | markdownify }}
-          {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
-          {{ else }}{{ $bodyMarkdown }}{{ end }}
-
-          <div class="btns">
-            <a class="btn btn--mhp-green" href="https://charter.streetsupport.net/read-the-charter/">Read Charter</a>
-            <a class="btn btn--mhp-yellow" href="https://charter.streetsupport.net/pledge-your-support/">Pledge</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block block--plain block--right-image block--image-last"
-    style="background-image: url(/assets/images/ssn-on-laptop.png)">
-    <div class="container">
-      <header class="block__header">
-        <h1 class="block__header-title">{{ .Params.whatElse.heading }}</h1>
-      </header>
-      <div class="block__body">
-        {{ $bodyMarkdown := .Params.whatElse.body | markdownify }}
+  </div>
+  <div class="container">
+    <div class="block__body block__body--drop-shadow">
+      <aside class="block__aside">
+        <img src="/assets/images/charter-small.png" />
+      </aside>
+      <div>
+        {{ $bodyMarkdown := .Params.charter.body | markdownify }}
         {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
         {{ else }}{{ $bodyMarkdown }}{{ end }}
 
         <div class="btns">
-          <a class="btn btn--mhp-yellow" href="https://streetsupport.net/find-help">Find Help</a>
-          <a class="btn btn--mhp-yellow" href="https://streetsupport.net/give-help">Give Help</a>
+          <a class="btn btn--mhp-green" href="https://charter.streetsupport.net/read-the-charter/">Read Charter</a>
+          <a class="btn btn--mhp-yellow" href="https://charter.streetsupport.net/pledge-your-support/">Pledge</a>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 
-{{ $footer := .Site.GetPage "_footer.md" }}
-{{ partial "footer.html" (dict "footer" $footer) }}
+<section class="block block--plain block--right-image block--image-last"
+  style="background-image: url(/assets/images/ssn-on-laptop.png)">
+  <div class="container">
+    <header class="block__header">
+      <h1 class="block__header-title">{{ .Params.whatElse.heading }}</h1>
+    </header>
+    <div class="block__body">
+      {{ $bodyMarkdown := .Params.whatElse.body | markdownify }}
+      {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+      {{ else }}{{ $bodyMarkdown }}{{ end }}
+
+      <div class="btns">
+        <a class="btn btn--mhp-yellow" href="https://streetsupport.net/find-help">Find Help</a>
+        <a class="btn btn--mhp-yellow" href="https://streetsupport.net/give-help">Give Help</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script>
   if (window.netlifyIdentity) {
