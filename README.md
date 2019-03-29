@@ -103,3 +103,5 @@ All tasks starting with _build_ set the environment variable to `production` - t
 ## Contributing
 
 Please review the [Issues](issues) for priority features/issues. Please feel free to raise new issues, then submit small PRs for refactoring/other improvements.
+
+Be sure to work in the develop branch, and submit PRs into the develop branch.
