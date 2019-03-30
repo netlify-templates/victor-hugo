@@ -227,8 +227,15 @@ body {
   @extend .mv1;
 }
 
+.blog-post img {
+  @extend .db;
+  @extend .center;
+}
+
 .blog-post img + em {
   @extend .db;
+  @extend .mt2;
+  @extend .tc;
   @extend .f6;
 }
 
