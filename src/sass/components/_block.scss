@@ -73,6 +73,10 @@
       display: block;
     }
   }
+
+  &-last {
+    padding-bottom: $padding * 5
+  }
 }
 
 .block__image {

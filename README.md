@@ -21,6 +21,7 @@ This will take some time and will install all packages necessary to run Victor H
 While developing your website, use:
 
 ```bash
+npm build
 npm start
 ```
 

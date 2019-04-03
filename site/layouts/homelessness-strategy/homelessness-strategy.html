@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js single" lang="en-GB" xmlns:fb="http://ogp.me/ns/fb#">
+{{- partial "head.html" . -}}
+
+<body>
+  {{- partial "header.html" . -}}
+  <main id="main">
+    <section class="block">
+      <div {{ if not (isset .Params.hero "image") }}
+        class="block__image block__image--bg block__image--bg-missing-image" {{ else }}
+        class="block__image block__image--bg" {{ end }} {{ if (isset .Params.hero "image") }}
+        style="background-image: url({{ .Params.hero.image }})" {{ end }}>
+        <div class="container">
+          <header class="block__header">
+            <h1 class="block__header-title">{{ .Params.about.heading }}</h1>
+            {{ if (isset .Params.about "subheading") }}
+            <p class="block__header-sub-title">{{ .Params.about.subHeading }}</p>
+            {{ end }}
+          </header>
+        </div>
+      </div>
+      <div class="container">
+        <div class="block__body block__body--drop-shadow">
+          {{ $bodyMarkdown := .Params.about.body | markdownify }}
+          {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+          {{ else }}{{ $bodyMarkdown }}{{ end }}
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="container">
+        <header class="block__header">
+          <h1 class="block__header-title">{{ .Params.actionPlans.heading }}</h1>
+          {{ if (isset .Params.actionPlans "subheading") }}
+          <p class="block__header-sub-title">{{ .Params.actionPlans.subHeading }}</p>
+          {{ end }}
+        </header>
+      </div>
+      </div>
+      <div class="container">
+        <div class="block__body block__body--drop-shadow">
+          {{ $bodyMarkdown := .Params.actionPlans.body | markdownify }}
+          {{ if not ( strings.Contains $bodyMarkdown "<p>" ) }}<p>{{ $bodyMarkdown }}</p>
+          {{ else }}{{ $bodyMarkdown }}{{ end }}
+        </div>
+      </div>
+    </section>
+    {{ if ((isset .Params.strategyCta "title") (isset .Params.strategyCta "url")) }}
+    <section class="block block-last">
+      <div class="container">
+        <div class="btns">
+          <a class="btn btn--mhp-green" href="{{ .Params.strategyCta.url }}">{{ .Params.strategyCta.title }}</a>
+        </div>
+      </div>
+    </section>
+    {{ else }}{{ $bodyMarkdown }}{{ end }}
+  </main>
+  {{ $footer := .Site.GetPage "_footer.md" }}
+  {{ partial "footer.html" (dict "footer" $footer) }}
+
+  {{ $script := .Site.Data.webpack.main }}
+  {{ with $script.js }}
+  <script src="{{ relURL . }}"></script>
+  {{ end }}
+</body>
+
+</html>
