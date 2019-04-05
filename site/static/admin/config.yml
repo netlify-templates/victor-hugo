@@ -58,3 +58,23 @@ collections:
               {label: "Sub-Heading", name: "subHeading", widget: "string", required: false},
               {label: "Body", name: "body", widget: "markdown"}
             ]}
+      - file: "site/content/homelessness-strategy/_index.md"
+        label: "Homelessness Strategy"
+        name: "homelessness-strategy"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero", name: "hero", widget: "object", fields: [
+              {label: "Image", name: "image", widget: "image"}
+            ]}
+          - {label: "About", name: "about", widget: "object", fields: [
+            {label: "Heading", name: "heading", widget: "string" },
+            {label: "Body", name: "body", widget: "markdown" },
+          ]}
+          - {label: "Action Plans", name: "actionPlans", widget: "object", fields: [
+            {label: "Heading", name: "heading", widget: "string" },
+            {label: "Body", name: "body", widget: "markdown" },
+          ]}
+          - {label: "Strategy Call To Action", name: "strategyCta", widget: "object", fields: [
+            {label: "Title", name: "title", widget: "string"},
+            {label: "Url", name: "url", widget: "string"}
+          ]}
