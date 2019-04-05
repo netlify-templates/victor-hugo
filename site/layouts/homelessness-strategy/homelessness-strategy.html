@@ -27,6 +27,8 @@
         </div>
       </div>
     </section>
+
+    {{ if (isset .Params.actionPlans "body") }}
     <section class="block">
       <div class="container">
         <header class="block__header">
@@ -45,6 +47,8 @@
         </div>
       </div>
     </section>
+    {{ end }}
+
     {{ if ((isset .Params.strategyCta "title") (isset .Params.strategyCta "url")) }}
     <section class="block block-last">
       <div class="container">
@@ -53,7 +57,7 @@
         </div>
       </div>
     </section>
-    {{ else }}{{ $bodyMarkdown }}{{ end }}
+    {{ end }}
   </main>
   {{ $footer := .Site.GetPage "_footer.md" }}
   {{ partial "footer.html" (dict "footer" $footer) }}
