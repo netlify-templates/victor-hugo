@@ -8,7 +8,7 @@
 <meta property="og:title" content="{{.Title}} | {{.Site.Title}}" />
 <meta property="og:description" content="The Manchester Homelessness Partnership unites people with personal experience of homelessness with cross-sector organisations, co-producing solutions to tackle homelessness in Manchester." />
 <meta property="og:image" content="{{.Site.BaseURL}}assets/uploads/opengraph.jpg" />
-<title>{{ $.Site.Title }}</title>
+<title>{{.Title}} | {{ $.Site.Title }}</title>
 
   <link rel="stylesheet" href="https://use.typekit.net/zue4kmg.css" />
   {{ $stylesheet := .Site.Data.webpack.main }}
