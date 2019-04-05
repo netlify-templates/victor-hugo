@@ -18,7 +18,8 @@
   <div class="container">
     <header class="block__header">
       <h1 class="block__header-title">{{ .Params.whatIs.heading }}</h1>
-      {{ if not (isset .Params.whatIs "subheading") }}
+      {{ if (ne .Params.whatIs.subHeading nil) }}
+      <p class="block__header-sub-title">{{ .Params.whatIs.subHeading }}</p>
       {{ end }}
     </header>
     <div class="block__body">
@@ -34,7 +35,7 @@
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.whosInvolved.heading }}</h1>
-        {{ if not (isset .Params.whosInvolved "subheading") }}
+        {{ if (ne .Params.whosInvolved.subHeading nil) }}
         <p class="block__header-sub-title">{{ .Params.whosInvolved.subHeading }}</p>
         {{ end }}
       </header>
@@ -54,7 +55,7 @@
 
   </div>
   <div class="container">
-    {{ if ( isset .Params.getInvolved "heading" ) }}
+    {{ if ( ne .Params.getInvolved.heading nil ) }}
     <header class="block__header">
       <h1 class="block__header-title">{{ .Params.getInvolved.heading }}</h1>
     </header>
@@ -139,7 +140,7 @@
     <div class="container">
       <header class="block__header">
         <h1 class="block__header-title">{{ .Params.charter.heading }}</h1>
-        {{ if not (isset .Params.charter "subheading") }}
+        {{ if (ne .Params.charter.subHeading nil) }}
         <p class="block__header-sub-title">{{ .Params.charter.subHeading }}</p>
         {{ end }}
       </header>

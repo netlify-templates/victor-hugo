@@ -11,6 +11,7 @@ about:
     Each sector has been asked to respond with an action plan to meet this strategy, including the council, health, housing, voluntary sector and businesses.
 actionPlans:
   heading: Action Plans
+  subHeading:
   body:
 strategyCta:
   title: Read the full Strategy document

@@ -7,14 +7,14 @@
   <main id="main">
     <section class="block">
         <div 
-          {{ if not (isset .Params.content "image") }} class="block__image block__image--bg block__image--bg-missing-image"
+          {{ if (eq .Params.content.image nil) }} class="block__image block__image--bg block__image--bg-missing-image"
           {{ else }} class="block__image block__image--bg" {{ end }}
-          {{ if (isset .Params.content "image") }} style="background-image: url({{ .Params.content.image }})" {{ end }}
+          {{ if (ne .Params.content.image nil) }} style="background-image: url({{ .Params.content.image }})" {{ end }}
         >
           <div class="container">
             <header class="block__header">
               <h1 class="block__header-title">{{ .Params.content.heading }}</h1>
-              {{ if (isset .Params.content "subheading") }}
+              {{ if (ne .Params.content.subHeading nil) }}
               <p class="block__header-sub-title">{{ .Params.content.subHeading }}</p>
               {{ end }}
             </header>
