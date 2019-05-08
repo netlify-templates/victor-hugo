@@ -8,6 +8,7 @@ author: Kristen Cudd
 ---
 
 ![Hands Together in a Circle](/blog/hands-in-circle.jpg "Hands Together in a Circle")
+*Image by [jarmoluk](https://pixabay.com/users/jarmoluk-143740/) from [Pixabay](https://pixabay.com).*
 
 A typical elementary math classroom is [comprised of 20+ students](https://economix.blogs.nytimes.com/2009/09/11/class-size-around-the-world/) that have a staggeringly diverse group of needs. No two students come with the same skill set and no two students learn at the same rate or in the same way. Teachers are left to figure out not only where each student sits on their grade level continuum, but how to move each child forward along that line.
 
@@ -24,6 +25,7 @@ Teachers have been instituting adaptive learning in their classrooms for decades
 The problem with individualized teaching? Pulling that off in a classroom environment is improbable at best.
 
 ![Colorful Elementary School Bulletin Boards](/blog/elementary-bulletin-boards.jpg "Colorful Elementary School Bulletin Boards")
+*Image by [shannonmatthew](https://pixabay.com/users/shannonmatthew-419837/) from [Pixabay](https://pixabay.com).*
 
 Assessing and analyzing at the individual level is painstaking and extremely time consuming. Teachers simply do not have the bandwidth to cater lessons and assessments to each student. Working around the clock would be insufficient. Classroom teachers are nothing shy of dedicated and determined heroes but they are not *superhuman*.
 
@@ -46,6 +48,7 @@ For example, in an algebraic thinking unit a student may be asked to solve X + 1
 Bindman explains that what makes adaptive learning technology so effective is that the platform figures out not only what the student has mastered but what they are ready to progress to based on their performance on the various items presented.
 
 ![Schoolchild Listening and Taking Notes](/blog/schoolchild-taking-notes.jpg "Schoolchild Listening and Taking Notes")
+*Image by [ernestoeslava](https://pixabay.com/users/ernestoeslava-6289958/) from [Pixabay](https://pixabay.com).*
 
 ## Key Benefits of Adaptive Learning Technology
 
