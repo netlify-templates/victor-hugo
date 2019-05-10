@@ -27,15 +27,15 @@ The problem with individualized teaching? Pulling that off in a classroom enviro
 ![Colorful Elementary School Bulletin Boards](/blog/elementary-bulletin-boards.jpg "Colorful Elementary School Bulletin Boards")
 *Image by [shannonmatthew](https://pixabay.com/users/shannonmatthew-419837/) from [Pixabay](https://pixabay.com).*
 
-Assessing and analyzing at the individual level is painstaking and extremely time consuming. Teachers simply do not have the bandwidth to cater lessons and assessments to each student. Working around the clock would be insufficient. Classroom teachers are nothing shy of dedicated and determined heroes but they are not *superhuman*.
+Assessing and analyzing at the individual level is painstaking and extremely time consuming. Teachers simply do not have the bandwidth to cater each lesson and assessment to each student. Working around the clock would be insufficient. Classroom teachers are nothing shy of dedicated and determined heroes but they are not *superhuman*.
 
 If they were and could somehow manage the demands of such a massive amount of data, delivering individualized lessons and assessments in a typical elementary classroom would open a large can of classroom management worms. Speaking on behalf of the teachers on the front lines, thanks, but no thanks.
 
-Adaptive learning technology takes what teachers have been doing to the best of their human abilities and throws a little something called artificial intelligence (AI) into the equation. AI aggregates data at an insanely high resolution and caters tasks to the learners that meet them right where they are and then incrementally moves them towards higher level work. AI isn’t limited by human capacity. In this way, it *is* superhuman.
+Adaptive learning technology takes what teachers have been doing to the best of their human abilities and throws artificial intelligence (AI) into the equation. AI aggregates data at an insanely high resolution and caters tasks to the learners that meet them right where they are and then incrementally moves them towards higher level work. AI isn’t limited by human capacity. In this way, it *is* superhuman.
 
 ## Adaptive Learning Platforms and Math
 
-Adaptive learning technology is more successful in some subject areas than others. Classes in which learning comes from discussions and pontifications, such as philosophy or ethics, do not lend themselves to adaptive learning technology. These are better suited for face-to-face interaction as skill mastery is not a requisite to understanding.
+Adaptive learning technology is more successful in some subject areas than others. Classes in which learning comes from discussions, such as philosophy or ethics, do not lend themselves easily to adaptive learning technology. These are better suited for face-to-face interaction as skill mastery is not a requisite to understanding.
 
 Math, on the other hand, is an ideal subject in which to integrate adaptive learning platforms into the classroom. Chief Data Scientist at the Chinese AI company Yixue, [Dan Bindman, says that math is a natural fit for adaptive learning platforms](https://aibusiness.com/yixue-ai-adaptive-learning/). Mathematics has a structure to it and learning follows along a progression. A student must understand counting before addition, addition before multiplication, grouping before division, and so on.
 
