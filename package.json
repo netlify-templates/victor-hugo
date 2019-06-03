@@ -8,7 +8,7 @@
     "lint": "eslint src",
     "start": "run-p start:**",
     "start:hugo": "hugo -d ../dist -s site -vw",
-    "start:webpack": "webpack-dev-server --config webpack.dev.js",
+    "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
     "preview": "run-p preview:**",
     "preview:hugo": "npm run start:hugo -- -D -F",
     "preview:webpack": "npm run start:webpack",
@@ -17,7 +17,7 @@
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
     "build:hugo": "hugo -d ../dist -s site -v",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js --hot --inline"
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "MIT",
