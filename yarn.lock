@@ -8320,10 +8320,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-webpack-cli@^3.3.6:
-  version "3.3.8"
-  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.3.8.tgz#caeaebcc26f685db1736e5decd3f01aac30123ec"
-  integrity sha512-RANYSXwikSWINjHMd/mtesblNSpjpDLoYTBtP99n1RhXqVI/wxN40Auqy42I7y4xrbmRBoA5Zy5E0JSBD5XRhw==
+webpack-cli@^3.3.9:
+  version "3.3.9"
+  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.3.9.tgz#79c27e71f94b7fe324d594ab64a8e396b9daa91a"
+  integrity sha512-xwnSxWl8nZtBl/AFJCOn9pG7s5CYUYdZxmmukv+fAHLcBIHM36dImfpQg3WfShZXeArkWlf6QRw24Klcsv8a5A==
   dependencies:
     chalk "2.4.2"
     cross-spawn "6.0.5"
@@ -8348,7 +8348,7 @@ webpack-dev-middleware@^3.7.1:
     range-parser "^1.2.1"
     webpack-log "^2.0.0"
 
-webpack-dev-server@^3.8.1:
+webpack-dev-server@^3.7.2:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-3.8.1.tgz#485b64c4aadc23f601e72114b40c1b1fea31d9f1"
   integrity sha512-9F5DnfFA9bsrhpUCAfQic/AXBVHvq+3gQS+x6Zj0yc1fVVE0erKh2MV4IV12TBewuTrYeeTIRwCH9qLMvdNvTw==
