@@ -1,0 +1,60 @@
+,
+{
+    "name": "Enrichment",
+    "games": [
+        {
+            "name": "Minicomputer: Subtraction within 10 (no splitting)",
+            "slug": "minicomputer-subtraction-within-10-no-splitting",
+            "url": "/1st-grade/minicomputer-subtraction-within-10-no-splitting",
+            "image": "mc-sub-1-nsp"
+        },
+        {
+            "name": "Minicomputer: Addition up to 10",
+            "slug": "minicomputer-addition-up-to-10",
+            "url": "/1st-grade/minicomputer-addition-up-to-10",
+            "image": "mc-add-1-ov"
+        },
+        {
+            "name": "Minicomputer: Subtraction within 10 (splitting)",
+            "slug": "minicomputer-subtraction-within-10-splitting",
+            "url": "/1st-grade/minicomputer-subtraction-within-10-splitting",
+            "image": "mc-sub-1-sp"
+        },
+        {
+            "name": "Minicomputer: Represent numbers up to 100 (Dragging)",
+            "slug": "minicomputer-represent-numbers-up-to-100-dragging",
+            "url": "/1st-grade/minicomputer-represent-numbers-up-to-100-dragging",
+            "image": "mc-dr-10"
+        },
+        {
+            "name": "Minicomputer: Represent numbers up to 100 (Typing)",
+            "slug": "minicomputer-represent-numbers-up-to-100-typing",
+            "url": "/1st-grade/minicomputer-represent-numbers-up-to-100-typing",
+            "image": "mc-ty-10"
+        },
+        {
+            "name": "Minicomputer: Subtraction within 100 (splitting tens)",
+            "slug": "minicomputer-subtraction-within-100-splitting-tens",
+            "url": "/1st-grade/minicomputer-subtraction-within-100-splitting-tens",
+            "image": "mc-sub-10-sp"
+        },
+        {
+            "name": "Minicomputer: Addition up to 100 (carrying)",
+            "slug": "minicomputer-addition-up-to-100-carrying",
+            "url": "/1st-grade/minicomputer-addition-up-to-100-carrying",
+            "image": "mc-add-10-ovc"
+        },
+        {
+            "name": "Minicomputer: Addition up to 100 (overlaps)",
+            "slug": "minicomputer-addition-up-to-100-overlaps",
+            "url": "/1st-grade/minicomputer-addition-up-to-100-overlaps",
+            "image": "mc-add-10-ov"
+        },
+        {
+            "name": "Minicomputer: Addition up to 100 (no overlaps)",
+            "slug": "minicomputer-addition-up-to-100-no-overlaps",
+            "url": "/1st-grade/minicomputer-addition-up-to-100-no-overlaps",
+            "image": "mc-add-10-nov"
+        }
+    ]
+}

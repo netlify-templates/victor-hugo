@@ -1,5 +1,5 @@
 +++
-airtableid = "recg5r9PDcjdDbXDb"
+airtableid = "undefined"
 title = "Compare two 3-digit numbers up to 1000 | MathBRIX"
 pagetitle = "Compare two 3-digit numbers up to 1000"
 description = "In this quick module, kids explore greater than, less than relationships and equivalence by comparing two 3-digit numbers within 1000. Play free now!"

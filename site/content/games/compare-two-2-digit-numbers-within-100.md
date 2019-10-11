@@ -1,5 +1,5 @@
 +++
-airtableid = "rec6Hfimpunsnm6Zn"
+airtableid = "undefined"
 title = "Compare two 2-digit numbers within 100 | MathBRIX"
 pagetitle = "Compare two 2-digit numbers within 100"
 description = "In this rapid fire game, children compare two 2-digit numbers within 100 and and determine if a number is greater than, less than, or equal to a second number."

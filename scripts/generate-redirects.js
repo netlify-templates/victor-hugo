@@ -27,6 +27,7 @@ const writeRedirects = async function() {
       '/game-based-learning': '/',
       '/executive-functioning-skills': '/',
       '/minicomputer': '/',
+      '/1st-grade/minicomputer-addition-up-to-100-carrying': '/games',
       '/login-options': 'https://help.mathbrix.com/article/6-login-options'
     },
     games.reduce(function(acc, cur) {
@@ -52,7 +53,7 @@ const writeRedirects = async function() {
 
 const _getOldGameURL = function(game) {
   const gradeSlug = slugify(getGrade(game));
-  const gameSlug = slugify(game.title);
+  const gameSlug = slugify(game.game);
   const categorySlug = slugify(game.category);
   return `/${GAMES_ROOT}/${gradeSlug}/${categorySlug}/${gameSlug}`;
 }

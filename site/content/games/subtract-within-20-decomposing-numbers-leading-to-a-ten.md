@@ -1,5 +1,5 @@
 +++
-airtableid = "recE3UwhCSh1Ek0b5"
+airtableid = "undefined"
 title = "Subtract within 20 by making 10 | MathBRIX"
 pagetitle = "Subtract within 20 (decomposing numbers leading to a ten)"
 description = "In this activity, students learn to subtract within 20 by decomposing both sides of the number sentence. Play online or get the app free!"

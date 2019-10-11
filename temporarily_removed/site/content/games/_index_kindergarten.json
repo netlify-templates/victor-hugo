@@ -1,0 +1,18 @@
+,
+{
+    "name": "Enrichment",
+    "games": [
+        {
+            "name": "Minicomputer: Represent numbers up to 10 (dragging)",
+            "slug": "minicomputer-represent-numbers-up-to-10-dragging",
+            "url": "/kindergarten/minicomputer-represent-numbers-up-to-10-dragging",
+            "image": "mc-dr-1"
+        },
+        {
+            "name": "Minicomputer: Represent numbers up to 10 (typing)",
+            "slug": "minicomputer-represent-numbers-up-to-10-typing",
+            "url": "/kindergarten/minicomputer-represent-numbers-up-to-10-typing",
+            "image": "mc-ty-1"
+        }
+    ]
+}

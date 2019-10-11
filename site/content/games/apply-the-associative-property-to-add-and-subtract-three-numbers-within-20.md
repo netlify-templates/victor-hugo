@@ -1,5 +1,5 @@
 +++
-airtableid = "recu3U3dgPR8vuZDG"
+airtableid = "undefined"
 title = "Use the associative property to add and subtract | MathBRIX"
 pagetitle = "Apply the associative property to add and subtract three numbers within 20"
 description = "In this multi-step exercise, students discover how to add three numbers within 20 by applying the associative property of addition. Play free online now!"

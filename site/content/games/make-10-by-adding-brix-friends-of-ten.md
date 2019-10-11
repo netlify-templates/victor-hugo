@@ -1,5 +1,5 @@
 +++
-airtableid = "recB0FzwSfZzmBOsv"
+airtableid = "undefined"
 title = "Make 10 by adding brix (friends of ten) | MathBRIX"
 pagetitle = "Make 10 by adding brix (friends of ten)"
 description = "This exercise helps children quickly recognize numbers that add up to 10, an important number in many operations. Play online or get the app free!"
