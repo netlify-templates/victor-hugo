@@ -1,5 +1,5 @@
 +++
-airtableid = "rec8JYUNMXLBlxLN7"
+airtableid = "undefined"
 title = "Compare two number sentences using addition | MathBRIX"
 pagetitle = "Compare two number sentences (addition only)"
 description = "In this fast-paced activity, children visually compare sets of brix to decide if two addition sentences are equal. Play online or get the app free!"

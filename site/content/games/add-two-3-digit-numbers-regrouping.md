@@ -1,5 +1,5 @@
 +++
-airtableid = "recqhdV3GsdbTA1lo"
+airtableid = "undefined"
 title = "Add two 3-digit numbers by carrying | MathBRIX"
 pagetitle = "Add two 3-digit numbers (regrouping)"
 description = "In this module, children learn to add complex expressions by adding up the 1's, 10's and 100's separately, regrouping if any place value reaches 10."

@@ -6,16 +6,16 @@
                 "name": "Counting",
                 "games": [
                     {
-                        "name": "Count to 5 with objects (random arrangement)",
-                        "slug": "count-to-5-with-objects-random-arrangement",
-                        "url": "/kindergarten/count-to-5-with-objects-random-arrangement",
-                        "image": "count-obj-rng-upto-5"
-                    },
-                    {
                         "name": "Count to 5 with objects (random arrangement, typing)",
                         "slug": "count-to-5-with-objects-random-arrangement-typing",
                         "url": "/kindergarten/count-to-5-with-objects-random-arrangement-typing",
                         "image": "count-obj-rng-upto-5-typing"
+                    },
+                    {
+                        "name": "Count to 5 with objects (random arrangement)",
+                        "slug": "count-to-5-with-objects-random-arrangement",
+                        "url": "/kindergarten/count-to-5-with-objects-random-arrangement",
+                        "image": "count-obj-rng-upto-5"
                     }
                 ]
             },
@@ -68,16 +68,16 @@
                 "name": "Classification",
                 "games": [
                     {
-                        "name": "Sorting by color and value with Venn Diagrams",
-                        "slug": "sorting-by-color-and-value-with-venn-diagrams",
-                        "url": "/kindergarten/sorting-by-color-and-value-with-venn-diagrams",
-                        "image": "colors-vs-brix"
-                    },
-                    {
                         "name": "Sorting numerals and blocks with Venn diagrams",
                         "slug": "sorting-numerals-and-blocks-with-venn-diagrams",
                         "url": "/kindergarten/sorting-numerals-and-blocks-with-venn-diagrams",
                         "image": "num-vs-brix"
+                    },
+                    {
+                        "name": "Sorting by color and value with Venn Diagrams",
+                        "slug": "sorting-by-color-and-value-with-venn-diagrams",
+                        "url": "/kindergarten/sorting-by-color-and-value-with-venn-diagrams",
+                        "image": "colors-vs-brix"
                     }
                 ]
             },
@@ -85,10 +85,22 @@
                 "name": "Operations and Algebraic Thinking",
                 "games": [
                     {
+                        "name": "Make 5 by adding brix (friends of five)",
+                        "slug": "make-5-by-adding-brix-friends-of-five",
+                        "url": "/kindergarten/make-5-by-adding-brix-friends-of-five",
+                        "image": "fill-blank-with-given-within-5"
+                    },
+                    {
                         "name": "Basic addition within 5 using brix (known sum)",
                         "slug": "basic-addition-within-5-using-brix-known-sum",
                         "url": "/kindergarten/basic-addition-within-5-using-brix-known-sum",
                         "image": "add-within-5-pre"
+                    },
+                    {
+                        "name": "Make 10 by adding brix (friends of ten)",
+                        "slug": "make-10-by-adding-brix-friends-of-ten",
+                        "url": "/kindergarten/make-10-by-adding-brix-friends-of-ten",
+                        "image": "fill-blank-with-given-within-10"
                     },
                     {
                         "name": "Basic addition up to 5 using brix",
@@ -97,34 +109,22 @@
                         "image": "add-within-5"
                     },
                     {
-                        "name": "Basic addition up to 10 using brix",
-                        "slug": "basic-addition-up-to-10-using-brix",
-                        "url": "/kindergarten/basic-addition-up-to-10-using-brix",
-                        "image": "add-within-10"
-                    },
-                    {
                         "name": "Basic subtraction within 5 using brix (scales)",
                         "slug": "basic-subtraction-within-5-using-brix-scales",
                         "url": "/kindergarten/basic-subtraction-within-5-using-brix-scales",
                         "image": "sub-within-5"
                     },
                     {
+                        "name": "Basic addition up to 10 using brix",
+                        "slug": "basic-addition-up-to-10-using-brix",
+                        "url": "/kindergarten/basic-addition-up-to-10-using-brix",
+                        "image": "add-within-10"
+                    },
+                    {
                         "name": "Basic subtraction within 10 using brix (scales)",
                         "slug": "basic-subtraction-within-10-using-brix-scales",
                         "url": "/kindergarten/basic-subtraction-within-10-using-brix-scales",
                         "image": "sub-within-10"
-                    },
-                    {
-                        "name": "Make 5 by adding brix (friends of five)",
-                        "slug": "make-5-by-adding-brix-friends-of-five",
-                        "url": "/kindergarten/make-5-by-adding-brix-friends-of-five",
-                        "image": "fill-blank-with-given-within-5"
-                    },
-                    {
-                        "name": "Make 10 by adding brix (friends of ten)",
-                        "slug": "make-10-by-adding-brix-friends-of-ten",
-                        "url": "/kindergarten/make-10-by-adding-brix-friends-of-ten",
-                        "image": "fill-blank-with-given-within-10"
                     },
                     {
                         "name": "Add and subtract fluently within 5 using brix",
@@ -142,23 +142,6 @@
                         "slug": "grouping-circle-10-ones-and-find-the-remainder",
                         "url": "/kindergarten/grouping-circle-10-ones-and-find-the-remainder",
                         "image": "recognize-10-and-leftovers"
-                    }
-                ]
-            },
-            {
-                "name": "Enrichment",
-                "games": [
-                    {
-                        "name": "Minicomputer: Represent numbers up to 10 (typing)",
-                        "slug": "minicomputer-represent-numbers-up-to-10-typing",
-                        "url": "/kindergarten/minicomputer-represent-numbers-up-to-10-typing",
-                        "image": "mc-ty-1"
-                    },
-                    {
-                        "name": "Minicomputer: Represent numbers up to 10 (dragging)",
-                        "slug": "minicomputer-represent-numbers-up-to-10-dragging",
-                        "url": "/kindergarten/minicomputer-represent-numbers-up-to-10-dragging",
-                        "image": "mc-dr-1"
                     }
                 ]
             }
@@ -188,28 +171,28 @@
                 "name": "Comparison",
                 "games": [
                     {
-                        "name": "Compare a number to a number sentence (addition only)",
-                        "slug": "compare-a-number-to-a-number-sentence-addition-only",
-                        "url": "/1st-grade/compare-a-number-to-a-number-sentence-addition-only",
-                        "image": "true-false-1side-add"
-                    },
-                    {
                         "name": "Compare a number to a number sentence (subtraction only)",
                         "slug": "compare-a-number-to-a-number-sentence-subtraction-only",
                         "url": "/1st-grade/compare-a-number-to-a-number-sentence-subtraction-only",
                         "image": "true-false-1side-sub"
                     },
                     {
-                        "name": "Compare two number sentences (addition only)",
-                        "slug": "compare-two-number-sentences-addition-only",
-                        "url": "/1st-grade/compare-two-number-sentences-addition-only",
-                        "image": "true-false-2side-add"
+                        "name": "Compare a number to a number sentence (addition only)",
+                        "slug": "compare-a-number-to-a-number-sentence-addition-only",
+                        "url": "/1st-grade/compare-a-number-to-a-number-sentence-addition-only",
+                        "image": "true-false-1side-add"
                     },
                     {
                         "name": "Compare two 2-digit numbers within 100",
                         "slug": "compare-two-2-digit-numbers-within-100",
                         "url": "/1st-grade/compare-two-2-digit-numbers-within-100",
                         "image": "compare-two-digit-numbers"
+                    },
+                    {
+                        "name": "Compare two number sentences (addition only)",
+                        "slug": "compare-two-number-sentences-addition-only",
+                        "url": "/1st-grade/compare-two-number-sentences-addition-only",
+                        "image": "true-false-2side-add"
                     },
                     {
                         "name": "Compare two number sentences (addition and subtraction)",
@@ -223,22 +206,16 @@
                 "name": "Operations and Algebraic Thinking",
                 "games": [
                     {
-                        "name": "Forward, Backward: Subtraction as an unknown addend problem within 10",
-                        "slug": "forward-backward-subtraction-as-an-unknown-addend-problem-within-10",
-                        "url": "/1st-grade/forward-backward-subtraction-as-an-unknown-addend-problem-within-10",
-                        "image": "unknown-addend-10"
-                    },
-                    {
-                        "name": "Add and subtract within 10 with brix (unknowns anywhere)",
-                        "slug": "add-and-subtract-within-10-with-brix-unknowns-anywhere",
-                        "url": "/1st-grade/add-and-subtract-within-10-with-brix-unknowns-anywhere",
-                        "image": "add-sub-within-10-unknowns-anywhere"
-                    },
-                    {
                         "name": "Forward, Backward: Commutative property of addition",
                         "slug": "forward-backward-commutative-property-of-addition",
                         "url": "/1st-grade/forward-backward-commutative-property-of-addition",
                         "image": "commutative-in-20-2-numbers-alt"
+                    },
+                    {
+                        "name": "Add and subtract fluently within 10 using brix",
+                        "slug": "add-and-subtract-fluently-within-10-using-brix",
+                        "url": "/1st-grade/add-and-subtract-fluently-within-10-using-brix",
+                        "image": "fluency-in-10"
                     },
                     {
                         "name": "Add and subtract within 20 using brix (typing)",
@@ -247,10 +224,10 @@
                         "image": "fill-blank"
                     },
                     {
-                        "name": "Add and subtract within 20 with brix (unknowns anywhere, typing)",
-                        "slug": "add-and-subtract-within-20-with-brix-unknowns-anywhere-typing",
-                        "url": "/1st-grade/add-and-subtract-within-20-with-brix-unknowns-anywhere-typing",
-                        "image": "add-sub-within-20-unknowns-anywhere"
+                        "name": "Add and subtract within 10 with brix (unknowns anywhere)",
+                        "slug": "add-and-subtract-within-10-with-brix-unknowns-anywhere",
+                        "url": "/1st-grade/add-and-subtract-within-10-with-brix-unknowns-anywhere",
+                        "image": "add-sub-within-10-unknowns-anywhere"
                     },
                     {
                         "name": "Forward, Backward: Subtraction as an unknown addend problem within 20",
@@ -265,6 +242,12 @@
                         "image": "associative-in-20-3-numbers"
                     },
                     {
+                        "name": "Forward, Backward: Subtraction as an unknown addend problem within 10",
+                        "slug": "forward-backward-subtraction-as-an-unknown-addend-problem-within-10",
+                        "url": "/1st-grade/forward-backward-subtraction-as-an-unknown-addend-problem-within-10",
+                        "image": "unknown-addend-10"
+                    },
+                    {
                         "name": "Add within 20 (decomposing numbers leading to a ten)",
                         "slug": "add-within-20-decomposing-numbers-leading-to-a-ten",
                         "url": "/1st-grade/add-within-20-decomposing-numbers-leading-to-a-ten",
@@ -277,12 +260,6 @@
                         "image": "commutative-in-20-2-numbers"
                     },
                     {
-                        "name": "Add and subtract fluently within 10 using brix",
-                        "slug": "add-and-subtract-fluently-within-10-using-brix",
-                        "url": "/1st-grade/add-and-subtract-fluently-within-10-using-brix",
-                        "image": "fluency-in-10"
-                    },
-                    {
                         "name": "Add and subtract within 20 (decomposing numbers leading to a ten)",
                         "slug": "add-and-subtract-within-20-decomposing-numbers-leading-to-a-ten",
                         "url": "/1st-grade/add-and-subtract-within-20-decomposing-numbers-leading-to-a-ten",
@@ -293,6 +270,12 @@
                         "slug": "subtract-within-20-decomposing-numbers-leading-to-a-ten",
                         "url": "/1st-grade/subtract-within-20-decomposing-numbers-leading-to-a-ten",
                         "image": "sub-within-20-3-numbers-decomposing"
+                    },
+                    {
+                        "name": "Add and subtract within 20 with brix (unknowns anywhere, typing)",
+                        "slug": "add-and-subtract-within-20-with-brix-unknowns-anywhere-typing",
+                        "url": "/1st-grade/add-and-subtract-within-20-with-brix-unknowns-anywhere-typing",
+                        "image": "add-sub-within-20-unknowns-anywhere"
                     }
                 ]
             },
@@ -318,75 +301,16 @@
                         "image": "tens-recognition"
                     },
                     {
-                        "name": "Add 1's and 10's within 100",
-                        "slug": "add-1s-and-10s-within-100",
-                        "url": "/1st-grade/add-1s-and-10s-within-100",
-                        "image": "fill-blank-hundred"
-                    },
-                    {
                         "name": "Subtract 1's and 10's within 100",
                         "slug": "subtract-1s-and-10s-within-100",
                         "url": "/1st-grade/subtract-1s-and-10s-within-100",
                         "image": "subtract-mult-of-10"
-                    }
-                ]
-            },
-            {
-                "name": "Enrichment",
-                "games": [
-                    {
-                        "name": "Minicomputer: Addition up to 10",
-                        "slug": "minicomputer-addition-up-to-10",
-                        "url": "/1st-grade/minicomputer-addition-up-to-10",
-                        "image": "mc-add-1-ov"
                     },
                     {
-                        "name": "Minicomputer: Subtraction within 10 (no splitting)",
-                        "slug": "minicomputer-subtraction-within-10-no-splitting",
-                        "url": "/1st-grade/minicomputer-subtraction-within-10-no-splitting",
-                        "image": "mc-sub-1-nsp"
-                    },
-                    {
-                        "name": "Minicomputer: Subtraction within 10 (splitting)",
-                        "slug": "minicomputer-subtraction-within-10-splitting",
-                        "url": "/1st-grade/minicomputer-subtraction-within-10-splitting",
-                        "image": "mc-sub-1-sp"
-                    },
-                    {
-                        "name": "Minicomputer: Represent numbers up to 100 (Typing)",
-                        "slug": "minicomputer-represent-numbers-up-to-100-typing",
-                        "url": "/1st-grade/minicomputer-represent-numbers-up-to-100-typing",
-                        "image": "mc-ty-10"
-                    },
-                    {
-                        "name": "Minicomputer: Represent numbers up to 100 (Dragging)",
-                        "slug": "minicomputer-represent-numbers-up-to-100-dragging",
-                        "url": "/1st-grade/minicomputer-represent-numbers-up-to-100-dragging",
-                        "image": "mc-dr-10"
-                    },
-                    {
-                        "name": "Minicomputer: Addition up to 100 (no overlaps)",
-                        "slug": "minicomputer-addition-up-to-100-no-overlaps",
-                        "url": "/1st-grade/minicomputer-addition-up-to-100-no-overlaps",
-                        "image": "mc-add-10-nov"
-                    },
-                    {
-                        "name": "Minicomputer: Addition up to 100 (overlaps)",
-                        "slug": "minicomputer-addition-up-to-100-overlaps",
-                        "url": "/1st-grade/minicomputer-addition-up-to-100-overlaps",
-                        "image": "mc-add-10-ov"
-                    },
-                    {
-                        "name": "Minicomputer: Addition up to 100 (carrying)",
-                        "slug": "minicomputer-addition-up-to-100-carrying",
-                        "url": "/1st-grade/minicomputer-addition-up-to-100-carrying",
-                        "image": "mc-add-10-ovc"
-                    },
-                    {
-                        "name": "Minicomputer: Subtraction within 100 (splitting tens)",
-                        "slug": "minicomputer-subtraction-within-100-splitting-tens",
-                        "url": "/1st-grade/minicomputer-subtraction-within-100-splitting-tens",
-                        "image": "mc-sub-10-sp"
+                        "name": "Add 1's and 10's within 100",
+                        "slug": "add-1s-and-10s-within-100",
+                        "url": "/1st-grade/add-1s-and-10s-within-100",
+                        "image": "fill-blank-hundred"
                     }
                 ]
             }
@@ -416,10 +340,10 @@
                         "image": "add-arrays-up-to-5x5"
                     },
                     {
-                        "name": "Add and subtract fluently within 20 using brix",
-                        "slug": "add-and-subtract-fluently-within-20-using-brix",
-                        "url": "/2nd-grade/add-and-subtract-fluently-within-20-using-brix",
-                        "image": "fluency-in-20"
+                        "name": "Express an even number as two equal addends",
+                        "slug": "express-an-even-number-as-two-equal-addends",
+                        "url": "/2nd-grade/express-an-even-number-as-two-equal-addends",
+                        "image": "even-num-split"
                     },
                     {
                         "name": "Add and subtract within 100 with brix (unknowns anywhere)",
@@ -434,10 +358,10 @@
                         "image": "odd-or-even-20"
                     },
                     {
-                        "name": "Express an even number as two equal addends",
-                        "slug": "express-an-even-number-as-two-equal-addends",
-                        "url": "/2nd-grade/express-an-even-number-as-two-equal-addends",
-                        "image": "even-num-split"
+                        "name": "Add and subtract fluently within 20 using brix",
+                        "slug": "add-and-subtract-fluently-within-20-using-brix",
+                        "url": "/2nd-grade/add-and-subtract-fluently-within-20-using-brix",
+                        "image": "fluency-in-20"
                     },
                     {
                         "name": "Add and subtract fluently within 100 using brix",
@@ -451,10 +375,16 @@
                 "name": "Place Value",
                 "games": [
                     {
-                        "name": "Grouping: Make a 100 by circling",
-                        "slug": "grouping-make-a-100-by-circling",
-                        "url": "/2nd-grade/grouping-make-a-100-by-circling",
-                        "image": "hundred-bundle-tens"
+                        "name": "Represent numbers within 1000 using brix",
+                        "slug": "represent-numbers-within-1000-using-brix",
+                        "url": "/2nd-grade/represent-numbers-within-1000-using-brix",
+                        "image": "read-and-write-1000"
+                    },
+                    {
+                        "name": "Add four 2-digit numbers (regrouping)",
+                        "slug": "add-four-2-digit-numbers-regrouping",
+                        "url": "/2nd-grade/add-four-2-digit-numbers-regrouping",
+                        "image": "add-four-2-digit-num-regroup"
                     },
                     {
                         "name": "Brix and Base 10: Numbers 100 to 900 are made up of a number of 100's",
@@ -463,34 +393,10 @@
                         "image": "hundreds-recognition"
                     },
                     {
-                        "name": "Represent numbers within 1000 using brix",
-                        "slug": "represent-numbers-within-1000-using-brix",
-                        "url": "/2nd-grade/represent-numbers-within-1000-using-brix",
-                        "image": "read-and-write-1000"
-                    },
-                    {
-                        "name": "Stairsteps: Complete the pattern by adding or subtracting by 10's, within 1000",
-                        "slug": "stairsteps-complete-the-pattern-by-adding-or-subtracting-by-10s-within-1000",
-                        "url": "/2nd-grade/stairsteps-complete-the-pattern-by-adding-or-subtracting-by-10s-within-1000",
-                        "image": "count-1000-by-10"
-                    },
-                    {
-                        "name": "Add four 2-digit numbers (no regrouping)",
-                        "slug": "add-four-2-digit-numbers-no-regrouping",
-                        "url": "/2nd-grade/add-four-2-digit-numbers-no-regrouping",
-                        "image": "add-four-2-digit-num-no-regroup"
-                    },
-                    {
-                        "name": "Stairsteps: Complete the pattern by adding or subtracting by 5's, within 1000",
-                        "slug": "stairsteps-complete-the-pattern-by-adding-or-subtracting-by-5s-within-1000",
-                        "url": "/2nd-grade/stairsteps-complete-the-pattern-by-adding-or-subtracting-by-5s-within-1000",
-                        "image": "count-1000-by-5"
-                    },
-                    {
-                        "name": "Add four 2-digit numbers (regrouping)",
-                        "slug": "add-four-2-digit-numbers-regrouping",
-                        "url": "/2nd-grade/add-four-2-digit-numbers-regrouping",
-                        "image": "add-four-2-digit-num-regroup"
+                        "name": "Add two 3-digit numbers (no regrouping)",
+                        "slug": "add-two-3-digit-numbers-no-regrouping",
+                        "url": "/2nd-grade/add-two-3-digit-numbers-no-regrouping",
+                        "image": "add-two-3-digit-num-no-regroup"
                     },
                     {
                         "name": "Stairsteps: Complete the pattern by adding or subtracting by 100's, within 1000",
@@ -505,10 +411,16 @@
                         "image": "sub-two-3-digit-num-regroup"
                     },
                     {
-                        "name": "Add two 3-digit numbers (no regrouping)",
-                        "slug": "add-two-3-digit-numbers-no-regrouping",
-                        "url": "/2nd-grade/add-two-3-digit-numbers-no-regrouping",
-                        "image": "add-two-3-digit-num-no-regroup"
+                        "name": "Grouping: Make a 100 by circling",
+                        "slug": "grouping-make-a-100-by-circling",
+                        "url": "/2nd-grade/grouping-make-a-100-by-circling",
+                        "image": "hundred-bundle-tens"
+                    },
+                    {
+                        "name": "Add four 2-digit numbers (no regrouping)",
+                        "slug": "add-four-2-digit-numbers-no-regrouping",
+                        "url": "/2nd-grade/add-four-2-digit-numbers-no-regrouping",
+                        "image": "add-four-2-digit-num-no-regroup"
                     },
                     {
                         "name": "Add two 3-digit numbers (regrouping)",
@@ -517,10 +429,22 @@
                         "image": "add-two-3-digit-num-regroup"
                     },
                     {
+                        "name": "Stairsteps: Complete the pattern by adding or subtracting by 5's, within 1000",
+                        "slug": "stairsteps-complete-the-pattern-by-adding-or-subtracting-by-5s-within-1000",
+                        "url": "/2nd-grade/stairsteps-complete-the-pattern-by-adding-or-subtracting-by-5s-within-1000",
+                        "image": "count-1000-by-5"
+                    },
+                    {
                         "name": "Subtract two 3-digit numbers (no regrouping)",
                         "slug": "subtract-two-3-digit-numbers-no-regrouping",
                         "url": "/2nd-grade/subtract-two-3-digit-numbers-no-regrouping",
                         "image": "sub-two-3-digit-num-no-regroup"
+                    },
+                    {
+                        "name": "Stairsteps: Complete the pattern by adding or subtracting by 10's, within 1000",
+                        "slug": "stairsteps-complete-the-pattern-by-adding-or-subtracting-by-10s-within-1000",
+                        "url": "/2nd-grade/stairsteps-complete-the-pattern-by-adding-or-subtracting-by-10s-within-1000",
+                        "image": "count-1000-by-10"
                     }
                 ]
             }

@@ -1,5 +1,5 @@
 +++
-airtableid = "recJ3sSYRwVDP0FRE"
+airtableid = "undefined"
 title = "Represent numbers within 1000 | MathBRIX"
 pagetitle = "Represent numbers within 1000 using brix"
 description = "In this exercise, students build numbers up to 1000, using 3-dimensional brix to visualize 1's, 10's, and 100's. Play online or get the app free!"

@@ -1,5 +1,5 @@
 +++
-airtableid = "rechwnlqXVpq7lGd5"
+airtableid = "undefined"
 title = "Count by 1's and 2's within 10 | MathBRIX"
 pagetitle = "Stairsteps: Complete the pattern by adding or subtracting by 1's and 2's, within 10"
 description = "In this fun exercise, kids learn to skip count by 1's and 2's within 10 and recognize patterns in a series of numbers. Play free online now!"

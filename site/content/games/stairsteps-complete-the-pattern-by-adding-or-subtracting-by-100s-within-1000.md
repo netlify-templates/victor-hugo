@@ -1,5 +1,5 @@
 +++
-airtableid = "recLGKpzDSQmGNTGi"
+airtableid = "undefined"
 title = "Add and subtract by 100's within 1000 | MathBRIX"
 pagetitle = "Stairsteps: Complete the pattern by adding or subtracting by 100's, within 1000"
 description = "In this activity, children learn to skip count by 100's and recognize patterns in a series of numbers. Play online or get the app free!"
