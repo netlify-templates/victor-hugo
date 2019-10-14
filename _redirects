@@ -4,8 +4,19 @@
 /game-based-learning                                               /
 /executive-functioning-skills                                      /
 /minicomputer                                                      /
-/1st-grade/minicomputer-addition-up-to-100-carrying                /games
 /login-options                                                     https://help.mathbrix.com/article/6-login-options
+/enrichment                                                        /games
+/1st-grade/minicomputer-addition-up-to-100-carrying                /games
+/1st-grade/minicomputer-addition-up-to-100-overlaps                /games
+/kindergarten/minicomputer-represent-numbers-up-to-10-typing       /games
+/1st-grade/minicomputer-addition-up-to-100-no-overlaps             /games
+/1st-grade/minicomputer-addition-up-to-10                          /games
+/1st-grade/minicomputer-subtraction-within-10-splitting            /games
+/kindergarten/minicomputer-represent-numbers-up-to-10-dragging     /games
+/1st-grade/minicomputer-represent-numbers-up-to-100-dragging       /games
+/1st-grade/minicomputer-subtraction-within-100-splitting-tens      /games
+/1st-grade/minicomputer-subtraction-within-10-no-splitting         /games
+/1st-grade/minicomputer-represent-numbers-up-to-100-typing         /games
 /games/kindergarten/counting/counting                              /kindergarten/count-to-5-with-objects-random-arrangement
 /games/2nd-grade/place-value/brix-master                           /2nd-grade/subtract-two-3-digit-numbers-no-regrouping
 /games/kindergarten/comparison/comparison                          /kindergarten/compare-sets-of-objects-up-to-5
@@ -22,4 +33,3 @@
 /games/2nd-grade/operations-and-algebraic-thinking/brix-master     /2nd-grade/add-and-subtract-fluently-within-100-using-brix
 /games/1st-grade/enrichment/mini-computer                          /1st-grade/minicomputer-addition-up-to-100-no-overlaps
 /games/2nd-grade/comparison/brix-master                            /2nd-grade/compare-two-3-digit-numbers-up-to-1000
-/test-change                                                              /

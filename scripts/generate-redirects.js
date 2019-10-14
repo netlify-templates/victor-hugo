@@ -27,8 +27,19 @@ const writeRedirects = async function() {
       '/game-based-learning': '/',
       '/executive-functioning-skills': '/',
       '/minicomputer': '/',
+      '/login-options': 'https://help.mathbrix.com/article/6-login-options',
+      '/enrichment': '/games',
       '/1st-grade/minicomputer-addition-up-to-100-carrying': '/games',
-      '/login-options': 'https://help.mathbrix.com/article/6-login-options'
+      '/1st-grade/minicomputer-addition-up-to-100-overlaps': '/games',
+      '/kindergarten/minicomputer-represent-numbers-up-to-10-typing': '/games',
+      '/1st-grade/minicomputer-addition-up-to-100-no-overlaps': '/games',
+      '/1st-grade/minicomputer-addition-up-to-10': '/games',
+      '/1st-grade/minicomputer-subtraction-within-10-splitting': '/games',
+      '/kindergarten/minicomputer-represent-numbers-up-to-10-dragging': '/games',
+      '/1st-grade/minicomputer-represent-numbers-up-to-100-dragging': '/games',
+      '/1st-grade/minicomputer-subtraction-within-100-splitting-tens': '/games',
+      '/1st-grade/minicomputer-subtraction-within-10-no-splitting': '/games',
+      '/1st-grade/minicomputer-represent-numbers-up-to-100-typing': '/games'
     },
     games.reduce(function(acc, cur) {
       acc[_getOldGameURL(cur)] = getGameURL(cur);
