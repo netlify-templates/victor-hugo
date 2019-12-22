@@ -64,6 +64,8 @@
     "natives": "1.1.6"
   },
   "dependencies": {
-    "paper": "^0.12.4"
+    "paper": "^0.12.4",
+    "rbush": "^3.0.1",
+    "rbush-knn": "^2.1.0"
   }
 }

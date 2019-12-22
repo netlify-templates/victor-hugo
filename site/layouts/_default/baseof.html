@@ -22,7 +22,7 @@
 
   <body>
     <!-- the canvas for pretty effects -->
-    <canvas id='c' resize></canvas>
+    <canvas id='c' resize style="z-index: -100;"></canvas>
     <!-- add the header -->
     {{ block "header" . }}
       {{ partial "header" . }}
