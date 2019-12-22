@@ -1,9 +1,26 @@
+# see all configuration settings
+# https://gohugo.io/getting-started/configuration/#all-configuration-settings
+
+# Hostname (and path) to the root, e.g. https://bep.is/
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+
+# Enable Emoji emoticons support for page content; see the Emoji Cheat Sheet.
+# https://www.webfx.com/tools/emoji-cheat-sheet/
+enableEmoji = true
+
+# Enable .GitInfo object for each page (if the Hugo site is versioned by Git).
+# This will then update the Lastmod parameter for each page using the last git
+# commit date for that content file.
+enableGitInfo = true
+
+# Site title.
+title = "Luke Murray"
 
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
+# See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+# The site's language code. It is used in the default RSS template and can be
+# useful for multi-lingual sites.
+languageCode = "en-us"
