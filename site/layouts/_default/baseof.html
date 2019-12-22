@@ -21,6 +21,8 @@
 
 
   <body>
+    <!-- the canvas for pretty effects -->
+    <canvas id='c' resize></canvas>
     <!-- add the header -->
     {{ block "header" . }}
       {{ partial "header" . }}
@@ -38,4 +40,6 @@
       <script src="{{ relURL . }}"></script>
     {{ end }}
   </body>
+
+
 </html>

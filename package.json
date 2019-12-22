@@ -62,5 +62,8 @@
   },
   "resolutions": {
     "natives": "1.1.6"
+  },
+  "dependencies": {
+    "paper": "^0.12.4"
   }
 }
