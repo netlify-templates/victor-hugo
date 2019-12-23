@@ -10,7 +10,7 @@ module.exports = merge(common, {
 
   output: {
     filename: "[name].[hash:5].js",
-    chunkFilename: "[id].[hash:5].css"
+    chunkFilename: "[id].[hash:5].js"
   },
 
   optimization: {
@@ -26,7 +26,9 @@ module.exports = merge(common, {
         chunkFilename: "[id].[hash:5].css"
       }),
 
-      new OptimizeCSSAssetsPlugin({})
+      new OptimizeCSSAssetsPlugin({
+        assetNameRegExp: /\.css$/g
+      })
     ]
   }
 });
