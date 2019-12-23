@@ -1,0 +1,8 @@
+{{ $st := .page }}
+
+<div class="contentContainer">
+    {{ with $st.Title }}<h2>{{ . | markdownify | emojify }}</h2>{{ end }}
+    {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ with $st.Params.AvatarUrl }} <img class="portrait" alt="portrait" src="{{ $st.Params.AvatarUrl }}">  {{ end  }}
+    {{ $st.Content }}
+</div>

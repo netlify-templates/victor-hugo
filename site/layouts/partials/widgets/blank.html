@@ -1,0 +1,7 @@
+{{ $st := .page }}
+
+<div class="contentContainer">
+    {{ with $st.Title }}<h2>{{ . | markdownify | emojify }}</h2>{{ end }}
+    {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ $st.Content }}
+</div>

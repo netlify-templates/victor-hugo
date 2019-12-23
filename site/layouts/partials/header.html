@@ -1,0 +1,23 @@
+<header class="siteHeader">
+    <nav class="siteNav">
+        <h1 class="siteTitle">
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </h1>
+        <ul class="siteSectionList">
+            {{if not .IsHome}}
+                <!-- add link to home page if not on home page -->
+                <li class="siteSectionListItem">
+                    <a href="{{ .Site.BaseURL }}" title="Home">Home</a>
+                </li>
+            {{ end }}
+
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <li class="siteSectionListItem">
+                <a class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}current{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+    <hr class="siteHeaderRule"/>
+</header>

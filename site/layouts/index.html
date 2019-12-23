@@ -1,6 +1,31 @@
 {{ define "main" }}
+<main class="main">
 
-<!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-{{ .Content }}
+    {{ $page := "" }}
+    {{ if .IsHome }}
+        {{ $page = "/home" }}
+    {{ else }}
+        {{ $page = .File.Path }}
+    {{ end }}
+    {{ $headless_bundle := site.GetPage $page }}
+    {{/* Check homepage exists */}}
+    {{ if not $headless_bundle }}
+    {{ errorf "Homepage not found" }}
+    {{ end }}
 
+    {{ range $index, $st := where ( $headless_bundle.Resources.ByType "page" ) ".Params.active" "!=" false }}
+
+        {{/* Fix Hugo's ContentBaseName returning wrong file base name when page section is within a bundle. */}}
+        {{ $hash_id := replace $st.File.ContentBaseName "index" (path.Base (path.Split .Path).Dir) }}
+
+        {{ $widget := or $st.Params.widget "blank" }}
+        {{ $widget_path := printf "widgets/%s.html" $widget }}
+        {{ $widget_args := dict "root" $ "page" $st "hash_id" $hash_id }}
+
+        <section id="{{$hash_id}}" class="homeSection">
+            {{ partial $widget_path $widget_args }}
+        </section>
+
+    {{ end }}
+</main>
 {{ end }}

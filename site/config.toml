@@ -16,6 +16,7 @@ enableGitInfo = true
 # Site title.
 title = "Luke Murray"
 
+
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
@@ -24,3 +25,60 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 # The site's language code. It is used in the default RSS template and can be
 # useful for multi-lingual sites.
 languageCode = "en-us"
+
+[params]
+  author = "Luke Murray"
+
+[menu]
+  [[menu.main]]
+    identifier = "Projects"
+    name = "Projects"
+    title = "Projects"
+    url = "/projects/"
+    weight = -3
+
+  [[menu.main]]
+    identifier = "Posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/posts/"
+    weight = -2
+
+  [[menu.main]]
+    identifier = "Github"
+    name = "Github"
+    title = "Github"
+    url = "https://github.com/lukesmurray"
+    weight = -1
+
+
+# configure markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true 
+      xHTML = false
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 2

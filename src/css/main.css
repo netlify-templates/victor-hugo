@@ -1,7 +1,9 @@
 /*
   You can use import statements to include partials:
  */
-@import 'imports/reset.css';
+@import "imports/normalize.css";
+@import "imports/typebase.css";
+@import "imports/reset.css";
 
 #c {
   width: 100%;
@@ -17,23 +19,14 @@ canvas[resize] {
   height: 100%;
 }
 
-/*
-  Or add your statements here:
- */
+/* the body */
 body {
-  font-size: calc(10px + 1vmin);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   background-color: #282c34;
-  color: white;
+  color: #eeeeee;
 }
 
 a {
@@ -41,6 +34,105 @@ a {
   text-decoration: none;
 }
 
-.content {
-  padding: 0 32px;
+a:hover {
+  text-decoration: underline;
+}
+
+h1 > a:hover, h2 > a:hover {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+/* active menu item */
+a.current {
+  /* text-decoration: underline; */
+  color: #eeeeee;
+}
+
+.siteHeader {
+  flex: 0 1 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+/* nav bar part of header */
+.siteNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* the site title */
+.siteTitle {
+  margin-top: 0;
+  font-size: 2.3rem;
+  line-height: 3rem;
+}
+
+/* menu on right of nav bar */
+.siteSectionList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* menu items on right of nav bar */
+.siteSectionListItem {
+  display: inline;
+}
+
+.siteSectionList > *+* {
+  margin-left: 1rem;
+}
+
+/* hr at bottom of header */
+.siteHeaderRule {
+  width: 100%;
+  border: none;
+  border-top: 1px solid pink;
+}
+
+
+.main {
+  flex: 1 0;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > * + * {
+  margin-top: 1.5rem;
+}
+
+.homeSection {
+  border: 1px solid pink;
+  padding: 1rem;
+}
+
+.contentContainer {
+  box-sizing: content-box;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contentContainer > * + * {
+  margin-top: 1.5rem;
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+
+
+.footer {
+  flex: 0 1 2rem;
 }
