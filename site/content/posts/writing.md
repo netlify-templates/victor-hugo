@@ -101,7 +101,7 @@ Block code "fences"
 Sample text here...
 ```
 
-Syntax highlighting
+Syntax highlighting but also `inline documents`
 
 ``` js
 var foo = function (bar) {
