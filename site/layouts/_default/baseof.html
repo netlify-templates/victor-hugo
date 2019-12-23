@@ -37,7 +37,7 @@
     <!-- add the js output -->
     {{ $script := .Site.Data.webpack.main }}
       {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
+      <script src="{{ relURL . }}" defer async></script>
     {{ end }}
   </body>
 
