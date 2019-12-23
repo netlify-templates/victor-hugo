@@ -12,11 +12,12 @@ const mouseConnectionRadius = 0.1;
 const pointConnectionDistance = Math.pow(mouseConnectionRadius, 2);
 const mousePointConnectionRadius = 0.12;
 const tree = new RBush();
-const numberOfDots = 400;
+const numberOfDots = 1000;
 const dotMaxRadius = 2;
 const dotVelocity = 0.05;
 const lineWidth = 0.5;
 const lineOpacityRange = mouseConnectionRadius;
+const maxLines = 300;
 
 /**
  * Shuffles array in place. ES6 version
@@ -33,7 +34,6 @@ function shuffle(a) {
 // map of lines
 const lineMap = new Map();
 const usedLines = new Map();
-const maxLines = 500;
 let mousePosition;
 let mouseDelta;
 let _lastId = 0;
@@ -111,6 +111,7 @@ class Dot {
     );
     // decrease opacity over time
     this.opacity = Math.max(0, this.opacity - 0.01 - 0.001 * mouseDelta.length);
+    // this.opacity = Math.max(0, this.opacity - 0.01 - 0.0001 * mouseDelta.length);
     this.path.opacity = this.opacity;
     this.path.visible = this.opacity !== 0;
   }
@@ -243,7 +244,7 @@ window.onload = function() {
       return;
     }
 
-    const nearbyDots = shuffle(
+    const nearbyDots = (
       knn(
         tree,
         mousePosition.x,
@@ -252,7 +253,7 @@ window.onload = function() {
         () => true,
         mouseConnectionRadius
       ).map((d) => d.item)
-    );
+    ).reverse();
 
     nearbyDots.forEach((dotFrom) => {
       shuffle(
