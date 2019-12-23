@@ -1,7 +1,7 @@
 import "./css/main.css";
 
 window.onload = () => {
-  const isMobile = (function(a, b) {
+  const isMobile = (function(a) {
     if (
       /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
         a
@@ -10,10 +10,9 @@ window.onload = () => {
         a.substr(0, 4)
       )
     )
-      window.location = b;
+      return true;
   })(
-    navigator.userAgent || navigator.vendor || window.opera,
-    "http://detectmobilebrowser.com/mobile"
+    navigator.userAgent || navigator.vendor || window.opera
   );
 
   // only do animation if not on mobile
