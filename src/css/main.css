@@ -95,6 +95,10 @@ a.current {
   border-top: 1px solid pink;
 }
 
+.main * hr {
+  border-bottom: 1px solid pink;
+  width: 30ch;
+}
 
 .main {
   flex: 1 0;
@@ -108,6 +112,10 @@ a.current {
   margin-top: 1.5rem;
 }
 
+.main.sectionMain {
+  align-items: center;
+}
+
 .homeSection {
   border: 1px solid pink;
   padding: 1rem;
@@ -116,7 +124,9 @@ a.current {
 .sectionSection {
   border-bottom: 1px solid pink;
   padding: 1rem;
+  max-width: 80ch;
 }
+
 
 .contentContainer {
   box-sizing: content-box;
@@ -137,13 +147,12 @@ a.current {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  font-size: .95rem;
-  color: #bdc3c7;
+  color: #acacac;
   margin-top: 0.5rem;
 }
 
-.contentMeta :nth-child(2) {
-  margin-left: 1rem;
+.contentMeta > * {
+  margin-right: 1rem;
 }
 
 .portrait {
@@ -155,4 +164,5 @@ a.current {
 
 .footer {
   flex: 0 1 2rem;
+  color: #acacac;
 }

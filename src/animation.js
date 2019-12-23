@@ -214,8 +214,7 @@ export default function() {
     .map(() => new Dot(paper));
 
   // set the initial mouse position
-  mousePosition = defaultMousePosition();
-  mouseDelta = defaultMouseDelta();
+  resetMouseState();
 
   // on move update the mouse position
   tool.onMouseMove = function(event) {
@@ -230,8 +229,7 @@ export default function() {
   paper.view.onMouseLeave = function(event) {
     // timeout to avoid onMove overwriting
     setTimeout(() => {
-      mousePosition = defaultMousePosition();
-      mouseDelta = defaultMouseDelta();
+      resetMouseState();
     }, 50);
   };
 
@@ -274,6 +272,11 @@ export default function() {
     dots.forEach((d) => d.onFrame(event));
     lineMap.forEach((v) => v.onFrame(event));
   };
+}
+
+function resetMouseState() {
+  mousePosition = defaultMousePosition();
+  mouseDelta = defaultMouseDelta();
 }
 
 function defaultMouseDelta() {
