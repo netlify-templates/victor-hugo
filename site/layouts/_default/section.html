@@ -2,7 +2,24 @@
 <main class="main">
 
 <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-{{ .Content }}
+{{ if .Content }}
+<section class="homeSection">
+    <div class="contentContainer">
+        {{ .Content }}
+    </div>
+</section>
+{{ end }}
+
+{{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+{{ range $paginator.Pages }}
+        <section class="sectionSection">
+            {{ $widget_args := dict "page" . }}
+            {{ partial "widgets/summary.html" $widget_args }}
+        </section>
+{{ end }}
+{{ template "_internal/pagination.html" . }}
 
 </main>
+
+
 {{ end }}

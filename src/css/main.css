@@ -3,6 +3,7 @@
  */
 @import "imports/normalize.css";
 @import "imports/typebase.css";
+@import "imports/pagination.css";
 @import "imports/reset.css";
 
 #c {
@@ -112,6 +113,11 @@ a.current {
   padding: 1rem;
 }
 
+.sectionSection {
+  border-bottom: 1px solid pink;
+  padding: 1rem;
+}
+
 .contentContainer {
   box-sizing: content-box;
   max-width: 60ch;
@@ -124,6 +130,20 @@ a.current {
 
 .contentContainer > * + * {
   margin-top: 1.5rem;
+}
+
+.contentMeta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: .95rem;
+  color: #bdc3c7;
+  margin-top: 0.5rem;
+}
+
+.contentMeta :nth-child(2) {
+  margin-left: 1rem;
 }
 
 .portrait {

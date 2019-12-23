@@ -1,0 +1,25 @@
+{{ $st := .page }}
+
+<div class="contentContainer">
+    {{ with $st.Title }}
+        <h2><a href="{{ $st.RelPermalink }}">{{ $st.Title }}</a></h2>
+    {{ end }}
+    <div class="contentMeta">
+        {{ with $st.PublishDate }} 
+            <p>Published: {{ dateFormat "Mon Jan 2 2006" . }}</p>
+        {{end}}
+        {{ with $st.ReadingTime}} 
+            <p>Reading Time: {{ . }} minutes</p>
+        {{end}}
+        {{ if ne $st.PublishDate $st.Lastmod }}
+            {{ with $st.Lastmod}} 
+                <p>Last Modified: {{ dateFormat "Mon Jan 2 2006" . }}</p>
+            {{end}}
+        {{ end }}
+    </div>
+    {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ with $st.Summary }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ if $st.Truncated }}
+        <a href="{{ $st.RelPermalink }}">Read More…</a>
+    {{ end }}
+</div>
