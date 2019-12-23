@@ -9,10 +9,13 @@ subtitle = ""
 avatarURL = "https://avatars3.githubusercontent.com/u/34020210"
 +++
 
-I'm Luke Murray and currently I'm researching interactive tools to help people
-understand and explain information. I am a Ph.D. candidate working with
-[David Karger](https://en.wikipedia.org/wiki/David_Karger) in the
-[Haystack Group](http://haystack.csail.mit.edu).
+I am a Ph.D. candidate at [MIT CSAIL](https://www.csail.mit.edu/) working
+with [David Karger](https://en.wikipedia.org/wiki/David_Karger) in the
+[Haystack Group](http://haystack.csail.mit.edu). My current research
+interests focus on applying HCI methods to help non programmers understand,
+gain insights from, and explain the data in their lives. Most recently I've
+been building intelligent user interfaces for doctors in the emergency room
+at [BIDMC](https://www.bidmc.org/).
 
 I was previously the undergraduate head of the [Graphics
 Lab](http://cs.brown.edu/research/ptc/#/) at Brown University where I helped
@@ -21,4 +24,8 @@ a Document IDE for knowledge work. I've also spent summers at SpaceX and
 Google where I worked with the database team and
 [DataCommons](http://datacommons.org/) respectively.
 
-In my spare time I like to try weird little projects like writing syntax highlighters for obscure languages and automating everything.
+In my spare time I like to try weird little projects like writing syntax
+highlighters for obscure languages and automating everything. If you want to
+see some more of my work check out my [projects]({{< relref "/projects" >}})
+or [posts]({{< relref "/posts" >}}). If you would like my CV please [reach
+out to me](mailto:{{< param email >}}).

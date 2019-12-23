@@ -28,6 +28,7 @@ languageCode = "en-us"
 
 [params]
   author = "Luke Murray"
+  email = "lsmurray@mit.edu"
 
 [menu]
   [[menu.main]]
