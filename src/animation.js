@@ -5,16 +5,50 @@ import knn from "rbush-knn";
 // settings
 // limit at which points are connected
 // limit at which things are viewed by the mouse
+
+/**
+ * radius in which dots are considered nearby
+ */
 const mouseConnectionRadius = 0.1;
+
+/**
+ * radius from a nearby point to a connection
+ */
 const pointConnectionDistance = Math.pow(mouseConnectionRadius, 2);
-const mousePointConnectionRadius = 0.12;
-const tree = new RBush();
+
+/**
+ * dot opacity fall of due to distance radius
+ */
+const dotOpacityFallOffRadius = 0.12;
+
+/**
+ * maximum opacity for a dot
+ */
+const maxDotOpacity = 0.6;
+
 const numberOfDots = 1000;
+/**
+ * maximum radius of a dot
+ */
 const dotMaxRadius = 2;
-const dotVelocity = 0.05;
+
+/**
+ * maximum velocity of a dot
+ */
+const dotMaxVelocity = 0.05;
+
+/**
+ * width of line strokesj
+ */
 const lineWidth = 0.5;
-const lineOpacityRange = mouseConnectionRadius;
+
+/**
+ * line opacity fall of due to distance radius
+ */
+const lineOpacityFallOffRadius = mouseConnectionRadius;
+
 const maxLines = 300;
+
 
 /**
  * Shuffles array in place. ES6 version
@@ -29,6 +63,7 @@ function shuffle(a) {
 }
 
 // map of lines
+const tree = new RBush();
 const lineMap = new Map();
 const usedLines = new Map();
 let mousePosition;
@@ -49,8 +84,8 @@ class Dot {
     this.radius = Math.random() * dotMaxRadius;
 
     // velocity
-    this.vx = Math.random() * dotVelocity * (Math.random() < 0.5 ? 1 : -1);
-    this.vy = Math.random() * dotVelocity * (Math.random() < 0.5 ? 1 : -1);
+    this.vx = Math.random() * dotMaxVelocity * (Math.random() < 0.5 ? 1 : -1);
+    this.vy = Math.random() * dotMaxVelocity * (Math.random() < 0.5 ? 1 : -1);
 
     // the path to draw
     this.path = paper.Path.Circle(this.center, this.radius);
@@ -103,7 +138,7 @@ class Dot {
   style() {
     // set opacity to 1 in mouse radius
     this.opacity = Math.max(
-      0.6 - this.center.getDistance(mousePosition) / mousePointConnectionRadius,
+      maxDotOpacity - this.center.getDistance(mousePosition) / dotOpacityFallOffRadius,
       this.opacity
     );
     // decrease opacity over time
@@ -181,7 +216,7 @@ class Line {
     );
     this.opacity = Math.max(
       Math.min((this.delta.length * 3) / 4, 4 / 5) -
-        maxDistanceFromMouse / lineOpacityRange,
+        maxDistanceFromMouse / lineOpacityFallOffRadius,
       this.opacity
     );
     this.opacity -= 0.005 * lineLength + 0.001 * this.delta.length;
