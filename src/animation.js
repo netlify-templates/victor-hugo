@@ -9,12 +9,12 @@ import knn from "rbush-knn";
 /**
  * radius in which dots are considered nearby
  */
-const mouseConnectionRadius = 0.1;
+const nearbyDotRadius = 0.1;
 
 /**
- * radius from a nearby point to a connection
+ * maximum radius at which lines can be connected
  */
-const pointConnectionDistance = Math.pow(mouseConnectionRadius, 2);
+const nearbyNearbyDotRadius = Math.pow(nearbyDotRadius, 2);
 
 /**
  * dot opacity fall of due to distance radius
@@ -45,7 +45,7 @@ const lineWidth = 0.5;
 /**
  * line opacity fall of due to distance radius
  */
-const lineOpacityFallOffRadius = mouseConnectionRadius;
+const lineOpacityFallOffRadius = nearbyDotRadius;
 
 const maxLines = 300;
 
@@ -281,7 +281,7 @@ export default function() {
         mousePosition.y,
         Infinity,
         () => true,
-        mouseConnectionRadius
+        nearbyDotRadius
       ).map((d) => d.item)
     ).reverse();
 
@@ -293,7 +293,7 @@ export default function() {
           dotFrom.center.y,
           Infinity,
           () => true,
-          pointConnectionDistance
+          nearbyNearbyDotRadius
         )
           .map((d) => d.item)
           .filter((d) => d.id > dotFrom.id)
