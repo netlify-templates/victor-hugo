@@ -1,0 +1,51 @@
+@import "~modularscale-sass/stylesheets/modularscale";
+
+$modularscale: (
+  base: 12px,
+  ratio: 1.25,
+  400px: (
+    base: 12px,
+    ratio: 1.25
+  ),
+  600px: (
+    base: 14px,
+    ratio: 1.25
+  ),
+  800px: (
+    base: 16px,
+    ratio: 1.25
+  ),
+  900px: (
+    base: 16px,
+    ratio: 1.333
+  ),
+);
+
+html {
+  @include ms-respond(font-size, 0);
+}
+
+h1 {
+  @include ms-respond(font-size, 3);
+}
+
+h2 {
+  @include ms-respond(font-size, 2);
+}
+
+h3 {
+  @include ms-respond(font-size, 1);
+}
+
+h4 {
+  @include ms-respond(font-size, 0);
+}
+
+h5 {
+  @include ms-respond(font-size, -1);
+}
+
+h6 {
+  @include ms-respond(font-size, -2);
+}
+

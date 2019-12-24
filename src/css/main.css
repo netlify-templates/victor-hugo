@@ -5,7 +5,9 @@
 @import "imports/typebase.css";
 @import "imports/pagination.css";
 @import "imports/reset.css";
+@import "imports/fluidTypography.scss";
 
+/* make the canvas fill the available space */
 #c {
   width: 100%;
   height: 100%;
@@ -20,14 +22,17 @@ canvas[resize] {
   height: 100%;
 }
 
-/* the body */
+
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-align: center;
   background-color: #282c34;
   color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * + * {
+  margin-top: 1rem;
 }
 
 a {
@@ -39,23 +44,25 @@ a:hover {
   text-decoration: underline;
 }
 
-h1 > a:hover, h2 > a:hover {
+/* hover looks better without underline for headers */
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover {
   text-decoration: none;
   color: #eeeeee;
 }
 
-/* active menu item */
+/* active menu item in header */
 a.current {
-  /* text-decoration: underline; */
   color: #eeeeee;
 }
 
 .siteHeader {
-  flex: 0 1 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: -0.5rem;
 }
 
 /* nav bar part of header */
@@ -63,13 +70,6 @@ a.current {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-/* the site title */
-.siteTitle {
-  margin-top: 0;
-  font-size: 2.3rem;
-  line-height: 3rem;
 }
 
 /* menu on right of nav bar */
@@ -84,7 +84,7 @@ a.current {
   display: inline;
 }
 
-.siteSectionList > *+* {
+.siteSectionList > * + * {
   margin-left: 1rem;
 }
 
@@ -101,11 +101,12 @@ a.current {
 }
 
 .main {
-  flex: 1 0;
-  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   text-align: left;
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
 }
 
 .main > * + * {
@@ -126,7 +127,6 @@ a.current {
   padding: 1rem;
   max-width: 80ch;
 }
-
 
 .contentContainer {
   box-sizing: content-box;
@@ -161,8 +161,33 @@ a.current {
   height: 10rem;
 }
 
-
 .footer {
-  flex: 0 1 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   color: #acacac;
+  flex-shrink: 0;
+}
+
+/* make the code blocks fill available space */
+.highlight {
+  width: 100%;
+}
+
+/* make the code blocks have nicer padding and borders */
+.highlight > pre {
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* make inline code elements have nice colors */
+code {
+  color: #e73c70;
+  background: #272823;
+}
+
+/* reset the color for code blocsk */
+.highlight > pre > code {
+  color: #eeeeee;
 }

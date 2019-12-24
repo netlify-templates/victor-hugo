@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear in.
 title = "About"
 subtitle = ""
-avatarURL = "https://avatars3.githubusercontent.com/u/34020210"
+# avatarURL = "https://avatars3.githubusercontent.com/u/34020210"
 +++
 
 I am a Ph.D. candidate at [MIT CSAIL](https://www.csail.mit.edu/) working
@@ -27,5 +27,5 @@ Google where I worked with the database team and
 In my spare time I like to try weird little projects like writing syntax
 highlighters for obscure languages and automating everything. If you want to
 see some more of my work check out my [projects]({{< relref "/projects" >}})
-or [posts]({{< relref "/posts" >}}). If you would like my CV please [reach
-out to me](mailto:{{< param email >}}).
+or [posts]({{< relref "/posts" >}}). If you would like to see my CV please
+[reach out to me](mailto:{{< param email >}}).

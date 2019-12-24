@@ -13,27 +13,8 @@ html, body {
   box-sizing: border-box;
 }
 
+/* make images fill available space */
 img {
   max-width: 100%;
   max-height: 100%;
-}
-
-.highlight {
-  width: 100%;
-}
-
-.highlight > pre {
-  border-radius: .5rem;
-  padding: 1rem;
-  margin: 0;
-}
-
-.highlight > pre > code {
-  color: #eeeeee;
-}
-
-code {
-  /* color: #f9690e; */
-  color: #e73c70;
-  background: #272823;
 }
