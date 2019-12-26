@@ -1,0 +1,42 @@
+
+{{ $st := .page }}
+{{ $display := .display  }}
+
+
+<div class="contentContainer">
+    <!-- display a summary -->
+    {{ if eq $display "summary" }}
+        {{ with $st.Title }}
+            <h2><a href="{{ $st.RelPermalink }}">{{ $st.Title }}</a></h2>
+        {{ end }}
+    <!-- display the whole post -->
+    {{ else if eq $display "post" }}
+        {{ with $st.Title }}
+            <h1>{{ $st.Title }}</h1>
+        {{ end }}
+    {{ end }}
+    <!-- meta info about the post -->
+    <div class="contentMeta">
+        {{ with $st.PublishDate }}
+            <p>Published {{ dateFormat "Jan. 2, 2006" . }}</p>
+        {{end}}
+        {{ with $st.ReadingTime}}
+            <p>{{ . }} min. read</p>
+        {{end}}
+        {{ with $st.Lastmod}}
+            {{ if ne (dateFormat "Jan. 2, 2006" $st.PublishDate) (dateFormat "Jan. 2, 2006" .) }}
+                <p>Last updated {{ dateFormat "Jan. 2, 2006" . }}</p>
+            {{ end }}
+        {{end}}
+    </div>
+    <!-- display a summary -->
+    {{ if eq $display "summary" }}
+        {{ with $st.Summary }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+        {{ if $st.Truncated }}
+            <a href="{{ $st.RelPermalink }}">Read More…</a>
+        {{ end }}
+    <!-- display the whole post -->
+    {{ else if eq $display "post" }}
+        {{- $st.Content }}
+    {{ end }}
+</div>

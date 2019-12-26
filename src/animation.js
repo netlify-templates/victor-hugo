@@ -49,6 +49,11 @@ const lineOpacityFallOffRadius = nearbyDotRadius;
 
 const maxLines = 300;
 
+/**
+ * minimum opacity where lines are removed
+ */
+const minLineOpacity = 0.0;
+
 
 /**
  * Shuffles array in place. ES6 version
@@ -221,7 +226,7 @@ class Line {
     );
     this.opacity -= 0.005 * lineLength + 0.001 * this.delta.length;
     this.opacity = Math.max(0, this.opacity);
-    if (this.opacity === 0) {
+    if (this.opacity <= minLineOpacity) {
       this.remove();
     }
     this.path.opacity = this.opacity;

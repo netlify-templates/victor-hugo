@@ -22,7 +22,7 @@
         {{ $widget_path := printf "widgets/%s.html" $widget }}
         {{ $widget_args := dict "root" $ "page" $st "hash_id" $hash_id }}
 
-        <section id="{{$hash_id}}" class="homeSection">
+        <section id="{{$hash_id}}" class="home">
             {{ partial $widget_path $widget_args }}
         </section>
 

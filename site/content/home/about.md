@@ -6,6 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear in.
 title = "About"
 subtitle = ""
+date = 2019-12-23T00:27:41-05:00
 # avatarURL = "https://avatars3.githubusercontent.com/u/34020210"
 +++
 

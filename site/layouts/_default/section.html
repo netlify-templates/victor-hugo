@@ -1,18 +1,18 @@
 {{ define "main" }}
-<main class="main sectionMain">
+<main class="main">
 
 <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-{{ if .Content }}
-<section class="homeSection">
+<section>
     <div class="contentContainer">
+        {{ with .Title }}
+            <h1>{{ . }}</h1>
+        {{ end }}
         {{ .Content }}
     </div>
 </section>
-{{ end }}
 
-{{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-{{ range $paginator.Pages }}
-        <section class="sectionSection">
+{{ range .Paginator.Pages }}
+        <section class="section">
             {{ $widget_args := dict "page" . }}
             {{ partial "widgets/summary.html" $widget_args }}
         </section>

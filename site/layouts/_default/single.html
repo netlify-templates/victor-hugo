@@ -1,9 +1,9 @@
 {{ define "main" }}
-<article class="content">
-  <main class="main">
-    <div class="contentContainer">
-      {{- .Content }}
-    </div>
-  </main>
-</article>
+
+<main class="main">
+<!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+  {{ partial "post.html" (dict "page" . "display" "post" ) }}
+  
+</main>
+
 {{ end }}

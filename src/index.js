@@ -1,4 +1,4 @@
-import "./css/main.css";
+import "./css/main.scss";
 
 window.onload = () => {
   const isMobile = (function(a) {

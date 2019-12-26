@@ -9,9 +9,7 @@
 
 /* make the canvas fill the available space */
 #c {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
 }
@@ -104,32 +102,29 @@ a.current {
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: left;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
 }
 
 .main > * + * {
   margin-top: 1.5rem;
 }
 
-.main.sectionMain {
-  align-items: center;
-}
-
-.homeSection {
+section.home {
   border: 1px solid pink;
   padding: 1rem;
 }
 
-.sectionSection {
+section.section {
   border-bottom: 1px solid pink;
   padding: 1rem;
-  max-width: 80ch;
+  align-self: center;
 }
 
 .contentContainer {
   box-sizing: content-box;
+  width: calc(100vw - 5rem);
   max-width: 60ch;
   margin-left: auto;
   margin-right: auto;
@@ -151,8 +146,13 @@ a.current {
   margin-top: 0.5rem;
 }
 
-.contentMeta > * {
-  margin-right: 1rem;
+.contentMeta p::after {
+  content: '  \00b7   ';
+  white-space: pre;
+}
+
+.contentMeta p:last-child::after {
+  content: ''
 }
 
 .portrait {
