@@ -118,12 +118,12 @@ h4 {
 }
 
 section {
-  .home {
+  &.home {
     border: 1px solid $accent_color;
     padding: 1rem;
   }
 
-  .section {
+  &.section {
     border-bottom: 1px solid $accent_color;
     padding: 1rem;
     align-self: center;
