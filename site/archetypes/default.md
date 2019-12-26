@@ -1,8 +1,13 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
----
++++
+title = "{{ replace .Name "-" " " | title }}"
+# publish date
+date = {{ .Date }}
+# whether or not the post is a draft
+draft = true
+#  Short description of the document (limit to 150 characters)
+# This content *may* be used as a part of search engine results.
+description = ''
++++
 
 # Your Post Title
 

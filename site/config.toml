@@ -2,7 +2,7 @@
 # https://gohugo.io/getting-started/configuration/#all-configuration-settings
 
 # Hostname (and path) to the root, e.g. https://bep.is/
-baseurl = "/"
+baseURL = "/"
 
 # Enable Emoji emoticons support for page content; see the Emoji Cheat Sheet.
 # https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -26,9 +26,19 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 # useful for multi-lingual sites.
 languageCode = "en-us"
 
+# the site's language name
+languageName = "English"
+
+# enable generation of a robots.txt file
+enableRobotsTXT = true
+
 [params]
   author = "Luke Murray"
   email = "lsmurray@mit.edu"
+  #  Short description of the document (limit to 150 characters)
+# This content *may* be used as a part of search engine results.
+  description = 'Luke Murray is a Ph.D. Candidate at MIT CSAIL. His research interest is in building tools to help non programmers organize and gain insights from their data.'
+  hostName = "https://lsmurray.com"
 
 [menu]
   [[menu.main]]
@@ -69,7 +79,7 @@ languageCode = "en-us"
       autoHeadingID = true
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = true 
+      unsafe = true
       xHTML = false
   [markup.highlight]
     codeFences = true

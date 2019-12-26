@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 
-<html>
+<html lang={{ .Site.Language.Lang }} itemscope itemtype="https://schema.org/WebSite">
   <head>
     <!-- basic meta for the site -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      content="width=device-width, initial-scale=1"
     />
+    <!-- Theme Color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#FFC0CB">
+
+    <!-- Short description of the document (limit to 150 characters) -->
+    <!-- This content *may* be used as a part of search engine results. -->
+    <meta name="description" content={{ .Params.Description | default $.Site.Params.Description }}>
+
+    <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+    <meta name="generator" content="hugo">
+
     <!-- sets base url of href elements. ignore unless something breaks -->
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+
     <!-- set the site title -->
-    <title>{{ $.Site.Title }}</title>
+    <title>{{ .Title | default $.Site.Title }}</title>
+
+    <!-- favicons generated from https://favicon.io/favicon-generator/?t=L&ff=Cairo&fs=110&fc=Pink&b=rounded&bc=%23282c34 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- facebook open graph -->
+    <meta property="fb:app_id" content="509136019700811">
+    <meta property="og:url" content="{{ $.Site.Params.hostName }}{{ .Permalink }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ .Title | default $.Site.Title }}">
+     <!-- TODO(lukemurray): convert this image to the page image -->
+    <meta property="og:image" content="{{ $.Site.Params.hostName }}{{ "/android-chrome-512x512.png" | absURL }}">
+    <meta property="og:image:alt" content="Luke Murray Initials">
+    <meta property="og:description" content="{{ .Params.Description | default $.Site.Params.Description }}">
+    <meta property="og:site_name" content="{{ $.Site.Title }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="{{ $.Site.Params.Author }}">
+
+    <!-- twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@lukesmurray">
+    <meta name="twitter:creator" content="@lukesmurray">
+    <meta name="twitter:url" content="{{ $.Site.Params.hostName }}{{ .Permalink }}">
+    <meta name="twitter:title" content="{{ .Title | default $.Site.Title }}">
+    <meta name="twitter:description" content="{{ .Params.Description | default $.Site.Params.Description }}">
+     <!-- TODO(lukemurray): convert this image to the page image -->
+    <meta name="twitter:image" content="{{ $.Site.Params.hostName }}{{ "/android-chrome-512x512.png" | absURL }}">
+    <meta name="twitter:image:alt" content="Luke Murray Initials">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="{{ .Title | default $.Site.Title }}">
+    <meta itemprop="description" content="{{ .Params.Description | default $.Site.Params.Description }}">
+    <meta itemprop="image" content="{{ $.Site.Params.hostName }}{{ "/android-chrome-512x512.png" | absURL }}">
 
     <!--  add the webpack -->
     {{ $stylesheet := .Site.Data.webpack.main }} {{ with $stylesheet.css }}
