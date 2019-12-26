@@ -3,9 +3,14 @@
  */
 @import "imports/normalize.css";
 @import "imports/typebase.css";
-@import "imports/pagination.css";
 @import "imports/reset.css";
 @import "imports/fluidTypography.scss";
+
+$text_color: #eeeeee;
+$accent_color: pink;
+$sub_text_color: #acacac;
+$code_color: #e73c70;
+$background_color: #282c34;
 
 /* make the canvas fill the available space */
 #c {
@@ -20,40 +25,41 @@ canvas[resize] {
   height: 100%;
 }
 
-
 body {
   text-align: center;
-  background-color: #282c34;
-  color: #eeeeee;
+  background-color: $background_color;
+  color: $text_color;
   display: flex;
   flex-direction: column;
-}
 
-body > * + * {
-  margin-top: 1rem;
+  > * + * {
+    margin-top: 1rem;
+  }
 }
 
 a {
-  color: pink;
+  color: $accent_color;
   text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
+  :hover {
+    text-decoration: underline;
+  }
+
+  /* active menu item in header */
+  .current {
+    color: $text_color;
+  }
 }
 
 /* hover looks better without underline for headers */
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover {
-  text-decoration: none;
-  color: #eeeeee;
-}
-
-/* active menu item in header */
-a.current {
-  color: #eeeeee;
+h1,
+h2,
+h3,
+h4 {
+  a:hover {
+    text-decoration: none;
+    color: $text_color;
+  }
 }
 
 .siteHeader {
@@ -75,6 +81,10 @@ a.current {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  > * + * {
+    margin-left: 1rem;
+  }
 }
 
 /* menu items on right of nav bar */
@@ -82,20 +92,11 @@ a.current {
   display: inline;
 }
 
-.siteSectionList > * + * {
-  margin-left: 1rem;
-}
-
 /* hr at bottom of header */
 .siteHeaderRule {
   width: 100%;
   border: none;
-  border-top: 1px solid pink;
-}
-
-.main * hr {
-  border-bottom: 1px solid pink;
-  width: 30ch;
+  border-top: 1px solid $accent_color;
 }
 
 .main {
@@ -105,21 +106,28 @@ a.current {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
+
+  * hr {
+    border-bottom: 1px solid $accent_color;
+    width: 30ch;
+  }
+
+  > * + * {
+    margin-top: 1.5rem;
+  }
 }
 
-.main > * + * {
-  margin-top: 1.5rem;
-}
+section {
+  .home {
+    border: 1px solid $accent_color;
+    padding: 1rem;
+  }
 
-section.home {
-  border: 1px solid pink;
-  padding: 1rem;
-}
-
-section.section {
-  border-bottom: 1px solid pink;
-  padding: 1rem;
-  align-self: center;
+  .section {
+    border-bottom: 1px solid $accent_color;
+    padding: 1rem;
+    align-self: center;
+  }
 }
 
 .contentContainer {
@@ -131,10 +139,10 @@ section.section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
 
-.contentContainer > * + * {
-  margin-top: 1.5rem;
+  > * + * {
+    margin-top: 1.5rem;
+  }
 }
 
 .contentMeta {
@@ -142,17 +150,17 @@ section.section {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  color: #acacac;
+  color: $sub_text_color;
   margin-top: 0.5rem;
-}
 
-.contentMeta p::after {
-  content: '  \00b7   ';
-  white-space: pre;
-}
+  p::after {
+    content: "  \00b7   ";
+    white-space: pre;
+  }
 
-.contentMeta p:last-child::after {
-  content: ''
+  p:last-child::after {
+    content: "";
+  }
 }
 
 .portrait {
@@ -165,29 +173,53 @@ section.section {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  color: #acacac;
+  color: $sub_text_color;
   flex-shrink: 0;
 }
 
 /* make the code blocks fill available space */
 .highlight {
   width: 100%;
-}
 
-/* make the code blocks have nicer padding and borders */
-.highlight > pre {
-  border-radius: .5rem;
-  padding: 1rem;
-  margin: 0;
+  /* make the code blocks have nicer padding and borders */
+  > pre {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0;
+
+    /* reset the color for code blocsk */
+    > code {
+      color: $text_color;
+    }
+  }
 }
 
 /* make inline code elements have nice colors */
 code {
-  color: #e73c70;
+  color: $code_color;
   background: #272823;
 }
 
-/* reset the color for code blocsk */
-.highlight > pre > code {
-  color: #eeeeee;
+.pagination {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  > * + * {
+    margin-left: 1rem;
+  }
+}
+
+.page-item {
+  display: inline;
+
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .active > a {
+    color: $text_color;
+  }
 }
