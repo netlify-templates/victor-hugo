@@ -65,7 +65,7 @@ See [package.json](package.json#L8) for all tasks.
 |  |  |--index.html    // The index page
 |  |--static           // Files in here ends up in the public folder
 |--src                 // Files that will pass through the asset pipeline
-|  |--css              // Webpack will bundle imported css seperately
+|  |--css              // Webpack will bundle imported css separately
 |  |--index.js         // index.js is the webpack entry for your css & js assets
 ```
 
