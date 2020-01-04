@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = {
@@ -28,11 +28,21 @@ module.exports = {
         exclude: /node_modules/,
         query: {cacheDirectory: true}
       },
+
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
-        // use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
-        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === "development",
+            },
+          },
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ]
       }
     ]
   },
