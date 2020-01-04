@@ -14,6 +14,4 @@ The registrar for this website is [hover](https://www.hover.com/). The site is g
 The [victor hugo netlify template](https://github.com/netlify-templates/victor-hugo) lets me use modern es6 javascript which I used to create the
 animation in the background.
 
-
-
-![](/img/2020-01-04-16-20-58.png)
+![Domains](img/2020-01-04-16-20-58.png "The dns records for the site.")
