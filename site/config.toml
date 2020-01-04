@@ -65,6 +65,7 @@ enableRobotsTXT = true
 
 # configure markup
 [markup]
+  defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true

@@ -10,7 +10,7 @@ date = 2019-12-23T00:27:41-05:00
 # avatarURL = "https://avatars3.githubusercontent.com/u/34020210"
 +++
 
-I am a Ph.D. candidate at [MIT CSAIL](https://www.csail.mit.edu/) working
+I am a Ph.D. candidate at [MIT CSAIL](https://www.csail.mit.edu/ "MIT CSAIL") working
 with [David Karger](https://en.wikipedia.org/wiki/David_Karger) in the
 [Haystack Group](http://haystack.csail.mit.edu). My current research
 interests focus on applying HCI methods to help non programmers understand,

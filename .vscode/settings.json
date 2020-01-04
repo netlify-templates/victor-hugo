@@ -4,5 +4,6 @@
     "titleBar.activeBackground": "#3B404D",
     "titleBar.activeForeground": "#FAFAFB"
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "pasteImage.path": "${currentFileDir}/img/"
 }
