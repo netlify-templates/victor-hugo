@@ -26,7 +26,9 @@ module.exports = merge(common, {
         chunkFilename: "[id].[hash:5].css"
       }),
 
-      new OptimizeCSSAssetsPlugin({})
+      new OptimizeCSSAssetsPlugin({
+        assetNameRegExp: /\.optimize\.css$/g,
+      })
     ]
   }
 });
