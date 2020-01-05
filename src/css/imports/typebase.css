@@ -12,7 +12,7 @@ html, body {
 }
 
 /* Copy & Lists */
-p {
+p, figcaption {
   line-height: 1.5rem;
   margin-top: 0;
   margin-bottom: 0;
