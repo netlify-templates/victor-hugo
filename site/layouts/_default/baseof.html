@@ -18,9 +18,6 @@
     <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
     <meta name="generator" content="hugo">
 
-    <!-- sets base url of href elements. ignore unless something breaks -->
-    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-
     <!-- set the site title -->
     <title>{{ .Title | default $.Site.Title }}</title>
 

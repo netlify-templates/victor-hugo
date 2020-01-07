@@ -1,16 +1,1 @@
-{{ $alt := .PlainText | safeHTML }}
-{{ $caption := "" }}
-{{ with .Title }}
-  {{ $caption = . | safeHTML }}
-{{ end }}
-<figure>
-  <a {{ if strings.HasPrefix .Destination "http" }} href="{{ .Destination | safeURL }}" {{ else }} href="{{ (.Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))).RelPermalink }}" {{ end }}>
-    <img
-      {{ if strings.HasPrefix .Destination "http" }} src="{{ .Destination | safeURL }}" {{ else }} src="{{ (.Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))).RelPermalink }}" {{ end }}
-      alt="{{ if $alt }}{{ $alt }}{{ else if $caption }}{{ $caption | markdownify | plainify }}{{ else }}&nbsp;{{ end }}"
-      >
-  </a>
-  {{ with $caption }}
-    <figcaption>{{ . | markdownify }}</figcaption>
-  {{ end }}
-</figure>
+{{ $alt := .PlainText | safeHTML }}{{ $caption := "" }}{{ with .Title }}{{ $caption = . | safeHTML }}{{ end }}<figure><a {{ if strings.HasPrefix .Destination "http" }} href="{{ .Destination | safeURL }}" {{ else }} href="{{ (.Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))).RelPermalink }}" {{ end }}><img {{ if strings.HasPrefix .Destination "http" }} src="{{ .Destination | safeURL }}" {{ else }} src="{{ (.Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))).RelPermalink }}" {{ end }} alt="{{ if $alt }}{{ $alt }}{{ else if $caption }}{{ $caption | markdownify | plainify }}{{ else }}&nbsp;{{ end }}" ></a>{{- with $caption -}}<figcaption>{{- . | markdownify -}}</figcaption>{{- end -}}</figure>

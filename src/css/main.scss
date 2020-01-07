@@ -45,6 +45,10 @@ a {
     text-decoration: underline;
   }
 
+  &.hanchor {
+    visibility: hidden;
+  }
+
   /* active menu item in header */
   .current {
     color: $text_color;
@@ -63,8 +67,12 @@ h4 {
   a:hover {
     text-decoration: none;
     color: $text_color;
+    visibility: visible;
   }
 }
+
+h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
+
 
 .siteHeader {
   margin-left: 1rem;

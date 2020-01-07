@@ -37,6 +37,9 @@
         {{ end }}
     <!-- display the whole post -->
     {{ else if eq $display "post" }}
-        {{- $st.Content }}
+    {{- with $st.Content -}}
+      {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> &#x1f517&#xFE0E;</a> ${3}` | replaceRE `(?m)<p>(<figure>.*</figure>)</p>` "${1}" | safeHTML }}
+    {{- end -}}
+
     {{ end }}
 </div>
