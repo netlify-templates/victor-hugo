@@ -9,7 +9,7 @@
 $text_color: #eeeeee;
 $accent_color: pink;
 $sub_text_color: #acacac;
-$code_color: #e73c70;
+$code_color: #f3620d;
 $background_color: #282c34;
 
 /* make the canvas fill the available space */
@@ -45,6 +45,7 @@ a {
     text-decoration: underline;
   }
 
+  // make header anchors invisible
   &.hanchor {
     visibility: hidden;
   }
@@ -71,7 +72,12 @@ h4 {
   }
 }
 
-h1:hover a, h2:hover a, h3:hover a, h4:hover a { visibility: visible}
+// header anchors show up on hover
+h1:hover a, h2:hover a, h3:hover a, h4:hover a { 
+  &.hanchor {
+    visibility: visible
+  }
+}
 
 
 .siteHeader {
@@ -209,7 +215,6 @@ section {
 /* make inline code elements have nice colors */
 code {
   color: $code_color;
-  background: #272823;
 }
 
 .pagination {
@@ -234,4 +239,14 @@ code {
   .active > a {
     color: $text_color;
   }
+}
+
+// make long lines of code wrap
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }

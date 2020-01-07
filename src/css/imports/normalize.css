@@ -342,6 +342,13 @@ template {
   display: none;
 }
 
+figure {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 /**
    * Add the correct display in IE 10.
    */
