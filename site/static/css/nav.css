@@ -1,0 +1,7 @@
+.bubble {	position: relative;	height: 20px;	width: 900px;	padding: 12px;	overflow: hidden;}
+.bubble li {	float: left;	list-style: none;}
+.bubble li.back {	background: url("../images/bubble.gif") no-repeat right -30px;	width: 9px; height: 30px;	z-index: 8;	position: absolute;}
+.bubble li.back .left {	background: url("../images/bubble.gif") no-repeat top left;	height: 30px;	margin-right: 9px; /* 7px is the width of the rounded shape */}
+.bubble li a {	font: bold 14px arial;	border-bottom: 1px dotted #eee;	text-decoration: none;	color: #fff;	outline: none;	text-align: center;	top: 7px;	text-transform: uppercase;	letter-spacing: 0;	z-index: 10;	display: block;	float: left;	position: relative;	overflow: hidden;	margin: auto 20px;}
+.bubble li a:hover {	color: #7ccc5c;}
+.bubble li a:active, .bubble li a:visited {	border: none;}
