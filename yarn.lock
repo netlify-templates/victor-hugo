@@ -2923,7 +2923,7 @@ eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import@^2.20.1:
+eslint-plugin-import@^2.18.1:
   version "2.20.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.1.tgz#802423196dcb11d9ce8435a5fc02a6d3b46939b3"
   integrity sha512-qQHgFOTjguR+LnYRoToeZWT62XM55MBVXObHM6SKFd1VzDcX/vqT1kAz8ssqigh5eMj8qXcRoXXGZpPP6RfdCw==
@@ -4036,10 +4036,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-hugo-bin@^0.51.0:
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.51.1.tgz#fb8c59af855da3165b9980e2a3df0c8a7eb7804a"
-  integrity sha512-6o//iOwQbhsFrN2b+9WXzR7eqgXkwtwt5kuzZffE/GFvTOAFcmrZc/sKSGPNvf4vwfYBWo/EDrJKVQSPg68Iaw==
+hugo-bin@^0.51.2:
+  version "0.51.2"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.51.2.tgz#ef91b26699573cfa3d3399b83f6b5ae5cd9f7cfe"
+  integrity sha512-5MaIUnqTCI1brLrBu/TA10dxJZuZidDQxIT8o6+NWjxhCUNA0Moy2itMx2/EhefQQW7tM5qFOK2GQ+nUhymN/A==
   dependencies:
     bin-wrapper "^4.1.0"
     pkg-conf "^3.1.0"
