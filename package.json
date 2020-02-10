@@ -56,7 +56,7 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2",
+    "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.1.4",
     "whatwg-fetch": "^3.0.0"
   },
