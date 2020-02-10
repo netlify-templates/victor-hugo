@@ -45,7 +45,7 @@ rules:
   no-mixed-spaces-and-tabs: 2
   no-multiple-empty-lines: [2, {max: 2}]
   no-trailing-spaces: 2
-  object-curly-spacing: [2, "never"]
+  object-curly-spacing: [2, "always"]
   quotes: [2, "double", "avoid-escape"]
   semi: 2
   space-before-blocks: [2, "always"]

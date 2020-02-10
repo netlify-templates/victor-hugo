@@ -10,7 +10,7 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, "dist")
+    path: path.join(__dirname, "site/public")
   },
 
   module: {
@@ -20,13 +20,16 @@ module.exports = {
         loader: "file-loader?name=/[hash].[ext]"
       },
 
-      {test: /\.json$/, loader: "json-loader"},
+      {
+        test: /\.json$/,
+        loader: "json-loader"
+      },
 
       {
         loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        query: { cacheDirectory: true }
       },
 
       {
