@@ -1,7 +1,7 @@
 {
   "name": "victor-hugo",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+  "description": "RxMD is a Hugo boilerplate for creating truly epic websites!",
   "repository": "netlify/victor-hugo",
   "main": "index.js",
   "scripts": {
