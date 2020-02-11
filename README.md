@@ -24,19 +24,13 @@ This will take some time and will install all packages necessary to run RxMD and
 
 ### :construction_worker: Development
 
-While developing your website, use:
+While developing your website use:
 
 ```bash
-npm start
+npm run live-preview
 ```
 
-or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
-
-```bash
-npm run preview
-```
-
-Then visit http://localhost:4321/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+Then visit http://localhost:4321 _- or whatever local host and port number that blogdown/servr displays in the terminal -_ to preview your new website. Webpack Dev Server will automatically reload the CSS and Javascript when the bundled stylesheets and scripts in the  src folder change, while blogdown will rebuild the static pages when the content changes.
 
 ### :package: Static build
 
