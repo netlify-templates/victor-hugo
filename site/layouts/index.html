@@ -4,8 +4,9 @@
 
 <h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
 
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
 <main class="content" role="main">
+
+  <a href="{{ "tech" | relURL }}">Check out the tech</a><br /><br />
 
   {{ if .Content }}
   <article class="article">
@@ -15,7 +16,7 @@
     <div class="article-content">
       {{ .Content }}
     </div>
-  </article>
+  </article><br /><br />
   {{ end }}
   <div class="archive">
     {{ $pages := .Pages }}
@@ -29,7 +30,7 @@
       <span class="archive-item-date">
         {{ .Date.Format "Jan, 02 2006" }}
       </span>
-    </article>
+    </article><br />
       {{ end }}
     {{ end }}
   </div>
