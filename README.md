@@ -57,16 +57,16 @@ See [package.json](package.json#L8) for all tasks.
 ## Structure
 
 ```
-|--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
-|  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
-|  |  |--index.html    // The index page
-|  |--static           // Files in here ends up in the public folder
+|--content          // Pages and collections - ask if you need extra pages
+|--data             // YAML data files with any data for use in examples
+|--layouts          // This is where all templates go
+|  |--partials      // This is where includes live
+|  |--index.html    // The index page
+|--static           // Files in here ends up in the public folder
 |--src                 // Files that will pass through the asset pipeline
 |  |--css              // Webpack will bundle imported css separately
 |  |--index.js         // index.js is the webpack entry for your css & js assets
+|--themes           // Install Hugo theme here and reference in config.toml
 ```
 
 ## Basic Concepts
@@ -80,9 +80,9 @@ The most useful page there is the one about the available functions:
 https://gohugo.io/templates/functions/
 
 For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
+use the `static` folder. Images, font-files, etc, all go there.
 
-Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
+Files in the static folder end up in the web root. So a file called `static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
 The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`

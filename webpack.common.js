@@ -10,7 +10,7 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, "site/public")
+    path: path.join(__dirname, "public")
   },
 
   module: {
@@ -47,7 +47,7 @@ module.exports = {
 
     new AssetsPlugin({
       filename: "webpack.json",
-      path: path.join(process.cwd(), "site/data"),
+      path: path.join(process.cwd(), "data"),
       prettyPrint: true
     }),
 

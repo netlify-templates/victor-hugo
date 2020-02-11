@@ -1,4 +1,6 @@
 .idea
+.RData
+.Rhistory
 node_modules
 dist
 webpack.json
