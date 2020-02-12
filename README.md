@@ -2,6 +2,8 @@
 
 **A blogdown boilerplate for creating truly epic websites**
 
+*Inspired by Netlify's [Victor Hugo](https://github.com/netlify-templates/victor-hugo)*
+
 This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
 
 RxMD is setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
