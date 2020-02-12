@@ -7,17 +7,17 @@
   "scripts": {
     "lint": "eslint src",
     "start": "run-p start:**",
+    "start:_webpack": "webpack-dev-server --config webpack.dev.js --hot",
     "start:blogdown": "Rscript -e 'blogdown::serve_site()'; echo 'servr has stopped'",
-    "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
     "live-preview": "run-p live-preview:**",
+    "live-preview:_webpack": "webpack --config webpack.dev.js -w",
     "live-preview:blogdown": "npm run start:blogdown -- ",
-    "live-preview:webpack": "webpack --config webpack.prod.js -w",
     "prebuild": "rimraf dist",
-    "build": "npm run build:webpack && npm run build:blogdown",
-    "build:live-preview": "npm run build:webpack && npm run build:blogdown:live-preview",
+    "build": "npm run build:_webpack && npm run build:blogdown",
+    "build:live-preview": "npm run build:_webpack && npm run build:blogdown:live-preview",
+    "build:_webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
     "build:blogdown": "Rscript -e 'blogdown::build_site()'; echo 'done'",
-    "build:blogdown:live-preview": "npm run build:blogdown -- ",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
+    "build:blogdown:live-preview": "npm run build:blogdown -- "
   },
   "author": "",
   "license": "MIT",
