@@ -21,6 +21,9 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^1.1.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.0",

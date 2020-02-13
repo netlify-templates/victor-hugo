@@ -1,32 +1,80 @@
 /*
   You can use import statements to include partials:
  */
-@import 'imports/reset.css';
-
+/* @import 'imports/reset.css'; */
+@import 'tailwind.css';
 /*
   Or add your statements here:
  */
-body {
-  font-size: calc(10px + 1vmin);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Based on: https://codepen.io/nickelse/pen/YGPJQG
+Influenced by: https://sproutsocial.com/
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #282c34;
-  color: white;
+
+/* #Mega Menu Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
 }
 
-a {
-  color: pink;
-  text-decoration: none;
+
+
+/* #hoverable Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* .hoverable {
+    position: static;
 }
 
-.content {
-  padding: 0 32px;
+.hoverable>a:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+}
+
+.hoverable:hover .mega-menu {
+    display: block;
+} */
+
+
+/* #toggle Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.toggleable>label:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-input:not(checked)~.mega-menu {
+    display: none;
+}
+
+.toggle-input:checked~.mega-menu {
+    display: block;
+}
+
+/* .toggle-input:checked+label {
+    color: white;
+    background: #2c5282;
+} */
+
+.toggle-input:checked~label:after {
+    content: "\25B2";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
 }
