@@ -3,28 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover shrink-to-fit=no">
+  <base
+    href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <title>{{ $.Site.Title }}</title>
 
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
+  <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
 </head>
 
-<body>
+<body class="bg-body text-body font-body">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap items-center justify-between p-4">
 
   {{ block "header" . }}{{ partial "header" . }}{{end}}
 
   {{ block "main" . }}{{end}}
 
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-  {{ $script := .Site.Data.webpack.main }}
-  {{ with $script.js }}
+    </div>
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  </div>
+    {{ $script := .Site.Data.webpack.main }}
+    {{ with $script.js }}
     <script src="{{ relURL . }}"></script>
-  {{ end }}
+    {{ end }}
 </body>
 
 </html>
