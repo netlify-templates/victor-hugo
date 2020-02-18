@@ -36,6 +36,11 @@ pubs:
       Prediction using a randomized evaluation of data collection integrated
       through connected technologies (PREDICT): Design and rationale of a
       randomized trial of patients discharged from the hospital to home
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 # **Background**
 

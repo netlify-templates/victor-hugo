@@ -17,14 +17,16 @@
 <body class="bg-body text-body font-body">
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap items-center justify-between p-4">
-
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
-
-  {{ block "main" . }}{{end}}
-
-    </div>
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+      {{ block "header" . }}
+        {{ partial "header" . }}
+      {{end}}
+      {{ block "main" . }} {{end}}      
+    </div>      
+    {{ block "footer" . }}
+      {{ partial "footer" . }}
+    {{end}}
   </div>
+  
     {{ $script := .Site.Data.webpack.main }}
     {{ with $script.js }}
     <script src="{{ relURL . }}"></script>

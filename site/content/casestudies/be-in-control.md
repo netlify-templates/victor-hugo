@@ -22,6 +22,11 @@ pubs:
     pubname: >-
       Effect of Financial Incentives on Glucose Monitoring Adherence and
       Glycemic Control Among Adolescents and Young Adults With Type 1 Diabetes
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 
 ## The Challenge

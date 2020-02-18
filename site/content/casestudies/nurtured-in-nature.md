@@ -17,5 +17,10 @@ summary: >-
 features:
   - feature: Conversations
   - feature: Nature Coach Alert
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

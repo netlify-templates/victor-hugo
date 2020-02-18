@@ -1,0 +1,38 @@
+{{ partial "header" . }}
+
+<main id="main-container">    
+    <div class="bg-primary-dark">
+        <br/><br/>
+        <section class="content content-boxed overflow-hidden">
+            <div class="push-150-t push-50 text-center">
+                <h1 class="text-white push-10">{{.Params.title}}</h1>
+                <h4 class="text-white">{{.Params.summary}}</h4>
+            </div>   
+            <div class="row items-push-2x text-center" style="display: flex; justify-content: space-between;">
+            	{{range .Params.authors}}
+                <div class="col-sm-4">
+                    <img class="img-avatar img-avatar-thumb" src="{{.authorimage}}" alt="">
+                    <div class="h5 text-white-op push-10-t push-5">{{.authorname}}</div>
+                    <div class="h6 text-gray">{{.authorrole}}</div>
+                </div>
+                {{end}}              
+            </div>
+        </section>
+    </div>
+    <div class="bg-white">
+        <section class="content content-boxed">
+            <div class="row push-50-t push-50 nice-copy-story">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <!--h4 class="push-10">The Goal: {{.Params.summary}}</h4-->
+                    <p>{{.Content}}</p>
+                    <h4>Publications</h4><br>
+                    {{range .Params.pubs}}
+                    <li><a href="{{.pubURL}}" target="_blank">{{.pubname}}</a></li>
+                    {{end}}
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+{{ partial "footer" . }}

@@ -31,6 +31,11 @@ pubs:
     pubname: >-
       A Trial of Financial and Social Incentives to Increase Older Adults’
       Walking
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

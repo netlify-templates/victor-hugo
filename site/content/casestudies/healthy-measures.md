@@ -31,6 +31,11 @@ pubs:
     pubname: >-
       Stages of Change and Patient Activation Measure Scores in the Context of
       Incentive-Based Health Interventions
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

@@ -26,6 +26,11 @@ pubs:
       Effect of a Game-Based Intervention Designed to Enhance Social Incentives
       to Increase Physical Activity Among Families The BE FIT Randomized
       Clinical Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 
 ## Aim and Key Question

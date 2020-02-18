@@ -29,6 +29,11 @@ pubs:
     pubname: >-
       Individual Versus Team-Based Financial Incentives to Increase Physical
       Activity: A Randomized, Controlled Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 More than half of adults in the United States do not attain the minimum recommended level of physical activity to achieve health benefits. The optimal design of financial incentives to promote physical activity is unknown.

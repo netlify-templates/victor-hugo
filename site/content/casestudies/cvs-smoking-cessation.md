@@ -33,6 +33,11 @@ pubs:
     pubname: >-
       Time to Selected Quit Date and Subsequent Rates of Sustained Smoking
       Abstinence
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 
 ## Aim and key question

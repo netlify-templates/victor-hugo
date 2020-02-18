@@ -31,6 +31,11 @@ pubs:
     pubname: >-
       Patients' Views of a Behavioral Intervention including Financial
       Incentives
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 
 ## Aim and key question

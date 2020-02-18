@@ -20,4 +20,9 @@ features:
   - feature: 2-way texting
 spotlight: false
 pubs:
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

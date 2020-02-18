@@ -17,5 +17,10 @@ features:
   - feature: Propeller Device Integration
   - feature: Financial Incentives
 spotlight: false
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

@@ -24,4 +24,9 @@ features:
     feature: 'Financial Incentives '
   - 
     feature: 'Bidirectional texting '
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

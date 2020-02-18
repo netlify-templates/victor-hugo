@@ -24,4 +24,9 @@ features:
   - feature: Social incentives
 spotlight: false
 pubs:
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

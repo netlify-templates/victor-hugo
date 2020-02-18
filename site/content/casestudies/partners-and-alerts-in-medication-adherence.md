@@ -24,6 +24,11 @@ spotlight: false
 pubs:
   - pubURL: 'https://www.ncbi.nlm.nih.gov/pubmed/29546659'
     pubname: 'Partners and Alerts in Medication Adherence: A Randomized Clinical Trial'
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

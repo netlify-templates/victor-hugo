@@ -36,6 +36,11 @@ pubs:
     pubname: >-
       Heart Safe Motherhood: Applying Innovation Methodology for Improved
       Maternal Outcomes
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 
 ## The Challenge

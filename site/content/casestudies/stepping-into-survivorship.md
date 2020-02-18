@@ -23,4 +23,9 @@ features:
     feature: Withings device integration
   - 
     feature: Gamification
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

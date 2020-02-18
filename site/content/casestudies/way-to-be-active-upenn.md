@@ -28,6 +28,11 @@ pubs:
     pubname: >-
       Framing Financial Incentives to Increase Physical Activity Among
       Overweight and Obese Adults: A Randomized, Controlled Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim:
 Financial incentive designs to increase physical activity have not been well-examined. Aim was to test the effectiveness of 3 methods to frame financial incentives to increase physical activity among overweight and obese adults.

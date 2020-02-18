@@ -17,4 +17,9 @@ features:
     feature: 'Bidirectional texting '
   - 
     feature: EPIC Appointment Date Finder Integration
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

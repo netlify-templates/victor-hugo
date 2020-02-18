@@ -21,4 +21,9 @@ features:
     feature: 'EPIC Discharge Date Finder '
   - 
     feature: 'Gamification '
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

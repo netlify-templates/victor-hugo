@@ -31,6 +31,11 @@ pubs:
       Electronic Pill Bottles or Bidirectional Text Messaging to Improve
       Hypertension Medication Adherence (Way 2 Text): a Randomized Clinical
       Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

@@ -18,5 +18,10 @@ features:
   - feature: Survey Administration
   - feature: Nokia Scale Device Integration
 spotlight: false
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

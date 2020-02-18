@@ -28,6 +28,11 @@ pubs:
     pubname: >-
       Attitudes on technological, social, and behavioral economic strategies to
       reduce cellphone use among teens while driving.
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 The majority of U.S. teens admit to handheld cellphone use while driving, an increasingly common cause of crashes. Attitudes toward novel cellphone applications and settings that block use while driving are poorly understood, potentially limiting uptake. We examined teens' willingness to reduce cellphone use while driving and perceptions of potential strategies to limit this behavior.

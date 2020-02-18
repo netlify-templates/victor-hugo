@@ -26,6 +26,11 @@ pubs:
     pubname: >-
       Patient and Partner Feedback Reports to Improve Statin Medication
       Adherence: A Randomized Control Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

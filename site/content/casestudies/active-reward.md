@@ -2,9 +2,6 @@
 title: Active Reward
 date: '2018-06-13'
 status: research
-condition: Hypertension
-intervention: Wearables & remote monitoring
-outcome: Increased physical activity
 authors:
   - authorimage: /img/uploads/chok3021.jpg
     authorname: 'Neel P. Chokshi, MD, MBA'
@@ -29,7 +26,11 @@ pubs:
       Loss-Framed Financial Incentives and Personalized Goal-Setting to Increase
       Physical Activity Among Ischemic Heart Disease Patients Using Wearable
       Devices: The ACTIVE REWARD Randomized Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
 dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

@@ -26,6 +26,11 @@ pubs:
     pubname: >-
       A Randomized Trial of Social Comparison Feedback and Financial Incentives
       to Increase Physical Activity
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ##Aim
 To compare the effectiveness of different combinations of social comparison feedback and financial incentives to increase physical activity.

@@ -20,5 +20,10 @@ features:
   - feature: Fitbit Device Integration
   - feature: Financial Incentives
   - feature: Support Partners
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

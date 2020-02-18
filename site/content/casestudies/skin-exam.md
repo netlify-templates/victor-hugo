@@ -26,6 +26,11 @@ pubs:
       Piloting the Use of Smartphones, Reminders, and Accountability Partners to
       Promote Skin Self-Examinations in Patients with Total Body Photography: A
       Randomized Controlled Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Aim
 

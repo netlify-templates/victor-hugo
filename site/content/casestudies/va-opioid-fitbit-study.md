@@ -21,4 +21,9 @@ features:
     feature: Survey administration
   - 
     feature: Lottery
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

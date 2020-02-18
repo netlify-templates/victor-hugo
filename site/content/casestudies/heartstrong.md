@@ -36,6 +36,11 @@ pubs:
     pubname: >-
       Comparison of Pharmacy Claims and Electronic Pill Bottles for Measurement
       of Medication Adherence Among Myocardial Infarction Patients
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim 
 

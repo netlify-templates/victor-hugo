@@ -25,6 +25,11 @@ pubs:
     pubname: >-
       Premium-Based Financial Incentives Did Not Promote Workplace Weight Loss
       In A 2013-15 Study.
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

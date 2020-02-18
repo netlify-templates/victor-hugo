@@ -19,5 +19,10 @@ features:
   - feature: Survey Administration
   - feature: Gamification
   - feature: Financial Incentives
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

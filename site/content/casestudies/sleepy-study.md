@@ -17,5 +17,10 @@ features:
   - feature: Fitbit Device Integration
   - feature: Survey Administration
   - feature: Automated Text Messaging
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

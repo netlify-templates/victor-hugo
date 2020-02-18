@@ -28,4 +28,9 @@ features:
     feature: 'Qualcomm  Scale Integration'
   - 
     feature: EPIC Alerts and Flowsheet Integration
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

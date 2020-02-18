@@ -31,6 +31,11 @@ pubs:
       Web-Based Access to Positive Airway Pressure Usage with or without an
       Initial Financial Incentive Improves Treatment Use in Patients with
       Obstructive Sleep Apnea
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

@@ -31,6 +31,11 @@ pubs:
     pubname: >-
       A Randomized Controlled Trial of Employer Matching of Employees’ Monetary
       Contributions to Deposit Contracts to Promote Weight Loss
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

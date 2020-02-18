@@ -26,6 +26,11 @@ pubs:
     pubname: >-
       An Automated Text Message Navigation Program Improves the Show Rate for
       Outpatient Colonoscopy
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 
 ## Aim and Key Question

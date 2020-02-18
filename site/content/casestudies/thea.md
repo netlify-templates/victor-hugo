@@ -21,5 +21,10 @@ results:
 features:
   - feature: 'Blood pressure monitoring via text messaging. '
   - feature: 'EPIC Integration '
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

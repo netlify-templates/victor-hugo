@@ -25,6 +25,11 @@ pubs:
     pubname: >-
       Two Randomized Controlled Pilot Trials of Social Forces to Improve Statin
       Adherence among Patients with Diabetes
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

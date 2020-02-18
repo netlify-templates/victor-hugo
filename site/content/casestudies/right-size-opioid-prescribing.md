@@ -19,5 +19,10 @@ features:
   - feature: Survey Administration
   - feature: Rules Engine
 spotlight: false
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

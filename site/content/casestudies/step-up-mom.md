@@ -20,5 +20,10 @@ features:
   - feature: Bonus Points
   - feature: Lifelines
 spotlight: false
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

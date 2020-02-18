@@ -28,6 +28,11 @@ pubs:
       The Habit Formation trial of behavioral economic interventions to improve
       statin use and reduce the risk of cardiovascular disease: Rationale,
       design and methodologies
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

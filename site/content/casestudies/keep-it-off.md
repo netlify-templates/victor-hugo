@@ -27,6 +27,11 @@ pubs:
     pubname: >-
       The Design and Conduct of Keep It Off: An Online Randomized Trial of
       Financial Incentives for Weight-Loss Maintenance
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

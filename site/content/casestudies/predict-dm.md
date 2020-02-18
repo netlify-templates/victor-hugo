@@ -24,4 +24,9 @@ features:
     feature: Financial incentives
   - 
     feature: Support partner
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

@@ -27,6 +27,11 @@ pubs:
     pubname: >-
       Effect of Escalating Financial Incentive Rewards on Maintenance of Weight
       Loss A Randomized Clinical Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

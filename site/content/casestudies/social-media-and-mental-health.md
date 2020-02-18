@@ -22,5 +22,10 @@ results:
 features:
   - feature: Bi-directional Texting
   - feature: 'Survey Administration '
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

@@ -17,5 +17,10 @@ summary: >-
 features:
   - feature: Flexible Event Scheduling
   - feature: CSV Upload
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

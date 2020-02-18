@@ -36,6 +36,11 @@ pubs:
       Social Incentives for Increasing Physical Activity Among Overweight and
       Obese Adults Across the United States The STEP UP Randomized Clinical
       Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Aim and Key Question
 

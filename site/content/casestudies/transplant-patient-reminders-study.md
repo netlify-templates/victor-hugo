@@ -27,6 +27,11 @@ pubs:
       Automated Reminders and Physician Notification to Promote
       Immunosuppression Adherence Among Kidney Transplant Recipients: A
       Randomized Trial
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

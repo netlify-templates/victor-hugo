@@ -25,6 +25,11 @@ pubs:
     pubname: >-
       A Pragmatic Trial of E-Cigarettes, Incentives, and Drugs for Smoking
       Cessation
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 

@@ -25,4 +25,9 @@ features:
     feature: 'Bidirectional texting '
   - 
     feature: Medication Adherence Monitoring
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

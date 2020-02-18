@@ -31,6 +31,11 @@ pubs:
       The Role of Behavioral Economic Incentive Design and Demographic
       Characteristics in Financial Incentive-Based Approaches to Changing Health
       Behaviors: A Meta-Analysis
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

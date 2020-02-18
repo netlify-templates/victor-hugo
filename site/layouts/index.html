@@ -1,6 +1,6 @@
-{{ define "main" }}
+{{ partial "header" . }}
 
-{{ partial "splash-left.html" . }}
+{{ partial "splash-left" . }}
 
 <section class="pt-12 px-4 text-center mt-16 mb-16">
     <div class="max-w-4xl mx-auto mb-8">
@@ -20,9 +20,7 @@
         </div>
 </section>
 
-{{ partial "text-left.html" . }}
-
-
+{{ partial "text-left" . }}
 
 <!-- <section class="py-12 px-4 mt-16 mb-16">
     <div class="flex flex-wrap items-center text-center lg:text-left">
@@ -44,9 +42,9 @@
 </section> -->
 <!-- <hr class="mt-16 mb-16"></hr> -->
 
-{{ partial "section-left.html" . }}
+{{ partial "section-left" . }}
 
-{{ partial "section-left.html" . }}
+{{ partial "section-left" . }}
 
 <!-- <section class="py-12 px-4 mt-16 mb-16">
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
@@ -215,4 +213,4 @@
     </div>
 </section>
 
-{{ end }}
+{{ partial "footer" . }}

@@ -17,5 +17,10 @@ summary: >-
 features:
   - feature: Blood Pressure Receiver
   - feature: Health Coach Alerts
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

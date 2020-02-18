@@ -23,4 +23,9 @@ features:
     feature: Bidirectional texting Blood Pressure Monitoring
   - 
     feature: 'EPIC Enrollment Integration '
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---

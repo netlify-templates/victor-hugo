@@ -18,5 +18,10 @@ features:
   - feature: Gamification
   - feature: Support Partners
   - feature: Survey Administration
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 

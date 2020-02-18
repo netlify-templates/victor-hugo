@@ -25,6 +25,11 @@ pubs:
       Peer Mentoring and Financial Incentives to Improve Glucose Control in
       African American Veterans: A Randomized, Controlled Trial
 spotlight: 'true'
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background and Aim
 

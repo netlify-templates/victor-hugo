@@ -26,6 +26,11 @@ pubs:
     pubname: >-
       A Randomized Controlled Trial of Opt-In Versus Opt-Out Enrollment Into a
       Diabetes Behavioral Intervention.
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Aim
 

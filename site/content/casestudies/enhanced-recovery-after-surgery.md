@@ -30,6 +30,11 @@ pubs:
     pubname: >-
       Enhanced recovery after elective spinal and peripheral nerve surgery:
       pilot study from a single institution
+condition: Hypertension
+intervention: Wearables & remote monitoring
+outcome: Increased physical activity
+dedicatedpage: true
+label: Standard of Care
 ---
 ## Background
 
