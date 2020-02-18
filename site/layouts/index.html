@@ -2,7 +2,23 @@
 
 {{ partial "splash-left.html" . }}
 
-{{ partial "6by2-logos.html" . }}
+<section class="pt-12 px-4 text-center mt-16 mb-16">
+    <div class="max-w-4xl mx-auto mb-8">
+        <h2 class="text-4xl leading-tight mb-6 font-heading">Investigate and deploy personalized engagement strategies
+            to improve health outcomes</h2>
+        <p class="text-gray-500 leading-relaxed">Trusted by leading research and clinical organizations across the
+            country</p>
+        </div>
+        <div class="flex flex-wrap -mx-8">
+        {{ with  .Params.customers }}
+            {{ range .logos }}
+                <div class="w-1/2 md:w-1/6 px-8 mb-8">
+                    <img src="{{ .logo }}" alt="">
+                </div>
+            {{ end }}
+        {{ end }}
+        </div>
+</section>
 
 {{ partial "text-left.html" . }}
 
@@ -85,10 +101,10 @@
             <button>Condition</button>
         </div>
         <div class="w-1/3 pb-2">
-            <button>Outcome</button>
+            <button>Intervention</button>
         </div>
         <div class="w-1/3 pb-2">
-            <button>Intervention</button>
+            <button>Outcome</button>
         </div>
     </div>
     <div class="flex flex-wrap -mx-4">
@@ -140,106 +156,6 @@
             </div>
         </div> -->
         {{ partial "case-summary.html" . }}
-        <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
-            <div class="relative flex flex-col h-full p-8 shadow-md">
-                <span class="text-xl mb-3 font-heading text text-center">Heart Safe Motherhood</span>
-                <hr />
-                <div class="px-2 py-4 text-center">
-                    <span
-                        class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Pre-eclampsia</span>
-                    <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Remote
-                        monitoring</span>
-                    <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Reduced
-                        readmissions</span>
-                </div>
-                <span
-                    class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">Standard
-                    of care</span>
-                <img class="rounded shadow-md mb-6" src="images/hsm.01.jpg" alt="">
-                <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
-                    <div class="mr-3 pr-3">
-                        <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/sindhusrinivasheadshot.jpg"
-                            alt="Sindhu Srinivas, MD" />
-                        <span class="text-sm text-gray-600">Sindhu Srinivas, MD, MSCE</span>
-                    </div>
-                    <div class="mr-3 pr-3">
-                        <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/adihirshbergheadshot.jpg"
-                            alt="Adi Hirshberg, MD" />
-                        <span class="text-sm text-gray-600">Adi Hirshberg, MD</span>
-                    </div>
-                </div>
-                <p class="mt-4 mb-6 text-gray-500 leading-relaxed">Goal of reducing 7-day readmissions for hypertension
-                    among
-                    postpartum women and creating a national leadership model to meet ACOG
-                    guidelines</p>
-                <hr />
-                <div class="mt-4">
-                    <!-- First list item -->
-                    <!-- <div class="w-8 h-8 bg-blue-700 rounded-full text-center align-middle text-white text-lg content-center">D</div> -->
-                    <div class="pl-3 mb-4">
-                        <p class="text-md text-gray-700 font-heading">
-                            Increased guideline adherence by 80%
-                        </p>
-                    </div>
-                    <div class="pl-3 mb-4">
-                        <p class="text-md text-gray-700 font-heading">
-                            Reduced 7-day readmissions to 1%
-                        </p>
-                    </div>
-                </div>
-                <a class="btn mt-auto text-blue-700 hover:underline text-right" href="# ">Read more</a>
-            </div>
-        </div>
-        <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
-            <div class="relative flex flex-col h-full p-8 shadow-md">
-                <span class="text-xl mb-3 font-heading text text-center">Heart Safe Motherhood</span>
-                <hr />
-                <div class="px-2 py-4 text-center">
-                    <span
-                        class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Pre-eclampsia</span>
-                    <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Remote
-                        monitoring</span>
-                    <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Reduced
-                        readmissions</span>
-                </div>
-                <span
-                    class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">Standard
-                    of care</span>
-                <img class="rounded shadow-md mb-6" src="images/hsm.01.jpg" alt="">
-                <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
-                    <div class="mr-3 pr-3">
-                        <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/sindhusrinivasheadshot.jpg"
-                            alt="Sindhu Srinivas, MD" />
-                        <span class="text-sm text-gray-600">Sindhu Srinivas, MD, MSCE</span>
-                    </div>
-                    <div class="mr-3 pr-3">
-                        <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/adihirshbergheadshot.jpg"
-                            alt="Adi Hirshberg, MD" />
-                        <span class="text-sm text-gray-600">Adi Hirshberg, MD</span>
-                    </div>
-                </div>
-                <p class="mt-4 mb-6 text-gray-500 leading-relaxed">Goal of reducing 7-day readmissions for hypertension
-                    among
-                    postpartum women and creating a national leadership model to meet ACOG
-                    guidelines</p>
-                <hr />
-                <div class="mt-4">
-                    <!-- First list item -->
-                    <!-- <div class="w-8 h-8 bg-blue-700 rounded-full text-center align-middle text-white text-lg content-center">D</div> -->
-                    <div class="pl-3 mb-4">
-                        <p class="text-md text-gray-700 font-heading">
-                            Increased guideline adherence by 80%
-                        </p>
-                    </div>
-                    <div class="pl-3 mb-4">
-                        <p class="text-md text-gray-700 font-heading">
-                            Reduced 7-day readmissions to 1%
-                        </p>
-                    </div>
-                </div>
-                <a class="btn mt-auto text-blue-700 hover:underline text-right" href="# ">Read more</a>
-            </div>
-        </div>
     </div>
 </section>
 <!-- <hr class="mt-16 mb-16"></hr> -->
@@ -248,8 +164,7 @@
     <div class="flex flex-wrap -mx-6">
         <div class="w-full lg:w-1/2 px-6 mb-8 lg:mb-0">
             <h3 class="text-2xl mb-8 font-heading">We will email you to start the conversation.</h3>
-            <p class="mt-8 text-xl font-heading"> Please drop us an email with any context you can provide and we'll
-                reach out to schedule a conversation.</p>
+            <p class="mt-8 text-xl font-heading"> Please drop us an email with any context you can provide and we'll reach out to schedule a conversation.</p>
         </div>
         <div class="w-full lg:w-1/2 px-6">
             <form>

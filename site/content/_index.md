@@ -53,43 +53,44 @@ stats:
       metric: 66000
     - title: Peer Reviewed Publications
       metric: 70
+
 customers:
   title: TRUSTED BY LEADING RESEARCH AND CLINICAL ORGANIZATIONS
   logos:
-    - logo: /img/logos/columbia.png
+    - logo: images/logos/columbia.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/duke1.png
+    - logo: images/logos/duke1.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/harvard.jpeg
+    - logo: images/logos/harvard.jpeg
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/jhu.png
+    - logo: images/logos/jhu.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/chop.jpg
+    - logo: images/logos/chop.jpg
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/womans.png
+    - logo: images/logos/womans.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/cornell.png
+    - logo: images/logos/cornell.png
       organizationName:  
       caseStudyLink:
-    - logo: /img/logos/mskcc.png
+    - logo: images/logos/mskcc.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/nwell.png
+    - logo: images/logos/nwell.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/ucla.png
+    - logo: images/logos/ucla.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/wustl.png
+    - logo: images/logos/wustl.png
       organizationName: 
       caseStudyLink:
-    - logo: /img/logos/penn.png
+    - logo: images/logos/penn.png
       organizationName: 
       caseStudyLink:      
 whydosomething:
