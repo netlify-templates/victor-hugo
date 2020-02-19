@@ -1,10 +1,86 @@
 ---
 title: Evidence Based Patient Engagement
 bgcolor: "#2e376b"
-image:
-biglogo: /img/logos/logo.tag.side_3x.png 
-summary: Research and apply personalized engagement strategies to improve health outcomes
-oldsummary: Way to Health is a web-based platform that enables and automates research into healthy behavior interventions. Interventions found to be successful can be applied to various populations and rolled out at scale quickly.
+splashimage: images/innovate.svg
+summary: Leverage tools and techniques developed by researchers and clinicians across 150+ studies, 66,000 patients and 70+ peer reviewed publications
+
+customers:
+  title: Investigate and deploy personalized engagement strategies to improve health outcomes
+  subtitle: Trusted by leading research and clinical organizations across the country
+  logos:
+    - logo: images/logos/columbia.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/jhu.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/harvard.jpeg
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/duke1.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/chop.jpg
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/womans.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/cornell.png
+      organizationName:  
+      caseStudyLink:
+    - logo: images/logos/mskcc.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/nwell.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/ucla.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/wustl.png
+      organizationName: 
+      caseStudyLink:
+    - logo: images/logos/penn.png
+      organizationName: 
+      caseStudyLink:
+
+introtitle: Human behavior is the final common pathway for nearly every advance in medicine
+introsubtitle: We bring behavioral science and patient engagement together to achieve measurable change.
+introtext: Patient engagement has been called the blockbuster drug of the 21st century. Current patient engagement tools focus on clinical protocols and ignore the human element. We grew from a need to research and apply behavioral science techniques specifically in healthcare.
+
+domains:
+  listing:
+      - title: For Health Systems
+        image: images/sindhu.adi.jpg
+        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
+        subtitle1: Reduce Readmissions
+        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
+        subtitle2: Testing
+        description2: Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime. Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime.
+        subtitle3: 
+        description3: 
+        is_even: false
+      - title: For Researchers
+        image: images/sindhu.adi.jpg
+        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
+        subtitle1: Design any interventional study
+        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
+        subtitle2: Testing
+        description2: Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime. Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime.
+        subtitle3: 
+        description3: 
+        is_even: true
+      - title: For Health Plans
+        image: images/sindhu.adi.jpg
+        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
+        subtitle1: Increase adherence to wellness programs
+        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
+        subtitle2: Testing
+        description2: Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime. Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime.
+        subtitle3: 
+        description3:
+        is_even: false
 
 keyfeatures:
   blurbs:
@@ -54,45 +130,6 @@ stats:
     - title: Peer Reviewed Publications
       metric: 70
 
-customers:
-  title: TRUSTED BY LEADING RESEARCH AND CLINICAL ORGANIZATIONS
-  logos:
-    - logo: images/logos/columbia.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/duke1.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/harvard.jpeg
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/jhu.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/chop.jpg
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/womans.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/cornell.png
-      organizationName:  
-      caseStudyLink:
-    - logo: images/logos/mskcc.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/nwell.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/ucla.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/wustl.png
-      organizationName: 
-      caseStudyLink:
-    - logo: images/logos/penn.png
-      organizationName: 
-      caseStudyLink:      
 whydosomething:
   intro: Patient engagement has been called the [blockbuster drug of the 21st century](http://healthstandards.com/blog/2012/08/28/drug-of-the-century/). But it continues to elude a solution and in the meantime, the problem continues to grow. 
   problems:

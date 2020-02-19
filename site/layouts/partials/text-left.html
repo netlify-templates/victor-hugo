@@ -1,15 +1,11 @@
 <section class="py-12 px-4 mt-16 mb-16">
     <div class="flex flex-wrap -mx-2">
         <div class="lg:w-1/2 px-2 lg:pr-16 mb-6 lg:mb-0">
-            <h2 class="text-4xl sm:text-center">Human behavior is the final common pathway for nearly every advance in medicine</h2>
+            <h2 class="text-4xl lg:text-left">{{ .Params.introtitle }}</h2>
         </div>
         <div class="lg:w-1/2 px-2">
-            <p class="font-medium text-2xl mb-8">We bring behavioral science and patient engagement together to achieve
-                measurable change.</p>
-            <p>Patient engagement has been called the blockbuster drug of the 21st century. Current patient engagement
-                tools focus on clinical protocols and ignore the human element. We grew from a need to research and
-                apply behavioral science
-                techniques specifically in healthcare. </p>
+            <p class="font-medium text-2xl mb-8">{{ .Params.introsubtitle }}</p>
+            <p>{{ .Params.introtext}} </p>
         </div>
     </div>
 </section>

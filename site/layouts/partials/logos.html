@@ -1,0 +1,15 @@
+<section class="pt-12 px-4 text-center mt-16 mb-16">
+    <div class="max-w-4xl mx-auto mb-8">
+    {{ with  .Params.customers }}
+        <h2 class="text-4xl leading-tight mb-6 font-heading">{{ .title }}</h2>
+        <p class="text-gray-500 leading-relaxed">{{ .subtitle }}</p>
+        </div>
+        <div class="flex flex-wrap -mx-8">
+            {{ range .logos }}
+                <div class="w-1/2 md:w-1/6 px-8 mb-8">
+                    <img src="{{ .logo }}" alt="">
+                </div>
+            {{ end }}
+    {{ end }}
+        </div>
+</section>
