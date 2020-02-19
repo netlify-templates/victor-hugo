@@ -6,11 +6,11 @@ subdomain: Sleep
 status: Enrolling
 authors:
   - 
-    authorimage: /img/uploads/mitchell.jpg
+    authorimage: /images/uploads/mitchell.jpg
     authorname: Jonathan Mitchell, PhD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/dinges.jpg
+    authorimage: /images/uploads/dinges.jpg
     authorname: David Dinges, PhD
     authorrole: Investigator
 summary: 'Use Way to Health to track and promote longer sleeping habits among adolescents. Interested in using social normatives on top of loss framed incentives. 4 arms- control, normative feedback (team), loss framed incentive, loss + normative $50 incentive text messages and sleep hygiene tips'
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

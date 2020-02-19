@@ -6,11 +6,11 @@ subdomain: Physical Activity
 status: Enrolling
 authors:
   - 
-    authorimage: /img/team/Mitesh_0.jpg
+    authorimage: /images/team/Mitesh_0.jpg
     authorname: Mitesh Patel, MD, MBA, MS
     authorrole: Investigator
   - 
-    authorimage: /img/uploads/bachireddy.jpg
+    authorimage: /images/uploads/bachireddy.jpg
     authorname: Chethan Bachireddy, MD
     authorrole: Principal Investigator
 summary: >
@@ -33,5 +33,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

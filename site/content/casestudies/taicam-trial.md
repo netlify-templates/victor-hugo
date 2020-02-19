@@ -4,10 +4,10 @@ date: '2019-08-15'
 area: inprogress
 subdomain: Asthma
 authors:
-  - authorimage: /img/uploads/kenyon.jpg
+  - authorimage: /images/uploads/kenyon.jpg
     authorname: 'Chen Kenyon, BA, MD, MSHP'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/brittney.jpg
+  - authorimage: /images/uploads/brittney.jpg
     authorname: 'Brittney Henderson, MPH'
     authorrole: Project Manager
 summary: >-
@@ -21,6 +21,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

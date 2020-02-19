@@ -4,10 +4,10 @@ date: '2017-03-01'
 area: research
 subdomain: Kidney Transplant
 authors:
-  - authorimage: /img/uploads/rees3825.jpg
+  - authorimage: /images/uploads/rees3825.jpg
     authorname: 'Peter P. Reese, MD, MSCE'
     authorrole: Investigator
-  - authorimage: /img/uploads/bloom_roy.jpg
+  - authorimage: /images/uploads/bloom_roy.jpg
     authorname: 'Roy D. Bloom, MD'
     authorrole: Investigator
 summary: >-
@@ -31,7 +31,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 

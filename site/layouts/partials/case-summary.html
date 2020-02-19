@@ -8,21 +8,27 @@
             <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.intervention }}</span>
             <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.outcome }}</span>
         </div>
-        <span
-            class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">Standard
-            of care</span>
-        <img class="rounded shadow-md mb-6" src="images/hsm.01.jpg" alt="">
+        {{ if eq .Params.label "Standard of Care" }}
+        <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-green-500 rounded-full">{{ .Params.label }} </span>
+        {{ else if eq .Params.label "Pilot" }}
+        <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-pink-500 rounded-full">{{ .Params.label }} </span>
+        {{ else if eq .Params.label "Design" }}
+        <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-orange-500 rounded-full">{{ .Params.label }} </span>
+        {{ else }}
+        <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
+        {{ end }}
+        <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
         <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
-            <div class="mr-3 pr-3">
-                <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/sindhusrinivasheadshot.jpg"
-                    alt="Sindhu Srinivas, MD" />
-                <span class="text-sm text-gray-600">Sindhu Srinivas, MD, MSCE</span>
-            </div>
-            <div class="mr-3 pr-3">
-                <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/adihirshbergheadshot.jpg"
-                    alt="Adi Hirshberg, MD" />
-                <span class="text-sm text-gray-600">Adi Hirshberg, MD</span>
-            </div>
+            {{ with .Params.authors }}
+                {{ range first 2 .  }}
+                <div class="mr-3 pr-3">
+                    <img class="h-16 w-16 rounded-full mx-auto mb-2" src="{{ .authorimage }}"
+                        alt="{{ .authorname }} " />
+                    <span class="text-sm text-gray-600">{{ .authorname }} </span>
+                </div>
+                {{ end }}
+            {{ end }}
+
         </div>
         <p class="mt-4 mb-6 text-gray-500 leading-relaxed">Goal of reducing 7-day readmissions for hypertension
             among postpartum women and creating a national leadership model to meet ACOG

@@ -4,10 +4,10 @@ date: '2015-08-01'
 area: research
 subdomain: Obstructive Sleep Apnea
 authors:
-  - authorimage: /img/uploads/kuna3683.jpg
+  - authorimage: /images/uploads/kuna3683.jpg
     authorname: 'Samuel T. Kuna, MD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/luqi_chi.jpg
+  - authorimage: /images/uploads/luqi_chi.jpg
     authorname: 'Luqi Chi, MD'
     authorrole: Investigator
 summary: >-
@@ -35,7 +35,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 
@@ -51,7 +52,7 @@ One hundred thirty-eight adults with newly diagnosed OSA starting PAP treatment 
 
 **Main Outcomes and Measures** - Primary analyses were focused on examining potential group differences in: (1) mean hours of daily PAP use (all days); (2) mean hours of daily PAP use on days used; and (3) changes in FOSQ-10 scores (baseline to 3 mo). Secondary outcomes included subjective functional outcomes measures (e.g., ESS, and SF-12) as well as mean AHIFLOW, and mean air leak from the circuit.
 
-![](/img/uploads/figure-1-min.jpg)
+![](/images/uploads/figure-1-min.jpg)
 
 ## Way to Health Use
 
@@ -65,8 +66,8 @@ One hundred thirty-eight adults with newly diagnosed OSA starting PAP treatment 
 
 Mean hours of daily PAP use in the two groups with access to PAP usage data did not differ from each other but was significantly greater than that in the usual care group in the first week and over 3 mo (P < 0.0001). Average daily use (mean ± standard deviation) during the first week of PAP intervention was 4.7 ± 3.3 h in the usual care group, and 5.9 ± 2.5 h and 6.3 ± 2.5 h in the Web access groups with and without financial incentive respectively. Adherence over the 3-mo intervention decreased at a relatively constant rate in all three groups. Functional Outcomes of Sleep Questionnaire change scores at 3 mo improved within each group (P < 0.0001) but change scores of the two groups with Web access to PAP data were not different than those in the control group (P > 0.124).
 
-![](/img/uploads/figure-2-min.jpg)
+![](/images/uploads/figure-2-min.jpg)
 
-![](/img/uploads/figure-3-min.jpg)
+![](/images/uploads/figure-3-min.jpg)
 
 Positive airway pressure adherence is significantly improved by giving patients Web access to information about their use of the treatment. Inclusion of a financial incentive in the first week had no additive effect in improving adherence.

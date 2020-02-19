@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Orthopedics
 status: Enrolling
 authors:
-  - authorimage: /img/uploads/bake7292.jpg
+  - authorimage: /images/uploads/bake7292.jpg
     authorname: 'Joshua Baker, MD, MSCE'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/pate4085.jpg
+  - authorimage: /images/uploads/pate4085.jpg
     authorname: 'Mitesh Patel, MD, MBA, MS'
     authorrole: Investigator
 summary: >-
@@ -23,6 +23,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

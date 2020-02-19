@@ -6,11 +6,11 @@ subdomain: Cardiology
 status: Enrolling
 authors:
   - 
-    authorimage: /img/team/Mitesh_0.jpg
+    authorimage: /images/team/Mitesh_0.jpg
     authorname: Mitesh Patel, MD, MBA, MS
     authorrole: Investigator
   - 
-    authorimage: /img/uploads/chok3021.jpg
+    authorimage: /images/uploads/chok3021.jpg
     authorname: Neel Chokshi, MD
     authorrole: Principal Investigator
 summary: 'Use Way to Health to track step counts, heart rate and intensity in patients with cardiovascular disease. Wants to build this remote monitoring into clinical practice. Fitbit Charge 2- low, moderate, vigorous activity Goals and targets Text feedback'
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

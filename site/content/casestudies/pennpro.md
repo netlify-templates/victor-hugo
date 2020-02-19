@@ -6,11 +6,11 @@ subdomain: Oncology
 status: Analysis
 authors:
   - 
-    authorimage: /img/uploads/takvorian.jpg
+    authorimage: /images/uploads/takvorian.jpg
     authorname: Samuel Takvorian, MD
     authorrole: Investigator
   - 
-    authorimage: /img/uploads/shulman.jpg
+    authorimage: /images/uploads/shulman.jpg
     authorname: Lawrence Shulman, MD
     authorrole: Principal Investigator
 summary: >
@@ -26,5 +26,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

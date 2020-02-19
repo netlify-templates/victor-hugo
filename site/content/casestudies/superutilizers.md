@@ -6,7 +6,7 @@ subdomain: Emergency Medicine
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/doubeni.jpg
+    authorimage: /images/uploads/doubeni.jpg
     authorname: Anna Doubeni, MD
     authorrole: Clinical Lead
 summary: >
@@ -21,5 +21,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

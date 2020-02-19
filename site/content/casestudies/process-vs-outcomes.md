@@ -6,11 +6,11 @@ subdomain: Cardiovascular Disease Management
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/rees3825.jpg
+    authorimage: /images/uploads/rees3825.jpg
     authorname: Peter Reese, MD, MSCE
     authorrole: Principal Investigator
   - 
-    authorimage: /img/team/volpp.jpg
+    authorimage: /images/team/volpp.jpg
     authorname: Kevin Volpp, MD, PhD
     authorrole: Investigator
 summary: >
@@ -28,5 +28,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

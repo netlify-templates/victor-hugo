@@ -4,10 +4,10 @@ date: 2018-04-01T00:00:00.000Z
 area: inprogress
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/team/Mitesh_0.jpg
+  - authorimage: /images/team/Mitesh_0.jpg
     authorname: 'Mitesh Patel, MD, MBA, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/team/volpp.jpg
+  - authorimage: /images/team/volpp.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Investigator
 summary: >-
@@ -24,6 +24,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

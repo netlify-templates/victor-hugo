@@ -6,11 +6,11 @@ subdomain: Orthopadeic Surgery
 status: Analysis
 authors:
   - 
-    authorimage: /img/uploads/hume.jpg
+    authorimage: /images/uploads/hume.jpg
     authorname: Eric Hume, MD
     authorrole: Clinical Lead
   - 
-    authorimage: /img/uploads/diem.jpg
+    authorimage: /images/uploads/diem.jpg
     authorname: Stephanie Diem, RN
     authorrole: Clinical Co-Lead
 summary: >
@@ -23,5 +23,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

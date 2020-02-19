@@ -4,10 +4,10 @@ date: '2019-09-09'
 area: research
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/team/Mitesh_0.jpg
+  - authorimage: /images/team/Mitesh_0.jpg
     authorname: 'Mitesh Patel, MD, MBA, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/team/volpp.jpg
+  - authorimage: /images/team/volpp.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Principal Investigator
 summary: >
@@ -40,7 +40,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Aim and Key Question
 
@@ -67,6 +68,6 @@ This 36-week randomized clinical trial with a 24-week intervention and 12-week f
 
 A total of 602 participants were included in the study. Compared with controls, participants had a significantly greater increase in mean daily steps from baseline during the intervention in the competition arm (adjusted difference, 920; 95% CI, 513-1328; P < .001), support arm (adjusted difference, 689; 95% CI, 267-977; P < .001), and collaboration arm (adjusted difference, 637; 95% CI, 258-1017; P = .001). During follow-up, physical activity remained significantly greater in the competition arm than in the control arm (adjusted difference, 569; 95% CI, 142-996; P = .009) but was not significantly greater in the support (adjusted difference, 428; 95% CI, 19-837; P = .04) and collaboration (adjusted difference, 126; 95% CI, −248 to 468; P = .49) arms than in the control arm.
 
-![](/img/uploads/screen-shot-2019-10-31-at-2.49.37-pm.png)
+![](/images/uploads/screen-shot-2019-10-31-at-2.49.37-pm.png)
 
 All 3 gamification interventions significantly increased physical activity during the 24-week intervention, and competition was the most effective. Physical activity was lower in all arms during follow-up and only remained significantly greater in the competition arm than in the control arm.

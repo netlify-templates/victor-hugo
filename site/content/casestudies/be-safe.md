@@ -6,11 +6,11 @@ subdomain: Mental Health
 status: Design
 authors:
   - 
-    authorimage: /img/uploads/kranzler.jpg
+    authorimage: /images/uploads/kranzler.jpg
     authorname: Henry Kranzler, MD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/delgado-kit.jpg
+    authorimage: /images/uploads/delgado-kit.jpg
     authorname: Kit Delgado, MD, MS
     authorrole: Principal Investigator
 summary: 'Participants receive a smartphone breathalyzer to provide feedback on their estimated blood alcohol level. The intervention compares loss- and gain-framed messages that make the consequences of drinking and driving more salient to standard messages not to drink and drive.'
@@ -23,5 +23,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

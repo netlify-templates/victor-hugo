@@ -4,10 +4,10 @@ date: 2015-11-10T00:00:00.000Z
 area: research
 subdomain: Cardiovascular Disease Management
 authors:
-  - authorimage: /img/team/Asch_1.jpg
+  - authorimage: /images/team/Asch_1.jpg
     authorname: 'David Asch, MD, MBA'
     authorrole: Principal Investigator
-  - authorimage: /img/team/Volpp_1.jpg
+  - authorimage: /images/team/Volpp_1.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Principal Investigator
 summary: >-
@@ -35,7 +35,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 
 ## Aim and key question
@@ -48,7 +49,7 @@ The key question being researched was whether provider behavior and its alignmen
 
 This was one of the largest and more complex trials conducted using the Way To Health plaform across multiple organizations, associated sites, providers and patients. The study was conducted in conjunction with the University of Pennsylvania Health System, Geisinger and Harvard Vanguard.
 
-<img class="center" src="/img/peng/rc4.2.png" />
+<img class="center" src="/images/peng/rc4.2.png" />
 
 **Interventions** - Primary care physicians were randomly assigned to control, physician incentives, patient incentives, or shared physician-patient incentives. Physicians in the physician incentives group were eligible to receive up to $1024 per enrolled patient meeting LDL-C goals. Patients in the patient incentives group were eligible for the same amount, distributed through daily lotteries tied to medication adherence. Physicians and patients in the shared incentives group shared these incentives. Physicians and patients in the control group received no incentives tied to outcomes, but all patient participants received up to $355 each for trial participation.
 
@@ -69,10 +70,10 @@ This was one of the largest and more complex trials conducted using the Way To H
 
  In primary care practices, shared financial incentives for physicians and patients, but not incentives to physicians or patients alone, resulted in a statistically significant difference in reduction of LDL-C levels at 12 months 
 
-<img class="center" src="/img/peng/rc4.3.png" />
+<img class="center" src="/images/peng/rc4.3.png" />
 
 Additionally, adherence to medications went up significantly as well.
 
-<img class="center" src="/img/peng/rc4.png" />
+<img class="center" src="/images/peng/rc4.png" />
 
 This study is important in that it showed that incentives that align patient and provider behavior result in significantly better outcomes. 

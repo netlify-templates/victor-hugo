@@ -4,10 +4,10 @@ date: '2019-11-13'
 area: inprogress
 subdomain: Obstetrics
 authors:
-  - authorimage: /img/uploads/abbie.jpg
+  - authorimage: /images/uploads/abbie.jpg
     authorname: Abbie Lund
     authorrole: 'Innovation Manager '
-  - authorimage: /img/uploads/graseck_anna.jpg
+  - authorimage: /images/uploads/graseck_anna.jpg
     authorname: Anna Graseck
     authorrole: 'Clinical Lead '
 summary: >-
@@ -25,6 +25,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

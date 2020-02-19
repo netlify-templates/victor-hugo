@@ -6,11 +6,11 @@ subdomain: Addiction
 status: Enrolling
 authors:
   - 
-    authorimage: /img/uploads/lbrown.jpg
+    authorimage: /images/uploads/lbrown.jpg
     authorname: Lily Brown, PhD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/foa.jpg
+    authorimage: /images/uploads/foa.jpg
     authorname: Edna Foa,PhD
     authorrole: Principal Investigator
 summary: 'The purpose of this study is to assess the acceptability of the W2H patient portal in patients seeking AD treatment. The W2H portal will include data from the following: PH indices from the Withings health monitor and nursing assessments, responses to electronic momentary assessment (eMA) text messaging prompts, self-report and clinician-interview AD symptom ratings, and cognitive/psychophysiological assessments. '
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

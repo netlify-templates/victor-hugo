@@ -6,11 +6,11 @@ subdomain: Trauma
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/jacoby.jpg
+    authorimage: /images/uploads/jacoby.jpg
     authorname: Sara Jacoby, MPH, MSN, PhD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/richmond.jpg
+    authorimage: /images/uploads/richmond.jpg
     authorname: Therese Richmond, PhD, FAAN, CRNP
     authorrole: Investigator
 summary: 'Assessing long-term recovery and potential for connection with trauma patients after injury through Survey administration, bi-directional texts, and sleep tracking (Fitbits). We propose to conduct pilot research for a remote monitoring intervention to improve long- term injury recovery.'
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

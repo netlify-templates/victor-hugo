@@ -4,10 +4,10 @@ date: '2016-09-19'
 area: research
 subdomain: Diabetes
 authors:
-  - authorimage: /img/uploads/shaw9333.jpg
+  - authorimage: /images/uploads/shaw9333.jpg
     authorname: 'Pamela A. Shaw, PhD'
     authorrole: Investigator
-  - authorimage: /img/uploads/yancy.jpg
+  - authorimage: /images/uploads/yancy.jpg
     authorname: 'William S. Yancy, Jr., MD'
     authorrole: Investigator
 summary: >-
@@ -31,7 +31,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 
@@ -47,7 +48,7 @@ Keep It Off is a pragmatic trial that recruited, consented, enrolled, and follow
 
 **Main Outcomes and Measures** - The primary objectives of this study are the three possible arm comparisons of weight-loss maintenance at the end of Phase I (month 6). As a secondary objective, we assess the degree to which weight loss was maintained in the intervention groups relative to control during the 6 months following cessation of the interventions (Phase II).
 
-![](/img/uploads/screen-shot-2018-08-30-at-8.14.40-pm.png)
+![](/images/uploads/screen-shot-2018-08-30-at-8.14.40-pm.png)
 
 ## Way to Health Use
 

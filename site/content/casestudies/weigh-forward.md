@@ -4,10 +4,10 @@ date: '2019-11-01'
 area: research
 subdomain: Obesity
 authors:
-  - authorimage: /img/uploads/i5847542.jpg
+  - authorimage: /images/uploads/i5847542.jpg
     authorname: 'William Yancy, MD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/volpp.jpg
+  - authorimage: /images/uploads/volpp.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Investigator
 summary: ' Test an escalating lottery-based incentive tied to daily self-weighing for weight loss maintenance'
@@ -31,7 +31,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 

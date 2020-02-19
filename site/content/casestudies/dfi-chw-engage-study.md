@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Diabetes
 status: Active
 authors:
-  - authorimage: /img/uploads/kangovi-shreya.jpg
+  - authorimage: /images/uploads/kangovi-shreya.jpg
     authorname: 'Shreya Kangovi, MD, MSHP'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/volpp.jpg
+  - authorimage: /images/uploads/volpp.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Investigator
 summary: >-
@@ -21,6 +21,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

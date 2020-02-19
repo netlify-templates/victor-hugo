@@ -4,10 +4,10 @@ date: '2018-05-28'
 area: research
 subdomain: Driving
 authors:
-  - authorimage: /img/uploads/delgado-kit.jpg
+  - authorimage: /images/uploads/delgado-kit.jpg
     authorname: 'M. Kit Delgado, MD, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/300_catherine_mcdonald_2016.jpg
+  - authorimage: /images/uploads/300_catherine_mcdonald_2016.jpg
     authorname: 'Catherine C. McDonald, PhD, RN'
     authorrole: Investigator
 summary: >-
@@ -32,7 +32,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 The majority of U.S. teens admit to handheld cellphone use while driving, an increasingly common cause of crashes. Attitudes toward novel cellphone applications and settings that block use while driving are poorly understood, potentially limiting uptake. We examined teens' willingness to reduce cellphone use while driving and perceptions of potential strategies to limit this behavior.

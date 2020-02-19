@@ -6,11 +6,11 @@ subdomain: Surgery
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/bar.jpg
+    authorimage: /images/uploads/bar.jpg
     authorname: Allen Bar, MD, FACS
     authorrole: Clinical Lead
   - 
-    authorimage: /img/uploads/diem.jpg
+    authorimage: /images/uploads/diem.jpg
     authorname: Najjia Mahmoud, MD
     authorrole: Clinical Co-Lead
 summary: >
@@ -23,5 +23,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

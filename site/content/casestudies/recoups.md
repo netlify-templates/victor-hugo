@@ -6,11 +6,11 @@ subdomain: Physical Activity
 status: Enrolling
 authors:
   - 
-    authorimage: /img/uploads/weibe.jpg
+    authorimage: /images/uploads/weibe.jpg
     authorname: Doug Wiebe, MD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/delgado-kit.jpg
+    authorimage: /images/uploads/delgado-kit.jpg
     authorname: Kit Delgado, MD, MS
     authorrole: Principal Investigator
 summary: >
@@ -30,5 +30,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

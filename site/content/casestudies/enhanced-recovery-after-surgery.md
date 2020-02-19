@@ -4,10 +4,10 @@ date: '2019-01-25'
 area: clinical
 subdomain: Post-Op Spinal Surgery
 authors:
-  - authorimage: /img/uploads/ali_zarina_expert.jpg
+  - authorimage: /images/uploads/ali_zarina_expert.jpg
     authorname: 'Zarina S. Ali, MD, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/ma_tracy.jpg
+  - authorimage: /images/uploads/ma_tracy.jpg
     authorname: 'Tracy M. Flanders, MD'
     authorrole: Co-Investigator
 summary: >-
@@ -34,7 +34,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 
@@ -48,7 +49,7 @@ This is a prospective cohort analysis to evaluate the impact of a novel ERAS pro
 
 **Main Outcomes and Measures** - Primary objectives were as follows: opioid and non-opioid pain medication consumption, need for opioid use at 1 month postoperatively, and patient-reported pain scores. Secondary objectives were as follows: mobilization and ambulation status, Foley catheter use, need for straight catheterization, length of stay, need for ICU admission, discharge status, and readmission within 30 days.
 
-![](/img/uploads/screen-shot-2019-01-28-at-7.22.40-pm.png)
+![](/images/uploads/screen-shot-2019-01-28-at-7.22.40-pm.png)
 
 ## Way to Health Use
 

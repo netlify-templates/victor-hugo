@@ -4,10 +4,10 @@ date: '2016-04-01'
 area: research
 subdomain: Cardiovascular Disease Management
 authors:
-  - authorimage: /img/uploads/rees3825.jpg
+  - authorimage: /images/uploads/rees3825.jpg
     authorname: 'Peter P. Reese, MD, MSCE'
     authorrole: Investigator
-  - authorimage: /img/uploads/download.jpeg
+  - authorimage: /images/uploads/download.jpeg
     authorname: Judd B. Kessler
     authorrole: Investigator
 summary: >-
@@ -29,7 +29,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 
@@ -50,7 +51,7 @@ Two randomized controlled pilot trials called PROMOTE and SUPPORT. Participants 
 * **Survey Administration**: Administer and collect survey responses
 * **Support Partners**: Provide participants with support partners for reinforcement
 
-![null](/img/uploads/11606_2015_3540_fig1_html-1-.gif)
+![null](/images/uploads/11606_2015_3540_fig1_html-1-.gif)
 
 ## Findings and Conclusions
 

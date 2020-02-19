@@ -6,11 +6,11 @@ subdomain: Emergency Medicine
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/doubeni.jpg
+    authorimage: /images/uploads/doubeni.jpg
     authorname: Anna Doubeni, MD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/team/mehta.jpg
+    authorimage: /images/team/mehta.jpg
     authorname: Shivan Mehta, MD, MBA, MSHP
     authorrole: Investigator
 summary: >
@@ -29,5 +29,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

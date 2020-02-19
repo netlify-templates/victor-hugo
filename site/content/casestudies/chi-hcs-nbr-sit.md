@@ -4,10 +4,10 @@ date: '2019-11-14'
 area: inprogress
 subdomain: Clinical Psychology
 authors:
-  - authorimage: /img/uploads/ashare.jpg
+  - authorimage: /images/uploads/ashare.jpg
     authorname: 'Rebecca Ashare, PhD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/avatar16.jpg
+  - authorimage: /images/uploads/avatar16.jpg
     authorname: Leah Bernardo
     authorrole: Project Manager
 summary: >-
@@ -20,7 +20,8 @@ features:
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
-dedicatedpage: true
-label: Standard of Care
+dedicatedpage: false
+label: Research
+image: /images/uploads/hsm.01.jpg
 ---
 

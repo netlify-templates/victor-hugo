@@ -4,10 +4,10 @@ date: '2014-05-01'
 area: research
 subdomain: Diabetes
 authors:
-  - authorimage: /img/uploads/3389.jpg
+  - authorimage: /images/uploads/3389.jpg
     authorname: 'Aditi P. Sen, PhD'
     authorrole: Investigator
-  - authorimage: /img/uploads/loewenstein-hi-res1-996x1024-min.jpg
+  - authorimage: /images/uploads/loewenstein-hi-res1-996x1024-min.jpg
     authorname: 'George Loewenstein, PhD'
     authorrole: Investigator
 summary: >-
@@ -35,7 +35,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 

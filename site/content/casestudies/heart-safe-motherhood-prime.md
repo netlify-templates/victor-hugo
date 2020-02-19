@@ -6,11 +6,11 @@ subdomain: Womens Health
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/hirshberg_adi.jpg
+    authorimage: /images/uploads/hirshberg_adi.jpg
     authorname: Adi Hirshberg, MD
     authorrole: Investigator
   - 
-    authorimage: /img/team/srinivas.jpg
+    authorimage: /images/team/srinivas.jpg
     authorname: Sindhu Srinivas, MD
     authorrole: Principal Investigator
 summary: >
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

@@ -6,11 +6,11 @@ subdomain: Allergy & Immunology
 status: Active
 authors:
   - 
-    authorimage: /img/team/volpp.jpg
+    authorimage: /images/team/volpp.jpg
     authorname: Kevin Volpp, MD, PhD
     authorrole: Investigator
   - 
-    authorimage: /img/uploads/cannuscio.jpg
+    authorimage: /images/uploads/cannuscio.jpg
     authorname: Carolyn Cannuscio, ScD
     authorrole: Principal Investigator
 summary: >
@@ -28,5 +28,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

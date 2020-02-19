@@ -4,10 +4,10 @@ date: '2018-07-30'
 area: research
 subdomain: Oncology
 authors:
-  - authorimage: /img/uploads/andrew-marek.jpg
+  - authorimage: /images/uploads/andrew-marek.jpg
     authorname: 'Andrew Marek, MD, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/chu2736.jpg
+  - authorimage: /images/uploads/chu2736.jpg
     authorname: 'Emily Y. Chu, MD, PhD'
     authorrole: Investigator
 summary: >-
@@ -30,7 +30,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Aim
 

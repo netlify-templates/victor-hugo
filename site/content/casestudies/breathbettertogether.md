@@ -6,11 +6,11 @@ subdomain: Pulmonology
 status: Analysis
 authors:
   - 
-    authorimage: /img/uploads/ahya.jpg
+    authorimage: /images/uploads/ahya.jpg
     authorname: Vivek Ahya, MD
     authorrole: Clinical Lead
   - 
-    authorimage: /img/uploads/begley.jpg
+    authorimage: /images/uploads/begley.jpg
     authorname: Michael Begley, MA
     authorrole: Project Lead
 summary: >
@@ -27,5 +27,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

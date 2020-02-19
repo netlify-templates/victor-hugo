@@ -4,10 +4,10 @@ date: '2016-07-15'
 area: research
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/team/Mitesh_0.jpg
+  - authorimage: /images/team/Mitesh_0.jpg
     authorname: 'Mitesh S. Patel, MD, MBA, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/team/Volpp_1.jpg
+  - authorimage: /images/team/Volpp_1.jpg
     authorname: 'Kevin G. Volpp, MD, PhD'
     authorrole: Investigator
 summary: >-
@@ -30,7 +30,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ##Aim
 To compare the effectiveness of different combinations of social comparison feedback and financial incentives to increase physical activity.

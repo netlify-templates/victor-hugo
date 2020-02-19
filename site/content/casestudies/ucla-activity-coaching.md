@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Physical Activity
 status: Active
 authors:
-  - authorimage: /img/uploads/croymans.jpg
+  - authorimage: /images/uploads/croymans.jpg
     authorname: 'Daniel Croymans, MD, MBA, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/team/stephanie.jpg
+  - authorimage: /images/team/stephanie.jpg
     authorname: 'Stephanie Brown, BS'
     authorrole: Implementation Lead
 summary: >-
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

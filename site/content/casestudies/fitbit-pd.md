@@ -6,11 +6,11 @@ subdomain: Neurology
 status: Enrolling
 authors:
   - 
-    authorimage: /img/avatars/avatar1.jpg
+    authorimage: /images/avatars/avatar1.jpg
     authorname: James Morley, MD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/team/neda.jpg
+    authorimage: /images/team/neda.jpg
     authorname: Neda Khan
     authorrole: Implementation Lead
 summary: >
@@ -29,5 +29,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

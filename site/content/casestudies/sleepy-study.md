@@ -4,10 +4,10 @@ date: '2019-02-22'
 area: inprogress
 subdomain: General Care
 authors:
-  - authorimage: /img/uploads/mitchell.jpg
+  - authorimage: /images/uploads/mitchell.jpg
     authorname: 'Jonathan Mitchell, PhD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/avatar16.jpg
+  - authorimage: /images/uploads/avatar16.jpg
     authorname: Nicholas Huffnagle
     authorrole: Project Manager
 summary: >-
@@ -21,6 +21,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

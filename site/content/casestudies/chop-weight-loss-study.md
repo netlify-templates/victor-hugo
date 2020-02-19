@@ -4,10 +4,10 @@ date: '2014-04-22'
 area: research
 subdomain: Obesity
 authors:
-  - authorimage: /img/uploads/kullgren-small_image.jpg
+  - authorimage: /images/uploads/kullgren-small_image.jpg
     authorname: 'Jeffrey Kullgren, MD, MS, MPH'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/troxel-hi-res1-292x300.jpg
+  - authorimage: /images/uploads/troxel-hi-res1-292x300.jpg
     authorname: 'Andrea B. Troxel, ScD'
     authorrole: Investigator
 summary: >-
@@ -35,7 +35,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 

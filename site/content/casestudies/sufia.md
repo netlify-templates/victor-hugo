@@ -6,11 +6,11 @@ subdomain: Physical Activity
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/ogdie.jpg
+    authorimage: /images/uploads/ogdie.jpg
     authorname: Alexis Ogdie, MD, MSCE
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/bake7292.jpg
+    authorimage: /images/uploads/bake7292.jpg
     authorname: Joshua Baker, MD
     authorrole: Principal Investigator
 summary: >
@@ -30,5 +30,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

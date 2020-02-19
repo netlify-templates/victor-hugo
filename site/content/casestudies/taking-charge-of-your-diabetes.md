@@ -4,10 +4,10 @@ date: '2018-03-01'
 area: research
 subdomain: Diabetes
 authors:
-  - authorimage: /img/uploads/aysola.jpg
+  - authorimage: /images/uploads/aysola.jpg
     authorname: 'Jaya Aysola, MD, DTMH, MPH'
     authorrole: Investigator
-  - authorimage: /img/uploads/troxel-hi-res1-292x300.jpg
+  - authorimage: /images/uploads/troxel-hi-res1-292x300.jpg
     authorname: 'Andrea B. Troxel, ScD'
     authorrole: Investigator
 summary: >-
@@ -30,7 +30,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Aim
 

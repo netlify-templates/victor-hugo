@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Mental Health
 status: Design
 authors:
-  - authorimage: /img/uploads/alexopoulos.jpg
+  - authorimage: /images/uploads/alexopoulos.jpg
     authorname: 'George Alexopoulos, MD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/kanellopoulos.jpg
+  - authorimage: /images/uploads/kanellopoulos.jpg
     authorname: 'Dora Kanellopoulos, PhD'
     authorrole: Co-Investigator
 summary: >-
@@ -24,5 +24,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

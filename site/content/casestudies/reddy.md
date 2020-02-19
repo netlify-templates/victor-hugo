@@ -4,10 +4,10 @@ date: '2017-03-01'
 area: research
 subdomain: Cardiovascular Disease Management
 authors:
-  - authorimage: /img/uploads/reddy-ashok.resized.jpg
+  - authorimage: /images/uploads/reddy-ashok.resized.jpg
     authorname: 'Ashok Reddy, MD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/steven-marcus-1-.jpg
+  - authorimage: /images/uploads/steven-marcus-1-.jpg
     authorname: 'Steven C. Marcus, PhD'
     authorrole: Investigator
 summary: >-
@@ -30,7 +30,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 
@@ -58,6 +59,6 @@ Three-month, three-arm randomized clinical trial. One hundred and twenty-six vet
 
 During the 3-month intervention period, medication adherence was higher in both feedback arms than in the control arm (individual feedback group 89 %, partner feedback group 86 %, control group 67 %; p < 0.001 and = 0.001). At 6 months, there was no difference in medication adherence between either of the feedback groups and the control (individual feedback 60 %, partner feedback 52 %, control group 54 %; p = 0.75 and 0.97).
 
-![](/img/uploads/screen-shot-2018-08-30-at-8.49.36-pm.png)
+![](/images/uploads/screen-shot-2018-08-30-at-8.49.36-pm.png)
 
 Daily alarms combined with individual or partner feedback reports improved statin medication adherence. While neither an individual feedback nor partner feedback strategy created a sustainable medication adherence habit, the intervention itself is relatively easy to implement and low cost.

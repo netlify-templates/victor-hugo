@@ -6,11 +6,11 @@ subdomain: Oncology
 status: Analysis
 authors:
   - 
-    authorimage: /img/uploads/tasian.jpg
+    authorimage: /images/uploads/tasian.jpg
     authorname: Greg Tasian, MD, MSc, MSCE
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/guzzo.jpg
+    authorimage: /images/uploads/guzzo.jpg
     authorname: Thomas Guzzo, MD, MPH
     authorrole: Principal Investigator
 summary: >
@@ -27,5 +27,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

@@ -4,10 +4,10 @@ date: '2019-07-01'
 area: inprogress
 subdomain: Neurology
 authors:
-  - authorimage: /img/uploads/daho6396.jpg
+  - authorimage: /images/uploads/daho6396.jpg
     authorname: 'Nabila Dahodwala, MD, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/pate4085.jpg
+  - authorimage: /images/uploads/pate4085.jpg
     authorname: 'Mitesh Patel, MD, MBA, MS'
     authorrole: Investigator
 summary: >-
@@ -22,6 +22,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

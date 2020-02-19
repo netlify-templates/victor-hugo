@@ -4,13 +4,13 @@ date: 2017-01-04T00:00:00.000Z
 area: clinical
 subdomain: Pre-eclampsia
 authors:
-  - authorimage: /img/team/srinivas.jpg
+  - authorimage: /images/team/srinivas.jpg
     authorname: 'Sindhu Srinivas, MD, MSCE'
     authorrole: Clinical Lead
-  - authorimage: /img/uploads/hirshberg_adi.jpg
+  - authorimage: /images/uploads/hirshberg_adi.jpg
     authorname: 'Adi Hirshberg, MD'
     authorrole: Co-Clinical Lead
-  - authorimage: /img/team/mahraj.jpg
+  - authorimage: /images/team/mahraj.jpg
     authorname: 'Katy Mahraj, MSI'
     authorrole: Innovation Manager
 summary: >-
@@ -40,7 +40,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 
 ## The Challenge
@@ -53,7 +54,7 @@ In 2014, the **American College of Obstetricians and Gynecologists (ACOG) issued
 
 Heart Safe Motherhood is a novel approach to care delivery that leverages connected health technology and a new role for Obstetrical providers to transform the quality, safety, experience, and cost of care during women’s transition from hospital admission after delivery to home.  The goal of Heart Safe Motherhood is to drive better maternal outcomes, improve the care experience, and reduce the total cost of care for women with pregnancy-related and chronic hypertension in the immediate postpartum period.  Through text-based remote monitoring, Heart Safe motherhood reduces the burden of preeclampsia.
 
-<img src="/img/peng/HSM_CareModel.png" width="100%">
+<img src="/images/peng/HSM_CareModel.png" width="100%">
 
 ## Way to Health use
 
@@ -71,7 +72,7 @@ Key Way To Health features used:
 
 ## Results / Outcomes
 
-<img src="/img/peng/HSM_Logo.jpg" width="100%">
+<img src="/images/peng/HSM_Logo.jpg" width="100%">
 
 In 2017, we completed a randomized, controlled trial comparing Heart Safe Motherhood to office visits.  **We found an increase in our ability to meet guidelines in up to 80% of our patients using text messaging.  Readmissions dropped to zero percent among monitored women.**  In addition, women enrolled in the program were more likely to attend their postpartum visit.  Our clinical trial results were [published in BMJ Quality and Safety](http://qualitysafety.bmj.com/content/early/2018/04/26/bmjqs-2018-007837). 
 

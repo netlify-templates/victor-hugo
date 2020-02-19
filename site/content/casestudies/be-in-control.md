@@ -4,10 +4,10 @@ date: 2017-11-27T00:00:00.000Z
 area: research
 subdomain: Diabetes
 authors:
-  - authorimage: /img/uploads/wong.jpg
+  - authorimage: /images/uploads/wong.jpg
     authorname: 'Charlene Wong, MD, MSHP'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/Alexander_Morris.jpg
+  - authorimage: /images/uploads/Alexander_Morris.jpg
     authorname: 'Alexander Morris, BS'
     authorrole: Research Coordinator
 summary: >-
@@ -26,7 +26,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 
 ## The Challenge

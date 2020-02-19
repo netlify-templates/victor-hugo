@@ -6,11 +6,11 @@ subdomain: Hepatology
 status: Analysis
 authors:
   - 
-    authorimage: /img/uploads/khungar-vandana.jpg
+    authorimage: /images/uploads/khungar-vandana.jpg
     authorname: Vandana Khungar, MD, MSc
     authorrole: Clinical Lead
   - 
-    authorimage: /img/avatars/avatar1.jpg
+    authorimage: /images/avatars/avatar1.jpg
     authorname: Diane Peyton,BSN
     authorrole: Provider
 summary: >
@@ -27,5 +27,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

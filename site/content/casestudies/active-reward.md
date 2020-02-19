@@ -3,10 +3,10 @@ title: Active Reward
 date: '2018-06-13'
 status: research
 authors:
-  - authorimage: /img/uploads/chok3021.jpg
+  - authorimage: /images/uploads/chok3021.jpg
     authorname: 'Neel P. Chokshi, MD, MBA'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/adusumalli-srinath.jpg
+  - authorimage: /images/uploads/adusumalli-srinath.jpg
     authorname: 'Srinath Adusumalli, MD'
     authorrole: Investigator
 summary: >-
@@ -30,7 +30,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 
@@ -52,7 +53,7 @@ Active Reward was a 24-week home-based, remotely monitored, randomized trial wit
 
 ## Findings and Conclusions
 
-<img src="/img/uploads/activereward.png" width="100%">
+<img src="/images/uploads/activereward.png" width="100%">
 
 Compared with control, patients in the incentive arm had a significantly greater increase in mean daily steps from baseline during ramp-up (1388 versus 385; adjusted difference, 1061 \[95% confidence interval, 386-1736]; P<0.01), maintenance (1501 versus 264; adjusted difference, 1368 \[95% confidence interval, 571-2164]; P<0.001), and follow-up (1066 versus 92; adjusted difference, 1154 \[95% confidence interval, 282-2027]; P<0.01).
 

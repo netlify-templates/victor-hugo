@@ -6,11 +6,11 @@ subdomain: Diabetes
 status: Analysis
 authors:
   - 
-    authorimage: /img/team/Mitesh_0.jpg
+    authorimage: /images/team/Mitesh_0.jpg
     authorname: Mitesh Patel, MD, MBA, MS
     authorrole: Principal Investigator
   - 
-    authorimage: /img/team/asch.jpg
+    authorimage: /images/team/asch.jpg
     authorname: David Asch, MD, MBA
     authorrole: Investigator
 summary: >
@@ -29,5 +29,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

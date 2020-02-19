@@ -4,13 +4,13 @@ date: 2017-11-13T00:00:00.000Z
 area: research
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/team/Mitesh_0.jpg
+  - authorimage: /images/team/Mitesh_0.jpg
     authorname: 'Mitesh Patel, MD, MBA, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/team/Volpp_1.jpg
+  - authorimage: /images/team/Volpp_1.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Co-PI
-  - authorimage: /img/uploads/Tori.Hilbert.jpg
+  - authorimage: /images/uploads/Tori.Hilbert.jpg
     authorname: 'Tori Hilbert, MPH, RD'
     authorrole: Operations Manager
 summary: >-
@@ -30,7 +30,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 
 ## Aim and Key Question
@@ -62,6 +63,6 @@ The Behavioral Economics Framingham Incentive Trial (BE FIT) was a randomized cl
 
 In this randomized clinical trial of 200 adults comprising 94 families, participants in the gamification arm had significantly greater physical activity during the 12-week intervention than participants in the control arm, including the proportion of days that step goals were achieved and the change in the mean daily steps.
 
-<img class="center" src="/img/peng/befit.png" />
+<img class="center" src="/images/peng/befit.png" />
 
 This study is important in that it shows that gamification designed to leverage insights from behavioral economics to enhance social incentives could offer a promising approach to improve daily health behaviors.

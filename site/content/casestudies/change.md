@@ -5,10 +5,10 @@ area: inprogress
 subdomain: HIV
 status: Active
 authors:
-  - authorimage: /img/uploads/volpp.jpg
+  - authorimage: /images/uploads/volpp.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/doshi-jalpa.jpg
+  - authorimage: /images/uploads/doshi-jalpa.jpg
     authorname: 'Jalpa Doshi, PhD'
     authorrole: Investigator
 summary: >-
@@ -27,6 +27,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

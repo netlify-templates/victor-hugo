@@ -4,10 +4,10 @@ date: '2019-11-13'
 area: clinical
 subdomain: 'Primary Care '
 authors:
-  - authorimage: /img/uploads/rusk_matthew.jpg
+  - authorimage: /images/uploads/rusk_matthew.jpg
     authorname: 'Matthew Rusk, MD'
     authorrole: 'Clinician '
-  - authorimage: /img/uploads/nmchenry.png
+  - authorimage: /images/uploads/nmchenry.png
     authorname: 'Nicole McHenry, RN '
     authorrole: Clinician
 summary: 'Hypertension monitoring text messaging program for Penn Medicine employees. '
@@ -23,7 +23,8 @@ spotlight: 'false'
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
-dedicatedpage: true
-label: Standard of Care
+dedicatedpage: false
+label: Pilot
+image: /images/uploads/hsm.01.jpg
 ---
 

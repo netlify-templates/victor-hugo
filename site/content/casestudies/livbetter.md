@@ -4,13 +4,13 @@ date: 2017-11-13
 subdomain: Cirrhosis & Transplants
 area: clinical
 authors:
-  - authorimage: /img/uploads/khungar-vandana.jpg
+  - authorimage: /images/uploads/khungar-vandana.jpg
     authorname: Vandana Khungar,MD,MSc
     authorrole: Clinical Lead
-  - authorimage: /img/team/vandertuyn.jpg
+  - authorimage: /images/team/vandertuyn.jpg
     authorname: Matt Van Der Tuyn, MA
     authorrole: Innovation Lead
-  - authorimage: /img/team/brown.jpeg
+  - authorimage: /images/team/brown.jpeg
     authorname: Stephanie Brown, BS
     authorrole: Implementation Lead
 summary: >-
@@ -23,7 +23,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 
 ## The Challenge
@@ -41,7 +42,7 @@ The initial pilot tested a remote monitoring approach in which a 90 day teleheal
 
 Way to Health was then utilized as the solution to automate the above process. An automated SMS based solution was designed and tested to engage patients post discharge and monitor their weight, temperature and medication adherence. The platform allowed the clinical team to build in algorithms to flag patients with maximum risk, thereby improving the staff’s efficiency.
 
-<img class="center" src="/img/peng/livbetter.png" />
+<img class="center" src="/images/peng/livbetter.png" />
 
 ## Way to Health use
 The Way to Health Platform was used to support the LiveBetter Program in the following ways:

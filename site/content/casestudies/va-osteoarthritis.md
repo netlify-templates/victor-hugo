@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Medication Adherence
 status: Active
 authors:
-  - authorimage: /img/uploads/bake7292.jpg
+  - authorimage: /images/uploads/bake7292.jpg
     authorname: 'Joshua F. Baker, MD'
     authorrole: Principal Investigator
-  - authorimage: /img/team/neda.jpg
+  - authorimage: /images/team/neda.jpg
     authorname: 'Neda Khan, MS'
     authorrole: Implementation Lead
 summary: >-
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

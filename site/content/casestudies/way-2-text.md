@@ -4,10 +4,10 @@ date: '2019-08-08'
 area: research
 subdomain: Hypertension
 authors:
-  - authorimage: /img/team/Shivan.jpg
+  - authorimage: /images/team/Shivan.jpg
     authorname: 'Shivan Mehta, MD, MBA'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/volpp.jpg
+  - authorimage: /images/uploads/volpp.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Co-Investigator
 summary: >-
@@ -35,7 +35,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 
@@ -59,6 +60,6 @@ This was a three-arm pragmatic randomized controlled trial. Patients were one hu
 
 At the 4-month follow-up visit, mean (SD) change values in systolic blood pressure were − 4.7 (23.4) mmHg in usual care, − 4.3 (21.5) mmHg in the pill bottle arm, and − 4.6 (19.8) mmHg in the text arm. There was no significant change in systolic blood pressure between control and the pill bottle arm (p = 0.94) or the text messaging arm (p = 1.00), and the two intervention arms did not differ from each other (p = 0.93).
 
-![](/img/uploads/11606_2019_5241_fig2_html.png)
+![](/images/uploads/11606_2019_5241_fig2_html.png)
 
 Despite good measured adherence, neither feedback with electronic pill bottles nor bidirectional text messaging about medication adherence improved blood pressure control. Adherence to prescribed medications was not improved enough to affect BP control or it was not the primary driver of poor control.

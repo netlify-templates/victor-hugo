@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Gestational Care
 status: Enrolling
 authors:
-  - authorimage: /img/uploads/krukowskirebecca_301743.jpg
+  - authorimage: /images/uploads/krukowskirebecca_301743.jpg
     authorname: 'Rebecca Krukowski, PhD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/xuyang.jpeg
+  - authorimage: /images/uploads/xuyang.jpeg
     authorname: 'Xuyang Tang, PhD'
     authorrole: Project Manager
 summary: >-
@@ -22,6 +22,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

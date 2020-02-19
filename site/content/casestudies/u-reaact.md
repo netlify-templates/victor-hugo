@@ -6,11 +6,11 @@ subdomain: Urology
 status: Active
 authors:
   - 
-    authorimage: /img/uploads/rees3825.jpg
+    authorimage: /images/uploads/rees3825.jpg
     authorname: Peter Reese, MD, MSCE
     authorrole: Investigator
   - 
-    authorimage: /img/uploads/amaral.jpg
+    authorimage: /images/uploads/amaral.jpg
     authorname: Sandra Amaral, MD, MHS
     authorrole: Principal Investigator
 summary: >
@@ -25,5 +25,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

@@ -4,13 +4,13 @@ date: '2016-07-01'
 area: research
 subdomain: Obesity
 authors:
-  - authorimage: /img/uploads/kullgren-small_image.jpg
+  - authorimage: /images/uploads/kullgren-small_image.jpg
     authorname: 'Jeffrey T. Kullgren, MD, MS, MPH'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/troxel-hi-res1-292x300.jpg
+  - authorimage: /images/uploads/troxel-hi-res1-292x300.jpg
     authorname: 'Andrea B. Troxel, ScD'
     authorrole: Investigator
-  - authorimage: /img/uploads/loewenstein-hi-res1-996x1024-min.jpg
+  - authorimage: /images/uploads/loewenstein-hi-res1-996x1024-min.jpg
     authorname: 'George Lowenstein, PhD'
     authorrole: Investigator
 summary: >-
@@ -35,7 +35,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 
@@ -65,6 +66,6 @@ The study conducted a 36-week parallel design randomized trial (24 intervention 
 
 Among participants eligible to make deposits, 29% made ≥1 deposit and matching did not increase participation. At 24 weeks, control participants gained an average of 1.0 pound, whereas 1:1 match participants lost an average of 5.3 pounds (P = .005). After 36 weeks, control participants gained an average of 2.1 pounds, whereas no match participants lost an average of 5.1 pounds (P = .008).
 
-![null](/img/uploads/screen-shot-2018-08-28-at-10.08.29-am.png)
+![null](/images/uploads/screen-shot-2018-08-28-at-10.08.29-am.png)
 
 Participation in deposit contracts to promote weight loss was low, and matching deposits did not increase participation. For deposit contracts to impact population health, ongoing participation will need to be higher.

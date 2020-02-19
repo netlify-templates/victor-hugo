@@ -4,10 +4,10 @@ date: '2016-01-01'
 area: research
 subdomain: Obesity
 authors:
-  - authorimage: /img/team/Mitesh_0.jpg
+  - authorimage: /images/team/Mitesh_0.jpg
     authorname: 'Mitesh S. Patel, MD, MBA, MS'
     authorrole: Investigator
-  - authorimage: /img/team/Asch_1.jpg
+  - authorimage: /images/team/Asch_1.jpg
     authorname: 'David A. Asch, MD, MBA'
     authorrole: Investigator
 summary: Premium-based financial incentives to promote workplace weight loss
@@ -29,7 +29,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 

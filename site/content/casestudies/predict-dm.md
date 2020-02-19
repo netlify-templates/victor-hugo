@@ -6,11 +6,11 @@ subdomain: General Care
 status: Analysis
 authors:
   - 
-    authorimage: /img/team/volpp.jpg
+    authorimage: /images/team/volpp.jpg
     authorname: Kevin Volpp, MD, PhD
     authorrole: Investigator
   - 
-    authorimage: /img/team/Mitesh_0.jpg
+    authorimage: /images/team/Mitesh_0.jpg
     authorname: Mitesh Patel, MD, MBA, MS
     authorrole: Principal Investigator
 summary: >
@@ -28,5 +28,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

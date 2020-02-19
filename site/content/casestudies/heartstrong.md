@@ -4,10 +4,10 @@ date: '2017-08-01'
 area: research
 subdomain: Cardiovascular Disease Management
 authors:
-  - authorimage: /img/team/Shivan.jpg
+  - authorimage: /images/team/Shivan.jpg
     authorname: 'Shivan Mehta, MD, MBA, MSHP'
     authorrole: Investigator
-  - authorimage: /img/team/Volpp_1.jpg
+  - authorimage: /images/team/Volpp_1.jpg
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Investigator
 summary: >-
@@ -40,7 +40,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim 
 

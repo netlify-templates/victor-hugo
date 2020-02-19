@@ -4,10 +4,10 @@ date: '2017-05-01'
 area: research
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/uploads/kristin-harkins.jpg
+  - authorimage: /images/uploads/kristin-harkins.jpg
     authorname: 'Kristin A. Harkins, MPH'
     authorrole: Investigator
-  - authorimage: /img/uploads/kullgren-small_image.jpg
+  - authorimage: /images/uploads/kullgren-small_image.jpg
     authorname: 'Jeffrey T. Kullgren, MD, MS, MPH'
     authorrole: Investigator
 summary: >-
@@ -35,7 +35,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 

@@ -6,11 +6,11 @@ subdomain: Mental Health
 status: Enrolling
 authors:
   - 
-    authorimage: /img/uploads/marcus.jpg
+    authorimage: /images/uploads/marcus.jpg
     authorname: Steven Marcus, PhD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/uploads/olfson.jpg
+    authorimage: /images/uploads/olfson.jpg
     authorname: Mark Olfson, MD
     authorrole: Investigator
 summary: >
@@ -29,5 +29,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

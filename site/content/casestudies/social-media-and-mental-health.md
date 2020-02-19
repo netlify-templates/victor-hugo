@@ -4,10 +4,10 @@ date: '2019-11-13'
 area: inprogress
 subdomain: 'Mental Health '
 authors:
-  - authorimage: /img/uploads/lauren.jpg
+  - authorimage: /images/uploads/lauren.jpg
     authorname: 'Lauren Southwick '
     authorrole: 'Program Manager '
-  - authorimage: /img/uploads/merchant1.jpg
+  - authorimage: /images/uploads/merchant1.jpg
     authorname: 'Raina Merchant, MD MSHP FAHA'
     authorrole: Research Coordinator
 summary: >-
@@ -26,6 +26,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Design 
+image: /images/uploads/hsm.01.jpg
 ---
 

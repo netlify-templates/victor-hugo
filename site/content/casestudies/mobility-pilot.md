@@ -4,10 +4,10 @@ date: '2019-10-09'
 area: inprogress
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/uploads/greysen_ryan_expert.jpg
+  - authorimage: /images/uploads/greysen_ryan_expert.jpg
     authorname: 'Ryan Greysen, MD, MHS, MA'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/manges-kirstin_photo.jpg
+  - authorimage: /images/uploads/manges-kirstin_photo.jpg
     authorname: 'Kirstin Manges, PhD'
     authorrole: Clinical Co-Lead
 summary: >-
@@ -21,6 +21,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

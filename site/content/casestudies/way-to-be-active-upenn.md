@@ -4,10 +4,10 @@ date: '2016-03-15'
 area: research
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/team/Mitesh_0.jpg
+  - authorimage: /images/team/Mitesh_0.jpg
     authorname: 'Mitesh S. Patel, MD, MBA, MS'
     authorrole: Principan Investigator
-  - authorimage: /img/team/Asch_1.jpg
+  - authorimage: /images/team/Asch_1.jpg
     authorname: 'David A. Asch, MD, MBA'
     authorrole: Investigator
 summary: >-
@@ -32,7 +32,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim:
 Financial incentive designs to increase physical activity have not been well-examined. Aim was to test the effectiveness of 3 methods to frame financial incentives to increase physical activity among overweight and obese adults.

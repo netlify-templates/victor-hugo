@@ -4,10 +4,10 @@ date: '2012-03-20'
 area: Research
 subdomain: Diabetes
 authors:
-  - authorimage: /img/uploads/long-judith.jpeg
+  - authorimage: /images/uploads/long-judith.jpeg
     authorname: 'Judith A. Long, MD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/avatar16.jpg
+  - authorimage: /images/uploads/avatar16.jpg
     authorname: 'Diane M. Richardson, PhD'
     authorrole: Investigator
 summary: >-
@@ -29,7 +29,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background and Aim
 
@@ -41,7 +42,7 @@ Aim was to determine whether peer mentors or financial incentives are superior t
 
 A six month randomized controlled trial with a patient population of African American veterans, age 50-70 years old, with persistently poor diabetes control.
 
-![](/img/uploads/nihms-410510-f0001.jpg)
+![](/images/uploads/nihms-410510-f0001.jpg)
 
 **Intervention** - 118 participants were randomized to one of the three arms. Usual care participants were notified of their starting HbA1c and recommended goals for HbA1c. Those in the peer mentor arm were assigned a peer mentor who formerly had poor glycemic control but now had good control (HbA1c < 7.5%) who was asked to talk with the participant at least once a week. Peer mentors were matched on race, sex, and age. Those in the financial incentive arm could earn $100 by dropping their HbA1c by one point and $200 by dropping it by two points or to a HbA1c of 6.5%.
 

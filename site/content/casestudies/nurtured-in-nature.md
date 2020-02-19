@@ -4,10 +4,10 @@ date: '2019-09-09'
 area: inprogress
 subdomain: Physical Activity
 authors:
-  - authorimage: /img/uploads/garvin-gina.jpg
+  - authorimage: /images/uploads/garvin-gina.jpg
     authorname: 'Eugenia South, MD, MSHP'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/avatar16.jpg
+  - authorimage: /images/uploads/avatar16.jpg
     authorname: Kehinde Oyekanmi
     authorrole: Project Manager
 summary: >-
@@ -21,6 +21,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

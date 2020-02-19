@@ -6,11 +6,11 @@ subdomain: Oncology
 status: Enrolling
 authors:
   - 
-    authorimage: /img/team/Mitesh_0.jpg
+    authorimage: /images/team/Mitesh_0.jpg
     authorname: Mitesh Patel, MD, MBA, MS
     authorrole: Investigator
   - 
-    authorimage: /img/uploads/wright.jpg
+    authorimage: /images/uploads/wright.jpg
     authorname: Alexi Wright, MD, MPH
     authorrole: Principal Investigator
 summary: >
@@ -27,5 +27,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

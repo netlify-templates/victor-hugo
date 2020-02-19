@@ -5,13 +5,13 @@ area: inprogress
 subdomain: Mental Health
 status: Design
 authors:
-  - authorimage: /img/uploads/gunning.jpg
+  - authorimage: /images/uploads/gunning.jpg
     authorname: 'Faith Gunning, PhD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/falk.jpg
+  - authorimage: /images/uploads/falk.jpg
     authorname: 'Avital Falk, PhD'
     authorrole: Co-Investigator
-  - authorimage: /img/uploads/jones.jpg
+  - authorimage: /images/uploads/jones.jpg
     authorname: 'Rebecca M. Jones, PhD'
     authorrole: Co-Investigator
 summary: >-
@@ -28,5 +28,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

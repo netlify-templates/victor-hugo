@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Hypertension
 status: Active
 authors:
-  - authorimage: /img/uploads/lewey_jennifer.jpg
+  - authorimage: /images/uploads/lewey_jennifer.jpg
     authorname: 'Jennifer Lewey, MD, MPH'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/avatar16.jpg
+  - authorimage: /images/uploads/avatar16.jpg
     authorname: Keri Simonette
     authorrole: Project Manager
 summary: >-
@@ -24,6 +24,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

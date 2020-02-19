@@ -6,11 +6,11 @@ subdomain: Addiction
 status: Analysis
 authors:
   - 
-    authorimage: /img/uploads/buttenheim.jpg
+    authorimage: /images/uploads/buttenheim.jpg
     authorname: Alison Buttenheim, PhD, MBA
     authorrole: Investigator
   - 
-    authorimage: /img/uploads/cannuscio.jpg
+    authorimage: /images/uploads/cannuscio.jpg
     authorname: Carolyn Cannuscio, MD
     authorrole: Principal Investigator
 summary: >
@@ -28,5 +28,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

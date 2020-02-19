@@ -6,11 +6,11 @@ subdomain: Cardiology
 status: Analysis
 authors:
   - 
-    authorimage: /img/team/volpp.jpg
+    authorimage: /images/team/volpp.jpg
     authorname: Kevin Volpp, MD, PhD
     authorrole: Principal Investigator
   - 
-    authorimage: /img/team/mehta.jpg
+    authorimage: /images/team/mehta.jpg
     authorname: Shivan Mehta, MD, MBA, MSHP
     authorrole: Investigator
 summary: >
@@ -32,5 +32,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

@@ -5,10 +5,10 @@ area: inprogress
 subdomain: Emergency Medicine
 status: Analysis
 authors:
-  - authorimage: /img/uploads/delgado-kit.jpg
+  - authorimage: /images/uploads/delgado-kit.jpg
     authorname: 'M. Kit Delgado, MD, MS'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/agarwal_anish_expert.jpg
+  - authorimage: /images/uploads/agarwal_anish_expert.jpg
     authorname: 'Anish Agarwal, MD, MPH'
     authorrole: Investigator
 summary: >-
@@ -23,6 +23,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

@@ -4,10 +4,10 @@ date: '2019-11-13'
 area: inprogress
 subdomain: 'Women''s Health '
 authors:
-  - authorimage: /img/uploads/wbender.png
+  - authorimage: /images/uploads/wbender.png
     authorname: 'Whitney Bender, MD'
     authorrole: 'PI '
-  - authorimage: /img/uploads/durnwald_celestemd.jpg
+  - authorimage: /images/uploads/durnwald_celestemd.jpg
     authorname: 'Celeste Durnwald, MD'
     authorrole: PI
 summary: >-
@@ -25,6 +25,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 

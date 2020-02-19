@@ -6,11 +6,11 @@ subdomain: General Care
 status: Analysis
 authors:
   - 
-    authorimage: /img/team/mehta.jpg
+    authorimage: /images/team/mehta.jpg
     authorname: Shivan Mehta, MD, MBA, MSHP
     authorrole: Principal Investigator
   - 
-    authorimage: /img/team/norton.jpg
+    authorimage: /images/team/norton.jpg
     authorname: Laurie Norton
     authorrole: Project Lead
 features:
@@ -24,5 +24,6 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---

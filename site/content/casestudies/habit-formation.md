@@ -4,10 +4,10 @@ date: '2019-05-31'
 area: research
 subdomain: Medication Adherence
 authors:
-  - authorimage: /img/uploads/putt7815.jpg
+  - authorimage: /images/uploads/putt7815.jpg
     authorname: 'Mary E. Putt, PhD, ScD'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/rees3825.jpg
+  - authorimage: /images/uploads/rees3825.jpg
     authorname: 'Peter P. Reese, MD, MSCE'
     authorrole: Principal Investigator
 summary: >-
@@ -32,7 +32,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 

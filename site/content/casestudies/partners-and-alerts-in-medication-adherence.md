@@ -4,10 +4,10 @@ date: '2018-09-01'
 area: inprogress
 subdomain: Cardiovascular Disease Management
 authors:
-  - authorimage: /img/uploads/kessler-judd.jpg
+  - authorimage: /images/uploads/kessler-judd.jpg
     authorname: 'Judd B. Kessler, PhD, MPhil'
     authorrole: Principal Investigator
-  - authorimage: /img/uploads/troxel-hi-res1-292x300.jpg
+  - authorimage: /images/uploads/troxel-hi-res1-292x300.jpg
     authorname: 'Andrea B. Troxel, ScD'
     authorrole: Investigator
 summary: >-
@@ -28,7 +28,8 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care
+label: Standard of Care 
+image: /images/uploads/hsm.01.jpg
 ---
 ## Background
 
