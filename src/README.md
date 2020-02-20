@@ -8,7 +8,7 @@ Netlify CMS is also integrated.
 - [x] Create base website template in hugo and netlify
 - [ ] Add images and ensure views are responsive
 - [x] Create home page
-- [ ] Wire up existing / modified content
+- [x] Wire up existing / modified content
 - [ ] Create solution pages (overall)
 - [ ] Wire up existing / modified / new content
 - [ ] Solution page for health systems
@@ -17,14 +17,15 @@ Netlify CMS is also integrated.
 - [ ] Wire up existing / modified / new content
 - [ ] Solution page for researchers
 - [ ] Wire up existing / modified / new content
-- [ ] Projects page. This is an ongoing task. 
-- [ ] Wire up existing / modified / new content
+- [x] Projects page. This is an ongoing task. 
+- [x] Wire up existing / modified / new content
 - [ ] Create about page
 - [ ] Wire up existing / modified / new content
-- [ ] Create press page
-- [ ] Wire up existing / modified / new content
-- [ ] Create publications page
-- [ ] Wire up existing / modified / new content
+- [ ] Create press and publications highlights page
+- [x] Create press page
+- [x] Wire up existing / modified / new content
+- [x] Create publications page
+- [x] Wire up existing / modified / new content
 - [ ] Create company blog page
 - [ ] Wire up existing / modified / new content
 - [ ] Create engg blog page
@@ -39,7 +40,7 @@ Netlify CMS is also integrated.
 - [ ] Wire up existing / modified / new content
 - [ ] Add release notes page
 - [ ] Wire up existing / modified / new content
-- [ ] Add content for ABC. Replaced with coming soon page for now.
+- [ ] ~~Add content for ABC. Replaced with coming soon page for now.~~
 - [ ] Add content for company blog
 - [ ] Migrate to actual domain name
 - [ ] Add GA tags
