@@ -10,5 +10,5 @@ summary: >-
   assistant professor of medicine and health care management.
 image: /images/uploads/daily_steps_1600.jpg
 source: 'https://www.futurity.org/steps-competition-exercise-2157282-2/'
----
+----
 

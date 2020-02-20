@@ -11,5 +11,5 @@ summary: >-
 image: /images/uploads/hbr.innovation.jpg
 source: >-
   https://www.beckershospitalreview.com/innovation/3-ways-healthcare-leaders-can-encourage-experimental-innovation.html
----
+----
 

@@ -13,5 +13,5 @@ summary: >-
 image: /images/uploads/pill-min.jpg
 source: >-
   https://www.forbes.com/sites/peterubel/2018/01/31/why-its-okay-behavioral-economics-failed-to-prevent-heart-attacks/
----
+----
 

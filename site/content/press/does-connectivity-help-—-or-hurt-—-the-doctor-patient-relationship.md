@@ -15,5 +15,5 @@ summary: >-
 image: /images/uploads/e-medicine.jpg
 source: >-
   http://knowledge.wharton.upenn.edu/article/does-connectivity-help-or-hurt-doctor-patient-relationship/
----
+----
 

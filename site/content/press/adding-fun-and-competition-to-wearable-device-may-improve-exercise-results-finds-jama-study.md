@@ -13,5 +13,5 @@ summary: >-
 image: /images/uploads/wearable-device.jpg
 source: >-
   https://speciality.medicaldialogues.in/adding-fun-and-competition-to-wearable-device-may-improve-exercise-results-finds-jama-study/
----
+----
 

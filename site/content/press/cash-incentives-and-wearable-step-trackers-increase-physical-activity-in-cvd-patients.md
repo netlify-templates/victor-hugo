@@ -14,5 +14,5 @@ summary: >-
 image: /images/uploads/walking-min.jpg
 source: >-
   https://www.cardiovascularbusiness.com/topics/practice-management/cash-incentives-and-wearable-step-trackers-increase-physical-activity
----
+----
 

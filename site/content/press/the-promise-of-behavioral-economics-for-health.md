@@ -10,5 +10,5 @@ summary: >-
   ought to make health decisions but on how humans actually make them.
 image: /images/uploads/be.png
 source: 'http://www.hfma.org/Content.aspx?id=52878'
----
+----
 

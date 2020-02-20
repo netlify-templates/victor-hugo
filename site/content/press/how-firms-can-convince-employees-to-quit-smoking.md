@@ -14,5 +14,5 @@ summary: >-
 image: /images/uploads/smoking-kw.jpg
 source: >-
   http://knowledge.wharton.upenn.edu/article/should-companies-pay-employees-to-quit-smoking/
----
+----
 

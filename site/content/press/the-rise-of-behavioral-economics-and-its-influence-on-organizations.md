@@ -13,5 +13,5 @@ image: >-
   /images/uploads/the-rise-of-behavioral-economics-and-its-influence-on-organizations.jpg
 source: >-
   https://hbr.org/2017/10/the-rise-of-behavioral-economics-and-its-influence-on-organizations
----
+----
 

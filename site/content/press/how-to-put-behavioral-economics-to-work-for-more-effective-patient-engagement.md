@@ -9,5 +9,5 @@ summary: >-
 image: /images/uploads/data-min.jpg
 source: >-
   http://www.healthcareitnews.com/news/how-put-behavioral-economics-work-more-effective-patient-engagement
----
+----
 

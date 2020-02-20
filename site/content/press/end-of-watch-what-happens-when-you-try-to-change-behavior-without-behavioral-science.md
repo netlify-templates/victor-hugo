@@ -13,5 +13,5 @@ summary: >-
 image: /images/uploads/verge01-min.jpg
 source: >-
   https://www.theverge.com/2018/1/24/16926350/apple-watch-series-2-fitness-tracker-healthy-notification-behavior
----
+----
 

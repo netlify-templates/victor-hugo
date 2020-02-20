@@ -11,5 +11,5 @@ summary: >-
 image: /images/uploads/healthapp-min.jpg
 source: >-
   http://www.healthcareitnews.com/news/analyzing-behavioral-economics-and-psychology-are-key-engaging-patients-make-meaningful-changes
----
+----
 

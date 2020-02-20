@@ -7,5 +7,5 @@ summary: >-
 image: /images/uploads/reutersh.jpg
 source: >-
   https://www.reuters.com/article/us-health-fitnesstrackers-calories/fitness-trackers-accuracy-varies-widely-for-calories-burned-idUSKCN1MS2QL
----
+----
 

@@ -8,5 +8,5 @@ summary: >-
 image: /images/uploads/960x0.jpg
 source: >-
   https://www.forbes.com/sites/peterubel/2017/01/31/the-secret-to-weight-loss-according-to-behavioral-economics/
----
+----
 

@@ -10,5 +10,5 @@ summary: >-
   some sub-groups.
 image: /images/uploads/no-smoking-sign.jpg
 source: 'https://fox61.com/2018/06/01/looking-to-quit-smoking-heres-one-way/smoking'
----
+----
 

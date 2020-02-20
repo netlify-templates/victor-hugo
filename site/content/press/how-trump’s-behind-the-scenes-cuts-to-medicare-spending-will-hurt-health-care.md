@@ -10,5 +10,5 @@ summary: >-
 image: /images/uploads/mwimg-min.jpg
 source: >-
   https://www.marketwatch.com/story/how-trumps-behind-the-scenes-cuts-to-medicare-spending-will-hurt-health-care-2018-02-20
----
+----
 

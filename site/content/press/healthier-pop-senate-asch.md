@@ -9,5 +9,5 @@ summary: >-
 image: /images/press/senate-asch.png
 source: >-
   http://www.healthcarefinancenews.com/news/healthier-population-will-lead-lower-healthcare-costs-healthcare-pros-tell-senate-panel
----
+----
 

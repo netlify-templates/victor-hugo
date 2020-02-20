@@ -11,5 +11,5 @@ summary: >-
 image: /images/uploads/smoking-min.jpg
 source: >-
   http://www.philly.com/philly/health/quitting-smoking-is-incredibly-hard-penn-researchers-find-one-thing-that-helps-most-20180524.html
----
+----
 

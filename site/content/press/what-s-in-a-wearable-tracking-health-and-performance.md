@@ -7,5 +7,5 @@ summary: >-
 image: /images/uploads/pt.jpg
 source: >-
   https://www.psychologytoday.com/us/blog/the-social-brain/201810/whats-in-wearable-tracking-health-and-performance
----
+----
 

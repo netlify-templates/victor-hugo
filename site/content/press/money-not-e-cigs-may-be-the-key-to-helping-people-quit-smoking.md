@@ -9,5 +9,5 @@ summary: >-
   people to quit.
 image: /images/uploads/vape_0.jpg
 source: 'https://www.thefix.com/money-not-e-cigs-may-be-key-helping-people-quit-smoking'
----
+----
 

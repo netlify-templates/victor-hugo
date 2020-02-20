@@ -1,7 +1,8 @@
 ---
 study_name: Active Reward
 date: '2018-06-13'
-status: research
+area: research
+status: complete
 authors:
   - authorimage: /images/uploads/chok3021.jpg
     authorname: 'Neel P. Chokshi, MD, MBA'

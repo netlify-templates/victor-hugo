@@ -11,5 +11,5 @@ summary: >-
   insourcing it. We owe it to our patients to do the same for health care.
 image: /images/uploads/nudge_logo_0.png
 source: 'http://www.nejm.org/doi/full/10.1056/NEJMp1712984#t=article'
----
+----
 

@@ -13,5 +13,5 @@ summary: >-
   engagement for everyone else.
 image: /images/uploads/social.incentives.jpg
 source: 'http://www.nejm.org/doi/full/10.1056/NEJMp1603978'
----
+----
 

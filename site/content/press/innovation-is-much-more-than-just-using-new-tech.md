@@ -9,5 +9,5 @@ summary: >-
   might be in a better position to address our customers’ needs".
 image: /images/uploads/david-asch-himss18-712-min.jpg
 source: 'http://www.healthcareitnews.com/news/innovation-much-more-just-using-new-tech'
----
+----
 

@@ -10,5 +10,5 @@ summary: >-
 image: /images/uploads/asch.siemens.jpg
 source: >-
   https://www.siemens-healthineers.com/ua/insights/news/executive-summit-asch.html
----
+----
 

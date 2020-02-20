@@ -8,5 +8,5 @@ summary: >-
   to design interventions that are easily accessible by everyone.
 image: /images/uploads/hsm.bp.jpg
 source: 'https://www.medpagetoday.com/meetingcoverage/smfm/78090'
----
+----
 

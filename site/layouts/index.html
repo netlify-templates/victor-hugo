@@ -29,66 +29,24 @@
         </div>
     </div>
 
-    {{ $v1 := where .Data.Pages "Section" "casestudies" }}
-    {{ $v2 := where .Data.Pages "Params.spotlight" true }}
-    {{ $v3 := where .Data.Pages "Params.label" "Standard of Care"}}
-    {{ $v4 := where .Data.Pages "Params.label" "Research"}}
-    {{ $filteredclinical := $v1 | intersect $v2 | intersect $v3 }}
-    {{ $filteredresearch := $v1 | intersect $v2 | intersect $v4 }}
+    <div class="flex flex-wrap -mx-4">
 
-    {{ partial "case-summary" . }}
+        {{ $v1 := where .Site.Pages "Section" "projects" }}
+        {{ $v2 := where (where .Site.Pages "Section" "projects") "Params.spotlight" true }}
+        {{ $v3 := where (where .Site.Pages "Section" "projects") "Params.area" "clinical"}}
+        {{ $v4 := where (where .Site.Pages "Section" "projects") "Params.area" "research"}}
+        {{ $filteredclinical := $v1 | intersect $v2 | intersect $v3 }}
+        {{ $filteredresearch := $v1 | intersect $v2 | intersect $v4 }}
 
-    <!-- <div class="flex flex-wrap -mx-4">
-        <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
-            <div class="relative flex flex-col h-full p-8 shadow-md">
-                <span class="text-xl mb-3 font-heading text text-center">Heart Safe Motherhood</span>
-                <hr />
-                <div class="px-2 py-4 text-center">
-                    <span
-                        class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Pre-eclampsia</span>
-                    <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Remote
-                        monitoring</span>
-                    <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">Reduced
-                        readmissions</span>
-                </div>
-                <span
-                    class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">Standard
-                    of care</span>
-                <img class="rounded shadow-md mb-6" src="images/hsm.01.jpg" alt="">
-                <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
-                    <div class="mr-3 pr-3">
-                        <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/sindhusrinivasheadshot.jpg"
-                            alt="Sindhu Srinivas, MD" />
-                        <span class="text-sm text-gray-600">Sindhu Srinivas, MD, MSCE</span>
-                    </div>
-                    <div class="mr-3 pr-3">
-                        <img class="h-16 w-16 rounded-full mx-auto mb-2" src="images/adihirshbergheadshot.jpg"
-                            alt="Adi Hirshberg, MD" />
-                        <span class="text-sm text-gray-600">Adi Hirshberg, MD</span>
-                    </div>
-                </div>
-                <p class="mt-4 mb-6 text-gray-500 leading-relaxed">Goal of reducing 7-day readmissions for hypertension
-                    among postpartum women and creating a national leadership model to meet ACOG
-                    guidelines</p>
-                <hr />
-                <div class="mt-4">
-                    <div class="pl-3 mb-4">
-                        <p class="text-md text-gray-700 font-heading">
-                            Increased guideline adherence by 80%
-                        </p>
-                    </div>
-                    <div class="pl-3 mb-4">
-                        <p class="text-md text-gray-700 font-heading">
-                            Reduced 7-day readmissions to 1%
-                        </p>
-                    </div>
-                </div>
-                <a class="btn mt-auto text-blue-700 hover:underline text-right" href="# ">Read more</a>
-            </div>
-        </div>
-    </div> -->
+        {{ range first 3 $filteredclinical }}
+            {{ partial "case-summary" . }}
+        {{ end }}
+        {{ range first 3 $filteredresearch }}
+            {{ partial "case-summary" . }}
+        {{ end }}
+    </div>
 </section>
-<!-- <hr class="mt-16 mb-16"></hr> -->
+
 <section class="py-8 px-4 w-full bg-indigo-600 text-white mt-16 mb-16">
     <h2 class="text-3xl mb-6 text-center font-heading">Let us tell you more</h2>
     <div class="flex flex-wrap -mx-6">
@@ -120,28 +78,16 @@
         </div>
     </div>
 </section>
-<!-- <hr class="mt-24 mb-24"> -->
+
 <section class="py-8 px-4 mt-16 mb-16">
     <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Latest Content</h2>
     <p class="mb-6 text-xl text-center text-gray-500">Way to Health mentions, publications and content </p>
     <div class="flex flex-wrap -mx-4">
-        <!-- <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
-            <div class="relative flex flex-col h-full p-8 shadow-md">
-                <span
-                    class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">Press</span>
-                <img class="rounded shadow-md mb-6" src="images/asch.siemens.jpg" alt="">
-                <span class="text-xl mb-3 font-heading text">How can the science of motivation help transform care
-                    delivery?</span>
-                <p class="mt-4 mb-6 text-gray-500 leading-relaxed ">What is the role of human behavior in healthcare?
-                    Looking at both patients and physicians, David Asch discussed at the Siemens Healthineers Executive
-                    Summit 2019 the science of motivation and the role played by education, rewards (including financial
-                    incentives), and simple design changes in technology in transforming care delivery.</p>
-                <a class="mt-auto text-blue-700 hover:underline text-right" href="# ">Read more</a>
-            </div>
-        </div> -->
-        {{ partial "content-summary.html" . }}
-        {{ partial "content-summary.html" . }}
-        {{ partial "content-summary.html" . }}
+
+        {{ range first 3 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+                {{ partial "content-summary" . }}
+        {{ end }}
+
     </div>
 </section>
 

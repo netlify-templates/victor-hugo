@@ -9,5 +9,5 @@ summary: >-
 image: /images/uploads/asch.interview.jpg
 source: >-
   https://himsstv.brightcovegallery.com/detail/videos/analytics/video/5746335383001/learning-from-patient-behavior-to-improve-outcomes?startPlaylistAt=6036923798001
----
+----
 

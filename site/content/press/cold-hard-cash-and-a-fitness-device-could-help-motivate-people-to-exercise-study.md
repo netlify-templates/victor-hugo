@@ -13,5 +13,5 @@ summary: >-
 image: /images/uploads/cashfexercise.jpg
 source: >-
   https://abcnews.go.com/Health/cold-hard-cash-fitness-device-motivate-people-exercise/story?id=55836225
----
+----
 

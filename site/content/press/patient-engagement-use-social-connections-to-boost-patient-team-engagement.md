@@ -12,5 +12,5 @@ summary: >-
 image: /images/uploads/careteam_9_0.jpg
 source: >-
   https://www.fiercehealthcare.com/patient-engagement/embrace-social-connections-for-better-patient-clinical-team-engagement
----
+----
 

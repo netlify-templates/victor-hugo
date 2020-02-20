@@ -8,5 +8,5 @@ summary: >-
   smoking.
 image: /images/uploads/smoking.cessation.png
 source: 'http://fortune.com/2017/11/16/quit-smoking-great-american-smokeout-2017/'
----
+----
 

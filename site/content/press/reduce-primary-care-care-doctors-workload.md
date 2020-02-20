@@ -8,5 +8,5 @@ summary: >-
 image: /images/press/hbr.doctors.jpg
 source: >-
   https://hbr.org/2017/11/how-to-reduce-primary-care-doctors-workloads-while-improving-care
----
+----
 

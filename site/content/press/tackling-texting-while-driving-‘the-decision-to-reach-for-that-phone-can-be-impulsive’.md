@@ -15,5 +15,5 @@ summary: >-
   on to prevent incoming notifications while in the car.
 image: /images/uploads/text-drive.jpg
 source: 'https://kwhs.wharton.upenn.edu/2019/08/tackling-texting-while-driving/'
----
+----
 

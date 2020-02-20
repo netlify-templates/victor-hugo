@@ -9,6 +9,7 @@ Netlify CMS is also integrated.
 - [ ] Add images and ensure views are responsive
 - [x] Create home page
 - [x] Wire up existing / modified content
+- [x] Add pulled content from blog, press and publications
 - [ ] Create solution pages (overall)
 - [ ] Wire up existing / modified / new content
 - [ ] Solution page for health systems

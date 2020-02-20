@@ -9,5 +9,5 @@ summary: >-
 image: /images/uploads/10up-nudge1-master768.jpg
 source: >-
   https://www.nytimes.com/2017/04/13/upshot/answer-to-better-health-care-behavioral-economics.html
----
+----
 

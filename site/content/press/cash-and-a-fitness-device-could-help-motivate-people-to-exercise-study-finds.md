@@ -16,5 +16,5 @@ summary: >-
 image: /images/uploads/061318_thinkstock_fitness-min.jpg
 source: >-
   http://kwbe.com/abc_health/cash-and-a-fitness-device-could-help-motivate-people-to-exercise-study-finds-abcid36079563/
----
+----
 
