@@ -5,11 +5,11 @@ Deployed via netlify.
 Netlify CMS is also integrated.
 
 ## TO DOs
-- [x] Create base website template in hugo and netlify
+- [x] ~~Create base website template in hugo and netlify~~
 - [ ] Add images and ensure views are responsive
-- [x] Create home page
-- [x] Wire up existing / modified content
-- [x] Add pulled content from blog, press and publications
+- [x] ~~Create home page~~
+- [x] ~~Wire up existing / modified content~~
+- [x] ~~Add pulled content from blog, press and publications~~
 - [ ] Create solution pages (overall)
 - [ ] Wire up existing / modified / new content
 - [ ] Solution page for health systems
@@ -18,15 +18,15 @@ Netlify CMS is also integrated.
 - [ ] Wire up existing / modified / new content
 - [ ] Solution page for researchers
 - [ ] Wire up existing / modified / new content
-- [x] Projects page. This is an ongoing task. 
-- [x] Wire up existing / modified / new content
+- [x] ~~Projects page. This is an ongoing task. ~~
+- [x] ~~Wire up existing / modified / new content~~
 - [ ] Create about page
 - [ ] Wire up existing / modified / new content
 - [ ] Create press and publications highlights page
-- [x] Create press page
-- [x] Wire up existing / modified / new content
-- [x] Create publications page
-- [x] Wire up existing / modified / new content
+- [x] ~~Create press page~~
+- [x] ~~Wire up existing / modified / new content~~
+- [x] ~~Create publications page~~
+- [x] ~~Wire up existing / modified / new content~~
 - [ ] Create company blog page
 - [ ] Wire up existing / modified / new content
 - [ ] Create engg blog page
