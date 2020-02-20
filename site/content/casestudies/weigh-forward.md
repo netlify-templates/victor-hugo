@@ -1,5 +1,5 @@
 ---
-title: Weigh Forward
+study_name: Weigh Forward
 date: '2019-11-01'
 area: research
 subdomain: Obesity

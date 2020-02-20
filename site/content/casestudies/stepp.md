@@ -1,5 +1,5 @@
 ---
-title: STEPP
+study_name: STEPP
 date: 2016-06-01
 area: inprogress
 subdomain: Oncology

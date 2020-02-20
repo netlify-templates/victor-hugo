@@ -1,5 +1,5 @@
 ---
-title: STEP UP Mom
+study_name: STEP UP Mom
 date: '2019-10-10'
 area: inprogress
 subdomain: Hypertension

@@ -9,7 +9,7 @@ summary: >-
   focused on reducing harm from opioids. As Dr.  Kevin Volpp noted, “If the
   ideas we test are sufficiently bold, some will likely be unsuccessful, but
   that’s okay if across projects we make progress.”
-image: /img/uploads/opioid-epidemic-arizona-min.png
+image: /images/uploads/opioid-epidemic-arizona-min.png
 source: >-
   https://www.newswise.com/articles/chibe-combats-the-opioid-crisis,-one-%E2%80%98nudge%E2%80%99-at-a-time
 ---

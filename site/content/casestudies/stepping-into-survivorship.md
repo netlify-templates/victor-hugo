@@ -1,5 +1,5 @@
 ---
-title: Stepping Into Survivorship
+study_name: Stepping Into Survivorship
 date: 2018-01-01
 area: inprogress
 subdomain: Oncology

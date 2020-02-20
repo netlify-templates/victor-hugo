@@ -11,7 +11,7 @@ summary: >-
   [Vitality Smoking](https://www.waytohealth.org/casestudies/vitality-smoking/)
   shows significant promise and was discussed in this Knowledge @ Wharton
   podcast. 
-image: /img/uploads/smoking-kw.jpg
+image: /images/uploads/smoking-kw.jpg
 source: >-
   http://knowledge.wharton.upenn.edu/article/should-companies-pay-employees-to-quit-smoking/
 ---

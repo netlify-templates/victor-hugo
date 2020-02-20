@@ -1,5 +1,5 @@
 ---
-title: Narcan ITMAT
+study_name: Narcan ITMAT
 date: 2018-07-01
 area: inprogress
 subdomain: Addiction

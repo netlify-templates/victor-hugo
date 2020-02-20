@@ -7,7 +7,7 @@ summary: >-
   rate of growth in Medicare spending over the longer term, it will likely
   require some unpopular limits on beneficiary access, convenience, and
   generosity of coverage.
-image: /img/uploads/mwimg-min.jpg
+image: /images/uploads/mwimg-min.jpg
 source: >-
   https://www.marketwatch.com/story/how-trumps-behind-the-scenes-cuts-to-medicare-spending-will-hurt-health-care-2018-02-20
 ---

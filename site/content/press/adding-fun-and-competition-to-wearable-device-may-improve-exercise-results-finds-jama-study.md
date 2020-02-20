@@ -10,7 +10,7 @@ summary: >-
   participants may not benefit. Our next step will be to use data from this
   trial to develop behavioral profiles that could be used in the future to match
   the right intervention to the right person.”
-image: /img/uploads/wearable-device.jpg
+image: /images/uploads/wearable-device.jpg
 source: >-
   https://speciality.medicaldialogues.in/adding-fun-and-competition-to-wearable-device-may-improve-exercise-results-finds-jama-study/
 ---

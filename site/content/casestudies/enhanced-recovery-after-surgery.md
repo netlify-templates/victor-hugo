@@ -1,5 +1,5 @@
 ---
-title: Enhanced Recovery After Surgery
+study_name: Enhanced Recovery After Surgery
 date: '2019-01-25'
 area: clinical
 subdomain: Post-Op Spinal Surgery

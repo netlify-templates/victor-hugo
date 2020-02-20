@@ -9,7 +9,7 @@ summary: >-
   expand. It doesn’t take much investment to support such expertise, and given
   the value of its applications, most health systems would be well served by
   insourcing it. We owe it to our patients to do the same for health care.
-image: /img/uploads/nudge_logo_0.png
+image: /images/uploads/nudge_logo_0.png
 source: 'http://www.nejm.org/doi/full/10.1056/NEJMp1712984#t=article'
 ---
 

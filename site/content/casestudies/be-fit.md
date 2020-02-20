@@ -1,5 +1,5 @@
 ---
-title: Be Fit
+study_name: Be Fit
 date: 2017-11-13T00:00:00.000Z
 area: research
 subdomain: Physical Activity

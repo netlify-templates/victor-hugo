@@ -1,5 +1,5 @@
 ---
-title: 'Employee Hypertension '
+study_name: 'Employee Hypertension '
 date: '2019-11-13'
 area: clinical
 subdomain: 'Primary Care '

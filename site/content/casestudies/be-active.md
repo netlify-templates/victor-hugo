@@ -1,5 +1,5 @@
 ---
-title: Be Active
+study_name: Be Active
 date: '2019-04-10'
 area: inprogress
 subdomain: Wellness

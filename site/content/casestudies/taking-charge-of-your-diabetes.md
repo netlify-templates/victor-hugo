@@ -1,5 +1,5 @@
 ---
-title: Taking Charge of Your Diabetes
+study_name: Taking Charge of Your Diabetes
 date: '2018-03-01'
 area: research
 subdomain: Diabetes

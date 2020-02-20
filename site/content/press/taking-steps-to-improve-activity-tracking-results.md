@@ -7,7 +7,7 @@ summary: >-
   and Mitesh Patel discuss ways in which personalization, behavioral economics
   and gamification can perhaps be used to nudge individuals to pay more
   attention to their health.
-image: /img/uploads/mpatel-min.jpg
+image: /images/uploads/mpatel-min.jpg
 source: >-
   https://penncurrent.upenn.edu/features/taking-steps-to-improve-activity-tracking-results
 ---

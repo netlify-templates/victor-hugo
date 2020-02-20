@@ -12,7 +12,7 @@ summary: >-
   looked at how some of those negative effects could be turned around. Terwiesch
   sat down with Knowledge@Wharton to talk about these topics, which he describes
   as a “hot area” that sits at the intersection of medicine and management.
-image: /img/uploads/e-medicine.jpg
+image: /images/uploads/e-medicine.jpg
 source: >-
   http://knowledge.wharton.upenn.edu/article/does-connectivity-help-or-hurt-doctor-patient-relationship/
 ---

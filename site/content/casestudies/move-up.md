@@ -1,5 +1,5 @@
 ---
-title: Move UP
+study_name: Move UP
 date: '2019-11-01'
 area: inprogress
 subdomain: Urology

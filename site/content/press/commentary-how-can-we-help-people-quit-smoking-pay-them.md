@@ -6,7 +6,7 @@ summary: >-
   change strategies and encourage health plan benefit designs that invest in
   preventing disease, as opposed to simply treating the health consequences of
   smoking.
-image: /img/uploads/smoking.cessation.png
+image: /images/uploads/smoking.cessation.png
 source: 'http://fortune.com/2017/11/16/quit-smoking-great-american-smokeout-2017/'
 ---
 

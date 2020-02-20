@@ -1,5 +1,5 @@
 ---
-title: Merck Promote and Support
+study_name: Merck Promote and Support
 date: '2016-04-01'
 area: research
 subdomain: Cardiovascular Disease Management

@@ -7,7 +7,7 @@ summary: >-
   2019 the science of motivation and the role played by education, rewards
   (including financial incentives), and simple design changes in technology in
   transforming care delivery.
-image: /img/uploads/asch.siemens.jpg
+image: /images/uploads/asch.siemens.jpg
 source: >-
   https://www.siemens-healthineers.com/ua/insights/news/executive-summit-asch.html
 ---

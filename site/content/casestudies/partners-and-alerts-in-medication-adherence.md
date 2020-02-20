@@ -1,5 +1,5 @@
 ---
-title: Partners and Alerts in Medication Adherence
+study_name: Partners and Alerts in Medication Adherence
 date: '2018-09-01'
 area: inprogress
 subdomain: Cardiovascular Disease Management

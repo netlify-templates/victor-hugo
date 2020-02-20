@@ -8,7 +8,7 @@ summary: >-
   A comprehensive program designed to improve the quality of care for spine and
   peripheral nerve surgery patients reduced patients' opioid use at one month
   after surgery without increasing pain.
-image: /img/uploads/spine.jpg
+image: /images/uploads/spine.jpg
 source: 'https://www.philly.com/health/penn-surgery-spine-opioids-reduce-20190125.html'
 ---
 

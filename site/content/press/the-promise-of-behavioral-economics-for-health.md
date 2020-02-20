@@ -8,7 +8,7 @@ summary: >-
   to healthier choices that improve their well-being. Health programs are more
   likely to be successful if designed not based on how perfectly rational people
   ought to make health decisions but on how humans actually make them.
-image: /img/uploads/be.png
+image: /images/uploads/be.png
 source: 'http://www.hfma.org/Content.aspx?id=52878'
 ---
 

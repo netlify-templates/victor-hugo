@@ -1,5 +1,5 @@
 ---
-title: Right Size Opioid Prescribing
+study_name: Right Size Opioid Prescribing
 date: '2019-05-21'
 area: inprogress
 subdomain: Emergency Medicine

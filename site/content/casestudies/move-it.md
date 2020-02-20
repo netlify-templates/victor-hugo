@@ -1,5 +1,5 @@
 ---
-title: MOVE IT
+study_name: MOVE IT
 date: 2017-06-01
 area: inprogress
 subdomain: Physical Activity

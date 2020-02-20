@@ -1,5 +1,5 @@
 ---
-title: U-REAACT
+study_name: U-REAACT
 date: 2016-08-01
 area: inprogress
 subdomain: Urology

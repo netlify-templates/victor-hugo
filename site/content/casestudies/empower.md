@@ -1,5 +1,5 @@
 ---
-title: EMPOWER
+study_name: EMPOWER
 date: 2015-04-01
 area: inprogress
 subdomain: Cardiology

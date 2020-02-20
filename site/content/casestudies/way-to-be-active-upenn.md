@@ -1,5 +1,5 @@
 ---
-title: Way to Be Active - UPenn
+study_name: Way to Be Active - UPenn
 date: '2016-03-15'
 area: research
 subdomain: Physical Activity

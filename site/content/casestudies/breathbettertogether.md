@@ -1,5 +1,5 @@
 ---
-title: BreathBetterTogether
+study_name: BreathBetterTogether
 date: 2017-11-30
 area: inprogress
 subdomain: Pulmonology

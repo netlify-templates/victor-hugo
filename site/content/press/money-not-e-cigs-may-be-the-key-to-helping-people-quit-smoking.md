@@ -7,7 +7,7 @@ summary: >-
   to a new study that found that e-cigarettes weren’t any better than other
   methods of smoking cessation, and the only thing that really works is paying
   people to quit.
-image: /img/uploads/vape_0.jpg
+image: /images/uploads/vape_0.jpg
 source: 'https://www.thefix.com/money-not-e-cigs-may-be-key-helping-people-quit-smoking'
 ---
 

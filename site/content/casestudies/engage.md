@@ -1,5 +1,5 @@
 ---
-title: ENGAGE
+study_name: ENGAGE
 date: 2018-06-01
 area: inprogress
 subdomain: Physical Activity

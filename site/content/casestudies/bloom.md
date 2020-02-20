@@ -1,5 +1,5 @@
 ---
-title: Bloom
+study_name: Bloom
 date: '2019-02-26'
 area: inprogress
 subdomain: Gestational Care

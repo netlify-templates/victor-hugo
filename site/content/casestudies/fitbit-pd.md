@@ -1,5 +1,5 @@
 ---
-title: Fitbit-PD
+study_name: Fitbit-PD
 date: 2018-10-03
 area: inprogress
 subdomain: Neurology

@@ -1,5 +1,5 @@
 ---
-title: MoTIvatE-PD
+study_name: MoTIvatE-PD
 date: '2019-07-01'
 area: inprogress
 subdomain: Neurology

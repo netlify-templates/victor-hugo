@@ -1,5 +1,5 @@
 ---
-title: SUFIA
+study_name: SUFIA
 date: 2016-06-01
 area: inprogress
 subdomain: Physical Activity

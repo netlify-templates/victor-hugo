@@ -1,5 +1,5 @@
 ---
-title: Way to Sleep
+study_name: Way to Sleep
 date: '2015-08-01'
 area: research
 subdomain: Obstructive Sleep Apnea

@@ -1,5 +1,5 @@
 ---
-title: UCLA Health Obesity - Activity & Coaching
+study_name: UCLA Health Obesity - Activity & Coaching
 date: '2018-06-30'
 area: inprogress
 subdomain: Physical Activity

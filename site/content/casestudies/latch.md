@@ -1,5 +1,5 @@
 ---
-title: LaTCH
+study_name: LaTCH
 date: '2019-11-13'
 area: inprogress
 subdomain: 'Women''s Health '

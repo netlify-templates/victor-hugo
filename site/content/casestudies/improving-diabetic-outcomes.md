@@ -1,5 +1,5 @@
 ---
-title: Improving Diabetic Outcomes
+study_name: Improving Diabetic Outcomes
 date: '2012-03-20'
 area: Research
 subdomain: Diabetes

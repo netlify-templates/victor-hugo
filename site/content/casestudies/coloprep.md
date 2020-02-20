@@ -1,5 +1,5 @@
 ---
-title: ColoPrep
+study_name: ColoPrep
 date: '2019-09-03'
 area: clinical
 subdomain: Gastroenterology

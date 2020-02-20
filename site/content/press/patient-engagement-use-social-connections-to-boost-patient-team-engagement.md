@@ -9,7 +9,7 @@ summary: >-
   Medicine Center for Health Care Innovation, and Michele E. Heisler, M.D.,
   professor of internal medicine and health behavior at the University of
   Michigan, during an event hosted by NEJM Catalyst.
-image: /img/uploads/careteam_9_0.jpg
+image: /images/uploads/careteam_9_0.jpg
 source: >-
   https://www.fiercehealthcare.com/patient-engagement/embrace-social-connections-for-better-patient-clinical-team-engagement
 ---

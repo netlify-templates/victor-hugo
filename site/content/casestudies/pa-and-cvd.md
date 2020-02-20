@@ -1,5 +1,5 @@
 ---
-title: PA and CVD
+study_name: PA and CVD
 date: 2018-01-01
 area: inprogress
 subdomain: Cardiology

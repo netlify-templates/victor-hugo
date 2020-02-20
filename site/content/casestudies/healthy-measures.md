@@ -1,5 +1,5 @@
 ---
-title: Healthy Measures
+study_name: Healthy Measures
 date: '2014-05-01'
 area: research
 subdomain: Diabetes

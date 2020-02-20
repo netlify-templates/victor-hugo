@@ -11,7 +11,7 @@ summary: >-
   patients’ social connections have a beneficial effect on their health. Now,
   doctors and hospitals can develop new approaches to prescribe social
   engagement for everyone else.
-image: /img/uploads/social.incentives.jpg
+image: /images/uploads/social.incentives.jpg
 source: 'http://www.nejm.org/doi/full/10.1056/NEJMp1603978'
 ---
 

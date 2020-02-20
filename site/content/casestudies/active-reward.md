@@ -1,5 +1,5 @@
 ---
-title: Active Reward
+study_name: Active Reward
 date: '2018-06-13'
 status: research
 authors:

@@ -8,7 +8,7 @@ summary: >-
   a multi-faceted approach works best. The study found that offering a reward of
   $600 to quit for six months increased success rates two-fold, or three-fold in
   some sub-groups.
-image: /img/uploads/no-smoking-sign.jpg
+image: /images/uploads/no-smoking-sign.jpg
 source: 'https://fox61.com/2018/06/01/looking-to-quit-smoking-heres-one-way/smoking'
 ---
 

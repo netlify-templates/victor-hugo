@@ -1,5 +1,5 @@
 ---
-title: Way 2 Text
+study_name: Way 2 Text
 date: '2019-08-08'
 area: research
 subdomain: Hypertension

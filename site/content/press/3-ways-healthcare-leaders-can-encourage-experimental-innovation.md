@@ -8,7 +8,7 @@ summary: >-
   protect. To support the people determined to drive change quickly, we need to
   find ways to bend institutional norms safely." Authors include David Asch, Roy
   Rosin and Kevin Mahoney. Several of the programs referenced use Way to Health.
-image: /img/uploads/hbr.innovation.jpg
+image: /images/uploads/hbr.innovation.jpg
 source: >-
   https://www.beckershospitalreview.com/innovation/3-ways-healthcare-leaders-can-encourage-experimental-innovation.html
 ---

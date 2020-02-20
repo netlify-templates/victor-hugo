@@ -10,7 +10,7 @@ summary: >-
   better. It just requires an acknowledgment that human behavior is full of
   anomalies.
 image: >-
-  /img/uploads/the-rise-of-behavioral-economics-and-its-influence-on-organizations.jpg
+  /images/uploads/the-rise-of-behavioral-economics-and-its-influence-on-organizations.jpg
 source: >-
   https://hbr.org/2017/10/the-rise-of-behavioral-economics-and-its-influence-on-organizations
 ---

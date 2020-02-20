@@ -28,6 +28,16 @@
             <button>Other</button>
         </div>
     </div>
+
+    {{ $v1 := where .Data.Pages "Section" "casestudies" }}
+    {{ $v2 := where .Data.Pages "Params.spotlight" true }}
+    {{ $v3 := where .Data.Pages "Params.label" "Standard of Care"}}
+    {{ $v4 := where .Data.Pages "Params.label" "Research"}}
+    {{ $filteredclinical := $v1 | intersect $v2 | intersect $v3 }}
+    {{ $filteredresearch := $v1 | intersect $v2 | intersect $v4 }}
+
+    {{ partial "case-summary" . }}
+
     <!-- <div class="flex flex-wrap -mx-4">
         <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
             <div class="relative flex flex-col h-full p-8 shadow-md">

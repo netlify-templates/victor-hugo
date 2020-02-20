@@ -1,5 +1,5 @@
 ---
-title: STEP UP
+study_name: STEP UP
 date: '2019-09-09'
 area: research
 subdomain: Physical Activity

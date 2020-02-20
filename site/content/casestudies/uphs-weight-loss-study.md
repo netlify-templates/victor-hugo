@@ -1,5 +1,5 @@
 ---
-title: UPHS Weight Loss
+study_name: UPHS Weight Loss
 date: '2016-01-01'
 area: research
 subdomain: Obesity

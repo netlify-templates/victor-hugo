@@ -6,7 +6,7 @@ summary: >-
   apps don't make you lose weight. They're just facilitators. Unless they're
   paired with some insight into human behavior, they're the sound of one hand
   clapping."
-image: /img/uploads/data-min.jpg
+image: /images/uploads/data-min.jpg
 source: >-
   http://www.healthcareitnews.com/news/how-put-behavioral-economics-work-more-effective-patient-engagement
 ---

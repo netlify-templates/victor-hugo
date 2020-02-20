@@ -1,5 +1,5 @@
 ---
-title: CHI/HCS/NBR/SIT
+study_name: CHI/HCS/NBR/SIT
 date: '2019-11-14'
 area: inprogress
 subdomain: Clinical Psychology

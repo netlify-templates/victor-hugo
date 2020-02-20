@@ -1,5 +1,5 @@
 ---
-title: 'Engaged Recovery at Penn - Colo'
+study_name: 'Engaged Recovery at Penn - Colo'
 date: 2016-02-02
 area: inprogress
 subdomain: Surgery

@@ -1,5 +1,5 @@
 ---
-title: iDiabetes Trial
+study_name: iDiabetes Trial
 date: 2016-07-01
 area: inprogress
 subdomain: Diabetes

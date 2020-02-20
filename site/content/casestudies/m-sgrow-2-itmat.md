@@ -1,5 +1,5 @@
 ---
-title: m.Sgrow 2 ITMAT
+study_name: m.Sgrow 2 ITMAT
 date: 2018-01-01
 area: inprogress
 subdomain: Sleep

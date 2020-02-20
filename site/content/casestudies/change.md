@@ -1,5 +1,5 @@
 ---
-title: CHANGE
+study_name: CHANGE
 date: '2019-05-13'
 area: inprogress
 subdomain: HIV

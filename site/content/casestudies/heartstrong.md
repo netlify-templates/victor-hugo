@@ -1,5 +1,5 @@
 ---
-title: Heartstrong
+study_name: Heartstrong
 date: '2017-08-01'
 area: research
 subdomain: Cardiovascular Disease Management

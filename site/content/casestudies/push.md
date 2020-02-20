@@ -1,5 +1,5 @@
 ---
-title: PUSH
+study_name: PUSH
 date: 2017-11-01
 area: inprogress
 subdomain: Urology

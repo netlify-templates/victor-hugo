@@ -1,5 +1,5 @@
 ---
-title: LiveBetter
+study_name: LiveBetter
 date: 2017-11-13
 subdomain: Cirrhosis & Transplants
 area: clinical

@@ -10,7 +10,7 @@ summary: >-
   Management, and director of the Penn Medicine Nudge Unit. "During the 6-month
   trial, the average patient in the intervention arm had step counts that
   totaled about 100 miles more than the average patient in control."
-image: /img/uploads/cashfexercise.jpg
+image: /images/uploads/cashfexercise.jpg
 source: >-
   https://abcnews.go.com/Health/cold-hard-cash-fitness-device-motivate-people-exercise/story?id=55836225
 ---

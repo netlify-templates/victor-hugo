@@ -7,7 +7,7 @@ summary: >-
   of the Heart Safe Motherhood program powered by Way to Health which goes into
   a lot more detail about the program, its origins, success to date and future
   plans
-image: /img/uploads/hsm.jpg
+image: /images/uploads/hsm.jpg
 source: 'https://thephiladelphiacitizen.org/heart-safe-motherhood-penn/'
 ---
 

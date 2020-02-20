@@ -1,15 +1,15 @@
 ---
-title: 'Social Media and Mental Health '
+study_name: 'Social Media and Mental Health '
 date: '2019-11-13'
 area: inprogress
 subdomain: 'Mental Health '
 authors:
-  - authorimage: /images/uploads/lauren.jpg
-    authorname: 'Lauren Southwick '
-    authorrole: 'Program Manager '
   - authorimage: /images/uploads/merchant1.jpg
     authorname: 'Raina Merchant, MD MSHP FAHA'
-    authorrole: Research Coordinator
+    authorrole: Principal Investigator
+  - authorimage: /images/uploads/lauren.jpg
+    authorname: 'Lauren Southwick, MA '
+    authorrole: 'Program Manager '
 summary: >-
   Text intervention prompting and monitoring participants to share their social
   media posts and information with their therapists during their scheduled
