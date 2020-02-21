@@ -1,0 +1,49 @@
+{{ partial "header" . }}
+
+<section class="py-12 px-4 mt-24">
+    <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
+        <div class="lg:w-1/2 px-2">
+            <img src="{{ .Params.image }}" alt="">
+        </div>
+        <div class="lg:w-1/2 px-2">
+            <h2 class="text-5xl mb-6 leading-tight font-heading">{{ .Params.title }}</h2>
+            <p class="text-gray-500 text-xl leading-relaxed">{{ .Params.subtitle }}</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-8 px-4 mt-16 mb-16">
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Latest Blog Articles</h2>
+     <p class="mb-6 text-xl text-center"> <a class="mt-auto text-blue-500 hover:underline" href="blog">Visit our Blog</a></p>
+    <div class="flex flex-wrap -mx-4">
+        {{ $v1 := where .Site.Pages "Section" "press" }}
+        {{ range first 3 $v1 }}
+            {{ partial "content-summary" . }}
+        {{ end }}
+    </div>
+</section>
+
+<section class="py-8 px-4 mt-16 mb-16">
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Peer Reviewed Publications</h2>
+    <p class="mb-6 text-xl text-center text-gray-500"><a class="mt-auto text-blue-500 hover:underline" href="publications">View all our publications in renowned journals</a></p>
+    <div class="flex flex-wrap -mx-4">
+        {{ $v2 := where .Site.Pages "Section" "publications" }}
+        {{ range first 3 $v2 }}
+        {{ partial "content-summary" . }}
+        {{ end }}
+    </div>
+</section>
+
+<section class="py-8 px-4 mt-16 mb-16">
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Press mentions about Way to Health powered projects</h2>
+    <p class="mb-6 text-xl text-center text-gray-500"><a class="mt-auto text-blue-500 hover:underline" href="press">View all articles, interviews and more</a></p>
+    <div class="flex flex-wrap -mx-4">
+        {{ $v1 := where .Site.Pages "Section" "press" }}
+        {{ range first 3 $v1 }}
+        {{ partial "content-summary" . }}
+        {{ end }}
+    </div>
+</section>
+
+
+{{ partial "footer" . }}
