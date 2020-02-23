@@ -28,7 +28,7 @@ features:
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
-dedicatedpage: true
+dedicatedpage: false
 label: Research
 image: /images/uploads/hsm.01.jpg
 ---

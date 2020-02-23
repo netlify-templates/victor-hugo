@@ -1,0 +1,16 @@
+<div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
+    <div class="relative flex flex-col h-full p-8 shadow-md">
+        {{ if .Params.label }}
+        <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
+        {{ else }}
+        <span
+            class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.tag }}</span>
+        {{ end }}
+        {{ if .Params.image }}
+            <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
+        {{ end }}
+        <span class="text-xl mb-3 font-heading text">{{ .Params.title }}</span>
+        <p class="mt-4 mb-6 text-gray-500 leading-relaxed ">{{ .Params.summary }}</p>
+        <a class="mt-auto text-blue-700 hover:underline text-right" href="{{ .Permalink }}">Read more</a>
+    </div>
+</div>

@@ -10,3 +10,6 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
   mainSections = ["projects", "press", "publications", "blog"]
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"

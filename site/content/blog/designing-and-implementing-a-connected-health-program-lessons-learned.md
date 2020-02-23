@@ -6,9 +6,10 @@ summary: >-
   experience running connected health programs and research trials. Hear from
   the people behind the curtain about the best ways to deploy effective programs
   at scale. 
-image: /img/uploads/061318_thinkstock_fitness-min.jpg
+image: /images/bg/connected-health.svg
 authorname: Christianne Sevinc
-authorimage: /img/uploads/sevinc.jpg
+authorimage: /images/uploads/sevinc.jpg
+tag: Project Design
 ---
 The Way To Health team works with a variety of investigators – behavioral economists, clinicians, MDs, PhDs, RNs, etc. While the investigators have varied experiences and expertise, they all have one thing in common, they’ve got an idea. To be precise, they have a hypothesis rooted in theory and empirical evidence, either in the same domain or drawn from another domain. They are trying to figure out ways to keep people healthier, change behaviors for good, sometimes with a dose of savings for the health system, health plans or wellness in general.
 
