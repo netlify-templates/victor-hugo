@@ -30,11 +30,11 @@
             {{ end }}
 
         </div>
-        <p class="mt-4 mb-6 text-gray-500 leading-relaxed">{{ .Params.summary}}</p>
+        <p class="mt-4 mb-6 text-gray-500 leading-relaxed">{{ .Params.summary }}</p>
         <hr />
         <div class="mt-4">
         {{ if .Params.results }}
-            {{ range .Params.results}}
+            {{ range .Params.results }}
             <div class="pl-3 mb-4">
                 <p class="text-md text-gray-700 font-heading"> {{ .result }} </p>
             </div>

@@ -1,0 +1,44 @@
+{{ partial "header" . }}
+
+{{ partial "splash-right" . }}
+
+{{ partial "text-left" . }}
+
+{{ partial "leftimage-3textboxes" . }}
+
+{{ $n1 := where .Site.Pages "Section" "projects" }}
+{{ $n2 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "Women's Health" }}
+{{ $n3 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "Surgery" }}
+{{ $n4 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "QI" }}
+
+{{ $womenshealth := $n1 | intersect $n2 }}
+{{ $surgery := $n1 | intersect $n3 }}
+{{ $qi := $n1 | intersect $n4 }}
+
+{{ with  .Params.solutions }}
+    {{ range  .solution }}
+        <section class="py-8 px-4 mt-16 mb-16">
+            <!-- <hr class="mt-16 mb-16"></hr> -->
+            <h2 class="text-4xl text-center mb-4 font-heading">{{ .name }}</h2>
+            <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed"> {{ .description }}</p>
+            <div class="flex flex-wrap -mx-4">
+                {{ if eq .name "Women's Health" }}
+                    {{ range first 3 $womenshealth }}
+                        {{ partial "case-summary" . }}
+                    {{ end }}
+                {{ else if eq .name "Surgery" }}
+                    {{ range first 3 $surgery }}
+                        {{ partial "case-summary" . }}
+                    {{ end }}
+                {{ else }}
+                    {{ range first 3 $qi }}
+                        {{ partial "case-summary" . }}
+                    {{ end }}
+                {{end }}
+            </div>
+        </section>
+    {{ end }}
+{{ end }}
+
+
+{{ partial "footer" . }}

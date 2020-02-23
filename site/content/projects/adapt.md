@@ -20,7 +20,7 @@ summary: >
   incentives to patients.
 features:
   - 
-    feature: 'Adheretech  Bill Bottle Integration '
+    feature: 'Adheretech Pill Bottle Integration '
   - 
     feature: 'Bidirectional texting '
   - 
