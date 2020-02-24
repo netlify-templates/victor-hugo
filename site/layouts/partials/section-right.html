@@ -21,9 +21,11 @@
                 <p class="text-gray-500 leading-relaxed">{{ .description3 }} </p>
             </div>
             {{ end }}
+            {{ if .source }}
             <div class="p-4 mb-4">
-                <a class="mt-auto text-blue-500 hover:underline" href="{{ .Params.source }}">Learn more</a>
+                <a class="mt-auto text-blue-500 hover:underline" href="{{ .source }}">Learn more</a>
             </div>
+            {{ end }}
         </div>
     </div>
 </section>

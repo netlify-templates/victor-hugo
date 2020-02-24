@@ -42,7 +42,8 @@ outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
-solution_area: Women's Health
+solution_area: Womens Health
+page_id: womenshealth
 ---
 
 ## The Challenge

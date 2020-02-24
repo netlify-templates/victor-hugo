@@ -10,14 +10,14 @@ Netlify CMS is also integrated.
 - [x] ~~Create home page~~
 - [x] ~~Wire up existing / modified content~~
 - [x] ~~Add pulled content from blog, press and publications~~
-- [ ] Create solution pages (overall)
+- [ ] Create solution pages (overall) - Is this needed?
 - [ ] Wire up existing / modified / new content
-- [ ] Solution page for health systems
-- [ ] Wire up existing / modified / new content
-- [ ] Solution page for health plans
-- [ ] Wire up existing / modified / new content
-- [ ] Solution page for researchers
-- [ ] Wire up existing / modified / new content
+- [x] ~~Solution page for health systems~~
+- [ ] ~~Wire up existing / modified / ~~new content
+- [x] ~~Solution page for health plans~~
+- [ ] ~~Wire up existing / modified /~~new content
+- [x] ~~Solution page for researchers~~
+- [ ] ~~Wire up existing / modified /~~ new content
 - [x] ~~Projects page. This is an ongoing task. ~~
 - [x] ~~Wire up existing / modified / new content~~
 - [ ] Create about page
@@ -33,8 +33,8 @@ Netlify CMS is also integrated.
 - [ ] Create team page
 - [ ] Wire up existing / modified / new content
 - [ ] Add FAQ page (needed?)
-- [ ] Add Modules / platform page
-- [ ] Wire up existing / modified / new content
+- [x] ~~Add Modules / platform page~~
+- [x] ~~Wire up existing / modified / ~~new content
 - [ ] Add page for devices under Platform
 - [ ] Wire up existing / modified / new content
 - [ ] Add page for integrations under Platform.

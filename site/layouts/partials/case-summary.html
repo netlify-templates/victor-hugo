@@ -18,7 +18,7 @@
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
         {{ end }}
         <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
-        <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
+        <!-- <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
             {{ with .Params.authors }}
                 {{ range first 2 .  }}
                 <div class="mr-3 pr-3">
@@ -28,8 +28,7 @@
                 </div>
                 {{ end }}
             {{ end }}
-
-        </div>
+        </div> -->
         <p class="mt-4 mb-6 text-gray-500 leading-relaxed">{{ .Params.summary }}</p>
         <hr />
         <div class="mt-4">

@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+
+{{ partial "splash-right" . }}
+
+{{ partial "text-left" . }}
+
+{{ with .Params.modules}}
+    {{ range .module }}
+        {{ partial "section-right" . }}
+    {{ end }}
+{{ end }}
+
+{{ with .Params.modules }}
+    {{ partial "modules-bottom" . }}
+{{ end }}
+
+{{ partial "footer" . }}

@@ -4,12 +4,23 @@
     <div class="flex flex-row flex-wrap items-center text-center lg:text-left">
         <div class="lg:w-1/2 px-2"><img class="rounded" src="{{ .Params.image }}" alt="">
         </div>
-        <div class="lg:w-1/2 px-2">
-            <h2 class="text-4xl px-4 mb-4 leading-tight font-heading sm:6xl">{{ .Params.title }}</h2>
+        <div class="lg:w-1/2 px-2 pl-10">
+            <h2 class="text-4xl px-4 mb-4 leading-tight font-heading sm:6xl">{{ .Params.study_name }}</h2>          
             <div class="p-4 mb-4">
-                <h3 class="text-xl mb-2 font-heading sm:2xl">{{ .Date.Format "Jan 2, 2006" }} by {{ .Params.authorname }}</h3>
-                <p class="text-gray-500 leading-relaxed">{{ .Params.summary}}</p>
+                <h3 class="text-xl text-gray-600 mb-2 font-heading sm:2xl">{{ .Params.summary}}</h3>
+                <p class="text-gray-500 leading-relaxed">{{ .Date.Format "Jan 2, 2006" }}</p>
             </div>
+            <div class="flex pb-3 justify-center text-grey-dark text-center border-b">
+                {{ with .Params.authors }}
+                    {{ range first 2 .  }}
+                    <div class="mr-3 pr-3">
+                        <img class="h-16 w-16 rounded-full mx-auto mb-2" src="{{ .authorimage }}"
+                            alt="{{ .authorname }} " />
+                        <span class="text-sm text-gray-600">{{ .authorname }} </span>
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>  
         </div>
     </div>
 </section>
