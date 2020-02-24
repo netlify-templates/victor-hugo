@@ -3,6 +3,8 @@ languageCode = "en-us"
 languageLang = "en"
 title = "My new blogdown site"
 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
