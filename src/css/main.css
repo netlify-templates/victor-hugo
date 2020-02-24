@@ -28,5 +28,9 @@ a {
 }
 
 .content {
-  padding: 0 24px;
+  padding: 0 32px;
+}
+
+#enjoy {
+  margin-top: 100px;
 }
