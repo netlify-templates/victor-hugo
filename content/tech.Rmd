@@ -7,10 +7,13 @@ draft: false
 # [RxMD](https://github.com/Real-Currents/rx-md)
 
 ## A blogdown boilerplate for creating truly epic websites
-<a href="https://bookdown.org/yihui/blogdown"><img
-alt="blogdown logo" src="https://bookdown.org/yihui/blogdown/images/logo.png" align="right" width="10%" /></a>
+<a href="https://bookdown.org/yihui/blogdown">
+    <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
+         alt="blogdown logo" style="max-width: 80px" width="20%" align="right" />
+</a>
 
-This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline. RxMD setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+
+This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline. RxMD is setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 <br />
 
 ## Enjoy!! 😸
