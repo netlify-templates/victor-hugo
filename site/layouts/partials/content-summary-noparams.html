@@ -1,0 +1,15 @@
+<div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
+    <div class="relative flex flex-col h-full p-8 shadow-md">
+        {{ if .label }}
+        <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .label }}</span>
+        {{ end }}
+        {{ if .image }}
+            <img class="rounded shadow-md mb-6" src="{{ .image }}" alt="">
+        {{ end }}
+        <span class="text-xl mb-3 font-heading text">{{ if .name}} {{.name}},  {{ end }} {{ .title }}</span>
+        <p class="mt-4 mb-6 text-gray-500 leading-relaxed ">{{ .summary }}</p>
+        {{ if .source }}
+        <a class="mt-auto text-blue-700 hover:underline text-right" href="{{ .source }}">Read more</a>
+        {{ end }}
+    </div>
+</div>

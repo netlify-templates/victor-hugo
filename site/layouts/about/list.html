@@ -1,3 +1,57 @@
 {{ partial "header" . }}
 
+{{ partial "splash-bg" . }}
+
+<p class="mb-6 text-xl text-center text-gray-500">{{ .Params.introduction }}</p>
+
+{{ partial "text-left" . }}
+
+<section class="py-8 px-4 mt-16 mb-16" id="vision">
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .Params.heading }}</h2>
+    <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
+    <div class="flex flex-wrap -mx-4">
+{{ with .Params.vision }}
+    {{ range .blurbs }}
+        {{ partial "content-summary-noparams" . }}
+    {{ end }}
+{{ end }}
+</div>
+</section>
+
+<!-- <section class="py-8 px-4 mt-16 mb-16" id="vision">
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .Params.heading }}</h2>
+    <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
+    <div class="flex flex-wrap -mx-4">
+        {{ range .Params.vision.blurbs  }}
+        <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
+            <div class="relative flex flex-col h-full p-8 shadow-md">
+                <img class="rounded shadow-md mb-6" src="{{ .image }}" alt="">
+                <span class="text-xl mb-3 font-heading text">{{ .title }}</span>
+                <p class="mt-4 mb-6 text-gray-500 leading-relaxed ">{{ .summary }}</p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section> -->
+
+<section class="py-12 px-4 mb-16 mt-16" id="origins">
+    <div class="flex flex-wrap -mx-4">
+        <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+            <div class="flex flex-col h-full p-8 bg-gray-200 rounded">
+                <h2 class="text-5xl mb-16 font-heading">{{ .Params.origins.heading }}</h2>
+                <p class="mb-8 leading-relaxed text-xl">{{ .Params.origins.para1 }} </p>
+                <p class="text-xl">{{ .Params.origins.para2 }}</p>
+            </div>
+        </div>
+        <div class="lg:w-1/2 px-4">
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2"><img class="rounded shadow-md" src="{{ .Params.origins.image1 }}" alt=""></div>
+                <div class="p-2"><img class="rounded shadow-md" src="{{ .Params.origins.image2 }}" alt=""></div>
+                <!-- <div class="w-1/2 p-2"><img class="rounded shadow-md" src="images/mitesh.jpg" alt=""></div>
+                <div class="w-1/2 p-2"><img class="rounded shadow-md" src="images/roy.jpg" alt=""></div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
 {{ partial "footer" . }}

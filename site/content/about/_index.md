@@ -1,20 +1,36 @@
 ---
-title: We were the first to apply behavioral economics to healthcare
-image: 
+title: Way to Health
+image: /images/bg/work.jpg
 bgcolor: "#4F6D7A"
-subtitle: And we're out to apply lessons learnt to improve patient engagement
+summary: We were the first to apply behavioral economics to healthcare
 introduction: Faculty and researchers from across the University of Pennsylvania and other renowned institutions have conducted and continue to research direct patient engagement and behavioral economics based interventions aimed at reducing the disease burden from major U.S. public health problems. Way to Health was born from their frustration around the lack of a platform to quickly develop, test and scale out their ideas.
-mission:
+introtitle: Our mission
+introsubtitle: To enable everyone to enjoy healthy lives through research, personalized engagement and learning from the experience of every patient.
+introtext: We never forget that we are here to enable clinicians and researchers to make their ideas come to life. Our goal first and foremost is to serve the patient in a clinical setting or the participant in a research setting. 
+heading: Our vision
+subheading: Innovate. Enable. Scale.
+vision:
   blurbs:
     - title: Improving healthcare outcomes needs purpose built research tools
-      description: > 
+      image: /images/build.svg
+      summary: > 
         Technology assisted motivation & human behavior change is the key to advancing health outcomes. The healthcare system needs a purpose built tool that allows for scale and to engage with people in their existing journeys. Way to Health has demonstrated its value as a research platform in this domain.  The platform, its developers, and its uses have credibility among the research community. 
     - title: Successes derived from research should be easily translated into practice
-      description: >
+      image: /images/practice.svg
+      summary: >
         Even as more research and successes are published, its application in the real world still lags as systems and plans don’t quite know how to apply it in their context. THe goal is to reduce the time it takes for interventional research to be applied in specific patient contexts as short as possible. We want to take a leadership position in tactical research and deployment of evidence based research.
     - title: EHRs should be an integral part of any patient or provider engagement strategy
-      description: >
+      image: /images/ehr.svg
+      summary: >
         Good technology must join not just patient and physician journeys, but also their existing technology, such as legacy EHR systems i.e. be available  in the context of their life and their “workflow”. Tighter integration with EHRs is necessary. Health systems have spent millions deploying and customizing EHRs. They are looking for ways to maximize the ROI. This will be a platform available to all irrespective of the EHR of choice.
+        
+origins:
+  heading: Origins
+  para1: David Asch, MD, MBA and Kevin Volpp, MD, PhD conceptualized Way to Health back in 2010. It was born from their frustration around the lack of a platform to quickly develop, test and scale out their ideas to improve health care for patients.
+  para2: Since then, more than 50 faculty and researchers from the University of Pennsylvania and other renowned institutions have conducted and continue to research direct patient engagement and behavioral economics based interventions aimed at reducing the disease burden from major U.S. public health problems.
+  image1: /images/asch.jpg
+  image2: /images/volpp.jpg
+
 timeline:
   milestones:
     - date: December 2019
