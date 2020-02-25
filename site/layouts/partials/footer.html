@@ -22,10 +22,87 @@
     </footer>
 </div>
   
+
 {{ $script := .Site.Data.webpack.main }}
 {{ with $script.js }}
 <script src="{{ relURL . }}"></script>
 {{ end }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- scripts for case studies and scrolling -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+<!-- isotope js -->
+<script type="text/javascript">
+
+// quick search regex
+var qsRegex;
+var buttonFilter;
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'masonry',
+  filter: function() {
+    var $this = $(this);
+    var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+    var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+    return searchResult && buttonResult;
+  }
+});
+
+$('#filters').on( 'click', 'button', function() {
+  buttonFilter = $( this ).attr('data-filter');
+  $grid.isotope();
+});
+
+
+// use value of search field to filter
+var $quicksearch = $('#quicksearch').keyup( debounce( function() {
+  qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+  $grid.isotope();
+}) );
+
+
+  // change is-checked class on buttons
+$('.btn-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.active').removeClass('active');
+    $( this ).addClass('active');
+  });
+});
+  
+
+// debounce so filtering doesn't happen every millisecond
+function debounce( fn, threshold ) {
+  var timeout;
+  return function debounced() {
+    if ( timeout ) {
+      clearTimeout( timeout );
+    }
+    function delayed() {
+      fn();
+      timeout = null;
+    }
+    setTimeout( delayed, threshold || 100 );
+  };
+}    
+</script>
+<!-- end isotope js -->
 </body>
 
 </html>
