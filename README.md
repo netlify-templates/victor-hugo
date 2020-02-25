@@ -20,19 +20,19 @@ Netlify CMS is also integrated.
 - [ ] ~~Wire up existing / modified /~~ new content
 - [x] ~~Projects page. This is an ongoing task. ~~
 - [x] ~~Wire up existing / modified / new content~~
-- [ ] Create about page
-- [ ] Wire up existing / modified / new content
+- [x] ~~Create about page~~
+- [x] ~~Wire up existing / modified / new content~~
 - [x] ~~Create press and publications highlights page~~
 - [x] ~~Create press page~~
 - [x] ~~Wire up existing / modified / new content~~
 - [x] ~~Create publications page~~
 - [x] ~~Wire up existing / modified / new content~~
-- [ ] Create company blog page
-- [ ] Wire up existing / modified / new content
-- [ ] Create engg blog page
-- [ ] Create team page
-- [ ] Wire up existing / modified / new content
-- [ ] Add FAQ page (needed?)
+- [x] ~~Create company blog page~~
+- [x] ~~Wire up existing / modified /~~ new content
+- [x] ~~Create engg blog page~~ Not doing as separate
+- [x] ~~Create team page~~
+- [x] ~~Wire up existing / modified / new content~~
+- [x] ~~Add FAQ page (needed?)~~ - not doing
 - [x] ~~Add Modules / platform page~~
 - [x] ~~Wire up existing / modified / ~~new content
 - [ ] Add page for devices under Platform
@@ -42,13 +42,12 @@ Netlify CMS is also integrated.
 - [ ] Add release notes page
 - [ ] Wire up existing / modified / new content
 - [ ] ~~Add content for ABC. Replaced with coming soon page for now.~~
-- [ ] Add content for company blog
+- [x] ~~Add content for company blog~~
 - [ ] Migrate to actual domain name
 - [ ] Add GA tags
 - [ ] Turn on indexing
 - [ ] Verify front-end checklist (https://github.com/thedaviddias/Front-End-Checklist)
-- [ ] Need a 404 page. In place but need to get Hugo to use the designed page instead of the default. Done with designed page
-- [ ] Add content for engg blog or remove for now (removed for now)
+- [x] ~~Need a 404 page. In place but need to get Hugo to use the designed page instead of the default. Done with designed page~~
 - [ ] Create images for each section of platform page
 - [ ] Add search to case studies
 - [ ] Use isotope for landing and case study page
