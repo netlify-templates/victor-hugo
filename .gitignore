@@ -6,3 +6,4 @@ dist
 public
 content/*html
 webpack.json
+.Rproj.user

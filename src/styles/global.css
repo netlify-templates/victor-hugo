@@ -70,6 +70,11 @@ button:focus {
 	padding: 0 32px;
 }
 
+.content * p, pre {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .content * pre {
 	text-align: left;
 }

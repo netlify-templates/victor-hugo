@@ -2,12 +2,12 @@
 
 **A blogdown boilerplate for creating truly epic visualizations**, *inspired by Netlify's [Victor Hugo](https://github.com/netlify-templates/victor-hugo)*
 
-<a href="https://bookdown.org/yihui/blogdown">
+<a href="https://bookdown.org/yihui/blogdown" target="_blank">
     <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
          alt="blogdown logo" style="max-width: 80px; opacity: 0.25;" width="15%" align="left" />
 </a>
 
-<a href="https://svelte.dev/">
+<a href="https://svelte.dev/" target="_blank">
     <img src="https://svelte.dev/svelte-logo-outline.svg"
          alt="blogdown logo" style="background-color:rgba(255, 32, 00, 0.1); border-radius:12px; border-color:#f30; max-width:80px;"
          width="15%" align="right" />
