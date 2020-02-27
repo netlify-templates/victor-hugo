@@ -12,48 +12,51 @@
 		alert(`submitted ${pin}`);
 	}
 
-	let canvas;
+	import * as GL from '@sveltejs/gl';
+
+	export let color = '#ff3e00';
+	let w = 1;
+	let h = 1;
+	let d = 1;
+
+	const from_hex = hex => parseInt(hex.slice(1), 16);
+
+	const light = {};
 
 	onMount(() => {
-		const ctx = canvas.getContext("2d");
-		ctx.fillStyle = "#00f";
-		ctx.fillRect(0, 0, canvas.width, canvas.height);
-		ctx.fillStyle = "#fff";
-		ctx.font = "20px Arial";
-		ctx.fillText("2d Canvas works, too", 10, 100);
-
 		let frame;
 
-		(function loop() {
+		const loop = () => {
 			frame = requestAnimationFrame(loop);
 
-			const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-			for (let p = 0; p < imageData.data.length; p += 4) {
-				const i = p / 4;
-				const x = i % canvas.width;
-				const y = i / canvas.height >>> 0;
-
-				const t = window.performance.now();
-
-				const r = 64 + (128 * x / canvas.width) + (64 * Math.sin(t / 1000));
-				const g = 64 + (128 * y / canvas.height) + (64 * Math.cos(t / 1000));
-				const b = 128;
-
-				imageData.data[p + 0] = r;
-				imageData.data[p + 1] = g;
-				imageData.data[p + 2] = b;
-				imageData.data[p + 3] = 255;
-			}
-
-			ctx.putImageData(imageData, 0, 0);
-		}());
-
-		return () => {
-			cancelAnimationFrame(frame);
+			light.x = 3 * Math.sin(Date.now() * 0.001);
+			light.y = 2.5 + 2 * Math.sin(Date.now() * 0.0004);
+			light.z = 3 * Math.cos(Date.now() * 0.002);
 		};
+
+		loop();
+
+		return () => cancelAnimationFrame(frame);
 	});
 </script>
+
+<div class="controls">
+	<label>
+		<input type="color" style="height: 40px" bind:value={color}>
+	</label>
+
+	<label>
+		<input type="range" bind:value={w} min={0.1} max={5} step={0.1}> width ({w})
+	</label>
+
+	<label>
+		<input type="range" bind:value={h} min={0.1} max={5} step={0.1}> height ({h})
+	</label>
+
+	<label>
+		<input type="range" bind:value={d} min={0.1} max={5} step={0.1}> depth ({d})
+	</label>
+</div>
 
 <style>
 	@import url("../styles/global.css");
@@ -65,20 +68,27 @@
 		-webkit-mask: url("../images/svelte-logo-mask.svg") 50% 50% content-box view-box no-repeat;
 		mask: url("../images/svelte-logo-mask.svg") 50% 50% content-box view-box no-repeat;
 	}
-	#control {
+	.controls {
 		position: absolute;
-		padding: 8px;
-		bottom: 8px;
-		right: 8px;
+		top: 216px;
+		right: 1%;
+		width: 300px;
+		height: 128px;
+		padding: 1em;
+		background-color: rgba(255,255,255,0.7);
+		border-radius: 2px;
+		z-index: 2;
+	}
+	#keypad {
+		position: absolute;
 		width: 256px;
-		top: calc(50vh - (
-			100px /* height */
-			/ 2
-		));
-		left: calc(50vw - (
-			256px /* width */
-			/ 2
-		));
+		top: 400px;
+		right: 1%;
+		padding: 24px;
+		background-color: transparent;
+	}
+	#keypad * {
+		padding: 24px;
 	}
 	#view {
 		text-align: center;
@@ -87,14 +97,108 @@
 
 <div id="view">
 	<h1>{title}</h1>
-	<canvas
-			bind:this={canvas}
-			width={32}
-			height={32}
-	></canvas>
+
+	<GL.Scene>
+		<GL.Target id="center" location={[0, h/2, 0]}/>
+
+		<GL.OrbitControls maxPolarAngle={Math.PI / 2} let:location>
+			<GL.PerspectiveCamera {location} lookAt="center" near={0.01} far={1000}/>
+		</GL.OrbitControls>
+
+		<GL.AmbientLight intensity={0.3}/>
+		<GL.DirectionalLight direction={[-1,-1,-1]} intensity={0.5}/>
+
+		<!-- box -->
+		<GL.Mesh
+				geometry={GL.box({})}
+				location={[0,h/2,0]}
+				rotation={[0,-20,0]}
+				scale={[w,h,d]}
+				uniforms={{ color: from_hex(color) }}
+		/>
+
+		<!-- spheres -->
+		<GL.Mesh
+				geometry={GL.sphere({ turns: 36, bands: 36 })}
+				location={[-0.5, 0.4, 1.2]}
+				scale={0.4}
+				uniforms={{ color: 0x123456, alpha: 0.9 }}
+				transparent
+		/>
+
+		<GL.Mesh
+				geometry={GL.sphere({ turns: 36, bands: 36 })}
+				location={[-1.4, 0.6, 0.2]}
+				scale={0.6}
+				uniforms={{ color: 0x336644, alpha: 1.0 }}
+				transparent
+		/>
+
+		<!-- floor -->
+		<GL.Mesh
+				geometry={GL.plane()}
+				location={[0,-0.01,0]}
+				rotation={[-90,0,0]}
+				scale={10}
+				uniforms={{ color: 0xffffff }}
+		/>
+
+		<!-- ceiling -->
+		<GL.Mesh
+				geometry={GL.plane()}
+				location={[0,5.0,0]}
+				rotation={[90,0,0]}
+				scale={10}
+				uniforms={{ color: 0xffffff }}
+		/>
+
+		<!-- wall1 -->
+		<GL.Mesh
+				geometry={GL.plane()}
+				location={[0,-0.01,-10.0]}
+				rotation={[0,0,0]}
+				scale={10}
+				uniforms={{ color: 0xffffff }}
+		/>
+
+		<!-- wall2 -->
+		<GL.Mesh
+				geometry={GL.plane()}
+				location={[10.0,-0.01,0.0]}
+				rotation={[0,-90,0]}
+				scale={10}
+				uniforms={{ color: 0xffffff }}
+		/>
+
+		<!-- wall3 -->
+		<GL.Mesh
+				geometry={GL.plane()}
+				location={[-10.0,-0.01,0.0]}
+				rotation={[0,90,0]}
+				scale={10}
+				uniforms={{ color: 0xffffff }}
+		/>
+
+		<!-- moving light -->
+		<GL.Group location={[light.x,light.y,light.z]}>
+			<GL.Mesh
+					geometry={GL.sphere({ turns: 36, bands: 36 })}
+					location={[0,0.2,0]}
+					scale={0.1}
+					uniforms={{ color: 0xffffff, emissive: 0xff0000 }}
+			/>
+
+			<GL.PointLight
+					location={[0,0,0]}
+					color={0xff0000}
+					intensity={0.6}
+			/>
+		</GL.Group>
+	</GL.Scene>
 </div>
 
-<div id="control">
+<div id="keypad" class="controls">
 	<h1 style="color: {pin ? '#999' : '#fff'}">{view}</h1>
 	<Keypad bind:value={pin} on:submit={handleSubmit}/>
 </div>
+

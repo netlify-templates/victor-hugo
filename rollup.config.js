@@ -3,6 +3,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import copy from 'rollup-plugin-copy'
 import livereload from 'rollup-plugin-livereload';
+import shader from 'rollup-plugin-shader';
 import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -17,14 +18,6 @@ export default {
 		file: 'public/main.js'
 	},
 	plugins: [
-		copy({
-			targets: [
-				{ src: 'src/fonts', dest: 'public/' },
-				{ src: 'src/images', dest: 'public/' },
-				{ src: 'src/styles', dest: 'public/' },
-				{ src: 'static/*', dest: 'public/' }
-			]
-		}),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
@@ -44,7 +37,25 @@ export default {
 			browser: true,
 			dedupe: ['svelte']
 		}),
+
 		commonjs(),
+
+		copy({
+			targets: [
+				{ src: 'src/fonts', dest: 'public/' },
+				{ src: 'src/images', dest: 'public/' },
+				{ src: 'src/styles', dest: 'public/' },
+				{ src: 'static/*', dest: 'public/' }
+			]
+		}),
+
+		shader( {
+			// All match files will be parsed by default,
+			// but you can also specifically include/exclude files
+			include: [ 'node_modules/@sveltejs/gl/**/*.glsl', '**/*.vs', '**/*.fs' ],
+			// specify whether to remove comments
+			removeComments: true,   // default: true
+		} ),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
