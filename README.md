@@ -4,13 +4,13 @@
 
 <a href="https://bookdown.org/yihui/blogdown">
     <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
-         alt="blogdown logo" style="max-width: 80px; opacity: 0.25;" width="10%" align="left" />
+         alt="blogdown logo" style="max-width: 80px; opacity: 0.25;" width="15%" align="left" />
 </a>
 
 <a href="https://svelte.dev/">
     <img src="https://svelte.dev/svelte-logo-outline.svg"
          alt="blogdown logo" style="background-color:rgba(255, 32, 00, 0.1); border-radius:12px; border-color:#f30; max-width:80px;"
-         width="10%" align="right" />
+         width="15%" align="right" />
 </a>
 
 This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine.
