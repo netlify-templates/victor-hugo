@@ -40,8 +40,10 @@
     {{ end }}
 {{ end }}
 
-{{ with .Params.modules }}
-    {{ partial "modules-bottom" . }}
+{{ with .Params.modules_leadin }}
+    {{ partial "text-left-noparams" . }}
 {{ end }}
+
+{{ partial "modules-bottomold" . }}
 
 {{ partial "footer" . }}

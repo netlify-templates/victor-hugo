@@ -6,7 +6,7 @@
 
 {{ partial "text-left" . }}
 
-{{ with .Params.domains}}
+{{ with .Params.domains }}
     {{ range .listing }}
         {{ partial "section-right" . }}
     {{ end }}
