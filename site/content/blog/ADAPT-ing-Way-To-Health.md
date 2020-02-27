@@ -8,7 +8,6 @@ authorname: Mohan Balachandran
 authorimage: /images/team/balachandran.png
 tag: Projects
 ---
-
 Way to Health was purpose-built to help researchers address critical and complex problems facing healthcare and patient health by providing the tools needed to rigorously test solutions on one comprehensive digital platform. Mental illness qualifies as one of those challenges in need of fixing. It is estimated that 9.6 million American adults suffer from a serious mental illness (SMI), experiencing a diminished ability to function in daily life and a shorter life-expectancy. In addition to the patient burden, mental illness drains healthcare budgets as the third most expensive medical condition after heart conditions and traumatic injury.
 
 ![alt SMS Inbox](/images/various/2way.sm.png "SMS Inbox")

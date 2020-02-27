@@ -13,11 +13,9 @@
         </div>
     </div>
 </section>
-
-    <article class="py-12 px-4">
-        <div class="max-w-3xl mx-auto">
-           {{ .Content }}
+<section class="py-12 px-4 mt-16 mb-16 ">
+        <div class="max-w-5xl mx-auto">
+           {{ .Content | markdownify }}
         </div>
-    </article>
-
+</section>
 {{ partial "footer" . }}

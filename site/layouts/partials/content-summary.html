@@ -4,7 +4,7 @@
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
         {{ else }}
         <span
-            class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Date.Format "Jan 2, 2006" }}</span>
+            class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Type}}: {{ .Date.Format "jan 2, 2006" }}</span>
         {{ end }}
         {{ if .Params.image }}
             <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
