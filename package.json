@@ -1,7 +1,7 @@
 {
   "name": "rxmd",
   "version": "0.0.1",
-  "description": "RxMD is a blogdown boilerplate for creating truly epic visualizations!",
+  "description": "Sveltr is a blogdown boilerplate for creating truly epic visualizations!",
   "repository": "netlify/victor-hugo",
   "main": "index.js",
   "scripts": {

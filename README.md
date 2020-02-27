@@ -1,4 +1,4 @@
-# RxMD
+# Sveltr
 
 **A blogdown boilerplate for creating truly epic visualizations**, *inspired by Netlify's [Victor Hugo](https://github.com/netlify-templates/victor-hugo)*
 
@@ -13,7 +13,7 @@
          width="20%" align="right" />
 </a>
 
-This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelt](https://svelte.dev/) as your reactive app engine.
+This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
@@ -21,7 +21,7 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ### :exclamation: Prerequisites
 
-You need to have R with the blogdown package, the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use RxMD.
+You need to have R with the blogdown package, the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Sveltr.
 
 Next step, clone this repository and run:
 
@@ -29,7 +29,7 @@ Next step, clone this repository and run:
 npm install
 ```
 
-This will take some time and will install all packages necessary to run RxMD and its tasks.
+This will take some time and will install all packages necessary to run Sveltr and its tasks.
 
 ### :construction_worker: Development
 
@@ -39,7 +39,7 @@ While developing your website use:
 npm start:dev
 ```
 
-Then visit http://localhost:4321 _- or whatever local host and port number that blogdown/servr displays in the terminal -_ to preview your new website. Svelt Dev Server will automatically reload the CSS and Javascript when the bundled stylesheets and scripts in the  src folder change, while blogdown will rebuild the static pages when the content changes.
+Then visit http://localhost:4321 _- or whatever local host and port number that blogdown/servr displays in the terminal -_ to preview your new website. Svelte Dev Server will automatically reload the CSS and Javascript when the bundled stylesheets and scripts in the  src folder change, while blogdown will rebuild the static pages when the content changes.
 
 ### :package: Static build
 
@@ -67,8 +67,8 @@ See [package.json](package.json#L8) for all tasks.
 |  |--index.html    // The index page
 |--static           // Files in here ends up in the public folder
 |--src                 // Files that will pass through the asset pipeline
-|  |--App.svelt              // Add Svelt apps with the extension .svelt
-|  |--main.js         // main.js is the Svelt/Webpack entry for your reactive assets
+|  |--App.svelte              // Add Svelte apps with the extension .svelte
+|  |--main.js         // main.js is the Svelte/Webpack entry for your reactive assets
 |--themes           // Install Hugo theme here and reference in config.toml
 ```
 
@@ -88,7 +88,7 @@ use the `static` folder. Images, font-files, etc, all go there.
 Files in the static folder end up in the web root. So a file called `static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
-The `src/main.js` file is the entrypoint for Svelt and will be built to `/public/main.js`
+The `src/main.js` file is the entrypoint for Svelte and will be built to `/public/main.js`
 
 You can use **ES6** and use both relative imports or import libraries from npm.
 

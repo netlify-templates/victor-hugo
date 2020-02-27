@@ -9,7 +9,7 @@ tags:
   - R Markdown
 ---
 
-# [RxMD](https://github.com/Real-Currents/rx-md)
+# [Sveltr](https://github.com/Real-Currents/sveltr)
 ## A blogdown boilerplate for creating truly epic visualizations
 
 Here's a test containing another Svelte app...
@@ -27,7 +27,7 @@ Here's a test containing another Svelte app...
          width="20%" align="right" />
 </a>
 
-This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelt](https://svelte.dev/) as your reactive app engine.
+This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 <br />
