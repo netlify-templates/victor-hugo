@@ -1,0 +1,40 @@
+<!--section class="py-12 px-4">
+    <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
+            <div class="relative flex flex-col h-full p-8 shadow-md">
+                <span
+                    class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{Patient
+                    Communication}}</span>
+                <span class="uppercase font-semibold">Conversational texting</span>
+                <p class="mt-4 mb-6 text-gray-500 leading-relaxed">Choose from a variety of ways to communicate with
+                    patients - texting, emails, chatbots etc. - tailored to a patient's preference. Also include peers
+                    or caregivers in communications. This is the preferred method of communication for most patients.
+                </p><a class="mt-auto text-blue-700 hover:underline" href="/platform">Learn More</a>
+            </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
+            <div class="relative flex flex-col h-full p-8 shadow-md">
+                <span
+                    class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">Survey
+                    Management</span><span class="uppercase font-semibold">PRO collection</span>
+                <p class="mt-4 mb-6 text-gray-500 leading-relaxed">Collect data from patients remotely. Choices include
+                    surveys over text or web, chatbots, or devices at desired frequencies. This module also allows for
+                    automatic parsing of clinical values such as blood pressure, weight gain and many more.</p>
+                <a class="mt-auto text-blue-700 hover:underline" href="/platform">Learn more</a>
+            </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
+            <div class="relative flex flex-col h-full p-8 shadow-md">
+                <span
+                    class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">EHR
+                    Integration</span>
+                <span class="uppercase font-semibold">Simplified physician workflows</span>
+                <p class="mt-4 mb-6 text-gray-500 leading-relaxed">Physicians prefer to live within their EHR. Way to
+                    Health has built out read and write integrations to flowsheets, in-baskets and more using embedding,
+                    APIs and HL7 messages. Providers get a seamless experience and the EHR remains the patient system of
+                    record. </p>
+                <a class="mt-auto text-blue-700 hover:underline" href="/platform">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section-->
