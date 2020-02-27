@@ -6,7 +6,7 @@ const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: path.join(__dirname, "src", "index.js")
+    main: path.join(__dirname, "src", "main.js")
   },
 
   output: {
@@ -46,7 +46,7 @@ module.exports = {
     }),
 
     new AssetsPlugin({
-      filename: "webpack.json",
+      filename: "assets.json",
       path: path.join(process.cwd(), "data"),
       prettyPrint: true
     }),

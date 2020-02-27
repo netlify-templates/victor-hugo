@@ -1,41 +1,35 @@
 {{ define "main" }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+<main id="svelte-app" role="main"></main><br /><br />
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/Real-Currents/rx-md">RxMD</a>!</h3>
-
-<main class="content" role="main">
-
-  <a href="{{ "tech" | relURL }}">Check out the tech</a><br /><br />
-
-  {{ if .Content }}
-  <article class="article">
-    {{ if .Title }}
-    <h1 class="article-title">{{ .Title }}</h1>
-    {{ end }}
-    <div class="article-content">
-      {{ .Content }}
-    </div>
-  </article><br /><br />
+{{ if .Content }}
+<article class="article">
+  {{ if .Title }}
+  <h1 class="article-title">{{ .Title }}</h1>
   {{ end }}
-  <div class="archive">
-    {{ $pages := .Pages }}
-    {{ if .IsHome }}
-    {{ $pages = .Site.RegularPages }}
-    {{ end }}
-    {{ range (where $pages "Section" "!=" "").GroupByDate "2006" }}
-      {{ range .Pages }}
-    <article class="archive-item">
-      <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
-      <span class="archive-item-date">
+  <div class="article-content">
+    {{ .Content }}
+  </div>
+</article><br /><br />
+{{ end }}
+<div class="archive">
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}
+  {{ $pages = .Site.RegularPages }}
+  {{ end }}
+  {{ range (where $pages "Section" "!=" "").GroupByDate "2006" }}
+  {{ range .Pages }}
+  <article class="archive-item">
+    <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
+    <span class="archive-item-date">
         {{ .Date.Format "Jan, 02 2006" }}
       </span>
-    </article><br />
-      {{ end }}
-    {{ end }}
-  </div>
+  </article><br />
+  {{ end }}
+  {{ end }}
+</div>
 
-</main>
+<a href="{{ "tech" | relURL }}">Check out the tech</a>
 
 {{ end }}
 

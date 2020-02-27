@@ -1,0 +1,9 @@
+{
+  "main": {
+    "css": "main.css",
+    "js": "main.js"
+  },
+  "": {
+    "": "fonts/.keep"
+  }
+}

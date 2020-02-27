@@ -1,12 +1,19 @@
 # RxMD
 
-**A blogdown boilerplate for creating truly epic websites**
+**A blogdown boilerplate for creating truly epic visualizations**, *inspired by Netlify's [Victor Hugo](https://github.com/netlify-templates/victor-hugo)*
 
-*Inspired by Netlify's [Victor Hugo](https://github.com/netlify-templates/victor-hugo)*
+<a href="https://bookdown.org/yihui/blogdown">
+    <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
+         alt="blogdown logo" style="max-width: 80px; opacity: 0.25;" width="20%" align="left" />
+</a>
 
-This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
+<a href="https://svelte.dev/">
+    <img src="https://svelte.dev/svelte-logo-outline.svg"
+         alt="blogdown logo" style="background-color:rgba(255, 32, 00, 0.1); border-radius:12px; border-color:#f30; max-width:80px;"
+         width="20%" align="right" />
+</a>
 
-RxMD is setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelt](https://svelte.dev/) as your reactive app engine.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
@@ -29,14 +36,14 @@ This will take some time and will install all packages necessary to run RxMD and
 While developing your website use:
 
 ```bash
-npm run live-preview
+npm start:dev
 ```
 
-Then visit http://localhost:4321 _- or whatever local host and port number that blogdown/servr displays in the terminal -_ to preview your new website. Webpack Dev Server will automatically reload the CSS and Javascript when the bundled stylesheets and scripts in the  src folder change, while blogdown will rebuild the static pages when the content changes.
+Then visit http://localhost:4321 _- or whatever local host and port number that blogdown/servr displays in the terminal -_ to preview your new website. Svelt Dev Server will automatically reload the CSS and Javascript when the bundled stylesheets and scripts in the  src folder change, while blogdown will rebuild the static pages when the content changes.
 
 ### :package: Static build
 
-To build a static version of the website inside the `/dist` folder, run:
+To build a static version of the website inside the `/public` folder, run:
 
 ```bash
 npm run build
@@ -60,8 +67,8 @@ See [package.json](package.json#L8) for all tasks.
 |  |--index.html    // The index page
 |--static           // Files in here ends up in the public folder
 |--src                 // Files that will pass through the asset pipeline
-|  |--css              // Webpack will bundle imported css separately
-|  |--index.js         // index.js is the webpack entry for your css & js assets
+|  |--App.svelt              // Add Svelt apps with the extension .svelt
+|  |--main.js         // main.js is the Svelt/Webpack entry for your reactive assets
 |--themes           // Install Hugo theme here and reference in config.toml
 ```
 
@@ -81,12 +88,9 @@ use the `static` folder. Images, font-files, etc, all go there.
 Files in the static folder end up in the web root. So a file called `static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
-The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
+The `src/main.js` file is the entrypoint for Svelt and will be built to `/public/main.js`
 
 You can use **ES6** and use both relative imports or import libraries from npm.
-
-Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and
-minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
 
 ## Environment variables
 

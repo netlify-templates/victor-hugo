@@ -1,19 +1,44 @@
 ---
-title: 'tech'
-date: 2018-11-14T19:02:50-07:00
+title: Tech
+author: John
+date: '2020-02-27'
 draft: false
+categories:
+  - R
+tags:
+  - R Markdown
 ---
 
 # [RxMD](https://github.com/Real-Currents/rx-md)
+## A blogdown boilerplate for creating truly epic visualizations
 
-## A blogdown boilerplate for creating truly epic websites
+Here's a test containing another Svelte app...
+
+<div id="test-app"></div>
+
 <a href="https://bookdown.org/yihui/blogdown">
     <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
-         alt="blogdown logo" style="max-width: 80px" width="20%" align="right" />
+         alt="blogdown logo" style="max-width: 80px; opacity: 0.25;" width="20%" align="left" />
 </a>
 
+<a href="https://svelte.dev/">
+    <img src="https://svelte.dev/svelte-logo-outline.svg"
+         alt="blogdown logo" style="background-color:rgba(255, 32, 00, 0.1); border-radius:12px; border-color:#f30; max-width:80px;"
+         width="20%" align="right" />
+</a>
 
-This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline. RxMD is setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelt](https://svelte.dev/) as your reactive app engine.
+
+This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 <br />
 
+<div>
+<h1>Can I use HTML directly in R Markdown (.Rmd)?</h1>
+<h2>Yes, but...</h2>
+    <h3>... not with indentation</h3>
+<h4>So, don't indent tags.</h4>
+</div>
+
 ## Enjoy!! 😸
+
+
