@@ -3,5 +3,6 @@
 .Rhistory
 node_modules
 dist
-webpack.json
 public
+content/*html
+webpack.json
