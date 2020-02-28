@@ -46,4 +46,10 @@
 
 {{ partial "modules-bottomold" . }}
 
+{{ with .Site.GetPage "section" "platform" }}
+    {{ range first 1 .Params.modules.module }}
+        {{ partial "modules-bottom" . }}
+    {{ end }}
+{{ end }}
+
 {{ partial "footer" . }}

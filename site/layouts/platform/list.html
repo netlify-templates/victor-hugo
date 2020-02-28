@@ -6,12 +6,14 @@
 
 {{ with .Params.modules}}
     {{ range .module }}
-        {{ partial "section-right" . }}
+        {{ partial "modules-section-right" . }}
     {{ end }}
 {{ end }}
 
 {{ with .Params.modules }}
-    {{ partial "modules-bottom" . }}
+    {{ range .module }}
+        {{ partial "modules-bottom" . }}
+    {{end }}
 {{ end }}
 
 {{ partial "footer" . }}

@@ -11,7 +11,7 @@ modules:
   introtitle: Build your own intervention quickly
   introsubtitle: Way to Health capabilities are grouped into modules. Configure them to address your specific needs and combine them together to quickly build, test and deploy interventions. Choose your deployment model - pilot, standalone or scaled and EHR integrated.
   module: 
-    - title: Conversations
+    - module_name: Conversations
       image: images/temp.jpg
       image_caption: 
       subtitle1: Two-way Texting
@@ -22,7 +22,7 @@ modules:
       description3: 
       is_even: false
       id: patcomm
-    - title: Remote Monitoring
+    - module_name: Remote Monitoring
       image: images/temp.jpg
       image_caption: 
       subtitle1: Vitals and Activity Monitoring
@@ -33,7 +33,7 @@ modules:
       description3: 
       is_even: false
       id: remote    
-    - title: Randomized Control Trials
+    - module_name: Randomized Control Trials
       image: images/temp.jpg
       image_caption: 
       subtitle1: Arms & Randomization
@@ -44,7 +44,7 @@ modules:
       description3: 
       is_even: false
       id: rct
-    - title: Study & Survey Libraries
+    - module_name: Study & Survey Libraries
       image: images/temp.jpg
       image_caption: 
       subtitle1: Study Library
@@ -55,7 +55,7 @@ modules:
       description3: 
       is_even: false
       id: library    
-    - title: Behavioral Science & Economics
+    - module_name: Behavioral Science & Economics
       image: images/temp.jpg
       image_caption: 
       subtitle1: Gamification & Social
@@ -66,7 +66,7 @@ modules:
       description3: 
       is_even: false
       id: be     
-    - title: Rules Engine
+    - module_name: Rules Engine
       image: images/temp.jpg
       image_caption: 
       subtitle1: Schedule or event driven
@@ -77,7 +77,7 @@ modules:
       description3: 
       is_even: false
       id: rulesengine
-    - title: EHR integration
+    - module_name: EHR integration
       image: images/temp.jpg
       image_caption: 
       subtitle1: Bi-directional integration 
