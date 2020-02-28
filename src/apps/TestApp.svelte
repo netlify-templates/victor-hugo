@@ -40,6 +40,133 @@
 	});
 </script>
 
+<style>
+	@import url("../styles/global.css");
+
+	.controls {
+		position: absolute;
+		top: 216px;
+		right: 1%;
+		width: 300px;
+		height: 128px;
+		padding: 1em;
+		background-color: rgba(255,255,255,0.7);
+		border-radius: 2px;
+		z-index: 2;
+	}
+
+	.keys {
+		position: absolute;
+		width: 256px;
+		top: 400px;
+		right: 1%;
+		padding: 24px;
+		background-color: transparent;
+	}
+
+	.keys * {
+		padding: 24px;
+	}
+</style>
+
+<GL.Scene>
+	<GL.Target id="center" location={[0, h/2, 0]}/>
+
+	<GL.OrbitControls maxPolarAngle={Math.PI / 2} let:location>
+		<GL.PerspectiveCamera {location} lookAt="center" near={0.01} far={1000}/>
+	</GL.OrbitControls>
+
+	<GL.AmbientLight intensity={0.3}/>
+	<GL.DirectionalLight direction={[-1,-1,-1]} intensity={0.5}/>
+
+	<!-- box -->
+	<GL.Mesh
+			geometry={GL.box({})}
+			location={[0,h/2,0]}
+			rotation={[0,-20,0]}
+			scale={[w,h,d]}
+			uniforms={{ color: from_hex(color) }}
+	/>
+
+	<!-- spheres -->
+	<GL.Mesh
+			geometry={GL.sphere({ turns: 36, bands: 36 })}
+			location={[-0.5, 0.4, 1.2]}
+			scale={0.4}
+			uniforms={{ color: 0x123456, alpha: 0.9 }}
+			transparent
+	/>
+
+	<GL.Mesh
+			geometry={GL.sphere({ turns: 36, bands: 36 })}
+			location={[-1.4, 0.6, 0.2]}
+			scale={0.6}
+			uniforms={{ color: 0x336644, alpha: 1.0 }}
+			transparent
+	/>
+
+	<!-- floor -->
+	<GL.Mesh
+			geometry={GL.plane()}
+			location={[0,-0.01,0]}
+			rotation={[-90,0,0]}
+			scale={10}
+			uniforms={{ color: 0xffffff }}
+	/>
+
+	<!-- ceiling -->
+	<GL.Mesh
+			geometry={GL.plane()}
+			location={[0,5.0,0]}
+			rotation={[90,0,0]}
+			scale={10}
+			uniforms={{ color: 0xffffff }}
+	/>
+
+	<!-- wall1 -->
+	<GL.Mesh
+			geometry={GL.plane()}
+			location={[0,-0.01,-10.0]}
+			rotation={[0,0,0]}
+			scale={10}
+			uniforms={{ color: 0xffffff }}
+	/>
+
+	<!-- wall2 -->
+	<GL.Mesh
+			geometry={GL.plane()}
+			location={[10.0,-0.01,0.0]}
+			rotation={[0,-90,0]}
+			scale={10}
+			uniforms={{ color: 0xffffff }}
+	/>
+
+	<!-- wall3 -->
+	<GL.Mesh
+			geometry={GL.plane()}
+			location={[-10.0,-0.01,0.0]}
+			rotation={[0,90,0]}
+			scale={10}
+			uniforms={{ color: 0xffffff }}
+	/>
+
+	<!-- moving light -->
+	<GL.Group location={[light.x,light.y,light.z]}>
+		<GL.Mesh
+				geometry={GL.sphere({ turns: 36, bands: 36 })}
+				location={[0,0.2,0]}
+				scale={0.1}
+				uniforms={{ color: 0xffffff, emissive: 0xff0000 }}
+		/>
+
+		<GL.PointLight
+				location={[0,0,0]}
+				color={0xff0000}
+				intensity={0.6}
+		/>
+	</GL.Group>
+</GL.Scene>
+
 <div class="controls">
 	<label>
 		<input type="color" style="height: 40px" bind:value={color}>
@@ -58,147 +185,7 @@
 	</label>
 </div>
 
-<style>
-	@import url("../styles/global.css");
-
-	canvas {
-		width: 100%;
-		height: 100%;
-		background-color: #666;
-		-webkit-mask: url("../images/svelte-logo-mask.svg") 50% 50% content-box view-box no-repeat;
-		mask: url("../images/svelte-logo-mask.svg") 50% 50% content-box view-box no-repeat;
-	}
-	.controls {
-		position: absolute;
-		top: 216px;
-		right: 1%;
-		width: 300px;
-		height: 128px;
-		padding: 1em;
-		background-color: rgba(255,255,255,0.7);
-		border-radius: 2px;
-		z-index: 2;
-	}
-	#keypad {
-		position: absolute;
-		width: 256px;
-		top: 400px;
-		right: 1%;
-		padding: 24px;
-		background-color: transparent;
-	}
-	#keypad * {
-		padding: 24px;
-	}
-	#view {
-		text-align: center;
-	}
-</style>
-
-<div id="view">
-	<h1>{title}</h1>
-
-	<GL.Scene>
-		<GL.Target id="center" location={[0, h/2, 0]}/>
-
-		<GL.OrbitControls maxPolarAngle={Math.PI / 2} let:location>
-			<GL.PerspectiveCamera {location} lookAt="center" near={0.01} far={1000}/>
-		</GL.OrbitControls>
-
-		<GL.AmbientLight intensity={0.3}/>
-		<GL.DirectionalLight direction={[-1,-1,-1]} intensity={0.5}/>
-
-		<!-- box -->
-		<GL.Mesh
-				geometry={GL.box({})}
-				location={[0,h/2,0]}
-				rotation={[0,-20,0]}
-				scale={[w,h,d]}
-				uniforms={{ color: from_hex(color) }}
-		/>
-
-		<!-- spheres -->
-		<GL.Mesh
-				geometry={GL.sphere({ turns: 36, bands: 36 })}
-				location={[-0.5, 0.4, 1.2]}
-				scale={0.4}
-				uniforms={{ color: 0x123456, alpha: 0.9 }}
-				transparent
-		/>
-
-		<GL.Mesh
-				geometry={GL.sphere({ turns: 36, bands: 36 })}
-				location={[-1.4, 0.6, 0.2]}
-				scale={0.6}
-				uniforms={{ color: 0x336644, alpha: 1.0 }}
-				transparent
-		/>
-
-		<!-- floor -->
-		<GL.Mesh
-				geometry={GL.plane()}
-				location={[0,-0.01,0]}
-				rotation={[-90,0,0]}
-				scale={10}
-				uniforms={{ color: 0xffffff }}
-		/>
-
-		<!-- ceiling -->
-		<GL.Mesh
-				geometry={GL.plane()}
-				location={[0,5.0,0]}
-				rotation={[90,0,0]}
-				scale={10}
-				uniforms={{ color: 0xffffff }}
-		/>
-
-		<!-- wall1 -->
-		<GL.Mesh
-				geometry={GL.plane()}
-				location={[0,-0.01,-10.0]}
-				rotation={[0,0,0]}
-				scale={10}
-				uniforms={{ color: 0xffffff }}
-		/>
-
-		<!-- wall2 -->
-		<GL.Mesh
-				geometry={GL.plane()}
-				location={[10.0,-0.01,0.0]}
-				rotation={[0,-90,0]}
-				scale={10}
-				uniforms={{ color: 0xffffff }}
-		/>
-
-		<!-- wall3 -->
-		<GL.Mesh
-				geometry={GL.plane()}
-				location={[-10.0,-0.01,0.0]}
-				rotation={[0,90,0]}
-				scale={10}
-				uniforms={{ color: 0xffffff }}
-		/>
-
-		<!-- moving light -->
-		<GL.Group location={[light.x,light.y,light.z]}>
-			<GL.Mesh
-					geometry={GL.sphere({ turns: 36, bands: 36 })}
-					location={[0,0.2,0]}
-					scale={0.1}
-					uniforms={{ color: 0xffffff, emissive: 0xff0000 }}
-			/>
-
-			<GL.PointLight
-					location={[0,0,0]}
-					color={0xff0000}
-					intensity={0.6}
-			/>
-		</GL.Group>
-	</GL.Scene>
-</div>
-
-<div id="keypad" class="controls">
+<div class="controls keys">
 	<h1 style="color: {pin ? '#999' : '#fff'}">{view}</h1>
 	<Keypad bind:value={pin} on:submit={handleSubmit}/>
 </div>
-

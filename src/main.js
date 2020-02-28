@@ -20,13 +20,13 @@ export default ( // Check if app id exists in DOM
 const testAppId = "test-app";
 const testAppElement = document.getElementById(testAppId);
 export const testApp = (
-      testAppElement !== null &&
-      (testAppElement.constructor.name === 'HTMLElement' ||
+    testAppElement !== null &&
+    (testAppElement.constructor.name === 'HTMLElement' ||
         testAppElement.constructor.name === 'HTMLDivElement')
     ) ?
-      new TestApp({
-          target: testAppElement,
-          props: {
-              title: "🦊 Hello Svelte!"
-          }
-      }) : {};
+    new TestApp({
+        target: testAppElement,
+        props: {
+            title: "🦊 Hello Svelte!"
+        }
+    }) : {};
