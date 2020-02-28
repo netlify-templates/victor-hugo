@@ -1,0 +1,24 @@
+<div class="md:flex mt-10 mb-10">
+    <div class="md:flex-shrink-0">
+        {{ if .Params.image }}
+        <img class="rounded-lg md:w-56" src="{{ .Params.image }}" >
+        {{ else }}
+        <h2 class="text-center md:w-56 text-4xl align-center">{{ .Params.journal }}</h2>
+        {{ end }}
+    </div>
+    <div class="mt-4 md:mt-0 md:ml-6">
+        {{ if .Params.tag }}
+        <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold text-right">{{ .Params.tag }}</div>
+        {{ else }}
+        <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold text-right">{{ .Date.Format "Jan 2, 2006" }}</div>
+        {{ end }}
+        {{ if .Params.articlename }}
+        <a href="{{ .Params.source }}" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">{{ .Params.articlename }}</a>
+        {{ else }}
+        <a href="{{ .Params.source }}"
+            class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">{{ .Params.title }}</a>
+        {{ end }}
+        <p class="mt-2 text-gray-500">{{ .Params.authors }}</p>
+        <p class="mt-2 text-gray-600">{{ .Params.summary }}</p>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 ---
 title: Welcome to the new website
 date: 2017-12-03
-summary: It's been a long time coming 
+summary: It's been a long time coming. A lot of you might be discovering us for the first time. So let's take a few minutes to give you a flavor of who we are and what we do. 
 image: /images/bg/welcome.svg
 authorname: Mohan Balachandran
 authorimage: /images/team/balachandran.png

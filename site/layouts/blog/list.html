@@ -13,7 +13,8 @@
 <section class="py-12 px-4 mt-10">
     <div class="flex flex-wrap -mx-4">
         {{ range .Data.Pages  }}
-        {{ partial "blog-summary" . }}
+        {{/*  {{ partial "blog-summary" . }}  */}}
+        {{ partial "horizontal-list" . }}
         {{ end }}
     </div>
     </div>

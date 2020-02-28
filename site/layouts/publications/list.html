@@ -16,7 +16,7 @@
     <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed">Innovative research using the Way to Health platform published in peer reviewed publications</p> -->
     <div class="flex flex-wrap -mx-4">
         {{ range .Data.Pages  }}
-            {{ partial "content-summary" . }}
+            {{ partial "horizontal-list" . }}
         {{ end }}
     </div>
 </section>
