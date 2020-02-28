@@ -12,8 +12,6 @@ tags:
 # [Sveltr](https://github.com/dancingfrog/sveltr)
 ## A blogdown boilerplate for creating truly epic visualizations
 
-<div id="test-app"></div>
-
 <a href="https://bookdown.org/yihui/blogdown" target="_blank">
     <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
          style="max-width: 80px; opacity: 0.25;"
@@ -29,6 +27,71 @@ tags:
 This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
-<br />
 
 ## Enjoy!! 🦊
+<br />
+
+<div id="test-app"></div>
+
+```{r setup, include=FALSE}
+if (!require("knitr")) {
+  install.packages("knitr")
+  library("knitr")
+}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r mapping, echo=FALSE}
+# library(DBI)
+# library(RPostgreSQL)
+# library(sp)
+# options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ
+# library(rgdal)
+# library(rgeos)
+# library(sf)
+# library(maptools)
+# options(warn=0)
+#
+# data(wrld_simpl)
+# xlim <- c(-130,-60)
+# ylim <- c(35,50)
+# plot(wrld_simpl,xlim=xlim,ylim=ylim,col='olivedrab3',bg='lightblue') #plot(wrld_simpl)coords <- matrix(c(-122.92,-79.4, 49.277,43.66),ncol=2)
+#
+# coords <- matrix(c(-122.92,-79.4, 49.277,43.66),ncol=2)
+# coords <- coordinates(coords)
+# spoints <- SpatialPoints(coords)
+# df <- data.frame(location=c("SFU","UofT"))
+# spointsdf <- SpatialPointsDataFrame(spoints,df)
+# plot(wrld_simpl) + plot(spointsdf,add=T,col=c('red','blue'),pch=16)
+#
+# shp_dir<- file.path(getwd(), "data", "Pitney Bowes", "Tab", "201903", "EUR", "DNK", "DNK")
+# ogrListLayers(dsn = shp_dir)
+# file.path(shp_dir, "dnkap.shp")
+# options(warn=-1)                                                         # Warning message:
+# airport_points_shp <- readShapePoints(file.path(shp_dir, "dnkap.shp"))   # “readShapePoints is deprecated; use rgdal::readOGR or sf::st_read”
+# options(warn=0)
+# xlim <- c(0,30)
+# ylim <- c(50,60)
+# plot(wrld_simpl,xlim=xlim,ylim=ylim) + plot(airport_points_shp,add=T,col=c('red','blue'),pch=16)
+#
+# shp_dir <- file.path(getwd(), "data", "HERE", "Postal Code Points", "USAM181H0NUS000DCM00", "SHP", "VT_SHP", "VT_SHP")
+# ogrListLayers(dsn = shp_dir)
+# postal_points_shp <- readOGR(dsn = shp_dir, layer = "USA_181H0_VT_POSTAL_CODE")
+# xlim <- c(-85,-60)
+# ylim <- c(40,45)
+# plot(wrld_simpl,xlim=xlim,ylim=ylim) + plot(postal_points_shp,add=T,col=c('red','blue'),pch=16)
+```

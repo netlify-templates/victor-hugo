@@ -45,7 +45,7 @@
 
 	.controls {
 		position: absolute;
-		top: 216px;
+		top: 300px;
 		right: 1%;
 		width: 300px;
 		height: 128px;
@@ -58,7 +58,7 @@
 	.keys {
 		position: absolute;
 		width: 256px;
-		top: 400px;
+		top: 512px;
 		right: 1%;
 		padding: 24px;
 		background-color: transparent;
