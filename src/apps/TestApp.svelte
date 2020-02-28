@@ -45,8 +45,9 @@
 
 	.controls {
 		position: absolute;
-		top: 300px;
-		right: 1%;
+		top: 0;
+		margin: 8px;
+		margin-left: 200px;
 		width: 300px;
 		height: 128px;
 		padding: 1em;
@@ -58,8 +59,8 @@
 	.keys {
 		position: absolute;
 		width: 256px;
-		top: 512px;
-		right: 1%;
+		height: 256px;
+		top: calc(50vh - (100vw / 5.75));
 		padding: 24px;
 		background-color: transparent;
 	}
