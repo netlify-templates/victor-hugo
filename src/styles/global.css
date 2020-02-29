@@ -71,12 +71,21 @@ button:focus {
 }
 
 .content * p, pre {
-	max-width: 1024px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .content * pre {
+	width: 100%;
 	max-width: 1024px;
 	text-align: left;
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.content * pre code {
+	max-width: 1024px;
+	word-wrap: break-word;
 }
