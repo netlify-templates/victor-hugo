@@ -69,6 +69,32 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+## Embedding JSON data in HTML
+
+If the output target is HTML, R has some methods for turning R data into JavaScript or JSON data and printing the results within HTML tags:
+```{r car_data}
+
+head(mtcars)
+```
+```{r car_data_in_html, echo=FALSE, results='asis'}
+library(jsonlite)
+
+cat(paste('<div id="car_data_in_html"><script type="application/json">', toJSON(mtcars), '\n</script>\n</div>', sep=""))
+```
+```{r pre_print_data_in_html, echo=FALSE, results='asis'}
+require(jsonlite)
+
+# add tabs to tags, to pre print code results
+cat(paste('\n\t<div id="car_data_in_html">\n\t\t<script type="application/json">', toJSON(mtcars), '\n\t\t</script>\n\t</div>', sep=""))
+```
+The mtcars sample dataset printed above has been serialized to JSON and added to a `<script>` tag contained within a `<div id="car_data_in_html">`. Note the specification of the `type="application/json"` attribute, which prevents the browser from evaluating the contents of the `<script>` tag as JavaScript (if that is intended) and allows some other code block to call:
+
+    <script>
+      var data = JSON.parse(document.getElementById('car_data_in_html').children[0].innerHTML);
+    </script>
+
+<br />
+
 ```{r mapping, echo=FALSE}
 # library(DBI)
 # library(RPostgreSQL)

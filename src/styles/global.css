@@ -71,10 +71,12 @@ button:focus {
 }
 
 .content * p, pre {
+	max-width: 1024px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .content * pre {
+	max-width: 1024px;
 	text-align: left;
 }
