@@ -33,6 +33,12 @@ if (!require("knitr")) {
   library("knitr")
 }
 knitr::opts_chunk$set(echo = TRUE)
+
+# Load reticulate package for running python
+if (!require("reticulate")) {
+  install.packages("reticulate")
+}
+library(reticulate)
 ```
 
 This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
@@ -94,6 +100,33 @@ The mtcars sample dataset printed above has been serialized to JSON and added to
     </script>
 
 <br />
+
+It is also possible to include Python code chunks in R Markdown, using the `reticulate` package that was loaded (in R) earlier:
+
+```{python data_test}
+data = {"foo": {"bar": "baz"}}
+string = "Hydrogen"
+
+for index, letter in enumerate(string):
+    print((letter, index))
+```
+
+
+```{python plot}
+try:
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  # %matplotlib inline
+  # %config InlineBackend.figure_format = 'svg'
+  t = np.linspace(0, 20, 500)
+
+  plt.plot(t, np.sin(t))
+  plt.show()
+except Exception as e:
+  print(e)
+```
+
 
 ```{r mapping, echo=FALSE}
 # library(DBI)
