@@ -75,6 +75,49 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+Use R's geospatial packages to plot data on maps:
+
+```{r mapping, echo=FALSE}
+options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ
+if (!require("sp")) {
+  install.packages("sp")
+}
+if (!require("rgdal")) {
+  install.packages("rgdal")
+}
+if (!require("rgeos")) {
+  install.packages("rgeos")
+}
+if (!require("sf")) {
+  install.packages("sf")
+}
+options(warn=0)
+if (!require("maptools")) {
+  install.packages("maptools")
+} else {
+  options(warn=-1)
+  require(sp)
+  require(rgdal)
+  require(rgeos)
+  options(warn=0)
+  require(maptools)
+
+  data(wrld_simpl)
+  xlim <- c(-130,-60)
+  ylim <- c(35,50)
+  plot(wrld_simpl,xlim=xlim,ylim=ylim,col='olivedrab3',bg='lightblue')
+  plot(wrld_simpl)
+  coords <- matrix(c(-122.92,-79.4, 49.277,43.66),ncol=2)
+
+  coords <- matrix(c(-122.92,-79.4, 49.277,43.66),ncol=2)
+  coords <- coordinates(coords)
+  spoints <- SpatialPoints(coords)
+  df <- data.frame(location=c("SFU","UofT"))
+  spointsdf <- SpatialPointsDataFrame(spoints,df)
+  plot(wrld_simpl) + plot(spointsdf,add=T,col=c('red','blue'),pch=16)
+}
+```
+
 ## Embedding JSON data in HTML
 
 If the output target is HTML, R has some methods for turning R data into JavaScript or JSON data and printing the results within HTML tags:
@@ -82,18 +125,17 @@ If the output target is HTML, R has some methods for turning R data into JavaScr
 
 head(mtcars)
 ```
-```{r car_data_in_html, echo=FALSE, results='asis'}
-library(jsonlite)
 
-cat(paste('<div id="car_data_in_html"><script type="application/json">', toJSON(mtcars), '\n</script>\n</div>', sep=""))
-```
-```{r pre_print_data_in_html, echo=FALSE, results='asis'}
+The mtcars sample dataset printed above has been serialized to JSON and added to a `<script>` tag contained within a `<div id="car_data_in_html">`.
+```{r car_data_in_html, echo=FALSE, results='asis'}
 require(jsonlite)
 
+# print without tabs so R markdown will add it to the DOM tree of the resulting page
+cat(paste('<div id="car_data_in_html"><script type="application/json">', toJSON(mtcars), '\n</script>\n</div>', sep=""))
 # add tabs to tags, to pre print code results
 cat(paste('\n\t<div id="car_data_in_html">\n\t\t<script type="application/json">', toJSON(mtcars), '\n\t\t</script>\n\t</div>', sep=""))
 ```
-The mtcars sample dataset printed above has been serialized to JSON and added to a `<script>` tag contained within a `<div id="car_data_in_html">`. Note the specification of the `type="application/json"` attribute, which prevents the browser from evaluating the contents of the `<script>` tag as JavaScript (if that is intended) and allows some other code block to call:
+Note the specification of the `type="application/json"` attribute, which prevents the browser from evaluating the contents of the `<script>` tag as JavaScript (if that is intended) and allows some other code block to call:
 
     <script>
       var data = JSON.parse(document.getElementById('car_data_in_html').children[0].innerHTML);
@@ -105,14 +147,13 @@ It is also possible to include Python code chunks in R Markdown, using the `reti
 
 ```{python data_test}
 data = {"foo": {"bar": "baz"}}
-string = "Hydrogen"
+string = "Reticulate"
 
 for index, letter in enumerate(string):
     print((letter, index))
 ```
 
-
-```{python plot}
+```{python pyplot}
 try:
   import matplotlib.pyplot as plt
   import numpy as np
@@ -125,46 +166,4 @@ try:
   plt.show()
 except Exception as e:
   print(e)
-```
-
-
-```{r mapping, echo=FALSE}
-# library(DBI)
-# library(RPostgreSQL)
-# library(sp)
-# options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ
-# library(rgdal)
-# library(rgeos)
-# library(sf)
-# library(maptools)
-# options(warn=0)
-#
-# data(wrld_simpl)
-# xlim <- c(-130,-60)
-# ylim <- c(35,50)
-# plot(wrld_simpl,xlim=xlim,ylim=ylim,col='olivedrab3',bg='lightblue') #plot(wrld_simpl)coords <- matrix(c(-122.92,-79.4, 49.277,43.66),ncol=2)
-#
-# coords <- matrix(c(-122.92,-79.4, 49.277,43.66),ncol=2)
-# coords <- coordinates(coords)
-# spoints <- SpatialPoints(coords)
-# df <- data.frame(location=c("SFU","UofT"))
-# spointsdf <- SpatialPointsDataFrame(spoints,df)
-# plot(wrld_simpl) + plot(spointsdf,add=T,col=c('red','blue'),pch=16)
-#
-# shp_dir<- file.path(getwd(), "data", "Pitney Bowes", "Tab", "201903", "EUR", "DNK", "DNK")
-# ogrListLayers(dsn = shp_dir)
-# file.path(shp_dir, "dnkap.shp")
-# options(warn=-1)                                                         # Warning message:
-# airport_points_shp <- readShapePoints(file.path(shp_dir, "dnkap.shp"))   # “readShapePoints is deprecated; use rgdal::readOGR or sf::st_read”
-# options(warn=0)
-# xlim <- c(0,30)
-# ylim <- c(50,60)
-# plot(wrld_simpl,xlim=xlim,ylim=ylim) + plot(airport_points_shp,add=T,col=c('red','blue'),pch=16)
-#
-# shp_dir <- file.path(getwd(), "data", "HERE", "Postal Code Points", "USAM181H0NUS000DCM00", "SHP", "VT_SHP", "VT_SHP")
-# ogrListLayers(dsn = shp_dir)
-# postal_points_shp <- readOGR(dsn = shp_dir, layer = "USA_181H0_VT_POSTAL_CODE")
-# xlim <- c(-85,-60)
-# ylim <- c(40,45)
-# plot(wrld_simpl,xlim=xlim,ylim=ylim) + plot(postal_points_shp,add=T,col=c('red','blue'),pch=16)
 ```
