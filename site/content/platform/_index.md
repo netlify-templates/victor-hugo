@@ -31,7 +31,7 @@ modules:
       description2: The system also allows patients to report their PROs, adverse events (AEs), symptoms and more via structured or unstructured conversations. These can be patient initiated and follow decision trees of your choosing. 
       subtitle3: 
       description3: 
-      is_even: false
+      is_even: true
       id: remote    
     - module_name: Randomized Control Trials
       image: images/temp.jpg
@@ -53,7 +53,7 @@ modules:
       description2: Vel et ut commodi amet ut officiis eos molestias. Dolores dolorem amet consequuntur qui. Sequi est omnis quo laborum dolore. Id molestiae odit nesciunt unde natus est. Sint possimus maxime dolorem sequi doloremque. Nobis ab occaecati.
       subtitle3: 
       description3: 
-      is_even: false
+      is_even: true
       id: library    
     - module_name: Behavioral Science & Economics
       image: images/temp.jpg
@@ -75,7 +75,7 @@ modules:
       description2: To maximize the productivity of staff and providers, the Way To Health platform allows for the creation of incidents or alerts whenever certain exception criteria are met. Configure notifications depending on the users role.
       subtitle3: 
       description3: 
-      is_even: false
+      is_even: true
       id: rulesengine
     - module_name: EHR integration
       image: images/temp.jpg

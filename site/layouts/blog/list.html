@@ -1,15 +1,20 @@
 {{ partial "header" . }}
-<section class="py-12 px-4 mt-24">
-    <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
-        <div class="lg:w-1/2 px-2">
-            <img src="images/blog.svg" alt="">
+<div class="bg-teal-100">
+    <div class="container mx-auto px-4">
+    <section class="py-12 px-4 pt-24">
+        <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
+            <div class="lg:w-1/2 px-2">
+                <img src="images/blog.svg" alt="">
+            </div>
+            <div class="lg:w-1/2 px-2 pl-10">
+                <h2 class="text-5xl mb-6 leading-tight font-heading">The Way to Health Blog</h2>
+                <p class="text-gray-500 text-xl leading-relaxed">Thoughts, opinions and conversations on patient engagement, design, behavioral science & economics and engineering from the trenches</p>
+            </div>
         </div>
-        <div class="lg:w-1/2 px-2 pl-10">
-            <h2 class="text-5xl mb-6 leading-tight font-heading">The Way to Health Blog</h2>
-            <p class="text-gray-500 text-xl leading-relaxed">Thoughts, opinions and conversations on patient engagement, design, behavioral science & economics and engineering from the trenches</p>
-        </div>
+    </section>
     </div>
-</section>
+</div>
+<div class="container mx-auto px-4">
 <section class="py-12 px-4 mt-10">
     <div class="flex flex-wrap -mx-4">
         {{ range .Data.Pages  }}
@@ -19,5 +24,6 @@
     </div>
     </div>
 </section>
+</div>
 
 {{ partial "footer" . }}

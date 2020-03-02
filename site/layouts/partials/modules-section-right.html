@@ -1,4 +1,5 @@
-<section class="py-12 px-4 mt-16 mb-16 ">
+<div class="container mx-auto px-4">
+<section class="py-12 px-4 pt-16 pb-16 ">
     <div class="flex flex-row flex-wrap items-center text-center lg:text-left {{ if .is_even }} sm:flex-row-reverse {{ end }}">
         <div class="lg:w-1/2 px-2"><img class="rounded" src="{{ .image }}" alt="">
             <p class="text-sm text-gray-600 mt-4 text-left">{{ .image_caption }}</p>
@@ -29,3 +30,4 @@
         </div>
     </div>
 </section>
+</div>

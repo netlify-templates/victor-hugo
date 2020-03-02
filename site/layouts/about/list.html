@@ -2,11 +2,15 @@
 
 {{ partial "splash-bg" . }}
 
-<p class="mb-6 text-xl text-center text-gray-500">{{ .Params.introduction }}</p>
-
+<div class="container mx-auto px-4">
+<p class="mb-6 text-xl text-gray-600">{{ .Params.introduction }}</p>
 {{ partial "text-left" . }}
+</div>
 
-<section class="py-8 px-4 mt-16 mb-16" id="vision">
+<div class="bg-gray-100">
+    <div class="container mx-auto px-4">
+<div class="container mx-auto px-4">
+<section class="py-8 px-4 pt-16 pb-16" id="vision">
     <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .Params.heading }}</h2>
     <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
     <div class="flex flex-wrap -mx-4">
@@ -17,8 +21,11 @@
 {{ end }}
 </div>
 </section>
+</div>
+</div>
+</div>
 
-<!-- <section class="py-8 px-4 mt-16 mb-16" id="vision">
+<!-- <section class="py-8 px-4 pt-16 pb-16" id="vision">
     <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .Params.heading }}</h2>
     <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
     <div class="flex flex-wrap -mx-4">
@@ -34,6 +41,7 @@
     </div>
 </section> -->
 
+<div class="container mx-auto px-4">
 <section class="py-12 px-4 mb-16 mt-16" id="origins">
     <div class="flex flex-wrap -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
@@ -53,5 +61,5 @@
         </div>
     </div>
 </section>
-
+</div>
 {{ partial "footer" . }}

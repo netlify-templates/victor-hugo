@@ -1,6 +1,6 @@
 ---
 title: Online Game Could Boost Family Fitness
-date: 2017-10-02T12:24:01-04:00
+date: '2017-10-02'
 summary: >-
   The family that plays an online game together may get more exercise together,
   a new study suggests. But more research needed because study participants were

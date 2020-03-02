@@ -1,6 +1,6 @@
 ---
 title: Engineering Social Incentives for Health
-date: 2016-12-29T13:10:39-05:00
+date: '2016-12-29'
 summary: >-
   Health care organizations, newly focused on population outcomes, can develop
   and test social interventions for advancing health. Given the increasing

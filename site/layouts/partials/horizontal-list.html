@@ -1,3 +1,4 @@
+<div class="container mx-auto px-4">
 <div class="md:flex mt-10 mb-10">
     <div class="md:flex-shrink-0">
         {{ if .Params.image }}
@@ -9,6 +10,8 @@
     <div class="mt-4 md:mt-0 md:ml-6">
         {{ if .Params.tag }}
         <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold text-right">{{ .Params.tag }}</div>
+        {{ else if .Params.label }}
+        <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold text-right">{{ .Params.label }}</div>
         {{ else }}
         <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold text-right">{{ .Date.Format "Jan 2, 2006" }}</div>
         {{ end }}
@@ -21,4 +24,5 @@
         <p class="mt-2 text-gray-500">{{ .Params.authors }}</p>
         <p class="mt-2 text-gray-600">{{ .Params.summary }}</p>
     </div>
+</div>
 </div>

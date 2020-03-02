@@ -1,6 +1,6 @@
 ---
 title: The Secret To Weight Loss (According To Behavioral Economics)
-date: 2017-01-31T00:00:00-05:00
+date: '2017-01-31'
 summary: >-
   The real problem here is not economics or behavioral economics or psychology.
   It is obesity. Losing weight is insanely hard to do. And keeping weight off is

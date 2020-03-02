@@ -1,6 +1,6 @@
 ---
 title: How Behavioral Economics Can Produce Better Health Care
-date: 2017-04-13T13:05:08-04:00
+date: '2017-04-13'
 summary: >-
   A more complete view of human behavior seems necessary for more effective
   medicine. Health is fundamentally the product of myriad daily decisions made

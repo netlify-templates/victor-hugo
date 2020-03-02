@@ -12,8 +12,10 @@
     {{ end }}
 {{ end }}
 
-<section class="py-8 px-4 mt-16 mb-16">
-    <!-- <hr class="mt-16 mb-16"></hr> -->
+
+<div class="container mx-auto px-4">
+<section class="py-8 px-4 pt-16 pb-16">
+    <!-- <hr class="pt-16 pb-16"></hr> -->
     <h2 class="text-4xl text-center mb-4 font-heading">Project Spotlights</h2>
     <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed">Some of the successes we are proud of
     </p>
@@ -28,9 +30,7 @@
             <button>Research</button>
         </div>
     </div>
-
     <div class="flex flex-wrap -mx-4">
-
         {{ $v1 := where .Site.Pages "Section" "projects" }}
         {{ $v2 := where (where .Site.Pages "Section" "projects") "Params.spotlight" true }}
         {{ $v3 := where (where .Site.Pages "Section" "projects") "Params.area" "clinical"}}
@@ -46,8 +46,10 @@
         {{ end }}
     </div>
 </section>
+</div>
 
-<section class="py-8 px-4 w-full bg-indigo-600 text-white mt-16 mb-16">
+<section class="py-8 px-4 w-full bg-indigo-600 text-white pt-16 pb-16">
+    <div class="container mx-auto px-4">
     <h2 class="text-3xl mb-6 text-center font-heading">Let us tell you more</h2>
     <div class="flex flex-wrap -mx-6">
         <div class="w-full lg:w-1/2 px-6 mb-8 lg:mb-0">
@@ -77,9 +79,12 @@
             </form>
         </div>
     </div>
+    </div>
 </section>
 
-<section class="py-8 px-4 mt-16 mb-16">
+<div class="bg-gray-100">
+<div class="container mx-auto px-4">
+<section class="py-8 px-4 pt-16 pb-16">
     <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Latest Content</h2>
     <p class="mb-6 text-xl text-center text-gray-500">Way to Health mentions, publications and content </p>
     <div class="flex flex-wrap -mx-4">
@@ -90,5 +95,7 @@
 
     </div>
 </section>
+</div>
+</div>
 
 {{ partial "footer" . }}

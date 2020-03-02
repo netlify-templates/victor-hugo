@@ -18,12 +18,14 @@
       <input class="form-control pb-2 w-full" type="text" id="quicksearch" name="quicksearch" placeholder="Search">
   </div>    
 
+  <div class="container mx-auto px-4">
       <div class="flex flex-wrap -mx-4 grid">
         {{ range .Data.Pages  }}
           {{ partial "case-summary" . }}          
         {{ end }}
       </div>
-    </div>
+  </div>
+
   </section>
 
 {{ partial "footer" . }}

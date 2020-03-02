@@ -1,6 +1,7 @@
 {{ partial "header" . }}
-
-<section class="py-12 px-4 mt-24">
+<div class="bg-teal-100">
+<div class="container mx-auto px-4">
+<section class="py-12 px-4 pt-24">
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
         <div class="lg:w-1/2 px-2">
             <img src="images/publications.svg" alt="">
@@ -11,14 +12,15 @@
         </div>
     </div>
 </section>
+</div>
+</div>
+<div class="container mx-auto px-4">
 <section class="py-12 px-4">
-    <!-- <h2 class="text-4xl text-center mb-4 font-heading">Peer reviewed publications</h2>
-    <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed">Innovative research using the Way to Health platform published in peer reviewed publications</p> -->
     <div class="flex flex-wrap -mx-4">
         {{ range .Data.Pages  }}
             {{ partial "horizontal-list" . }}
         {{ end }}
     </div>
 </section>
-
+</div>
 {{ partial "footer" . }}

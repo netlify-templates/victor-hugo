@@ -2,7 +2,7 @@
 title: >-
   A healthier population will lead to lower healthcare costs, healthcare pros
   tell Senate panel
-date: 2017-10-19T00:00:00-04:00
+date: '2017-10-19'
 summary: >-
   Programs to improve health for employees focus on common-sense approaches such
   as quitting smoking and maintaining a healthy weight.

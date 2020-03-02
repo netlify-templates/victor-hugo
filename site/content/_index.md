@@ -63,7 +63,7 @@ domains:
         is_even: false
         source: /healthsystem
       - title: For Researchers
-        image: images/sindhu.adi.jpg
+        image: images/researchers.jpg
         image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
         subtitle1: Design any interventional study
         description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
@@ -74,8 +74,8 @@ domains:
         is_even: true
         source: /researcher
       - title: For Health Plans
-        image: images/sindhu.adi.jpg
-        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
+        image: images/temp.jpg
+        image_caption: Drs. t quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque.
         subtitle1: Increase adherence to wellness programs
         description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
         subtitle2: Testing

@@ -1,6 +1,6 @@
 ---
 title: The Rise of Behavioral Economics and Its Influence on Organizations
-date: 2017-10-10T12:22:38-04:00
+date: '2017-10-10'
 summary: >-
   Smoking, savings, honesty, and healthy eating may not be items on your list of
   problems to address or areas where you’d like to see improvements in your own

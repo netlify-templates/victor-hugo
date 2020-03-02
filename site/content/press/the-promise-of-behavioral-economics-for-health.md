@@ -1,6 +1,6 @@
 ---
 title: The Promise of Behavioral Economics for Health
-date: 2017-02-20T13:06:24-05:00
+date: '2017-02-20T'
 summary: >-
   The promise of behavioral economics for health is that many of the same
   messages, incentives, and choice structures used so effectively to lure people
