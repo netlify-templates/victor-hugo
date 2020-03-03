@@ -1,7 +1,8 @@
 ---
 study_name: Active Reward
 date: '2018-06-13'
-area: research
+area: Research
+subdomain: Cardiology
 status: complete
 authors:
   - authorimage: /images/uploads/chok3021.jpg
@@ -31,7 +32,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care 
+label: Clinical 
 image: /images/uploads/hsm.01.jpg
 solution_area: Surgery Solutions
 ---

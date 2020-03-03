@@ -35,7 +35,7 @@ condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
-label: Standard of Care 
+label: Research 
 image: /images/uploads/hsm.01.jpg
 solution_area: QI
 ---

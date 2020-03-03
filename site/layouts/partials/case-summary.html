@@ -1,5 +1,9 @@
 <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12 grid-item">
-    <div class="relative flex flex-col h-full p-8 shadow-md">
+    {{ if eq .Params.area "inprogress" }}
+    <div class="relative flex flex-col h-full p-8 shadow-md bg-gray-100 ">
+    {{ else }}
+    <div class="relative flex flex-col h-full p-8 shadow-md bg-blue-100">
+    {{ end }}
         <span class="text-xl mb-3 font-heading text text-center">{{ .Params.study_name }}</span>
         <hr />
         <div class="px-2 py-4 text-center">
@@ -8,7 +12,10 @@
             <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.intervention }}</span>
             <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.outcome }}</span>
         </div>
-        {{ if eq .Params.label "Standard of Care" }}
+        <span
+            class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.subdomain }}
+        </span>
+        {{/*  {{ if eq .Params.label "Standard of Care" }}
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-green-500 rounded-full">{{ .Params.label }} </span>
         {{ else if eq .Params.label "Pilot" }}
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-pink-500 rounded-full">{{ .Params.label }} </span>
@@ -16,7 +23,7 @@
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-orange-500 rounded-full">{{ .Params.label }} </span>
         {{ else }}
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
-        {{ end }}
+        {{ end }}  */}}
         <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
         <!-- <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
             {{ with .Params.authors }}
