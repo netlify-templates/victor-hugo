@@ -1,5 +1,5 @@
 ---
-title: >-
+articlename: >-
   Cash incentives and wearable step trackers increase physical activity in CVD
   patients
 date: '2018-06-18'
@@ -11,8 +11,7 @@ summary: >-
   in the control group. After financial incentives were stopped at 16 weeks,
   participants in the intervention still had an increase of 1,154 steps per day
   more than the control group over the ensuing eight weeks.
-image: /images/uploads/walking-min.jpg
-source: >-
-  https://www.cardiovascularbusiness.com/topics/practice-management/cash-incentives-and-wearable-step-trackers-increase-physical-activity
-----
+image:  /images/uploads/walking-min.jpg
+source:   https://www.cardiovascularbusiness.com/topics/practice-management/cash-incentives-and-wearable-step-trackers-increase-physical-activity
+---
 

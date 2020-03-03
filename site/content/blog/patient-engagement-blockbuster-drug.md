@@ -6,7 +6,7 @@ summary: >-
 image: /images/bg/patient-engagement.svg
 authorname: Mohan Balachandran
 authorimage: /images/team/balachandran.png
-tag: Industry Insights
+label: Industry Insights
 ---
 
 <blockquote>

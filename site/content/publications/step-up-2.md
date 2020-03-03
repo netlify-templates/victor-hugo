@@ -1,5 +1,5 @@
 ---
-title: STEP-UP-2
+title: STEPUP
 articlename: >-
   Effectiveness of Behaviorally Designed Gamification Interventions With Social
   Incentives for Increasing Physical Activity Among Overweight and Obese Adults

@@ -1,5 +1,5 @@
 ---
-title: 'Philadelphia, Camden groups win grants to fight maternal mortality'
+articlename: 'Philadelphia, Camden groups win grants to fight maternal mortality'
 date: '2019-09-17'
 summary: >-
   “The highest cause of maternal mortality in Philadelphia is related to
@@ -7,8 +7,7 @@ summary: >-
   adviser to the city Department of Health and a leader of its committee that
   reviews all pregnancy-related maternal deaths. “With Heart Safe Motherhood, we
   can monitor them much more rigorously and avoid hospital readmissions.”
-image: /images/uploads/philly1.jpg
-source: >-
-  https://www.inquirer.com/health/camden-philadelphia-merck-grants-maternal-mortality-20190917.html
-----
+image:  /images/uploads/logo_merck.png
+source:   https://www.inquirer.com/health/camden-philadelphia-merck-grants-maternal-mortality-20190917.html
+---
 

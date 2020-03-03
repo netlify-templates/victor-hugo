@@ -17,7 +17,7 @@
     <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Latest Blog Articles</h2>
      <p class="mb-6 text-xl text-center"> <a class="mt-auto text-blue-500 hover:underline" href="blog">Visit our Blog</a></p>
     <div class="flex flex-wrap -mx-4">
-        {{ range first 3 (where .Site.Pages "Section" "blog") }}
+        {{ range first 3 (where .Site.Pages "Type" "blog") }}
             {{ partial "blog-summary" . }}
         {{ end }}
     </div>

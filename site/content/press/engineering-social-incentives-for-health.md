@@ -1,6 +1,6 @@
 ---
-title: Engineering Social Incentives for Health
-date: '2016-12-29'
+articlename: Engineering Social Incentives for Health
+date: 2016-12-29T13:10:39-05:00
 summary: >-
   Health care organizations, newly focused on population outcomes, can develop
   and test social interventions for advancing health. Given the increasing
@@ -11,7 +11,7 @@ summary: >-
   patients’ social connections have a beneficial effect on their health. Now,
   doctors and hospitals can develop new approaches to prescribe social
   engagement for everyone else.
-image: /images/uploads/social.incentives.jpg
+image:  /images/uploads/social.incentives.jpg
 source: 'http://www.nejm.org/doi/full/10.1056/NEJMp1603978'
-----
+---
 

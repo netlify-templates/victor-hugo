@@ -1,5 +1,5 @@
 ---
-title: >-
+articlename: >-
   Want To Prevent Heart Attacks? Perhaps Don't Try This Behavioral Economics
   Intervention
 date: '2018-01-31'
@@ -10,8 +10,7 @@ summary: >-
   “failed" trial. Trust me, there’s no failure in doing good science. The real
   failure would have been to allow this important study to go unpublished
   because the intervention didn’t work*".
-image: /images/uploads/pill-min.jpg
-source: >-
-  https://www.forbes.com/sites/peterubel/2018/01/31/why-its-okay-behavioral-economics-failed-to-prevent-heart-attacks/
-----
+image:  /images/uploads/pill-min.jpg
+source:   https://www.forbes.com/sites/peterubel/2018/01/31/why-its-okay-behavioral-economics-failed-to-prevent-heart-attacks/
+---
 

@@ -1,5 +1,5 @@
 ---
-title: Step-up LCA
+title: STEPUP LCA
 articlename: >-
   Patient Phenotypes Help Explain Variation in Response to a Social Gamification
   Weight Loss Intervention 

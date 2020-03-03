@@ -1,5 +1,6 @@
 {{ partial "header" . }}
 
+<div class="container mx-auto px-4">
 <section class="py-12 px-4 pt-16 pb-16 ">
     <div class="flex flex-row flex-wrap items-center text-center lg:text-left">
         <div class="lg:w-1/2 px-2"><img class="rounded" src="{{ .Params.image }}" alt="">
@@ -18,4 +19,5 @@
            {{ .Content | markdownify }}
         </div>
 </section>
+</div>
 {{ partial "footer" . }}

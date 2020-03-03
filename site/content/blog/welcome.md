@@ -5,7 +5,7 @@ summary: It's been a long time coming. A lot of you might be discovering us for 
 image: /images/bg/welcome.svg
 authorname: Mohan Balachandran
 authorimage: /images/team/balachandran.png
-tag: Platform
+label: Platform
 ---
 You may have noticed that we've revamped our website significantly. Well, some of you might have. A lot of you might be discovering us for the first time. So let's take a few minutes to give you a flavor of who we are and what we do.
 

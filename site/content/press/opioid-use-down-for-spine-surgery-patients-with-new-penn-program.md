@@ -1,5 +1,5 @@
 ---
-title: Opioid use down for spine surgery patients with new Penn program
+articlename: Opioid use down for spine surgery patients with new Penn program
 date: '2019-01-25'
 summary: >-
   As opioid addiction has reached crisis proportions, surgeons in a variety of
@@ -8,7 +8,7 @@ summary: >-
   A comprehensive program designed to improve the quality of care for spine and
   peripheral nerve surgery patients reduced patients' opioid use at one month
   after surgery without increasing pain.
-image: /images/uploads/spine.jpg
+image:  /images/uploads/spine.jpg
 source: 'https://www.philly.com/health/penn-surgery-spine-opioids-reduce-20190125.html'
-----
+---
 

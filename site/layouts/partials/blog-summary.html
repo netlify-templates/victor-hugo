@@ -1,11 +1,6 @@
 <div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
     <div class="relative flex flex-col h-full p-8 shadow-md">
-        {{ if .Params.label }}
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
-        {{ else }}
-        <span
-            class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.tag }}</span>
-        {{ end }}
         {{ if .Params.image }}
             <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
         {{ end }}
