@@ -1,9 +1,10 @@
-<section class="text-center bg-cover mb-16 mt-16" style="background-image: url('{{ .Params.image }}')">
+<section class="text-center bg-cover pb-16 pt-16" style="background-image: url('{{ .Params.image }}')">
+    <div class="container mx-auto px-4">
     <div class="relative flex items-center py-32">
-        <div class="absolute bg-black opacity-50 inset-0"></div>
         <div class="z-10 max-w-2xl mx-8 mt-64">
             <h2 class="text-5xl mb-8 text-left leading-tight font-heading text-white">{{ .Params.title }}</h2>
             <p class="text-gray-300 text-left text-xl leading-relaxed">{{ .Params.summary }}</p>
         </div>
+    </div>
     </div>
 </section>

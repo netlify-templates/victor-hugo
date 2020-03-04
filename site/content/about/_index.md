@@ -1,12 +1,12 @@
 ---
 title: Way to Health
-image: /images/bg/work.jpg
+image: /images/bg/about2.svg
 bgcolor: "#4F6D7A"
 summary: We were the first to apply behavioral economics to healthcare
 introduction: Faculty and researchers from across the University of Pennsylvania and other renowned institutions have conducted and continue to research direct patient engagement and behavioral economics based interventions aimed at reducing the disease burden from major U.S. public health problems. Way to Health was born from their frustration around the lack of a platform to quickly develop, test and scale out their ideas.
 introtitle: Our mission
 introsubtitle: To enable everyone to enjoy healthy lives through research, personalized engagement and learning from the experience of every patient.
-introtext: We never forget that we are here to enable clinicians and researchers to make their ideas come to life. Our goal first and foremost is to serve the patient in a clinical setting or the participant in a research setting. 
+introtext: We exist to enable clinicians and researchers to serve patients by making their ideas come to life. 
 heading: Our vision
 subheading: Innovate. Enable. Scale.
 vision:
@@ -26,7 +26,7 @@ vision:
         
 origins:
   heading: Origins
-  para1: David Asch, MD, MBA and Kevin Volpp, MD, PhD conceptualized Way to Health back in 2010. It was born from their frustration around the lack of a platform to quickly develop, test and scale out their ideas to improve health care for patients.
+  para1: Drs. David Asch and Kevin Volpp conceptualized Way to Health back in 2010. It was born from their frustration around the lack of a platform to quickly develop, test and scale out their ideas to improve health care for patients.
   para2: Since then, more than 50 faculty and researchers from the University of Pennsylvania and other renowned institutions have conducted and continue to research direct patient engagement and behavioral economics based interventions aimed at reducing the disease burden from major U.S. public health problems.
   image1: /images/asch.jpg
   image2: /images/volpp.jpg

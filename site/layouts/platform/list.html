@@ -10,10 +10,4 @@
     {{ end }}
 {{ end }}
 
-{{ with .Params.modules }}
-    {{ range .module }}
-        {{ partial "modules-bottom" . }}
-    {{end }}
-{{ end }}
-
 {{ partial "footer" . }}

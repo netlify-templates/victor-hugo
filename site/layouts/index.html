@@ -12,7 +12,6 @@
     {{ end }}
 {{ end }}
 
-
 <div class="container mx-auto px-4">
 <section class="py-8 px-4 pt-16 pb-16">
     <!-- <hr class="pt-16 pb-16"></hr> -->
@@ -88,9 +87,19 @@
     <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Latest Content</h2>
     <p class="mb-6 text-xl text-center text-gray-500">Way to Health mentions, publications and content </p>
     <div class="flex flex-wrap -mx-4">
-
+{{/*  
         {{ range first 3 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
                 {{ partial "content-summary" . }}
+        {{ end }}  */}}
+
+        {{ range first 1 (where site.RegularPages "Type" "eq" "blog") }}
+            {{ partial "content-summary" . }}
+        {{ end }}
+        {{ range first 1 (where site.RegularPages "Type" "eq" "press") }}
+            {{ partial "content-summary" . }}
+        {{ end }}
+        {{ range first 1 (where site.RegularPages "Type" "eq" "publications") }}
+            {{ partial "content-summary" . }}
         {{ end }}
 
     </div>

@@ -3,13 +3,18 @@
         {{/*  {{ if .Params.label }}
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
         {{ else }}  */}}
-        <span
-            class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Date.Format "Jan 2, 2006" }}</span>
+        <a href="{{.Type}}">
+            <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Type | humanize }}</span>
+        </a>
         {{ if .Params.image }}
             <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
         {{ end }}
-        <span class="text-xl mb-3 font-heading text">{{ .Params.title }}</span>
+        {{ if .Params.title }}
+        <a class="text-blue-700 hover:underline" href="{{ .Params.source }}" target="blank"> <span class="text-xl mb-3 font-heading text">{{ .Params.title }}</span></a>
+        {{ else }}
+        <a class="text-blue-700 hover:underline" href="{{ .Params.source }}" target="blank"><span class="text-xl mb-3 font-heading text">{{ .Params.articlename }}</span></a>
+        {{ end }}        
         <p class="mt-4 mb-6 text-gray-600 leading-relaxed ">{{ .Params.summary }}</p>
-        <a class="mt-auto text-blue-700 hover:underline text-right" href="{{ .Params.source }}">Read more</a>
+        {{/*  <a class="mt-auto text-blue-700 hover:underline text-right" href="{{ .Params.source }}">Read more</a>  */}}
     </div>
 </div>

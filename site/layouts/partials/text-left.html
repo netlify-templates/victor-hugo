@@ -1,11 +1,13 @@
-<section class="py-12 px-4 pt-16 pb-16">
-    <div class="flex flex-wrap -mx-2">
-        <div class="lg:w-1/2 px-2 lg:pr-16 mb-6 lg:mb-0">
-            <h2 class="text-4xl lg:text-left">{{ .Params.introtitle }}</h2>
+<div class="container mx-auto px-4">
+    <section class="py-12 px-4 pt-16 pb-16">
+        <div class="flex flex-wrap -mx-2">
+            <div class="lg:w-1/2 px-2 lg:pr-16 mb-6 lg:mb-0">
+                <h2 class="text-4xl lg:text-left">{{ .Params.introtitle }}</h2>
+            </div>
+            <div class="lg:w-1/2 px-2">
+                <p class="font-medium text-2xl mb-8">{{ .Params.introsubtitle }}</p>
+                <p>{{ .Params.introtext}} </p>
+            </div>
         </div>
-        <div class="lg:w-1/2 px-2">
-            <p class="font-medium text-2xl mb-8">{{ .Params.introsubtitle }}</p>
-            <p>{{ .Params.introtext}} </p>
-        </div>
-    </div>
-</section>
+    </section>
+</div>

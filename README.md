@@ -35,22 +35,26 @@ Netlify CMS is also integrated.
 - [x] ~~Add FAQ page (needed?)~~ - not doing
 - [x] ~~Add Modules / platform page~~
 - [x] ~~Wire up existing / modified / ~~new content
+- [x] ~~Add search to case studies~~
+- [x] ~~Need a 404 page. In place but need to get Hugo to use the designed page instead of the default. Done with designed page~~
+- [x] ~~Add content for company blog~~
+- [x] ~~Use isotope for landing and case study page~~
+- [ ] Get isotope based tabs to work
+- [x] ~~Add content for ABC.~~ Merged with blog content. 
+- [ ] Rationalize content to use the same terminology re condition, outcome, intervention. Especially platform features used. 
+- [ ] Fix formatting with individual markdown pages
+- [ ] Show platform features used boxes in individual project pages
 - [ ] Add page for devices under Platform
 - [ ] Wire up existing / modified / new content
 - [ ] Add page for integrations under Platform.
 - [ ] Wire up existing / modified / new content
 - [ ] Add release notes page
 - [ ] Wire up existing / modified / new content
-- [ ] ~~Add content for ABC. Replaced with coming soon page for now.~~
-- [x] ~~Add content for company blog~~
 - [ ] Migrate to actual domain name
 - [ ] Add GA tags
 - [ ] Turn on indexing
 - [ ] Verify front-end checklist (https://github.com/thedaviddias/Front-End-Checklist)
-- [x] ~~Need a 404 page. In place but need to get Hugo to use the designed page instead of the default. Done with designed page~~
 - [ ] Create images for each section of platform page
-- [ ] Add search to case studies
-- [ ] Use isotope for landing and case study page
 - [ ] Add search to publications. Maybe add Algolia later
 - [ ] Add preview to content editor
 - [ ] Site per study

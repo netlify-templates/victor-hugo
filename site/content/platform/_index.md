@@ -15,12 +15,12 @@ modules:
       image: images/temp.jpg
       image_caption: 
       subtitle1: Two-way Texting
-      description1: Communication with patients and / or study participants is key to engaging them in their health. You can choose from a variety of communication techniques or combine them in interesting ways tailored to a patient's behavior. Texting (SMS) has repeatedly been demonstrated to be a very effective way of communicating with patients since it works irrespective of the kind of phone the patient has. Texts can be sent out based on set schedules and / or rules. These configuration rules can be as simple as responding with a personalized "Great job, John Appleseed" or as complex as evaluating blood pressure values and responding with an provider or nurse alert
+      description1: Communication with patients and / or study participants is key to engaging them in their health. You can choose from a variety of communication techniques or combine them in interesting ways tailored to a patient's behavior. Texts can be sent out based on set schedules and / or rules. These configuration rules can be as simple as responding with a personalized "Great job, John" or as complex as evaluating blood pressure values and generating with an in-basket message.
       subtitle2: Survey Management
       description2: In cases where more data needs to be collected (demographics, symptoms, etc.), the system offers the ability to create a survey. You can either integrate the survey with Qualtrics or create your own survey from scratch using the built-in survey creation and deployment tool. These surveys can be sent out to patients based on specific schedules and simple or complex rules. Short surveys can be administrated over text as well. 
       subtitle3: 
       description3: 
-      is_even: false
+      is_even: true
       id: patcomm
     - module_name: Remote Monitoring
       image: images/temp.jpg
@@ -31,7 +31,7 @@ modules:
       description2: The system also allows patients to report their PROs, adverse events (AEs), symptoms and more via structured or unstructured conversations. These can be patient initiated and follow decision trees of your choosing. 
       subtitle3: 
       description3: 
-      is_even: true
+      is_even: false
       id: remote    
     - module_name: Randomized Control Trials
       image: images/temp.jpg
@@ -42,7 +42,7 @@ modules:
       description2: Setup customized enrollment flows to maximize participant uptake. Run virtual trials in any state and manage it all remotely using tools such as intake surveys and eConsenting. Way to Health has been used to support over 150 different studies and the platform, past and current Principal Investigators (PIs) have credibility among the research and funding communities. 
       subtitle3: 
       description3: 
-      is_even: false
+      is_even: true
       id: rct
     - module_name: Study & Survey Libraries
       image: images/temp.jpg
@@ -53,7 +53,7 @@ modules:
       description2: Vel et ut commodi amet ut officiis eos molestias. Dolores dolorem amet consequuntur qui. Sequi est omnis quo laborum dolore. Id molestiae odit nesciunt unde natus est. Sint possimus maxime dolorem sequi doloremque. Nobis ab occaecati.
       subtitle3: 
       description3: 
-      is_even: true
+      is_even: false
       id: library    
     - module_name: Behavioral Science & Economics
       image: images/temp.jpg
@@ -64,7 +64,7 @@ modules:
       description2: Lotteries, loss and gain framed incentives and much more can be easily applied to activities - steps, weighings, pretty much any data gathered by the platform from any data source. Apply different strategies to different populations and depending on the type of activity.
       subtitle3: 
       description3: 
-      is_even: false
+      is_even: true
       id: be     
     - module_name: Rules Engine
       image: images/temp.jpg
@@ -75,7 +75,7 @@ modules:
       description2: To maximize the productivity of staff and providers, the Way To Health platform allows for the creation of incidents or alerts whenever certain exception criteria are met. Configure notifications depending on the users role.
       subtitle3: 
       description3: 
-      is_even: true
+      is_even: false
       id: rulesengine
     - module_name: EHR integration
       image: images/temp.jpg
@@ -86,6 +86,6 @@ modules:
       description2: We offer multiple ways in which we can integrate with the EHR. Via embeds in the EHR itself, HL7 based, API (FHIR, Open.Epic, other) and many more as needed. 
       subtitle3: 
       description3: 
-      is_even: false
+      is_even: true
       id: ehr
 ---
