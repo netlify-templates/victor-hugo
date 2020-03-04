@@ -2,9 +2,11 @@
 
 {{ partial "splash-right" . }}
 
-{{ partial "text-left" . }}
+<div class="bg-indigo-100">
+    {{ partial "leftimage-3textboxes" . }}
+</div>
 
-{{ partial "leftimage-3textboxes" . }}
+{{ partial "text-left" . }}
 
 {{ $n1 := where .Site.Pages "Section" "projects" }}
 {{ $n2 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "Womens Health" }}
@@ -41,16 +43,18 @@
     {{ end }}
 {{ end }}
 </div>
-{{ with .Params.modules_leadin }}
-    {{ partial "text-left-noparams" . }}
-{{ end }}
 
-{{ partial "modules-bottomold" . }}
-
-{{ with .Site.GetPage "section" "platform" }}
-    {{ range first 1 .Params.modules.module }}
-        {{ partial "modules-bottom" . }}
+<div class="bg-indigo-100">
+    {{ with .Params.modules_leadin }}
+        {{ partial "text-left-noparams" . }}
     {{ end }}
-{{ end }}
 
+    {{ partial "modules-bottomold" . }}
+
+    {{ with .Site.GetPage "section" "platform" }}
+        {{ range first 1 .Params.modules.module }}
+            {{ partial "modules-bottom" . }}
+        {{ end }}
+    {{ end }}
+</div>
 {{ partial "footer" . }}

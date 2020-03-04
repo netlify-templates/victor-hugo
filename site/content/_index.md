@@ -55,11 +55,11 @@ domains:
         image: images/sindhu.adi.jpg
         image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
         subtitle1: Reduce Readmissions
-        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
-        subtitle2: Testing
-        description2: Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime. Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime.
-        subtitle3: 
-        description3: 
+        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions are needed. Leverage evidence based programs such as Heart Safe Motherhood that have reduced readmissions by 80%.
+        subtitle2: Enable the move to home based care
+        description2: With the downward pressure on costs and the increasing importance of telemedicine and remote monitoring, proven solutions focused on specific domains will allow organizations to roll out programs systematically. 
+        subtitle3: Improve patient satisfaction and quality
+        description3: With the increased prevalence of consumer driven healthcare, ratings and reviews are increasingly important in health care decisions. Programs available are continuously monitored and consistently measure in the 80s and 90s for patient satisfaction while maintaining or improbing quality of care. 
         is_even: false
         source: /healthsystem
       - title: For Researchers
@@ -67,9 +67,9 @@ domains:
         image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
         subtitle1: Design any interventional study
         description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
-        subtitle2: Testing
+        subtitle2: Automate multiple aspects of running an RCT
         description2: Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime. Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime.
-        subtitle3: 
+        subtitle3: Run everything from a K award to an R01
         description3: 
         is_even: true
         source: /researcher

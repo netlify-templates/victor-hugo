@@ -1,7 +1,7 @@
 <div class="container mx-auto px-4">
 <section class="py-12 px-4 pt-24">
     <div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
-        <div class="lg:w-1/2 px-2 lg:pl-16 mt-10 lg:mt-0">
+        <div class="lg:w-1/2 px-2 lg:pt-10 pr-10">
             <h2 class="text-5xl mb-6 leading-tight font-heading">{{ .Params.title }}</h2>
             <p class="text-gray-600 text-xl leading-relaxed">{{ .Params.subtitle }}</p>
             <div class="mt-8">
@@ -11,6 +11,7 @@
         </div>
         <div class="lg:w-1/2 px-2">
             <img src="{{ .Params.image }}" alt="">
+            <p class="text-sm text-gray-600 mt-4 text-left">{{ .Params.image_caption }}</p>
         </div>
     </div>
 </section>

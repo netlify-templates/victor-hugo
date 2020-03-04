@@ -1,5 +1,5 @@
 ---
-title: Programs developed by and for health systems
+title: Programs developed for health systems by physicians
 subtitle: Addressing key issues and outcomes pertinent to hospitals and health systems.
 image: /images/sindhu.adi.jpg
 image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
