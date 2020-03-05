@@ -41,8 +41,6 @@
 </script>
 
 <style>
-	@import url("../styles/global.css");
-
 	.controls {
 		position: absolute;
 		top: 0;

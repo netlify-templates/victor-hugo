@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <title>{{ $.Site.Title }}</title>
+  
+  <link href="/global.css" rel="stylesheet">
+{{ $stylesheet := .Site.Data.assets.main }}
+{{ with $stylesheet.css }}
+  <link href="{{ relURL . }}" rel="stylesheet">
+{{ end }}
 
-  {{ $stylesheet := .Site.Data.assets.main }}
-  {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
 </head>
 
 <body>
 
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
+{{ block "header" . }}{{ partial "header" . }}{{end}}
 
-  {{ block "main" . }}{{end}}
+{{ block "main" . }}{{end}}
 
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+{{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
-  {{ $script := .Site.Data.assets.main }}
-  {{ with $script.js }}
-    <script src="{{ relURL . }}"></script>
-  {{ end }}
+{{ $script := .Site.Data.assets.main }}
+{{ with $script.js }}
+  <script src="{{ relURL . }}"></script>
+{{ end }}
+
 </body>
 
 </html>

@@ -1,8 +1,9 @@
 import svelte from 'rollup-plugin-svelte';
-import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import copy from 'rollup-plugin-copy'
 import livereload from 'rollup-plugin-livereload';
+import resolve from 'rollup-plugin-node-resolve';
+import postcss from "rollup-plugin-postcss";
 import shader from 'rollup-plugin-shader';
 import { terser } from 'rollup-plugin-terser';
 
@@ -38,13 +39,16 @@ export default {
 			dedupe: ['svelte']
 		}),
 
+		postcss({
+			extract: 'public/global.css',
+			plugins: []
+		}),
+
 		commonjs(),
 
 		copy({
 			targets: [
-				{ src: 'src/fonts', dest: 'public/' },
 				{ src: 'src/images', dest: 'public/' },
-				{ src: 'src/styles', dest: 'public/' },
 				{ src: 'static/*', dest: 'public/' }
 			]
 		}),
