@@ -1,0 +1,25 @@
+<div class="{{ if .is_even }} bg-indigo-100 {{ end }}">
+<div class="container mx-auto px-4">
+<section class="py-12 px-4 pt-16 pb-16 ">
+    <div class="flex flex-row flex-wrap items-center text-center lg:text-left {{ if .is_even }} sm:flex-row-reverse {{ end }}">
+        <div class="lg:w-1/2 px-2"><img class="rounded" src="{{ .image }}" alt="">
+            <p class="text-sm text-gray-600 mt-4 text-left">{{ .image_caption }}</p>
+        </div>
+        <div class="lg:w-1/2 px-2">
+            <h2 class="text-3xl px-4 mb-4 leading-tight font-heading sm:text-5xl">{{ .module_name }}</h2>
+            {{ range .listing }}
+            <div class="p-4 mb-4">
+                <h3 class="text-xl mb-2 font-heading sm:text-2xl">{{ .subtitle }}</h3>
+                <p class="text-gray-600 leading-relaxed">{{ .description }} </p>
+            </div>
+            {{ end }}
+            {{ if .source }}
+            <div class="p-4 mb-4">
+                <a class="mt-auto text-blue-500 hover:underline" href="{{ .source }}">Learn more</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+</div>
+</div>

@@ -27,9 +27,6 @@ solutions:
     - name: Quality, Safety and Patient Experience Solutions
       description: Leverage pre-built dashboards with key operational metrics
       id: qi
-    - name: Real-time Dashboards
-      description: Leverage pre-built dashboards with key operational metrics
-      id: lens
 modules_leadin:
   introtitle: Build your own intervention quickly
   introsubtitle: Way to Health capabilities are grouped into modules. Configure them to address your specific needs and combine them together to quickly build, test and deploy interventions. Choose your deployment model - pilot, standalone or scaled and EHR integrated.

@@ -49,11 +49,11 @@
         {{ partial "text-left-noparams" . }}
     {{ end }}
 
-    {{ partial "modules-bottomold" . }}
-
     {{ with .Site.GetPage "section" "platform" }}
-        {{ range first 1 .Params.modules.module }}
-            {{ partial "modules-bottom" . }}
+        {{ with .Params.modules}}
+            {{ range .module }}
+                {{ partial "modules-bottom" . }}
+            {{ end }}
         {{ end }}
     {{ end }}
 </div>

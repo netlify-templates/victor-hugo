@@ -52,36 +52,36 @@ introtext: Patient engagement has been called the blockbuster drug of the 21st c
 domains:
   listing:
       - title: For Health Systems
-        image: images/sindhu.adi.jpg
+        image: images/temp.jpg
         image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
         subtitle1: Reduce Readmissions
         description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions are needed. Leverage evidence based programs such as Heart Safe Motherhood that have reduced readmissions by 80%.
         subtitle2: Enable the move to home based care
         description2: With the downward pressure on costs and the increasing importance of telemedicine and remote monitoring, proven solutions focused on specific domains will allow organizations to roll out programs systematically. 
         subtitle3: Improve patient satisfaction and quality
-        description3: With the increased prevalence of consumer driven healthcare, ratings and reviews are increasingly important in health care decisions. Programs available are continuously monitored and consistently measure in the 80s and 90s for patient satisfaction while maintaining or improbing quality of care. 
+        description3: With the increased prevalence of consumer driven healthcare, ratings and reviews are increasingly important in health care decisions. Programs available are continuously monitored and consistently measure in the 80s and 90s for patient satisfaction while maintaining or improving quality of care. 
         is_even: false
         source: /healthsystem
-      - title: For Researchers
-        image: images/researchers.jpg
-        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
+      - title: For Researchers & Innovators
+        image: images/temp.jpg
+        image_caption: Drs. David Asch, Kevin Volpp, Mitesh Patel, Scott Halpern, Shivan Mehta and Kit Delgado, Penn Medicine
         subtitle1: Design any interventional study
-        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
+        description1: Innovation and research require flexibility. Integration with the EHR opens up additional opportunities. Trials can be run locally or virtually. Way to Health has run virtual studies across 50 states. 
         subtitle2: Automate multiple aspects of running an RCT
-        description2: Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime. Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime.
-        subtitle3: Run everything from a K award to an R01
-        description3: 
+        description2: Innovation should be backed by evidence. Randomized Controlled Trials (RCTs) are the gold standard to generate evidence in healthcare. Our background and genesis can help guide the the setup of innovation projects to gather data to support (or reject) hypotheses. Automation built into the system can help doing this quickly and minimize personnel costs. 
+        subtitle3: Iterate quickly and cheaply
+        description3: Research and innovation are usually constrained by cost and/or time. Our library of proven projects can serve as a base to help achieve quick successes. Open inboxes can help engage patients directly to gather data to understand patient needs. These can then be automated as needed. 
         is_even: true
         source: /researcher
       - title: For Health Plans
         image: images/temp.jpg
         image_caption: Drs. t quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque.
         subtitle1: Increase adherence to wellness programs
-        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
-        subtitle2: Testing
-        description2: Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime. Et quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque. Aspernatur quis ut et repellat sit aliquam minima maxime.
-        subtitle3: 
-        description3:
+        description1: With roots in behavioral science, population health and wellness, our research has been geared towards improving adherence to programs that members might not always want to adhere to. Programs such as smoking cessation have been proven to be successful and are the standard at organizations such as GE, CVS and others. 
+        subtitle2: Offer evidence backed protocols
+        description2: In an increasingly competitive market, offering unique and proven programs is important. Our programs are differentiated by evidence, practical experience and operational expertise. 
+        subtitle3: Innovate at scale
+        description3: 1, 10, 10000 - the volume of members is irrelevant. What we enable is tailoring programs to latent member groups to maximize engagement and adherence. 
         is_even: false
         source: /healthplan
 

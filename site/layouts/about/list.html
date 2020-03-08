@@ -55,24 +55,6 @@
     </section>
 </div>
 
-<div class="container mx-auto px-4">
-    {{ with .Params.timeline }}
-    {{ range .milestones }}
-    {{/*  {{ partial "timeline" . }}  */}}
-    <!-- this is the partial -->
-<ul class="list list-timeline pull-t">
-    <li>
-        <div class="list-timeline-time">{{.Params.date}}</div>
-        <i class="fa fa-{{.Params.icon}} list-timeline-icon" style="background-color: {{.Params.iconcolor}}"></i>
-        <div class="list-timeline-content">
-            <p class="font-w600">{{.Params.milestone}}</p>
-            <p class="font-s13">{{.Params.text}}</p>
-        </div>
-    </li>
-</ul>
-<!-- end partial -->
-    {{ end }}
-    {{ end }}
 </div>
 
 {{ partial "footer" . }}
