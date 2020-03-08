@@ -75,7 +75,8 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-Use R's geospatial packages to plot data on maps:
+Use R's geospatial packages to plot data on maps. For the following example, you will need to have installed the following native libraries on the host operating system:
+pandoc gdal geos proj udunits2:
 
 ```{r mapping, echo=FALSE}
 options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ

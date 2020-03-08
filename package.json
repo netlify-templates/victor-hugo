@@ -14,7 +14,7 @@
     "live-preview:_webpack": "webpack --config webpack.dev.js -w",
     "live-preview:blogdown": "npm run start -- ",
     "prebuild": "rimraf dist",
-    "postinstall": "Rscript -e 'install.packages(\"blogdown\")'",
+    "postinstall": "Rscript -e 'install.packages(\"blogdown\"); blogdown::install_hugo()'",
     "start": "Rscript -e 'blogdown::serve_site()'; echo 'servr has stopped'",
     "start:dev": "rollup -c -w"
   },

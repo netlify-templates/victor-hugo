@@ -22,7 +22,8 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ### :exclamation: Prerequisites
 
-You need to have R with the blogdown package, the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Sveltr.
+Sveltr requires a working R with the blogdown package, the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm). You will need to have installed the following native libraries on the host operating system in order for R to compile some of the examples (see [tech.Rmd](content/tech.Rmd)):
+pandoc gdal geos proj udunits2
 
 Next step, clone this repository and run:
 
