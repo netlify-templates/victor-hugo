@@ -18,7 +18,8 @@
     <h2 class="text-4xl text-center mb-4 font-heading">Project Spotlights</h2>
     <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed">Some of the successes we are proud of
     </p>
-    <div class="flex max-w-lg mb-12 mx-auto text-center border-b-2">
+    {{/*  <p class="mb-6 text-xl text-center"> <a class="mt-auto text-blue-500 hover:underline" href="projects">View all</a></p>  */}}
+    {{/*  <div class="flex max-w-lg mb-12 mx-auto text-center border-b-2">
         <div class="w-1/3 pb-2 border-b-4 border-indigo-500">
             <button>All</button>
         </div>
@@ -28,7 +29,7 @@
         <div class="w-1/3 pb-2">
             <button>Research</button>
         </div>
-    </div>
+    </div>  */}}
     <div class="flex flex-wrap -mx-4">
         {{ $v1 := where .Site.Pages "Section" "projects" }}
         {{ $v2 := where (where .Site.Pages "Section" "projects") "Params.spotlight" true }}
@@ -43,6 +44,10 @@
         {{ range first 3 $filteredresearch }}
             {{ partial "case-summary" . }}
         {{ end }}
+    </div>
+    <div class="mt-8 text-center">
+        <a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-green-500 rounded shadow"
+            href="projects">View All</a>
     </div>
 </section>
 </div>

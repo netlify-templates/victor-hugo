@@ -4,14 +4,8 @@
     {{ else }}
     <div class="relative flex flex-col h-full p-8 shadow-md bg-blue-100">
     {{ end }}
-        <span class="text-xl mb-3 font-heading text text-center">{{ .Params.study_name }}</span>
+        <span class="text-xl mb-3 font-heading text text-center font-bold">{{ .Params.study_name }}</span>
         <hr />
-        <div class="px-2 py-4 text-center">
-            <span
-                class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.condition }} </span>
-            <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.intervention }}</span>
-            <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.outcome }}</span>
-        </div>
         <span
             class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.subdomain }}
         </span>
@@ -24,7 +18,7 @@
         {{ else }}
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
         {{ end }}  */}}
-        <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
+        {{/*  <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">  */}}
         <!-- <div class="flex justify-center pb-3 text-grey-dark text-center border-b">
             {{ with .Params.authors }}
                 {{ range first 2 .  }}
@@ -36,19 +30,43 @@
                 {{ end }}
             {{ end }}
         </div> -->
-        <p class="mt-4 mb-6 text-gray-600 leading-relaxed">{{ .Params.summary }}</p>
+        <p class="mt-4 mb-6 text-gray-700 leading-relaxed">{{ .Params.summary }}</p>
         <hr />
         <div class="mt-4">
         {{ if .Params.results }}
+        <span class="text-lg mb-3 font-heading text text-center font-semibold">Results</span>
             {{ range .Params.results }}
-            <div class="pl-3 mb-4">
+            <div class="mt-4 mb-6">
                 <p class="text-md text-gray-700 font-heading"> {{ .result }} </p>
             </div>
             {{ end }}
+            <hr />
+            <div class="mt-4 mb-6">
+                {{/*  <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.condition }} </span>  */}}
+                {{/*  <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.intervention }}</span>  */}}
+                <span class="text-lg font-heading text text-left font-semibold">Features Utilized</span>  
+                <div class="text-center mt-4">
+                {{ range .Params.features }}
+                <span class="inline-block bg-green-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700"> {{.feature}} </span>
+                {{ end }}
+                </div>
+            </div>     
         {{ else }}
-            <div class="pl-3 mb-4">
-                <p class="text-md text-gray-700 font-heading text-center"> Outcomes Pending </p>
+        <span class="text-lg mb-3 font-heading text text-center font-semibold">Results</span>
+            <div class="mt-4 mb-6">
+                <p class="text-md text-gray-700 font-heading"> Ongoing Research & Analysis  </p>
             </div>
+            <hr />
+            <div class="mt-4 mb-6">
+                {{/*  <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.condition }} </span>  */}}
+                {{/*  <span class="inline-block bg-gray-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700">{{ .Params.intervention }}</span>  */}}
+                <span class="text-lg font-heading text text-left font-semibold">Features Utilized</span>  
+                <div class="text-center mt-4">
+                {{ range .Params.features }}
+                <span class="inline-block bg-green-200 rounded-full mb-2 px-3 py-1 text-sm text-gray-700"> {{.feature}} </span>
+                {{ end }}
+                </div>
+            </div>              
         {{ end }}
         </div>
         {{ if .Params.spotlight }}
