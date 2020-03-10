@@ -23,10 +23,10 @@ solutions:
       description: Programs addressing issues specific to women and pregnancy.
     - name: Surgery Solutions
       id: surgery
-      description: Programs addressing issues specific pre and post procedure protocols
+      description: Programs addressing issues specific pre and post procedure protocols including home care, remote monitoring and discharge instructions
     - name: Quality, Safety and Patient Experience Solutions
-      description: Leverage pre-built dashboards with key operational metrics
-      id: qi
+      description: Solutions geared to improving patient experience, and ongoing quality and safety efforts
+      id: patexp
 modules_leadin:
   introtitle: Build your own intervention quickly
   introsubtitle: Way to Health capabilities are grouped into modules. Configure them to address your specific needs and combine them together to quickly build, test and deploy interventions. Choose your deployment model - pilot, standalone or scaled and EHR integrated.
