@@ -4,7 +4,9 @@
 
 {{ partial "text-left" . }}
 
-{{ partial "leftimage-3textboxes" . }}
+<div class="bg-indigo-100">
+    {{ partial "leftimage-3textboxes" . }}
+</div>
 
 {{ $n1 := where .Site.Pages "Section" "projects" }}
 {{ $n2 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "Womens Health" }}
@@ -15,33 +17,73 @@
 {{ $surgery := $n1 | intersect $n3 }}
 {{ $qi := $n1 | intersect $n4 }}
 
-{{ with  .Params.solutions }}
+<div class="container mx-auto px-4">
+    {{ with  .Params.solutions }}
     {{ range  .solution }}
-        <section class="py-8 px-4 pt-16 pb-16" id="{{ .id }}">
-            <!-- <hr class="pt-16 pb-16"></hr> -->
-            <h2 class="text-4xl text-center mb-4 font-heading">{{ .name }}</h2>
-            <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed"> {{ .description }}</p>
+    <section class="py-8 px-4 mt-16 mb-16" id="{{ .id }}">
+        <!-- <hr class="mt-16 mb-16"></hr> -->
+        <h2 class="text-4xl text-center mb-4 font-heading">{{ .name }}</h2>
+        <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed"> {{ .description }}</p>
+        <div class="flex flex-wrap -mx-4">
+            {{ if eq .name "Womens Health" }}
+            {{ range first 3 $n2 }}
+            {{ partial "case-summary" . }}
+            {{ end }}
+            {{ else if eq .name "Surgery Solutions" }}
+            {{ range first 3 $n3 }}
+            {{ partial "case-summary" . }}
+            {{ end }}
+            {{ else }}
+            {{ range first 3 $n4 }}
+            {{ partial "case-summary" . }}
+            {{ end }}
+            {{end }}
+        </div>
+    </section>
+    {{ end }}
+    {{ end }}
+</div>
+<div class="bg-indigo-100">
+    {{ with .Params.modules_leadin }}
+    {{ partial "text-left-noparams" . }}
+    {{ end }}
+
+    {{ with .Site.GetPage "section" "platform" }}
+    {{ with .Params.modules }}
+    <div class="container mx-auto px-4">
+        <section class="py-12 px-4">
             <div class="flex flex-wrap -mx-4">
-                {{ if eq .name "Womens Health" }}
-                    {{ range first 3 $n2 }}
-                        {{ partial "case-summary" . }}
-                    {{ end }}
-                {{ else if eq .name "Surgery Solutions" }}
-                    {{ range first 3 $n3 }}
-                        {{ partial "case-summary" . }}
-                    {{ end }}
-                {{ else }}
-                    {{ range first 3 $n4 }}
-                        {{ partial "case-summary" . }}
-                    {{ end }}
-                {{end }}
+                {{ range first 6 .module }}
+                {{ range first 1 .listing }}
+                <div class="w-full md:w-1/3 px-4 mb-12 mt-12 md:mb-0">
+                    <div class="relative flex flex-col h-full p-8 shadow-md">
+                        <a href="/platform/#{{.id}}">
+                            <span
+                                class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .module_name }}</span>
+                        </a>
+                        <span class="uppercase font-semibold">{{ .subtitle }}</span>
+                        <p class="mt-4 mb-6 text-gray-600 leading-relaxed">{{ .description }}</p>
+                        {{/*  <a class="mt-auto text-blue-700 hover:underline" href="/platform">Learn More</a>  */}}
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+            <div class="mt-8 text-center">
+                <a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-green-500 rounded shadow"
+                    href="/platform">View
+                    All</a>
             </div>
         </section>
-    {{ end }}
-{{ end }}
-
-{{ with .Params.modules }}
+        {{ end }}
+    </div>
+    {{/*  {{ with .Site.GetPage "section" "platform" }}
+    {{ with .Params.modules }}
+    {{ range .module }}
     {{ partial "modules-bottom" . }}
-{{ end }}
-
+    {{ end }}
+    {{ end }}
+    {{ end }} */}}
+</div>
 {{ partial "footer" . }}

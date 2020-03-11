@@ -2,7 +2,9 @@
   You can use import statements to include partials:
  */
 /* @import 'imports/reset.css'; */
+@import 'imports/markdown.css';
 @import 'tailwind.css';
+
 /*
   Or add your statements here:
  */
@@ -83,4 +85,48 @@ Influenced by: https://sproutsocial.com/
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
+}
+
+a {
+  color: #5c90d2;
+  -webkit-transition: color 0.12s ease-out;
+  transition: color 0.12s ease-out;
+}
+a.link-effect {
+  position: relative;
+}
+a.link-effect:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #3169b1;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.12s ease-out;
+  transition: transform 0.12s ease-out;
+}
+a.link-effect-opacity {
+  -webkit-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
+}
+a:hover,
+a:focus {
+  color: #3169b1;
+  text-decoration: none;
+}
+a:hover.link-effect:before,
+a:focus.link-effect:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+a:hover.link-effect-opacity,
+a:focus.link-effect-opacity {
+  opacity: .5;
 }

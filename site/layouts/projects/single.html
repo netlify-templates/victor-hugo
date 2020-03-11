@@ -1,5 +1,5 @@
 {{ partial "header" . }}
-
+<div class="container mx-auto px-4">
 <section class="py-12 px-4 pt-16 pb-16 ">
     <div class="flex flex-row flex-wrap items-center text-center lg:text-left">
         <div class="lg:w-1/2 px-2"><img class="rounded" src="{{ .Params.image }}" alt="">
@@ -12,7 +12,7 @@
             </div>
             <div class="flex pb-3 justify-center text-grey-dark text-center border-b">
                 {{ with .Params.authors }}
-                    {{ range first 2 .  }}
+                    {{ range .  }}
                     <div class="mr-3 pr-3">
                         <img class="h-16 w-16 rounded-full mx-auto mb-2" src="{{ .authorimage }}"
                             alt="{{ .authorname }} " />
@@ -24,9 +24,9 @@
         </div>
     </div>
 </section>
-
+</div>
     <article class="py-12 px-4">
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-3xl mx-auto markdown">
            {{ .Content }}
         </div>
     </article>

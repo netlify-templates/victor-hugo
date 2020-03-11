@@ -1,5 +1,5 @@
 ---
-title: 'Designing and Implementing a Connected Health Program: Lessons Learned'
+title: 'Designing and Implementing a Connected Health Program - Lessons Learned'
 date: '2019-04-23'
 summary: >-
   From ideation through implementation, the Way to Health team has a lot of
@@ -27,7 +27,9 @@ So, the investigator has an idea that goes something like this: _“I want to te
 
 The Way To Health team has run a lot of these trials, 116 to be precise. We like to think of ourselves as an implementation focused behavioral economists by trade. As such, here are some of our learnings:
 
-**Walk a mile in someone else's shoes**: We encourage our teams to pretend to be the participant. 
+## Walk a mile in someone else's shoes
+
+We encourage our teams to pretend to be the participant. 
 
 - Walk through the enrollment process, whether it be in clinic, or completed remotely by sending a link over email to participate. 
 - Next, try the intervention on for size. Are you annoyed by the frequency of the daily texts? Was the content of the text message appropriate for the age group? 
@@ -35,13 +37,17 @@ The Way To Health team has run a lot of these trials, 116 to be precise. We like
 
 Depending on your population, you might have to stretch your imagination. As an example, while I might be annoyed by five texts a day, an isolated elderly person may welcome the chance to engage with the program. On the opposite end of the spectrum, a teenager who receives hundreds of texts a day might need something extra (emojis anyone?) to catch their attention. 
 
-**Keep it simple**: When investigators find out [how much Way to Health can do](https://www.waytohealth.org/platform), they start spinning with ideas. 
+## Keep it simple
 
-*"What if I layer gamification with financial incentives, and have my participants connected to a scale, pedometer, and blood pressure cuff, then change their goals on a weekly basis based on last week’s data?"*
+When investigators find out [how much Way to Health can do](https://www.waytohealth.org/platform), they start spinning with ideas. 
+
+- *"What if I layer gamification with financial incentives, and have my participants connected to a scale, pedometer, and blood pressure cuff, then change their goals on a weekly basis based on last week’s data?"*
 
 I jokingly call these Long Island iced tea or “LIIT” (rhymes with leet) projects. There is just way too much going on which means that not only will building and maintaining the project be a challenge but more importantly, the patient or the participant may not understand what they’re doing or need to be doing and why. For example, [a recent article](https://jamanetwork.com/journals/jama/fullarticle/2729548) talks about why financial incentives work in some cases and don’t in others primarily because of a lack of participant understanding. An important lesson is that seemingly small choices in design can have substantial effects on their success. We often guide researchers to pull out the most meaningful component to their intervention and build a simpler protocol that can be deployed and managed with ease while still achieving the desired behavior change or health goal.
 
-**Fake it till you make it**: Do a pilot or test run with partial or no automation. We call this implementing a “fake backend”. This means you are the woman behind the curtain or the mechanical turk, trying to figure out what works before trying to automate it. This could be testing out messaging with someone sitting behind the scenes answering as if he or she was the computer, or it could be manually calculating adherence rates, or manually tracking biometric device data before a full device integration. We have found this approach to be very useful primarily because it often helps invalidate some initial assumptions. 
+## Fake it till you make it
+
+Do a pilot or test run with partial or no automation. We call this implementing a “fake backend”. This means you are the woman behind the curtain or the mechanical turk, trying to figure out what works before trying to automate it. This could be testing out messaging with someone sitting behind the scenes answering as if he or she was the computer, or it could be manually calculating adherence rates, or manually tracking biometric device data before a full device integration. We have found this approach to be very useful primarily because it often helps invalidate some initial assumptions. 
 
 Additionally, these pilots can be very rapid and much cheaper to run. Once you shown some success with such a fake backend pilot, you are ready to talk automation. You will have identified pitfalls and potential changes in the protocol based on direct feedback from the end users. Thus, the project design will be validated and much easier to scale.
 
