@@ -144,6 +144,8 @@ Note the specification of the `type="application/json"` attribute, which prevent
 
 <br />
 
+## Run Python with Reticulate
+
 It is also possible to include Python code chunks in R Markdown, using the `reticulate` package that was loaded (in R) earlier:
 
 ```{python data_test}
