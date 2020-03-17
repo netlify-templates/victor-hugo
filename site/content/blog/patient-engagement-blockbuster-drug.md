@@ -10,10 +10,11 @@ label: Industry Insights
 ---
 
 <blockquote>
-    <p>If patient engagement were a drug, it would be the blockbuster drug of the century and malpractice not to use it.</p>
-    <footer>Leonard Kish</footer>
+    If patient engagement were a drug, it would be the blockbuster drug of the century and malpractice not to use it.</p>
+    -- Leonard Kish
 </blockquote>
 
+<br/> <br/>
 
 True patient engagement should have metrics of demonstrable success – at scale – over time. Generally speaking, this is still lacking. The current model adopted seems to be one of outsourcing (for lack of a better term) i.e. shift a lot of the healthcare burden (either administrative, cost or actual service delivery) directly to patients. But data and metrics are being gathered and continue to prove that patient engagement can have significant value if done in a coordinated fashion. With the advent of devices to track activity, heart rate and much more, the rise of AI to predict health issues from that flood of data, automation to "hover" over patients and so on, we are on the cusp of putting patients where they belong - at the center of their own health (with some assistance).
 

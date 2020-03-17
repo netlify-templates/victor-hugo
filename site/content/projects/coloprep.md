@@ -10,12 +10,10 @@ authors:
   - authorimage: /images/uploads/cathy_reitz_2500x2500-1024x1024.jpg
     authorname: 'Catherine Reitz, MPH'
     authorrole: Project Manager
-summary: Piloted a text message navigation program to improve colonoscopy adherence.
+summary: Developed a text message navigation program to improve colonoscopy show rates, reduce cancellations and improve quality / adherence to procedure prep. 
 results:
-  - result: ' Intervention patients were significantly more likely to show for colonoscopy (90% vs. 62% show rate; p = .049)'
-  - result: >-
-      2 cancellations and 0 no-shows in the intervention group as compared with
-      14 cancellations and 5 no-shows in the comparison group
+  - result: 'Improved show rate by 30%'
+  - result: Maintained or improved quality of prep
 features:
   - feature: Automated Text Messaging
   - feature: Randomization

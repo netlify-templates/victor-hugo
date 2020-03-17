@@ -19,8 +19,8 @@ results:
       Increase in provider and patient communication regarding newborn
       questions. 
 features:
-  - feature: 'EPIC Integration '
-  - feature: 'Bi-directional Texting '
+  - feature: 'EPIC Integration'
+  - feature: 'Bi-directional Texting'
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity

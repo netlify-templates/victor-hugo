@@ -25,6 +25,10 @@ outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
+features:
+  - feature: 'Remote monitoring'
+  - feature: 'Bi-directional Texting'
+  - feature: 'EHR integration'  
 ---
 
 ## The Challenge

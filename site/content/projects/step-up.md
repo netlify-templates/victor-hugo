@@ -11,23 +11,14 @@ authors:
     authorname: 'Kevin Volpp, MD, PhD'
     authorrole: Principal Investigator
 summary: >
-  The objective of this study is to use a randomized, controlled trial to test
-  the effectiveness of three interventions using social incentives and
-  gamification to increase physical activity among overweight and obese adults.
-  Scheduled start indicates when team will begin enrollment. They will hold all
-  participants until January 1, 2018 to have the "new year" effect, therefore
-  development work can continue in the fall.
+  Use social incentives and gamification to increase physical activity among overweight and obese adults.
 results:
-  - result: >-
-      During intervention, participants in the intervention groups had
-      significantly higher increase in mean steps compared to control
-  - result: >-
-      During follow-up, physical activity remained significantly greater in the
-      competition arm (adjusted difference, 569) than in the control arm
+  - result: Gamification interventions had significant increase in activity
+  - result: Competitive intervention had more sustained activity (post study)
 features:
-  - feature: Fitbit Device Integration
-  - feature: Goal Selection Survey
-  - feature: Commitment Contract
+  - feature: Device Integration
+  - feature: Randomization
+  - feature: Gamification
 spotlight: true
 pubs:
   - pubURL: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2749761'

@@ -16,11 +16,9 @@ summary: >-
   surgery.
 results:
   - result: >-
-      Intravenous opioid medications postoperatively was nearly eliminated in
-      the ERAS group (0.5% vs 54.1%)
+      Post-op intravenous opioid meds nearly eliminated
   - result: >-
-      ERAS group demonstrated greater mobilization on postoperative day 0 (53.4%
-      vs 17.1%)
+      3x greater mobility on post-op day 0
 features:
   - feature: Discharge Date Finder
   - feature: Bi-Directional Texting
