@@ -32,6 +32,7 @@ if (!require("knitr")) {
   install.packages("knitr")
   library("knitr")
 }
+knitr::opts_chunk$set(cache = TRUE)
 knitr::opts_chunk$set(echo = TRUE)
 
 # Load reticulate package for running python

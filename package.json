@@ -6,9 +6,12 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:_rollup && npm run build:blogdown",
+    "build:preview": "npm run build:_rollup && npm run build:_preview",
     "build:blogdown": "Rscript -e 'blogdown::build_site()'; echo 'done'",
+    "build:_preview": "Rscript -e 'blogdown::build_site(local = TRUE)'; echo 'done'",
     "build:_rollup": "rollup -c",
     "build:_webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "install-extra:fedora": "sudo dnf install pandoc gdal-devel geos-devel proj-devel udunits2-devel",
     "lint": "eslint src",
     "live-preview": "run-p live-preview:**",
     "live-preview:_webpack": "webpack --config webpack.dev.js -w",
