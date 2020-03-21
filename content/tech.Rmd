@@ -28,6 +28,15 @@ tags:
 ## A blogdown boilerplate for creating truly epic visualizations
 
 ```{r setup, include=FALSE}
+options(warn = -1)
+working_dir <- getwd()
+print(working_dir)
+print(grepl("/content", getwd(), ignore.case = TRUE))
+if (grepl("/content", getwd(), ignore.case = TRUE)) {
+  working_dir <- stringr::str_replace(getwd(), "/content", "")
+  setwd(working_dir)
+  print("")
+}
 if (!require("knitr")) {
   install.packages("knitr")
   library("knitr")

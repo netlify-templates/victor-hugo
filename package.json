@@ -29,7 +29,7 @@
     "@babel/plugin-syntax-object-rest-spread": "^7.8.0",
     "@babel/preset-env": "^7.8.4",
     "@babel/register": "^7.8.0",
-    "@sveltejs/gl": "0.0.37",
+    "@sveltejs/gl": "git+https://github.com/Real-Currents/SvelteGL.git#real/currents",
     "acorn": "^7.1.1",
     "assets-webpack-plugin": "^3.9.7",
     "babel-eslint": "^10.0.2",

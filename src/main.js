@@ -1,5 +1,6 @@
 import './styles/global.css';
 import App from './apps/App.svelte';
+import GLApp from './apps/GLApp.svelte';
 import TestApp from './apps/TestApp.svelte';
 
 const appId = "svelte-app";
@@ -29,5 +30,20 @@ export const testApp = (
         target: testAppElement,
         props: {
             title: "🦊 Hello Svelte!"
+        }
+    }) : {};
+
+
+const glAppId = "gl-app";
+const glAppElement = document.getElementById(glAppId);
+export const glApp = (
+    glAppElement !== null &&
+    (glAppElement.constructor.name === 'HTMLElement' ||
+        glAppElement.constructor.name === 'HTMLDivElement')
+    ) ?
+    new GLApp({
+        target: glAppElement,
+        props: {
+            title: "🦊 Hello SvelteGL!"
         }
     }) : {};
