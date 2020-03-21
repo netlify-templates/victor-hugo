@@ -49,10 +49,10 @@
 
 <style>
 	.controls {
-		position: absolute;
-		top: 0;
+		float: right;
+		position: relative;
 		margin: 8px;
-		margin-left: 200px;
+		margin-top: -160px;
 		width: 300px;
 		height: 128px;
 		padding: 1em;
@@ -61,7 +61,13 @@
 		z-index: 2;
 	}
 
-	.keys {
+	@media screen and (max-width: 480px) {
+		.controls {
+			margin-top: 8px;
+		}
+	}
+
+		.keys {
 		position: absolute;
 		width: 256px;
 		height: 256px;
@@ -88,7 +94,7 @@
 	{#each Array(heightmap.length) as _, k}
 		{#each Array(heightmap[k].length) as _, i}
 	<!-- box -->
-	<GL.Mesh geometry={GL.box({ x: 0, y: 0, z: 0 , w: (gridSizeX / heightmap[i].length), h: (2 * heightmap[k][i]), d: (gridSizeZ / heightmap.length) })}
+	<GL.Mesh geometry={GL.box({ x: 0, y: 0, z: 0 , w: (gridSizeX / heightmap[i].length), h: (1 * heightmap[k][i]), d: (gridSizeZ / heightmap.length) })}
 			 location={[ (-(gridSizeX / 2) + (i * (gridSizeX / heightmap[0].length))), 0, (-(gridSizeZ / 2) + (k * (gridSizeZ / heightmap.length))) ]}
 			 rotation={[ 0, 0, 0]}
 			 scale={[ w, h, d]}

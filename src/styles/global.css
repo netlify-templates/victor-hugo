@@ -89,3 +89,7 @@ button:focus {
 	max-width: 1024px;
 	word-wrap: break-word;
 }
+
+.section {
+	padding: 8px;
+}
