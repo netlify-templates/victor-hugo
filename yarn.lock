@@ -4124,10 +4124,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-hugo-bin@^0.56.0:
-  version "0.56.1"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.56.1.tgz#49a1757dd388eacb96e1cc927620624022fde50c"
-  integrity sha512-Md59Ucx+1PbIxzkoAtXNxFQaa/0AuFtL/vk2lnjY6k5b1FyIIqCFx2PXcm6Uaoanf9VOVJVZ7JI4ftyLStd++w==
+hugo-bin@^0.56.3:
+  version "0.56.3"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.56.3.tgz#69909e9b2d2858a09cb88ddb1bd9bcb7c3f4c403"
+  integrity sha512-uQRrjpmU2+MpdweBo/EiSQ5scG3T+RPN8ZfkBdEr+4lWU6j58Np/PxUduN04IqqdF3QtAG10wmWugO+pELfn9Q==
   dependencies:
     bin-wrapper "^4.1.0"
     pkg-conf "^3.1.0"
@@ -7596,7 +7596,12 @@ shell-quote@^1.6.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
-signal-exit@^3.0.0, signal-exit@^3.0.2:
+signal-exit@^3.0.0:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
+  integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
+
+signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
