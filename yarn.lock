@@ -286,7 +286,7 @@
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-syntax-numeric-separator" "^7.8.3"
 
-"@babel/plugin-proposal-object-rest-spread@^7.9.5":
+"@babel/plugin-proposal-object-rest-spread@^7.9.0", "@babel/plugin-proposal-object-rest-spread@^7.9.5":
   version "7.9.5"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.9.5.tgz#3fd65911306d8746014ec0d0cf78f0e39a149116"
   integrity sha512-VP2oXvAf7KCYTthbUHwBlewbl1Iq059f6seJGsxMizaCdgHIeczOr7FBqELhSqfkIl04Fi8okzWzl63UKbQmmg==
@@ -626,7 +626,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.8.3"
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/preset-env@^7.9.5":
+"@babel/preset-env@^7.9.0":
   version "7.9.5"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.9.5.tgz#8ddc76039bc45b774b19e2fc548f6807d8a8919f"
   integrity sha512-eWGYeADTlPJH+wq1F0wNfPbVS1w1wtmMJiYk55Td5Yu28AsdR9AsC97sZ0Qq8fHqQuslVSIYSGJMcblr345GfQ==
@@ -4123,10 +4123,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-hugo-bin@^0.56.3:
-  version "0.56.3"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.56.3.tgz#69909e9b2d2858a09cb88ddb1bd9bcb7c3f4c403"
-  integrity sha512-uQRrjpmU2+MpdweBo/EiSQ5scG3T+RPN8ZfkBdEr+4lWU6j58Np/PxUduN04IqqdF3QtAG10wmWugO+pELfn9Q==
+hugo-bin@^0.57.0:
+  version "0.57.0"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.57.0.tgz#6c2ec9625dafa2a8b8c2ee67e4f4dcc6fc9a8e31"
+  integrity sha512-WmI8SC25gRqBo/vPJ5vfEAWRB/4LWDnBwdpjwoVxx1d9fkEoJqnW2lcoGoa1rmVZTap1UefEUiDOyagT1BKyHw==
   dependencies:
     bin-wrapper "^4.1.0"
     pkg-conf "^3.1.0"
