@@ -18,7 +18,7 @@
     invariant "^2.2.4"
     semver "^5.5.0"
 
-"@babel/core@^7.9.0":
+"@babel/core@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.9.6.tgz#d9aa1f580abf3b2286ef40b6904d390904c63376"
   integrity sha512-nD3deLvbsApbHAHttzIssYqgb883yU/d9roe4RZymBCDaZryMJDbptVpEpeQuRh4BJ+SYI8le9YGxKvFEvl1Wg==
@@ -286,7 +286,7 @@
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-syntax-numeric-separator" "^7.8.3"
 
-"@babel/plugin-proposal-object-rest-spread@^7.9.5", "@babel/plugin-proposal-object-rest-spread@^7.9.6":
+"@babel/plugin-proposal-object-rest-spread@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.9.6.tgz#7a093586fcb18b08266eb1a7177da671ac575b63"
   integrity sha512-Ga6/fhGqA9Hj+y6whNpPv8psyaK5xzrQwSPsGPloVkvmH+PqW1ixdnfJ9uIO06OjQNYol3PMnfmJ8vfZtkzF+A==
@@ -626,7 +626,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.8.3"
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/preset-env@^7.9.5":
+"@babel/preset-env@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.9.6.tgz#df063b276c6455ec6fcfc6e53aacc38da9b0aea6"
   integrity sha512-0gQJ9RTzO0heXOhzftog+a/WyOuqMrAIugVYxMYf83gh1CQaQDjMtsOpqOwXyDL/5JcWsrCm8l4ju8QC97O7EQ==
@@ -4096,10 +4096,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-hugo-bin@^0.57.0:
-  version "0.57.2"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.57.2.tgz#1e07b7a366fbd6ad5b18010533e290f31f50ca4b"
-  integrity sha512-hbJNftqFTDXvVoOaU6rHvxqFf5LFSmHZOGfIVoY87nxLKoBJ0xx1Mvf+xJOnf3HEgLwg7dAQaiWydO+P3+t7tg==
+hugo-bin@^0.58.0:
+  version "0.58.0"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.58.0.tgz#f8ec63199c1e73135d3e24eb41297201f9172d43"
+  integrity sha512-lTn+UrsTFJLlTaFWVgY1LcwObc+XeZ5O49Bh2I0megfEBloqR4CuYKjg237IIKZPvh+PIi4ZDv+UrPCBbeKBCA==
   dependencies:
     bin-wrapper "^4.1.0"
     pkg-conf "^3.1.0"
