@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <base href="/">
+  <title>My new blogdown site</title>
+
+  <link href="/global.css" rel="stylesheet">
+
+  <link href="/main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+ 
+<article class="content">
+  <main><h1 id="taxonomy">Taxonomy</h1>
+<p>This is a rough attempt to organise the various concepts in Svelte GL. It is subject to change.</p>
+<h2 id="scene">Scene</h2>
+<p>The root component. A <code>&lt;Scene&gt;</code> creates a container element and a canvas, and manages all the entities inside, determining when to redraw.</p>
+<p>A scene contains one or more <em>layers</em>, and exactly one <em>camera</em>.</p>
+<blockquote>
+<p>It&rsquo;s possible to imagine that we might want to decouple the scene from the canvas — e.g. we might want to view the same scene from different angles (as in a 3D editor) or render a scene to a texture.</p>
+</blockquote>
+<h2 id="layer">Layer</h2>
+<p>Clears the depth buffer, guaranteeing that objects contained within are drawn on top of whatever is on lower layers. Particularly useful in situations where you&rsquo;d otherwise experience z-fighting.</p>
+<p>The first layer is &lsquo;implicit&rsquo; — you don&rsquo;t need to create a <code>&lt;Layer&gt;</code> component inside your scene if everything will be on the same layer.</p>
+<p>Layers contain zero or more <em>objects</em>.</p>
+<h2 id="object">Object</h2>
+<p>An object is something with a transform (a location and rotation and a scale).</p>
+<h3 id="group">Group</h3>
+<p>A logical grouping of objects that can be used to apply transformations to all of them simultaneously.</p>
+<h3 id="camera">Camera</h3>
+<p>Cameras are objects, whose sole purpose is to generate the view matrix, which manifests as a scene-wide <em>uniform</em>.</p>
+<h3 id="light">Light</h3>
+<p>Lights also manifest as scene-wide uniforms.</p>
+<h3 id="mesh">Mesh</h3>
+<p>Meshes are objects with a <em>geometry</em> and a <em>material</em>. They are the only things that actually get drawn, other than overlays.</p>
+<h2 id="geometry">Geometry</h2>
+<p>A geometry is a collection of <em>attributes</em>, a primitive (e.g. triangle), and an (optional) index.</p>
+<p>An attribute is a typed array (normally a Float32Array, I think?) plus a size.</p>
+<blockquote>
+<p>There are also <code>normalized</code> and <code>dynamic</code> properties, which don&rsquo;t currently do anything?</p>
+</blockquote>
+<h2 id="material">Material</h2>
+<p>A material is a combination of a WebGL <em>program</em> and a number of uniforms that pertain to that program. Some of those uniforms are &lsquo;well known&rsquo;, such as alpha, specularity, colorMap and so on. Some may be specific to the program&rsquo;s shader, if it&rsquo;s not using a default shader.</p>
+<p>Each mesh has its own material. Many materials can share the same program.</p>
+<h2 id="open-questions">Open questions</h2>
+<ul>
+<li>
+<p>How can we make it easy to share materials between meshes while also making it easy to define materials in an ad-hoc way as props on meshes (and their wrappers)?</p>
+</li>
+<li>
+<p>Geometries and materials need to belong to a scene (or more accurately, to the <code>gl</code> context associated with the scene, though it&rsquo;s useful if they have a reference to the scene so that they can invalidate it). How can we do that in a way that isn&rsquo;t onerous for scene authors?</p>
+</li>
+<li>
+<p>In the medium term, is there a way to design the API such that a compiler could omit built-in shader chunks that weren&rsquo;t used?</p>
+</li>
+<li>
+<p>How can we make shader chunks composable?</p>
+</li>
+</ul>
+</main>
+</article>
+
+
+
+
+
+
+  <script src="/main.js"></script>
+
+
+</body>
+
+</html>

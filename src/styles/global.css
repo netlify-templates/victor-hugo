@@ -1,95 +1,136 @@
 @import url("imports/reset.css");
 
 html {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-	'Droid Sans', 'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	background-color: #282c34;
-	color: white;
+    display: flex;
+    width: 99.9%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
 }
 
 a {
-	color: pink;
-	text-decoration: none;
+    color: pink;
+    text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 label {
-	display: block;
+    display: block;
 }
 
 input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.4em;
+    margin: 0 0 0.5em 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
 }
 
 input:disabled {
-	color: #ccc;
+    color: #ccc;
 }
 
 input[type="range"] {
-	height: 0;
+    height: 0;
 }
 
 button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+    color: #333;
+    background-color: #f4f4f4;
+    outline: none;
 }
 
 button:disabled {
-	color: #999;
+    color: #999;
 }
 
 button:not(:disabled):active {
-	background-color: #ddd;
+    background-color: #ddd;
 }
 
 button:focus {
-	border-color: #666;
+    border-color: #666;
 }
 
 .content {
-	padding: 0 32px;
+    width: 100%;
+    padding: 0;
 }
 
-.content * p, pre {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.content * pre {
-	width: 100%;
-	max-width: 1024px;
-	text-align: left;
-	white-space: pre-wrap;       /* Since CSS 2.1 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-.content * pre code {
-	max-width: 1024px;
-	word-wrap: break-word;
+.content main, .content * p {
+    width: 100%;
 }
 
 .section {
-	padding: 8px;
+    width: 100%;
 }
+
+pre {
+    width: 72.5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: left;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    background: rgba(66, 66, 66, 0.5);
+}
+
+pre code {
+    max-width: 1024px;
+    word-wrap: break-word;
+}
+
+.controls {
+    float: right;
+    color: #282c34;
+    position: relative;
+    margin: -50% 8px 8px 0px;
+    width: 300px;
+    padding: 1em;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.controls label input[type="color"] {
+    clear: both;
+    margin: 100px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    pre {
+        width: 100%;
+    }
+
+    .controls {
+        margin-top: 8px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+

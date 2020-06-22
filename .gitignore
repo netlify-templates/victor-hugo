@@ -1,9 +1,10 @@
 .idea
 .RData
 .Rhistory
-node_modules
-dist
-public
-content/*html
-webpack.json
 .Rproj.user
+blogdown
+dist
+node_modules
+public
+*html
+webpack.json
