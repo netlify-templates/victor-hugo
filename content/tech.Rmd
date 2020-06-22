@@ -9,7 +9,7 @@ tags:
   - R Markdown
 ---
 
-<div id="test-app"></div>
+<div id="tech-app"></div>
 
 # [Sveltr](https://github.com/dancingfrog/sveltr)
 

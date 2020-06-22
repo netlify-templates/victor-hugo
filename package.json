@@ -7,8 +7,8 @@
   "scripts": {
     "build": "npm run build:_rollup && npm run build:blogdown",
     "build:preview": "npm run build:_rollup && npm run build:_preview",
-    "build:blogdown": "Rscript -e 'blogdown::build_site()'; echo 'done'",
-    "build:_preview": "Rscript -e 'blogdown::build_site(local = TRUE)'; echo 'done'",
+    "build:blogdown": "Rscript src/build.R; echo 'done'",
+    "build:_preview": "Rscript src/build_preview.R; echo 'done'",
     "build:_rollup": "rollup -c",
     "build:_webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
     "install-extra:fedora": "sudo dnf install pandoc gdal-devel geos-devel proj-devel udunits2-devel",
@@ -17,8 +17,8 @@
     "live-preview:_webpack": "webpack --config webpack.dev.js -w",
     "live-preview:blogdown": "npm run start -- ",
     "prebuild": "rimraf dist",
-    "postinstall": "Rscript -e 'install.packages(\"blogdown\"); blogdown::install_hugo()'",
-    "start": "Rscript -e 'blogdown::serve_site()'; echo 'servr has stopped'",
+    "postinstall": "Rscript src/install.R",
+    "start": "Rscript src/start.R; echo 'servr has stopped'",
     "start:dev": "rollup -c -w"
   },
   "author": "",
