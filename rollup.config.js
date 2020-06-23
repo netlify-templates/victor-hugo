@@ -15,7 +15,7 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		export: 'named',
+		exports: 'named',
 		file: 'public/main.js'
 	},
 	plugins: [
