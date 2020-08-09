@@ -12,9 +12,10 @@ tags:
   - WebGL
 ---
 
-<div id="vizr-app" role="main" style="width: 100%; min-width: 800px; margin-left: -86px;">
+<div id="vizr-app" role="main" style="width: 100%; min-width: 800px;">
 &nbsp;
 </div>
+
 
 ## Visualizing R Data with [SveltR](https://github.com/dancingfrog/sveltr)
 

@@ -9,21 +9,11 @@ tags:
   - R Markdown
 ---
 
-<div id="tech-app"></div>
+<div id="tech-app" role="main" style="width: 100%; min-width: 800px;">
+&nbsp;
+</div>
 
-# [Sveltr](https://github.com/dancingfrog/sveltr)
-
-<a href="https://bookdown.org/yihui/blogdown" target="_blank">
-    <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
-         style="max-width: 80px; opacity: 0.25;"
-         alt="blogdown logo" width="20%" align="left" />
-</a>
-
-<a href="https://svelte.dev/" target="_blank">
-    <img src="https://svelte.dev/svelte-logo-outline.svg"
-         style="background-color:rgba(255, 32, 00, 0.1); border-radius:12px; border-color:#f30; max-width:80px;"
-         alt="blogdown logo" width="20%" align="right" />
-</a>
+# [SveltR](https://github.com/Real-Currents/SveltR)
 
 ## A blogdown boilerplate for creating truly epic visualizations
 
@@ -85,6 +75,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+<div class="r-mapping">
 Use R's geospatial packages to plot data on maps. For the following example, you will need to have installed the following native libraries on the host operating system:
 pandoc gdal geos proj udunits2:
 
@@ -128,6 +119,7 @@ if (!require("maptools")) {
   plot(wrld_simpl) + plot(spointsdf,add=T,col=c('red','blue'),pch=16)
 }
 ```
+</div>
 
 ## Embedding JSON data in HTML
 
@@ -138,6 +130,8 @@ head(mtcars)
 ```
 
 The mtcars sample dataset printed above has been serialized to JSON and added to a `<script>` tag contained within a `<div id="car_data_in_html">`.
+<div class="r-data">
+
 ```{r car_data_in_html, echo=FALSE, results='asis'}
 require(jsonlite)
 
@@ -146,6 +140,8 @@ cat(paste('<div id="car_data_in_html"><script type="application/json">', toJSON(
 # add tabs to tags, to pre print code results
 cat(paste('\n\t<div id="car_data_in_html">\n\t\t<script type="application/json">', toJSON(mtcars), '\n\t\t</script>\n\t</div>', sep=""))
 ```
+</div>
+
 Note the specification of the `type="application/json"` attribute, which prevents the browser from evaluating the contents of the `<script>` tag as JavaScript (if that is intended) and allows some other code block to call:
 
     <script>
