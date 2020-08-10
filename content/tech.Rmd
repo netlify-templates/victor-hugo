@@ -34,11 +34,6 @@ if (!require("knitr")) {
 knitr::opts_chunk$set(cache = TRUE)
 knitr::opts_chunk$set(echo = TRUE)
 
-# Load reticulate package for running python
-if (!require("reticulate")) {
-  install.packages("reticulate")
-}
-library(reticulate)
 ```
 
 This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
@@ -132,7 +127,7 @@ head(mtcars)
 The mtcars sample dataset printed above has been serialized to JSON and added to a `<script>` tag contained within a `<div id="car_data_in_html">`.
 <div class="r-data">
 
-```{r car_data_in_html, echo=FALSE, results='asis'}
+```{r car_data_in_html, echo = FALSE, results = 'asis'}
 require(jsonlite)
 
 # print without tabs so R markdown will add it to the DOM tree of the resulting page
@@ -152,8 +147,19 @@ Note the specification of the `type="application/json"` attribute, which prevent
 
 ## Run Python with Reticulate
 
-It is also possible to include Python code chunks in R Markdown, using the `reticulate` package that was loaded (in R) earlier:
+It is also possible to include Python code chunks in R Markdown, by first loading `reticulate` package (in R):
+```{r prepare_python, echo = FALSE}
+# Load reticulate package for running python
+if (!require("reticulate")) {
+  install.packages("reticulate")
+}
+reticulate::conda_python(envname = "r-reticulate")
+reticulate::use_condaenv(condaenv = "r-reticulate", required = TRUE)
+reticulate::py_config()
+reticulate::conda_install(packages = c("python","matplotlib"), forge = TRUE)
+```
 
+... and then writing the python code;
 ```{python data_test}
 data = {"foo": {"bar": "baz"}}
 string = "Reticulate"
@@ -163,6 +169,7 @@ for index, letter in enumerate(string):
 ```
 
 ```{python pyplot}
+
 try:
   import matplotlib.pyplot as plt
   import numpy as np
