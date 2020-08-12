@@ -147,16 +147,20 @@ Note the specification of the `type="application/json"` attribute, which prevent
 
 ## Run Python with Reticulate
 
-It is also possible to include Python code chunks in R Markdown, by first loading `reticulate` package (in R):
-```{r prepare_python, echo = FALSE}
+It is also possible to include Python code chunks in R Markdown, by first loading the `reticulate` package (in R):
+```{r prepare_python, echo = TRUE}
 # Load reticulate package for running python
 if (!require("reticulate")) {
   install.packages("reticulate")
+  reticulate::conda_python(envname = "r-reticulate")
+  reticulate::use_condaenv(condaenv = "r-reticulate", required = TRUE)
 }
-reticulate::conda_python(envname = "r-reticulate")
-reticulate::use_condaenv(condaenv = "r-reticulate", required = TRUE)
-reticulate::py_config()
-reticulate::conda_install(packages = c("python","matplotlib"), forge = TRUE)
+
+reticulate::py_install(c("matplotlib"))
+
+py_sys <- import("sys")
+print(py_sys$path)
+cat(list.files(py_sys$path)[grepl("matplot", list.files(py_sys$path))])
 ```
 
 ... and then writing the python code;
@@ -169,6 +173,9 @@ for index, letter in enumerate(string):
 ```
 
 ```{python pyplot}
+import sys
+
+sys.path
 
 try:
   import matplotlib.pyplot as plt
@@ -180,6 +187,7 @@ try:
 
   plt.plot(t, np.sin(t))
   plt.show()
+
 except Exception as e:
   print(e)
 ```
