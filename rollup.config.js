@@ -5,7 +5,6 @@ import livereload from 'rollup-plugin-livereload';
 import resolve from 'rollup-plugin-node-resolve';
 import postcss from "rollup-plugin-postcss";
 import shader from 'rollup-plugin-shader';
-import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
 
