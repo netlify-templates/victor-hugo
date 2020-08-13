@@ -5,8 +5,7 @@
 *.Rproj*
 blogdown
 dist
-content/*html
 node_modules
 public
 static
-webpack.json
+*.html
