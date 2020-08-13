@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>/SveltR/post/</loc>
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/SveltR/post/module2/visualizingdataforregression/</loc>
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/module2/visualizingdataforregression/</loc>
-    <lastmod>2020-06-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/visualize-r/</loc>
+    <loc>/SveltR/post/visualize-r/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tech/</loc>
+    <loc>/SveltR/</loc>
+    <lastmod>2020-02-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/SveltR/tech/</loc>
     <lastmod>2020-02-27T00:00:00+00:00</lastmod>
   </url>
   
