@@ -50,7 +50,7 @@ export const glApp = (
     }) : {};
 
 
-const vizrAppId = 'uni-sol';
+const vizrAppId = 'vizr-app';
 const vizrAppElement = document.getElementById(vizrAppId);
 export const vizrApp = (
     vizrAppElement !== null &&

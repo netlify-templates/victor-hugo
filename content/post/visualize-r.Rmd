@@ -1,5 +1,5 @@
 ---
-title: Visualizing R Data with Sveltr
+title: Visualizing R Data with SveltR
 author: John
 date: '2020-03-14'
 draft: false
@@ -12,9 +12,12 @@ tags:
   - WebGL
 ---
 
-<div id="uni-sol"></div>
+<div id="vizr-app" role="main" style="width: 100%; min-width: 800px;">
+&nbsp;
+</div>
 
-## Visualizing R Data with [Sveltr](https://github.com/dancingfrog/sveltr)
+
+## Visualizing R Data with [SveltR](https://github.com/dancingfrog/sveltr)
 
 ```{r setup, include=FALSE}
 options(warn = -1)
@@ -75,19 +78,37 @@ Note the `type="application/json"` attribute, which prevents the browser from ev
 
 <br />
 
-Here's the full source of the app.
+Then that same data can be used specify dimensions of the individual blocks in [`@sveltejs/gl`](https://github.com/Real-Currents/SvelteGL/tree/real/currents). Here's the full source of the app.
 
 `VizRApp.svelte`:
 
     <script>
         import { onMount } from 'svelte';
         import * as GL from '@sveltejs/gl';
-        import NavigationControls from './components/NavigationControls.svelte';
+        import Controls from './components/Controls.svelte';
 
         export let title;
 
+        let color = '#ff3e00';
+
+        const light = {};
+
+        let w = 1;
+        let h = 1;
+        let d = 1;
+
+        let webgl;
+
         export let options = {
             labels: [],
+            values: []
+        };
+
+        export let ranges = {
+            labels: [ "width", "height", "depth" ],
+            min: [ 0.1, 0.1, 0.1 ],
+            max: [ 5.0, 5.0 , 5.0 ],
+            step: [ 0.1, 0.1, 0.1 ],
             values: []
         };
 
@@ -99,8 +120,6 @@ Here's the full source of the app.
             console.log("location: ", loc, "\n", "target: ", tgt);
             return "";
         };
-
-        export let color = '#ff3e00';
 
         function adjustColor (clr, height = 1) {
             const r = parseInt('0x' + clr.substr(1, 2), 16),
@@ -126,14 +145,6 @@ Here's the full source of the app.
         }
 
         console.log(heightmap);
-
-        let w = 1;
-        let h = 1;
-        let d = 1;
-
-        const light = {};
-
-        let webgl;
 
 
         /* This is a helper callback to bind custom uniforms/attributes
@@ -165,6 +176,14 @@ Here's the full source of the app.
                 light.x = 3 * Math.sin(Date.now() * 0.001);
                 light.y = 2.5 + 2 * Math.sin(Date.now() * 0.0004);
                 light.z = 3 * Math.cos(Date.now() * 0.002);
+
+                if (ranges['values'].length > 0) {
+                    w = ranges['values'][0];
+                    h = ranges['values'][1];
+                    d = ranges['values'][2];
+                } else {
+                    ranges['values'] = [ w, h, d ];
+                }
             };
 
             loop();
@@ -177,12 +196,6 @@ Here's the full source of the app.
         .controls {
             margin-top: -160px;
             height: 128px;
-        }
-
-        @media screen and (max-width: 480px) {
-            .controls {
-                margin-top: 8px;
-            }
         }
     </style>
 
@@ -209,7 +222,7 @@ Here's the full source of the app.
             {/each}
         {/each}
 
-        <!-- moving light -->
+            <!-- moving light -->
         <GL.Group location={[light.x,light.y,light.z]}>
             <GL.Mesh
                     geometry={GL.sphere({ turns: 36, bands: 36 })}
@@ -226,35 +239,21 @@ Here's the full source of the app.
         </GL.Group>
     </GL.Scene>
 
-    <NavigationControls
+    <Controls
             bind:init={navControlInit}
-            bind:optionFlags={options}
+            bind:color={color}
+            bind:options={options}
+            bind:rangeOptions={ranges}
+            bind:rangeValues={ranges.values}
             bind:viewLocation={location}
             bind:viewTarget={target}
             title={title}
             on:move={(event) => updateWorld(event)}/>
 
-    <div class="controls">
-        <label>
-            <input type="color" style="height: 40px" bind:value={color}>
-        </label>
-
-        <label>
-            <input type="range" bind:value={w} min={0.1} max={5} step={0.1}> width ({w})
-        </label>
-
-        <label>
-            <input type="range" bind:value={h} min={0.1} max={5} step={0.1}> height ({h})
-        </label>
-
-        <label>
-            <input type="range" bind:value={d} min={0.1} max={5} step={0.1}> depth ({d})
-        </label>
-    </div>
 
 <br />
 
-`NavigationControls.svelte`:
+`Controls.svelte`:
 
     <script>
         import {  createEventDispatcher } from 'svelte';
@@ -262,9 +261,9 @@ Here's the full source of the app.
         export let title;
         export let color = '#ff3e00';
 
-        let navContext;
-
-        export let optionFlags = [];
+        export let options = [];
+        export let rangeOptions = [];
+        export let rangeValues = [];
 
         export let viewLocation, viewTarget;
 
@@ -274,33 +273,57 @@ Here's the full source of the app.
 
         let mouse_x = 0, mouse_y = 0, mouse_down = false, mouse_disabled = false;
 
+        let navContext;
+
         let sinceLastMovementEvent = 0;
 
+        let isFullscreen = false;
+
+        let toggleFullscreen = function () {};
+
         export const init = function () {
-            console.log("Initializing Navigation Controls...");
+            console.log("Initializing Controls...");
+
+            document.querySelectorAll('.controls h4').forEach(c => {
+                console.log(c);
+
+                const scrollLength = 3 * window.innerHeight / 4;
+                c.addEventListener('click', function (event) {
+                    let scrollInterval = 33;
+                    let scrollTime = 533;
+                    let scrolled = 0
+
+                    const startScroll = setInterval(function () {
+                        if (scrolled < scrollLength) {
+                            scroll({top: scrolled, left: 0});
+                        }
+                        scrolled += Math.floor(scrollLength / (scrollTime / scrollInterval));
+                    }, scrollInterval);
+
+                });
+
+                c.title = "Click To See Article";
+            });
 
             document.querySelectorAll('canvas').forEach(c => {
                 console.log(c);
-                c.addEventListener('wheel', function (event) {
-                    const wheelEvent = (event || window['event']);
 
-                    if (((new Date()).getTime() - sinceLastMovementEvent) > 66) {
-
-                        sinceLastMovementEvent = (new Date()).getTime();
-
-                        if (wheelEvent.deltaY < 0) {
-                            dispatch('up');
-                        } else if (wheelEvent.deltaY > 0) {
-                            dispatch('down');
+                toggleFullscreen = () => {
+                    if (!isFullscreen) {
+                        isFullscreen = true;
+                        c.parentElement.className += " fullscreen"
+                        for (const control of document.getElementsByClassName("controls")) {
+                            control.className += " fullscreen";
+                        }
+                    } else {
+                        isFullscreen = false;
+                        c.parentElement.className = c.parentElement.className.replace("fullscreen", '');
+                        for (const control of document.getElementsByClassName("controls")) {
+                            control.className = control.className.replace("fullscreen", '');
                         }
                     }
+                }
 
-                    wheelEvent.preventDefault();
-                });
-            })
-
-            document.querySelectorAll('canvas').forEach(c => {
-                console.log(c);
                 c.addEventListener('keydown', function (event) {
                     const kbEvent = (event || window['event']); // cross-browser shenanigans
 
@@ -355,20 +378,65 @@ Here's the full source of the app.
                         }
                     }
                 });
+
+                c.addEventListener('wheel', function (event) {
+                    const wheelEvent = (event || window['event']);
+
+                    if (((new Date()).getTime() - sinceLastMovementEvent) > 66) {
+
+                        sinceLastMovementEvent = (new Date()).getTime();
+
+                        if (wheelEvent.deltaY < 0) {
+                            dispatch('up');
+                        } else if (wheelEvent.deltaY > 0) {
+                            dispatch('down');
+                        }
+                    }
+
+                    // wheelEvent.preventDefault();
+                });
             });
         };
     </script>
 
-    <div class="controls">
+    <style>
+        .controls h4 {
+            color: black;
+            cursor: pointer;
+            pointer-events: all;
+        }
+    </style>
+
+    <div class="controls right">
 
         <h4>{ title }</h4>
 
-        {#if (optionFlags['labels'].length > 0 && optionFlags['values'].length > 0)}
-            {#each optionFlags['values'] as option, o}
-            <label>
-                <input type="checkbox" bind:checked={option} /> {optionFlags['labels'][o]}
-            </label><br />
+        {#if (options['labels'].length > 0 && options['values'].length > 0)}
+            {#each options['values'] as option, o}
+                <label>
+                    <input type="checkbox" bind:checked={option.value} /> {options['labels'][o]}
+                </label><br />
             {/each}
         {/if}
 
+        {#if (!!color)}
+            <label>
+                <input type="color" style="height: 40px" bind:value={color}>
+            </label>
+        {/if}
+
+        {#if (rangeOptions['labels'].length > 0 && rangeValues.length > 0)}
+            {#each rangeValues as option, o}
+                <label>
+                    <input type="range" bind:value={option} min={rangeOptions['min'][o]} max={rangeOptions['max'][o]} step={rangeOptions['step'][o]} /><br />
+                    {rangeOptions['labels'][o]}({option})
+                </label><br />
+            {/each}
+        {/if}
+
+        <label>
+            <button on:click="{toggleFullscreen}">{((isFullscreen) ? 'minimize' : 'maximize')}</button>
+        </label>
+
     </div>
+
