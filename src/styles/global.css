@@ -100,7 +100,7 @@ button:focus {
     margin-bottom: 	-1px;
 }
 
-.content * img.right {
+.content *.right img {
     float:			right;
 }
 

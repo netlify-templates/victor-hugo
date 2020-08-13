@@ -127,15 +127,19 @@ head(mtcars)
 The mtcars sample dataset printed above has been serialized to JSON and added to a `<script>` tag contained within a `<div id="car_data_in_html">`.
 <div class="r-data">
 
-```{r car_data_in_html, echo = FALSE, results = 'asis'}
+```{r car_data_in_html, results = 'asis'}
 require(jsonlite)
 
 # print without tabs so R markdown will add it to the DOM tree of the resulting page
 cat(paste('<div id="car_data_in_html"><script type="application/json">', toJSON(mtcars), '\n</script>\n</div>', sep=""))
+```
+
+```{r, echo = FALSE, results = 'asis'}
 # add tabs to tags, to pre print code results
 cat(paste('\n\t<div id="car_data_in_html">\n\t\t<script type="application/json">', toJSON(mtcars), '\n\t\t</script>\n\t</div>', sep=""))
 ```
 </div>
+
 
 Note the specification of the `type="application/json"` attribute, which prevents the browser from evaluating the contents of the `<script>` tag as JavaScript (if that is intended) and allows some other code block to call:
 
