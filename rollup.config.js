@@ -5,7 +5,6 @@ import livereload from 'rollup-plugin-livereload';
 import resolve from 'rollup-plugin-node-resolve';
 import postcss from "rollup-plugin-postcss";
 import shader from 'rollup-plugin-shader';
-import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -15,7 +14,7 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		export: 'named',
+		exports: 'named',
 		file: 'public/main.js'
 	},
 	plugins: [
@@ -49,14 +48,18 @@ export default {
 		copy({
 			targets: [
 				{ src: 'src/images', dest: 'public/' },
-				{ src: 'static/*', dest: 'public/' }
+				{ src: 'src/styles/imports', dest: 'public/' }
 			]
 		}),
 
 		shader( {
 			// All match files will be parsed by default,
 			// but you can also specifically include/exclude files
-			include: [ 'node_modules/@sveltejs/gl/**/*.glsl', '**/*.vs', '**/*.fs' ],
+			include: [
+				'../@sveltejs/gl/**/*.glsl',
+				'**/*.glsl',
+				'**/*.vs',
+				'**/*.fs' ],
 			// specify whether to remove comments
 			removeComments: true,   // default: true
 		} ),
@@ -67,11 +70,7 @@ export default {
 
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
-		!production && livereload('public'),
-
-		// If we're building for production (npm run build
-		// instead of npm run dev), minify
-		production && terser()
+		!production && livereload('public')
 	],
 	watch: {
 		clearScreen: false

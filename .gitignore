@@ -1,10 +1,11 @@
 .idea
+.ipynb_checkpoints
 .RData
 .Rhistory
-.Rproj.user
+*.Rproj*
 blogdown
 dist
 node_modules
 public
-*html
-webpack.json
+static
+*.html

@@ -41,26 +41,16 @@
 </script>
 
 <style>
-	.controls {
-		position: absolute;
-		top: 0;
-		margin: 8px;
-		margin-left: 200px;
-		width: 300px;
-		height: 128px;
-		padding: 1em;
-		background-color: rgba(255,255,255,0.7);
-		border-radius: 2px;
-		z-index: 2;
-	}
-
 	.keys {
+		top: calc(50vh - (100vw / 5.75));
+		right: 0;
+		margin: 8px;
 		position: absolute;
 		width: 256px;
 		height: 256px;
-		top: calc(50vh - (100vw / 5.75));
 		padding: 24px;
 		background-color: transparent;
+		z-index: 2;
 	}
 
 	.keys * {

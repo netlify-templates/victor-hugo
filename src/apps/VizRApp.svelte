@@ -1,12 +1,30 @@
 <script>
     import { onMount } from 'svelte';
     import * as GL from '@sveltejs/gl';
-    import NavigationControls from './components/NavigationControls.svelte';
+    import Controls from './components/Controls.svelte';
 
     export let title;
 
+    let color = '#ff3e00';
+
+    const light = {};
+
+    let w = 1;
+    let h = 1;
+    let d = 1;
+
+    let webgl;
+
     export let options = {
         labels: [],
+        values: []
+    };
+
+    export let ranges = {
+        labels: [ "width", "height", "depth" ],
+        min: [ 0.1, 0.1, 0.1 ],
+        max: [ 5.0, 5.0 , 5.0 ],
+        step: [ 0.1, 0.1, 0.1 ],
         values: []
     };
 
@@ -18,8 +36,6 @@
         console.log("location: ", loc, "\n", "target: ", tgt);
         return "";
     };
-
-    export let color = '#ff3e00';
 
     function adjustColor (clr, height = 1) {
         const r = parseInt('0x' + clr.substr(1, 2), 16),
@@ -45,14 +61,6 @@
     }
 
     console.log(heightmap);
-
-    let w = 1;
-    let h = 1;
-    let d = 1;
-
-    const light = {};
-
-    let webgl;
 
 
     /* This is a helper callback to bind custom uniforms/attributes
@@ -84,6 +92,14 @@
             light.x = 3 * Math.sin(Date.now() * 0.001);
             light.y = 2.5 + 2 * Math.sin(Date.now() * 0.0004);
             light.z = 3 * Math.cos(Date.now() * 0.002);
+
+            if (ranges['values'].length > 0) {
+                w = ranges['values'][0];
+                h = ranges['values'][1];
+                d = ranges['values'][2];
+            } else {
+                ranges['values'] = [ w, h, d ];
+            }
         };
 
         loop();
@@ -122,7 +138,7 @@
         {/each}
     {/each}
 
-    <!-- moving light -->
+        <!-- moving light -->
     <GL.Group location={[light.x,light.y,light.z]}>
         <GL.Mesh
                 geometry={GL.sphere({ turns: 36, bands: 36 })}
@@ -139,28 +155,13 @@
     </GL.Group>
 </GL.Scene>
 
-<NavigationControls
+<Controls
         bind:init={navControlInit}
-        bind:optionFlags={options}
+        bind:color={color}
+        bind:options={options}
+        bind:rangeOptions={ranges}
+        bind:rangeValues={ranges.values}
         bind:viewLocation={location}
         bind:viewTarget={target}
         title={title}
         on:move={(event) => updateWorld(event)}/>
-
-<div class="controls">
-    <label>
-        <input type="color" style="height: 40px" bind:value={color}>
-    </label>
-
-    <label>
-        <input type="range" bind:value={w} min={0.1} max={5} step={0.1}> width ({w})
-    </label>
-
-    <label>
-        <input type="range" bind:value={h} min={0.1} max={5} step={0.1}> height ({h})
-    </label>
-
-    <label>
-        <input type="range" bind:value={d} min={0.1} max={5} step={0.1}> depth ({d})
-    </label>
-</div>

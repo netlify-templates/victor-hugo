@@ -9,21 +9,11 @@ tags:
   - R Markdown
 ---
 
-<div id="tech-app"></div>
+<div id="tech-app" role="main" style="width: 100%; min-width: 800px;">
+&nbsp;
+</div>
 
-# [Sveltr](https://github.com/dancingfrog/sveltr)
-
-<a href="https://bookdown.org/yihui/blogdown" target="_blank">
-    <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
-         style="max-width: 80px; opacity: 0.25;"
-         alt="blogdown logo" width="20%" align="left" />
-</a>
-
-<a href="https://svelte.dev/" target="_blank">
-    <img src="https://svelte.dev/svelte-logo-outline.svg"
-         style="background-color:rgba(255, 32, 00, 0.1); border-radius:12px; border-color:#f30; max-width:80px;"
-         alt="blogdown logo" width="20%" align="right" />
-</a>
+# [SveltR](https://github.com/Real-Currents/SveltR)
 
 ## A blogdown boilerplate for creating truly epic visualizations
 
@@ -44,11 +34,6 @@ if (!require("knitr")) {
 knitr::opts_chunk$set(cache = TRUE)
 knitr::opts_chunk$set(echo = TRUE)
 
-# Load reticulate package for running python
-if (!require("reticulate")) {
-  install.packages("reticulate")
-}
-library(reticulate)
 ```
 
 This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
@@ -85,6 +70,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+<div class="r-mapping">
 Use R's geospatial packages to plot data on maps. For the following example, you will need to have installed the following native libraries on the host operating system:
 pandoc gdal geos proj udunits2:
 
@@ -128,6 +114,7 @@ if (!require("maptools")) {
   plot(wrld_simpl) + plot(spointsdf,add=T,col=c('red','blue'),pch=16)
 }
 ```
+</div>
 
 ## Embedding JSON data in HTML
 
@@ -138,14 +125,22 @@ head(mtcars)
 ```
 
 The mtcars sample dataset printed above has been serialized to JSON and added to a `<script>` tag contained within a `<div id="car_data_in_html">`.
-```{r car_data_in_html, echo=FALSE, results='asis'}
+<div class="r-data">
+
+```{r car_data_in_html, results = 'asis'}
 require(jsonlite)
 
 # print without tabs so R markdown will add it to the DOM tree of the resulting page
 cat(paste('<div id="car_data_in_html"><script type="application/json">', toJSON(mtcars), '\n</script>\n</div>', sep=""))
+```
+
+```{r, echo = FALSE, results = 'asis'}
 # add tabs to tags, to pre print code results
 cat(paste('\n\t<div id="car_data_in_html">\n\t\t<script type="application/json">', toJSON(mtcars), '\n\t\t</script>\n\t</div>', sep=""))
 ```
+</div>
+
+
 Note the specification of the `type="application/json"` attribute, which prevents the browser from evaluating the contents of the `<script>` tag as JavaScript (if that is intended) and allows some other code block to call:
 
     <script>
@@ -156,8 +151,23 @@ Note the specification of the `type="application/json"` attribute, which prevent
 
 ## Run Python with Reticulate
 
-It is also possible to include Python code chunks in R Markdown, using the `reticulate` package that was loaded (in R) earlier:
+It is also possible to include Python code chunks in R Markdown, by first loading the `reticulate` package (in R):
+```{r prepare_python, echo = TRUE}
+# Load reticulate package for running python
+if (!require("reticulate")) {
+  install.packages("reticulate")
+  reticulate::conda_python(envname = "r-reticulate")
+  reticulate::use_condaenv(condaenv = "r-reticulate", required = TRUE)
+}
 
+reticulate::py_install(c("matplotlib"))
+
+py_sys <- import("sys")
+print(py_sys$path)
+cat(list.files(py_sys$path)[grepl("matplot", list.files(py_sys$path))])
+```
+
+... and then writing the python code;
 ```{python data_test}
 data = {"foo": {"bar": "baz"}}
 string = "Reticulate"
@@ -167,6 +177,10 @@ for index, letter in enumerate(string):
 ```
 
 ```{python pyplot}
+import sys
+
+sys.path
+
 try:
   import matplotlib.pyplot as plt
   import numpy as np
@@ -177,6 +191,7 @@ try:
 
   plt.plot(t, np.sin(t))
   plt.show()
+
 except Exception as e:
   print(e)
 ```
