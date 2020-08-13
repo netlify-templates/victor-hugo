@@ -7,7 +7,7 @@
   <base href="/SveltR/">
   <title>SveltR: Truly Epic Visualizations</title>
 
-  <link href="/SveltR//global.css" rel="stylesheet">
+  <link href="/SveltR/global.css" rel="stylesheet">
 
   <link href="/SveltR/main.css" rel="stylesheet">
 
@@ -18,7 +18,7 @@
 
 
 
- 
+
 <article class="content">
   <main>
 
@@ -30,14 +30,14 @@
     auto.price &lt;- read.csv(file, header = TRUE, stringsAsFactors = FALSE)
 
     numcols &lt;- switch(
-      as.character((!exists(&quot;numcols&quot;) || is.na(numcols) || is.null(numcols))[1]), 
-      &quot;TRUE&quot; = { # if numcols does not exist or is not populated (&quot;TRUE&quot;), 
+      as.character((!exists(&quot;numcols&quot;) || is.na(numcols) || is.null(numcols))[1]),
+      &quot;TRUE&quot; = { # if numcols does not exist or is not populated (&quot;TRUE&quot;),
         # use these defaults:
         c(&#39;price&#39;, &#39;bore&#39;, &#39;stroke&#39;, &#39;horsepower&#39;, &#39;peak.rpm&#39;)
       }, # else use existing values
       numcols)
     print(c(&quot;numeric columns:&quot;, numcols))
-    
+
     for(col in c(&#39;price&#39;, &#39;bore&#39;, &#39;stroke&#39;, &#39;horsepower&#39;, &#39;peak.rpm&#39;)){
         for (idx in (1:length(auto.price[,col]))) {
           temp = auto.price[idx,col]
@@ -47,56 +47,56 @@
             print(c(col, idx, auto.price[idx,col]))
           }
         }
-      
+
         ## Coerce some character columns to numeric
         auto.price[,col] = as.numeric(auto.price[,col])
     }
 
-    ## Remove cases or rows with missing values. 
-    ## Keep the rows which do not have NAs. 
+    ## Remove cases or rows with missing values.
+    ## Keep the rows which do not have NAs.
     auto.price = auto.price[complete.cases(auto.price[, numcols]), ]
-    
+
     ## Drop some unneeded columns
     auto.price[,&#39;symboling&#39;] = NULL
     auto.price[,&#39;normalized.losses&#39;] = NULL
-    
+
     return(auto.price)
 }
 
-cat_cols &lt;- c(&#39;fuel.type&#39;, &#39;aspiration&#39;, &#39;num.of.doors&#39;, &#39;body.style&#39;, 
+cat_cols &lt;- c(&#39;fuel.type&#39;, &#39;aspiration&#39;, &#39;num.of.doors&#39;, &#39;body.style&#39;,
             &#39;drive.wheels&#39;, &#39;engine.location&#39;, &#39;engine.type&#39;, &#39;num.of.cylinders&#39;)
 
 plotcols &lt;- c(&#39;price&#39;, &#39;city.mpg&#39;, &#39;curb.weight&#39;, &#39;engine.size&#39;, &#39;horsepower&#39;, &#39;fuel.type&#39;)
 
 auto_prices &lt;- read.auto()</code></pre>
-<pre><code>## [1] &quot;numeric columns:&quot; &quot;price&quot;            &quot;bore&quot;             &quot;stroke&quot;          
-## [5] &quot;horsepower&quot;       &quot;peak.rpm&quot;        
-## [1] &quot;price&quot; &quot;10&quot;    NA     
-## [1] &quot;price&quot; &quot;45&quot;    NA     
-## [1] &quot;price&quot; &quot;46&quot;    NA     
-## [1] &quot;price&quot; &quot;130&quot;   NA     
-## [1] &quot;bore&quot; &quot;56&quot;   NA    
-## [1] &quot;bore&quot; &quot;57&quot;   NA    
-## [1] &quot;bore&quot; &quot;58&quot;   NA    
-## [1] &quot;bore&quot; &quot;59&quot;   NA    
-## [1] &quot;stroke&quot; &quot;56&quot;     NA      
-## [1] &quot;stroke&quot; &quot;57&quot;     NA      
-## [1] &quot;stroke&quot; &quot;58&quot;     NA      
-## [1] &quot;stroke&quot; &quot;59&quot;     NA      
-## [1] &quot;horsepower&quot; &quot;131&quot;        NA          
-## [1] &quot;horsepower&quot; &quot;132&quot;        NA          
-## [1] &quot;peak.rpm&quot; &quot;131&quot;      NA        
+<pre><code>## [1] &quot;numeric columns:&quot; &quot;price&quot;            &quot;bore&quot;             &quot;stroke&quot;
+## [5] &quot;horsepower&quot;       &quot;peak.rpm&quot;
+## [1] &quot;price&quot; &quot;10&quot;    NA
+## [1] &quot;price&quot; &quot;45&quot;    NA
+## [1] &quot;price&quot; &quot;46&quot;    NA
+## [1] &quot;price&quot; &quot;130&quot;   NA
+## [1] &quot;bore&quot; &quot;56&quot;   NA
+## [1] &quot;bore&quot; &quot;57&quot;   NA
+## [1] &quot;bore&quot; &quot;58&quot;   NA
+## [1] &quot;bore&quot; &quot;59&quot;   NA
+## [1] &quot;stroke&quot; &quot;56&quot;     NA
+## [1] &quot;stroke&quot; &quot;57&quot;     NA
+## [1] &quot;stroke&quot; &quot;58&quot;     NA
+## [1] &quot;stroke&quot; &quot;59&quot;     NA
+## [1] &quot;horsepower&quot; &quot;131&quot;        NA
+## [1] &quot;horsepower&quot; &quot;132&quot;        NA
+## [1] &quot;peak.rpm&quot; &quot;131&quot;      NA
 ## [1] &quot;peak.rpm&quot; &quot;132&quot;      NA</code></pre>
 <pre class="r"><code>print(&quot;all auto columns:&quot;)</code></pre>
 <pre><code>## [1] &quot;all auto columns:&quot;</code></pre>
 <pre class="r"><code>colnames(auto_prices)</code></pre>
-<pre><code>##  [1] &quot;make&quot;              &quot;fuel.type&quot;         &quot;aspiration&quot;       
-##  [4] &quot;num.of.doors&quot;      &quot;body.style&quot;        &quot;drive.wheels&quot;     
-##  [7] &quot;engine.location&quot;   &quot;wheel.base&quot;        &quot;length&quot;           
-## [10] &quot;width&quot;             &quot;height&quot;            &quot;curb.weight&quot;      
-## [13] &quot;engine.type&quot;       &quot;num.of.cylinders&quot;  &quot;engine.size&quot;      
-## [16] &quot;fuel.system&quot;       &quot;bore&quot;              &quot;stroke&quot;           
-## [19] &quot;compression.ratio&quot; &quot;horsepower&quot;        &quot;peak.rpm&quot;         
+<pre><code>##  [1] &quot;make&quot;              &quot;fuel.type&quot;         &quot;aspiration&quot;
+##  [4] &quot;num.of.doors&quot;      &quot;body.style&quot;        &quot;drive.wheels&quot;
+##  [7] &quot;engine.location&quot;   &quot;wheel.base&quot;        &quot;length&quot;
+## [10] &quot;width&quot;             &quot;height&quot;            &quot;curb.weight&quot;
+## [13] &quot;engine.type&quot;       &quot;num.of.cylinders&quot;  &quot;engine.size&quot;
+## [16] &quot;fuel.system&quot;       &quot;bore&quot;              &quot;stroke&quot;
+## [19] &quot;compression.ratio&quot; &quot;horsepower&quot;        &quot;peak.rpm&quot;
 ## [22] &quot;city.mpg&quot;          &quot;highway.mpg&quot;       &quot;price&quot;</code></pre>
 <pre class="r"><code>head(auto_prices)</code></pre>
 <pre><code>##          make fuel.type aspiration num.of.doors  body.style drive.wheels
@@ -154,57 +154,57 @@ auto_prices &lt;- read.auto()</code></pre>
 ##  $ highway.mpg      : int  27 27 26 30 22 25 25 25 20 29 ...
 ##  $ price            : num  13495 16500 16500 13950 17450 ...</code></pre>
 <pre class="r"><code>summary(auto_prices)</code></pre>
-<pre><code>##      make            fuel.type          aspiration        num.of.doors      
-##  Length:195         Length:195         Length:195         Length:195        
-##  Class :character   Class :character   Class :character   Class :character  
-##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-##                                                                             
-##                                                                             
-##                                                                             
-##   body.style        drive.wheels       engine.location      wheel.base   
-##  Length:195         Length:195         Length:195         Min.   : 86.6  
-##  Class :character   Class :character   Class :character   1st Qu.: 94.5  
-##  Mode  :character   Mode  :character   Mode  :character   Median : 97.0  
-##                                                           Mean   : 98.9  
-##                                                           3rd Qu.:102.4  
-##                                                           Max.   :120.9  
-##      length          width           height       curb.weight  
-##  Min.   :141.1   Min.   :60.30   Min.   :47.80   Min.   :1488  
-##  1st Qu.:166.3   1st Qu.:64.05   1st Qu.:52.00   1st Qu.:2145  
-##  Median :173.2   Median :65.40   Median :54.10   Median :2414  
-##  Mean   :174.3   Mean   :65.89   Mean   :53.86   Mean   :2559  
-##  3rd Qu.:184.1   3rd Qu.:66.90   3rd Qu.:55.65   3rd Qu.:2944  
-##  Max.   :208.1   Max.   :72.00   Max.   :59.80   Max.   :4066  
-##  engine.type        num.of.cylinders    engine.size    fuel.system       
-##  Length:195         Length:195         Min.   : 61.0   Length:195        
-##  Class :character   Class :character   1st Qu.: 98.0   Class :character  
-##  Mode  :character   Mode  :character   Median :120.0   Mode  :character  
-##                                        Mean   :127.9                     
-##                                        3rd Qu.:145.5                     
-##                                        Max.   :326.0                     
-##       bore           stroke     compression.ratio   horsepower   
-##  Min.   :2.540   Min.   :2.07   Min.   : 7.00     Min.   : 48.0  
-##  1st Qu.:3.150   1st Qu.:3.11   1st Qu.: 8.50     1st Qu.: 70.0  
-##  Median :3.310   Median :3.29   Median : 9.00     Median : 95.0  
-##  Mean   :3.329   Mean   :3.25   Mean   :10.19     Mean   :103.3  
-##  3rd Qu.:3.590   3rd Qu.:3.41   3rd Qu.: 9.40     3rd Qu.:116.0  
-##  Max.   :3.940   Max.   :4.17   Max.   :23.00     Max.   :262.0  
-##     peak.rpm       city.mpg      highway.mpg        price      
-##  Min.   :4150   Min.   :13.00   Min.   :16.00   Min.   : 5118  
-##  1st Qu.:4800   1st Qu.:19.50   1st Qu.:25.00   1st Qu.: 7756  
-##  Median :5100   Median :25.00   Median :30.00   Median :10245  
-##  Mean   :5099   Mean   :25.37   Mean   :30.84   Mean   :13248  
-##  3rd Qu.:5500   3rd Qu.:30.00   3rd Qu.:35.00   3rd Qu.:16509  
+<pre><code>##      make            fuel.type          aspiration        num.of.doors
+##  Length:195         Length:195         Length:195         Length:195
+##  Class :character   Class :character   Class :character   Class :character
+##  Mode  :character   Mode  :character   Mode  :character   Mode  :character
+##
+##
+##
+##   body.style        drive.wheels       engine.location      wheel.base
+##  Length:195         Length:195         Length:195         Min.   : 86.6
+##  Class :character   Class :character   Class :character   1st Qu.: 94.5
+##  Mode  :character   Mode  :character   Mode  :character   Median : 97.0
+##                                                           Mean   : 98.9
+##                                                           3rd Qu.:102.4
+##                                                           Max.   :120.9
+##      length          width           height       curb.weight
+##  Min.   :141.1   Min.   :60.30   Min.   :47.80   Min.   :1488
+##  1st Qu.:166.3   1st Qu.:64.05   1st Qu.:52.00   1st Qu.:2145
+##  Median :173.2   Median :65.40   Median :54.10   Median :2414
+##  Mean   :174.3   Mean   :65.89   Mean   :53.86   Mean   :2559
+##  3rd Qu.:184.1   3rd Qu.:66.90   3rd Qu.:55.65   3rd Qu.:2944
+##  Max.   :208.1   Max.   :72.00   Max.   :59.80   Max.   :4066
+##  engine.type        num.of.cylinders    engine.size    fuel.system
+##  Length:195         Length:195         Min.   : 61.0   Length:195
+##  Class :character   Class :character   1st Qu.: 98.0   Class :character
+##  Mode  :character   Mode  :character   Median :120.0   Mode  :character
+##                                        Mean   :127.9
+##                                        3rd Qu.:145.5
+##                                        Max.   :326.0
+##       bore           stroke     compression.ratio   horsepower
+##  Min.   :2.540   Min.   :2.07   Min.   : 7.00     Min.   : 48.0
+##  1st Qu.:3.150   1st Qu.:3.11   1st Qu.: 8.50     1st Qu.: 70.0
+##  Median :3.310   Median :3.29   Median : 9.00     Median : 95.0
+##  Mean   :3.329   Mean   :3.25   Mean   :10.19     Mean   :103.3
+##  3rd Qu.:3.590   3rd Qu.:3.41   3rd Qu.: 9.40     3rd Qu.:116.0
+##  Max.   :3.940   Max.   :4.17   Max.   :23.00     Max.   :262.0
+##     peak.rpm       city.mpg      highway.mpg        price
+##  Min.   :4150   Min.   :13.00   Min.   :16.00   Min.   : 5118
+##  1st Qu.:4800   1st Qu.:19.50   1st Qu.:25.00   1st Qu.: 7756
+##  Median :5100   Median :25.00   Median :30.00   Median :10245
+##  Mean   :5099   Mean   :25.37   Mean   :30.84   Mean   :13248
+##  3rd Qu.:5500   3rd Qu.:30.00   3rd Qu.:35.00   3rd Qu.:16509
 ##  Max.   :6600   Max.   :49.00   Max.   :54.00   Max.   :45400</code></pre>
 <pre class="r"><code>plot_bars &lt;- function(df){
     options(repr.plot.width=4, repr.plot.height=3.5) # Set the initial plot area dimensions
-  
+
     print(&quot;character columns:&quot;)
     for(col in colnames(df)){
         if(is.character(df[,col])){
             print(col)
-            p &lt;- ggplot(df, aes_string(col)) + 
-                       geom_bar(alpha = 0.6) + 
+            p &lt;- ggplot(df, aes_string(col)) +
+                       geom_bar(alpha = 0.6) +
                        theme(axis.text.x = element_text(angle = 90, hjust = 1))
             print(p)
         }
@@ -237,7 +237,7 @@ plot_bars(auto_prices)</code></pre>
     options(repr.plot.width=4, repr.plot.height=3) # Set the initial plot area dimensions
     for(col in plotcols){
         #if(is.numeric(df[,col])){
-            p &lt;- ggplot(df, aes_string(col)) + 
+            p &lt;- ggplot(df, aes_string(col)) +
                        geom_density(color = &#39;blue&#39;) +
                        geom_rug()
             print(p)
@@ -250,7 +250,7 @@ plot_dist(auto_prices, plotcols)</code></pre>
 <pre class="r"><code>plot_scatter_t &lt;- function(df, cols, col_y = &#39;price&#39;, alpha = 1.0){
     options(repr.plot.width=4, repr.plot.height=3.5) # Set the initial plot area dimensions
     for(col in cols){
-        p &lt;- ggplot(df, aes_string(col, col_y)) + 
+        p &lt;- ggplot(df, aes_string(col, col_y)) +
                    geom_point(alpha = alpha) +
                    ggtitle(paste(&#39;Scatter plot of&#39;, col_y, &#39;vs.&#39;, col))
         print(p)
@@ -262,7 +262,7 @@ plot_scatter_t(auto_prices, plotcols, alpha = 0.2)</code></pre>
 <pre class="r"><code>plot_hex &lt;- function(df, cols, col_y = &#39;price&#39;, bins = 30){
     options(repr.plot.width=4, repr.plot.height=3.5) # Set the initial plot area dimensions
     for(col in cols){
-        p &lt;- ggplot(df, aes_string(col, col_y)) + 
+        p &lt;- ggplot(df, aes_string(col, col_y)) +
                    geom_hex(show.legend = TRUE, bins = bins) +
                    ggtitle(paste(&#39;2-D hexbin plot of&#39;, col_y, &#39;vs.&#39;, col))
         print(p)
@@ -274,7 +274,7 @@ plot_hex(auto_prices, plotcols, bins = 10)</code></pre>
 <pre class="r"><code>plot_box &lt;- function(df, cols, col_y = &#39;price&#39;){
     options(repr.plot.width=4, repr.plot.height=3.5) # Set the initial plot area dimensions
     for(col in cols){
-        p &lt;- ggplot(df, aes_string(col, col_y)) + 
+        p &lt;- ggplot(df, aes_string(col, col_y)) +
                    geom_boxplot() +
                    ggtitle(paste(&#39;Box plot of&#39;, col, &#39;vs.&#39;, col_y))
         print(p)
@@ -286,7 +286,7 @@ plot_box(auto_prices, cat_cols)</code></pre>
 <pre class="r"><code>plot_violin &lt;- function(df, cols, col_y = &#39;price&#39;, bins = 30){
     options(repr.plot.width=4, repr.plot.height=3.5) # Set the initial plot area dimensions
     for(col in cols){
-        p &lt;- ggplot(df, aes_string(col, col_y)) + 
+        p &lt;- ggplot(df, aes_string(col, col_y)) +
                    geom_violin() +
                    ggtitle(paste(&#39;Violin plot of&#39;, col, &#39;vs.&#39;, col_y))
         print(p)
@@ -298,7 +298,7 @@ plot_violin(auto_prices, cat_cols)</code></pre>
 <pre class="r"><code>plot_scatter_sp &lt;- function(df, cols, col_y = &#39;price&#39;, alpha = 1.0){
     options(repr.plot.width=5, repr.plot.height=3.5) # Set the initial plot area dimensions
     for(col in cols){
-        p &lt;- ggplot(df, aes_string(col, col_y)) + 
+        p &lt;- ggplot(df, aes_string(col, col_y)) +
                    geom_point(aes(shape = factor(fuel.type)), alpha = alpha) +
                    ggtitle(paste(&#39;Scatter plot of&#39;, col_y, &#39;vs.&#39;, col, &#39;\n with shape by fuel type&#39;))
         print(p)
@@ -311,7 +311,7 @@ plot_scatter_sp(auto_prices, plotcols, alpha = 0.2)</code></pre>
     options(repr.plot.width=5, repr.plot.height=3.5) # Set the initial plot area dimensions
     df$curb.weight.2 = df$curb.weight**2
     for(col in cols){
-        p = ggplot(df, aes_string(col, col_y)) + 
+        p = ggplot(df, aes_string(col, col_y)) +
                    geom_point(aes(shape = factor(fuel.type), size = curb.weight.2), alpha = alpha) +
                    ggtitle(paste(&#39;Scatter plot of&#39;, col_y, &#39;vs.&#39;, col, &#39;\n with shape by fuel type&#39;))
         print(p)
@@ -324,10 +324,10 @@ plot_scatter_sp_sz(auto_prices, plotcols, alpha = 0.1)</code></pre>
     options(repr.plot.width=5, repr.plot.height=3.5) # Set the initial plot area dimensions
     df$curb.weight.2 = df$curb.weight**2
     for(col in cols){
-        p = ggplot(df, aes_string(col, col_y)) + 
-                   geom_point(aes(shape = factor(fuel.type), size = curb.weight.2, color = aspiration), 
+        p = ggplot(df, aes_string(col, col_y)) +
+                   geom_point(aes(shape = factor(fuel.type), size = curb.weight.2, color = aspiration),
                               alpha = alpha) +
-                   ggtitle(paste(&#39;Scatter plot of&#39;, col_y, &#39;vs.&#39;, col, 
+                   ggtitle(paste(&#39;Scatter plot of&#39;, col_y, &#39;vs.&#39;, col,
                                  &#39;\n with shape by fuel type&#39;,
                                  &#39;\n and color by aspiration&#39;))
         print(p)
