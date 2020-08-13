@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="/sveltr/">
+  <base href="/">
   <title>My new blogdown site</title>
 
-  <link href="/sveltr/global.css" rel="stylesheet">
+  <link href="/global.css" rel="stylesheet">
 
-  <link href="/sveltr/main.css" rel="stylesheet">
+  <link href="/main.css" rel="stylesheet">
 
 
 </head>
@@ -23,15 +23,15 @@
   <main>
 
 
-<div id="uni-sol">
-
+<div id="vizr-app" role="main" style="width: 100%; min-width: 800px;">
+<p> </p>
 </div>
 <div id="visualizing-r-data-with-sveltr" class="section level2">
-<h2>Visualizing R Data with <a href="https://github.com/dancingfrog/sveltr">Sveltr</a></h2>
+<h2>Visualizing R Data with <a href="https://github.com/dancingfrog/sveltr">SveltR</a></h2>
 <p>If the output target of your Rmd (R Markdown) content is HTML, R has some methods for turning R data into JavaScript or JSON data and printing the results within HTML tags.
 <br />
 <br />
-<img src="/sveltr/post/data/heightmap-small.png" style="float: right; width:256px; padding: 1%;" />
+<img src="/post/data/heightmap-small.png" style="float: right; width:256px; padding: 1%;" />
 After using R to read each pixel of this heightmap, the table (data.frame) is written to json …
 <br />
 <br />
@@ -48,22 +48,40 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
 <p><br />
 <br />
 <br /></p>
-<p>Note the <code>type=&quot;application/json&quot;</code> attribute, which prevents the browser from evaluating the contents of the <code>&lt;script&gt;</code> tag as JavaScript (if that is intended) and allows some other code block to call:</p>
+<p>Note the <code>type="application/json"</code> attribute, which prevents the browser from evaluating the contents of the <code>&lt;script&gt;</code> tag as JavaScript (if that is intended) and allows some other code block to call:</p>
 <pre><code>&lt;script&gt;
   var data = JSON.parse(document.getElementById(&#39;gl_data_in_html&#39;).children[0].innerHTML);
 &lt;/script&gt;</code></pre>
 <p><br /></p>
-<p>Here’s the full source of the app.</p>
+<p>Then that same data can be used specify dimensions of the individual blocks in <a href="https://github.com/Real-Currents/SvelteGL/tree/real/currents"><code>@sveltejs/gl</code></a>. Here’s the full source of the app.</p>
 <p><code>VizRApp.svelte</code>:</p>
 <pre><code>&lt;script&gt;
     import { onMount } from &#39;svelte&#39;;
     import * as GL from &#39;@sveltejs/gl&#39;;
-    import NavigationControls from &#39;./components/NavigationControls.svelte&#39;;
+    import Controls from &#39;./components/Controls.svelte&#39;;
 
     export let title;
 
+    let color = &#39;#ff3e00&#39;;
+
+    const light = {};
+
+    let w = 1;
+    let h = 1;
+    let d = 1;
+
+    let webgl;
+
     export let options = {
         labels: [],
+        values: []
+    };
+
+    export let ranges = {
+        labels: [ &quot;width&quot;, &quot;height&quot;, &quot;depth&quot; ],
+        min: [ 0.1, 0.1, 0.1 ],
+        max: [ 5.0, 5.0 , 5.0 ],
+        step: [ 0.1, 0.1, 0.1 ],
         values: []
     };
 
@@ -75,8 +93,6 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
         console.log(&quot;location: &quot;, loc, &quot;\n&quot;, &quot;target: &quot;, tgt);
         return &quot;&quot;;
     };
-
-    export let color = &#39;#ff3e00&#39;;
 
     function adjustColor (clr, height = 1) {
         const r = parseInt(&#39;0x&#39; + clr.substr(1, 2), 16),
@@ -102,14 +118,6 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
     }
 
     console.log(heightmap);
-
-    let w = 1;
-    let h = 1;
-    let d = 1;
-
-    const light = {};
-
-    let webgl;
 
 
     /* This is a helper callback to bind custom uniforms/attributes
@@ -141,6 +149,14 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
             light.x = 3 * Math.sin(Date.now() * 0.001);
             light.y = 2.5 + 2 * Math.sin(Date.now() * 0.0004);
             light.z = 3 * Math.cos(Date.now() * 0.002);
+
+            if (ranges[&#39;values&#39;].length &gt; 0) {
+                w = ranges[&#39;values&#39;][0];
+                h = ranges[&#39;values&#39;][1];
+                d = ranges[&#39;values&#39;][2];
+            } else {
+                ranges[&#39;values&#39;] = [ w, h, d ];
+            }
         };
 
         loop();
@@ -153,12 +169,6 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
     .controls {
         margin-top: -160px;
         height: 128px;
-    }
-
-    @media screen and (max-width: 480px) {
-        .controls {
-            margin-top: 8px;
-        }
     }
 &lt;/style&gt;
 
@@ -185,7 +195,7 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
         {/each}
     {/each}
 
-    &lt;!-- moving light --&gt;
+        &lt;!-- moving light --&gt;
     &lt;GL.Group location={[light.x,light.y,light.z]}&gt;
         &lt;GL.Mesh
                 geometry={GL.sphere({ turns: 36, bands: 36 })}
@@ -202,42 +212,27 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
     &lt;/GL.Group&gt;
 &lt;/GL.Scene&gt;
 
-&lt;NavigationControls
+&lt;Controls
         bind:init={navControlInit}
-        bind:optionFlags={options}
+        bind:color={color}
+        bind:options={options}
+        bind:rangeOptions={ranges}
+        bind:rangeValues={ranges.values}
         bind:viewLocation={location}
         bind:viewTarget={target}
         title={title}
-        on:move={(event) =&gt; updateWorld(event)}/&gt;
-
-&lt;div class=&quot;controls&quot;&gt;
-    &lt;label&gt;
-        &lt;input type=&quot;color&quot; style=&quot;height: 40px&quot; bind:value={color}&gt;
-    &lt;/label&gt;
-
-    &lt;label&gt;
-        &lt;input type=&quot;range&quot; bind:value={w} min={0.1} max={5} step={0.1}&gt; width ({w})
-    &lt;/label&gt;
-
-    &lt;label&gt;
-        &lt;input type=&quot;range&quot; bind:value={h} min={0.1} max={5} step={0.1}&gt; height ({h})
-    &lt;/label&gt;
-
-    &lt;label&gt;
-        &lt;input type=&quot;range&quot; bind:value={d} min={0.1} max={5} step={0.1}&gt; depth ({d})
-    &lt;/label&gt;
-&lt;/div&gt;</code></pre>
+        on:move={(event) =&gt; updateWorld(event)}/&gt;</code></pre>
 <p><br /></p>
-<p><code>NavigationControls.svelte</code>:</p>
+<p><code>Controls.svelte</code>:</p>
 <pre><code>&lt;script&gt;
     import {  createEventDispatcher } from &#39;svelte&#39;;
 
     export let title;
     export let color = &#39;#ff3e00&#39;;
 
-    let navContext;
-
-    export let optionFlags = [];
+    export let options = [];
+    export let rangeOptions = [];
+    export let rangeValues = [];
 
     export let viewLocation, viewTarget;
 
@@ -247,33 +242,57 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
 
     let mouse_x = 0, mouse_y = 0, mouse_down = false, mouse_disabled = false;
 
+    let navContext;
+
     let sinceLastMovementEvent = 0;
 
+    let isFullscreen = false;
+
+    let toggleFullscreen = function () {};
+
     export const init = function () {
-        console.log(&quot;Initializing Navigation Controls...&quot;);
+        console.log(&quot;Initializing Controls...&quot;);
+
+        document.querySelectorAll(&#39;.controls h4&#39;).forEach(c =&gt; {
+            console.log(c);
+
+            const scrollLength = 3 * window.innerHeight / 4;
+            c.addEventListener(&#39;click&#39;, function (event) {
+                let scrollInterval = 33;
+                let scrollTime = 533;
+                let scrolled = 0
+
+                const startScroll = setInterval(function () {
+                    if (scrolled &lt; scrollLength) {
+                        scroll({top: scrolled, left: 0});
+                    }
+                    scrolled += Math.floor(scrollLength / (scrollTime / scrollInterval));
+                }, scrollInterval);
+
+            });
+
+            c.title = &quot;Click To See Article&quot;;
+        });
 
         document.querySelectorAll(&#39;canvas&#39;).forEach(c =&gt; {
             console.log(c);
-            c.addEventListener(&#39;wheel&#39;, function (event) {
-                const wheelEvent = (event || window[&#39;event&#39;]);
 
-                if (((new Date()).getTime() - sinceLastMovementEvent) &gt; 66) {
-
-                    sinceLastMovementEvent = (new Date()).getTime();
-
-                    if (wheelEvent.deltaY &lt; 0) {
-                        dispatch(&#39;up&#39;);
-                    } else if (wheelEvent.deltaY &gt; 0) {
-                        dispatch(&#39;down&#39;);
+            toggleFullscreen = () =&gt; {
+                if (!isFullscreen) {
+                    isFullscreen = true;
+                    c.parentElement.className += &quot; fullscreen&quot;
+                    for (const control of document.getElementsByClassName(&quot;controls&quot;)) {
+                        control.className += &quot; fullscreen&quot;;
+                    }
+                } else {
+                    isFullscreen = false;
+                    c.parentElement.className = c.parentElement.className.replace(&quot;fullscreen&quot;, &#39;&#39;);
+                    for (const control of document.getElementsByClassName(&quot;controls&quot;)) {
+                        control.className = control.className.replace(&quot;fullscreen&quot;, &#39;&#39;);
                     }
                 }
+            }
 
-                wheelEvent.preventDefault();
-            });
-        })
-
-        document.querySelectorAll(&#39;canvas&#39;).forEach(c =&gt; {
-            console.log(c);
             c.addEventListener(&#39;keydown&#39;, function (event) {
                 const kbEvent = (event || window[&#39;event&#39;]); // cross-browser shenanigans
 
@@ -328,21 +347,65 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
                     }
                 }
             });
+
+            c.addEventListener(&#39;wheel&#39;, function (event) {
+                const wheelEvent = (event || window[&#39;event&#39;]);
+
+                if (((new Date()).getTime() - sinceLastMovementEvent) &gt; 66) {
+
+                    sinceLastMovementEvent = (new Date()).getTime();
+
+                    if (wheelEvent.deltaY &lt; 0) {
+                        dispatch(&#39;up&#39;);
+                    } else if (wheelEvent.deltaY &gt; 0) {
+                        dispatch(&#39;down&#39;);
+                    }
+                }
+
+                // wheelEvent.preventDefault();
+            });
         });
     };
 &lt;/script&gt;
 
-&lt;div class=&quot;controls&quot;&gt;
+&lt;style&gt;
+    .controls h4 {
+        color: black;
+        cursor: pointer;
+        pointer-events: all;
+    }
+&lt;/style&gt;
+
+&lt;div class=&quot;controls right&quot;&gt;
 
     &lt;h4&gt;{ title }&lt;/h4&gt;
 
-    {#if (optionFlags[&#39;labels&#39;].length &gt; 0 &amp;&amp; optionFlags[&#39;values&#39;].length &gt; 0)}
-        {#each optionFlags[&#39;values&#39;] as option, o}
-        &lt;label&gt;
-            &lt;input type=&quot;checkbox&quot; bind:checked={option} /&gt; {optionFlags[&#39;labels&#39;][o]}
-        &lt;/label&gt;&lt;br /&gt;
+    {#if (options[&#39;labels&#39;].length &gt; 0 &amp;&amp; options[&#39;values&#39;].length &gt; 0)}
+        {#each options[&#39;values&#39;] as option, o}
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; bind:checked={option.value} /&gt; {options[&#39;labels&#39;][o]}
+            &lt;/label&gt;&lt;br /&gt;
         {/each}
     {/if}
+
+    {#if (!!color)}
+        &lt;label&gt;
+            &lt;input type=&quot;color&quot; style=&quot;height: 40px&quot; bind:value={color}&gt;
+        &lt;/label&gt;
+    {/if}
+
+    {#if (rangeOptions[&#39;labels&#39;].length &gt; 0 &amp;&amp; rangeValues.length &gt; 0)}
+        {#each rangeValues as option, o}
+            &lt;label&gt;
+                &lt;input type=&quot;range&quot; bind:value={option} min={rangeOptions[&#39;min&#39;][o]} max={rangeOptions[&#39;max&#39;][o]} step={rangeOptions[&#39;step&#39;][o]} /&gt;&lt;br /&gt;
+                {rangeOptions[&#39;labels&#39;][o]}({option})
+            &lt;/label&gt;&lt;br /&gt;
+        {/each}
+    {/if}
+
+    &lt;label&gt;
+        &lt;button on:click=&quot;{toggleFullscreen}&quot;&gt;{((isFullscreen) ? &#39;minimize&#39; : &#39;maximize&#39;)}&lt;/button&gt;
+    &lt;/label&gt;
 
 &lt;/div&gt;</code></pre>
 </div>
@@ -354,7 +417,7 @@ After using R to read each pixel of this heightmap, the table (data.frame) is wr
 
 
 
-  <script src="/sveltr/main.js"></script>
+  <script src="/main.js"></script>
 
 
 </body>
