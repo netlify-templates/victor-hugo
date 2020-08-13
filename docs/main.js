@@ -1576,7 +1576,7 @@ var app = (function (exports) {
     	let { process_extra_shader_components } = $$props; // (gl, material) => {}
 
     	let draw = () => {
-    		
+
     	};
 
     	let camera_stores = {
@@ -1593,7 +1593,7 @@ var app = (function (exports) {
     			}
     		}
     	: () => {
-    			
+
     		};
 
     	const width = writable(1);
@@ -1715,7 +1715,7 @@ var app = (function (exports) {
     				return;
     			}
 
-    			
+
     			$$invalidate(12, pending = false);
 
     			// gl.clearColor(...bg, backgroundOpacity);
@@ -3399,7 +3399,7 @@ var app = (function (exports) {
     			rotate(dx * 0.003, dy * 0.003);
     			last_x = touch.clientX;
     			last_y = touch.clientY;
-    			
+
     		});
 
     		function handle_touchend(event) {
@@ -3662,7 +3662,7 @@ var app = (function (exports) {
     			gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, index, gl.STATIC_DRAW);
     			this.buffers.__index = buffer;
     		}
-    		
+
     		// Un-bind buffers
     		gl.bindBuffer(gl.ARRAY_BUFFER, null);
     		gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
@@ -3685,7 +3685,7 @@ var app = (function (exports) {
 
     			// Bind the position buffer.
     			const buffer = this.buffers[key];
-    			
+
     			// if (this.primitive = 'POINTS') console.log("enableVertexAttribArray on location ", key);
 
     			gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
@@ -5404,7 +5404,7 @@ var app = (function (exports) {
     	let isFullscreen = false;
 
     	let toggleFullscreen = function () {
-    		
+
     	};
 
     	const init = function () {
@@ -7291,7 +7291,7 @@ var app = (function (exports) {
             target: appElement,
             props: {
                 greeting:
-`Hooray 🎉 - you've built this with <a href='https://github.com/dancingfrog/sveltr' target='_blank'>Sveltr</a>!`
+`Hooray 🎉 - you've built this with <a href='https://github.com/Real-Currents/SveltR' target='_blank'>SveltR</a>!`
             }
         }) : {};
 

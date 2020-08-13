@@ -2,7 +2,7 @@
   "name": "sveltr",
   "version": "1.0.0",
   "description": "Sveltr is a blogdown boilerplate for creating truly epic visualizations!",
-  "repository": "dancingfrog/sveltr",
+  "repository": "https://github.com/Real-Currents/SveltR.git",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:_rollup && npm run build:blogdown",
