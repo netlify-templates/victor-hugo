@@ -71,6 +71,7 @@ plot(pressure)
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. Otherwise, the code chunk will be printed on the page, like this [`plotly`](https://plotly.com/r/getting-started/) example:
 
 ```{r plotly, echo = TRUE}
+options(warn = -1)
 library(plotly)
 fig <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
 fig
@@ -94,7 +95,7 @@ if (!require("rgeos")) {
 if (!require("sf")) {
   install.packages("sf")
 }
-options(warn=0)
+options(warn = 0)
 if (!require("maptools")) {
   install.packages("maptools")
 } else {
@@ -102,7 +103,7 @@ if (!require("maptools")) {
   require(sp)
   require(rgdal)
   require(rgeos)
-  options(warn=0)
+  options(warn = 0)
   require(maptools)
 
   data(wrld_simpl)
