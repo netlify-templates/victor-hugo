@@ -1,6 +1,6 @@
-# Sveltr
+# SveltR
 
-**A blogdown boilerplate for creating truly epic visualizations**, *inspired by Netlify's [Victor Hugo](https://github.com/netlify-templates/victor-hugo)*
+**A blogdown/svelte boilerplate for creating truly epic visualizations**, *inspired by Netlify's [Victor Hugo](https://github.com/netlify-templates/victor-hugo)*
 
 <a href="https://bookdown.org/yihui/blogdown" target="_blank">
     <img src="https://bookdown.org/yihui/blogdown/images/logo.png"
@@ -9,9 +9,9 @@
 </a>
 
 <a href="https://svelte.dev/" target="_blank">
-    <img src="https://svelte.dev/svelte-logo-outline.svg"
-         style="background-color:rgba(255, 32, 00, 0.1); border-radius:12px; border-color:#f30; max-width:80px;"
-         alt="blogdown logo" width="10%" align="right" />
+    <img src="docs/svelte.svg"
+         style="max-width: 80px; opacity: 0.25;"
+         alt="svelte logo" width="12%" align="right" />
 </a>
 
 This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine.

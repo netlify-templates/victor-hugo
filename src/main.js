@@ -30,7 +30,7 @@ export const techApp = (
     new TechApp({
         target: techAppElement,
         props: {
-            title: '🦊 Hello Svelte!'
+            title: '🦊 Hello SvelteJS!'
         }
     }) : {};
 

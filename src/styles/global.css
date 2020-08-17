@@ -71,8 +71,13 @@ button:focus {
     padding: 0;
 }
 
-.content main, .content * p {
+.content main, .content * .section div.section div, .content * .section div.section .section p {
+    text-align: center;
     width: 100%;
+}
+
+.content main, .content * div.section .plotly {
+    display: inline-block;
 }
 
 .content * .container * {

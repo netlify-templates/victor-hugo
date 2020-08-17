@@ -36,12 +36,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [Svelte](https://svelte.dev/) as your reactive app engine. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+This is a boilerplate for using [blogdown (R Markdown x Hugo)](https://github.com/rstudio/blogdown/) as a static site generator and [SvelteJS](https://svelte.dev/) as your reactive app engine. This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 <br />
 
 ## Enjoy!! 🦊
 
-This page is the product of an R Markdown document and an embedded Svelte app. The `<div id="test-app"></div>` HTML tag  embedded in this page contains the "test-app" id attribute which is a DOM element id that `TestApp.svelte` has been instructed to find in order to instantiate the interactive graphics above. To learn more about developing Svelte applications see <https://svelte.dev/tutorial/basics>. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This page is the product of an R Markdown document and an embedded Svelte app. The `<div id="tech-app"></div>` HTML tag  embedded in this page contains the "tech-app" id attribute which is a DOM element id that `TestApp.svelte` has been instructed to find in order to instantiate the interactive graphics above. To learn more about developing SvelteJS applications see <https://svelte.dev/tutorial/basics>. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 You can embed an R code chunk like this:
 
@@ -64,39 +64,37 @@ Filter(file.exists, r_profiles)
 
 You can also embed (static) plots, for example:
 
-```{r pressure, echo=FALSE}
+```{r pressure, echo = FALSE}
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. Otherwise, the code chunk will be printed on the page, like this [`plotly`](https://plotly.com/r/getting-started/) example:
+
+```{r plotly, echo = TRUE}
+options(warn = -1)
+if (!require("plotly")) {
+  install.packages(c("plotly"))
+  library(plotly)
+}
+fig <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+fig
+```
 
 <div class="r-mapping">
 Use R's geospatial packages to plot data on maps. For the following example, you will need to have installed the following native libraries on the host operating system:
 pandoc gdal geos proj udunits2:
 
-```{r mapping, echo=FALSE}
-options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ
-if (!require("sp")) {
-  install.packages("sp")
-}
-if (!require("rgdal")) {
-  install.packages("rgdal")
-}
-if (!require("rgeos")) {
-  install.packages("rgeos")
-}
-if (!require("sf")) {
-  install.packages("sf")
-}
-options(warn=0)
+```{r mapping, echo = FALSE}
+#options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ
+options(warn = 0)
 if (!require("maptools")) {
-  install.packages("maptools")
+  install.packages(c("maptools", "rgdal", "rgeos", "sf", "sp"))
 } else {
   options(warn=-1)
   require(sp)
   require(rgdal)
   require(rgeos)
-  options(warn=0)
+  options(warn = 0)
   require(maptools)
 
   data(wrld_simpl)

@@ -7,7 +7,7 @@ categories:
   - GL
 tags:
   - GL
-  - Svelte
+  - SvelteJS
   - SvelteGL
   - WebGL
 ---
