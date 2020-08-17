@@ -58,7 +58,7 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.1.4",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.4.0"
   },
   "resolutions": {
     "natives": "1.1.6"
