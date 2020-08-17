@@ -72,7 +72,10 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 ```{r plotly, echo = TRUE}
 options(warn = -1)
-library(plotly)
+if (!require("plotly")) {
+  install.packages(c("plotly"))
+  library(plotly)
+}
 fig <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
 fig
 ```
@@ -82,22 +85,10 @@ Use R's geospatial packages to plot data on maps. For the following example, you
 pandoc gdal geos proj udunits2:
 
 ```{r mapping, echo = FALSE}
-options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ
-if (!require("sp")) {
-  install.packages("sp")
-}
-if (!require("rgdal")) {
-  install.packages("rgdal")
-}
-if (!require("rgeos")) {
-  install.packages("rgeos")
-}
-if (!require("sf")) {
-  install.packages("sf")
-}
+#options(warn=-1)  # versions of GEOS runtime 3.7.2-CAPI-1.11.2 and GEOS at installation 3.7.1-CAPI-1.11.1 differ
 options(warn = 0)
 if (!require("maptools")) {
-  install.packages("maptools")
+  install.packages(c("maptools", "rgdal", "rgeos", "sf", "sp"))
 } else {
   options(warn=-1)
   require(sp)
