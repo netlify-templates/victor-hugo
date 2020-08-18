@@ -17,7 +17,7 @@ tags:
 </div>
 
 
-## Visualizing R Data with [SveltR](https://github.com/dancingfrog/sveltr)
+## Visualizing R Data with [SveltR](https://github.com/Real-Currents/SveltR)
 
 ```{r setup, include=FALSE}
 options(warn = -1)
