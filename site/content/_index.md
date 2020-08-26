@@ -52,7 +52,7 @@ introtext: Patient engagement has been called the blockbuster drug of the 21st c
 domains:
   listing:
       - title: For Health Systems
-        image: images/temp.jpg
+        image: images/sindhu.adi.jpg
         image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
         subtitle1: Reduce Readmissions
         description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions are needed. Leverage evidence based programs such as Heart Safe Motherhood that have reduced readmissions by 80%.
@@ -63,7 +63,7 @@ domains:
         is_even: false
         source: /healthsystem
       - title: For Researchers & Innovators
-        image: images/temp.jpg
+        image: images/researchers.jpg
         image_caption: Drs. David Asch, Kevin Volpp, Mitesh Patel, Scott Halpern, Shivan Mehta and Kit Delgado, Penn Medicine
         subtitle1: Design any interventional study
         description1: Innovation and research require flexibility. Integration with the EHR opens up additional opportunities. Trials can be run locally or virtually. Way to Health has run virtual studies across 50 states. 
