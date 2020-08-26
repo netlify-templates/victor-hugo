@@ -1,9 +1,14 @@
 {{ define "main" }}
 
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
+<div class="flex items-center justify-center h-screen">
+    <div>
+        <h1 class="text-4xl">Hugo with Webpack, Sass, PostCSS and TailwindCSS</h1>
+        
+        <h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
+        
+        <a href="{{ "/tech" | relURL }}">Check out the tech</a>
 
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
-
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
+    </div>
+</div>
 
 {{ end }}

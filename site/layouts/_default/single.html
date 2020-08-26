@@ -1,5 +1,9 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article class="content">
-  <main>{{- .Content -}}</main>
-</article>
+
+<div class="flex items-center justify-center h-screen">
+  <article class="content">
+    <main>{{- .Content -}}</main>
+  </article>
+</div>
+
 {{ end }}
