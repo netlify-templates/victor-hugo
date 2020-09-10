@@ -23,7 +23,21 @@ vision:
       image: /images/ehr.svg
       summary: >
         Good technology must join not just patient and physician journeys, but also their existing technology, such as legacy EHR systems i.e. be available  in the context of their life and their “workflow”. Tighter integration with EHRs is necessary. Health systems have spent millions deploying and customizing EHRs. They are looking for ways to maximize the ROI. This will be a platform available to all irrespective of the EHR of choice.
-        
+
+affiliations:
+  - name: Center for Health Care Innovation
+    logo: /images/various/chci3.png
+    url: https://healthcareinnovation.upenn.edu
+  - name: Center for Health Incentives and Behavioral Economics
+    logo: /images/various/chibe2.png
+    url: https://chibe.upenn.edu
+  - name: Nudge Unit
+    logo: /images/various/nudge.png
+    url: https://nudgeunit.upenn.edu
+  - name: Penn Medicine
+    logo: /images/various/penn_med.png
+    url: https://pennmedicine.org
+
 origins:
   heading: Origins
   para1: Drs. David Asch and Kevin Volpp conceptualized Way to Health back in 2010. It was born from their frustration around the lack of a platform to quickly develop, test and scale out their ideas to improve health care for patients.
@@ -33,6 +47,11 @@ origins:
 
 timeline:
   milestones:
+    - date: July 2020
+      icon: line-chart
+      iconcolor: blue
+      milestone: 280+ studies and 110,000+ patients
+      text: Way to Health is increasingly used in clinical programs and is central to Penn's COVID-19 response efforts. Programs such as COVID Watch, COVID Pulse, Results Reporting and many more get rolled out in record time. 
     - date: December 2019
       icon: trophy
       iconcolor: green

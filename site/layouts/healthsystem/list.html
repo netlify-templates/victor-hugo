@@ -11,14 +11,15 @@
 {{ $n1 := where .Site.Pages "Section" "projects" }}
 {{ $n2 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "Womens Health" }}
 {{ $n3 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "Surgery Solutions" }}
-{{ $n4 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "QI" }}
+{{ $n5 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "COVID-19 Response Solutions" }}
+{{ $n4 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "Quality, Safety and Patient Experience Solutions" }}
 
 {{ $womenshealth := $n1 | intersect $n2 }}
 {{ $surgery := $n1 | intersect $n3 }}
 {{ $qi := $n1 | intersect $n4 }}
 
 <div class="container mx-auto px-4">
-{{ with  .Params.solutions }}
+{{ with .Params.solutions }}
     {{ range  .solution }}
         <section class="py-8 px-4 pt-16 pb-16" id="{{ .id }}">
             <!-- <hr class="pt-16 pb-16"></hr> -->
@@ -29,11 +30,18 @@
                     {{ range first 3 $n2 }}
                         {{ partial "case-summary" . }}
                     {{ end }}
-                {{ else if eq .name "Surgery Solutions" }}
+                {{ end }}
+                {{ if eq .name "Surgery Solutions" }}
                     {{ range first 3 $n3 }}
                         {{ partial "case-summary" . }}
                     {{ end }}
-                {{ else }}
+                {{ end }}
+                {{ if eq .name "COVID-19 Response Solutions" }}
+                    {{ range first 3 $n5 }}
+                        {{ partial "case-summary" . }}
+                    {{ end }}
+                {{ end }}
+                {{ if eq .name "Quality, Safety and Patient Experience Solutions" }}
                     {{ range first 3 $n4 }}
                         {{ partial "case-summary" . }}
                     {{ end }}

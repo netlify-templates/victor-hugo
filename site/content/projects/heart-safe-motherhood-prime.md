@@ -18,7 +18,7 @@ summary: >
   University of North Carolina.
 features:
   - 
-    feature: Bi-directional texting
+    feature: Two-way Texting
   - 
     feature: Survey administration
 condition: Hypertension

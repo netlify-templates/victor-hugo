@@ -20,7 +20,7 @@ results:
       questions. 
 features:
   - feature: 'EPIC Integration'
-  - feature: 'Bi-directional Texting'
+  - feature: 'Two-way Texting'
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity

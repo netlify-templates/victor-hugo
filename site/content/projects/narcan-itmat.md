@@ -19,7 +19,7 @@ summary: >
   Library of Phila.
 features:
   - 
-    feature: Bi-directional texting
+    feature: Two-way Texting
   - 
     feature: Survey administration
   - 

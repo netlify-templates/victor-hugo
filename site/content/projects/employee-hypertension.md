@@ -17,7 +17,7 @@ results:
       Remote population health manage of patients, including medication
       management.
 features:
-  - feature: 'Bi-directional Texting '
+  - feature: 'Two-way Texting '
   - feature: 'Epic Integration '
 spotlight: 'false'
 condition: Hypertension

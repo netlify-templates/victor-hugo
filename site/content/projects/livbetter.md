@@ -27,7 +27,7 @@ label: Standard of Care
 image: /images/uploads/hsm.01.jpg
 features:
   - feature: 'Remote monitoring'
-  - feature: 'Bi-directional Texting'
+  - feature: 'Two-way Texting'
   - feature: 'EHR integration'  
 ---
 
