@@ -2,6 +2,7 @@
 
 {{ partial "splash-bg" . }}
 
+<div class="container mx-auto px-4">
 <section class="py-8 px-4 pt-16 pb-16" id="leadership">
 {{ with .Params.leadership }}
     <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .role }}</h2>
@@ -49,6 +50,6 @@
 {{ end }}
     </div>
 </section>
-
+</div>
 
 {{ partial "footer" . }}

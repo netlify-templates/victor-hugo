@@ -2,7 +2,7 @@
 <div class="md:flex mt-10 mb-10">
     <div class="md:flex-shrink-0">
         {{ if .Params.image }}
-        <img class="rounded-lg md:w-56" src="{{ .Params.image }}" >
+        <img class="rounded-lg w-full md:w-56" src="{{ .Params.image }}" >
         {{ else }}
         <h2 class="text-center md:w-56 text-4xl align-center">{{ .Params.journal }}</h2>
         {{ end }}
@@ -19,7 +19,7 @@
         {{ else }}
             <a href="{{ .Permalink }}" class="block mt-1 text-lg leading-tight font-semibold text-indigo-600 hover:underline">{{ .Params.title }}</a>
         {{ end }}
-        
+
         <p class="mt-2 text-gray-500">{{ .Params.authors }}</p>
         <p class="mt-2 text-gray-600">{{ .Params.summary }}</p>
     </div>
