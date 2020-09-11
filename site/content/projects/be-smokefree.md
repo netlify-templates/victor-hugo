@@ -20,7 +20,7 @@ features:
   - 
     feature: Financial incentives
   - 
-    feature: Bi-directional texting
+    feature: Two-way Texting
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity

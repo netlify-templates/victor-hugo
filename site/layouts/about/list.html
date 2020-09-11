@@ -47,14 +47,47 @@
 </section>
 </div>
 
-
 <div class="container mx-auto px-4">
-    <section class="py-8 px-4 pt-16 pb-16" id="vision">
-        <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Timeline</h2>
-        <p class="font-medium text-2xl mb-8 text-center">Our evolution</p>
+    <section class="py-12 px-4 mb-16 mt-16" id="affiliations">
+        <h2 class="text-4xl mb-2 text-center leading-tight font-heading">Affiliations</h2>
+        <p class="font-medium text-2xl mb-8 text-center">We work very closely with multiple renowned groups at Penn</p>
+        <div class="flex flex-wrap -mx-4 text-center">
+            {{ range .Params.affiliations}}
+            <div class="w-full lg:w-1/4 px-4 mb-8">
+                <div class="h-full">
+                    <a href=" {{ .url }}" target="_blank"><img class="mx-auto content-center" src="{{ .logo }}" alt=" "></a>
+                    {{/*  <div class="px-8">
+                        <h3 class="text-xl font-heading font-semibold">{{ .name }}</h3><span>{{ .description }}</span>
+                    </div>  */}}
+                </div>
+            </div>
+            {{ end }}
     </section>
+
 </div>
 
+<div class="container mx-auto px-4">
+    <section class="py-12 px-4 bg-indigo-100">
+        <h2 class="text-4xl mb-2 text-center leading-tight font-heading">Timeline</h2>
+        <p class="font-medium text-2xl mb-8 text-center">Our evolution</p>
+        <div>
+            {{ with .Params.timeline}}
+            <div class="flex flex-wrap items-center -mx-8">
+                {{ range .milestones }}
+                <div class="md:w-1/4 px-8 mb-8 border-gray-500">
+                    <p class=""> {{ .date }} </p>
+                    <h3 class="text-2xl mb-3 font-heading">{{.milestone}}</h3>
+                </div>
+                <div class="md:w-3/4 px-8 mb-8">
+                    {{/*  <h3 class="text-xl mb-3 font-heading">{{.milestone}}</h3>  */}}
+                    <p class="text-xl leading-relaxed">{{ .text }}</p>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </section>
+</div>
 </div>
 
 {{ partial "footer" . }}

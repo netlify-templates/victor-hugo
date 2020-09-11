@@ -18,7 +18,7 @@ summary: >
   monitoring and to reduce hospital utilization.
 features:
   - 
-    feature: Bi-directional texting
+    feature: Two-way Texting
   - 
     feature: Epic integration
   - 

@@ -37,7 +37,7 @@ outcome: Increased physical activity
 dedicatedpage: true
 label: Research 
 image: /images/uploads/hsm.01.jpg
-solution_area: QI
+solution_area: Quality, Safety and Patient Experience Solutions
 ---
 ## Background and Aim
 

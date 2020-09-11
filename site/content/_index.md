@@ -48,6 +48,7 @@ customers:
 introtitle: Human behavior is the final common pathway for nearly every advance in medicine
 introsubtitle: We bring behavioral science and patient engagement together to achieve measurable change.
 introtext: Patient engagement has been called the blockbuster drug of the 21st century. Current patient engagement tools focus on clinical protocols and ignore the human element. We grew from a need to research and apply behavioral science techniques specifically in healthcare.
+bgcol: bg-gray-100
 
 domains:
   listing:

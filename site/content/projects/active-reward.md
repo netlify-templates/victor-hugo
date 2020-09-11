@@ -34,7 +34,7 @@ outcome: Increased physical activity
 dedicatedpage: true
 label: Clinical 
 image: /images/uploads/hsm.01.jpg
-solution_area: Surgery Solutions
+solution_area: 
 ---
 ## Background
 

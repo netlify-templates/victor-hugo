@@ -1,0 +1,46 @@
+{{ partial "header" . }}
+
+{{ partial "splash-left" . }}
+
+{{ partial "text-left" . }}
+
+{{ with .Params.domains }}
+    {{ range .listing }}
+        {{ partial "section-right" . }}
+    {{ end }}
+{{ end }}
+
+<div class="bg-indigo-100">
+
+    {{ with .Site.GetPage "section" "platform" }}
+    {{ with .Params.modules }}
+    <div class="container mx-auto px-4">
+        <section class="py-12 px-4">
+            <div class="flex flex-wrap -mx-4">
+                {{ range first 6 .module }}
+                {{ range first 1 .listing }}
+                <div class="w-full md:w-1/3 px-4 mb-12 mt-12 md:mb-0">
+                    <div class="relative flex flex-col h-full p-8 shadow-md">
+                        <a href="/platform/#{{.id}}">
+                            <span
+                                class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .module_name }}</span>
+                        </a>
+                        <span class="uppercase font-semibold">{{ .subtitle }}</span>
+                        <p class="mt-4 mb-6 text-gray-600 leading-relaxed">{{ .description }}</p>
+                        {{/*  <a class="mt-auto text-blue-700 hover:underline" href="/platform">Learn More</a>  */}}
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+            <div class="mt-8 text-center">
+                <a class="inline-block py-4 px-8 mr-6 leading-none text-white bg-green-500 rounded shadow"
+                    href="/platform">View
+                    All</a>
+            </div>
+        </section>
+        {{ end }}
+    </div>
+</div>
+{{ partial "footer" . }}

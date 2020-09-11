@@ -1,8 +1,8 @@
 ---
-study_name: Enhanced Recovery After Surgery
+study_name: Reduce Opioid Usage
 date: '2019-01-25'
 area: clinical
-subdomain: Post-Op Spinal Surgery
+subdomain: Opioid Use
 authors:
   - authorimage: /images/uploads/ali_zarina_expert.jpg
     authorname: 'Zarina S. Ali, MD, MS'
@@ -20,8 +20,8 @@ results:
   - result: >-
       3x greater mobility on post-op day 0
 features:
-  - feature: Discharge Date Finder
-  - feature: Bi-Directional Texting
+  - feature: Two-way Texting
+  - feature: EHR Integration
 spotlight: true
 pubs:
   - pubURL: 'https://doi.org/10.3171/2018.9.SPINE18681'
@@ -34,6 +34,7 @@ outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
+solution_area: Surgery Solutions
 ---
 ## Background
 

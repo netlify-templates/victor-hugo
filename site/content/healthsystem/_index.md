@@ -27,6 +27,9 @@ solutions:
     - name: Quality, Safety and Patient Experience Solutions
       description: Solutions geared to improving patient experience, and ongoing quality and safety efforts
       id: patexp
+    - name: COVID-19 Response Solutions
+      description: Solutions geared to providing care to patients during the pandemic
+      id: covid
 modules_leadin:
   introtitle: Build your own intervention quickly
   introsubtitle: Way to Health capabilities are grouped into modules. Configure them to address your specific needs and combine them together to quickly build, test and deploy interventions. Choose your deployment model - pilot, standalone or scaled and EHR integrated.

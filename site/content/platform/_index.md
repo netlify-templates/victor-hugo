@@ -17,15 +17,11 @@ modules:
       listing:
         - subtitle: Two-way Texting
           module_name: Conversations
-          description: Communication with patients and / or study participants is key to engaging them in their health. You can choose from a variety of communication techniques or combine them in interesting ways tailored to a patient's behavior. Texts can be sent out based on set schedules and / or rules. These configuration rules can be as simple as responding with a personalized "Great job, John" or as complex as evaluating blood pressure values and generating with an in-basket message.
+          description: Communication with patients or study participants is key to engaging them. Choose from a variety of communication techniques or combine them tailored to a patient's behavior. Texts can be sent out based on set schedules and / or rules. These configuration rules can be as simple as responding with a personalized "Great job, John" or as complex as evaluating blood pressure values and generating an in-basket message to the physician.
           id: patcomm
         - subtitle: Survey Management
           module_name: Conversations
-          description: In cases where more data needs to be collected (demographics, symptoms, etc.), the system offers the ability to create a survey. You can either integrate the survey with Qualtrics or create your own survey from scratch using the built-in survey creation and deployment tool. These surveys can be sent out to patients based on specific schedules and simple or complex rules. Short surveys can be administrated over text as well. 
-          id: patcomm
-        - subtitle: Test
-          module_name: Conversations        
-          description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
+          description: In cases where more data needs to be collected (demographics, symptoms, etc.), the system offers the ability to create surveys. Create your own survey using the built-in survey creation and deployment tool. These surveys can be sent out to patients based on specific schedules and simple or complex rules. Short surveys can be administrated over text as well. 
           id: patcomm
       is_even: true
       id: patcomm
@@ -37,13 +33,9 @@ modules:
           module_name: Remote Monitoring
           description: The platform integrates directly with a number of biomedical devices to capture vitals directly from the patient / participant. The kinds of vitals captured include blood pressure, medication adherence, sleep tracking, weight, blood glucose and many more continue to be added. Additional devices are added quickly on request.
           id: remote
-        - subtitle: Patient Reported Outcomes (PROs)
+        - subtitle: Patient Reported Outcomes (PRO) Capture
           module_name: Remote Monitoring
           description: The system also allows patients to report their PROs, adverse events (AEs), symptoms and more via structured or unstructured conversations. These can be patient initiated and follow decision trees of your choosing. 
-          id: remote
-        - subtitle: Test
-          module_name: Remote Monitoring
-          description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
           id: remote
       is_even: false
       id: remote
@@ -59,25 +51,17 @@ modules:
           module_name: Randomized Control Trials        
           description: Setup customized enrollment flows to maximize participant uptake. Run virtual trials in any state and manage it all remotely using tools such as intake surveys and eConsenting. Way to Health has been used to support over 150 different studies and the platform, past and current Principal Investigators (PIs) have credibility among the research and funding communities. 
           id: rct
-        - subtitle: Test rct
-          module_name: Randomized Control Trials        
-          description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
-          id: rct
       is_even: true
       id: rct
-    - module_name: Study & Survey Libraries
+    - module_name: Program & Survey Libraries
       image: images/temp.jpg
       image_caption:
       listing:
-        - subtitle: Study Library
+        - subtitle: Program Library
           module_name: Study Library        
           description: Quis esse est velit sit asperiores corrupti iste id ut. Aut ab eum quis inventore quis. Molestiae et excepturi repellat rerum odit excepturi voluptatum adipisci. Corporis aut libero deleniti ut itaque reprehenderit officiis impedit a. Voluptas nihil nihil quidem et necessitatibus. Animi vel sed rerum voluptate.
           id: library
         - subtitle: Survey Library
-          module_name: Study Library        
-          description: At dolore voluptas ut vitae harum accusantium quia. Nemo et sequi. Quam et autem quisquam exercitationem suscipit iure eum autem. Perspiciatis quibusdam ex laudantium saepe facere nihil minus ab qui.
-          id: library
-        - subtitle: Test survey
           module_name: Study Library        
           description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
           id: library
@@ -94,11 +78,7 @@ modules:
         - subtitle: Financial Incentives
           module_name: Behavioral Science & Economics        
           description: Lotteries, loss and gain framed incentives and much more can be easily applied to activities - steps, weighings, pretty much any data gathered by the platform from any data source. Apply different strategies to different populations and depending on the type of activity.
-          id: be          
-        - subtitle: Test BE
-          module_name: Behavioral Science & Economics        
-          description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
-          id: be          
+          id: be                 
       is_even: true
       id: be
     - module_name: Rules Engine
@@ -113,27 +93,19 @@ modules:
           module_name: Rules Engine
           description: To maximize the productivity of staff and providers, the Way To Health platform allows for the creation of incidents or alerts whenever certain exception criteria are met. Configure notifications depending on the users role.
           id: rulesengine
-        - subtitle: Test Rules
-          module_name: Rules Engine
-          description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
-          id: rulesengine
       is_even: false
       id: rulesengine
     - module_name: EHR integration
       image: images/temp.jpg
       image_caption:
       listing:
-        - subtitle: Bi-directional integration
+        - subtitle: Bi-directional Integration
           module_name: EHR integration
           description: It is our belief that EHRs should be the system of record for all patient data. Additionally, any provider action needed should also be done via the EHR. With this in mind, the platform provides bi-directional integration currently with Epic (and additional EHRs on request).
           id: ehr
-        - subtitle: Way to Health inside
+        - subtitle: Way to Health Inside
           module_name: EHR integration
           description: We offer multiple ways in which we can integrate with the EHR. Via embeds in the EHR itself, HL7 based, API (FHIR, Open.Epic, other) and many more as needed. 
-          id: ehr
-        - subtitle: Test EHR
-          module_name: EHR integration
-          description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
           id: ehr
       is_even: true
       id: ehr
