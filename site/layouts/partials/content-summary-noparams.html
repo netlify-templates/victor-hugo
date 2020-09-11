@@ -7,7 +7,7 @@
             <img class="rounded shadow-md mb-6" src="{{ .image }}" alt="">
         {{ end }}
         {{ if .photo }}
-            <img class="rounded-full shadow-md mb-6" src="{{ .photo }}" alt="">
+            <img class="rounded-full shadow-md mb-6 h-auto w-full" src="{{ .photo }}" alt="">
         {{ end }}
         <span class="text-xl mb-3 font-heading text">{{ if .name}} {{.name}},  {{ end }} {{ .title }}</span>
         <p class="mt-4 mb-6 text-gray-600 leading-relaxed ">{{ .summary | markdownify}}</p>
