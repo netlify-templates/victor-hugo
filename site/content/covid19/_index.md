@@ -57,8 +57,8 @@ bgcol: bg-yellow-200
 domains:
   listing:
       - title: Remote Patient Monitoring
-        image: images/sindhu.adi.jpg
-        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
+        image: images/remote_mon.svg
+        image_caption:
         subtitle1: COVID Watch
         description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions are needed. Leverage evidence based programs such as Heart Safe Motherhood that have reduced readmissions by 80%.
         subtitle2: COVID Pulse
@@ -110,8 +110,9 @@ keyfeatures:
       header: Clinical Trials
       text: >
          Use a purpose built solution to design and deploy behavioral change and interventional (automated hovering) research.
-modules:
+modules_leadin:
   introtitle: Build your own intervention quickly
   introsubtitle: Way to Health capabilities are grouped into modules. Configure them to address your specific needs and combine them together to quickly build, test and deploy interventions. Choose your deployment model - pilot, standalone or scaled and EHR integrated.
   introtext: 
+modules_used: ["Conversations", "Remote Monitoring", "EHR integration"]
 ---

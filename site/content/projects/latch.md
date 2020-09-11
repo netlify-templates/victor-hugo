@@ -1,8 +1,8 @@
 ---
 study_name: LaTCH
 date: '2019-11-13'
-area: inprogress
-subdomain: 'Women''s Health '
+area: clinical
+subdomain: 'Lactation '
 authors:
   - authorimage: /images/uploads/wbender.png
     authorname: 'Whitney Bender, MD'
@@ -28,5 +28,6 @@ dedicatedpage: true
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
 solution_area: Womens Health
+page_id: womenshealth
 ---
 

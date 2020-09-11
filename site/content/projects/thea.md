@@ -1,8 +1,9 @@
 ---
 study_name: THEA
 date: '2019-11-13'
-area: inprogress
+area: clinical
 subdomain: Obstetrics
+status: Complete
 authors:
   - authorimage: /images/uploads/abbie.jpg
     authorname: Abbie Lund
@@ -28,5 +29,6 @@ dedicatedpage: true
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
 solution_area: Womens Health
+page_id: womenshealth
 ---
 
