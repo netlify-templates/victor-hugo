@@ -2,3 +2,4 @@ node_modules/
 dist/
 site/data/webpack.json
 *.code-workspace
+package-lock.json

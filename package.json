@@ -22,7 +22,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "tailwindcss": "^1.1.2"
   },
   "devDependencies": {
