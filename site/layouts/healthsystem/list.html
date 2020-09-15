@@ -27,22 +27,22 @@
             <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed"> {{ .description }}</p>
             <div class="flex flex-wrap -mx-4">
                 {{ if eq .name "Womens Health" }}
-                    {{ range first 3 $n2 }}
+                    {{ range $n2 }}
                         {{ partial "case-summary" . }}
                     {{ end }}
                 {{ end }}
                 {{ if eq .name "Surgery Solutions" }}
-                    {{ range first 3 $n3 }}
+                    {{ range $n3 }}
                         {{ partial "case-summary" . }}
                     {{ end }}
                 {{ end }}
                 {{ if eq .name "COVID-19 Response Solutions" }}
-                    {{ range first 3 $n5 }}
+                    {{ range $n5 }}
                         {{ partial "case-summary" . }}
                     {{ end }}
                 {{ end }}
                 {{ if eq .name "Quality, Safety and Patient Experience Solutions" }}
-                    {{ range first 3 $n4 }}
+                    {{ range $n4 }}
                         {{ partial "case-summary" . }}
                     {{ end }}
                 {{end }}

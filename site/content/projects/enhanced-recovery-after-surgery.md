@@ -11,9 +11,8 @@ authors:
     authorname: 'Tracy M. Flanders, MD'
     authorrole: Co-Investigator
 summary: >-
-  The effects of a novel enhanced recovery after surgery (ERAS) protocol on
-  clinical outcomes for patients undergoing elective spine or peripheral nerve
-  surgery.
+  Implementation of this novel ERAS pathway for patients undergoing elective spine or peripheral nerve
+  surgery safely reduces patients’ postoperative opioid requirements during hospitalization and 1 month postoperatively. ERAS results in improved postoperative mobilization and ambulation.
 results:
   - result: >-
       Post-op intravenous opioid meds nearly eliminated
