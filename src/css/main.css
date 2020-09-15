@@ -130,3 +130,7 @@ a:hover.link-effect-opacity,
 a:focus.link-effect-opacity {
   opacity: .5;
 }
+
+.flex img {
+  align-self: start;
+}
