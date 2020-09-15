@@ -12,6 +12,25 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-111066412-1');
+
+        document.addEventListener('DOMContentLoaded', function() {
+          // Store the window width
+          var windowWidth = window.innerWidth
+
+          // Resize Event
+          window.addEventListener("resize", function() {
+            // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
+            if (window.innerWidth != windowWidth) {
+
+              // Update the window width for next time
+              windowWidth = window.innerWidth
+
+              $('#mobile-nav-toggle').prop('checked', false);
+              $('#toggle-one').prop('checked', false);
+              $('#toggle-two').prop('checked', false);
+            }
+          });
+        });
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -42,7 +61,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    
+
   <style>
     #mobile-nav-toggle:checked ~ .nav-menu {
       display: block;
@@ -269,11 +288,3 @@
   </div>
 </div>
 
-
-<script type="text/javascript">
-  window.addEventListener("resize", function () {
-    $('#mobile-nav-toggle').prop('checked', false);
-    $('#toggle-one').prop('checked', false);
-    $('#toggle-two').prop('checked', false);
-  });
-</script>
