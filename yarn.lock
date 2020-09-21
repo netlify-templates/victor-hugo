@@ -4411,10 +4411,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-hugo-bin@^0.62.3:
-  version "0.62.3"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.62.3.tgz#9e09779ec2ea57c024d61aa660887ac3c99edabe"
-  integrity sha512-tWh6SR0g1i0HfpkxBKFEmSuAqDlojYxfP6ecmckmr/VLnjzwRictvZCyHOuRdvls5Dlm1zzzqtWiY1ubszj6+w==
+hugo-bin@^0.63.0:
+  version "0.63.1"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.63.1.tgz#934add30d5742e91e7a2ae4f28cb2222d8c72bdc"
+  integrity sha512-ohxKjheC+/G/ZO44SvEOpjhj2LjhuSJuAPUUe4l/tPCUfNAFQPZackmkl4UuPayxemGm0SrNO+Ub44flLg218w==
   dependencies:
     bin-wrapper "^4.1.0"
     pkg-conf "^3.1.0"
@@ -8918,7 +8918,7 @@ websocket-extensions@>=0.1.1:
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
   integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
-whatwg-fetch@^3.4.1:
+whatwg-fetch@^3.0.0:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.4.1.tgz#e5f871572d6879663fa5674c8f833f15a8425ab3"
   integrity sha512-sofZVzE1wKwO+EYPbWfiwzaKovWiZXf4coEzjGP9b2GBVgQRLQUZ2QcuPpQExGDAW5GItpEm6Tl4OU5mywnAoQ==
