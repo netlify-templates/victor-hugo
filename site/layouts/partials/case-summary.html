@@ -71,7 +71,11 @@
         {{ end }}
         </div>
         {{ if .Params.spotlight }}
-        <a class="btn mt-auto text-blue-700 hover:underline text-right" href="{{ .Permalink }} ">Read more</a>
+            {{ if .Params.dedicatedpage }}
+            <a class="btn mt-auto text-blue-700 hover:underline text-right" href="{{ .Params.externalurl }} " target="_blank">Read more</a>
+            {{ else }}
+            <a class="btn mt-auto text-blue-700 hover:underline text-right" href="{{ .Permalink }} ">Read more</a>
+            {{ end }}
         {{ end }}
     </div>
 </div>

@@ -1,0 +1,36 @@
+{{ partial "header" . }}
+<section class="py-16 px-4">
+    <h2 class="text-3xl text-center mb-12 font-heading">Institutional Review Board Documents</h2>
+        <p class="mb-2 text-2xl leading-relaxed text-center">Way To Health specific documents & templates for IRB submission</p>
+    <div class="flex flex-wrap max-w-5xl -mx-4 md:mx-auto -mb-12 ">
+        <p class="mt-16 mb-16 text-xl leading-relaxed">All research studies need to submit documentation around the appropriate policies and procedures implemented to protect
+        the rights and welfare of humans participating as subjects in the research. To accomplish this, IRBs use a group process
+        to review research protocols and related materials (e.g., informed consent documents and investigator brochures) to
+        ensure protection of the rights and welfare of human subjects of research. For research studies using the Way To Health
+        platform, we have prepared a set of documents and templates to accompany the submission.
+        </p>
+    </div>
+</section>
+<section class="py-12 px-4 text-center">
+    <h2 class="text-2xl mb-8 font-heading">Template Documents</h2>
+        <p class="mb-2 text-xl text-gray-600 leading-relaxed text-center">Variants of these documents have been reviewed and approved by the University of Pennsylvania's Institutional Review
+        Board.</p>
+        <span class="text-sm text-gray-600">Click the title to download</span>
+        {{ with .Params.irb  }}
+                <div class="flex flex-wrap items-center justify-center -mx-8 mb-12">
+                    {{ range .docs }}
+                        <div class="lg:w-1/3 px-8 mb-8 lg:mb-0">
+                            <a href="{{ .link }}"><h3 class="text-2xl mt-6 mb-3 font-heading">{{ .name }}</h3></a>
+                            <p class="text-gray-500 leading-relaxed"> {{ .description  }}</p>
+                        </div>
+                    {{ end }}
+                </div>
+        {{ end }}
+
+    <div class="text-center mt-12"><a
+            class="inline-block py-4 px-8 leading-none text-white bg-indigo-500 hover:bg-indigo-600 rounded"
+            href="#">Email if you have questions</a>
+    </div>
+</section>
+
+{{ partial "footer" . }}

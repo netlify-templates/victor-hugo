@@ -3,7 +3,8 @@ title: Acceptable Use Policy
 date: 2018-10-09
 link:
 summary: >-
-   Policies and rules governing the use of the Way To Health platform
+   Rules & policies that restrict the ways in which the website or system may be used and guidelines as to how it should be used.
+externalurl:
 ---
 
 This Acceptable Use Policy describes actions that Penn Way To Health ("Way To Health") prohibits when any Customer uses the Way To Health Services (“Services”). In the event of a conflict between this Acceptable Use Policy and an underlying Agreement with a Customer, the underlying Agreement shall govern.

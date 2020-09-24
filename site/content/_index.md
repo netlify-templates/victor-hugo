@@ -2,7 +2,7 @@
 title: Evidence Based Patient Engagement
 bgcolor: "#2e376b"
 image: images/innovate.svg
-summary: Leverage tools and techniques developed by researchers and clinicians across 150+ studies, 66,000 patients and 70+ peer reviewed publications
+summary: Leverage tools and techniques developed by researchers and clinicians across 280+ studies, 110,000 patients and 70+ peer reviewed publications
 
 customers:
   title: Investigate and deploy personalized engagement strategies to improve health outcomes
@@ -75,8 +75,8 @@ domains:
         is_even: true
         source: /researcher
       - title: For Health Plans
-        image: images/temp.jpg
-        image_caption: Drs. t quos vero eum nulla non voluptatem aut. Quidem voluptas vel atque.
+        image: images/patient.png
+        image_caption: The Heart Safe Motherhood program for pre-eclampsia
         subtitle1: Increase adherence to wellness programs
         description1: With roots in behavioral science, population health and wellness, our research has been geared towards improving adherence to programs that members might not always want to adhere to. Programs such as smoking cessation have been proven to be successful and are the standard at organizations such as GE, CVS and others. 
         subtitle2: Offer evidence backed protocols

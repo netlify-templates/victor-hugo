@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+
+<section class="py-12 px-4 text-center">
+    <div class="w-full max-w-2xl mx-auto">
+        <div class="mb-10">
+            <h2 class="text-5xl mb-8 leading-tight font-heading">{{ .Params.title}}</h2>
+            <p class="text-gray-500 leading-relaxed">{{ .Params.summary }}</p>
+        </div>
+    </div>
+</section>
+<section class="py-12 px-4 pt-16 pb-16">
+        <div class="max-w-5xl mx-auto markdown ">
+           {{ .Content }}
+        </div>
+</section>
+
+{{ partial "footer" . }}

@@ -3,7 +3,8 @@ title: Service Level Agreement
 date: 2018-10-09
 link: 
 summary: >-
-   Service Level Agreement
+   Defines our commitment to service availability specifically around quality, availability and responsibilities.
+externalurl:
 ---
 
 1.	**Exclusions**.

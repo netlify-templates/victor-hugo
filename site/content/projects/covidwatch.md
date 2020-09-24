@@ -11,28 +11,28 @@ authors:
     authorname: 'David Do, MD'
     authorrole: Clinical Informatics Lead
 summary: >-
-  The effects of a novel enhanced recovery after surgery (ERAS) protocol on
-  clinical outcomes for patients undergoing elective spine or peripheral nerve
-  surgery.
+  A Penn Medicine program that automatically checks in with patients at risk for complications of COVID-19 who are self-isolating at home. Patients are monitored 24x7 via text message and escalations managed a nursing team with full Epic integration. 
 results:
   - result: >-
-      Post-op intravenous opioid meds nearly eliminated
+      Staff hour reduction to just 64 per day
   - result: >-
-      3x greater mobility on post-op day 0
+      $2.3 Million over 100 days
+  - result: >-
+      Patient NPS score of 80      
 features:
   - feature: Two-way Texting
   - feature: EHR Integration
 spotlight: true
 pubs:
-  - pubURL: 'https://doi.org/10.3171/2018.9.SPINE18681'
+  - pubURL: 'https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0342'
     pubname: >-
-      Enhanced recovery after elective spinal and peripheral nerve surgery:
-      pilot study from a single institution
-condition: Hypertension
-intervention: Wearables & remote monitoring
-outcome: Increased physical activity
+      Remote Monitoring of Patients with Covid-19: Design, implementation, and outcomes of the first 3,000 patients in COVID Watch
+condition: COVID-19
+intervention: Remote monitoring
+outcome: Efficient resource utilization while ensuring patient safety
 dedicatedpage: true
+externalurl: https://covidwatch.waytohealth.org/
 label: Standard of Care 
-image: /images/uploads/hsm.01.jpg
+image: /images/dailycheckin2.jpg
 solution_area: COVID-19 Response Solutions
 ---

@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+<section class="py-16 px-4">
+        <h2 class="text-3xl text-center mb-12 font-heading">Legal &amp; Privacy</h2>
+    </div>
+    <div class="flex flex-wrap max-w-5xl -mx-4 md:mx-auto -mb-8">
+        {{ range .Data.Pages  }}
+            {{ partial "legal-2x2.html" . }}
+        {{ end }}
+    </div>
+    <div class="text-center mt-12"><a
+            class="inline-block py-4 px-8 leading-none text-white bg-indigo-500 hover:bg-indigo-600 rounded"
+            href="#">Email if you have questions</a>
+    </div>
+</section>
+
+{{ partial "footer" . }}

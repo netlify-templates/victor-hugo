@@ -1,0 +1,14 @@
+<div class="w-full md:w-1/2 px-4 mb-8">
+    <div class="h-full p-6 bg-white rounded border-t-4 border-indigo-500 shadow-md">
+        {{ if .Params.externalurl }} 
+        <a href="{{ .Params.externalurl }}" target="_blank">
+            <h3 class="text-2xl mb-3">{{ .Params.title}}</h3>
+        </a>
+        {{ else }}
+        <a href="{{ .Permalink }}">
+            <h3 class="text-2xl mb-3">{{ .Params.title}}</h3>
+        </a> 
+        {{ end }}
+        <p>{{ .Params.summary }}</p>
+    </div>
+</div>
