@@ -1,5 +1,5 @@
 ---
-articlename: Patients Stick with Smartphone Activity Trackers Longer Than Wearable Devices
+title: Patients Stick with Smartphone Activity Trackers Longer Than Wearable Devices
 date: '2020-02-11'
 summary: >-
   According to a new Penn Medicine Study, doctors who track their patients’
@@ -10,6 +10,7 @@ summary: >-
   of Penn Medicine’s Nudge Unit. Read on to find out how this improves remotely
   monitoring patient behaviors.
 image: /images/uploads/smart-phone-22.jpg
-source: https://www.miragenews.com/patients-stick-with-smartphone-activity-trackers-longer-than-wearable-devices/
+source: >-
+  https://www.miragenews.com/patients-stick-with-smartphone-activity-trackers-longer-than-wearable-devices/
 ---
 

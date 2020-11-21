@@ -12,7 +12,7 @@ modules:
   introsubtitle: Way to Health capabilities are grouped into modules. Configure them to address your specific needs and combine them together to quickly build, test and deploy interventions. Choose your deployment model - pilot, standalone or scaled and EHR integrated.
   module: 
     - module_name: Conversations
-      image: images/temp.jpg
+      image: images/conversations.gif
       image_caption:
       listing:
         - subtitle: Two-way Texting
@@ -26,7 +26,7 @@ modules:
       is_even: true
       id: patcomm
     - module_name: Remote Monitoring
-      image: images/temp.jpg
+      image: images/peng/devices.png
       image_caption:
       listing:
         - subtitle: Vitals and Activity Monitoring
@@ -40,7 +40,7 @@ modules:
       is_even: false
       id: remote
     - module_name: Randomized Control Trials
-      image: images/temp.jpg
+      image: images/peng/rct.jpg
       image_caption:
       listing:
         - subtitle: Arms & Randomization
@@ -54,21 +54,21 @@ modules:
       is_even: true
       id: rct
     - module_name: Program & Survey Libraries
-      image: images/temp.jpg
+      image: images/duplicate.svg
       image_caption:
       listing:
         - subtitle: Program Library
           module_name: Study Library        
-          description: Quis esse est velit sit asperiores corrupti iste id ut. Aut ab eum quis inventore quis. Molestiae et excepturi repellat rerum odit excepturi voluptatum adipisci. Corporis aut libero deleniti ut itaque reprehenderit officiis impedit a. Voluptas nihil nihil quidem et necessitatibus. Animi vel sed rerum voluptate.
+          description: All programs - research studies as well as clinical projects, are available to be build upon. The programs can be copied over in a couple of clicks and then modified as needed. This can accelerate RCT and clinical deployments and reduce the time to live from months to days or weeks. 
           id: library
         - subtitle: Survey Library
           module_name: Study Library        
-          description: Quod autem facilis totam eum est nemo dolorem. Amet ea expedita dolores eveniet atque tempora. Omnis natus voluptas rerum. Sint et rerum dolores non inventore rerum sapiente voluptatem. Aperiam enim sed sint eos quia atque et.
+          description: Programs implemented on Way to Health have utilized a number of survey instruments. Some are validated and others have been designed for project specific purposes. All of these are available for rapid re-use and deployment. Data collected from these can be stored in a custom or in our standardized models for easy analysis.
           id: library
       is_even: false
       id: library
     - module_name: Behavioral Science & Economics
-      image: images/temp.jpg
+      image: images/peng/chibe.png
       image_caption:
       listing:
         - subtitle: Gamification & Social
@@ -82,7 +82,7 @@ modules:
       is_even: true
       id: be
     - module_name: Rules Engine
-      image: images/temp.jpg
+      image: images/peng/rules3.png
       image_caption:
       listing:
         - subtitle: Schedule or event driven
@@ -96,7 +96,7 @@ modules:
       is_even: false
       id: rulesengine
     - module_name: EHR integration
-      image: images/temp.jpg
+      image: images/peng/integration.jpg
       image_caption:
       listing:
         - subtitle: Bi-directional Integration

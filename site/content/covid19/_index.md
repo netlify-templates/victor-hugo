@@ -60,7 +60,7 @@ domains:
         image: images/remote_mon.svg
         image_caption:
         subtitle1: COVID Watch
-        description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions are needed. Leverage evidence based programs such as Heart Safe Motherhood that have reduced readmissions by 80%.
+        description1: To manage a large and heterogenous population of patients with confirmed or presumed Covid-19, but well enough to remain at home, the University of Pennsylvania Health System (UPHS) developed a program to monitor for worsening dyspnea or other concerning symptoms. “COVID Watch” combined automated twice-daily text message check-ins with a dedicated team of telemedicine clinicians who could respond 24/7 to escalations in patient need.
         subtitle2: COVID Pulse
         description2: With the downward pressure on costs and the increasing importance of telemedicine and remote monitoring, proven solutions focused on specific domains will allow organizations to roll out programs systematically. 
         subtitle3: Pregnancy Watch

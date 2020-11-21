@@ -4,13 +4,29 @@
 
 {{ partial "text-left" . }}
 
-{{ with .Params.domains }}
+<!-- {{ with .Params.domains }}
     {{ range .listing }}
         {{ partial "section-right" . }}
     {{ end }}
-{{ end }}
+{{ end }} -->
 
-<div class="bg-indigo-100">
+{{ $nc1 := where .Site.Pages "Section" "projects" }}
+{{ $nc5 := where (where .Site.Pages "Section" "projects") ".Params.solution_area" "COVID-19 Response Solutions" }}
+
+<div class="container mx-auto px-4">
+            <section class="py-8 px-4 pt-16 pb-16" id="covid19response">
+                <!-- <hr class="pt-16 pb-16"></hr> -->
+                <h2 class="text-4xl text-center mb-4 font-heading">COVID-19 Response Solutions</h2>
+                <p class="max-w-2xl mb-8 mx-auto text-center text-gray-500 leading-relaxed"> Solutions geared to providing care to patients during the pandemic</p>
+                <div class="flex flex-wrap -mx-4">
+                        {{ range $nc5 }}
+                            {{ partial "case-summary" . }}
+                        {{ end }}
+                </div>
+            </section>
+</div>
+
+<!-- <div class="bg-indigo-100">
 
     {{ with .Site.GetPage "section" "platform" }}
     {{ with .Params.modules }}
@@ -42,5 +58,5 @@
         </section>
         {{ end }}
     </div>
-</div>
+</div> -->
 {{ partial "footer" . }}
