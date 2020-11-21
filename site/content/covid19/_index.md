@@ -3,6 +3,8 @@ title: COVID-19 Response solutions
 bgcolor: "#2e376b"
 image: images/healthplan.svg
 summary: Programs developed by renowned clinicians and researchers to help address the pandemic challenges around patient care safely and efficiently
+pageurl: covid19
+contactid: covidcontact
 
 # blurb_text: Leverage award winning programs to quickly drive outcomes
 # blurb_summary1: Why start from scratch when you can leverage pre-built, tested and evidence based programs?

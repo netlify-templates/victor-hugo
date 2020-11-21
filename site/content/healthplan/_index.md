@@ -35,4 +35,6 @@ modules_leadin:
   introsubtitle: Way to Health capabilities are grouped into modules. Configure them to address your specific needs and combine them together to quickly build, test and deploy interventions. Choose your deployment model - pilot, standalone or scaled and EHR integrated.
   introtext: 
 modules_used: ["Conversations", "Remote Monitoring", "EHR integration"]
+pageurl: healthplan
+contactid: plancontact
 ---

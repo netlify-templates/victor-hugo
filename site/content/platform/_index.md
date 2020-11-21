@@ -6,6 +6,8 @@ subtitle: Design, discover, and deploy personalized interventions at scale with 
 introtitle: Mix and match modules to tailor interventions for desired outcomes
 introsubtitle: Way to Health capabilities are built and made available as re-usable modules. 
 introtext: Researchers and clinicians have combined these modules in different ways to create innovative interventions rapidly, test them and quickly deploy them fully integrated with their EHR. 
+pageurl: platform
+contactid: platformcontact
 
 modules:
   introtitle: Build your own intervention quickly

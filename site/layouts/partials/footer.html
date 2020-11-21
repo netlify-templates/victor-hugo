@@ -102,6 +102,28 @@ function debounce( fn, threshold ) {
 }
 </script>
 <!-- end isotope js -->
+<!-- test surveyjs embed -->
+
+<link href="https://surveyjs.azureedge.net/1.8.14/modern.css" type="text/css" rel="stylesheet" />
+<script src="https://surveyjs.azureedge.net/1.8.14/survey.jquery.min.js"></script>
+
+<script>
+Survey.StylesManager.applyTheme("modern");
+
+var surveyJSON =
+{"pages":[{"name":"page1","elements":[{"type":"boolean","name":"Is this a research study or a clinical program?"},{"type":"dropdown","name":"question3","choices":["item1","item2","item3"]},{"type":"checkbox","name":"question2","choices":["item1","item2","item3"]},{"type":"text","name":"question1"}]}]}
+
+function sendDataToServer(survey) {
+//send Ajax request to your web server.
+alert("The results are:" + JSON.stringify(survey.data));
+}
+
+var survey = new Survey.Model(surveyJSON);
+$("#surveyContainer").Survey({
+model: survey,
+onComplete: sendDataToServer
+});
+</script>
 </body>
 
 </html>

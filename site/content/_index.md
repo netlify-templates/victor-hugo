@@ -2,7 +2,8 @@
 title: Evidence Based Patient Engagement
 bgcolor: "#2e376b"
 image: images/innovate.svg
-summary: Leverage tools and techniques developed by researchers and clinicians across 280+ studies, 110,000 patients and 70+ peer reviewed publications
+summary: Leverage tools and techniques developed by researchers and clinicians across 290+ programs, 170,000 patients and 75+ peer reviewed publications
+contactid: indexcontact
 
 customers:
   title: Investigate and deploy personalized engagement strategies to improve health outcomes
@@ -128,31 +129,9 @@ keyfeatures:
 stats:
   highlights:
     - title: Supported Projects
-      metric: 150
+      metric: 296
     - title: Patients Engaged
-      metric: 66000
+      metric: 175000
     - title: Peer Reviewed Publications
-      metric: 70
-
-whydosomething:
-  intro: Patient engagement has been called the [blockbuster drug of the 21st century](http://healthstandards.com/blog/2012/08/28/drug-of-the-century/). But it continues to elude a solution and in the meantime, the problem continues to grow. 
-  problems:
-    - problem: Eighty-six percent of the nation’s $2.7 trillion annual health care expenditures are for people with chronic and mental health conditions.
-      graphic:
-      source:
-    - problem: Medication adherence continues to be challenge even post fill. 
-      graphic:
-      source: Test [Truven Health Analytics-NPR Health Poll](https://truvenhealth.com/media-room/press-releases/detail/prid/209/truven-health-analytics-npr-health-poll-finds-cost-is-top-cause-of-unfilled-prescriptions)
-    - problem: Patient engagement is the key to prevention
-      graphic:
-      source: 
-whyus:
-  intro: 
-  solutions:
-    - solution:
-      description:
-    - solution:
-      description:
-    - solution:
-      description:
+      metric: 75
 ---

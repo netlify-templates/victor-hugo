@@ -61,39 +61,7 @@
 </section>
 </div>
 
-<section class="py-8 px-4 w-full bg-indigo-600 text-white pt-16 pb-16" id="contact">
-    <div class="container mx-auto px-4">
-    <h2 class="text-3xl mb-6 text-center font-heading">Let us tell you more</h2>
-    <div class="flex flex-wrap -mx-6">
-        <div class="w-full lg:w-1/2 px-6 mb-8 lg:mb-0">
-            <h3 class="text-2xl mb-8 font-heading">We will email you to start the conversation.</h3>
-            <p class="mt-8 text-xl font-heading"> Please drop us an email with any context you can provide and we'll reach out to schedule a conversation.</p>
-        </div>
-        <div class="w-full lg:w-1/2 px-6">
-            <form>
-                <div class="mb-4">
-                    <input
-                        class="appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-200 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
-                        type="email" placeholder="Email">
-                </div>
-                <div class="mb-4">
-                    <input
-                        class="appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-200 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
-                        type="text" placeholder="Oganization">
-                </div>
-                <div class="mb-4">
-                    <textarea
-                        class="appearance-none block w-full py-3 px-4 leading-tight text-gray-700 bg-gray-200 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none"
-                        type="text" placeholder="Message" rows="5"></textarea></div>
-                <div>
-                    <button
-                        class="inline-block w-full py-4 px-8 leading-none text-blue-700 bg-white hover:bg-green-200 rounded shadow">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    </div>
-</section>
+{{ partial "contact" . }}
 
 <div class="bg-gray-100">
 <div class="container mx-auto px-4">
