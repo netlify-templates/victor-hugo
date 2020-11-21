@@ -1,0 +1,11 @@
+---
+name: Mitesh Patel, MD, MBA, MS
+title: Director, Nudge Unit
+twitter: miteshspatel
+linkedin: miteshspatel
+1bgpic: /images/bg/photo14.jpg
+pic: /images/team/Mitesh_0.jpg
+text: >
+  Mitesh S. Patel, MD, MBA is Director of the Penn Medicine Nudge Unit, the world’s first behavioral design team embedded within a health system. He is the Ralph Muller Presidential Associate Professor of Medicine and Health Care Management at the Perelman School of Medicine and The Wharton School at the University of Pennsylvania. Dr. Patel is on the leadership team at the Penn Medicine Center for Health Care Innovation, Associate Director at the Center for Health Incentives and Behavioral Economics, and a Staff Physician at the Crescenz VA Medical Center in Philadelphia, and a Senior Fellow at the Leonard Davis Institute of Health Economics. His research focuses on combining insights from behavioral economics with scalable technology platforms to improve health and health care. He has led more than 25 clinical trials in partnership with health systems, insurers, employers, and community organizations that tested ways to design nudges, incentives, and gamification to change clinician and patient behavior. This work includes digital health interventions using wearable devices and smartphones, and health system interventions using the electronic health record. <br/> <br/> Dr. Patel is Associate Division Chief for Research in General Internal Medicine at Penn Medicine, Director of the VA Advanced Fellowship Program in Health Services Research and Development in Philadelphia, and Co-Director of the Wharton MBA Course on E-Health. He has received numerous national research awards including the  Outstanding Junior Investigator of the Year from SGIM, the Alice Hersh Emerging Leader Award from AcademyHealth, the Young Physician-Scientist Award from ASCI, and the Quality and Practice Innovation Award from SGIM. Dr. Patel’s work has been published in leading medical journals including the New England Journal of Medicine, JAMA, Annals of Internal Medicine, and Health Affairs. His work has been featured in numerous media outlets including the New York Times, NBC Today Show, Wall Street Journal, Harvard Business Review, The Economist, Forbes, Time, NPR, and CNN.
+group: Advisory
+---

@@ -1,53 +1,70 @@
 {{ partial "header" . }}
 
-{{ partial "splash-bg" . }}
+<section class="text-center bg-cover pb-16 pt-16" style="background-image: url('/images/bg/philly1.jpg')">
+    <div class="container mx-auto px-4">
+        <div class="relative flex items-center py-32">
+            <div class="z-10 max-w-2xl mx-8 mt-64">
+                <h2 class="text-5xl mb-8 text-left leading-tight font-heading text-white">Meet the team</h2>
+                <p class="text-gray-300 text-left text-xl leading-relaxed">The team guiding and delivering Way To Health's vision and execution</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ $n1 := where .Data.Pages "Section" "!=" "page" }}
+{{ $n2 := where (where .Data.Pages "Section" "!=" "page") ".Params.group" "Leadership" }}
+{{ $n3 := where (where .Data.Pages "Section" "!=" "page") ".Params.group" "Operations" }}
+{{ $n4 := where (where .Data.Pages "Section" "!=" "page") ".Params.group" "Engineering" }}
+{{ $n5 := where (where .Data.Pages "Section" "!=" "page") ".Params.group" "Advisory" }}
+
+{{ $leadership := $n1 | intersect $n2 }}
+{{ $operations := $n1 | intersect $n3 }}
+{{ $engineering := $n1 | intersect $n4 }}
+{{ $advisory := $n1 | intersect $n5 }}
 
 <div class="container mx-auto px-4">
 <section class="py-8 px-4 pt-16 pb-16" id="leadership">
-{{ with .Params.leadership }}
-    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .role }}</h2>
-    <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Leadership</h2>
     <div class="flex flex-wrap -mx-4">
-        {{ range .member }}
-        {{ partial "content-summary-noparams" . }}
+    {{ range $leadership }}
+            <div class="w-1/2 lg:w-1/3 p-4 text-center">
+                <a href="{{ .Permalink }}"> <img class="w-1/3 mx-auto mb-4 rounded-full" src="{{ .Params.pic }}" alt=""></a>
+                <h3 class="text-xl font-heading font-semibold">{{ .Params.name }}</h3><span>{{ .Params.title }}</span>
+            </div>
         {{ end }}
-{{ end }}
     </div>
 </section>
-
-<section class="py-8 px-4 pt-16 pb-16" id="implementation">
-{{ with .Params.implementation }}
-    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .role }}</h2>
-    <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
+<section class="py-8 px-4 pt-16 pb-16" id="operations">
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Operations</h2>
     <div class="flex flex-wrap -mx-4">
-        {{ range .member }}
-        {{ partial "content-summary-noparams" . }}
+        {{ range $operations }}
+        <div class="w-1/2 lg:w-1/3 p-4 text-center">
+            <a href="{{ .Permalink }}"><img class="w-1/3 mx-auto mb-4 rounded-full" src="{{ .Params.pic }}" alt=""></a>
+            <h3 class="text-xl font-heading font-semibold">{{ .Params.name }}</h3><span>{{ .Params.title }}</span>
+        </div>
         {{ end }}
-{{ end }}
     </div>
 </section>
-
 <section class="py-8 px-4 pt-16 pb-16" id="engineering">
-{{ with .Params.engineering }}
-    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .role }}</h2>
-    <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Engineering</h2>
     <div class="flex flex-wrap -mx-4">
-        {{ range .member }}
-        {{ partial "content-summary-noparams" . }}
+        {{ range $engineering }}
+        <div class="w-1/2 lg:w-1/3 p-4 text-center">
+        <a href="{{ .Permalink }}"> <img class="w-1/3 mx-auto mb-4 rounded-full" src="{{ .Params.pic }}" alt=""></a>
+            <h3 class="text-xl font-heading font-semibold">{{ .Params.name }}</h3><span>{{ .Params.title }}</span>
+        </div>
         {{ end }}
-{{ end }}
     </div>
 </section>
-
-<section class="py-8 px-4 pt-16 pb-16" id="advisory">
-{{ with .Params.advisory }}
-    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">{{ .role }}</h2>
-    <p class="mb-6 text-xl text-center text-gray-500">{{ .Params.subheading }}</p>
+<section class="py-8 px-4 pt-16 pb-16" id="engineering">
+    <h2 class="text-3xl text-center leading-tight mb-8 font-heading">Advisory</h2>
     <div class="flex flex-wrap -mx-4">
-        {{ range .member }}
-        {{ partial "content-summary-noparams" . }}
+        {{ range $advisory }}
+        <div class="w-1/2 lg:w-1/3 p-4 text-center">
+            <a href="{{ .Permalink }}"><img class="w-1/3 mx-auto mb-4 rounded-full" src="{{ .Params.pic }}" alt=""></a>
+            <h3 class="text-xl font-heading font-semibold">{{ .Params.name }}</h3><span>{{ .Params.title }}</span>
+        </div>
         {{ end }}
-{{ end }}
     </div>
 </section>
 </div>

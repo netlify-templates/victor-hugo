@@ -1,0 +1,29 @@
+{{ partial "header" . }}
+
+<section class="py-12 px-4">
+    <div class="flex flex-wrap mx-12 mb-8">
+        <div class="lg:w-1/2 px-4 mb-4 lg:mb-0"><img class="rounded shadow-md" src="{{ .Params.pic }}" alt=""></div>
+        <div class="lg:w-1/2 px-4">
+            <h2 class="text-4xl font-heading font-semibold">{{ .Params.name }}</h2><span class="text-xl">{{ .Params.title }}</span>
+            <p class="my-5 text-sm">{{ .Params.text | markdownify }}</p>
+            <div class="flex">
+                <img class="w-8 mr-6" src="placeholders/icons/message.svg" alt="">
+                <img class="w-8 mr-6" src="placeholders/icons/share.svg" alt="">
+                <img class="w-8 mr-6" src="placeholders/icons/star.svg" alt="">
+            </div>
+        </div>
+        <div class="lg:w-1/2 px-4">
+        {{ if .Params.publications }}
+            <h2 class="text-xl font-heading font-semibold">Publications</h2>
+            {{ with .Params.publications }}
+                {{ range .listing }}
+                    <a href=" {{ .URL }}"> <p class="my-5 text-sm">{{ .title }}</p>
+                    </a>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ partial "footer" . }}
