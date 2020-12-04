@@ -4,7 +4,7 @@
 /* @import 'imports/reset.css'; */
 @import 'imports/markdown.css';
 @import 'tailwind.css';
-@import 'surveyjs.css';
+@import 'imports/surveyjs.css';
 
 /*
   Or add your statements here:
