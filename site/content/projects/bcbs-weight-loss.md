@@ -25,7 +25,7 @@ results:
 features:
   - feature: Financial Incentives
   - feature: Deposit Randomization
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'http://journals.sagepub.com/doi/abs/10.1177/0890117116658210'
     pubname: >-

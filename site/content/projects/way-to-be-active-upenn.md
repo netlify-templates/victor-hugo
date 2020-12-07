@@ -21,7 +21,7 @@ results:
 features:
   - feature: Device Integration
   - feature: Financial Incentives
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: >-
       http://annals.org/aim/article/2491916/framing-financial-incentives-increase-physical-activity-among-overweight-obese-adults

@@ -21,7 +21,7 @@ results:
 features:
   - feature: Financial incentives
   - feature: Lottery
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'https://link.springer.com/article/10.1007%2Fs11606-014-2778-0'
     pubname: >-

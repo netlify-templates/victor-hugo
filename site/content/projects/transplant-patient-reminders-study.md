@@ -20,14 +20,14 @@ results:
 features:
   - feature: Pill-Bottle Device Configuration
   - feature: Automated Message Reminders
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'http://www.sciencedirect.com/science/article/pii/S0272638616305972'
     pubname: >-
       Automated Reminders and Physician Notification to Promote
       Immunosuppression Adherence Among Kidney Transplant Recipients: A
       Randomized Trial
-condition: Hypertension
+condition: Transplants
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true

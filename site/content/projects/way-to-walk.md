@@ -25,7 +25,7 @@ features:
   - feature: Financial Incentives
   - feature: Pedometer Device Configuration
   - feature: Targets
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'http://www.sciencedirect.com/science/article/pii/S0749379716306122'
     pubname: >-

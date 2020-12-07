@@ -23,7 +23,7 @@ features:
   - feature: Survey administration
   - feature: Financial incentives
   - feature: Participant dashboard
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: >-
       ttps://academic.oup.com/sleep/article/38/8/1229/2417958/Web-Based-Access-to-Positive-Airway-Pressure-Usage?searchresult=1

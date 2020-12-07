@@ -19,7 +19,7 @@ results:
   - result: Reduced 7-day readmissions by 43%
   - result: Reduced preventable readmits by 75%
 spotlight: true
-condition: Hypertension
+condition: Liver Transplants
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true

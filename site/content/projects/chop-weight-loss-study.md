@@ -20,7 +20,7 @@ features:
   - feature: Financial Incentives
   - feature: Group collaboration
   - feature: Targets
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3994977/'
     pubname: >-

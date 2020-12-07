@@ -23,7 +23,7 @@ results:
 features:
   - feature: Financial Incentives
   - feature: Device Integration
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'https://link.springer.com/article/10.1007%2Fs11606-016-3627-0'
     pubname: >-

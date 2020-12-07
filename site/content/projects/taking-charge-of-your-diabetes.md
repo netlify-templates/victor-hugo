@@ -20,7 +20,7 @@ results:
 features:
   - feature: Glycemic Monitoring Device Configuration
   - feature: Enrollment
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: ' https://www.ncbi.nlm.nih.gov/pubmed/28281353'
     pubname: >-

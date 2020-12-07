@@ -30,7 +30,7 @@ pubs:
 condition: COVID-19
 intervention: Remote monitoring
 outcome: Efficient resource utilization while ensuring patient safety
-dedicatedpage: true
+dedicatedpage: false
 externalurl: https://covidwatch.waytohealth.org/
 label: Standard of Care 
 image: /images/dailycheckin2.jpg

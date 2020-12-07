@@ -1,5 +1,5 @@
 ---
-title: covid-watch2
+title: COVID Watch
 articlename: >-
   Remote Monitoring of Patients with Covid-19: Design, implementation, and
   outcomes of the first 3,000 patients in COVID Watch

@@ -20,7 +20,7 @@ results:
 features:
   - feature: Financial Incentives
   - feature: CleverCap Pill Bottle Integration
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: >-
       https://journals.sagepub.com/doi/abs/10.1177/1740774519846852?rfr_dat=cr_pub%3Dpubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&journalCode=ctja

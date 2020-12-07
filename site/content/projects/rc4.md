@@ -17,7 +17,7 @@ summary: >-
 results:
   - result: Reduced LDL-C by 33%
   - result: Aligned patient and provider incentives
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'http://jamanetwork.com/journals/jama/fullarticle/2468891'
     pubname: >-

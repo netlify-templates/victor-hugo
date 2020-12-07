@@ -19,7 +19,7 @@ results:
 features:
   - feature: Device Integration
   - feature: Lottery
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: >-
       http://journals.sagepub.com/doi/abs/10.1177/0890117116658195?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed&

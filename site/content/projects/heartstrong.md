@@ -20,7 +20,7 @@ features:
   - feature: Text reminders
   - feature: Financial Incentives
   - feature: Support partners
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: >-
       https://archinte.jamanetwork.com/article.aspx?doi=10.1001/jamainternmed.2017.2449

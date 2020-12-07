@@ -42,7 +42,7 @@ customers:
     - logo: images/logos/wustl.png
       organizationName: 
       caseStudyLink:
-    - logo: images/logos/penn.png
+    - logo: images/logos/upenn.full.jpg
       organizationName: 
       caseStudyLink:
 

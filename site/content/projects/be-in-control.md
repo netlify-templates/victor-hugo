@@ -16,7 +16,7 @@ summary: >-
 results:
   - result: Effectiveness of financial incentives
   - result: Improved glucose monitoring by 62%
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'https://jamanetwork.com/journals/jamapediatrics/article-abstract/2657311'
     pubname: >-

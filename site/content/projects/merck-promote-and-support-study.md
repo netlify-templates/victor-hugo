@@ -19,7 +19,7 @@ results:
 features:
   - feature: Pill-Bottle Device Configuration
   - feature: Support Partner
-spotlight: true
+spotlight: false
 pubs:
   - pubURL: 'https://link.springer.com/article/10.1007%2Fs11606-015-3540-y'
     pubname: >-
