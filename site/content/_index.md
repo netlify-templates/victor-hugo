@@ -75,17 +75,17 @@ domains:
         description3: Research and innovation are usually constrained by cost and/or time. Our library of proven projects can serve as a base to help achieve quick successes. Open inboxes can help engage patients directly to gather data to understand patient needs. These can then be automated as needed. 
         is_even: true
         source: /researcher
-      - title: For Health Plans
-        image: images/patient.png
-        image_caption: The Heart Safe Motherhood program for pre-eclampsia
-        subtitle1: Increase adherence to wellness programs
-        description1: With roots in behavioral science, population health and wellness, our research has been geared towards improving adherence to programs that members might not always want to adhere to. Programs such as smoking cessation have been proven to be successful and are the standard at organizations such as GE, CVS and others. 
-        subtitle2: Offer evidence backed protocols
-        description2: In an increasingly competitive market, offering unique and proven programs is important. Our programs are differentiated by evidence, practical experience and operational expertise. 
-        subtitle3: Innovate at scale
-        description3: 1, 10, 10000 - the volume of members is irrelevant. What we enable is tailoring programs to latent member groups to maximize engagement and adherence. 
-        is_even: false
-        source: /healthplan
+      # - title: For Health Plans
+      #   image: images/patient.png
+      #   image_caption: The Heart Safe Motherhood program for pre-eclampsia
+      #   subtitle1: Increase adherence to wellness programs
+      #   description1: With roots in behavioral science, population health and wellness, our research has been geared towards improving adherence to programs that members might not always want to adhere to. Programs such as smoking cessation have been proven to be successful and are the standard at organizations such as GE, CVS and others. 
+      #   subtitle2: Offer evidence backed protocols
+      #   description2: In an increasingly competitive market, offering unique and proven programs is important. Our programs are differentiated by evidence, practical experience and operational expertise. 
+      #   subtitle3: Innovate at scale
+      #   description3: 1, 10, 10000 - the volume of members is irrelevant. What we enable is tailoring programs to latent member groups to maximize engagement and adherence. 
+      #   is_even: false
+      #   source: /healthplan
 
 keyfeatures:
   blurbs:

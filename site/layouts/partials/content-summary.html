@@ -1,4 +1,4 @@
-<div class="w-full md:w-1/3 px-4 mb-12 md:mb-0 mt-12">
+<div class="w-full lg:w-1/2 px-4 mb-12 md:mb-0 mt-12">
     <div class="relative flex flex-col h-full p-8 shadow-md">
         {{/*  {{ if .Params.label }}
         <span class="absolute top-0 right-0 text-sm py-1 px-3 -mt-4 -mr-2 text-white font-semibold bg-indigo-500 rounded-full">{{ .Params.label }}</span>
@@ -13,7 +13,13 @@
         <a class="text-blue-700 hover:underline" href="{{ .Params.source }}" target="blank"> <span class="text-xl mb-3 font-heading text">{{ .Params.title }}</span></a>
         {{ else }}
         <a class="text-blue-700 hover:underline" href="{{ .Params.source }}" target="blank"><span class="text-xl mb-3 font-heading text">{{ .Params.articlename }}</span></a>
-        {{ end }}        
+        {{ end }}
+        {{ if .Params.authors }}
+        <p class="mt-4 mb-6 text-gray-600 leading-relaxed ">{{ .Params.authors }}</p>
+        {{ end }}
+        {{ if .Params.journal }}
+        <p class="mt-4 mb-6 text-gray-600 leading-relaxed text-right">{{ .Params.journal }}</p>
+        {{ end }}
         <p class="mt-4 mb-6 text-gray-600 leading-relaxed ">{{ .Params.summary }}</p>
         {{/*  <a class="mt-auto text-blue-700 hover:underline text-right" href="{{ .Params.source }}">Read more</a>  */}}
     </div>

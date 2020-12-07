@@ -72,7 +72,7 @@
         {{ range first 1 (where site.RegularPages "Type" "eq" "blog") }}
             {{ partial "content-summary" . }}
         {{ end }}
-        {{ range first 1 (where site.RegularPages "Type" "eq" "press") }}
+        {{ range first 2 (where site.RegularPages "Type" "eq" "press") }}
             {{ partial "content-summary" . }}
         {{ end }}
         {{ range first 1 (where site.RegularPages "Type" "eq" "publications") }}
