@@ -39,14 +39,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   /* src: local("Open Sans"), local("Open Sans-Regular"), url(https://fonts.gstatic.com/s/Open Sans/v14/1Ptug8zYS_SKggPNyC0ISQ.woff) format("woff");  */
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   /* src: local("Open Sans Bold"), local("Open Sans-Bold"), url(https://fonts.gstatic.com/s/Open Sans/v14/1Ptrg8zYS_SKggPNwJYtWqZPBg.woff) format("woff");  */
