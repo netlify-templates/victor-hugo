@@ -33,7 +33,7 @@ intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
-image: /images/uploads/hsm.01.jpg
+image: /images/uploads/driving.mobile.jpg
 ---
 ## Background and Aim
 The majority of U.S. teens admit to handheld cellphone use while driving, an increasingly common cause of crashes. Attitudes toward novel cellphone applications and settings that block use while driving are poorly understood, potentially limiting uptake. We examined teens' willingness to reduce cellphone use while driving and perceptions of potential strategies to limit this behavior.

@@ -34,7 +34,7 @@ intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
-image: /images/uploads/hsm.01.jpg
+image: /images/uploads/physicalactivity.jpg
 ---
 ## Background and Aim
 More than half of adults in the United States do not attain the minimum recommended level of physical activity to achieve health benefits. The optimal design of financial incentives to promote physical activity is unknown.

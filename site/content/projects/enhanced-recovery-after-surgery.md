@@ -32,7 +32,7 @@ intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
-image: /images/uploads/hsm.01.jpg
+image: /images/uploads/eras.jpg
 solution_area: Surgery Solutions
 ---
 ## Background

@@ -33,7 +33,7 @@ intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
-image: /images/uploads/hsm.01.jpg
+image: /images/uploads/physicalactivity.jpg
 ---
 ## Background and Aim:
 Financial incentive designs to increase physical activity have not been well-examined. Aim was to test the effectiveness of 3 methods to frame financial incentives to increase physical activity among overweight and obese adults.

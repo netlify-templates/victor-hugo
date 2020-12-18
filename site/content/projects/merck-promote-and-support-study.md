@@ -30,7 +30,7 @@ intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
-image: /images/uploads/hsm.01.jpg
+image: /images/uploads/hsm.bp.jpg
 ---
 ## Background and Aim
 

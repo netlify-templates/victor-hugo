@@ -31,7 +31,7 @@ intervention: Wearables & remote monitoring
 outcome: Increased physical activity
 dedicatedpage: true
 label: Standard of Care 
-image: /images/uploads/hsm.01.jpg
+image: /images/uploads/physicalactivity.jpg
 ---
 ##Aim
 To compare the effectiveness of different combinations of social comparison feedback and financial incentives to increase physical activity.

@@ -21,7 +21,7 @@ spotlight: false
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
-dedicatedpage: true
+dedicatedpage: false
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
 ---

@@ -17,7 +17,7 @@ summary: 'Randomized crossover trial of different types of intra-articular injec
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity
-dedicatedpage: true
+dedicatedpage: false
 label: Standard of Care 
 image: /images/uploads/hsm.01.jpg
 ---

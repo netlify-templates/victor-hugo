@@ -14,6 +14,25 @@ Based on: https://codepen.io/nickelse/pen/YGPJQG
 Influenced by: https://sproutsocial.com/
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* #Resets
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;  }
+.ul-reset {
+	padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+	list-style: none;
+}
+
+/* #Browser Clearfix
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+   display: table; /* 2 */
+}
+.cf:after {clear: both;}
 
 /* #Mega Menu Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -69,10 +88,10 @@ Influenced by: https://sproutsocial.com/
     display: block;
 }
 
-/* .toggle-input:checked+label {
+.toggle-input:unchecked+label {
     color: white;
     background: #2c5282;
-} */
+}
 
 .toggle-input:checked~label:after {
     content: "\25B2";
