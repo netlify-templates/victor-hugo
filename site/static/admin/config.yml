@@ -1,0 +1,77 @@
+backend:
+  name: github
+  repo: waytohealth/way2health # Path to your Github repository
+  branch: master # Branch to update
+publish_mode: editorial_workflow
+media_folder: "site/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "projects" # Used in routes, e.g., /admin/collections/blog
+    label: "Project Highlights" # Used in the UI
+    folder: "site/content/projects" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g. title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "study_name", widget: "string"} #title of the case study
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
+      - {label: "Study Type", name: "area", widget: "select", options: ["clinical", "inprogress", "research"], required: true}
+      - {label: "Clinical Domain", name: "subdomain", widget: "string"} # Specific clinical or ops area
+      - {label: "Authors (minimum of two required)", name: "authors", widget: "list", fields: [{label: "PI Name", name: "authorname", widget: "string"},{label: "PI image", name: "authorimage", widget: "image"},{label: "Role", name: "authorrole", widget: "string"}]} #Author Name
+      - {label: "Summary", name: "summary", widget: "string"} # summary of the study
+      - {label: "Outcomes (minimum of two required)", name: "results", widget: "list", fields: [{label: "Outcome", name: "result", widget: "string"}], required: false}
+      - {label: "Features Used (minimum of two required)", name: "features", widget: "list", fields: [{label: "Feature", name: "feature", widget: "string"}]}
+      - {label: "Spotlight (only select if complete", name: "spotlight", widget: "select", options: ["true", "false"], required: false}
+      - {label: "External URL (if program has its own separate site like HSM or CW)", name: "externalurl", widget: "string", required: false}
+      - {label: "Image for dedicated page (re-use ones already used as much as possible)", name: "image", widget: "image"} # dedicated page image
+      - {label: "Body", name: "body", widget: "markdown", required: false} #body of the case study
+      - {label: "Publication(s)", name: "pubs", widget: "list", fields: [{label: "Publication Title", name: "pubname", widget: "string"},{label: "Publication URL", name: "pubURL", widget: "string"}], required: false}
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Company blog" # Used in the UI
+    folder: "site/content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g. title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"} #title of the blog post
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
+      - {label: "Summary", name: "summary", widget: "string"} # summary of the post
+      - {label: "Splash image", name: "image", widget: "image"} # background image
+      - {label: "Author Name", name: "authorname", widget: "string"} #Author Name
+      - {label: "Author image", name: "authorimage", widget: "image"} # background image
+      - {label: "Body", name: "body", widget: "markdown"} #body of the case study
+  - name: "enggblog" # Used in routes, e.g., /admin/collections/blog
+    label: "Product & Engineering blog" # Used in the UI
+    folder: "site/content/enggblog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g. title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"} #title of the blog post
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
+      - {label: "Summary", name: "summary", widget: "string"} # summary of the post
+      - {label: "Splash image", name: "image", widget: "image"} # background image
+      - {label: "Author Name", name: "authorname", widget: "string"} #Author Name
+      - {label: "Author image", name: "authorimage", widget: "image"} # background image
+      - {label: "Body", name: "body", widget: "markdown"} #body of the case study
+  - name: "press" # Used in routes, e.g., /admin/collections/blog
+    label: "Press" # Used in the UI
+    folder: "site/content/press" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g. title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"} #title of the blog post
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
+      - {label: "Summary", name: "summary", widget: "markdown"} # summary of the post
+      - {label: "Splash image", name: "image", widget: "image"} # background image
+      - {label: "Source", name: "source", widget: "string"} #Author Name
+  - name: "publications" # Used in routes, e.g., /admin/collections/blog
+    label: "Publications" # Used in the UI
+    folder: "site/content/publications" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g. title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Study Name", name: "title", widget: "string"} #title of the blog post
+      - {label: "Article Name", name: "articlename", widget: "string"} #title of the blog post
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
+      - {label: "Summary", name: "summary", widget: "string"} # summary of the post
+      - {label: "Authors", name: "authors", widget: "string"} # publication authors
+      - {label: "Source", name: "source", widget: "string"} #Author Name
+      - {label: "Journal Abbr", name: "journal", widget: "string"} #Abbreviated Journal name in citation

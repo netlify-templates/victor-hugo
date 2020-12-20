@@ -1,7 +1,7 @@
 ---
 study_name: Active Reward
 date: '2018-06-13'
-area: Research
+area: research
 subdomain: Cardiology
 status: complete
 authors:

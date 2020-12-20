@@ -23,6 +23,10 @@ vision:
       image: /images/ehr.svg
       summary: >
         Good technology must join not just patient and physician journeys, but also their existing technology, such as legacy EHR systems i.e. be available  in the context of their life and their “workflow”. Tighter integration with EHRs is necessary. Health systems have spent millions deploying and customizing EHRs. They are looking for ways to maximize the ROI. This will be a platform available to all irrespective of the EHR of choice.
+    - title: Support programs from conception to scale and standard of care
+      image: /images/support_programs.svg
+      summary: >
+        Program requirements change as they grow and evolve. We will provide software and services to help organizations (internal as well as external) build, test, iterate and integrate to service their patient and provider needs. We will do so as efficiently and effectively as possible, while remaining a non-profit organization. 
 
 affiliations:
   - name: Center for Health Care Innovation
@@ -47,45 +51,50 @@ origins:
 
 timeline:
   milestones:
+    - date: December 2020
+      icon: line-chart
+      iconcolor: blue
+      milestone: 290+ programs and 530,000+ patients
+      text: Mega programs are increasingly deployed on Way to Health targeting entire populations of patients with specific conditions, states and much more. Key programs continue to have 75+ NPS ratings.
     - date: July 2020
       icon: line-chart
       iconcolor: blue
-      milestone: 280+ studies and 110,000+ patients
+      milestone: 280+ programs and 110,000+ patients
       text: Way to Health is increasingly used in clinical programs and is central to Penn's COVID-19 response efforts. Programs such as COVID Watch, COVID Pulse, Results Reporting and many more get rolled out in record time. 
     - date: December 2019
       icon: trophy
       iconcolor: green
-      milestone: 150+ studies and 60,000+ patients
-      text: Improvements in the platform now allow accelerated deployments at an average rate of 2-3 studies per week.
+      milestone: 150+ programs and 60,000+ patients
+      text: Improvements in the platform now allow accelerated deployments at an average rate of 2-3 programs per week.
     - date: July 2019
       icon: arrow-up
       iconcolor: blue
-      milestone: 125 studies and accelerating
+      milestone: 125 programs and accelerating
       text: Our user base continues to diversity with multiple external organizations across the country starting up projects independently from Penn. 
     - date: June 2018
       icon: line-chart
       iconcolor: green
       milestone: 100 study milestone
-      text: Way To Health continues to go from strength to strength. It currently has managed a total of a 101 studies with many more in the pipeline.
+      text: Way To Health continues to go from strength to strength. It currently has managed a total of a 101 programs with many more in the pipeline.
     - date: December 2017
       icon: arrow-up
       iconcolor: blue
-      milestone: 85 research studies and clinical pilots. 28+ peer reviewed publications. 
+      milestone: 85 research programs and clinical pilots. 28+ peer reviewed publications. 
       text: Successes continue to add up as the platform is used now not only for research but also for clinical pilots and larger scale clinical deployments. 
     - date: July 2016
       icon: comments-o
       iconcolor: green
-      milestone: 55 studies and 15+ peer reviewed publications. 
+      milestone: 55 programs and 15+ peer reviewed publications. 
       text: Successes continue to pile up and the platform continues to evolve as more and more capabilties are needed - gamification, device integrations, text messaging and many more. 
     - date: July 2015
       icon: thumbs-o-up
       iconcolor: blue
       milestone: 25+ study milestone
-      text: Way To Health continues to gain wider adoption with zero marketing. This is major milestone as it represents studies across multiple domains - CHF, Diabetes, Wellness, Adolescents and Children and many more
+      text: Way To Health continues to gain wider adoption with zero marketing. This is major milestone as it represents programs across multiple domains - CHF, Diabetes, Wellness, Adolescents and Children and many more
     - date: Jan 2014
       icon: universal-access
       iconcolor: green
-      milestone: Default platform for BE studies at UPenn and in other institutions
+      milestone: Default platform for BE programs at UPenn and in other institutions
       text: Behavioral economics based research continues to show promise and this purpose built tool increasingly becomes the go-to choice for researchers. Kevin and David institute grants to give young researchers a way to quickly try out innovative ideas.
     - date: July 2013
       icon: user-md
@@ -95,8 +104,8 @@ timeline:
     - date: Jan 2012
       icon: flash
       iconcolor: red
-      milestone: Way to Health supports 25 studies
-      text: Way To Health continues to evolve as more and more researchers within Penn use the platform to set up and deploy small and large scale studies.
+      milestone: Way to Health supports 25 programs
+      text: Way To Health continues to evolve as more and more researchers within Penn use the platform to set up and deploy small and large scale programs.
     - date: Jan 2011
       icon: bell-o
       iconcolor: green
