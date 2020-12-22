@@ -13,7 +13,7 @@ summary: >-
   Innovation, and his team are among the leaders creating and implementing
   game-changing innovations during this pandemic. In this podcast, he dives
   deeply into Penn Medicine’s COVID Watch technology and their COBALT program.
-image: /images/uploads/pp.asch.png
+image: /images/uploads/pp.asch.jpg
 source: >-
   https://passionatepioneers.captivate.fm/episode/expert-coronavirus-updates-session-21
 ---

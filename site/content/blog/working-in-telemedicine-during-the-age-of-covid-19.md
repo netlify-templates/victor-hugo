@@ -5,7 +5,7 @@ summary: >-
   COVID has impacted us all. Working remotely has been a challenge. This is set
   of conversations with implementation, engineering and management to gain some
   insights into their work during these challenging times. 
-image: /images/uploads/screen-shot-2020-08-31-at-3.45.10-pm.png
+image: /images/uploads/telemed.jpg
 authorname: Smriti Shah
 authorimage: /images/uploads/author-pic.jpg
 ---
