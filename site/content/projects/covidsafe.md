@@ -14,13 +14,16 @@ summary: >-
   Given that testing availability will likely continue to be constrained, symptom tracking based testing could lead to earlier case identification. At the same time, sentinel surveillance will be a critical tool for identifying pre-symptomatic, asymptomatic or mildly symptomatic spread that may evade symptom-based surveillance. Together, this approach provides ability to rapidly identify new cases and conduct contact tracing. This is an RCT that aims to (1) Evaluate the feasibility of a saliva-based screening COVID viral testing program (2) Compare behavioral strategies to improve study enrollment (3)Understand the relationship between daily symptom tracking and identifying infection, 
 results:
   - result: >-
-      1000+ recruited
+      2500+ recruited
+  - result: >-
+      10,000+ tests      
   - result: >-
       Increased installs of patient app
 features:
   - feature: Two-way Texting
   - feature: LIMS integration
   - feature: Arms & Randomization
+  - feature: Nudges
 spotlight: true
 pubs:
   - pubURL: 
