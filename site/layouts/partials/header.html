@@ -31,6 +31,18 @@
               $('#toggle-two').prop('checked', false);
             }
           });
+
+          // only expand one menu item at a time
+          let toggles = document.querySelectorAll('.nav-menu .toggleable .toggle-input');
+          toggles.forEach(function(toggle){
+            toggle.addEventListener('change', function(event) {
+              toggles.forEach(function(t) {
+                if (t != event.target) {
+                  t.checked = false;
+                }
+              });
+            });
+          });
         });
     </script>
     <meta charset="utf-8">
