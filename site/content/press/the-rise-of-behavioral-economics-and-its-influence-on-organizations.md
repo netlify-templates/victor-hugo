@@ -9,8 +9,7 @@ summary: >-
   his approach to research tell us, may lead to a powerful change for the
   better. It just requires an acknowledgment that human behavior is full of
   anomalies.
-image:   >-
-  : /images/uploads/the-rise-of-behavioral-economics-and-its-influence-on-organizations.jpg
+image: /images/uploads/be-rise.jpg
 source:   https://hbr.org/2017/10/the-rise-of-behavioral-economics-and-its-influence-on-organizations
 ---
 
