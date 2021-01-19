@@ -38,26 +38,13 @@ collections:
       - {label: "Author Name", name: "authorname", widget: "string"} #Author Name
       - {label: "Author image", name: "authorimage", widget: "image"} # background image
       - {label: "Body", name: "body", widget: "markdown"} #body of the case study
-  - name: "enggblog" # Used in routes, e.g., /admin/collections/blog
-    label: "Product & Engineering blog" # Used in the UI
-    folder: "site/content/enggblog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g. title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"} #title of the blog post
-      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
-      - {label: "Summary", name: "summary", widget: "string"} # summary of the post
-      - {label: "Splash image", name: "image", widget: "image"} # background image
-      - {label: "Author Name", name: "authorname", widget: "string"} #Author Name
-      - {label: "Author image", name: "authorimage", widget: "image"} # background image
-      - {label: "Body", name: "body", widget: "markdown"} #body of the case study
   - name: "press" # Used in routes, e.g., /admin/collections/blog
     label: "Press" # Used in the UI
     folder: "site/content/press" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g. title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"} #title of the blog post
+      - {label: "Title", name: "articlename", widget: "string"} #title of the blog post
       - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
       - {label: "Summary", name: "summary", widget: "markdown"} # summary of the post
       - {label: "Splash image", name: "image", widget: "image"} # background image

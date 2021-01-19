@@ -1,5 +1,5 @@
 ---
-title: How Innovation Helped Prepare for Pandemic
+articlename: How Innovation Helped Prepare for Pandemic
 date: '2020-06-01'
 summary: >-
   A write up on all the ways in which the Center for Health Care Innovation

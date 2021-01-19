@@ -1,5 +1,5 @@
 ---
-title: >-
+articlename: >-
   Passionate Pioneers with Mike Biselli: Expert Coronavirus Updates with Dr.
   David Asch | Session 21
 date: '2020-09-23'

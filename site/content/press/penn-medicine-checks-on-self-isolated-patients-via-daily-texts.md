@@ -1,5 +1,5 @@
 ---
-title: Penn Medicine checks on self-isolated patients via daily texts
+articlename: Penn Medicine checks on self-isolated patients via daily texts
 date: '2020-04-29'
 summary: >-
   Penn Medicine’s COVID Watch system lets the health care team check up on a

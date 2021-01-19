@@ -1,5 +1,5 @@
 ---
-title: >-
+articlename: >-
   $2.5 Million Grant Supports Penn Medicine Study of COVID Watch’s Impact on
   Health Disparities
 date: '2020-08-20'

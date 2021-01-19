@@ -1,5 +1,5 @@
 ---
-title: >-
+articlename: >-
   Some COVID-19 patients aren’t getting better. Major medical centers are trying
   to figure out how to help.
 date: '2020-11-16'

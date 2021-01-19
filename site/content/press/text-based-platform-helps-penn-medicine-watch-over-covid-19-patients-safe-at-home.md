@@ -1,5 +1,5 @@
 ---
-title: >-
+articlename: >-
   Text-Based Platform Helps Penn Medicine Watch Over COVID-19 Patients Safe at
   Home
 date: '2020-04-15'

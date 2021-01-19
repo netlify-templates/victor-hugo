@@ -1,5 +1,5 @@
 ---
-title: Patients Stick with Smartphone Activity Trackers Longer Than Wearable Devices
+articlename: Patients Stick with Smartphone Activity Trackers Longer Than Wearable Devices
 date: '2020-02-11'
 summary: >-
   According to a new Penn Medicine Study, doctors who track their patients’

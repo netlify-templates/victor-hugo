@@ -1,5 +1,5 @@
 ---
-title: >-
+articlename: >-
   Going to the hospital with COVID-19 symptoms can be a tough call. This Penn
   text program makes it easier.
 date: '2020-05-22'

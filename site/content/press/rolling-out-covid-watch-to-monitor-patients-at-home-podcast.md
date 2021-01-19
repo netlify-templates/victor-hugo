@@ -1,5 +1,5 @@
 ---
-title: Rolling out COVID Watch to monitor patients At home (Podcast)
+articlename: Rolling out COVID Watch to monitor patients At home (Podcast)
 date: '2020-05-16'
 summary: >-
   PennHealthX interviews medical director Anna U. Morgan MD about the challenges
