@@ -14,11 +14,12 @@ summary: 'Hypertension monitoring text messaging program for Penn Medicine emplo
 results:
   - result: 'Decrease in high blood pressure for participants. '
   - result: >-
-      Remote population health manage of patients, including medication
+      Remote population health management of patients, including medication
       management.
 features:
-  - feature: 'Two-way Texting '
-  - feature: 'Epic Integration '
+  - feature: 'Two-way Texting'
+  - feature: 'Epic Integration'
+  - feature: 'Natural Language Understanding'
 spotlight: 'false'
 condition: Hypertension
 intervention: Wearables & remote monitoring
