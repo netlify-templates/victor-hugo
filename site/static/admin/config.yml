@@ -31,13 +31,14 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g. title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"} #title of the blog post
-      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
-      - {label: "Summary", name: "summary", widget: "string"} # summary of the post
-      - {label: "Splash image", name: "image", widget: "image"} # background image
-      - {label: "Author Name", name: "authorname", widget: "string"} #Author Name
+      - {label: "Title", name: "title", widget: "string", required: true} #title of the blog post
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD", required: true} # date of publication / creation
+      - {label: "Summary", name: "summary", widget: "string", required: true} # summary of the post
+      - {label: "Splash image", name: "image", widget: "image", required: true} # background image
+      - {label: "Author Name", name: "authorname", widget: "string", required: true} #Author Name
       - {label: "Author image", name: "authorimage", widget: "image"} # background image
-      - {label: "Body", name: "body", widget: "markdown"} #body of the case study
+      - {label: "Body", name: "body", widget: "markdown", required: true} #body of the case study
+      - {label: "Label", name: "label", widget: "string", required: true} #Label shown next to the post
   - name: "press" # Used in routes, e.g., /admin/collections/blog
     label: "Press" # Used in the UI
     folder: "site/content/press" # The path to the folder where the documents are stored

@@ -8,6 +8,7 @@ summary: >-
 image: /images/uploads/telemed.jpg
 authorname: Smriti Shah
 authorimage: /images/uploads/author-pic.jpg
+label: COVID-19
 ---
 2020 has led to many changes— transitioning to remote work being one of them. Many of us are still getting used to our new reality of telecommuting with about half of employed adults currently working from home. Telecommuting has been on the rise over the last several years and has accelerated exponentially since the pandemic first began. Drawing a direct parallel to this, the field of telemedicine has had a similar claim to fame. Put these two together and working on telemedicine programs for a health system in the midst of a pandemic can be a whole other ball game. I sat down with some integral members of the Way to Health Team to talk about the COVID-19 pandemic and just how it impacted their work here.
 
