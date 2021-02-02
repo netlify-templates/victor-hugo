@@ -8,3 +8,46 @@
 
 [context.deploy-preview]
   command = "npm run build:preview"
+
+# Redirects to JIRA service desk
+[[redirects]]
+  from = "/helpdesk"
+  to = "https://waytohealth.atlassian.net/servicedesk"
+  force=true
+[[redirects]]
+  from = "/support"
+  to = "https://waytohealth.atlassian.net/servicedesk"
+  force=true
+
+[[redirects]]
+  from = "https://helpdesk.waytohealth.org"
+  to = "https://waytohealth.atlassian.net/servicedesk"
+  force=true
+[[redirects]]
+  from = "http://helpdesk.waytohealth.org"
+  to = "https://waytohealth.atlassian.net/servicedesk"
+  force=true
+[[redirects]]
+  from = "https://support.waytohealth.org"
+  to = "https://waytohealth.atlassian.net/servicedesk"
+  force=true
+[[redirects]]
+  from = "http://support.waytohealth.org"
+  to = "https://waytohealth.atlassian.net/servicedesk"
+  force=true
+
+
+# Redirects to Confluence
+[[redirects]]
+  from = "/userguide"
+  to = "https://waytohealth.atlassian.net/wiki/spaces/WTHST/overview"
+  force=true
+[[redirects]]
+  from = "http://userguide.waytohealth.org"
+  to = "https://waytohealth.atlassian.net/wiki/spaces/WTHST/overview"
+  force=true
+[[redirects]]
+  from = "https://userguide.waytohealth.org"
+  to = "https://waytohealth.atlassian.net/wiki/spaces/WTHST/overview"
+  force=true
+
