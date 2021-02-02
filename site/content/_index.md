@@ -55,7 +55,7 @@ domains:
   listing:
       - title: For Health Systems
         image: images/sindhu.adi.jpg
-        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Materal and Fetal Medicine, Penn Medicine
+        image_caption: Drs. Sindhu Srinivas and Adi Hirshberg, Maternal Fetal Medicine, Penn Medicine
         subtitle1: Reduce Readmissions
         description1: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions are needed. Leverage evidence based programs such as Heart Safe Motherhood that have reduced readmissions by 80%.
         subtitle2: Enable the move to home based care
