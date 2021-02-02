@@ -34,7 +34,7 @@ We've been around for a [while](/about) and our website hadn't had an update in 
 We feel that this is just the beginning. There is a lot of information that we'd like to share that hopefully, everyone can benefit from. Some of those plans are described below.
 
 ### Regular blog content
-You will see a lot more content in here ranging from thought pieces to news. We hope to update this blog on montly basis to begin with and a weekly basis shortly thereafter.
+You will see a lot more content in here ranging from thought pieces to news. We hope to update this blog on monthly basis to begin with and a weekly basis shortly thereafter.
 
 ### The ABCs - The Academy for Behavioral Changes
 Behavioral change is the blockbuster drug of the 21st century. Other have written about patient engagement being that blockbuster drug but patient engagement, we believe, is only possible with accompanying behavioral change. Look for a series of posts focusing on learnings from leaders and innovators in the space.
