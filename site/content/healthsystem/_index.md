@@ -11,7 +11,7 @@ main_section_image_caption:
 main_section_blurbs:
   blurbs:
     - heading: Reduce readmissions
-      summary: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmisions reductions from 5% to 1%.
+      summary: With the move to value based care (VBC) and increased risk bearing contracts, proven solutions to reduce readmissions is critical. Leverage evidence based models to reduce readmissions in your context. Programs such as Heart Safe Motherhood have shown readmissions reductions from 5% to 1%.
     - heading: Increase pre and post procedure adherence
       summary: While VBC is important, a significant portion of revenue is still dependent on procedures. Whether it is colonoscopy prep or post joint replacement surgery, programs such as Engaged Recovery After Surgery (ERAS) have been proven and shown to increase adherence while still achieving 80+ Net Promoter Score (NPS) ratings.
     - heading: Increase capacity

@@ -56,7 +56,7 @@ We have always done a combination of research and clinical work. With COVID Watc
 
 _If the economy takes a serious hit, how does it impact our customers?_
 
-The economy has already taken a serious hit. Way to Health is part of Penn Medicine so anything that impacts Penn Med will impact us as well. Budgets are constrained across the board. Health care is an essential service. It's not like you can put off chemotherapy infusions or CABG surgeries indefinetely. So we can now see gradual recovery as patient volumes come back up to pre-COVID levels.
+The economy has already taken a serious hit. Way to Health is part of Penn Medicine so anything that impacts Penn Med will impact us as well. Budgets are constrained across the board. Health care is an essential service. It's not like you can put off chemotherapy infusions or CABG surgeries indefinitely. So we can now see gradual recovery as patient volumes come back up to pre-COVID levels.
 
 We have two sets of customers - researchers and health care organizations. Research has definitely been impacted with studies paused but are now restarting. Clinical projects have accelerated quite a bit as remote monitoring and telemedicine have taken off. Both were severely impacted over the past few months but they seem to be recovering slowly but surely. 
 

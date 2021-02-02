@@ -18,7 +18,7 @@ results:
   - result: Daily lottery incentive group had a mean loss of 1.0 pounds
 features:
   - feature: Lottery
-  - feature: Financial Incetives
+  - feature: Financial Incentives
 spotlight: false
 pubs:
   - pubURL: 'http://content.healthaffairs.org/content/35/1/71.long'

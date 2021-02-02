@@ -1,5 +1,5 @@
 ---
-study_name: 'Remote Ostomy Ouput Monitoring'
+study_name: 'Remote Ostomy Output Monitoring'
 date: 2019-06-01
 area: complete
 subdomain: Remote Monitoring

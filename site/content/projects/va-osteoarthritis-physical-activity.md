@@ -13,7 +13,7 @@ authors:
     authorimage: /images/uploads/bake7292.jpg
     authorname: Joshua Baker, MD
     authorrole: Principal Investigator
-summary: 'Randomized crossover trial of different types of intra-articular injections (population: osteoarthritis at the VA). WTH to be used to monitor physical activity (activity monitors) and patient-reported outcomes over the 3 months after each injection. Financial incentives will also be used to promote adherence to the completion of the patient-reported outcomes.'
+summary: 'Randomized crossover trial of different types of intra-articular injections (population: osteoarthritis at the VA). W2H to be used to monitor physical activity (activity monitors) and patient-reported outcomes over the 3 months after each injection. Financial incentives will also be used to promote adherence to the completion of the patient-reported outcomes.'
 condition: Hypertension
 intervention: Wearables & remote monitoring
 outcome: Increased physical activity

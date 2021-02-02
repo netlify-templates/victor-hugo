@@ -85,7 +85,7 @@ timeline:
       icon: comments-o
       iconcolor: green
       milestone: 55 programs and 15+ peer reviewed publications. 
-      text: Successes continue to pile up and the platform continues to evolve as more and more capabilties are needed - gamification, device integrations, text messaging and many more. 
+      text: Successes continue to pile up and the platform continues to evolve as more and more capabilities are needed - gamification, device integrations, text messaging and many more. 
     - date: July 2015
       icon: thumbs-o-up
       iconcolor: blue

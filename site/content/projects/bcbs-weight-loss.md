@@ -11,7 +11,7 @@ authors:
     authorname: 'Andrea B. Troxel, ScD'
     authorrole: Investigator
   - authorimage: /images/uploads/loewenstein-hi-res1-996x1024-min.jpg
-    authorname: 'George Lowenstein, PhD'
+    authorname: 'George Loewenstein, PhD'
     authorrole: Investigator
 summary: >-
   Test whether employer matching of employees’ monetary contributions increases

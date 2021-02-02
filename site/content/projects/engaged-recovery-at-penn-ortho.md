@@ -2,7 +2,7 @@
 study_name: 'Engaged Recovery at Penn - Ortho'
 date: 2016-10-01
 area: inprogress
-subdomain: Orthopadeic Surgery
+subdomain: Orthopedic Surgery
 status: Analysis
 authors:
   - 

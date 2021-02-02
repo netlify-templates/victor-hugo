@@ -62,7 +62,7 @@ They conducted a 36-week parallel design randomized, controlled trial between Ma
 
 - **Survey/Questionnaire Administration**: Conduct and collect survey/questionnaire responses from participants
 
-- **Financial Inventives**: Allow participants to receive financial incentives based on their adherence
+- **Financial Incentives**: Allow participants to receive financial incentives based on their adherence
 
 ## Findings and Conclusion
 

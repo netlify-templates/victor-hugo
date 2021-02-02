@@ -45,7 +45,7 @@ They conducted a prospective study at an urban academic endoscopy center. Based 
 
 ![]( /images/uploads/10.1177_1090198119869964-table1.gif )
 
-**Interventions** - Intervention patients were enrolled via telephone using a script approved by our institutional review board. Comparison patients were not contacted for this study. All patients were selected using a random number generator. Patients in the comparison arm received usual care, consisting of paper instructions and a phone call in the week prior to colonoscopy. Intervention patients also received these measures. For each patient, basic demographic and clinical comorbidity data, appointment adherence (show, no-show, cancelation), bowel preparation quality (excellent, good, fair, poor), and colonoscopy completion (cecum reached) were obtained through electronic medical record review. 
+**Interventions** - Intervention patients were enrolled via telephone using a script approved by our institutional review board. Comparison patients were not contacted for this study. All patients were selected using a random number generator. Patients in the comparison arm received usual care, consisting of paper instructions and a phone call in the week prior to colonoscopy. Intervention patients also received these measures. For each patient, basic demographic and clinical comorbidity data, appointment adherence (show, no-show, cancellation), bowel preparation quality (excellent, good, fair, poor), and colonoscopy completion (cecum reached) were obtained through electronic medical record review. 
 
 **Main Outcomes and Measures** - The primary outcome was appointment adherence. The secondary outcomes were bowel preparation quality and colonoscopy completion between groups.
 

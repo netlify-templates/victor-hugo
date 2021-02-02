@@ -12,7 +12,7 @@ summary: >-
   baseline characteristics to group participants into distinct behavioral
   phenotypes and evaluated differential responses to a physical activity
   intervention. Engagement varies significantly across the identified
-  phenotypes. The hope is to levarege this methodology to improve patient
+  phenotypes. The hope is to leverage this methodology to improve patient
   engagement across multiple clinical domains.
 authors: >-
   Xisui Shirley Chen , Sujatha Changolkar, Amol S. Navathe,  Kristin A. Linn,

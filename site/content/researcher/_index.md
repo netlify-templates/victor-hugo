@@ -1,5 +1,5 @@
 ---
-title: Platfrom developed by and for researchers & innovators
+title: Platform developed by and for researchers & innovators
 subtitle: Automate multiple aspects of running a clinical trial or pilot
 image: /images/rct.svg
 image_caption: 

@@ -14,7 +14,7 @@ authors:
     authorname: David Asch, MD, MBA
     authorrole: Investigator
 summary: >
-  Levarege the W2H platform to develop and evaluate a new hypertension
+  Leverage the W2H platform to develop and evaluate a new hypertension
   service-delivery model that is integrated with routine clinical care at Penn
   Family Care (PFC), an academic family medicine practice in West Philadelphia.
   Among patients with poorly controlled HTN, we will assess the effects of
