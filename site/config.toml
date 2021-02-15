@@ -12,7 +12,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   mainSections = ["projects", "press", "publications", "blog"]
   description = "Way To Health is a platform to research, develop and deploy evidence based patient engagement strategies"
   author="Mohan Balachandran"
-  robots="index, follow"
+  robots="noindex, nofollow"
 
 [markup]
   defaultMarkdownHandler = "blackfriday"
