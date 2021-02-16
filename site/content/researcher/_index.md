@@ -6,8 +6,8 @@ image_caption:
 introtitle: Leverage our experience and capabilities to quickly design and deploy RCTs at scale
 introsubtitle: We have supported 202 research studies across all 50 states in partnership with over 30 research institutions to-date. 
 introtext: With rapid implementation times and multiple available modules for eConsent, randomizations, arm management, data collection and messaging, RCTs can be built and scaled as needed locally and virtually.
-main_section_image: images/researchers.jpg
-main_section_image_caption: From L to R- Drs David Asch, Kevin Volpp, Mitesh Patel, Scott Halpern, Kit Delgado, Shivan Mehta, Perelman School of Medicine
+main_section_image: images/researcher2.jpg
+main_section_image_caption: From L to R- Drs David Asch, Kevin Volpp, Scott Halpern, Mitesh Patel, Kit Delgado, Shreya Kangovi, Perelman School of Medicine
 main_section_blurbs:
   blurbs:
     - heading: Design any interventional study
