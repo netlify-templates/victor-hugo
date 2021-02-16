@@ -9,10 +9,10 @@
         {{ if .Params.image }}
             <img class="rounded shadow-md mb-6" src="{{ .Params.image }}" alt="">
         {{ end }}
-        {{ if .Params.title }}
-        <a class="text-blue-700 hover:underline" href="{{ .Params.source }}" target="blank"> <span class="text-xl mb-3 font-heading text">{{ .Params.title }}</span></a>
+        {{ if .Params.externallink }}
+        <a class="text-blue-700 hover:underline" href="{{ .Params.externallink }}" target="blank"> <span class="text-xl mb-3 font-heading text">{{ .Params.title }}</span></a>
         {{ else }}
-        <a class="text-blue-700 hover:underline" href="{{ .Params.source }}" target="blank"><span class="text-xl mb-3 font-heading text">{{ .Params.articlename }}</span></a>
+        <a class="text-blue-700 hover:underline" href="{{ .Permalink }}"><span class="text-xl mb-3 font-heading text">{{ .Params.title }}</span></a>
         {{ end }}
         {{ if .Params.authors }}
         <p class="mt-4 mb-6 text-gray-600 leading-relaxed ">{{ .Params.authors }}</p>
