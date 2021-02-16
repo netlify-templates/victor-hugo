@@ -1,5 +1,5 @@
 ---
-study_name: 'Engaged Recovery at Penn - Gyn'
+title: 'Engaged Recovery at Penn - Gyn'
 date: 2017-06-01
 area: inprogress
 subdomain: Surgery

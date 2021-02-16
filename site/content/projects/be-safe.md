@@ -1,5 +1,5 @@
 ---
-study_name: BE SAFE
+title: BE SAFE
 date: 2016-06-01
 area: inprogress
 subdomain: Mental Health

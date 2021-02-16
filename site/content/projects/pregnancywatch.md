@@ -1,5 +1,5 @@
 ---
-study_name: Pregnancy Watch
+title: Pregnancy Watch
 date: '2020-06-25'
 area: clinical
 subdomain: Remote Monitoring

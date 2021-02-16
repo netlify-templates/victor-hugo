@@ -1,5 +1,5 @@
 ---
-study_name: Way to Be Active - UPHS
+title: Way to Be Active - UPHS
 date: '2016-07-15'
 area: research
 subdomain: Physical Activity

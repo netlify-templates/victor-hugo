@@ -1,5 +1,5 @@
 ---
-articlename: Taking steps to improve activity-tracking results
+title: Taking steps to improve activity-tracking results
 date: '2018-03-08'
 summary: >-
   People don't use activity trackers as much as prior surveys indicate.
@@ -8,6 +8,6 @@ summary: >-
   and gamification can perhaps be used to nudge individuals to pay more
   attention to their health.
 image:  /images/uploads/mpatel-min.jpg
-source:   https://penncurrent.upenn.edu/features/taking-steps-to-improve-activity-tracking-results
+externallink:   https://penncurrent.upenn.edu/features/taking-steps-to-improve-activity-tracking-results
 ---
 

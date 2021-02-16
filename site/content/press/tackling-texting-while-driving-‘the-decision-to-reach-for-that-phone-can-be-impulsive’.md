@@ -1,5 +1,5 @@
 ---
-articlename: >-
+title: >-
   Tackling Texting While Driving: ‘The Decision to Reach for That Phone Can Be
   Impulsive’
 date: '2019-08-01'
@@ -14,6 +14,6 @@ summary: >-
   nudge drivers into the correct behavior, like apps that automatically switch
   on to prevent incoming notifications while in the car.
 image:  /images/uploads/text-drive.jpg
-source: 'https://kwhs.wharton.upenn.edu/2019/08/tackling-texting-while-driving/'
+externallink: 'https://kwhs.wharton.upenn.edu/2019/08/tackling-texting-while-driving/'
 ---
 

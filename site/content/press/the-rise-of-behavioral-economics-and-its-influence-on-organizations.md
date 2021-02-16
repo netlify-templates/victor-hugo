@@ -1,5 +1,5 @@
 ---
-articlename: The Rise of Behavioral Economics and Its Influence on Organizations
+title: The Rise of Behavioral Economics and Its Influence on Organizations
 date: 2017-10-10T12:22:38-04:00
 summary: >-
   Smoking, savings, honesty, and healthy eating may not be items on your list of
@@ -10,6 +10,6 @@ summary: >-
   better. It just requires an acknowledgment that human behavior is full of
   anomalies.
 image: /images/uploads/be-rise.jpg
-source:   https://hbr.org/2017/10/the-rise-of-behavioral-economics-and-its-influence-on-organizations
+externallink:   https://hbr.org/2017/10/the-rise-of-behavioral-economics-and-its-influence-on-organizations
 ---
 

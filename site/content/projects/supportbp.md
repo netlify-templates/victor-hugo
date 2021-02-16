@@ -1,5 +1,5 @@
 ---
-study_name: SupportBP
+title: SupportBP
 date: 2017-06-01
 area: inprogress
 subdomain: Hypertension

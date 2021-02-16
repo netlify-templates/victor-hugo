@@ -1,5 +1,5 @@
 ---
-study_name: PennPRO
+title: PennPRO
 date: 2018-01-01
 area: inprogress
 subdomain: Oncology

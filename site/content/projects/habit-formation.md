@@ -1,5 +1,5 @@
 ---
-study_name: Habit Formation
+title: Habit Formation
 date: '2019-05-31'
 area: research
 subdomain: Medication Adherence

@@ -1,5 +1,5 @@
 ---
-articlename: >-
+title: >-
   Passionate Pioneers with Mike Biselli: Expert Coronavirus Updates with Dr.
   David Asch | Session 21
 date: '2020-09-23'
@@ -14,7 +14,7 @@ summary: >-
   game-changing innovations during this pandemic. In this podcast, he dives
   deeply into Penn Medicine’s COVID Watch technology and their COBALT program.
 image: /images/uploads/pp.asch.jpg
-source: >-
+externallink: >-
   https://passionatepioneers.captivate.fm/episode/expert-coronavirus-updates-session-21
 ---
 

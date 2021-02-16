@@ -1,5 +1,5 @@
 ---
-study_name: VA Osteoarthritis - Physical Activity
+title: VA Osteoarthritis - Physical Activity
 date: '2018-07-30'
 area: inprogress
 subdomain: Medication Adherence

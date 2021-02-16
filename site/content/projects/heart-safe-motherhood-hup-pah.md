@@ -1,5 +1,5 @@
 ---
-study_name: 'Heart Safe Motherhood - HUP/PAH'
+title: 'Heart Safe Motherhood - HUP/PAH'
 date: 2018-09-18
 area: inprogress
 subdomain: Womens Health

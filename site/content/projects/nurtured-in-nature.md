@@ -1,5 +1,5 @@
 ---
-study_name: Nurtured in Nature
+title: Nurtured in Nature
 date: '2019-09-09'
 area: inprogress
 subdomain: Physical Activity

@@ -1,5 +1,5 @@
 ---
-study_name: Way to Safety
+title: Way to Safety
 date: '2018-05-28'
 area: research
 subdomain: Driving

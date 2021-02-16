@@ -1,5 +1,5 @@
 ---
-study_name: Remote Monitoring of Depression in Older Adults
+title: Remote Monitoring of Depression in Older Adults
 date: '2018-11-30'
 area: inprogress
 subdomain: Mental Health

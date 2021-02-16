@@ -1,5 +1,5 @@
 ---
-articlename: 'Commentary: How Can We Help People Quit Smoking? Pay Them.'
+title: 'Commentary: How Can We Help People Quit Smoking? Pay Them.'
 date: '2017-11-16'
 summary: >-
   Anti-smoking advocates need to disseminate advice about effective behavior
@@ -7,6 +7,6 @@ summary: >-
   preventing disease, as opposed to simply treating the health consequences of
   smoking.
 image:  /images/uploads/smoking.cessation.png
-source: 'http://fortune.com/2017/11/16/quit-smoking-great-american-smokeout-2017/'
+externallink: 'http://fortune.com/2017/11/16/quit-smoking-great-american-smokeout-2017/'
 ---
 

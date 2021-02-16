@@ -1,5 +1,5 @@
 ---
-study_name: Way to Quit
+title: Way to Quit
 date: 2015-05-13T00:00:00.000Z
 area: research
 subdomain: Smoking Cessation

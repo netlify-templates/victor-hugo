@@ -1,5 +1,5 @@
 ---
-articlename: >-
+title: >-
   END OF WATCH: What happens when you try to change behavior without behavioral
   science?
 date: '2018-01-28'
@@ -11,6 +11,6 @@ summary: >-
   and ‘How much will this cake or this gym workout add to my overall life,’ and
   then make a decision,” Patel says. “But we know people don’t do that.”
 image:  /images/uploads/verge01-min.jpg
-source:   https://www.theverge.com/2018/1/24/16926350/apple-watch-series-2-fitness-tracker-healthy-notification-behavior
+externallink:   https://www.theverge.com/2018/1/24/16926350/apple-watch-series-2-fitness-tracker-healthy-notification-behavior
 ---
 

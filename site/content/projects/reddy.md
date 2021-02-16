@@ -1,5 +1,5 @@
 ---
-study_name: Statin Medication Adherence
+title: Statin Medication Adherence
 date: '2017-03-01'
 area: research
 subdomain: Cardiovascular Disease Management

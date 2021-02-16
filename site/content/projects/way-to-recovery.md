@@ -1,5 +1,5 @@
 ---
-study_name: Way to Recovery
+title: Way to Recovery
 date: 2018-07-01
 area: inprogress
 subdomain: Trauma

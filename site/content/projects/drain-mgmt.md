@@ -1,5 +1,5 @@
 ---
-study_name: 'Remote Drain Management'
+title: 'Remote Drain Management'
 date: 2019-06-01
 area: complete
 subdomain: Home Health

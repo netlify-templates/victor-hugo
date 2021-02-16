@@ -1,5 +1,5 @@
 ---
-study_name: Vitality Smoking
+title: Vitality Smoking
 date: '2018-06-14'
 area: research
 subdomain: Smoking Cessation

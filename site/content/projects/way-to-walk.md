@@ -1,5 +1,5 @@
 ---
-study_name: Way to Walk
+title: Way to Walk
 date: '2017-05-01'
 area: research
 subdomain: Physical Activity

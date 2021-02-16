@@ -1,5 +1,5 @@
 ---
-study_name: THEA
+title: THEA
 date: '2019-11-13'
 area: clinical
 subdomain: Obstetrics

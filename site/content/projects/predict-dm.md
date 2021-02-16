@@ -1,5 +1,5 @@
 ---
-study_name: PREDICT-DM
+title: PREDICT-DM
 date: 2018-04-01
 area: inprogress
 subdomain: General Care

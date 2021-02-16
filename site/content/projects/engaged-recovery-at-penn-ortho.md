@@ -1,5 +1,5 @@
 ---
-study_name: 'Engaged Recovery at Penn - Ortho'
+title: 'Engaged Recovery at Penn - Ortho'
 date: 2016-10-01
 area: inprogress
 subdomain: Orthopedic Surgery

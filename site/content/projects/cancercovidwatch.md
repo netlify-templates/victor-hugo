@@ -1,5 +1,5 @@
 ---
-study_name: Cancer COVID Watch
+title: Cancer COVID Watch
 date: '2020-06-25'
 area: clinical
 subdomain: Remote Monitoring

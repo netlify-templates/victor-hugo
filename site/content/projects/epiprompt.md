@@ -1,5 +1,5 @@
 ---
-study_name: EpiPrompt
+title: EpiPrompt
 date: 2018-06-01
 area: inprogress
 subdomain: Allergy & Immunology

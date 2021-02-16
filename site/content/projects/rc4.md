@@ -1,5 +1,5 @@
 ---
-study_name: Way To Heart Health
+title: Way To Heart Health
 date: 2015-11-10T00:00:00.000Z
 area: research
 subdomain: Cardiovascular Disease Management

@@ -1,5 +1,5 @@
 ---
-articlename: Adding fun and competition to wearable device may improve exercise results,
+title: Adding fun and competition to wearable device may improve exercise results,
   finds JAMA study
 date: '2019-10-02'
 summary: Another reference the JAMA study using Way to Health. “Most interventions are
@@ -9,6 +9,6 @@ summary: Another reference the JAMA study using Way to Health. “Most intervent
   trial to develop behavioral profiles that could be used in the future to match
   the right intervention to the right person.”
 image: /images/uploads/wearable-device.jpg
-source: https://speciality.medicaldialogues.in/adding-fun-and-competition-to-wearable-device-may-improve-exercise-results-finds-jama-study/
+externallink: https://speciality.medicaldialogues.in/adding-fun-and-competition-to-wearable-device-may-improve-exercise-results-finds-jama-study/
 ----
 

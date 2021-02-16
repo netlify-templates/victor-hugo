@@ -1,5 +1,5 @@
 ---
-study_name: Mobility Pilot
+title: Mobility Pilot
 date: '2019-10-09'
 area: inprogress
 subdomain: Physical Activity

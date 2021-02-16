@@ -1,5 +1,5 @@
 ---
-study_name: PA Activity Study
+title: PA Activity Study
 date: 2016-11-01T00:00:00.000Z
 area: Research
 subdomain: Physical Activity

@@ -1,5 +1,5 @@
 ---
-study_name: Keep it Off
+title: Keep it Off
 date: '2016-09-19'
 area: research
 subdomain: Diabetes

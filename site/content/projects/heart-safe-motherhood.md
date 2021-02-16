@@ -1,5 +1,5 @@
 ---
-study_name: Heart Safe Motherhood
+title: Heart Safe Motherhood
 date: 2017-01-04T00:00:00.000Z
 area: clinical
 subdomain: Pre-eclampsia

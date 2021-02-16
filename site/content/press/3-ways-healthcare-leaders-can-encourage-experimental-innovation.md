@@ -1,5 +1,5 @@
 ---
-articlename: 3 ways healthcare leaders can encourage experimental innovation
+title: 3 ways healthcare leaders can encourage experimental innovation
 date: '2019-10-30'
 summary: >-
   "Successful innovation requires experimentation," the article's authors
@@ -9,6 +9,6 @@ summary: >-
   find ways to bend institutional norms safely." Authors include David Asch, Roy
   Rosin and Kevin Mahoney. Several of the programs referenced use Way to Health.
 image:  /images/uploads/hbr.innovation.jpg
-source: 'https://www.beckershospitalreview.com/innovation/3-ways-healthcare-leaders-can-encourage-experimental-innovation.html'
+externallink: 'https://www.beckershospitalreview.com/innovation/3-ways-healthcare-leaders-can-encourage-experimental-innovation.html'
 ---
 

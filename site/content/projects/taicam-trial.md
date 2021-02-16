@@ -1,5 +1,5 @@
 ---
-study_name: TAICAM Trial
+title: TAICAM Trial
 date: '2019-08-15'
 area: inprogress
 subdomain: Asthma

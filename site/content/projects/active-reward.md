@@ -1,5 +1,5 @@
 ---
-study_name: Active Reward
+title: Active Reward
 date: '2018-06-13'
 area: research
 subdomain: Cardiology

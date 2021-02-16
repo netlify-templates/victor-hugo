@@ -1,5 +1,5 @@
 ---
-study_name: Youth Mindfulness App
+title: Youth Mindfulness App
 date: '2018-10-30'
 area: inprogress
 subdomain: Mental Health

@@ -1,5 +1,5 @@
 ---
-study_name: BCBS Weight Loss
+title: BCBS Weight Loss
 date: '2016-07-01'
 area: research
 subdomain: Obesity

@@ -1,5 +1,5 @@
 ---
-study_name: LaTCH
+title: LaTCH
 date: '2019-11-13'
 area: clinical
 subdomain: 'Lactation '

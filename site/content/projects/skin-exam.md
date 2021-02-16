@@ -1,5 +1,5 @@
 ---
-study_name: Skin Exam
+title: Skin Exam
 date: '2018-07-30'
 area: research
 subdomain: Oncology

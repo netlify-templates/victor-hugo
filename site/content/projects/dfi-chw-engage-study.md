@@ -1,5 +1,5 @@
 ---
-study_name: DFI CHW Engage Study
+title: DFI CHW Engage Study
 date: '2019-05-15'
 area: inprogress
 subdomain: Diabetes

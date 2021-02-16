@@ -1,5 +1,5 @@
 ---
-study_name: Home Connect + Phase II
+title: Home Connect + Phase II
 date: 2017-07-01
 area: inprogress
 subdomain: General Care

@@ -1,5 +1,5 @@
 ---
-study_name: Process vs. Outcomes
+title: Process vs. Outcomes
 date: 2014-01-15
 area: inprogress
 subdomain: Cardiovascular Disease Management

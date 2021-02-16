@@ -1,5 +1,5 @@
 ---
-articlename: Texting improves postpregnancy hypertension monitoring in black women
+title: Texting improves postpregnancy hypertension monitoring in black women
 date: '2019-03-02'
 summary: >-
   Another success of the Heart Safe Motherhood program powered by Way To Health.
@@ -8,6 +8,6 @@ summary: >-
   as importantly, it completely erased racial disparity in compliance rates,
   compared with white women, with more than 90% of both groups complying.
 image:  /images/uploads/hirshberg_adi_pa_2_web.jpg
-source:   https://www.mdedge.com/obgyn/article/195490/obstetrics/texting-improves-postpregnancy-hypertension-monitoring-black-women
+externallink:   https://www.mdedge.com/obgyn/article/195490/obstetrics/texting-improves-postpregnancy-hypertension-monitoring-black-women
 ---
 

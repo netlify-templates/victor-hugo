@@ -1,5 +1,5 @@
 ---
-articlename: Looking to quit smoking? Here’s one way
+title: Looking to quit smoking? Here’s one way
 date: '2018-06-01'
 summary: >-
   This is the Vitality Smoking study. A recent study published in the New
@@ -9,6 +9,6 @@ summary: >-
   $600 to quit for six months increased success rates two-fold, or three-fold in
   some sub-groups.
 image:  /images/uploads/no-smoking-sign.jpg
-source: 'https://fox61.com/2018/06/01/looking-to-quit-smoking-heres-one-way/smoking'
+externallink: 'https://fox61.com/2018/06/01/looking-to-quit-smoking-heres-one-way/smoking'
 ---
 

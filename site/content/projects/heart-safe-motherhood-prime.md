@@ -1,5 +1,5 @@
 ---
-study_name: 'Heart Safe Motherhood: Prime'
+title: 'Heart Safe Motherhood: Prime'
 date: 2018-05-01
 area: inprogress
 subdomain: Womens Health

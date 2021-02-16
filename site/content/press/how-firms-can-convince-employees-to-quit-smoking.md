@@ -1,5 +1,5 @@
 ---
-articlename: How Firms Can Convince Employees to Quit Smoking
+title: How Firms Can Convince Employees to Quit Smoking
 date: '2018-08-28'
 summary: >-
   Wellness programs are increasing in popularity as companies grow more
@@ -12,6 +12,6 @@ summary: >-
   shows significant promise and was discussed in this Knowledge @ Wharton
   podcast. 
 image:  /images/uploads/smoking-kw.jpg
-source:   http://knowledge.wharton.upenn.edu/article/should-companies-pay-employees-to-quit-smoking/
+externallink:   http://knowledge.wharton.upenn.edu/article/should-companies-pay-employees-to-quit-smoking/
 ---
 

@@ -1,5 +1,5 @@
 ---
-articlename: >-
+title: >-
   Analyzing behavioral economics and psychology are key to engaging patients to
   make meaningful changes
 date: '2018-01-22'
@@ -9,6 +9,6 @@ summary: >-
   paired with some insight into human behavior, they're the sound of one hand
   clapping."
 image:  /images/uploads/healthapp-min.jpg
-source:   http://www.healthcareitnews.com/news/analyzing-behavioral-economics-and-psychology-are-key-engaging-patients-make-meaningful-changes
+externallink:   http://www.healthcareitnews.com/news/analyzing-behavioral-economics-and-psychology-are-key-engaging-patients-make-meaningful-changes
 ---
 

@@ -1,5 +1,5 @@
 ---
-articlename: >-
+title: >-
   Quitting smoking is incredibly hard. Penn researchers find one thing that
   helps most
 date: '2018-05-29'
@@ -9,6 +9,6 @@ summary: >-
   therapy or ecigs did not increase tobacco cessation; financial incentives
   tripled rates of cessation. Study was run on Way To Health
 image:  /images/uploads/smoking-min.jpg
-source:   http://www.philly.com/philly/health/quitting-smoking-is-incredibly-hard-penn-researchers-find-one-thing-that-helps-most-20180524.html
+externallink:   http://www.philly.com/philly/health/quitting-smoking-is-incredibly-hard-penn-researchers-find-one-thing-that-helps-most-20180524.html
 ---
 

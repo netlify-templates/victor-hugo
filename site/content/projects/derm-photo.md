@@ -1,5 +1,5 @@
 ---
-study_name: 'Virtual MOHS consults'
+title: 'Virtual MOHS consults'
 date: 2019-06-01
 area: complete
 subdomain: Dermatology

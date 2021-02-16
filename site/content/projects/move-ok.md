@@ -1,5 +1,5 @@
 ---
-study_name: MOVE-OK
+title: MOVE-OK
 date: '2019-08-26'
 area: inprogress
 subdomain: Orthopedics

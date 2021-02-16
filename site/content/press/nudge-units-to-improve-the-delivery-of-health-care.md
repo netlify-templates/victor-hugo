@@ -1,5 +1,5 @@
 ---
-articlename: Nudge Units to Improve the Delivery of Health Care
+title: Nudge Units to Improve the Delivery of Health Care
 date: '2018-01-18'
 summary: >-
   Opportunities for effective nudges abound in health care because choice
@@ -10,6 +10,6 @@ summary: >-
   the value of its applications, most health systems would be well served by
   insourcing it. We owe it to our patients to do the same for health care.
 image:  /images/uploads/nudge_logo_0.png
-source: 'http://www.nejm.org/doi/full/10.1056/NEJMp1712984#t=article'
+externallink: 'http://www.nejm.org/doi/full/10.1056/NEJMp1712984#t=article'
 ---
 

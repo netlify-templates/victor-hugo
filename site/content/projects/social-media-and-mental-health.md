@@ -1,5 +1,5 @@
 ---
-study_name: 'Social Media and Mental Health '
+title: 'Social Media and Mental Health '
 date: '2019-11-13'
 area: inprogress
 subdomain: 'Mental Health '

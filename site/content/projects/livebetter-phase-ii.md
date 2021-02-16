@@ -1,5 +1,5 @@
 ---
-study_name: LiveBetter Phase II
+title: LiveBetter Phase II
 date: 2017-10-11
 area: inprogress
 subdomain: Hepatology

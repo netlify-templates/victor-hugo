@@ -1,5 +1,5 @@
 ---
-study_name: PHiT Study
+title: PHiT Study
 date: 2017-06-01
 area: inprogress
 subdomain: Addiction

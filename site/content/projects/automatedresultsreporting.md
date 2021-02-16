@@ -1,5 +1,5 @@
 ---
-study_name: Automated Results Reporting
+title: Automated Results Reporting
 date: '2020-08-01'
 area: clinical
 subdomain: Patient Communication

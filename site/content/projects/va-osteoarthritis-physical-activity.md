@@ -1,5 +1,5 @@
 ---
-study_name: 'VA Osteoarthritis - Physical Activity'
+title: 'VA Osteoarthritis - Physical Activity'
 date: 2018-03-01
 area: inprogress
 subdomain: Rheumatology

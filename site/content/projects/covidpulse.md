@@ -1,5 +1,5 @@
 ---
-study_name: COVID Pulse
+title: COVID Pulse
 date: '2020-07-25'
 area: clinical
 subdomain: Remote Monitoring

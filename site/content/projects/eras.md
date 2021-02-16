@@ -1,5 +1,5 @@
 ---
-study_name: 'Engaged Recovery After Surgery'
+title: 'Engaged Recovery After Surgery'
 date: 2017-06-01
 area: complete
 subdomain: Surgery

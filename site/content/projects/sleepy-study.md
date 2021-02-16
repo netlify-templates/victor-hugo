@@ -1,5 +1,5 @@
 ---
-study_name: SLEEPY Study
+title: SLEEPY Study
 date: '2019-02-22'
 area: inprogress
 subdomain: General Care

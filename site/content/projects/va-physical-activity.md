@@ -1,5 +1,5 @@
 ---
-study_name: Veteran's Physical Activity
+title: Veteran's Physical Activity
 date: 2018-04-01T00:00:00.000Z
 area: inprogress
 subdomain: Physical Activity

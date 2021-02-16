@@ -1,5 +1,5 @@
 ---
-study_name: VA Opioid Fitbit Study
+title: VA Opioid Fitbit Study
 date: 2018-07-01
 area: inprogress
 subdomain: Addiction

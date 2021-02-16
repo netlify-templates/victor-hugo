@@ -1,5 +1,5 @@
 ---
-study_name: COVID SAFE
+title: COVID SAFE
 date: '2020-09-01'
 area: clinical
 subdomain: Testing

@@ -1,5 +1,5 @@
 ---
-articlename: 'Cash and a fitness device could help motivate people to exercise, study finds'
+title: 'Cash and a fitness device could help motivate people to exercise, study finds'
 date: '2018-06-14'
 summary: >-
   A new study published in the Journal of the American Heart Association said
@@ -14,6 +14,6 @@ summary: >-
   intervention arm had step counts that totaled about 100 miles more than the
   average patient in control.”
 image:  /images/uploads/061318_thinkstock_fitness-min.jpg
-source:   http://kwbe.com/abc_health/cash-and-a-fitness-device-could-help-motivate-people-to-exercise-study-finds-abcid36079563/
+externallink:   http://kwbe.com/abc_health/cash-and-a-fitness-device-could-help-motivate-people-to-exercise-study-finds-abcid36079563/
 ---
 

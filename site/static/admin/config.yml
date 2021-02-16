@@ -12,7 +12,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g. title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "study_name", widget: "string"} #title of the case study
+      - {label: "Title", name: "title", widget: "string"} #title of the case study
       - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
       - {label: "Study Type", name: "area", widget: "select", options: ["clinical", "inprogress", "research"], required: true}
       - {label: "Clinical Domain", name: "subdomain", widget: "string"} # Specific clinical or ops area
@@ -45,21 +45,21 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g. title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "articlename", widget: "string"} #title of the blog post
-      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
-      - {label: "Summary", name: "summary", widget: "markdown"} # summary of the post
-      - {label: "Splash image", name: "image", widget: "image"} # background image
-      - {label: "Source", name: "source", widget: "string"} #Author Name
+      - {label: "Title", name: "title", widget: "string", required: true} #title of the blog post
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD", required: true} # date of publication / creation
+      - {label: "Summary", name: "summary", widget: "markdown", required: true} # summary of the post
+      - {label: "Splash image", name: "image", widget: "image", required: true} # background image
+      - {label: "Source", name: "externallink", widget: "string", required: true} #url of press
   - name: "publications" # Used in routes, e.g., /admin/collections/blog
     label: "Publications" # Used in the UI
     folder: "site/content/publications" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g. title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Study Name", name: "title", widget: "string"} #title of the blog post
-      - {label: "Article Name", name: "articlename", widget: "string"} #title of the blog post
-      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD"} # date of publication / creation
-      - {label: "Summary", name: "summary", widget: "string"} # summary of the post
-      - {label: "Authors", name: "authors", widget: "string"} # publication authors
-      - {label: "Source", name: "source", widget: "string"} #Author Name
-      - {label: "Journal Abbr", name: "journal", widget: "string"} #Abbreviated Journal name in citation
+      - {label: "Study Name", name: "title", widget: "string", required: true} #title of the blog post
+      - {label: "Article Name", name: "articlename", widget: "string", required: true} #title of the blog post
+      - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD", required: true} # date of publication / creation
+      - {label: "Summary", name: "summary", widget: "string", required: true} # summary of the post
+      - {label: "Authors", name: "authors", widget: "string", required: true} # publication authors
+      - {label: "Source", name: "source", widget: "string", required: true} #Author Name
+      - {label: "Journal Abbr", name: "journal", widget: "string", required: true} #Abbreviated Journal name in citation

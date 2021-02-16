@@ -1,5 +1,5 @@
 ---
-study_name: ADAPT
+title: ADAPT
 date: 2017-09-01
 area: inprogress
 subdomain: Mental Health

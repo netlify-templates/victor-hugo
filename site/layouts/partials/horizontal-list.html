@@ -14,10 +14,10 @@
         <div class="uppercase tracking-wide text-sm text-gray-900 font-bold text-right">{{ .Date.Format "Jan 2, 2006" }}</div>
         {{ end }}
 
-        {{ if .Params.articlename }}
-            <a href="{{ .Params.source }}" target="_blank" class="block mt-1 text-lg leading-tight font-semibold text-indigo-600 hover:underline">{{ .Params.articlename }}</a>
+        {{ if .Params.externallink }}
+            <a href="{{ .Params.externallink }}" target="_blank" class="block mt-1 text-lg leading-tight font-semibold text-indigo-600 hover:underline">{{ .Params.title }}</a>
         {{ else }}
-            <a href="{{ .Permalink }}" target="_blank" class="block mt-1 text-lg leading-tight font-semibold text-indigo-600 hover:underline">{{ .Params.title }}</a>
+            <a href="{{ .Permalink }}" class="block mt-1 text-lg leading-tight font-semibold text-indigo-600 hover:underline">{{ .Params.title }}</a>
         {{ end }}
 
         <p class="mt-2 text-gray-500">{{ .Params.authors }}</p>

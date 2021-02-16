@@ -1,5 +1,5 @@
 ---
-study_name: RECOUPS
+title: RECOUPS
 date: 2016-06-01
 area: inprogress
 subdomain: Physical Activity

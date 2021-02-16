@@ -1,5 +1,5 @@
 ---
-articlename: 'How can the science of motivation help transform care delivery? '
+title: 'How can the science of motivation help transform care delivery? '
 date: '2019-12-19'
 summary: >-
   What is the role of human behavior in healthcare? Looking at both patients and
@@ -8,6 +8,6 @@ summary: >-
   (including financial incentives), and simple design changes in technology in
   transforming care delivery.
 image:  /images/uploads/asch.siemens.jpg
-source:   https://www.siemens-healthineers.com/ua/insights/news/executive-summit-asch.html
+externallink:   https://www.siemens-healthineers.com/ua/insights/news/executive-summit-asch.html
 ---
 

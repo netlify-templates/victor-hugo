@@ -1,5 +1,5 @@
 ---
-articlename: Texting to the rescue
+title: Texting to the rescue
 date: '2019-12-19'
 summary: >-
   A team at Penn Medicine may have found a way to save hundreds of new moms’
@@ -8,6 +8,6 @@ summary: >-
   a lot more detail about the program, its origins, success to date and future
   plans
 image:  /images/uploads/hsm.jpg
-source: 'https://thephiladelphiacitizen.org/heart-safe-motherhood-penn/'
+externallink: 'https://thephiladelphiacitizen.org/heart-safe-motherhood-penn/'
 ---
 

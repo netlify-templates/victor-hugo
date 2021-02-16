@@ -1,5 +1,5 @@
 ---
-articlename: Texting Succeeds for Remote HTN Care in Black Women
+title: Texting Succeeds for Remote HTN Care in Black Women
 date: '2019-02-17'
 summary: >-
   A texting-based intervention, where women texted in their blood pressure
@@ -7,6 +7,6 @@ summary: >-
   eliminated racial disparities in postpartum care further highlighting the need
   to design interventions that are easily accessible by everyone.
 image:  /images/uploads/hsm.bp.jpg
-source: 'https://www.medpagetoday.com/meetingcoverage/smfm/78090'
+externallink: 'https://www.medpagetoday.com/meetingcoverage/smfm/78090'
 ---
 

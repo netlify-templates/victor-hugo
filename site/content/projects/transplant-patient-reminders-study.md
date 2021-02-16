@@ -1,5 +1,5 @@
 ---
-study_name: Transplant Patient-Reminders
+title: Transplant Patient-Reminders
 date: '2017-03-01'
 area: research
 subdomain: Kidney Transplant

@@ -1,5 +1,5 @@
 ---
-articlename: >-
+title: >-
   Text-Based Platform Helps Penn Medicine Watch Over COVID-19 Patients Safe at
   Home
 date: '2020-04-15'
@@ -10,7 +10,7 @@ summary: >-
   Health Care Innovation, reflecting on the thought process behind the tool’s
   development beginning in early March.
 image: /images/uploads/penn-medicine-logo.png
-source: >-
+externallink: >-
   https://www.pennmedicine.org/news/news-blog/2020/april/text-based-platform-helps-penn-watch-over-covid19-patients-safe-at-home
 ---
 

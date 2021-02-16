@@ -1,5 +1,5 @@
 ---
-study_name: BE Smokefree
+title: BE Smokefree
 date: 2018-01-01
 area: inprogress
 subdomain: Smoking Cessation

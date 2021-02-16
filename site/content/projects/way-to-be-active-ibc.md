@@ -1,5 +1,5 @@
 ---
-study_name: Way to Be Active - IBC
+title: Way to Be Active - IBC
 date: '2016-07-01'
 area: research
 subdomain: Physical Activity
