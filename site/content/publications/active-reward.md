@@ -18,7 +18,7 @@ authors: >-
   Neel P. Chokshi, Srinath Adusumalli, Dylan S. Small, Alexander Morris, Jordyn
   Feingold, Yoonhee P. Ha, Marta D. Lynch, Charles A.L. Rareshide, Victoria
   Hilbert and Mitesh S. Patel
-source: 'http://jaha.ahajournals.org/content/7/12/e009173'
+externallink: 'http://jaha.ahajournals.org/content/7/12/e009173'
 journal: JAHA
 ---
 

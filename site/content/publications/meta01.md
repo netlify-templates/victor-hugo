@@ -14,7 +14,7 @@ authors: >-
   Ankur Pandya, PhD; David A. Asch, MD, MBA; Kevin G. Volpp, MD, PhD; Stephen
   Sy, MS; Andrea B. Troxel, ScD; Jingsan Zhu, MBA; Milton C. Weinstein, PhD;
   Meredith B. Rosenthal, PhD; Thomas A. Gaziano, MD, MSc
-source: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2702211'
+externallink: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2702211'
 journal: JAMA Netw Open.
 ---
 

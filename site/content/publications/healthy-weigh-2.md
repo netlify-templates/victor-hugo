@@ -10,7 +10,7 @@ summary: >-
   employee-based recruitment for a weight-control intervention study is feasible
   but may need additional time for coordination between diverse environments.
 authors: 'Glanz K, Shaw PA, Hoffer K, Chung A, Zhu J, Wu R, Huang QE, Choi JR, Volpp KG'
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/30455160'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/30455160'
 journal: CCT
 ---
 

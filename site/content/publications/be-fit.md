@@ -14,7 +14,7 @@ authors: >-
   Jane J. Lee, PhD; Victoria Hilbert, MPH, RD; Maureen Valentino, BA; Devon H.
   Taylor, MPH; Emily S. Manders, BS; Karen Mutalik, BS; Jingsan Zhu, MBA, MS;
   Wenli Wang, MS; Joanne M. Murabito, MD, ScM
-source: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2655242'
+externallink: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2655242'
 journal: JAMA Intern Med.
 ---
 

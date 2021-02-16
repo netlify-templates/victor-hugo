@@ -12,7 +12,7 @@ summary: >-
 authors: >-
   Tasian GE, Ross M, Song L, Audrain-McGovern J, Wiebe D, Warner SG, Henderson
   B, Patel A, Furth SL.
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/30076905'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/30076905'
 journal: J Urol
 ---
 

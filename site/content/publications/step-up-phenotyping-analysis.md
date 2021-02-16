@@ -18,7 +18,7 @@ authors: >-
   Xisui Shirley Chen , Sujatha Changolkar, Amol S. Navathe,  Kristin A. Linn,
   Gregory Reh, Gregory Szwartz, David Steier, Sarah Godby, Mohan Balachandran,
   Joseph D. Harrison, Charles A. L. Rareshide, Mitesh S. Patel
-source: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239288'
+externallink: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239288'
 journal: PLOS One
 ---
 

@@ -10,7 +10,7 @@ summary: >-
   protect. To support the people determined to drive change quickly, we need to
   find ways to bend institutional norms safely.
 authors: 'David A. Asch, MD, MBA, Kevin B. Mahoney, DBA, Roy Rosin, MBA'
-source: >-
+externallink: >-
   https://hbr.org/2019/10/3-ways-health-care-leaders-can-encourage-experimentation
 journal: HBR
 ---

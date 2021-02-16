@@ -25,7 +25,7 @@ authors: >-
   Nadim Mahmud, MD, MS, MPH, Sahil D. Doshi, MD, Mary S. Coniglio, MBA, Michelle
   Clermont, MD, Donna Bernard, MSN, Catherine Reitz, MPH, Vandana Khungar, MD,
   MSc, David A. Asch, MD, MBA, Shivan J. Mehta, MD, MBA, MSHP
-source: 'https://doi.org/10.1177/1090198119869964'
+externallink: 'https://doi.org/10.1177/1090198119869964'
 journal: HEB
 ---
 

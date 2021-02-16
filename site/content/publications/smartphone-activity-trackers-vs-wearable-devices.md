@@ -14,7 +14,7 @@ summary: >-
 authors: >-
   Mitesh Patel, MD, MBA, MS; Daniel Polsky, PhD; Kevin Volpp, MD, PhD; Edward H.
   Kennedy, PhD; Dylan S. Small, PhD; Chalanda Evans; Charles Rareshide
-source: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2760436'
+externallink: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2760436'
 journal: JAMA Netw Open
 ---
 

@@ -11,7 +11,7 @@ summary: >-
 authors: >-
   Mehta SJ, Asch DA, Troxel AB, Lim R, Lewey J, Wang W, Zhu J, Norton L, Marcus
   N, Volpp KG.
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/30045159'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/30045159'
 journal: Med Care
 ---
 

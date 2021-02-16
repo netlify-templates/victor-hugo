@@ -7,6 +7,6 @@ summary: >-
   Medication nonadherence is an important obstacle to cardiovascular disease management.
 authors: >-
   Peter P. Reese, Judd B. Kessler, Jalpa A. Doshi, Joelle Friedman, Adam S. Mussell, Caroline Carney, Jingsan Zhu, Wenli Wang, Andrea Troxel, Peinie Young, Victor Lawnicki, Swapnil Rajpathak, Kevin Volpp
-source: 'https://link.springer.com/article/10.1007%2Fs11606-015-3540-y'
+externallink: 'https://link.springer.com/article/10.1007%2Fs11606-015-3540-y'
 journal: Ann Intern Med.
 ---

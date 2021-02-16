@@ -14,7 +14,7 @@ authors: >-
   William S. Yancy Jr., Pamela A. Shaw, Lisa Wesby, Victoria Hilbert, Lin Yang,
   Jingsan Zhu, Andrea Troxel, David Huffman, Gary D. Foster, Alexis C.
   Wojtanowski & Kevin G. Volpp 
-source: 'https://www.nature.com/articles/s41387-018-0036-y'
+externallink: 'https://www.nature.com/articles/s41387-018-0036-y'
 journal: Nutr & Diab
 ---
 

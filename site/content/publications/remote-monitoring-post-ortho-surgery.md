@@ -14,7 +14,7 @@ authors: >-
   Shivan J. Mehta, Eric Hume, Andrea B. Troxel, Catherine Reitz, Laurie Norton,
   Hannah Lacko, Caitlin McDonald, Jason Freeman, Noora Marcus, Kevin G. Volpp,
   David A. Asch
-source: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2774354'
+externallink: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2774354'
 journal: JAMA Netw Open
 ---
 

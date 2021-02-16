@@ -11,7 +11,7 @@ summary: >-
   Safe Motherhood to target this clinical problem and define a new approach to
   care delivery.
 authors: 'Adi Hirshberg, MD, Katy Mahraj, MSI, Sindhu K. Srinivas, MD, MSCE'
-source: >-
+externallink: >-
   https://catalyst.nejm.org/heart-safe-motherhood-blood-pressure-monitoring-maternal/
 journal: NEJM Cat
 ---

@@ -11,7 +11,7 @@ summary: >-
   insights into gamification could represent a significant opportunity to
   improve health and wellbeing.
 authors: 'Mitesh Patel, MD, MBA, Stacey Chang, Kevin Volpp, MD, PhD'
-source: 'https://hbr.org/2019/05/improving-health-care-by-gamifying-it'
+externallink: 'https://hbr.org/2019/05/improving-health-care-by-gamifying-it'
 journal: HBR
 ---
 

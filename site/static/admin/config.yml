@@ -61,5 +61,5 @@ collections:
       - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD", required: true} # date of publication / creation
       - {label: "Summary", name: "summary", widget: "string", required: true} # summary of the post
       - {label: "Authors", name: "authors", widget: "string", required: true} # publication authors
-      - {label: "Source", name: "source", widget: "string", required: true} #Author Name
+      - {label: "Source", name: "externallink", widget: "string", required: true} #publication URL
       - {label: "Journal Abbr", name: "journal", widget: "string", required: true} #Abbreviated Journal name in citation

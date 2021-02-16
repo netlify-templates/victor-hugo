@@ -15,7 +15,7 @@ summary: >-
   delivery and may be further evaluated as a means to reduce disparities in
   other aspects of postpartum care.
 authors: 'Adi Hirshberg, MD; Mary D.Sammel, ScD; Sindhu K.Srinivas, MD, MSCE'
-source: 'https://doi.org/10.1016/j.ajog.2019.05.011'
+externallink: 'https://doi.org/10.1016/j.ajog.2019.05.011'
 journal: Am J ObGyn
 ---
 

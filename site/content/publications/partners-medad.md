@@ -9,7 +9,7 @@ summary: >-
 authors: >-
   Kessler JB, Troxel AB, Asch DA, Mehta SJ, Marcus N, Lim R, Zhu J, Shrank W,
   Brennan T, Volpp KG
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/29546659'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/29546659'
 journal: J Gen Intern Med
 ---
 

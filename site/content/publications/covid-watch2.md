@@ -10,7 +10,7 @@ summary: >-
   patients with confirmed or suspected Covid-19 at home and quickly support
   worsening patients with human care.
 authors: 'Anna U. Morgan, MD, MSc, MSHP, Mohan Balachandran, MA, MS, David Do, MD, Doreen Lam, BA, Andrew Parambath, BA, MEd, Krisda H. Chaiyachati, MD, MPH, MSHP, Nancy M. Bonalumi, DNP, RN, CEN, FAEN, Susan C. Day, MD, MPH, Kathleen C. Lee, MD & David A. Asch, MD, MBA'
-source: 'https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0342'
+externallink: 'https://catalyst.nejm.org/doi/full/10.1056/CAT.20.0342'
 journal: NEJM CAT
 ---
 

@@ -21,7 +21,7 @@ authors: >-
   Carolyn C. Cannuscio, ScD, Roxanne Dupuis, MSPH, Amy Graves, BA, Jane W.
   Seymour, MPH, Sarah Kounaves, MSc, Emily Strupp, BA, Damien Leri, MSEd,
   Rosemary Frasso, PhD, David Grande, MD, Zachary F. Meisel, MD
-source: 'https://doi.org/10.1016/j.anai.2015.05.018'
+externallink: 'https://doi.org/10.1016/j.anai.2015.05.018'
 journal: 'Ann Allergy Asthma Immunol '
 ---
 

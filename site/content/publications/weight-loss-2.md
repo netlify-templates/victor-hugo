@@ -7,6 +7,6 @@ summary: >-
   Evaluate the use of behavioral economics to design financial incentives to promote health behavior change and to explore associations with demographic characteristics
 authors: >-
   Haff N, Patel MS, Lim R, Zhu J, Troxel AB, Asch DA, Volpp KG.
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/25928816'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/25928816'
 journal: Am J Health Promot
 ---

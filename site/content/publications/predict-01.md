@@ -18,7 +18,7 @@ authors: >-
   Chalanda N.Evans, Kevin G.Volpp, Daniel Polsky, Dylan S. Small, Edward
   H.Kennedy, Kelsey Karpink, Rachel Djaraher, Nicole Mansi, Charles
   A.L.Rareshide, Mitesh S.Patel
-source: 'https://doi.org/10.1016/j.cct.2019.06.018'
+externallink: 'https://doi.org/10.1016/j.cct.2019.06.018'
 journal: CCT
 ---
 

@@ -12,7 +12,7 @@ summary: >-
 authors: >-
   Shivan J. Mehta, Kevin G. Volpp, Andrea B. Troxel, Susan C. Day, Raymond Lim,
   Noora Marcus, Laurie Norton, Sophia Anderson, David A. Asch
-source: 'https://link.springer.com/article/10.1007%2Fs11606-019-05241-x'
+externallink: 'https://link.springer.com/article/10.1007%2Fs11606-019-05241-x'
 journal: JGIM
 ---
 

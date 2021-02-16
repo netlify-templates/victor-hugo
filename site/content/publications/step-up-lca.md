@@ -14,7 +14,7 @@ summary: >-
   “Married teams” lost the most weight across all 3 arms and kept it off
   following the intervention.
 authors: 'Jeffrey Leinert, MS, PhD, Mitesh Patel, MD, MBA, MS'
-source: 'https://doi.org/10.1177/0890117119892776'
+externallink: 'https://doi.org/10.1177/0890117119892776'
 journal: AJHP
 image: /images/uploads/ajhp.jpg
 ---

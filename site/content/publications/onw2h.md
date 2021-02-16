@@ -7,6 +7,6 @@ summary: >-
   This Issue Brief describes the development and use of a new web-based IT platform, Way to Health, to deliver and evaluate behavioral interventions to improve health. 
 authors: >-
   David A. Asch, MD, Kevin G. Volpp, MD, PhD
-source: 'http://ldihealtheconomist.com/media/On_the_Way_to_Health.pdf'
+externallink: 'http://ldihealtheconomist.com/media/On_the_Way_to_Health.pdf'
 journal: LDI
 ---

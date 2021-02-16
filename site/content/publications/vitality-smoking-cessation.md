@@ -14,7 +14,7 @@ authors: >-
   Scott D. Halpern, M.D., Ph.D., Michael O. Harhay, Ph.D., Kathryn Saulsgiver,
   Ph.D., Christine Brophy, Andrea B. Troxel, Sc.D., and Kevin G. Volpp, M.D.,
   Ph.D.
-source: 'https://www.nejm.org/doi/full/10.1056/NEJMsa1715757'
+externallink: 'https://www.nejm.org/doi/full/10.1056/NEJMsa1715757'
 journal: NEJM
 ---
 

@@ -14,7 +14,7 @@ authors: >-
   Heather M.Greysen, Catherine Reale, Ashley Mercedes, Mitesh S. Patel, Dylan
   Small, Christopher Snider, Charles Rareshide, Scott D. Halpern, S. Ryan
   Greysen
-source: 'https://doi.org/10.1016/j.cct.2019.105911'
+externallink: 'https://doi.org/10.1016/j.cct.2019.105911'
 journal: CCT
 ---
 

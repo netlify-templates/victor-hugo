@@ -11,7 +11,7 @@ authors: >-
   Patel MS, Volpp KG, Rosin R, Bellamy SL, Small DS, Heuer J, Sproat S, Hyson C,
   Haff N, Lee SM, Wesby L, Hoffer K, Shuttleworth D, Taylor DH, Hilbert V, Zhu
   J, Yang L, Wang X, Asch DA
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/29534597'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/29534597'
 journal: Am J Health Promot.
 ---
 

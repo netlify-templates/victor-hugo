@@ -17,7 +17,7 @@ authors: >-
   Krutsinger DC, McMahon J, Stephens-Shields AJ, Bayes B, Brooks S, Hitsman BL,
   Lubitz SF, Reyes C, Schnoll RA, Ryan Greysen S, Mercede A, Patel MS, Reale C,
   Barg F, Karlawish J, Polsky D, Volpp KG, Halpern SD
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/30414865'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/30414865'
 journal: CCT
 ---
 

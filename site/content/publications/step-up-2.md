@@ -20,7 +20,7 @@ authors: >-
   Michael P. Fortunato, BA; Ai Leen Oon, BA; Charles A. L. Rareshide, MS;
   Gregory Reh, MS; Gregory Szwartz, MS; James Guszcza, PhD; David Steier, PhD;
   Pameljit Kalra, MS; Victoria Hilbert, MPH, RD
-source: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2749761'
+externallink: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2749761'
 journal: JAMA IM
 ---
 

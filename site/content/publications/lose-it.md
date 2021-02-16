@@ -11,7 +11,7 @@ summary: >-
 authors: >-
   Kurtzman GW, Day SC, Small DS, Lynch M, Zhu J, Wang W, Rareshide CAL, Patel
   MS.
-source: 'https://www.ncbi.nlm.nih.gov/pubmed/30003481'
+externallink: 'https://www.ncbi.nlm.nih.gov/pubmed/30003481'
 journal: JGIM
 ---
 
