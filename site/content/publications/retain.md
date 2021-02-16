@@ -1,6 +1,6 @@
 ---
-title: RETAIN
-articlename: >-
+articlename2: RETAIN
+title: >-
   Randomized evaluation of trial acceptability by INcentive (RETAIN): Study
   protocol for two embedded randomized controlled trials.
 date: '2018-11-08'

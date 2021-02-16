@@ -1,6 +1,6 @@
 ---
-title: UPHS Weight Loss
-articlename: >-
+articlename2: UPHS Weight Loss
+title: >-
   Premium-Based Financial Incentives Did Not Promote Workplace Weight Loss In A 2013-15 Study.
 date: 2016-01-01
 summary: >-

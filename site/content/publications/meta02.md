@@ -1,6 +1,6 @@
 ---
-title: meta-02
-articlename: >-
+articlename2: meta-02
+title: >-
   The role of behavioral economic incentive design and demographic characteristics in financial incentive-based approaches to changing health behaviors: a meta-analysis.
 date: '2015-06-15'
 summary: >-

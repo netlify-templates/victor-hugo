@@ -1,6 +1,6 @@
 ---
-title: Heart Safe Motherhood
-articlename: >-
+articlename2: Heart Safe Motherhood
+title: >-
   Comparing standard office-based follow-up with text-based remote monitoring in the management of postpartum hypertension: a randomised clinical trial
 date: 2018-04-27
 summary: >-

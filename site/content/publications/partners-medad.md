@@ -1,6 +1,6 @@
 ---
-title: partners-medad
-articlename: 'Partners and Alerts in Medication Adherence: A Randomized Clinical Trial'
+articlename2: partners-medad
+title: 'Partners and Alerts in Medication Adherence: A Randomized Clinical Trial'
 date: '2018-03-15'
 summary: >-
   Automated alerts were effective at improving medication adherence. Assigning a

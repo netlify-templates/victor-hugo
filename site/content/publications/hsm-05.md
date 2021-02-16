@@ -1,6 +1,6 @@
 ---
-title: HSM-05
-articlename: >-
+articlename2: HSM-05
+title: >-
   Text message remote monitoring reduced racial disparities in postpartum blood
   pressure ascertainment
 date: '2019-09-15'

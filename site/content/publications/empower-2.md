@@ -1,6 +1,6 @@
 ---
-title: EMPOWER-2
-articlename: >-
+articlename2: EMPOWER-2
+title: >-
   Comparison of Pharmacy Claims and Electronic Pill Bottles for Measurement of
   Medication Adherence Among Myocardial Infarction Patients.
 date: '2018-07-24'

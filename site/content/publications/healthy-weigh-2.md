@@ -1,6 +1,6 @@
 ---
-title: Healthy Weigh 2
-articlename: >-
+articlename2: Healthy Weigh 2
+title: >-
   The Healthy Weigh study of lottery-based incentives and environmental
   strategies for weight loss: Design and baseline characteristics.
 date: '2018-12-04'

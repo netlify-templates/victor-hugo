@@ -1,6 +1,6 @@
 ---
-title: social-comp
-articlename: >-
+articlename2: social-comp
+title: >-
   A Randomized Trial of Social Comparison Feedback and Financial Incentives to Increase Physical Activity
 date: '2016-07-15'
 summary: >-

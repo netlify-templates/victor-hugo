@@ -1,6 +1,6 @@
 ---
-title: physician-attitudes
-articlename: >-
+articlename2: physician-attitudes
+title: >-
   Physician attitudes toward participating in a financial incentive program for LDL reduction are associated with patient outcomes
 date: '2017-09-15'
 summary: >-

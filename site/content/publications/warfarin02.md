@@ -1,6 +1,6 @@
 ---
-title: warfarin02
-articlename: >-
+articlename2: warfarin02
+title: >-
   A randomized trial of lottery‐based incentives and reminders to improve warfarin adherence: the Warfarin Incentives (WIN2) Trial
 date: '2016-11-04'
 summary: >-

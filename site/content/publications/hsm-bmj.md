@@ -1,6 +1,6 @@
 ---
-title: BCBS Weight Loss
-articlename: >-
+articlename2: BCBS Weight Loss
+title: >-
   A Randomized Controlled Trial of Employer Matching of Employees? Monetary Contributions to Deposit Contracts to Promote Weight Loss
 date: 2016-07-01
 summary: >-

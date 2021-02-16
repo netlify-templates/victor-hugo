@@ -1,6 +1,6 @@
 ---
-title: CHOP Weight Loss
-articlename: >-
+articlename2: CHOP Weight Loss
+title: >-
   Individual vs. Group-Based Incentives for Weight Loss: A Randomized, Controlled Trial
 date: 2013-04-02
 summary: >-

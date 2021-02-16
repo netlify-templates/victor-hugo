@@ -1,6 +1,6 @@
 ---
-title: Healthy Measures 1
-articlename: >-
+articlename2: Healthy Measures 1
+title: >-
   Financial Incentives for Home-Based Health Monitoring: A Randomized Controlled Trial
 date: 2014-02-13
 summary: >-

@@ -1,6 +1,6 @@
 ---
-title: Improving Diabetic Outcomes
-articlename: >-
+articlename2: Improving Diabetic Outcomes
+title: >-
   Peer Mentoring and Financial Incentives to Improve Glucose Control in African American Veterans: A Randomized, Controlled Trial
 date: 2012-03-01
 summary: >-

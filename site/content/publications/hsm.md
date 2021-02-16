@@ -1,6 +1,6 @@
 ---
-title: HSM
-articlename: >-
+articlename2: HSM
+title: >-
   Heart Safe Motherhood: Applying Innovation Methodology for Improved Maternal
   Outcomes
 date: '2019-05-22'

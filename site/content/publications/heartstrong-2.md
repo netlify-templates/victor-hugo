@@ -1,6 +1,6 @@
 ---
-title: Heartstrong 2
-articlename: >-
+articlename2: Heartstrong 2
+title: >-
   Rationale and design of a randomized trial of automated hovering for post-myocardial infarction patients: The HeartStrong program
 date: 2016-09-01
 summary: >-

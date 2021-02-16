@@ -1,6 +1,6 @@
 ---
-title: Healthy Measures 2
-articlename: >-
+articlename2: Healthy Measures 2
+title: >-
   Stages of Change and Patient Activation Measure Scores in the Context of Incentive-Based Health Interventions
 date: 2015-10-31
 summary: >-

@@ -1,6 +1,6 @@
 ---
-title: meta04
-articlename: >-
+articlename2: meta04
+title: >-
   Moderating Effects of Patient Characteristics on the Impact of Financial Incentives
 date: '2017-05-08'
 summary: >-

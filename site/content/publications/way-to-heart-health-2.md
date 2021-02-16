@@ -1,6 +1,6 @@
 ---
-title: Way to Heart Health 2
-articlename: >-
+articlename2: Way to Heart Health 2
+title: >-
   Physician attitudes toward participating in a financial incentive program for LDL reduction are associated with patient outcomes
 date: 2016-12-06
 summary: >-

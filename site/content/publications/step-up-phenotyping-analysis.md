@@ -1,6 +1,6 @@
 ---
-title: STEP-UP Phenotyping analysis
-articlename: >-
+articlename2: STEP-UP Phenotyping analysis
+title: >-
   Association between behavioral phenotypes and response to a physical activity
   intervention using gamification and social incentives: Secondary analysis of
   the STEP UP randomized clinical trial

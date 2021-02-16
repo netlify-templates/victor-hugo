@@ -1,6 +1,6 @@
 ---
-title: onW2H
-articlename: >-
+articlename2: onW2H
+title: >-
   On the Way to Health
 date: '2012-07-15'
 summary: >-

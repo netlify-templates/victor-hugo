@@ -1,6 +1,6 @@
 ---
-title: CHOP Weight Loss 2
-articlename: >-
+articlename2: CHOP Weight Loss 2
+title: >-
   The Role of Behavioral Economic Incentive Design and Demographic Characteristics in Financial Incentive-Based Approaches to Changing Health Behaviors: A Meta-Analysis
 date: 2015-05-01
 summary: >-

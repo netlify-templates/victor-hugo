@@ -1,6 +1,6 @@
 ---
-title: BE FIT
-articlename: >-
+articlename2: BE FIT
+title: >-
   Effect of a Game-Based Intervention Designed to Enhance Social Incentives to
   Increase Physical Activity Among Families The BE FIT Randomized Clinical Trial
 date: '2017-11-18'

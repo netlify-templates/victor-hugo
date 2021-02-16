@@ -1,6 +1,6 @@
 ---
-title: ' PREDICT '
-articlename: >-
+articlename2: ' PREDICT '
+title: >-
   Smartphones vs Wearable Devices for Remotely Monitoring Physical Activity
   After Hospital Discharge
 date: '2020-02-07'

@@ -1,6 +1,6 @@
 ---
-title: 'Remote Monitoring Post Ortho Surgery '
-articlename: >-
+articlename2: 'Remote Monitoring Post Ortho Surgery '
+title: >-
   Effect of Remote Monitoring on Discharge to Home, Return to Activity, and
   Rehospitalization After Hip and Knee Arthroplasty
 date: '2020-12-21'

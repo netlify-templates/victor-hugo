@@ -1,6 +1,6 @@
 ---
-title: warfarin
-articlename: >-
+articlename2: warfarin
+title: >-
   A test of financial incentives to improve warfarin adherence
 date: '2008-03-14'
 summary: >-

@@ -1,6 +1,6 @@
 ---
-title: Transplant
-articlename: >-
+articlename2: Transplant
+title: >-
   Automated Reminders and Physician Notification to Promote Immunosuppression Adherence Among Kidney Transplant Recipients: A Randomized Trial
 date: 2017-03-01
 summary: >-

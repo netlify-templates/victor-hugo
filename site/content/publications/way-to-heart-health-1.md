@@ -1,6 +1,6 @@
 ---
-title: Way to Heart Health 1
-articlename: >-
+articlename2: Way to Heart Health 1
+title: >-
   Effect of Financial Incentives to Physicians, Patients, or Both on Lipid Levels
 date: 2015-11-10
 summary: >-

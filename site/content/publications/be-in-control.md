@@ -1,6 +1,6 @@
 ---
-title: Be In Control
-articlename: >-
+articlename2: Be In Control
+title: >-
   Effect of Financial Incentives on Glucose Monitoring Adherence and Glycemic Control Among Adolescents and Young Adults With Type 1 Diabetes
 date: 2017-10-17T00:00:00.000Z
 summary: >-

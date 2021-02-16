@@ -1,6 +1,6 @@
 ---
-title: Safer food allergy management for adolescents
-articlename: >-
+articlename2: Safer food allergy management for adolescents
+title: >-
   A behavioral economics intervention to encourage epinephrine- carrying among
   food-allergic adults: a randomized controlled trial
 date: '2015-09-01'

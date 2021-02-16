@@ -1,6 +1,6 @@
 ---
-title: Wearables2
-articlename: >-
+articlename2: Wearables2
+title: >-
   Using Wearable Devices and Smartphones to Track Physical Activity: Initial Activation, Sustained Use, and Step Counts Across Sociodemographic Characteristics in a National Sample
 date: '2017-11-21'
 summary: >-

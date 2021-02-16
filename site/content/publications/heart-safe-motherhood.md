@@ -1,6 +1,6 @@
 ---
-title: Heart Safe Motherhood
-articlename: >-
+articlename2: Heart Safe Motherhood
+title: >-
   Rapid-Cycle Innovation Testing of Text-Based Monitoring for Management of Postpartum Hypertension
 date: '2017-02-01'
 summary: >-

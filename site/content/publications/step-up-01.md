@@ -1,6 +1,6 @@
 ---
-title: STEP UP
-articlename: >-
+articlename2: STEP UP
+title: >-
   Social incentives to encourage physical activity and understand predictors (STEP UP): Design and rationale of a randomized trial among overweight and obese adults across the United States
 date: '2019-05-01'
 summary: >-

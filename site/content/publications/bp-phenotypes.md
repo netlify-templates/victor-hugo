@@ -1,6 +1,6 @@
 ---
-title: Phenotyping patients on remote BP monitoring programs
-articlename: >-
+articlename2: Phenotyping patients on remote BP monitoring programs
+title: >-
   Patient Interaction Phenotypes With an Automated Remote Hypertension Monitoring Program and Their Association With Blood Pressure Control: Observational Study 
 date: '2020-12-03'
 summary: >-

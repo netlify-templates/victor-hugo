@@ -1,6 +1,6 @@
 ---
-title: Weight Watchers
-articlename: >-
+articlename2: Weight Watchers
+title: >-
   Article | OPEN | Published: 25 May 2018  Financial incentive strategies for
   maintenance of weight loss: results from an internet-based randomized
   controlled trial

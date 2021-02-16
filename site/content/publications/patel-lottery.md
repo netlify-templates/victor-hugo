@@ -1,6 +1,6 @@
 ---
-title: Patel-Lottery
-articlename: >-
+articlename2: Patel-Lottery
+title: >-
   A Randomized, Controlled Trial of Lottery-Based Financial Incentives to
   Increase Physical Activity Among Overweight and Obese Adults
 date: '2018-01-02'

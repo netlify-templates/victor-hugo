@@ -1,6 +1,6 @@
 ---
-title: Heartstrong 1
-articlename: >-
+articlename2: Heartstrong 1
+title: >-
   Effect of Electronic Reminders, Financial Incentives, and Social Support on Outcomes After Myocardial Infarction: The HeartStrong Randomized Clinical Trial
 date: 2017-06-26
 summary: >-

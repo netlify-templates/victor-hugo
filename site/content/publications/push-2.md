@@ -1,6 +1,6 @@
 ---
-title: Design of the PUSH trial
-articlename: >-
+articlename2: Design of the PUSH trial
+title: >-
   Prevention of Urinary Stones With Hydration (PUSH): Design and Rationale of a Clinical Trial  
 date: '2020-11-16'
 summary: >-

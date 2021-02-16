@@ -1,6 +1,6 @@
 ---
-title: effectiveness 01
-articlename: >-
+articlename2: effectiveness 01
+title: >-
   Effectiveness of Financial Incentives for Longer-Term Smoking Cessation: Evidence of Absence or Absence of Evidence?
 date: '2012-04-15'
 summary: >-

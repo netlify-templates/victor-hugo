@@ -56,8 +56,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g. title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Study Name", name: "title", widget: "string", required: true} #title of the blog post
-      - {label: "Article Name", name: "articlename", widget: "string", required: true} #title of the blog post
+      - {label: "Study Name", name: "articlename2", widget: "string", required: true} #Study title
+      - {label: "Article Name", name: "title", widget: "string", required: true} #title of the  post
       - {label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD", required: true} # date of publication / creation
       - {label: "Summary", name: "summary", widget: "string", required: true} # summary of the post
       - {label: "Authors", name: "authors", widget: "string", required: true} # publication authors

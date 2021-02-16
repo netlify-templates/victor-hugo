@@ -1,6 +1,6 @@
 ---
-title: Predict-01
-articlename: >-
+articlename2: Predict-01
+title: >-
   Prediction using a randomized evaluation of data collection integrated through
   connected technologies (PREDICT): Design and rationale of a randomized trial
   of patients discharged from the hospital to home

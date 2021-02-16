@@ -1,6 +1,6 @@
 ---
-title: LOSE-IT
-articlename: >-
+articlename2: LOSE-IT
+title: >-
   Social Incentives and Gamification to Promote Weight Loss: The LOSE IT
   Randomized, Controlled Trial
 date: '2018-07-12'

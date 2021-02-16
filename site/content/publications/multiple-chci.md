@@ -1,6 +1,6 @@
 ---
-title: Multiple-CHCI
-articlename: 3 Ways Health Care Leaders Can Encourage Experimentation
+articlename2: Multiple-CHCI
+title: 3 Ways Health Care Leaders Can Encourage Experimentation
 date: '2019-10-28'
 summary: >-
   Successful innovation requires experimentation—following many of the same

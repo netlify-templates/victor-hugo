@@ -1,6 +1,6 @@
 ---
-title: Meta01
-articlename: >-
+articlename2: Meta01
+title: >-
   Cost-effectiveness of Financial Incentives for Patients and Physicians to
   Manage Low-Density Lipoprotein Cholesterol Levels
 date: '2018-12-12'

@@ -1,6 +1,6 @@
 ---
-title: COVID Watch
-articlename: >-
+articlename2: COVID Watch
+title: >-
   Remote Monitoring of Patients with Covid-19: Design, implementation, and
   outcomes of the first 3,000 patients in COVID Watch
 date: '2020-07-21'

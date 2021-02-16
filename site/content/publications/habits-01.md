@@ -1,6 +1,6 @@
 ---
-title: habits-01
-articlename: >-
+articlename2: habits-01
+title: >-
   Habit formation in children: Evidence from incentives for healthy eating.
 date: '2016-01-15'
 summary: >-

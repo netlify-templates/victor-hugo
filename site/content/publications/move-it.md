@@ -1,6 +1,6 @@
 ---
-title: Move-it
-articlename: >-
+articlename2: Move-it
+title: >-
   Mobility and outcomes for validated evidence - Incentive trial (MOVE IT):
   Randomized clinical trial study protocol
 date: '2019-12-12'

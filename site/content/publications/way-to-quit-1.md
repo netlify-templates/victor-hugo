@@ -1,6 +1,6 @@
 ---
-title: Way to Quit 1
-articlename: >-
+articlename2: Way to Quit 1
+title: >-
   Randomized Trial of Four Financial-Incentive Programs for Smoking Cessation
 date: 2015-05-28
 summary: >-

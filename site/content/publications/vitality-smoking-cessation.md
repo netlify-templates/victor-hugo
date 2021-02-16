@@ -1,6 +1,6 @@
 ---
-title: Vitality Smoking Cessation
-articlename: 'A Pragmatic Trial of E-Cigarettes, Incentives, and Drugs for Smoking Cessation'
+articlename2: Vitality Smoking Cessation
+title: 'A Pragmatic Trial of E-Cigarettes, Incentives, and Drugs for Smoking Cessation'
 date: '2018-05-23'
 summary: >-
   The study randomly assigned 6006 smokers employed by 54 companies to one of

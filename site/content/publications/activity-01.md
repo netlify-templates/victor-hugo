@@ -1,6 +1,6 @@
 ---
-title: activity-01
-articlename: >-
+articlename2: activity-01
+title: >-
   Individual Versus Team-Based Financial Incentives to Increase Physical Activity: A Randomized, Controlled Trial
 date: '2016-07-15'
 summary: >-

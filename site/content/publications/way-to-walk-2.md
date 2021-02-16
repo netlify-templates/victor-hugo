@@ -1,6 +1,6 @@
 ---
-title: Way to Walk II
-articlename: >-
+articlename2: Way to Walk II
+title: >-
   A Trial of Financial and Social Incentives to Increase Older Adults' Walking
 date: 2017-03-01
 summary: >-

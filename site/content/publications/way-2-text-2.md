@@ -1,6 +1,6 @@
 ---
-title: Way 2 Text 2
-articlename: >-
+articlename2: Way 2 Text 2
+title: >-
   Electronic Pill Bottles or Bidirectional Text Messaging to Improve
   Hypertension Medication Adherence (Way 2 Text): a Randomized Clinical Trial
 date: '2019-08-08'

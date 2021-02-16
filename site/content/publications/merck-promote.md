@@ -1,6 +1,6 @@
 ---
-title: Merck PROMOTE and SUPPORT Study
-articlename: >-
+articlename2: Merck PROMOTE and SUPPORT Study
+title: >-
   Two Randomized Controlled Pilot Trials of Social Forces to Improve Statin Adherence among Patients with Diabetes
 date: 2016-04-01
 summary: >-

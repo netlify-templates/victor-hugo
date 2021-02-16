@@ -1,6 +1,6 @@
 ---
-title: Active Reward
-articlename: >-
+articlename2: Active Reward
+title: >-
   Loss‐Framed Financial Incentives and Personalized Goal‐Setting to Increase
   Physical Activity Among Ischemic Heart Disease Patients Using Wearable
   Devices: The ACTIVE REWARD Randomized Trial

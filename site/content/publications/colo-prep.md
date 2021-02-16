@@ -1,6 +1,6 @@
 ---
-title: 'Colo Prep '
-articlename: >-
+articlename2: 'Colo Prep '
+title: >-
   An Automated Text Message Navigation Program Improves the Show Rate for
   Outpatient Colonoscopy
 date: '2019-08-30'

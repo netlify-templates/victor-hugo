@@ -1,6 +1,6 @@
 ---
-title: automated hovering
-articlename: >-
+articlename2: automated hovering
+title: >-
   Automated Hovering in Health Care — Watching Over the 5000 Hours
 date: '2012-07-05'
 summary: >-

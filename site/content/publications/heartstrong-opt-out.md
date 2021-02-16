@@ -1,6 +1,6 @@
 ---
-title: Heartstrong Opt Out
-articlename: >-
+articlename2: Heartstrong Opt Out
+title: >-
   Participation Rates With Opt-out Enrollment in a Remote Monitoring Intervention for Patients With Myocardial Infarction
 date: 2016-10-01
 summary: >-

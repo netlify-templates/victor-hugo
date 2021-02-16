@@ -1,6 +1,6 @@
 ---
-title: Wearables Pilot Veterans
-articlename: >-
+articlename2: Wearables Pilot Veterans
+title: >-
   Barriers and Opportunities for Using Wearable Devices to Increase Physical
   Activity Among Veterans: Pilot Study
 date: '2018-06-11'

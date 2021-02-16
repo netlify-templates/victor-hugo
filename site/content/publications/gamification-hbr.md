@@ -1,6 +1,6 @@
 ---
-title: Gamification-HBR
-articlename: Improving Health Care by Gamifying It
+articlename2: Gamification-HBR
+title: Improving Health Care by Gamifying It
 date: '2019-05-07'
 summary: >-
   Our group is using gamification to help patients with uncontrolled diabetes,

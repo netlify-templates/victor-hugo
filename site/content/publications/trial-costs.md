@@ -1,6 +1,6 @@
 ---
-title: Framework for estimating trial costs
-articlename: >-
+articlename2: Framework for estimating trial costs
+title: >-
   Using Clinical Trial Data to Estimate the Costs of Behavioral Interventions for Potential Adopters: A Guide for Trialists 
 date: '2020-11-01'
 summary: >-

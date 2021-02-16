@@ -1,6 +1,6 @@
 ---
-title: Smoking-02
-articlename: >-
+articlename2: Smoking-02
+title: >-
   A Randomized, Controlled Trial of Financial Incentives for Smoking Cessation
 date: '2009-02-12'
 summary: >-

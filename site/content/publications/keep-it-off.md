@@ -1,6 +1,6 @@
 ---
-title: Keep it Off
-articlename: >-
+articlename2: Keep it Off
+title: >-
   The design and conduct of Keep It Off - An online randomized trial of financial incentives for weight-loss maintenance
 date: 2016-09-19
 summary: >-

@@ -1,6 +1,6 @@
 ---
-title: device-01
-articlename: >-
+articlename2: device-01
+title: >-
   Accuracy of Smartphone Applications and Wearable Devices for Tracking Physical Activity Data
 date: '2015-02-10'
 summary: >-

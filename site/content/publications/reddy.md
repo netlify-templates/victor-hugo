@@ -1,6 +1,6 @@
 ---
-title: Reddy 
-articlename: >-
+articlename2: Reddy 
+title: >-
   Patient and Partner Feedback Reports to Improve Statin Medication Adherence: A Randomized Control Trial
 date: 2017-03-01
 summary: >-

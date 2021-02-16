@@ -1,6 +1,6 @@
 ---
-title: Way To Quit 2
-articlename: >-
+articlename2: Way To Quit 2
+title: >-
   Heterogeneity in the Effects of Reward- and Deposit-based Financial Incentives on Smoking Cessation
 date: 2016-01-15
 summary: >-

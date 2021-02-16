@@ -1,6 +1,6 @@
 ---
-title: Way to Quit 3
-articlename: >-
+articlename2: Way to Quit 3
+title: >-
   Time to selected quit date and subsequent rates of sustained smoking abstinence
 date: 2017-06-21
 summary: >-

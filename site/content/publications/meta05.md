@@ -1,6 +1,6 @@
 ---
-title: meta05
-articlename: >-
+articlename2: meta05
+title: >-
   Patients' Views of a Behavioral Intervention Including Financial Incentives
 date: '2017-06-15'
 summary: >-

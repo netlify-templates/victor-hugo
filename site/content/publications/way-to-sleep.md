@@ -1,6 +1,6 @@
 ---
-title: Way to Sleep
-articlename: >-
+articlename2: Way to Sleep
+title: >-
   Web-Based Access to Positive Airway Pressure Usage with or without an Initial Financial Incentive Improves Treatment Use in Patients with Obstructive Sleep Apnea
 date: 2015-08-01
 summary: >-

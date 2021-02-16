@@ -1,6 +1,6 @@
 ---
-title: commitment
-articlename: >-
+articlename2: commitment
+title: >-
   Commitment contracts as a way to health
 date: '2012-01-15'
 summary: >-

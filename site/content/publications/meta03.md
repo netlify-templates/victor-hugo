@@ -1,6 +1,6 @@
 ---
-title: meta -02
-articlename: >-
+articlename2: meta -02
+title: >-
   Wearable Devices as Facilitators, Not Drivers, of Health Behavior Change
 date: '2015-02-03'
 summary: >-

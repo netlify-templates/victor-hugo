@@ -1,6 +1,6 @@
 ---
-title: smoking 03
-articlename: >-
+articlename2: smoking 03
+title: >-
   Financial Incentives Promote Smoking Cessation Directly, Not by Increasing Use of Cessation Aids.
 date: '2018-10-05'
 summary: >-

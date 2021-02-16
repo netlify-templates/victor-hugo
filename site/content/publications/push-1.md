@@ -1,6 +1,6 @@
 ---
-title: PUSH-1
-articlename: >-
+articlename2: PUSH-1
+title: >-
   Ecological Momentary Assessment of Factors Associated with Water Intake Among
   Adolescents with Kidney Stone Disease.
 date: '2018-08-01'
