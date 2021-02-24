@@ -19,7 +19,7 @@ summary: >-
   baselines. The study was replicated with Walmart with 800,000+ participants. 
 results:
   - result: Increased uptake by 11% over baseline
-  - {}
+  - result: Text messaging effectiveness
 features:
   - feature: Arms and randomization
   - feature: EHR integration (appts)
