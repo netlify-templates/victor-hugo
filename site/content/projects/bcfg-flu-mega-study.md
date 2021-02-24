@@ -40,6 +40,7 @@ pubs:
     pubname: >-
       Behavior Change for Good unveils effective strategies to boost vaccination
       rates
+solution_area: COVID-19 Response Solutions
 ---
 Many Americans fail to get life-saving vaccines each year, and the availability of a vaccine for COVID-19 makes the challenge of encouraging vaccination more urgent than ever. This program was a large field experiment (N=47,308 with recruitment still ongoing) testing 19 different nudges delivered to patients via text message and designed to boost adoption of the influenza vaccine. Working closely with Penn Medicine and Geisinger Health Sytem, Way to Health integrated to the respective EHRs (EPIC) to automatically enroll participants based on upcoming primary care appointments and other inclusion and exclusion criteria. 
 
