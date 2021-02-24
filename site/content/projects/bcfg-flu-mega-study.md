@@ -24,7 +24,7 @@ features:
   - feature: Arms and randomization
   - feature: EHR integration (appts)
   - feature: Text messaging and scheduling
-spotlight: 'true'
+spotlight: true
 image: /images/uploads/fluvax.pub.01.jpg
 pubs:
   - pubURL: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3780267'
