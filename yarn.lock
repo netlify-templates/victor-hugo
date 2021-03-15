@@ -14,7 +14,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.13.8.tgz#5b783b9808f15cef71547f1b691f34f8ff6003a6"
   integrity sha512-EaI33z19T4qN3xLXsGf48M2cDqa6ei9tPZlfLdb2HC+e/cFtREiRd8hdSqDbwdLB0/+gLwqJmCYASH0z2bUdog==
 
-"@babel/core@^7.13.10":
+"@babel/core@^7.12.3":
   version "7.13.10"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.13.10.tgz#07de050bbd8193fcd8a3c27918c0890613a94559"
   integrity sha512-bfIYcT0BdKeAZrovpMqX2Mx5NrgAckGbwT982AkdS5GNfn3KMGiprlBAtmBcFZRUmpaufS6WZFP8trvx8ptFDw==
@@ -323,7 +323,7 @@
     "@babel/helper-plugin-utils" "^7.12.13"
     "@babel/plugin-syntax-numeric-separator" "^7.10.4"
 
-"@babel/plugin-proposal-object-rest-spread@^7.13.8":
+"@babel/plugin-proposal-object-rest-spread@^7.12.1", "@babel/plugin-proposal-object-rest-spread@^7.13.8":
   version "7.13.8"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.13.8.tgz#5d210a4d727d6ce3b18f9de82cc99a3964eed60a"
   integrity sha512-DhB2EuB1Ih7S3/IRX5AFVgZ16k3EzfRbq97CxAVI1KSYcW+lexV8VZb7G7L8zuPVSdQMRn0kiBpf/Yzu9ZKH0g==
@@ -699,7 +699,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.12.13"
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/preset-env@^7.13.10":
+"@babel/preset-env@^7.12.1":
   version "7.13.10"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.13.10.tgz#b5cde31d5fe77ab2a6ab3d453b59041a1b3a5252"
   integrity sha512-nOsTScuoRghRtUsRr/c69d042ysfPHcu+KOB4A9aAO9eJYqrkat+LF8G1yp1HD18QiwixT2CisZTr/0b3YZPXQ==
@@ -784,7 +784,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/register@^7.13.8":
+"@babel/register@^7.12.1":
   version "7.13.8"
   resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.13.8.tgz#d9051dc6820cb4e86375cc0e2d55a4862b31184f"
   integrity sha512-yCVtABcmvQjRsX2elcZFUV5Q5kDDpHdtXKKku22hNDma60lYuhKmtp1ykZ/okRCPLT2bR5S+cA1kvtBdAFlDTQ==
@@ -3325,13 +3325,12 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-exports-loader@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.npmjs.org/exports-loader/-/exports-loader-0.7.0.tgz"
-  integrity sha512-RKwCrO4A6IiKm0pG3c9V46JxIHcDplwwGJn6+JJ1RcVnh/WSGJa0xkmk5cRVtgOPzCAtTMGj2F7nluh9L0vpSA==
+exports-loader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/exports-loader/-/exports-loader-2.0.0.tgz#ca7861b86726997bb4e55001888d2af940935979"
+  integrity sha512-k/VFrVEUmotfkk8vZ+njG5NEXpr5Ee+BonV+AYINV2hNo3o+/UB8nEuCUQk2k6IyWIoobmXoTFO0igxrQcMV4Q==
   dependencies:
-    loader-utils "^1.1.0"
-    source-map "0.5.0"
+    source-map "^0.6.1"
 
 express@^4.17.1:
   version "4.17.1"
@@ -7700,11 +7699,6 @@ source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/source-map-url/-/source-map-url-0.4.0.tgz"
   integrity sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=
-
-source-map@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.0.tgz"
-  integrity sha1-D+llA6yGpa213mP05BKuSHLNvoY=
 
 source-map@^0.4.2:
   version "0.4.4"
