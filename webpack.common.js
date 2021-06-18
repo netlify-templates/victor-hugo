@@ -17,16 +17,20 @@ module.exports = {
     rules: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader?name=/[hash].[ext]"
+        use: { loader: "file-loader?name=/[hash].[ext]" }
       },
 
-      {test: /\.json$/, loader: "json-loader"},
+      { test: /\.json$/, use: { loader: "json-loader" } },
 
       {
-        loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        use: {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true
+          }
+        }
       },
 
       {
