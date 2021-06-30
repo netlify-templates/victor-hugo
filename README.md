@@ -1,6 +1,6 @@
 # Victor Hugo
 
-**A Hugo boilerplate for creating truly epic websites**
+## A Hugo boilerplate for creating truly epic websites
 
 This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
 
@@ -36,7 +36,8 @@ or for developing your website with `hugo server --buildDrafts --buildFuture`, u
 npm run preview
 ```
 
-Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+Then visit <http://localhost:3000/> _- or a new browser windows popped-up already -_ to preview your new website.
+Webpack Dev Server will automatically reload the CSS or refresh the whole page when stylesheets or content changes.
 
 ### :package: Static build
 
@@ -56,7 +57,7 @@ See [package.json](package.json#L8) for all tasks.
 
 ## Structure
 
-```
+```text
 |--site                // Everything in here will be built with hugo
 |  |--content          // Pages and collections - ask if you need extra pages
 |  |--data             // YAML data files with any data for use in examples
@@ -73,11 +74,11 @@ See [package.json](package.json#L8) for all tasks.
 
 You can read more about Hugo's template language in their documentation here:
 
-https://gohugo.io/templates/overview/
+<https://gohugo.io/templates/overview/>
 
 The most useful page there is the one about the available functions:
 
-https://gohugo.io/templates/functions/
+<https://gohugo.io/templates/functions/>
 
 For assets that are completely static and don't need to go through the asset pipeline,
 use the `site/static` folder. Images, font-files, etc, all go there.
@@ -98,7 +99,9 @@ To separate the development and production _- aka build -_ stages, all gulp task
 
 You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
 
-    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
+```hugo
+{{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
+```
 
 All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
 
@@ -112,5 +115,7 @@ Now Netlify will build and deploy your site whenever you push to git.
 You can also click this button:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
+
+The current main branch might even be deployed to <https://victor-hugo-622845.netlify.app/>.
 
 ## Enjoy!! 😸
