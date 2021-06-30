@@ -2,6 +2,8 @@
 
 ## A Hugo boilerplate for creating truly epic websites
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bce698a2-6891-4e4c-b9f7-16f43f1ca2fe/deploy-status)](https://app.netlify.com/sites/victor-hugo-622845/deploys)
+
 This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
 
 Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
