@@ -1,11 +1,10 @@
 {
   "name": "victor-hugo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
   "repository": "netlify/victor-hugo",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src",
     "start": "run-p start:**",
     "start:hugo": "hugo -d ../dist -s site -vw",
     "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
@@ -17,7 +16,9 @@
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
     "build:hugo": "hugo -d ../dist -s site -v",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "test": "run-p test:**",
+    "test:lint": "eslint src"
   },
   "author": "",
   "license": "MIT",
@@ -42,7 +43,7 @@
     "hugo-bin": "^0.63.0",
     "imports-loader": "^0.8.0",
     "mini-css-extract-plugin": "^0.12.0",
-    "node-sass": "^4.13.1",
+    "sass": "^1.35.1",
     "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "plugin-error": "^1.0.1",
