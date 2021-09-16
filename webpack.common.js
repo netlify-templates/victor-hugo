@@ -17,22 +17,25 @@ module.exports = {
     rules: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader?name=/[hash].[ext]"
-      },
-
-      {test: /\.json$/, loader: "json-loader"},
-
+        use: { loader: "file-loader?name=/[contenthash].[ext]" }
+      },  
+      {test: /\.json$/, use: {loader: "json-loader"}},
       {
-        loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        use: {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true
+          }
+        }
       },
-
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
-        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"
+        ],
       }
     ]
   },
@@ -45,15 +48,16 @@ module.exports = {
     new AssetsPlugin({
       filename: "webpack.json",
       path: path.join(process.cwd(), "site/data"),
-      prettyPrint: true
+      prettyPrint: true,
+      removeFullPathAutoPrefix: true
     }),
 
-    new CopyWebpackPlugin([
-      {
-        from: "./src/fonts/",
-        to: "fonts/",
-        flatten: true
+    new CopyWebpackPlugin(
+      { 
+        patterns: [
+          { from: './src/fonts', to: 'fonts/' },
+        ]
       }
-    ])
+    )
   ]
 };

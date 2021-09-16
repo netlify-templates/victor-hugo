@@ -1,6 +1,5 @@
 [build.environment]
-  YARN_VERSION = "1.12.1"
-  NPM_VERSION = "6.4.1"
+  NPM_VERSION = "7.23.0"
 
 [build]
   command = "npm run build"
