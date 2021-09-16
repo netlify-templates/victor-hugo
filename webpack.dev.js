@@ -1,4 +1,4 @@
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const path = require("path");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -14,11 +14,23 @@ module.exports = merge(common, {
   },
 
   devServer: {
+    static: {
+      directory: path.resolve(__dirname, "./dist"),
+      staticOptions: {},
+      // Don't be confused with `devMiddleware.publicPath`, it is `publicPath` for static directory
+      // Can be:
+      // publicPath: ['/static-public-path-one/', '/static-public-path-two/'],
+      // publicPath: "/static-public-path/",
+      // Can be:
+      // serveIndex: {} (options for the `serveIndex` option you can find https://github.com/expressjs/serve-index)
+      serveIndex: true,
+      // Can be:
+      // watch: {} (options for the `watch` option you can find https://github.com/paulmillr/chokidar)
+      watch: true,
+    },
+
+
     port: process.env.PORT || 3000,
-    contentBase: path.join(process.cwd(), "./dist"),
-    watchContentBase: true,
-    quiet: false,
-    open: true,
     historyApiFallback: {
       rewrites: [{from: /./, to: "404.html"}]
     }
