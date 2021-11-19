@@ -4,7 +4,7 @@
 
 This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack 5](https://webpack.js.org/) as your asset pipeline.
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+Victor Hugo setup to use [PostCSS v8](http://postcss.org/) and [Babel v7](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
@@ -12,7 +12,7 @@ This project is released under the [MIT license](LICENSE). Please make sure you 
 
 ### :exclamation: Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+This template has been tested to work with [Node.js](https://nodejs.org/en/download/) v16 and [npm](https://www.npmjs.com/get-npm) v6.
 
 Next step, clone this repository and run:
 
@@ -63,6 +63,7 @@ See [package.json](package.json#L8) for all tasks.
 |  |--layouts          // This is where all templates go
 |  |  |--partials      // This is where includes live
 |  |  |--index.html    // The index page
+|  |--resources        // This is where all assets go
 |  |--static           // Files in here ends up in the public folder
 |--src                 // Files that will pass through the asset pipeline
 |  |--css              // Webpack will bundle imported css separately
@@ -94,7 +95,7 @@ minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as p
 
 ## Environment variables
 
-To separate the development and production _- aka build -_ stages, all gulp tasks run with a node environment variable named either `development` or `production`.
+To separate the development and production _- aka build -_ stages, all tasks run with a node environment variable named either `development` or `production`.
 
 You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
 
