@@ -1,4 +1,5 @@
 [build.environment]
+  YARN_VERSION = "1.21.1"
   NPM_VERSION = "6.13.4"
 
 [build]
