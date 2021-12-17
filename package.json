@@ -36,7 +36,7 @@
     "exports-loader": "^3.1.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "hugo-bin": "^0.77.2",
+    "hugo-bin": "^0.79.0",
     "imports-loader": "^3.1.1",
     "mini-css-extract-plugin": "^2.4.4",
     "node-sass": "^6.0.1",
