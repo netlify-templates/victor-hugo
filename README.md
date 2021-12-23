@@ -1,5 +1,13 @@
 # Victor Hugo
 
+⚠️ **Deprecation Notice** 🏳
+
+We are focusing our resources on building new templates that help you build a better web, because of that we're deprecating this template. We care about the community so we propose if anyone wants to maintain or take stewardship over the project please contact us at [devexperience@netlify.com](mailto:devexperience@netlify.com). If you want to share anything with the team about this template, you can also fill out [this form](https://template-feedback.netlify.app/).
+
+As an alternative to this repository, we're recommending to take a look at [Hyas](https://github.com/h-enk/hyas) as a project to make use of. It is focused on latest practices with Hugo and is already completely Netlify deploy ready.
+
+---
+
 **A Hugo boilerplate for creating truly epic websites**
 
 This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack 5](https://webpack.js.org/) as your asset pipeline.
